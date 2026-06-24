@@ -22,10 +22,10 @@ export default function FoamBoardSignsPage() {
         breadcrumbHref: "/custom-signs",
         promoText:
           "✨ Foam Board Signs — Ultra-Light, Ultra-Crisp. Perfect for Presentations!",
-        image: "/images/products/main%20page/foam_board.jpeg",
+        image: "/images/products/main%20page/foam_board-toronto-printing-ca.jpeg",
         images: [
-          "/images/products/main%20page/foam_board.jpeg",
-          "/images/products/foam_sign_hover.png",
+          "/images/products/main%20page/foam_board-toronto-printing-ca.jpeg",
+          "/images/products/foam_sign_hover-toronto-printing-ca.png",
         ],
         ratingScore: "4.8",
         ratingCount: "1,280",

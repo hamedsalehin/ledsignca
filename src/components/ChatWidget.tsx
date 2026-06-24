@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useState } from "react";
 import { MessageCircle, X } from "lucide-react";
@@ -79,7 +79,7 @@ export function ChatWidget() {
         }}
         aria-label="Open chat support options"
       >
-        <MessageCircle className="w-6 h-6 text-[#00e5ff] group-hover:scale-110 transition-transform duration-300" />
+        <MessageCircle className="w-6 h-6 text-[#f7f82d] group-hover:scale-110 transition-transform duration-300" />
       </button>
     </div>
   );

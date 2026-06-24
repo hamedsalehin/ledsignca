@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 
 import { useEffect, useState } from "react";
 import { X, Gift, Mail, ArrowRight, CheckCircle2, AlertCircle, Sparkles, HelpCircle } from "lucide-react";
@@ -129,10 +130,10 @@ export function PromotionalModal() {
           aria-label="Open promotional offer"
         >
           <div className="relative">
-            <Gift className="w-5 h-5 text-[#ff2d78] group-hover:rotate-12 transition-transform duration-300" />
+            <Gift className="w-5 h-5 text-[#f7f82d] group-hover:rotate-12 transition-transform duration-300" />
             <span className="absolute -top-1.5 -right-1.5 flex h-2.5 w-2.5">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#00e5ff] opacity-75"></span>
-              <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-[#00e5ff]"></span>
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#f7f82d] opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-[#f7f82d]"></span>
             </span>
           </div>
           <span className="text-xs font-bold uppercase tracking-wider font-poppins">
@@ -169,21 +170,23 @@ export function PromotionalModal() {
             {/* LEFT COLUMN: Promo details */}
             <div className="md:w-5/12 bg-gradient-to-br from-[#0d0714] via-[#050b16] to-[#040404] p-5 md:p-10 border-b md:border-b-0 md:border-r border-slate-800/60 flex flex-col justify-between relative overflow-hidden">
               {/* Background glows */}
-              <div className="absolute top-[-20%] left-[-20%] w-[100%] h-[100%] rounded-full bg-[#ff2d78]/8 blur-[80px]" />
-              <div className="absolute bottom-[-20%] right-[-20%] w-[100%] h-[100%] rounded-full bg-[#00e5ff]/6 blur-[80px]" />
+              <div className="absolute top-[-20%] left-[-20%] w-[100%] h-[100%] rounded-full bg-[#f7f82d]/8 blur-[80px]" />
+              <div className="absolute bottom-[-20%] right-[-20%] w-[100%] h-[100%] rounded-full bg-[#f7f82d]/6 blur-[80px]" />
 
               <div className="relative space-y-3 md:space-y-6">
                 {/* Brand Logo */}
                 <div className="w-24 md:w-36 h-auto">
-                  <img
-                    src="/images/nano_logo_modal.png"
+                  <Image
+                    src="/images/nano_logo_modal-toronto-printing-ca.png"
                     alt="Nano Signs Logo"
+                    width={400}
+                    height={150}
                     className="w-full h-auto object-contain brightness-110 drop-shadow-[0_0_8px_rgba(255,45,120,0.3)]"
                   />
                 </div>
 
                 <div className="space-y-1.5 pt-2 md:pt-4">
-                  <span className="text-[10px] md:text-xs font-extrabold uppercase tracking-widest text-[#00e5ff] font-poppins flex items-center gap-1.5">
+                  <span className="text-[10px] md:text-xs font-extrabold uppercase tracking-widest text-[#f7f82d] font-poppins flex items-center gap-1.5">
                     <Sparkles className="w-3.5 h-3.5" /> Welcome Special
                   </span>
                   <h3 className="text-2xl md:text-5xl font-black font-poppins tracking-tight leading-none">
@@ -199,15 +202,15 @@ export function PromotionalModal() {
               {/* Bullet List - Hidden on mobile to keep modal compact */}
               <div className="hidden md:block relative pt-8 space-y-3.5 text-xs text-slate-300 font-medium">
                 <div className="flex items-center gap-2.5">
-                  <div className="w-1.5 h-1.5 rounded-full bg-[#ff2d78]" />
+                  <div className="w-1.5 h-1.5 rounded-full bg-[#f7f82d]" />
                   <span>Custom Signs &amp; Banners</span>
                 </div>
                 <div className="flex items-center gap-2.5">
                   <div className="w-1.5 h-1.5 rounded-full bg-[#b020ff]" />
-                  <span>Fast Florida-Wide Delivery</span>
+                  <span>Fast Canada-Wide Delivery</span>
                 </div>
                 <div className="flex items-center gap-2.5">
-                  <div className="w-1.5 h-1.5 rounded-full bg-[#00e5ff]" />
+                  <div className="w-1.5 h-1.5 rounded-full bg-[#f7f82d]" />
                   <span>100% Quality Print Guarantee</span>
                 </div>
               </div>
@@ -243,7 +246,7 @@ export function PromotionalModal() {
                         placeholder="Enter your email address"
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
-                        className="w-full pl-10 md:pl-12 pr-4 py-2.5 md:py-3.5 bg-[#121216] border border-slate-800 rounded-xl text-xs md:text-sm text-white placeholder-slate-500 focus:outline-none focus:border-[#00e5ff] focus:ring-1 focus:ring-[#00e5ff] transition-all"
+                        className="w-full pl-10 md:pl-12 pr-4 py-2.5 md:py-3.5 bg-[#121216] border border-slate-800 rounded-xl text-xs md:text-sm text-white placeholder-slate-500 focus:outline-none focus:border-[#f7f82d] focus:ring-1 focus:ring-[#f7f82d] transition-all"
                       />
                     </div>
 
@@ -282,7 +285,7 @@ export function PromotionalModal() {
                       <h4 className="text-lg md:text-2xl font-bold font-poppins text-white">
                         Congratulations!
                       </h4>
-                      <p className="text-[10px] md:text-xs text-[#00e5ff] font-bold uppercase tracking-wider mt-0.5">
+                      <p className="text-[10px] md:text-xs text-[#f7f82d] font-bold uppercase tracking-wider mt-0.5">
                         Your 10% Discount is Active
                       </p>
                     </div>
@@ -330,7 +333,7 @@ export function PromotionalModal() {
                     }}
                   >
                     <h5 className="font-bold text-white text-sm font-poppins flex items-center gap-1.5">
-                      <Sparkles className="w-4 h-4 text-[#ff2d78]" />
+                      <Sparkles className="w-4 h-4 text-[#f7f82d]" />
                       Congratulations!
                     </h5>
                     <p className="leading-relaxed">
@@ -340,7 +343,7 @@ export function PromotionalModal() {
                       To receive your discount, simply email us at{" "}
                       <a
                         href="mailto:nanosigns1@gmail.com?subject=New Business Startup Discount Request"
-                        className="text-[#00e5ff] hover:underline font-bold"
+                        className="text-[#f7f82d] hover:underline font-bold"
                       >
                         nanosigns1@gmail.com
                       </a>{" "}
@@ -349,7 +352,7 @@ export function PromotionalModal() {
                     <p className="leading-relaxed">
                       Then we will email you back with instructions on how to claim your huge discount at checkout. We are here to help new businesses grow, and we will be there every step of the way!
                     </p>
-                    <p className="leading-relaxed text-[#ff2d78] font-bold uppercase tracking-wider">
+                    <p className="leading-relaxed text-[#f7f82d] font-bold uppercase tracking-wider">
                       Contact us NOW!
                     </p>
                     <p className="leading-relaxed text-[10px] text-slate-400">

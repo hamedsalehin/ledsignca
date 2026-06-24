@@ -1,4 +1,4 @@
-import { NextRequest, NextResponse } from "next/server";
+﻿import { NextRequest, NextResponse } from "next/server";
 import { createClient } from "@supabase/supabase-js";
 import { Resend } from "resend";
 
@@ -91,7 +91,7 @@ export async function POST(req: NextRequest) {
           html: `
             <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; background: #0f172a; color: #f1f5f9; padding: 32px; border-radius: 12px;">
               <div style="text-align: center; margin-bottom: 28px;">
-                <h1 style="color: #ff2d78; font-size: 28px; margin: 0; letter-spacing: -0.5px;">NANO SIGNS</h1>
+                <h1 style="color: #f7f82d; font-size: 28px; margin: 0; letter-spacing: -0.5px;">NANO SIGNS</h1>
                 <p style="color: #94a3b8; margin: 4px 0 0;">New Custom Quote Request</p>
               </div>
 
@@ -100,10 +100,10 @@ export async function POST(req: NextRequest) {
                   📋 Request Info #${shortId}
                 </h2>
                 <table style="width: 100%; border-collapse: collapse; font-size: 14px;">
-                  <tr><td style="padding: 6px 0; color: #94a3b8; width: 40%;">Client Name:</td><td style="color: #f1f5f9; font-weight: bold;">${fullName}</td></tr>
-                  <tr><td style="padding: 6px 0; color: #94a3b8;">Email:</td><td style="color: #f1f5f9;"><a href="mailto:${email}" style="color: #00e5ff; text-decoration: none;">${email}</a></td></tr>
-                  <tr><td style="padding: 6px 0; color: #94a3b8;">Phone:</td><td style="color: #f1f5f9;"><a href="tel:${phone}" style="color: #f1f5f9; text-decoration: none;">${phone}</a></td></tr>
-                  <tr><td style="padding: 6px 0; color: #94a3b8;">Est. Quantity:</td><td style="color: #f1f5f9;">${quantity} unit(s)</td></tr>
+                  <tr><td style="padding: 6px 0; color: #94a3b8; width: 40%;">Client Name:</td><td style="color: #f1f5f9; font-weight: bold;">CAD {fullName}</td></tr>
+                  <tr><td style="padding: 6px 0; color: #94a3b8;">Email:</td><td style="color: #f1f5f9;"><a href="mailto:${email}" style="color: #f7f82d; text-decoration: none;">CAD {email}</a></td></tr>
+                  <tr><td style="padding: 6px 0; color: #94a3b8;">Phone:</td><td style="color: #f1f5f9;"><a href="tel:${phone}" style="color: #f1f5f9; text-decoration: none;">CAD {phone}</a></td></tr>
+                  <tr><td style="padding: 6px 0; color: #94a3b8;">Est. Quantity:</td><td style="color: #f1f5f9;">CAD {quantity} unit(s)</td></tr>
                   <tr>
                     <td style="padding: 6px 0; color: #94a3b8;">Dimensions:</td>
                     <td style="color: #f1f5f9;">
@@ -115,7 +115,7 @@ export async function POST(req: NextRequest) {
 
               <div style="background: #1e293b; border-radius: 10px; padding: 20px; margin-bottom: 20px;">
                 <h3 style="margin: 0 0 12px; font-size: 14px; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.05em;">Project Description</h3>
-                <p style="margin: 0; font-size: 14px; color: #e2e8f0; line-height: 1.6; white-space: pre-wrap;">${description}</p>
+                <p style="margin: 0; font-size: 14px; color: #e2e8f0; line-height: 1.6; white-space: pre-wrap;">CAD {description}</p>
               </div>
 
               ${fileUrl
@@ -123,7 +123,7 @@ export async function POST(req: NextRequest) {
               <div style="background: #1e293b; border-radius: 10px; padding: 20px; margin-bottom: 20px;">
                 <h3 style="margin: 0 0 12px; font-size: 14px; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.05em;">Attached Artwork</h3>
                 <p style="margin: 0 0 10px; font-size: 13px; color: #cbd5e1;">Filename: ${fileName}</p>
-                <a href="${fileUrl}" style="display: inline-block; background: #ff2d78; color: white; padding: 10px 20px; border-radius: 8px; text-decoration: none; font-size: 13px; font-weight: bold;">
+                <a href="${fileUrl}" style="display: inline-block; background: #f7f82d; color: white; padding: 10px 20px; border-radius: 8px; text-decoration: none; font-size: 13px; font-weight: bold;">
                   Download Attachment
                 </a>
               </div>
@@ -163,7 +163,7 @@ export async function POST(req: NextRequest) {
           html: `
             <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; background: #ffffff; padding: 0; border-radius: 12px; overflow: hidden; border: 1px solid #e2e8f0;">
               <!-- Header -->
-              <div style="background: linear-gradient(135deg, #ff2d78, #b020ff, #00e5ff); padding: 32px; text-align: center;">
+              <div style="background: #f7f82d; padding: 32px; text-align: center;">
                 <h1 style="color: white; font-size: 32px; margin: 0; letter-spacing: -0.5px; font-weight: 900;">NANO SIGNS</h1>
                 <p style="color: rgba(255,255,255,0.85); margin: 6px 0 0; font-size: 14px;">We are preparing your custom print quote!</p>
               </div>
@@ -191,13 +191,13 @@ export async function POST(req: NextRequest) {
                   </tr>
                   <tr style="border-bottom: 1px solid #f1f5f9;">
                     <td style="padding: 10px 0; color: #64748b;">Quantity</td>
-                    <td style="padding: 10px 0; color: #0f172a;">${quantity} unit(s)</td>
+                    <td style="padding: 10px 0; color: #0f172a;">CAD {quantity} unit(s)</td>
                   </tr>
                   ${width || height
                   ? `
                   <tr style="border-bottom: 1px solid #f1f5f9;">
                     <td style="padding: 10px 0; color: #64748b;">Dimensions</td>
-                    <td style="padding: 10px 0; color: #0f172a;">${width || "—"} W x ${height || "—"} H</td>
+                    <td style="padding: 10px 0; color: #0f172a;">CAD {width || "—"} W x ${height || "—"} H</td>
                   </tr>
                   `
                   : ""
@@ -206,7 +206,7 @@ export async function POST(req: NextRequest) {
                   ? `
                   <tr style="border-bottom: 1px solid #f1f5f9;">
                     <td style="padding: 10px 0; color: #64748b;">Attached Artwork</td>
-                    <td style="padding: 10px 0; color: #0f172a; font-size: 13px;">${fileName}</td>
+                    <td style="padding: 10px 0; color: #0f172a; font-size: 13px;">CAD {fileName}</td>
                   </tr>
                   `
                   : ""

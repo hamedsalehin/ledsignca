@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useRef } from "react";
 import Image from "next/image";
@@ -9,42 +9,42 @@ const categories = [
   {
     name: "Signs",
     href: "/custom-signs",
-    image: "/images/products/main%20page/all_signs_product.png",
+    image: "/images/products/main%20page/all_signs_product-toronto-printing-ca.png",
   },
   {
     name: "Business Cards",
     href: "/marketing-materials/business-cards",
-    image: "/images/products/main%20page/business_cards.png",
+    image: "/images/products/main%20page/business_cards-toronto-printing-ca.png",
   },
   {
     name: "Banners",
     href: "/custom-banners",
-    image: "/images/products/main%20page/fabric_banner.png",
+    image: "/images/products/main%20page/fabric_banner-toronto-printing-ca.png",
   },
   {
     name: "Retractable Banners",
     href: "/custom-banners/roll-up-banners",
-    image: "/images/products/main%20page/retractable_roll_up_banner.png",
+    image: "/images/products/main%20page/retractable_roll_up_banner-toronto-printing-ca.png",
   },
   {
     name: "Flags",
     href: "/custom-flags",
-    image: "/images/products/main%20page/flags.png",
+    image: "/images/products/main%20page/flags-toronto-printing-ca.png",
   },
   {
     name: "Car Magnets",
     href: "/vehicle-signs",
-    image: "/images/products/main%20page/vehicle_magnets.png",
+    image: "/images/products/main%20page/vehicle_magnets-toronto-printing-ca.png",
   },
   {
     name: "Tradeshow",
     href: "/trade-show",
-    image: "/images/products/main%20page/event_tents.png",
+    image: "/images/products/main%20page/event_tents-toronto-printing-ca.png",
   },
   {
     name: "Custom Decals",
     href: "/custom-decals",
-    image: "/images/products/main%20page/sticker_and_labels.png",
+    image: "/images/products/main%20page/sticker_and_labels-toronto-printing-ca.png",
   },
 ];
 
@@ -74,7 +74,7 @@ export function CategoryCarousel() {
             type="button"
             onClick={() => scroll("left")}
             className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white shadow-xl rounded-full p-3 -ml-5 focus:outline-none hover:scale-110 transition-transform duration-200"
-            style={{ border: "2px solid #ff2d78", color: "#ff2d78" }}
+            style={{ border: "2px solid #f7f82d", color: "#f7f82d" }}
             aria-label="Scroll left"
           >
             <ChevronLeft className="w-6 h-6" />
@@ -85,7 +85,7 @@ export function CategoryCarousel() {
             type="button"
             onClick={() => scroll("right")}
             className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white shadow-xl rounded-full p-3 -mr-5 focus:outline-none hover:scale-110 transition-transform duration-200"
-            style={{ border: "2px solid #ff2d78", color: "#ff2d78" }}
+            style={{ border: "2px solid #f7f82d", color: "#f7f82d" }}
             aria-label="Scroll right"
           >
             <ChevronRight className="w-6 h-6" />

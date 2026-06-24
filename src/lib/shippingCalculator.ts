@@ -231,29 +231,29 @@ export function calculateShippingRates(
       name: "Free Local Pickup",
       price: 0.0,
       deliveryEstimate: "Next Business Day",
-      description: "Pick up at our Fort Lauderdale / Oakland Park headquarters: 4567 Powerline Rd",
+      description: "Pick up at our Toronto headquarters: 100 Front St W",
     },
   ];
 
-  const zip = zipCode.trim();
-  const isSouthFlorida = zip.startsWith("330") || zip.startsWith("331") || zip.startsWith("332") || zip.startsWith("333") || zip.startsWith("334");
-  const isFlorida = zip.startsWith("32") || zip.startsWith("33") || zip.startsWith("34");
+  const postal = zipCode.trim().toUpperCase();
+  const isToronto = postal.startsWith("M");
+  const isOntario = postal.startsWith("K") || postal.startsWith("L") || postal.startsWith("M") || postal.startsWith("N") || postal.startsWith("P");
 
   // Zone distance multiplier
   let zoneMultiplier = 1.0;
-  if (!isFlorida) {
-    zoneMultiplier = 1.4; // Out of state
-  } else if (!isSouthFlorida) {
-    zoneMultiplier = 1.15; // North/Central Florida
+  if (!isOntario) {
+    zoneMultiplier = 1.4; // Out of province
+  } else if (!isToronto) {
+    zoneMultiplier = 1.15; // Rest of Ontario
   }
 
   if (hasFreightItem) {
     // LTL Freight rates
     let baseFreight = 120.0;
-    if (!isSouthFlorida) {
+    if (!isToronto) {
       baseFreight = 180.0;
     }
-    if (!isFlorida) {
+    if (!isOntario) {
       baseFreight = 290.0;
     }
 
@@ -276,7 +276,7 @@ export function calculateShippingRates(
       id: "ltl_freight",
       name: "LTL Freight Shipping",
       price: freightCost,
-      deliveryEstimate: isSouthFlorida ? "2-3 Business Days" : "4-7 Business Days",
+      deliveryEstimate: isToronto ? "2-3 Business Days" : "4-7 Business Days",
       description: `Freight LTL delivery for heavy/oversized items. ${
         options.liftgate ? "Includes liftgate unload." : "Dock or manual unloading required."
       }`,
@@ -286,11 +286,11 @@ export function calculateShippingRates(
     let baseStandard = 9.95;
     let baseExpedited = 24.95;
 
-    if (!isSouthFlorida) {
+    if (!isToronto) {
       baseStandard = 14.95;
       baseExpedited = 39.95;
     }
-    if (!isFlorida) {
+    if (!isOntario) {
       baseStandard = 19.95;
       baseExpedited = 59.95;
     }
@@ -303,7 +303,7 @@ export function calculateShippingRates(
       id: "standard_ground",
       name: "Standard Courier (Ground)",
       price: standardCost,
-      deliveryEstimate: isSouthFlorida ? "Next Business Day" : isFlorida ? "2 Business Days" : "3-5 Business Days",
+      deliveryEstimate: isToronto ? "Next Business Day" : isOntario ? "2 Business Days" : "3-5 Business Days",
       description: "Delivered directly to your door via UPS or FedEx Ground.",
     });
 
@@ -311,7 +311,7 @@ export function calculateShippingRates(
       id: "expedited_courier",
       name: "Expedited Courier (Express)",
       price: expeditedCost,
-      deliveryEstimate: isSouthFlorida ? "Next Day Morning" : "1-2 Business Days",
+      deliveryEstimate: isToronto ? "Next Day Morning" : "1-2 Business Days",
       description: "Prioritized express shipment for fast delivery.",
     });
   }

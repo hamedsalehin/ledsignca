@@ -14,15 +14,15 @@ import {
 } from "lucide-react";
 
 const customerPhotos = [
-  { image: "/images/customer-highlights/highlight_1.jpeg" },
-  { image: "/images/customer-highlights/highlight_2.jpeg" },
-  { image: "/images/customer-highlights/highlight_3.jpeg" },
-  { image: "/images/customer-highlights/highlight_4.jpeg" },
-  { image: "/images/customer-highlights/highlight_5.jpeg" },
-  { image: "/images/customer-highlights/highlight_6.jpeg" },
-  { image: "/images/customer-highlights/highlight_7.jpeg" },
-  { image: "/images/customer-highlights/highlight_8.jpeg" },
-  { image: "/images/customer-highlights/highlight_9.jpeg" },
+  { image: "/images/customer-highlights/highlight_1-toronto-printing-ca.jpeg" },
+  { image: "/images/customer-highlights/highlight_2-toronto-printing-ca.jpeg" },
+  { image: "/images/customer-highlights/highlight_3-toronto-printing-ca.jpeg" },
+  { image: "/images/customer-highlights/highlight_4-toronto-printing-ca.jpeg" },
+  { image: "/images/customer-highlights/highlight_5-toronto-printing-ca.jpeg" },
+  { image: "/images/customer-highlights/highlight_6-toronto-printing-ca.jpeg" },
+  { image: "/images/customer-highlights/highlight_7-toronto-printing-ca.jpeg" },
+  { image: "/images/customer-highlights/highlight_8-toronto-printing-ca.jpeg" },
+  { image: "/images/customer-highlights/highlight_9-toronto-printing-ca.jpeg" },
 ];
 
 export function CustomerHighlights() {
@@ -178,12 +178,12 @@ export function CustomerHighlights() {
     <section
       className="py-4 md:py-6"
       style={{
-        background: "linear-gradient(160deg, #f9f0ff 0%, #e0faff 100%)",
+        background: "#fffde7",
       }}
     >
       <div className="w-full px-6 md:px-16 lg:px-24 xl:px-32">
         <h2 className="font-poppins text-lg sm:text-xl md:text-2xl lg:text-3xl font-extrabold mb-4 md:mb-6 tracking-tight pink-cyan-text">
-          Customer Highlights
+          Client Success Gallery
         </h2>
 
         <div className="grid grid-cols-3 gap-4 md:gap-6">
@@ -206,7 +206,7 @@ export function CustomerHighlights() {
                 className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center animate-in fade-in zoom-in-95 duration-200"
                 style={{
                   background:
-                    "linear-gradient(to top, rgba(255,45,120,0.85) 0%, rgba(176,32,255,0.45) 100%)",
+                    "rgba(247,248,45,0.85)",
                 }}
               >
                 <div className="p-3 text-white flex flex-col items-center gap-1.5">
@@ -291,7 +291,7 @@ export function CustomerHighlights() {
               onTouchMove={handleTouchMove}
               onTouchEnd={handleTouchEnd}
             >
-              <img
+              <Image
                 ref={imageRef}
                 src={customerPhotos[activePhotoIndex].image}
                 alt={`Customer highlight ${activePhotoIndex + 1}`}

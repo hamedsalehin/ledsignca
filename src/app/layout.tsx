@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Open_Sans, Poppins } from "next/font/google";
 import "./globals.css";
 import { ClientBody } from "./ClientBody";
+import Script from "next/script";
 
 const openSans = Open_Sans({
   subsets: ["latin"],
@@ -21,19 +22,19 @@ export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
   maximumScale: 5,
-  themeColor: "#ff2d78",
+  themeColor: "#f7f82d",
 };
 
 export const metadata: Metadata = {
-  title: "Premium Custom Signage, Led signs & Banners Fort Lauderdale. FL | Nano Signs",
+  title: "Premium Custom Signage, Led signs & Banners Toronto, ON | Nano Signs",
   description:
-    "Design and order custom signs, LED signs, retractable banners, business cards and all other marketing materials online or in person. Fastest turnaround times in broward.",
+    "Design and order custom signs, LED signs, retractable banners, business cards and all other marketing materials online or in person. Fastest turnaround times in Toronto.",
   icons: {
-    icon: "/images/nano logo O.png",
-    apple: "/images/nano logo O.png",
+    icon: "/images/nano logo O-toronto-printing-ca.png",
+    apple: "/images/nano logo O-toronto-printing-ca.png",
   },
   alternates: {
-    canonical: "https://nano-signs.com",
+    canonical: "https://led-sign.ca",
   },
 };
 
@@ -46,8 +47,8 @@ export default function RootLayout({
     <html lang="en" className={`${openSans.variable} ${poppins.variable}`}>
       <head>
         {/* Google tag (gtag.js) */}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-8N8L6WV8RE"></script>
-        <script dangerouslySetInnerHTML={{
+        <Script strategy="afterInteractive" src="https://www.googletagmanager.com/gtag/js?id=G-8N8L6WV8RE" />
+        <Script id="google-analytics" strategy="afterInteractive" dangerouslySetInnerHTML={{
           __html: `
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
@@ -63,23 +64,23 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "LocalBusiness",
               "name": "Nano Signs",
-              "image": "https://nano-signs.com/images/nano%20logo%20complete.png",
+              "image": "https://nano-signs.com/images/nano%20logo%20complete-toronto-printing-ca.png",
               "@id": "https://nano-signs.com/#localbusiness",
               "url": "https://nano-signs.com",
-              "telephone": "305-967-1005",
+              "telephone": "+1 416-838-8994",
               "priceRange": "$$",
               "address": {
                 "@type": "PostalAddress",
-                "streetAddress": "4567 Powerline Rd",
-                "addressLocality": "Oakland Park",
-                "addressRegion": "FL",
-                "postalCode": "33309",
-                "addressCountry": "US"
+                "streetAddress": "2190 Warden Ave",
+                "addressLocality": "Scarborough",
+                "addressRegion": "ON",
+                "postalCode": "M1T 1V6",
+                "addressCountry": "CA"
               },
               "geo": {
                 "@type": "GeoCoordinates",
-                "latitude": 26.1835062,
-                "longitude": -80.1554943
+                "latitude": 43.6532,
+                "longitude": -79.3832
               },
               "openingHoursSpecification": {
                 "@type": "OpeningHoursSpecification",

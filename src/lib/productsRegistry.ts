@@ -32,50 +32,50 @@ export const PRODUCTS_REGISTRY: Record<string, RegistryCategory> = {
   "custom-banners": {
     title: "Custom Banners",
     breadcrumbLabel: "Custom Banners",
-    heroSubtitle: "Big Impact. Quick Production. Durable.",
+    heroSubtitle: "Maximum Visibility. Rapid Turnaround. Built to Last.",
     description:
-      "High-quality custom banners for any occasion. From outdoor vinyl to professional retractable displays, we have the perfect solution for your business or event.",
-    heroImage: "/images/products/main%20page/banners%20hero%20image.png",
-    tabletHeroImage: "/images/products/main%20page/banners%20hero%20image.png",
-    mobileHeroImage: "/images/products/main%20page/banners%20hero%20image.png",
+      "Premium printed banners for every event. Whether you need rugged outdoor vinyl or sleek retractable displays, we deliver the perfect branding solution.",
+    heroImage: "/images/products/main%20page/banners%20hero%20image-toronto-printing-ca.png",
+    tabletHeroImage: "/images/products/main%20page/banners%20hero%20image-toronto-printing-ca.png",
+    mobileHeroImage: "/images/products/main%20page/banners%20hero%20image-toronto-printing-ca.png",
     reviewRating: "4.9",
     reviewCount: "2,680",
     reviewQuote:
-      "The vinyl banner quality blew us away — vivid colors, sturdy grommets, and it arrived the next day. Already reordering for our next event!",
+      "Absolutely stunning print quality—the colors pop perfectly and the materials are super durable. Arrived lightning fast!",
     categoryDescriptionText:
-      "Discover high-impact custom banners designed to capture attention in any setting. Whether you need heavy-duty outdoor vinyl banners to weather the elements, mesh banners for high-wind fences, premium fabric banners for trade shows, or retractable roll-up displays for quick events, we have you covered. All banners are printed using state-of-the-art printers with vibrant, fade-resistant UV inks.",
+      "Explore our comprehensive range of high-definition custom banners. From weatherproof vinyl and wind-resistant mesh for construction fences to luxurious fabric backdrops and portable roll-up stands, Nano Signs delivers it all. Every banner is produced in-house using advanced printing technology and UV-resistant inks.",
     categorySecondaryImage:
-      "/images/products/main%20page/banners_desc.png",
+      "/images/products/main%20page/banners_desc-toronto-printing-ca.png",
     faqs: [
       {
-        q: "What is the difference between vinyl and fabric banners?",
-        a: "Vinyl banners are highly durable and water-resistant, making them ideal for outdoor advertising. Fabric banners offer a premium, non-glare matte finish which is excellent for indoor displays, photo backdrops, and trade shows. Fabric banners are also machine washable.",
+        q: "How do vinyl and fabric banners differ?",
+        a: "Vinyl is a heavy-duty, waterproof material perfect for exterior use. Fabric provides an elegant, glare-free finish suited for trade shows and indoor events, plus it can be washed.",
       },
       {
-        q: "Do the banners come with grommets for hanging?",
-        a: "Yes, our vinyl and fabric banners come with optional metal brass grommets pre-installed around the perimeter at no extra charge, allowing for easy hanging with ropes, bungee cords, or zip ties.",
+        q: "Are mounting grommets included?",
+        a: "Absolutely. We install durable brass grommets along the edges of our vinyl and fabric banners at no additional cost for effortless mounting.",
       },
       {
-        q: "Are retractable banners suitable for outdoor use?",
-        a: "Retractable banners are primarily designed for indoor use. They can be used outdoors in calm, dry weather, but wind can easily blow them over due to their lightweight standing structure.",
+        q: "Can I use roll-up banners outside?",
+        a: "Roll-up stands are intended for indoor environments. While they can survive briefly outside on calm days, their lightweight base makes them susceptible to wind.",
       },
     ],
     products: [
       {
         id: "vinyl-banners",
         name: "Vinyl Banners",
-        description: "Durable and weather-resistant for indoor or outdoor use.",
-        image: "/images/products/main%20page/vinyl_banner.png",
-        price: "Starting at $12.99",
+        description: "Rugged, weatherproof banners perfect for any environment.",
+        image: "/images/products/main%20page/vinyl_banner-toronto-printing-ca.png",
+        price: "Starting at CAD 12.99",
         badge: "Most Popular",
         config: {
           title: "Custom Vinyl Banners",
           subtitle:
-            "Durable, waterproof, outdoor-rated vinyl banners complete with grommets or pole pockets.",
+            "Heavy-duty, weather-resistant vinyl prints finished with your choice of grommets or pole pockets.",
           breadcrumb: "Banners",
           breadcrumbHref: "/custom-banners",
-          promoText: "20% OFF ALL VINYL BANNERS - SHIPS NEXT DAY",
-          image: "/images/products/main%20page/vinyl_banner.png",
+          promoText: "20% OFF ALL VINYL BANNERS - FAST SHIPPING",
+          image: "/images/products/main%20page/vinyl_banner-toronto-printing-ca.png",
           ratingCount: "1,530",
           ratingScore: "4.8",
           sizes: [
@@ -151,23 +151,23 @@ export const PRODUCTS_REGISTRY: Record<string, RegistryCategory> = {
         id: "fabric-banners",
         name: "Fabric Banners",
         description:
-          "Dye-sub polyester with a premium, wrinkle-free matte finish.",
-        image: "/images/products/main%20page/fabric_banner.png",
-        price: "Starting at $45.99",
+          "Wrinkle-resistant dye-sublimation polyester with a matte look.",
+        image: "/images/products/main%20page/fabric_banner-toronto-printing-ca.png",
+        price: "Starting at CAD 45.99",
         badge: "Premium",
         config: {
           title: "Custom Fabric Banners",
           subtitle:
-            "Dye-sublimation printed on premium wrinkle-free knit polyester fabric.",
+            "High-end dye-sub printed graphics on washable knit fabric.",
           breadcrumb: "Banners",
           breadcrumbHref: "/custom-banners",
-          promoText: "20% OFF PREMIUM FABRIC BANNERS",
-          image: "/images/products/main%20page/fabric_banner.png",
+          promoText: "20% OFF LUXURY FABRIC BANNERS",
+          image: "/images/products/main%20page/fabric_banner-toronto-printing-ca.png",
           images: [
-            "/images/products/main%20page/fabric_banner.png",
-            "/images/products/gallery/fabric_banner_use_1.png",
-            "/images/products/gallery/fabric_banner_use_1.png",
-            "/images/products/gallery/fabric_banner_use_1.png",
+            "/images/products/main%20page/fabric_banner-toronto-printing-ca.png",
+            "/images/products/gallery/fabric_banner_use_1-toronto-printing-ca.png",
+            "/images/products/gallery/fabric_banner_use_1-toronto-printing-ca.png",
+            "/images/products/gallery/fabric_banner_use_1-toronto-printing-ca.png",
           ],
           ratingCount: "980",
           ratingScore: "4.9",
@@ -245,17 +245,17 @@ export const PRODUCTS_REGISTRY: Record<string, RegistryCategory> = {
         name: "Mesh Banners",
         description:
           "Perforated vinyl that allows wind to pass through, ideal for fences.",
-        image: "/images/products/main%20page/mesh_banner.png",
-        price: "Starting at $42.99",
+        image: "/images/products/main%20page/mesh_banner-toronto-printing-ca.png",
+        price: "Starting at CAD 42.99",
         badge: "Wind-Resistant",
         config: {
           title: "Custom Mesh Banners",
           subtitle:
-            "Perforated vinyl mesh allows wind to blow right through, perfect for fence lines.",
+            "Breathable perforated mesh vinyl designed to let wind pass freely, ideal for outdoor enclosures.",
           breadcrumb: "Banners",
           breadcrumbHref: "/custom-banners",
           promoText: "20% OFF ALL MESH FENCE BANNERS",
-          image: "/images/products/main%20page/mesh_banner.png",
+          image: "/images/products/main%20page/mesh_banner-toronto-printing-ca.png",
           ratingCount: "680",
           ratingScore: "4.8",
           sizes: [
@@ -287,7 +287,7 @@ export const PRODUCTS_REGISTRY: Record<string, RegistryCategory> = {
               ],
             },
           ],
-          qtyDiscount: "Volume discounts for construction zones & boundaries",
+          qtyDiscount: "Bulk pricing available for large construction and boundary orders",
           keyFeatures: [
             "70/30 air flow pass-through design",
             "Reduces wind load stress on fences",
@@ -302,8 +302,8 @@ export const PRODUCTS_REGISTRY: Record<string, RegistryCategory> = {
           specs: [{ key: "Material", value: "8oz PVC Mesh Vinyl" }],
           faqs: [],
           reviews: [],
-          ctaHeading: "Secure your mesh fence banner",
-          ctaBody: "Print logos and renderings to fence lines.",
+          ctaHeading: "Order your breathable fence banner",
+          ctaBody: "Apply custom graphics and safety warnings to your site perimeter.",
           ctaLabel: "Customize Mesh Banner",
         },
       },
@@ -311,17 +311,17 @@ export const PRODUCTS_REGISTRY: Record<string, RegistryCategory> = {
         id: "pole-banners",
         name: "Pole Banners",
         description:
-          "Street-pole double sided banners with pockets for outdoor municipal displays.",
-        image: "/images/products/main%20page/pole_banner.png",
-        price: "Starting at $29.99",
+          "Twin-sided boulevard banners featuring integrated pockets for lamppost mounting.",
+        image: "/images/products/main%20page/pole_banner-toronto-printing-ca.png",
+        price: "Starting at CAD 29.99",
         config: {
           title: "Custom Pole Banners",
           subtitle:
-            "Double-sided heavy duty pole banners finished with pole pockets for light posts and boulevard mounts.",
+            "Commercial-grade, dual-sided street banners engineered with mounting sleeves for urban light poles.",
           breadcrumb: "Banners",
           breadcrumbHref: "/custom-banners",
           promoText: "20% OFF STREET & BOULEVARD POLE BANNERS",
-          image: "/images/products/main%20page/pole_banner.png",
+          image: "/images/products/main%20page/pole_banner-toronto-printing-ca.png",
           ratingCount: "210",
           ratingScore: "4.7",
           sizes: [
@@ -353,11 +353,11 @@ export const PRODUCTS_REGISTRY: Record<string, RegistryCategory> = {
               ],
             },
           ],
-          qtyDiscount: "Save up to 12% on municipal boulevard orders",
+          qtyDiscount: "Municipal discounts available for bulk avenue orders",
           keyFeatures: [
-            "Heavy 18oz blockout vinyl prevents light show-through",
-            "Double-sided prints",
-            "Reinforced pole pocket sleeves",
+            "Opaque 18oz blockout material stops light penetration",
+            "Printed on both sides",
+            "Durable mounting sleeves",
           ],
           useCases: [
             "Main street lamppost decorations",
@@ -370,8 +370,8 @@ export const PRODUCTS_REGISTRY: Record<string, RegistryCategory> = {
           ],
           faqs: [],
           reviews: [],
-          ctaHeading: "Decorate your boulevard poles",
-          ctaBody: "Print double-sided advertising layouts today.",
+          ctaHeading: "Enhance your streetscape",
+          ctaBody: "Create striking dual-sided graphics for city lampposts.",
           ctaLabel: "Customize Pole Banner",
         },
       },
@@ -379,17 +379,17 @@ export const PRODUCTS_REGISTRY: Record<string, RegistryCategory> = {
         id: "breakaway-banners",
         name: "Breakaway Banners",
         description:
-          "Run-through spirit banners for sports games with center Velcro seam.",
-        image: "/images/products/main%20page/breakaway_banner.png",
-        price: "Starting at $34.99",
+          "Tear-away sports entrance banners featuring a reusable hook-and-loop center.",
+        image: "/images/products/main%20page/breakaway_banner-toronto-printing-ca.png",
+        price: "Starting at CAD 34.99",
         config: {
           title: "Custom Breakaway Banners",
           subtitle:
-            "Reusable sports run-through banners with Velcro center seams, perfect for team entrances.",
+            "Dynamic team run-through banners built with a split center for dramatic field entrances.",
           breadcrumb: "Banners",
           breadcrumbHref: "/custom-banners",
           promoText: "20% OFF SCHOOL SPIRIT BREAKAWAYS",
-          image: "/images/products/main%20page/breakaway_banner.png",
+          image: "/images/products/main%20page/breakaway_banner-toronto-printing-ca.png",
           ratingCount: "135",
           ratingScore: "4.8",
           sizes: [
@@ -416,7 +416,7 @@ export const PRODUCTS_REGISTRY: Record<string, RegistryCategory> = {
               ],
             },
           ],
-          qtyDiscount: "Saves with booster club codes",
+          qtyDiscount: "Booster club pricing tiers available",
           keyFeatures: [
             "Reusable hook-and-loop center seam",
             "Vibrant school prints",
@@ -435,7 +435,7 @@ export const PRODUCTS_REGISTRY: Record<string, RegistryCategory> = {
           ],
           faqs: [],
           reviews: [],
-          ctaHeading: "Ignite team spirit",
+          ctaHeading: "Supercharge your team's entrance",
           ctaBody: "Design a reusable sports breakaway banner.",
           ctaLabel: "Customize Breakaway",
         },
@@ -444,17 +444,17 @@ export const PRODUCTS_REGISTRY: Record<string, RegistryCategory> = {
         id: "vertical-banners",
         name: "Vertical Banners",
         description:
-          "Hanging vertical banners for slim storefront pillars or corridor walls.",
-        image: "/images/products/main%20page/vertical_banner.png",
-        price: "Starting at $19.99",
+          "Tall hanging displays tailored for narrow columns and hallway spaces.",
+        image: "/images/products/main%20page/vertical_banner-toronto-printing-ca.png",
+        price: "Starting at CAD 19.99",
         config: {
           title: "Custom Vertical Banners",
           subtitle:
-            "Stately vertical hanging banners for column displays, storefront pillars, and lobby announcements.",
+            "Elegant portrait-oriented banners perfectly sized for architectural columns, tight retail spaces, and entryways.",
           breadcrumb: "Banners",
           breadcrumbHref: "/custom-banners",
           promoText: "20% OFF VERTICAL SIGNS & BANNERS",
-          image: "/images/products/main%20page/vertical_banner.png",
+          image: "/images/products/main%20page/vertical_banner-toronto-printing-ca.png",
           ratingCount: "290",
           ratingScore: "4.7",
           sizes: [
@@ -500,7 +500,7 @@ export const PRODUCTS_REGISTRY: Record<string, RegistryCategory> = {
           specs: [{ key: "Orientation", value: "Strict vertical layout" }],
           faqs: [],
           reviews: [],
-          ctaHeading: "Design vertical banner displays",
+          ctaHeading: "Create pillar-mounted banners",
           ctaBody:
             "Fill vertical pillar assets with clean logos and phone markers.",
           ctaLabel: "Customize Vertical Banner",
@@ -509,23 +509,23 @@ export const PRODUCTS_REGISTRY: Record<string, RegistryCategory> = {
       {
         id: "roll-up-banners",
         name: "Retractable Banners",
-        description: "Portable and easy to set up for trade shows and events.",
-        image: "/images/products/main%20page/retractable_roll_up_banner.png",
-        price: "Starting at $89.00",
+        description: "Lightweight and instantly deployable roll-up stands for exhibitions.",
+        image: "/images/products/main%20page/retractable_roll_up_banner-toronto-printing-ca.png",
+        price: "Starting at CAD 89.00",
         badge: "Best Seller",
         config: {
           title: "Retractable Banners (Roll Up)",
           subtitle:
-            "Portable stand and pre-installed banner, rolls up in seconds for easy transport.",
+            "Self-contained retractable display system that deploys instantly for on-the-go marketing.",
           breadcrumb: "Banners",
           breadcrumbHref: "/custom-banners",
           promoText: "20% OFF RETRACTABLE ROLL-UP BANNERS",
-          image: "/images/products/main%20page/retractable_roll_up_banner.png",
+          image: "/images/products/main%20page/retractable_roll_up_banner-toronto-printing-ca.png",
           images: [
-            "/images/products/main%20page/retractable_roll_up_banner.png",
-            "/images/products/gallery/retractable_use_1.png",
-            "/images/products/gallery/retractable_use_2.png",
-            "/images/products/gallery/retractable_use_3.png",
+            "/images/products/main%20page/retractable_roll_up_banner-toronto-printing-ca.png",
+            "/images/products/gallery/retractable_use_1-toronto-printing-ca.png",
+            "/images/products/gallery/retractable_use_2-toronto-printing-ca.png",
+            "/images/products/gallery/retractable_use_3-toronto-printing-ca.png",
           ],
           ratingCount: "1240",
           ratingScore: "4.9",
@@ -590,59 +590,59 @@ export const PRODUCTS_REGISTRY: Record<string, RegistryCategory> = {
               value: "Anodized aluminum body with fold-out feet",
             },
           ],
-          description: `Maximize your brand visibility at trade shows, retail storefronts, conferences, and exhibitions with our premium Custom Retractable Roll Up Banners. These portable banner displays are the gold standard for high-impact offline marketing, offering a seamless blend of durability, convenience, and visual appeal. 
+          description: `Elevate your corporate presence at conventions, retail spaces, and corporate events with our elite Retractable Roll-Up Stands. These self-contained exhibition displays represent the pinnacle of portable advertising, fusing rugged reliability with effortless assembly and striking aesthetics. 
 
-Every retractable banner stand comes pre-assembled with your custom-printed graphic rolled inside a sturdy, lightweight aluminum cassette. Setup takes under 60 seconds—simply extend the vertical support pole, pull up the banner graphic, and lock it into place. Whether you need custom trade show signage or a permanent retail display, our roll up stands are built to last.
+Each unit is delivered fully assembled, housing your bespoke graphics safely within a protective aluminum base. Deployment is incredibly rapid—just raise the telescopic mast, extract the graphic panel, and secure it. From temporary promotional kiosks to permanent lobby directories, these stands deliver enduring performance.
 
-Our banners are printed on curl-free, light-blocking polyester grayback film. This prevents the edges of the banner from curling over time and ensures that light does not shine through from behind, keeping your message fully legible under bright exhibition lights. With next-day banner printing options, we help you get event-ready at a moment's notice.
+We manufacture these displays using an advanced anti-curl, block-out polyester substrate. This specialized material completely stops edge curling and prevents background light from washing out your design, guaranteeing a crisp, professional look in any lighting environment. With our rapid turnaround times, you'll always be prepared for your next show.
 
-Why Choose Our Professional Rollup Banners?
-- Premium Anti-Curl Material: Printed on smooth, opaque blockout film for a clean, flat presentation.
+Advantages of our Roll-Up Systems:
+- Superior Anti-Curl Substrate: Engineered to hang perfectly flat without bowing.
 - Heavy-Duty Cassette: Anodized aluminum base with fold-out stabilizing feet for reliable outdoor and indoor standee stability.
 - Effortless Portability: A padded travel carrying case is included with every order, making transportation a breeze.
 - Dynamic Visual Impact: High-resolution UV printing at 1440 DPI delivers vivid, fade-resistant colors that stand out across crowded halls.`,
           faqs: [
             {
-              q: "How do I set up a retractable roll up banner?",
-              a: "Setting up your pull up banner is incredibly simple. Unpack the aluminum base, turn out the stabilizing feet, insert the support pole into the base slot, and then pull the banner up gently and attach it to the top hook of the pole. The entire process takes less than a minute.",
+              q: "What is the setup process for a pull-up banner?",
+              a: "Assembly is effortless. Simply fold out the base feet, insert the telescopic mast, and pull the graphic upward to hook it onto the top. You'll be ready in seconds.",
             },
             {
-              q: "What material is used for the rollup banner graphic?",
-              a: "We use a premium curl-free polyester film with a blockout greyback coating. This professional material ensures your graphics remain completely flat and prevents rear light show-through, ensuring maximum legibility under bright trade show lighting.",
+              q: "Which substrate is printed on?",
+              a: "We utilize an elite anti-curl polyester with an opaque blockout backing. This guarantees a flawlessly flat display while preventing rear illumination from washing out your artwork.",
             },
             {
-              q: "Can I replace the banner graphic in my existing retractable stand?",
-              a: "Yes, the graphic can be replaced, but it requires tensioning the internal spring mechanism of the aluminum cassette. We recommend sending it to our print facility or purchasing a new stand bundle for the best results.",
+              q: "Can I swap the graphics later?",
+              a: "While possible, changing the print requires accessing the tension spring mechanism inside the base. For optimal results, we suggest ordering a complete new unit.",
             },
             {
-              q: "What is the difference between standard and professional stands?",
-              a: "Standard stands feature swing-out stabilizing feet that extend from the front and back of the aluminum base. Professional luxury stands have a wider, heavier teardrop-shaped base that stands stable on its own without visible swing-out feet, offering a cleaner look.",
+              q: "How do standard and luxury models differ?",
+              a: "Standard units rely on swing-out feet for balance. Our luxury professional models feature an elegant, heavy teardrop base that stands firmly without exposed feet.",
             },
             {
-              q: "Is the roll up banner suitable for outdoor use?",
-              a: "Retractable banners are designed primarily for indoor applications. They can be used outdoors in calm, dry conditions, but because of their tall profile, wind can act as a sail and tip the stand. For outdoor promotions, we recommend our heavy-duty feather flags or mesh banners.",
+              q: "Are these rated for outdoor use?",
+              a: "These stands are engineered for indoor environments. Wind can easily catch the large graphic panel and topple the unit. For outdoor displays, consider our feather flags or A-frames.",
             },
           ],
           reviews: [
             {
               author: "Marcus K., Event Director",
               rating: 5,
-              text: "The custom rollup banner exceeded our expectations. The greyback film is completely blockout and doesn't curl at all. Set up was a breeze at our conference booth.",
+              text: "Incredible hardware and print fidelity. The blockout material genuinely prevents curling, and the assembly takes seconds!",
             },
             {
               author: "Sarah J., Retail Manager",
               rating: 5,
-              text: "Absolute lifesaver! Ordered with next day banner printing and it arrived right on time for our store opening. The print colors are stunningly bright.",
+              text: "Absolute lifesaver! Arrived exactly when we needed it for our new product launch, and the vivid colors draw customers right in.",
             },
             {
               author: "David T., Startup Founder",
               rating: 5,
-              text: "Excellent quality trade show banner stand. We've used it at three separate events now and the aluminum retracting mechanism still works perfectly.",
+              text: "Flawless trade show display. We've hauled this unit across the country to multiple expos and the retracting spring is still strong.",
             },
           ],
-          ctaHeading: "Ready to make an impression?",
+          ctaHeading: "Launch your portable promotion",
           ctaBody:
-            "Order a retractable banner stand and roll out your messages quickly.",
+            "Deploy professional pull-up stands for your next event.",
           ctaLabel: "Customize Retractable Banner",
         },
       },
@@ -650,17 +650,17 @@ Why Choose Our Professional Rollup Banners?
         id: "x-banner-stands",
         name: "X-Banner Stands",
         description:
-          "Collapsible lightweight cross stands with custom printed corner-grommet banners.",
-        image: "/images/products/main%20page/x_banner_stand.png",
-        price: "Starting at $49.99",
+          "Ultra-lightweight tension frames paired with grommeted display prints.",
+        image: "/images/products/main%20page/x_banner_stand-toronto-printing-ca.png",
+        price: "Starting at CAD 49.99",
         config: {
           title: "X-Frame Banner Stands",
           subtitle:
-            "Highly cost-effective standing banners utilizing tension fiberglass arms to pull banner corners taut.",
+            "Economical free-standing graphics supported by flexible fiberglass tension arms.",
           breadcrumb: "Banners",
           breadcrumbHref: "/custom-banners",
           promoText: "20% OFF BUDGET X-BANNER DISPLAYS",
-          image: "/images/products/main%20page/x_banner_stand.png",
+          image: "/images/products/main%20page/x_banner_stand-toronto-printing-ca.png",
           ratingCount: "385",
           ratingScore: "4.7",
           sizes: [
@@ -702,7 +702,7 @@ Why Choose Our Professional Rollup Banners?
           specs: [{ key: "Material", value: "13oz Matte PVC Vinyl" }],
           faqs: [],
           reviews: [],
-          ctaHeading: "Promote on a budget",
+          ctaHeading: "Cost-effective standing displays",
           ctaBody: "Order lightweight X-stands that fold down flat in seconds.",
           ctaLabel: "Customize X-Stand Banner",
         },
@@ -711,23 +711,23 @@ Why Choose Our Professional Rollup Banners?
         id: "step-and-repeat-banners",
         name: "Backdrop Banners",
         description:
-          "Ideal for red carpet events, photo backdrops and press conferences.",
-        image: "/images/products/main%20page/backdrop_banners.png",
-        price: "Starting at $145.99",
+          "Perfect for step-and-repeat photography, VIP entryways, and media walls.",
+        image: "/images/products/main%20page/backdrop_banners-toronto-printing-ca.png",
+        price: "Starting at CAD 145.99",
         badge: "Event Ready",
         config: {
           title: "Backdrop Banners",
           subtitle:
-            "Professional background banners for press walls, photo shoots, and red carpets.",
+            "Massive seamless backwalls engineered for high-profile events and corporate photography.",
           breadcrumb: "Banners",
           breadcrumbHref: "/custom-banners",
           promoText: "20% OFF STEP AND REPEAT PRESS WALLS",
-          image: "/images/products/main%20page/backdrop_banners.png",
+          image: "/images/products/main%20page/backdrop_banners-toronto-printing-ca.png",
           images: [
-            "/images/products/main%20page/backdrop_banners.png",
-            "/images/products/gallery/step_repeat_use_1.png",
-            "/images/products/gallery/step_repeat_use_2.png",
-            "/images/products/gallery/step_repeat_use_3.png",
+            "/images/products/main%20page/backdrop_banners-toronto-printing-ca.png",
+            "/images/products/gallery/step_repeat_use_1-toronto-printing-ca.png",
+            "/images/products/gallery/step_repeat_use_2-toronto-printing-ca.png",
+            "/images/products/gallery/step_repeat_use_3-toronto-printing-ca.png",
           ],
           ratingCount: "430",
           ratingScore: "4.8",
@@ -785,17 +785,17 @@ Why Choose Our Professional Rollup Banners?
         id: "tabletop-retractable-banners",
         name: "Tabletop Retractables",
         description:
-          "Miniature counter-top roll up banners for checkout registries and lobbies.",
-        image: "/images/products/main%20page/tabletop_retractable.jpg",
-        price: "Starting at $29.99",
+          "Compact pull-up displays tailored for point-of-sale desks and reception areas.",
+        image: "/images/products/main%20page/tabletop_retractable-toronto-printing-ca.jpg",
+        price: "Starting at CAD 29.99",
         config: {
           title: "Tabletop Retractable Banners",
           subtitle:
-            "Mini roll-up banners designed to sit on tables, point-of-sale registers, and service desks.",
+            "Desktop-sized retractable units ideal for close-up marketing and service counters.",
           breadcrumb: "Banners",
           breadcrumbHref: "/custom-banners",
           promoText: "20% OFF TABLETOP RETRACTABLE DISPLAYS",
-          image: "/images/products/main%20page/tabletop_retractable.jpg",
+          image: "/images/products/main%20page/tabletop_retractable-toronto-printing-ca.jpg",
           ratingCount: "420",
           ratingScore: "4.8",
           sizes: [
@@ -852,23 +852,23 @@ Why Choose Our Professional Rollup Banners?
   "custom-flags": {
     title: "Custom Flags",
     breadcrumbLabel: "Custom Flags",
-    heroSubtitle: "All-Weather. Quick Production. Affordable.",
+    heroSubtitle: "Weatherproof. High-Visibility. Cost-Effective.",
     description:
-      "Catch the attention of passing traffic with high-impact outdoor flags. Perfect for grand openings, store front promotions, and events.",
-    heroImage: "/images/products/main%20page/nano hero flag section.png",
-    tabletHeroImage: "/images/products/main%20page/nano hero flag section.png",
-    mobileHeroImage: "/images/products/main%20page/nano hero flag section.png",
+      "Seize roadside attention with towering custom flags. Exceptionally effective for retail storefronts, auto dealers, and outdoor festivals.",
+    heroImage: "/images/products/main%20page/nano hero flag section-toronto-printing-ca.png",
+    tabletHeroImage: "/images/products/main%20page/nano hero flag section-toronto-printing-ca.png",
+    mobileHeroImage: "/images/products/main%20page/nano hero flag section-toronto-printing-ca.png",
     reviewRating: "4.8",
     reviewCount: "1,920",
     reviewQuote:
-      "The feather flags are so vibrant and eye-catching! Setup was effortless and they've survived multiple rainstorms without any fading.",
+      "These flags transformed our street presence! The colors are incredibly rich, and the hardware easily withstands harsh Canadian weather.",
     categoryDescriptionText:
-      "Draw crowds and increase outdoor visibility with premium custom flags printed to last. Designed to withstand wind, rain, and intense sun, our custom advertising flags are constructed from lightweight, high-density knit polyester that ensures rich colors and single or double-sided visibility. Complete with heavy-duty composite fiberglass poles and ground stakes or solid steel cross stands.",
-    categorySecondaryImage: "/images/products/main%20page/flags_desc.png",
+      "Amplify your physical foot traffic with our towering outdoor advertising flags. Engineered to survive heavy wind loads and UV exposure, our flags are printed on advanced knit polyester for striking single or double-sided visuals. Each kit can be paired with premium carbon-fiber poles and various sturdy base mounts.",
+    categorySecondaryImage: "/images/products/main%20page/flags_desc-toronto-printing-ca.png",
     faqs: [
       {
         q: "What types of custom flags do you offer?",
-        a: "We offer a wide range of custom flags to suit any need, including standing styles like feather flags, teardrop flags, straight flags, and stick flags, as well as hanging options like standard flags and pennant flags.",
+        a: "We provide an extensive selection of promotional flags including feather, teardrop, and rectangular designs.",
       },
       {
         q: "Can I customize both the design and size of my flag?",
@@ -896,18 +896,18 @@ Why Choose Our Professional Rollup Banners?
         id: "feather-flags",
         name: "Feather Flags",
         description:
-          "Eye-catching fluttering flags designed to draw crowds from the roadside.",
-        image: "/images/products/main%20page/feather_flag.png",
-        price: "Starting at $80.00",
+          "Dynamic wind-driven sail flags engineered to capture roadside attention.",
+        image: "/images/products/main%20page/feather_flag-toronto-printing-ca.png",
+        price: "Starting at CAD 80.00",
         badge: "Best Seller",
         config: {
           title: "Custom Feather Flags",
           subtitle:
-            "Outdoor advertising flags printed on durable knit polyester, complete with poles and hardware.",
+            "Towering promotional flutter flags crafted from heavy-duty mesh fabric, ready for outdoor mounting.",
           breadcrumb: "Flags",
           breadcrumbHref: "/custom-flags",
           promoText: "20% OFF ALL ADVERTISING FLAGS - SHIPS NEXT DAY",
-          image: "/images/products/main%20page/feather_flag.png",
+          image: "/images/products/main%20page/feather_flag-toronto-printing-ca.png",
           ratingCount: "820",
           ratingScore: "4.8",
           sizes: [
@@ -943,7 +943,7 @@ Why Choose Our Professional Rollup Banners?
                   description: "Select if you already have a pole.",
                 },
                 {
-                  label: "Include Pole (+$35.00)",
+                  label: "Include Pole (+CAD 35.00)",
                   value: "pole",
                   priceAdder: 35.00,
                   description: "Premium carbon-fiberglass pole.",
@@ -959,31 +959,31 @@ Why Choose Our Professional Rollup Banners?
                   priceAdder: 0,
                 },
                 {
-                  label: "Ground Stake (+$40.00)",
+                  label: "Ground Stake (+CAD 40.00)",
                   value: "stake",
                   priceAdder: 40.00,
                   description: "Classic stake for soil or grass.",
                 },
                 {
-                  label: "Cross Base (+$55.00)",
+                  label: "Cross Base (+CAD 55.00)",
                   value: "cross",
                   priceAdder: 55.00,
                   description: "Standard folding cross base.",
                 },
                 {
-                  label: "CS-01 Metal Cross Base (+$65.00)",
+                  label: "CS-01 Metal Cross Base (+CAD 65.00)",
                   value: "cs01",
                   priceAdder: 65.00,
                   description: "Heavy duty metal cross base.",
                 },
                 {
-                  label: "CS-02 Cross Base (+$45.00)",
+                  label: "CS-02 Cross Base (+CAD 45.00)",
                   value: "cs02",
                   priceAdder: 45.00,
                   description: "Standard economy cross base.",
                 },
                 {
-                  label: "GS-01 Ground Spike (+$45.00)",
+                  label: "GS-01 Ground Spike (+CAD 45.00)",
                   value: "gs01",
                   priceAdder: 45.00,
                   description: "Heavy duty ground spike.",
@@ -999,13 +999,13 @@ Why Choose Our Professional Rollup Banners?
                   priceAdder: 0,
                 },
                 {
-                  label: "Water Bag (+$10.00)",
+                  label: "Water Bag (+CAD 10.00)",
                   value: "water_bag_10",
                   priceAdder: 10.00,
                   description: "Adds stability for cross bases.",
                 },
                 {
-                  label: "WF-08 Water Bag (+$14.00)",
+                  label: "WF-08 Water Bag (+CAD 14.00)",
                   value: "wf08",
                   priceAdder: 14.00,
                   description: "Premium donut water weight bag.",
@@ -1021,7 +1021,7 @@ Why Choose Our Professional Rollup Banners?
                   priceAdder: 0,
                 },
                 {
-                  label: "Flag Carry Bag (+$45.00)",
+                  label: "Flag Carry Bag (+CAD 45.00)",
                   value: "carry_bag",
                   priceAdder: 45.00,
                   description: "Convenient travel bag for hardware.",
@@ -1116,17 +1116,17 @@ Why Choose Our Professional Rollup Banners?
         id: "teardrop-flags",
         name: "Teardrop Flags",
         description:
-          "Elegant teardrop shape that remains taut and visible even in low wind conditions.",
-        image: "/images/products/main%20page/teardrop_flag.png",
-        price: "Starting at $49.68",
+          "Distinctive drop-shaped banners engineered to maintain full graphic tension without wind.",
+        image: "/images/products/main%20page/teardrop_flag-toronto-printing-ca.png",
+        price: "Starting at CAD 49.68",
         config: {
           title: "Custom Teardrop Flags",
           subtitle:
-            "Beautiful drop-shaped flags designed to stay open and display your logo clearly.",
+            "Eye-catching curved sail flags that guarantee your branding remains visible and legible at all times.",
           breadcrumb: "Flags",
           breadcrumbHref: "/custom-flags",
           promoText: "20% OFF ALL TEARDROP FLAGS",
-          image: "/images/products/main%20page/teardrop_flag.png",
+          image: "/images/products/main%20page/teardrop_flag-toronto-printing-ca.png",
           ratingCount: "432",
           ratingScore: "4.7",
           sizes: [
@@ -1185,9 +1185,9 @@ Why Choose Our Professional Rollup Banners?
               text: "The print colors are very rich. Easy to assemble, and looks extremely professional.",
             },
           ],
-          ctaHeading: "Get noticed with a teardrop flag",
+          ctaHeading: "Command attention with teardrop banners",
           ctaBody:
-            "Start designing online in minutes and make a bold statement.",
+            "Launch your custom curved banner design instantly.",
           ctaLabel: "Customize Teardrop Flag",
         },
       },
@@ -1195,17 +1195,17 @@ Why Choose Our Professional Rollup Banners?
         id: "straight-flags",
         name: "Straight Flags",
         description:
-          "Classic rectangular standing flags that offer a large design canvas.",
-        image: "/images/products/main%20page/straight_flag.png",
-        price: "Starting at $54.37",
+          "Traditional vertical rectangle flags providing maximum printable surface area.",
+        image: "/images/products/main%20page/straight_flag-toronto-printing-ca.png",
+        price: "Starting at CAD 54.37",
         config: {
           title: "Custom Straight Flags",
           subtitle:
-            "Stately rectangular standing flags perfect for business branding and signage.",
+            "Bold rectangular upright flags engineered for dominant roadside marketing.",
           breadcrumb: "Flags",
           breadcrumbHref: "/custom-flags",
           promoText: "20% OFF STRAIGHT ADVERTISING FLAGS",
-          image: "/images/products/main%20page/straight_flag.png",
+          image: "/images/products/main%20page/straight_flag-toronto-printing-ca.png",
           ratingCount: "295",
           ratingScore: "4.7",
           sizes: [
@@ -1244,8 +1244,8 @@ Why Choose Our Professional Rollup Banners?
           specs: [{ key: "Material", value: "110g Knit Polyester" }],
           faqs: [],
           reviews: [],
-          ctaHeading: "Design your straight flag",
-          ctaBody: "Build your custom flag using our online template catalog.",
+          ctaHeading: "Configure your vertical flag",
+          ctaBody: "Craft your towering rectangular display using our builder.",
           ctaLabel: "Customize Straight Flag",
         },
       },
@@ -1253,22 +1253,22 @@ Why Choose Our Professional Rollup Banners?
         id: "flags",
         name: "Standard Flags",
         description:
-          "Classic horizontal flags with brass grommets, perfect for flagpoles or hanging.",
-        image: "/images/products/main%20page/flags.png",
-        price: "Starting at $38.43",
+          "Traditional grommeted horizontal flags designed for standard pole mounting and wall displays.",
+        image: "/images/products/main%20page/flags-toronto-printing-ca.png",
+        price: "Starting at CAD 38.43",
         config: {
           title: "Standard Custom Flags",
           subtitle:
-            "Fly your colors proud on standard flagpoles, indoor walls, or events.",
+            "Showcase your brand emblem on architectural flagpoles or interior installations.",
           breadcrumb: "Flags",
           breadcrumbHref: "/custom-flags",
           promoText: "20% OFF CUSTOM HANGING FLAGS",
-          image: "/images/products/main%20page/flags.png",
+          image: "/images/products/main%20page/flags-toronto-printing-ca.png",
           images: [
-            "/images/products/main%20page/flags.png",
-            "/images/products/gallery/flag_use_1.png",
-            "/images/products/gallery/flag_use_1.png",
-            "/images/products/gallery/flag_use_1.png",
+            "/images/products/main%20page/flags-toronto-printing-ca.png",
+            "/images/products/gallery/flag_use_1-toronto-printing-ca.png",
+            "/images/products/gallery/flag_use_1-toronto-printing-ca.png",
+            "/images/products/gallery/flag_use_1-toronto-printing-ca.png",
           ],
           ratingCount: "612",
           ratingScore: "4.8",
@@ -1312,9 +1312,9 @@ Why Choose Our Professional Rollup Banners?
           specs: [{ key: "Material", value: "115g Polyester Mesh" }],
           faqs: [],
           reviews: [],
-          ctaHeading: "Design your custom flagpole flag",
+          ctaHeading: "Produce your traditional custom flag",
           ctaBody:
-            "Upload your crest, company emblem, or art to start printing today.",
+            "Submit your corporate logo or family crest to begin manufacturing.",
           ctaLabel: "Customize Flag",
         },
       },
@@ -1322,17 +1322,17 @@ Why Choose Our Professional Rollup Banners?
         id: "pennant-flags",
         name: "Pennant Flags",
         description:
-          "Triangular pennant flags for sports teams, schools, and festive string lines.",
-        image: "/images/products/main%20page/pennant_flag.png",
-        price: "Starting at $51.11",
+          "Classic triangle pennants utilized for collegiate sports and decorative banners.",
+        image: "/images/products/main%20page/pennant_flag-toronto-printing-ca.png",
+        price: "Starting at CAD 51.11",
         config: {
           title: "Custom Pennant Flags",
           subtitle:
-            "Triangle flag pennants for schools, spirit events, and custom promotions.",
+            "Sharp triangular banners built for athletic booster clubs and festive retail atmospheres.",
           breadcrumb: "Flags",
           breadcrumbHref: "/custom-flags",
           promoText: "20% OFF SPIRIT PENNANTS",
-          image: "/images/products/main%20page/pennant_flag.png",
+          image: "/images/products/main%20page/pennant_flag-toronto-printing-ca.png",
           ratingCount: "140",
           ratingScore: "4.7",
           sizes: [
@@ -1365,8 +1365,8 @@ Why Choose Our Professional Rollup Banners?
           specs: [{ key: "Material", value: "Knit Polyester" }],
           faqs: [],
           reviews: [],
-          ctaHeading: "Create your team pennant",
-          ctaBody: "Customize your sports pennant with team logos and colors.",
+          ctaHeading: "Design custom spirit pennants",
+          ctaBody: "Personalize your triangular banner with your mascot and branding.",
           ctaLabel: "Customize Pennant",
         },
       },
@@ -1375,27 +1375,27 @@ Why Choose Our Professional Rollup Banners?
   "vehicle-signs": {
     title: "Custom Vehicle Signs",
     breadcrumbLabel: "Vehicle Signs",
-    heroSubtitle: "Every Mile is an Opportunity.",
+    heroSubtitle: "Transform Your Commute Into Marketing.",
     description:
-      "Turn any vehicle into a mobile billboard. Promote your business on the go with custom car magnets, decals, and truck lettering.",
-    heroImage: "/images/products/main%20page/magnet_hero_image.jpeg",
-    tabletHeroImage: "/images/products/main%20page/magnet_hero_image.jpeg",
-    mobileHeroImage: "/images/products/main%20page/magnet_hero_image.jpeg",
+      "Convert your fleet into moving advertisements. Accelerate brand awareness with localized car magnets, window stickers, and branded plates.",
+    heroImage: "/images/products/main%20page/magnet_hero_image-toronto-printing-ca.jpeg",
+    tabletHeroImage: "/images/products/main%20page/magnet_hero_image-toronto-printing-ca.jpeg",
+    mobileHeroImage: "/images/products/main%20page/magnet_hero_image-toronto-printing-ca.jpeg",
     reviewRating: "4.9",
     reviewCount: "2,150",
     reviewQuote:
-      "Our fleet car magnets look incredibly professional. They stick perfectly at highway speeds and the print quality is showroom-grade.",
+      "These magnetic auto signs are exceptionally reliable. They hold tight on the highway and the vibrant finish grabs attention everywhere.",
     categoryDescriptionText:
-      "Make every commute count with durable vehicle signs custom-built to stand out. Nano Signs provides the options you need, from removable vehicle magnets and regulation door decals to bumper stickers and license plates. All vehicle products are constructed from high-grade vinyl and magnetic sheeting designed to hold tight at highway speeds and resist sun damage.",
-    categorySecondaryImage: "/images/products/main%20page/vehicle_signs_desc.png",
+      "Capitalize on urban traffic with our robust vehicle advertising products. We supply everything required to brand your auto fleet, including highway-rated magnetic signs, weather-proof bumper stickers, and custom metal license plates. Engineered using premium calendered vinyl and heavy-duty magnetic substrates, our automotive signs resist UV fading and withstand severe weather.",
+    categorySecondaryImage: "/images/products/main%20page/vehicle_signs_desc-toronto-printing-ca.png",
     faqs: [
       {
-        q: "Will car magnets stick to aluminum vehicle panels?",
-        a: "No, magnets only attract steel doors. Make sure to test your door with a kitchen magnet before purchasing.",
+        q: "Can I mount magnets on aluminum car doors?",
+        a: "No, magnetic sheeting only bonds to ferrous steel. We strongly advise testing your vehicle's panel with a standard fridge magnet prior to ordering.",
       },
       {
-        q: "Are vehicle decals easy to remove?",
-        a: "Yes. They can be removed by applying gentle heat from a hairdryer and peeling back, without damaging factory car paint.",
+        q: "Is it safe to remove auto decals later?",
+        a: "Absolutely. You can cleanly lift our vinyl by warming it with a heat gun or hairdryer, ensuring your OEM paint remains untouched.",
       },
     ],
     products: [
@@ -1403,18 +1403,18 @@ Why Choose Our Professional Rollup Banners?
         id: "bumper-stickers",
         name: "Bumper Stickers",
         description:
-          "Classic adhesive labels for car bumpers and windows. High visibility branding.",
-        image: "/images/products/main%20page/bumper_sticker.png",
-        price: "Starting at $2.24",
+          "Durable bumper decals designed for automotive bumpers and rear windshields.",
+        image: "/images/products/main%20page/bumper_sticker-toronto-printing-ca.png",
+        price: "Starting at CAD 2.24",
         config: {
           title: "Custom Bumper Stickers",
           quantityOptions: [100, 250, 500, 1000, 2500, 5000, 10000],
           subtitle:
-            "Standard bumper stickers printed on waterproof, UV-proof outdoor vinyl adhesive.",
+            "Tough promotional auto stickers manufactured with weatherproof, fade-resistant vinyl.",
           breadcrumb: "Vehicle Signs",
           breadcrumbHref: "/vehicle-signs",
           promoText: "25% OFF BUMPER STICKERS",
-          image: "/images/products/main%20page/bumper_sticker.png",
+          image: "/images/products/main%20page/bumper_sticker-toronto-printing-ca.png",
           ratingCount: "850",
           ratingScore: "4.8",
           sizes: [
@@ -1453,8 +1453,8 @@ Why Choose Our Professional Rollup Banners?
           ],
           faqs: [],
           reviews: [],
-          ctaHeading: "Print bumper stickers today",
-          ctaBody: "Add custom text, sports numbers, or business graphics.",
+          ctaHeading: "Order automotive decals",
+          ctaBody: "Personalize your vehicle stickers with your brand message.",
           ctaLabel: "Customize Bumper Sticker",
         },
       },
@@ -1462,17 +1462,17 @@ Why Choose Our Professional Rollup Banners?
         id: "license-plates",
         name: "License Plates",
         description:
-          "Custom front license plates made from heavy duty aluminum.",
-        image: "/images/products/main%20page/license_plate.png",
-        price: "Starting at $13.72",
+          "Personalized aluminum vanity plates engineered for front vehicle mounting.",
+        image: "/images/products/main%20page/license_plate-toronto-printing-ca.png",
+        price: "Starting at CAD 13.72",
         config: {
           title: "Custom License Plates",
           subtitle:
-            "Heavy duty rust-proof aluminum plate inserts, pre-drilled for easy mounting.",
+            "Corrosion-resistant metal auto tags featuring standard pre-cut mounting slots.",
           breadcrumb: "Vehicle Signs",
           breadcrumbHref: "/vehicle-signs",
           promoText: "25% OFF ALUMINUM AUTO PLATES",
-          image: "/images/products/main%20page/license_plate.png",
+          image: "/images/products/main%20page/license_plate-toronto-printing-ca.png",
           ratingCount: "192",
           ratingScore: "4.7",
           sizes: [
@@ -1508,9 +1508,9 @@ Why Choose Our Professional Rollup Banners?
           specs: [{ key: "Material", value: '0.040" thick Aluminum' }],
           faqs: [],
           reviews: [],
-          ctaHeading: "Design front vanity plates",
+          ctaHeading: "Create your custom auto tag",
           ctaBody:
-            "Customize auto plates with corporate colors, logos, and phone lines.",
+            "Embed your corporate identity onto an eye-catching metal license plate.",
           ctaLabel: "Customize License Plate",
         },
       },
@@ -1518,23 +1518,23 @@ Why Choose Our Professional Rollup Banners?
         id: "magnetic-signs",
         name: "Magnetic Car Signs",
         description:
-          "Durable magnetic signs that attach to car doors and can be removed easily.",
-        image: "/images/products/main%20page/vehicle_magnets.png",
-        price: "Starting at $4.99",
+          "Heavyweight vehicle magnets engineered for rapid installation and removal on automotive doors.",
+        image: "/images/products/main%20page/vehicle_magnets-toronto-printing-ca.png",
+        price: "Starting at CAD 4.99",
         badge: "Most Popular",
         config: {
           title: "Custom Car Magnets",
           subtitle:
-            "Heavy duty 30mil vehicle magnets that stay secure at highway speeds.",
+            "Professional-grade 30mil magnetic panels guaranteed to hold fast at freeway speeds.",
           breadcrumb: "Vehicle Signs",
           breadcrumbHref: "/vehicle-signs",
           promoText: "25% OFF VEHICLE ADVERTISING - AUTO SHIPPED",
-          image: "/images/products/main%20page/vehicle_magnets.png",
+          image: "/images/products/main%20page/vehicle_magnets-toronto-printing-ca.png",
           images: [
-            "/images/products/main%20page/vehicle_magnets.png",
-            "/images/products/gallery/magnet_use_1.png",
-            "/images/products/gallery/magnet_use_2.png",
-            "/images/products/gallery/magnet_use_3.png",
+            "/images/products/main%20page/vehicle_magnets-toronto-printing-ca.png",
+            "/images/products/gallery/magnet_use_1-toronto-printing-ca.png",
+            "/images/products/gallery/magnet_use_2-toronto-printing-ca.png",
+            "/images/products/gallery/magnet_use_3-toronto-printing-ca.png",
           ],
           ratingCount: "1530",
           ratingScore: "4.9",
@@ -1570,14 +1570,14 @@ Why Choose Our Professional Rollup Banners?
                   label: "Square Corners",
                   value: "square",
                   priceAdder: -1.0,
-                  description: "Classic sharp-cut rectangular magnet.",
+                  description: "Traditional sharp-cut rectangular magnet.",
                 },
               ],
             },
           ],
           qtyDiscount: "Bulk discounts starting at 2 or more magnets",
           keyFeatures: [
-            "Premium 30mil thick magnetic sheeting",
+            "High-quality 30mil thick magnetic sheeting",
             "Rounded corners prevent highway peel",
             "UV resistant inks",
             "Glossy protective laminations",
@@ -1586,7 +1586,7 @@ Why Choose Our Professional Rollup Banners?
             "Delivery vans",
             "Real estate agent vehicles",
             "Contractors and technicians",
-            "Personal cars used for business",
+            "Personal cars used for corporate",
           ],
           specs: [
             { key: "Thickness", value: "30mil Magnetic material" },
@@ -1610,7 +1610,7 @@ Why Choose Our Professional Rollup Banners?
               text: "These magnets are thick and do not slide off even in highway storms. Printing is crisp.",
             },
           ],
-          ctaHeading: "Start advertising on the go",
+          ctaHeading: "Start marketing on the go",
           ctaBody:
             "Design a clean car magnet with your logo, services, and phone number.",
           ctaLabel: "Customize Magnet",
@@ -1620,17 +1620,17 @@ Why Choose Our Professional Rollup Banners?
         id: "car-door-decals",
         name: "Car Door Decals",
         description:
-          "Adhesive door decals for car bodies. Durable semi-permanent advertising.",
-        image: "/images/products/main%20page/car_door_decal.png",
-        price: "Starting at $23.86",
+          "Adhesive door decals for car bodies. Resilient semi-permanent marketing.",
+        image: "/images/products/main%20page/car_door_decal-toronto-printing-ca.png",
+        price: "Starting at CAD 23.86",
         config: {
-          title: "Custom Car Door Decals",
+          title: "Personalized Car Door Decals",
           subtitle:
-            "Professional semi-permanent adhesive branding decals for truck and car door panels.",
+            "Expert-grade semi-permanent adhesive branding decals for truck and car door panels.",
           breadcrumb: "Vehicle Signs",
           breadcrumbHref: "/vehicle-signs",
           promoText: "25% OFF SEMI-PERMANENT DOOR DECALS",
-          image: "/images/products/main%20page/car_door_decal.png",
+          image: "/images/products/main%20page/car_door_decal-toronto-printing-ca.png",
           ratingCount: "320",
           ratingScore: "4.7",
           sizes: [
@@ -1660,11 +1660,11 @@ Why Choose Our Professional Rollup Banners?
           qtyDiscount: "Volume discounts on door pairs",
           keyFeatures: [
             "High performance calendered vinyl",
-            "Waterproof and UV laminated",
+            "Weather-resistant and UV laminated",
             "Semi-permanent solid adhesion",
           ],
           useCases: [
-            "Business logos",
+            "Corporate logos",
             "Regulation USDOT numbers",
             "Contractor branding",
           ],
@@ -1681,16 +1681,16 @@ Why Choose Our Professional Rollup Banners?
         name: "Car Window Decals",
         description:
           "Rear and side window adhesive graphics, available in transparent and opaque materials.",
-        image: "/images/products/main%20page/car_window_decal.png",
-        price: "Starting at $23.86",
+        image: "/images/products/main%20page/car_window_decal-toronto-printing-ca.png",
+        price: "Starting at CAD 23.86",
         config: {
-          title: "Custom Car Window Decals",
+          title: "Personalized Car Window Decals",
           subtitle:
-            "Highly visible rear window adhesive decals. Perfect for glass surfaces.",
+            "Highly visible rear window adhesive decals. Ideal for glass surfaces.",
           breadcrumb: "Vehicle Signs",
           breadcrumbHref: "/vehicle-signs",
           promoText: "25% OFF WINDOW ADHESIVE DECALS",
-          image: "/images/products/main%20page/car_window_decal.png",
+          image: "/images/products/main%20page/car_window_decal-toronto-printing-ca.png",
           ratingCount: "285",
           ratingScore: "4.8",
           sizes: [
@@ -1725,7 +1725,7 @@ Why Choose Our Professional Rollup Banners?
           qtyDiscount: "Volume savings apply",
           keyFeatures: [
             "Window safe adhesive backing",
-            "Vibrant inks pop on transparent base",
+            "Vivid inks pop on transparent base",
             "Rain and rear-wiper proof",
           ],
           useCases: [
@@ -1750,22 +1750,22 @@ Why Choose Our Professional Rollup Banners?
     title: "Tradeshow Displays",
     breadcrumbLabel: "Tradeshow",
     description:
-      "Get trade show ready with custom products that make your brand stand out. Table covers, step and repeats, and stands.",
-    heroImage: "/images/products/main%20page/tradeshow%20hero%20image.png",
-    tabletHeroImage: "/images/products/main%20page/tradeshow%20hero%20image.png",
-    mobileHeroImage: "/images/products/main%20page/tradeshow%20hero%20image.png",
+      "Get trade show ready with personalized products that make your brand command attention. Table covers, step and repeats, and stands.",
+    heroImage: "/images/products/main%20page/tradeshow%20hero%20image-toronto-printing-ca.png",
+    tabletHeroImage: "/images/products/main%20page/tradeshow%20hero%20image-toronto-printing-ca.png",
+    mobileHeroImage: "/images/products/main%20page/tradeshow%20hero%20image-toronto-printing-ca.png",
     heroSubtitle: "Where First Impressions Get Noticed.",
     reviewRating: "4.9",
     reviewCount: "3,240",
     reviewQuote:
       "The table cover and pop-up backdrop banner printed beautifully! Setup took seconds and our logo colors matched perfectly.",
     categoryDescriptionText:
-      "Your tradeshow booth should do more than fill space, it should tell your brand story. With a full range of customizable displays, signage, and print materials, we help you make every event count. From table covers to backdrops, banners to business cards, our products are designed to build cohesion, attract attention, and drive engagement. Whether you're setting up for a local fair or a national expo, we've got everything you need to show up strong and stay top of mind.",
-    categorySecondaryImage: "/images/products/main%20page/trade_show_desc.png",
+      "Your tradeshow booth should do more than fill space, it should tell your brand story. With a full range of customizable displays, signage, and print materials, we help you make every event count. From table covers to backdrops, banners to corporate cards, our products are designed to build cohesion, attract attention, and drive engagement. Whether you're setting up for a local fair or a national expo, we've got everything you need to show up strong and stay top of mind.",
+    categorySecondaryImage: "/images/products/main%20page/trade_show_desc-toronto-printing-ca.png",
     faqs: [
       {
         q: "Can I customize designs with my logo and brand colors?",
-        a: "Yes! All of our tradeshow products are fully customizable with your logo, brand colors, messaging, and graphics. You can upload your own artwork or use our easy online design tools. Need help? Our professional design team is here to assist, whether you need a quick layout fix or a fully custom design, we’ve got you covered. 1-800-330-9622",
+        a: "Yes! All of our tradeshow products are fully customizable with your logo, brand colors, messaging, and graphics. You can upload your own artwork or use our easy online design tools. Need help? Our expert-grade design team is here to assist, whether you need a quick layout fix or a fully personalized design, we’ve got you covered. 1-800-330-9622",
       },
       {
         q: "Do you offer portable and easy-to-set-up display options?",
@@ -1773,11 +1773,11 @@ Why Choose Our Professional Rollup Banners?
       },
       {
         q: "How long does it take to receive my order?",
-        a: "Production and shipping times vary depending on the product and customization, but most orders ship within a few business days. Expedited options are available at checkout.",
+        a: "Production and shipping times vary depending on the product and customization, but most orders ship within a few corporate days. Expedited options are available at checkout.",
       },
       {
         q: "What should I include in my tradeshow booth setup?",
-        a: "A well-rounded booth typically includes branded table covers, vertical signage like banners or displays, informational handouts (such as postcards or business cards), and high-impact elements like custom tents or backdrops for visibility.",
+        a: "A well-rounded booth typically includes branded table covers, vertical signage like banners or displays, informational handouts (such as postcards or corporate cards), and high-impact elements like personalized tents or backdrops for visibility.",
       },
       {
         q: "What if I need help choosing the right products for my event?",
@@ -1787,25 +1787,25 @@ Why Choose Our Professional Rollup Banners?
     products: [
       {
         id: "tablecloths",
-        name: "Custom Tablecloths",
+        name: "Personalized Tablecloths",
         description:
-          "Transform any standard folding table into a highly professional promotional display with our Custom Tablecloths. Printed using advanced dye-sublimation on premium 300D polyester twill, these covers feature a vibrant, scratch-resistant print that won't crack or peel. They are completely machine washable, flame-retardant (meeting NFPA 701 safety certifications), and designed to stay wrinkle-free throughout long events. Available in standard 6ft and 8ft sizes in both 4-sided (closed back) and 3-sided (open back) configurations for convenient under-table storage access.",
-        image: "/images/products/main%20page/tablecloths.png",
-        price: "Starting at $89.99",
+          "Transform any standard folding table into a highly expert-grade promotional display with our Personalized Tablecloths. Printed using advanced dye-sublimation on high-quality 300D polyester twill, these covers feature a vivid, scratch-resistant print that won't crack or peel. They are completely machine washable, flame-retardant (meeting NFPA 701 safety certifications), and designed to stay wrinkle-free throughout long events. Available in standard 6ft and 8ft sizes in both 4-sided (closed back) and 3-sided (open back) configurations for convenient under-table storage access.",
+        image: "/images/products/main%20page/tablecloths-toronto-printing-ca.png",
+        price: "Starting at CAD 89.99",
         badge: "Best Seller",
         config: {
-          title: "Custom Tablecloths",
+          title: "Personalized Tablecloths",
           subtitle:
             "Dye-sublimation printed fabric table cloths that drape perfectly over display tables.",
           breadcrumb: "Tradeshow",
           breadcrumbHref: "/trade-show",
-          promoText: "25% OFF CUSTOM TABLECLOTHS - SHIPS NEXT DAY",
-          image: "/images/products/main%20page/tablecloths.png",
+          promoText: "25% OFF PERSONALIZED TABLECLOTHS - SHIPS NEXT DAY",
+          image: "/images/products/main%20page/tablecloths-toronto-printing-ca.png",
           images: [
-            "/images/products/main%20page/tablecloths.png",
-            "/images/products/gallery/tablecloth_use_1.png",
-            "/images/products/gallery/tablecloth_use_2.png",
-            "/images/products/gallery/tablecloth_use_3.png",
+            "/images/products/main%20page/tablecloths-toronto-printing-ca.png",
+            "/images/products/gallery/tablecloth_use_1-toronto-printing-ca.png",
+            "/images/products/gallery/tablecloth_use_2-toronto-printing-ca.png",
+            "/images/products/gallery/tablecloth_use_3-toronto-printing-ca.png",
           ],
           ratingCount: "680",
           ratingScore: "4.9",
@@ -1826,7 +1826,7 @@ Why Choose Our Professional Rollup Banners?
                   value: "4sided",
                   priceAdder: 0,
                   description:
-                    "Covers all four sides, perfect for storage underneath.",
+                    "Covers all four sides, ideal for storage underneath.",
                 },
                 {
                   label: "3-Sided Open Back Throw",
@@ -1873,7 +1873,7 @@ Why Choose Our Professional Rollup Banners?
           ],
           ctaHeading: "Elevate your booth display",
           ctaBody:
-            "Customize a premium table throw with your core branding and logos.",
+            "Customize a high-quality table throw with your core branding and logos.",
           ctaLabel: "Customize Cover",
         },
       },
@@ -1881,18 +1881,18 @@ Why Choose Our Professional Rollup Banners?
         id: "table-runners",
         name: "Table Runners",
         description:
-          "For a versatile, portable, and budget-friendly branding solution, our Custom Table Runners are the perfect choice. Drape one over a plain solid-colored tablecloth to instantly elevate your booth's look without the cost of a full tablecloth. Made from durable 300D polyester twill with optional liquid-repellent coatings, our table runners roll down flat, fit easily in any travel bag, and wash clean in the machine. Choose from multiple standard widths to display your company logo prominently.",
-        image: "/images/products/main%20page/table_runner.png",
-        price: "Starting at $39.99",
+          "For a adaptable, portable, and budget-friendly branding solution, our Personalized Table Runners are the perfect choice. Drape one over a plain solid-colored tablecloth to instantly elevate your booth's look without the cost of a full tablecloth. Made from resilient 300D polyester twill with optional liquid-repellent coatings, our table runners roll down flat, fit easily in any travel bag, and wash clean in the machine. Choose from multiple standard widths to display your company logo prominently.",
+        image: "/images/products/main%20page/table_runner-toronto-printing-ca.png",
+        price: "Starting at CAD 39.99",
         badge: "Budget-Friendly",
         config: {
-          title: "Custom Table Runners",
+          title: "Personalized Table Runners",
           subtitle:
-            "Add branding to any plain tablecloth with a custom printed twill table runner.",
+            "Add branding to any plain tablecloth with a personalized printed twill table runner.",
           breadcrumb: "Tradeshow",
           breadcrumbHref: "/trade-show",
           promoText: "25% OFF TABLE RUNNERS - SHIPS NEXT DAY",
-          image: "/images/products/main%20page/table_runner.png",
+          image: "/images/products/main%20page/table_runner-toronto-printing-ca.png",
           ratingCount: "540",
           ratingScore: "4.8",
           sizes: [
@@ -1928,7 +1928,7 @@ Why Choose Our Professional Rollup Banners?
           faqs: [],
           reviews: [],
           ctaHeading: "Ready to design table runners?",
-          ctaBody: "Custom print table runners with corporate logos.",
+          ctaBody: "Personalized print table runners with corporate logos.",
           ctaLabel: "Customize Table Runner",
         },
       },
@@ -1936,18 +1936,18 @@ Why Choose Our Professional Rollup Banners?
         id: "fitted-tablecloths",
         name: "Fitted Tablecloths",
         description:
-          "Give your display tables a clean, sharp, box-tailored look with Fitted Tablecloths. Custom-tailored to slip perfectly over standard 6ft and 8ft rectangular tables, these covers stay securely in place without hanging or pooling on the floor, making them excellent for busy outdoor venues or professional recruiting events. Constructed from flame-retardant 300D knit polyester twill, they are machine-washable, wrinkle-resistant, and built to withstand repeated setups.",
-        image: "/images/products/main%20page/fitted_tablecloth.png",
-        price: "Starting at $109.99",
+          "Give your display tables a clean, sharp, box-tailored look with Fitted Tablecloths. Personalized-tailored to slip perfectly over standard 6ft and 8ft rectangular tables, these covers stay securely in place without hanging or pooling on the floor, making them excellent for busy exterior venues or expert-grade recruiting events. Constructed from flame-retardant 300D knit polyester twill, they are machine-washable, wrinkle-resistant, and built to withstand repeated setups.",
+        image: "/images/products/main%20page/fitted_tablecloth-toronto-printing-ca.png",
+        price: "Starting at CAD 109.99",
         config: {
           title: "Fitted Tablecloths",
           subtitle:
-            "Box-style custom tablecloths tailored to standard 6ft and 8ft display tables.",
+            "Box-style personalized tablecloths tailored to standard 6ft and 8ft display tables.",
           breadcrumb: "Tradeshow",
           breadcrumbHref: "/trade-show",
           promoText: "25% OFF TAILORED FITTED TABLE COVERS",
           image:
-            "/images/products/main%20page/fitted_tablecloth.png",
+            "/images/products/main%20page/fitted_tablecloth-toronto-printing-ca.png",
           ratingCount: "310",
           ratingScore: "4.8",
           sizes: [
@@ -1985,7 +1985,7 @@ Why Choose Our Professional Rollup Banners?
           faqs: [],
           reviews: [],
           ctaHeading: "Tailor your booth layout",
-          ctaBody: "Order fitted box tablecloths with custom printed fronts.",
+          ctaBody: "Order fitted box tablecloths with personalized printed fronts.",
           ctaLabel: "Customize Fitted Cover",
         },
       },
@@ -1993,17 +1993,17 @@ Why Choose Our Professional Rollup Banners?
         id: "round-tablecloths",
         name: "Round Tablecloths",
         description:
-          "Elevate your round banquet, registry, or cocktail tables with our Round Custom Tablecloths. Specially hemmed for standard circular table sizes, they drape elegantly to the floor in a seamless design. Using full-spectrum dye-sublimation printing, your custom colors, patterns, and logos will appear bright and clear, providing a premium aesthetic for weddings, evening galas, corporate fundraisers, and hotel lobbies.",
-        image: "/images/products/main%20page/round_tablecloth.png",
-        price: "Starting at $129.99",
+          "Elevate your round banquet, registry, or cocktail tables with our Round Personalized Tablecloths. Specially hemmed for standard circular table sizes, they drape elegantly to the floor in a seamless design. Using full-spectrum dye-sublimation printing, your personalized colors, patterns, and logos will appear bright and clear, providing a high-quality aesthetic for weddings, evening galas, corporate fundraisers, and hotel lobbies.",
+        image: "/images/products/main%20page/round_tablecloth-toronto-printing-ca.png",
+        price: "Starting at CAD 129.99",
         config: {
-          title: "Round Custom Tablecloths",
+          title: "Round Personalized Tablecloths",
           subtitle:
-            "Full color dye-sublimated tablecloths designed for circular highboy and banquet tables.",
+            "Full color dye-sublimated tablecloths engineered for circular highboy and banquet tables.",
           breadcrumb: "Tradeshow",
           breadcrumbHref: "/trade-show",
-          promoText: "25% OFF CUSTOM ROUND TABLECLOTHS",
-          image: "/images/products/main%20page/round_tablecloth.png",
+          promoText: "25% OFF PERSONALIZED ROUND TABLECLOTHS",
+          image: "/images/products/main%20page/round_tablecloth-toronto-printing-ca.png",
           ratingCount: "195",
           ratingScore: "4.7",
           sizes: [
@@ -2054,9 +2054,9 @@ Why Choose Our Professional Rollup Banners?
         id: "stretch-tablecloths",
         name: "Stretch Tablecloths",
         description:
-          "Achieve a sleek, modern, and high-impact look with our contoured Stretch Tablecloths. Made from an elastic polyester-spandex blend, these covers stretch tightly over your table frame and secure into place using reinforced rubber leg pockets, preventing any flapping or shifting in windy outdoor conditions. The tight tension naturally pulls out all folds and wrinkles, ensuring a perfectly smooth, professional surface for tech conferences, outdoor festivals, and modern brand exhibitions.",
-        image: "/images/products/main%20page/stretch_tablecloth.png",
-        price: "Starting at $129.99",
+          "Achieve a sleek, modern, and high-impact look with our contoured Stretch Tablecloths. Made from an elastic polyester-spandex blend, these covers stretch tightly over your table frame and secure into place using reinforced rubber leg pockets, preventing any flapping or shifting in windy exterior conditions. The tight tension naturally pulls out all folds and wrinkles, ensuring a perfectly smooth, expert-grade surface for tech conferences, exterior festivals, and modern brand exhibitions.",
+        image: "/images/products/main%20page/stretch_tablecloth-toronto-printing-ca.png",
+        price: "Starting at CAD 129.99",
         config: {
           title: "Stretch Tablecloths (Spandex Style)",
           subtitle:
@@ -2065,7 +2065,7 @@ Why Choose Our Professional Rollup Banners?
           breadcrumbHref: "/trade-show",
           promoText: "25% OFF CONTOURED SPANDEX DISPLAYS",
           image:
-            "/images/products/main%20page/stretch_tablecloth.png",
+            "/images/products/main%20page/stretch_tablecloth-toronto-printing-ca.png",
           ratingCount: "290",
           ratingScore: "4.9",
           sizes: [
@@ -2099,7 +2099,7 @@ Why Choose Our Professional Rollup Banners?
             "Ultra modern contours",
           ],
           useCases: [
-            "Outdoor windy venues",
+            "Exterior windy venues",
             "Tech trade conventions",
             "Modern product roll-outs",
           ],
@@ -2118,17 +2118,17 @@ Why Choose Our Professional Rollup Banners?
         id: "pop-up-displays",
         name: "Pop-Up Displays",
         description:
-          "Make a massive impression on the trade show floor with our premium Pop-Up Backdrop Displays. Featuring a lightweight accordion-style aluminum frame that snaps open in under two minutes, this backdrop utilizes a large, high-definition tension fabric graphic that attaches securely around the perimeter with heavy-duty hook-and-loop velcro. It packs down into a compact trolley bag with rolling wheels for effortless travel and setup.",
-        image: "/images/products/main%20page/pop_up_display.png",
-        price: "Starting at $299.99",
+          "Make a massive impression on the trade show floor with our high-quality Pop-Up Backdrop Displays. Featuring a lightweight accordion-style aluminum frame that snaps open in under two minutes, this backdrop utilizes a large, high-definition tension fabric graphic that attaches securely around the perimeter with industrial-strength hook-and-loop velcro. It packs down into a compact trolley bag with rolling wheels for effortless travel and setup.",
+        image: "/images/products/main%20page/pop_up_display-toronto-printing-ca.png",
+        price: "Starting at CAD 299.99",
         config: {
           title: "Pop-Up Backdrop Displays",
           subtitle:
-            "Collapsible aluminum accordion frame with custom printed tension fabric screen cover.",
+            "Collapsible aluminum accordion frame with personalized printed tension fabric screen cover.",
           breadcrumb: "Tradeshow",
           breadcrumbHref: "/trade-show",
           promoText: "25% OFF ALL POP-UP EVENT DISPLAYS",
-          image: "/images/products/main%20page/pop_up_display.png",
+          image: "/images/products/main%20page/pop_up_display-toronto-printing-ca.png",
           ratingCount: "430",
           ratingScore: "4.8",
           sizes: [
@@ -2197,19 +2197,19 @@ Why Choose Our Professional Rollup Banners?
         id: "step-and-repeat-banner",
         name: "Backdrop Banners",
         description:
-          "Create the perfect photo opportunity at red carpets, press conferences, weddings, and corporate summits with our Step & Repeat Banners. Designed to display repeated logos in a clean grid layout, the glare-free matte finish of our heavy-duty blockout vinyl ensures beautiful, flash-friendly photography. The package comes with an optional adjustable backdrop stand and top/bottom pole pockets for fast mounting.",
-        image: "/images/products/main%20page/backdrop_banners.png",
-        price: "Starting at $145.99",
+          "Create the perfect photo opportunity at red carpets, press conferences, weddings, and corporate summits with our Step & Repeat Banners. Designed to display repeated logos in a clean grid layout, the glare-free matte finish of our industrial-strength blockout vinyl ensures beautiful, flash-friendly photography. The package comes with an optional adjustable backdrop stand and top/bottom pole pockets for fast mounting.",
+        image: "/images/products/main%20page/backdrop_banners-toronto-printing-ca.png",
+        price: "Starting at CAD 145.99",
         badge: "Event Ready",
         config: {
           title: "Backdrop Banners",
           subtitle:
-            "Professional background banners for press walls, photo shoots, and red carpets.",
+            "Expert-grade background banners for press walls, photo shoots, and red carpets.",
           breadcrumb: "Tradeshow",
           breadcrumbHref: "/trade-show",
           promoText: "25% OFF STEP AND REPEAT PRESS WALLS",
           image:
-            "/images/products/main%20page/backdrop_banners.png",
+            "/images/products/main%20page/backdrop_banners-toronto-printing-ca.png",
           ratingCount: "430",
           ratingScore: "4.8",
           sizes: [
@@ -2266,9 +2266,9 @@ Why Choose Our Professional Rollup Banners?
         id: "retractable-banners",
         name: "Retractable Banner",
         description:
-          "Our Retractable Banners (Roll Up Stands) are the ultimate standalone banner display for trade shows, retail checkouts, and office lobbies. The banner graphic pulls up from an anodized aluminum base stand in seconds and secures with a vertical support rod. Each kit includes a padded carrying bag, making transport and setup incredibly simple. Printed on premium curl-resistant polyester film or standard 13oz vinyl to maintain a clean, flat presentation.",
-        image: "/images/products/main%20page/retractable_roll_up_banner.png",
-        price: "Starting at $89.00",
+          "Our Retractable Banners (Roll Up Stands) are the ultimate standalone banner display for trade shows, retail checkouts, and office lobbies. The banner graphic pulls up from an anodized aluminum base stand in seconds and secures with a vertical support rod. Each kit includes a padded carrying bag, making transport and setup incredibly simple. Manufactured using high-quality curl-resistant polyester film or standard 13oz vinyl to maintain a clean, flat presentation.",
+        image: "/images/products/main%20page/retractable_roll_up_banner-toronto-printing-ca.png",
+        price: "Starting at CAD 89.00",
         badge: "Most Popular",
         config: {
           title: "Retractable Banners (Roll Up)",
@@ -2278,7 +2278,7 @@ Why Choose Our Professional Rollup Banners?
           breadcrumbHref: "/trade-show",
           promoText: "25% OFF RETRACTABLE ROLL-UP BANNERS",
           image:
-            "/images/products/main%20page/retractable_roll_up_banner.png",
+            "/images/products/main%20page/retractable_roll_up_banner-toronto-printing-ca.png",
           ratingCount: "1240",
           ratingScore: "4.9",
           sizes: [
@@ -2333,17 +2333,17 @@ Why Choose Our Professional Rollup Banners?
             { key: "Weight", value: "Approximately 7-10 lbs including stand" },
             { key: "Display Size", value: '79" x 33" (Standard) or 80" x 46" (Large)' },
           ],
-          description: `Maximize your brand visibility at trade shows, retail storefronts, conferences, and exhibitions with our premium Custom Retractable Roll Up Banners. These portable banner displays are the gold standard for high-impact offline marketing, offering a seamless blend of durability, convenience, and visual appeal. 
+          description: `Maximize your brand visibility at trade shows, retail storefronts, conferences, and exhibitions with our high-quality Personalized Retractable Roll Up Banners. These portable banner displays are the gold standard for high-impact offline marketing, offering a seamless blend of durability, convenience, and visual appeal. 
 
-Every retractable banner stand comes pre-assembled with your custom-printed graphic rolled inside a sturdy, lightweight aluminum cassette. Setup takes under 60 seconds—simply extend the vertical support pole, pull up the banner graphic, and lock it into place. Whether you need custom trade show signage or a permanent retail display, our roll up stands are built to last.
+Every retractable banner stand comes pre-assembled with your personalized-printed graphic rolled inside a sturdy, lightweight aluminum cassette. Setup takes under 60 seconds—simply extend the vertical support pole, pull up the banner graphic, and lock it into place. Whether you need personalized trade show signage or a permanent retail display, our roll up stands are built to last.
 
-Our banners are printed on curl-free, light-blocking polyester grayback film. This prevents the edges of the banner from curling over time and ensures that light does not shine through from behind, keeping your message fully legible under bright exhibition lights. With next-day banner printing options, we help you get event-ready at a moment's notice.
+Our banners are manufactured using curl-free, light-blocking polyester grayback film. This prevents the edges of the banner from curling over time and ensures that light does not shine through from behind, keeping your message fully legible under bright exhibition lights. With next-day banner printing options, we help you get event-ready at a moment's notice.
 
-Why Choose Our Professional Rollup Banners?
-- Premium Anti-Curl Material: Printed on smooth, opaque blockout film for a clean, flat presentation.
-- Heavy-Duty Cassette: Anodized aluminum base with fold-out stabilizing feet for reliable outdoor and indoor standee stability.
+Why Choose Our Expert-grade Rollup Banners?
+- High-quality Anti-Curl Material: Manufactured using smooth, opaque blockout film for a clean, flat presentation.
+- Industrial-strength Cassette: Anodized aluminum base with fold-out stabilizing feet for reliable exterior and interior standee stability.
 - Effortless Portability: A padded travel carrying case is included with every order, making transportation a breeze.
-- Dynamic Visual Impact: High-resolution UV printing at 1440 DPI delivers vivid, fade-resistant colors that stand out across crowded halls.`,
+- Dynamic Visual Impact: High-resolution UV printing at 1440 DPI delivers vivid, fade-resistant colors that command attention across crowded halls.`,
           faqs: [
             {
               q: "How do I set up a retractable roll up banner?",
@@ -2351,26 +2351,26 @@ Why Choose Our Professional Rollup Banners?
             },
             {
               q: "What material is used for the rollup banner graphic?",
-              a: "We use a premium curl-free polyester film with a blockout greyback coating. This professional material ensures your graphics remain completely flat and prevents rear light show-through, ensuring maximum legibility under bright trade show lighting.",
+              a: "We use a high-quality curl-free polyester film with a blockout greyback coating. This expert-grade material ensures your graphics remain completely flat and prevents rear light show-through, ensuring maximum legibility under bright trade show lighting.",
             },
             {
               q: "Can I replace the banner graphic in my existing retractable stand?",
               a: "Yes, the graphic can be replaced, but it requires tensioning the internal spring mechanism of the aluminum cassette. We recommend sending it to our print facility or purchasing a new stand bundle for the best results.",
             },
             {
-              q: "What is the difference between standard and professional stands?",
-              a: "Standard stands feature swing-out stabilizing feet that extend from the front and back of the aluminum base. Professional luxury stands have a wider, heavier teardrop-shaped base that stands stable on its own without visible swing-out feet, offering a cleaner look.",
+              q: "What is the difference between standard and expert-grade stands?",
+              a: "Standard stands feature swing-out stabilizing feet that extend from the front and back of the aluminum base. Expert-grade luxury stands have a wider, heavier teardrop-shaped base that stands stable on its own without visible swing-out feet, offering a cleaner look.",
             },
             {
-              q: "Is the roll up banner suitable for outdoor use?",
-              a: "Retractable banners are designed primarily for indoor applications. They can be used outdoors in calm, dry conditions, but because of their tall profile, wind can act as a sail and tip the stand. For outdoor promotions, we recommend our heavy-duty feather flags or mesh banners.",
+              q: "Is the roll up banner suitable for exterior use?",
+              a: "Retractable banners are designed primarily for interior applications. They can be used outdoors in calm, dry conditions, but because of their tall profile, wind can act as a sail and tip the stand. For exterior promotions, we recommend our industrial-strength feather flags or mesh banners.",
             },
           ],
           reviews: [
             {
               author: "Marcus K., Event Director",
               rating: 5,
-              text: "The custom rollup banner exceeded our expectations. The greyback film is completely blockout and doesn't curl at all. Set up was a breeze at our conference booth.",
+              text: "The personalized rollup banner exceeded our expectations. The greyback film is completely blockout and doesn't curl at all. Set up was a breeze at our conference booth.",
             },
             {
               author: "Sarah J., Retail Manager",
@@ -2385,7 +2385,7 @@ Why Choose Our Professional Rollup Banners?
           ],
           ctaHeading: "Ready to make an impression?",
           ctaBody:
-            "Order a retractable banner stand and roll out your messages quickly.",
+            "Order a retractable banner stand and roll out your messages rapidly.",
           ctaLabel: "Customize Retractable Banner",
         },
       },
@@ -2393,9 +2393,9 @@ Why Choose Our Professional Rollup Banners?
         id: "x-banner-stand",
         name: "X-Banners",
         description:
-          "The X-Frame Banner Stand is a highly cost-effective, portable freestanding banner solution. By utilizing flexible composite fiberglass arms connected to a central hinge, the stand pulls a custom corner-grommeted banner taut, keeping your graphic perfectly flat and readable. Because the banner attaches simply via grommets, you can order replacement prints and swap graphics in seconds without needing to buy new stands.",
-        image: "/images/products/main%20page/x_banner_stand.png",
-        price: "Starting at $49.99",
+          "The X-Frame Banner Stand is a highly cost-effective, portable freestanding banner solution. By utilizing flexible composite fiberglass arms connected to a central hinge, the stand pulls a personalized corner-grommeted banner taut, keeping your graphic perfectly flat and readable. Because the banner attaches simply via grommets, you can order replacement prints and swap graphics in seconds without needing to buy new stands.",
+        image: "/images/products/main%20page/x_banner_stand-toronto-printing-ca.png",
+        price: "Starting at CAD 49.99",
         config: {
           title: "X-Frame Banner Stands",
           subtitle:
@@ -2403,7 +2403,7 @@ Why Choose Our Professional Rollup Banners?
           breadcrumb: "Tradeshow",
           breadcrumbHref: "/trade-show",
           promoText: "25% OFF BUDGET X-BANNER DISPLAYS",
-          image: "/images/products/main%20page/x_banner_stand.png",
+          image: "/images/products/main%20page/x_banner_stand-toronto-printing-ca.png",
           ratingCount: "385",
           ratingScore: "4.7",
           sizes: [
@@ -2454,10 +2454,10 @@ Why Choose Our Professional Rollup Banners?
         id: "tabletop-retractable-banners",
         name: "Tabletop Retractable Banners",
         description:
-          "Bring high-impact branding to counter-tops, checkout registers, hotel lobbies, and registration desks with Tabletop Retractable Banners. These miniature versions of our full-sized roll-up stands feature a compact aluminum base housing that pulls up and retracts in seconds. Printed on smooth, high-resolution polypropylene film, they ensure small details and text are clear and easy to read from a close distance.",
+          "Bring high-impact branding to counter-tops, checkout registers, hotel lobbies, and registration desks with Tabletop Retractable Banners. These miniature versions of our full-sized roll-up stands feature a compact aluminum base housing that pulls up and retracts in seconds. Manufactured using smooth, high-resolution polypropylene film, they ensure small details and text are clear and simple to read from a close distance.",
         image:
-          "/images/products/main%20page/tabletop_retractable.jpg",
-        price: "Starting at $27.18",
+          "/images/products/main%20page/tabletop_retractable-toronto-printing-ca.jpg",
+        price: "Starting at CAD 27.18",
         config: {
           title: "Tabletop Retractable Banners",
           subtitle:
@@ -2466,7 +2466,7 @@ Why Choose Our Professional Rollup Banners?
           breadcrumbHref: "/trade-show",
           promoText: "25% OFF TABLETOP RETRACTABLE DISPLAYS",
           image:
-            "/images/products/main%20page/tabletop_retractable.jpg",
+            "/images/products/main%20page/tabletop_retractable-toronto-printing-ca.jpg",
           ratingCount: "420",
           ratingScore: "4.8",
           sizes: [
@@ -2520,24 +2520,24 @@ Why Choose Our Professional Rollup Banners?
       },
       {
         id: "custom-canopy-tents",
-        name: "Custom Canopies",
+        name: "Personalized Canopies",
         description:
-          "Stand out at outdoor events, farmers markets, sporting events, and street fairs with our 10' x 10' Custom Canopy Tents. The canopy top is made from heavy-duty, waterproof, and UV-resistant fabric printed in rich full-color dye-sublimation. The popup frame features a commercial-grade steel or aluminum truss system with adjustable height settings, popping up in minutes for instant shade and high-visibility branding.",
-        image: "/images/products/main%20page/event_tents.png",
-        price: "Starting at $349.99",
+          "Command attention at exterior events, farmers markets, sporting events, and street fairs with our 10' x 10' Personalized Canopy Tents. The canopy top is made from industrial-strength, weather-resistant, and UV-resistant fabric printed in rich full-color dye-sublimation. The popup frame features a commercial-grade steel or aluminum truss system with adjustable height settings, popping up in minutes for instant shade and high-visibility branding.",
+        image: "/images/products/main%20page/event_tents-toronto-printing-ca.png",
+        price: "Starting at CAD 349.99",
         config: {
-          title: "Custom Canopy Tents",
+          title: "Personalized Canopy Tents",
           subtitle:
-            "Outdoor 10' x 10' custom canopy tents. Waterproof, UV-resistant fabric over steel popup frames.",
+            "Exterior 10' x 10' personalized canopy tents. Weather-resistant, UV-resistant fabric over steel popup frames.",
           breadcrumb: "Tradeshow",
           breadcrumbHref: "/trade-show",
-          promoText: "25% OFF OUTDOOR EVENT CANOPIES",
-          image: "/images/products/main%20page/event_tents.png",
+          promoText: "25% OFF EXTERIOR EVENT CANOPIES",
+          image: "/images/products/main%20page/event_tents-toronto-printing-ca.png",
           images: [
-            "/images/products/main%20page/event_tents.png",
-            "/images/products/gallery/canopy_tent_use_1.png",
-            "/images/products/gallery/canopy_tent_use_1.png",
-            "/images/products/gallery/canopy_tent_use_1.png",
+            "/images/products/main%20page/event_tents-toronto-printing-ca.png",
+            "/images/products/gallery/canopy_tent_use_1-toronto-printing-ca.png",
+            "/images/products/gallery/canopy_tent_use_1-toronto-printing-ca.png",
+            "/images/products/gallery/canopy_tent_use_1-toronto-printing-ca.png",
           ],
           ratingCount: "110",
           ratingScore: "4.7",
@@ -2567,19 +2567,19 @@ Why Choose Our Professional Rollup Banners?
           ],
           qtyDiscount: "Volume canopy packaging available",
           keyFeatures: [
-            "Waterproof & UV resistant fabric",
-            "Durable popup truss system",
+            "Weather-resistant & UV resistant fabric",
+            "Resilient popup truss system",
             "Dye-sublimation peak printing",
           ],
           useCases: [
-            "Outdoor farmers markets",
+            "Exterior farmers markets",
             "Festivals & concerts",
             "Sports events",
           ],
           specs: [{ key: "Dimensions", value: '120" W x 120" D x 135" H max' }],
           faqs: [],
           reviews: [],
-          ctaHeading: "Establish outdoor presence",
+          ctaHeading: "Establish exterior presence",
           ctaBody: "Print full-color canopy tops today.",
           ctaLabel: "Customize Canopy Tent",
         },
@@ -2588,17 +2588,17 @@ Why Choose Our Professional Rollup Banners?
         id: "feather-flags",
         name: "Feather Flags",
         description:
-          "Draw customers in from the roadside with our best-selling Custom Feather Flags. Designed to flutter in the wind and turn heads, these tall advertising flags are printed on premium open-weave knit polyester to reduce wind load stress. Supported by composite fiberglass poles and a rotating ground spike or cross stand, they rotate 360 degrees to remain visible from any traffic direction.",
-        image: "/images/products/main%20page/feather_flag.png",
-        price: "Starting at $80.00",
+          "Draw customers in from the roadside with our best-selling Personalized Feather Flags. Designed to flutter in the wind and turn heads, these tall marketing flags are manufactured using high-quality open-weave knit polyester to reduce wind load stress. Supported by composite fiberglass poles and a rotating ground spike or cross stand, they rotate 360 degrees to remain visible from any traffic direction.",
+        image: "/images/products/main%20page/feather_flag-toronto-printing-ca.png",
+        price: "Starting at CAD 80.00",
         config: {
-          title: "Custom Feather Flags",
+          title: "Personalized Feather Flags",
           subtitle:
-            "Outdoor advertising flags printed on durable knit polyester, complete with poles and hardware.",
+            "Exterior marketing flags manufactured using resilient knit polyester, complete with poles and hardware.",
           breadcrumb: "Tradeshow",
           breadcrumbHref: "/trade-show",
-          promoText: "25% OFF ALL ADVERTISING FLAGS - SHIPS NEXT DAY",
-          image: "/api/assets/0085996_feather-flags_360.png",
+          promoText: "25% OFF ALL MARKETING FLAGS - SHIPS NEXT DAY",
+          image: "/api/assets/0085996_feather-flags_360-toronto-printing-ca.png",
           ratingCount: "820",
           ratingScore: "4.8",
           sizes: [
@@ -2634,10 +2634,10 @@ Why Choose Our Professional Rollup Banners?
                   description: "Select if you already have a pole.",
                 },
                 {
-                  label: "Include Pole (+$35.00)",
+                  label: "Include Pole (+CAD 35.00)",
                   value: "pole",
                   priceAdder: 35.00,
-                  description: "Premium carbon-fiberglass pole.",
+                  description: "High-quality carbon-fiberglass pole.",
                 },
               ],
             },
@@ -2650,34 +2650,34 @@ Why Choose Our Professional Rollup Banners?
                   priceAdder: 0,
                 },
                 {
-                  label: "Ground Stake (+$40.00)",
+                  label: "Ground Stake (+CAD 40.00)",
                   value: "stake",
                   priceAdder: 40.00,
-                  description: "Classic stake for soil or grass.",
+                  description: "Traditional stake for soil or grass.",
                 },
                 {
-                  label: "Cross Base (+$55.00)",
+                  label: "Cross Base (+CAD 55.00)",
                   value: "cross",
                   priceAdder: 55.00,
                   description: "Standard folding cross base.",
                 },
                 {
-                  label: "CS-01 Metal Cross Base (+$65.00)",
+                  label: "CS-01 Metal Cross Base (+CAD 65.00)",
                   value: "cs01",
                   priceAdder: 65.00,
-                  description: "Heavy duty metal cross base.",
+                  description: "Commercial-grade metal cross base.",
                 },
                 {
-                  label: "CS-02 Cross Base (+$45.00)",
+                  label: "CS-02 Cross Base (+CAD 45.00)",
                   value: "cs02",
                   priceAdder: 45.00,
                   description: "Standard economy cross base.",
                 },
                 {
-                  label: "GS-01 Ground Spike (+$45.00)",
+                  label: "GS-01 Ground Spike (+CAD 45.00)",
                   value: "gs01",
                   priceAdder: 45.00,
-                  description: "Heavy duty ground spike.",
+                  description: "Commercial-grade ground spike.",
                 },
               ],
             },
@@ -2690,16 +2690,16 @@ Why Choose Our Professional Rollup Banners?
                   priceAdder: 0,
                 },
                 {
-                  label: "Water Bag (+$10.00)",
+                  label: "Water Bag (+CAD 10.00)",
                   value: "water_bag_10",
                   priceAdder: 10.00,
                   description: "Adds stability for cross bases.",
                 },
                 {
-                  label: "WF-08 Water Bag (+$14.00)",
+                  label: "WF-08 Water Bag (+CAD 14.00)",
                   value: "wf08",
                   priceAdder: 14.00,
-                  description: "Premium donut water weight bag.",
+                  description: "High-quality donut water weight bag.",
                 },
               ],
             },
@@ -2712,7 +2712,7 @@ Why Choose Our Professional Rollup Banners?
                   priceAdder: 0,
                 },
                 {
-                  label: "Flag Carry Bag (+$45.00)",
+                  label: "Flag Carry Bag (+CAD 45.00)",
                   value: "carry_bag",
                   priceAdder: 45.00,
                   description: "Convenient travel bag for hardware.",
@@ -2727,7 +2727,7 @@ Why Choose Our Professional Rollup Banners?
                   value: "standard",
                   priceAdder: 0,
                   description:
-                    "Lightweight mesh fabric designed for wind flow.",
+                    "Lightweight mesh fabric engineered for wind flow.",
                 },
               ],
             },
@@ -2740,7 +2740,7 @@ Why Choose Our Professional Rollup Banners?
                   id: "single",
                   label: "Single-Sided (Show through)",
                   priceAdder: 0,
-                  description: "Design printed on one side, mirrored on back.",
+                  description: "Design manufactured using one side, mirrored on back.",
                 },
                 {
                   id: "double",
@@ -2765,7 +2765,7 @@ Why Choose Our Professional Rollup Banners?
             "Flexible fiberglass poles",
           ],
           useCases: [
-            "Outdoor storefronts",
+            "Exterior storefronts",
             "Grand openings",
             "Car dealerships",
           ],
@@ -2773,7 +2773,7 @@ Why Choose Our Professional Rollup Banners?
           faqs: [],
           reviews: [],
           ctaHeading: "Get noticed from the road",
-          ctaBody: "Order fluttering advertising flags.",
+          ctaBody: "Order fluttering marketing flags.",
           ctaLabel: "Customize Feather Flag",
         },
       },
@@ -2781,17 +2781,17 @@ Why Choose Our Professional Rollup Banners?
         id: "vinyl-banners",
         name: "Vinyl Banners",
         description:
-          "Our Custom Vinyl Banners are a versatile, heavy-duty signage solution for indoor and outdoor advertising. Constructed from durable 13oz gloss or 15oz premium matte PVC vinyl with heat-welded hems, they are fully waterproof and UV-resistant to survive the elements. Complete with pre-installed brass grommets or pole pockets for easy hanging, they are perfect for storefront openings, construction fences, and event banners.",
-        image: "/images/products/main%20page/vinyl_banner.png",
-        price: "Starting at $12.99",
+          "Our Personalized Vinyl Banners are a adaptable, industrial-strength signage solution for interior and exterior marketing. Constructed from resilient 13oz gloss or 15oz high-quality matte PVC vinyl with heat-welded hems, they are fully weather-resistant and UV-resistant to survive the elements. Complete with pre-installed brass grommets or pole pockets for easy hanging, they are ideal for storefront openings, construction fences, and event banners.",
+        image: "/images/products/main%20page/vinyl_banner-toronto-printing-ca.png",
+        price: "Starting at CAD 12.99",
         config: {
-          title: "Custom Vinyl Banners",
+          title: "Personalized Vinyl Banners",
           subtitle:
-            "Durable, waterproof, outdoor-rated vinyl banners complete with grommets.",
+            "Resilient, weather-resistant, exterior-rated vinyl banners complete with grommets.",
           breadcrumb: "Tradeshow",
           breadcrumbHref: "/trade-show",
           promoText: "25% OFF ALL VINYL BANNERS - SHIPS NEXT DAY",
-          image: "/images/products/main%20page/vinyl_banner.png",
+          image: "/images/products/main%20page/vinyl_banner-toronto-printing-ca.png",
           ratingCount: "1530",
           ratingScore: "4.8",
           sizes: [
@@ -2822,9 +2822,9 @@ Why Choose Our Professional Rollup Banners?
           ],
           qtyDiscount: "Save up to 15% on bulk banner orders",
           keyFeatures: [
-            "Waterproof & UV resistant",
+            "Weather-resistant & UV resistant",
             "Heat-welded hems for extra strength",
-            "Vibrant full-color digital printing",
+            "Vivid full-color digital printing",
           ],
           useCases: ["Event announcements", "Sponsorship banners"],
           specs: [
@@ -2839,13 +2839,13 @@ Why Choose Our Professional Rollup Banners?
         },
       },      {
         id: "business-cards",
-        name: "Business Cards",
+        name: "Corporate Cards",
         description:
-          'Leave a lasting impression with premium Custom Business Cards. Printed on ultra-thick 14pt or 16pt cardstock with offset high-resolution printing, these standard 3.5" x 2" cards represent your business with absolute quality. Customize your finish with professional non-glare matte or high-gloss UV sheen, and choose single or double-sided layouts to distribute to tradeshow attendees, recruits, and new leads.',
-        image: "/images/products/main%20page/business_cards.png",
-        price: "Starting at $29.98",
+          'Leave a lasting impression with high-quality Personalized Corporate Cards. Manufactured using ultra-thick 14pt or 16pt cardstock with offset high-resolution printing, these standard 3.5" x 2" cards represent your corporate with absolute quality. Customize your finish with expert-grade non-glare matte or high-gloss UV sheen, and choose single or double-sided layouts to distribute to tradeshow attendees, recruits, and new leads.',
+        image: "/images/products/main%20page/business_cards-toronto-printing-ca.png",
+        price: "Starting at CAD 29.98",
         config: {
-          title: "Custom Business Cards",
+          title: "Personalized Corporate Cards",
           quantityOptions: [100, 250, 500, 1000, 1500, 2000, 2500, 5000, 10000],
           quantityPrices: {
             100: 29.98,
@@ -2859,11 +2859,11 @@ Why Choose Our Professional Rollup Banners?
             10000: 559.98,
           },
           subtitle:
-            'Standard 3.5" x 2" cards printed on ultra-thick cardstock with multiple finishes.',
+            'Standard 3.5" x 2" cards manufactured using ultra-thick cardstock with multiple finishes.',
           breadcrumb: "Tradeshow",
           breadcrumbHref: "/trade-show",
           promoText: "25% OFF ALL EVENT STATIONERY",
-          image: "/images/products/main%20page/business_cards.png",
+          image: "/images/products/main%20page/business_cards-toronto-printing-ca.png",
           ratingCount: "1120",
           ratingScore: "4.9",
           sizes: [
@@ -2881,71 +2881,71 @@ Why Choose Our Professional Rollup Banners?
                   label: "14pt semi gloss (profit maximizer)",
                   value: "semi_gloss",
                   priceAdder: 0,
-                  description: "Clean, professional look with a smooth semi-gloss finish. Easy to write on.",
-                  image: "/images/products/main%20page/business_cards_semigloss.png",
+                  description: "Clean, expert-grade look with a smooth semi-gloss finish. Simple to write on.",
+                  image: "/images/products/main%20page/business_cards_semigloss-toronto-printing-ca.png",
                 },
                 {
                   label: "Glossy",
                   value: "glossy",
                   priceAdder: 0,
                   description: "High-shine glossy finish that makes colors pop.",
-                  image: "/images/products/main%20page/business_cards_glossy.png",
+                  image: "/images/products/main%20page/business_cards_glossy-toronto-printing-ca.png",
                 },
                 {
                   label: "Embossed Gloss",
                   value: "embossed_gloss",
                   priceAdder: 0.15,
                   description: "Raised clear gloss accents for a textured, high-end feel.",
-                  image: "/images/products/main%20page/business_cards_foil.png",
+                  image: "/images/products/main%20page/business_cards_foil-toronto-printing-ca.png",
                 },
                 {
                   label: "Soft Touch",
                   value: "soft_touch",
                   priceAdder: 0.12,
-                  description: "Velvety coating that feels soft and premium in the hand.",
-                  image: "/images/products/main%20page/business_cards.png",
+                  description: "Velvety coating that feels soft and high-quality in the hand.",
+                  image: "/images/products/main%20page/business_cards-toronto-printing-ca.png",
                 },
                 {
                   label: "Painted Edge",
                   value: "painted_edge",
                   priceAdder: 0.25,
                   description: "Thick cards with colored edges for a bold, modern look.",
-                  image: "/images/products/main%20page/business_cards_painted_edge.png",
+                  image: "/images/products/main%20page/business_cards_painted_edge-toronto-printing-ca.png",
                 },
                 {
                   label: "Ultra Thick",
                   value: "ultra_thick",
                   priceAdder: 0.23,
                   description: "Double-thick cardstock for a substantial, sturdy feel.",
-                  image: "/images/products/main%20page/business_cards_ultra_thick.png",
+                  image: "/images/products/main%20page/business_cards_ultra_thick-toronto-printing-ca.png",
                 },
                 {
                   label: "Clear Plastic",
                   value: "clear_plastic",
                   priceAdder: 0.35,
                   description: "See-through modern plastic cards that make a unique statement.",
-                  image: "/images/products/main%20page/business_cards_clear_plastic.png",
+                  image: "/images/products/main%20page/business_cards_clear_plastic-toronto-printing-ca.png",
                 },
                 {
                   label: "Pearl",
                   value: "pearl",
                   priceAdder: 0.12,
                   description: "Glimmering, light-catching surface with a pearlescent shine.",
-                  image: "/images/products/main%20page/business_cards_pearl.png",
+                  image: "/images/products/main%20page/business_cards_pearl-toronto-printing-ca.png",
                 },
                 {
                   label: "Gold Raised Foil",
                   value: "gold_raised_foil",
                   priceAdder: 0.20,
                   description: "Elevated, 3D raised gold foil accents for a luxury feel.",
-                  image: "/images/products/main%20page/business_cards_gold_raised_foil.png",
+                  image: "/images/products/main%20page/business_cards_gold_raised_foil-toronto-printing-ca.png",
                 },
                 {
                   label: "Silver Raised Foil",
                   value: "silver_raised_foil",
                   priceAdder: 0.20,
                   description: "Elevated, 3D raised silver foil accents for a luxury feel.",
-                  image: "/images/products/main%20page/business_cards_silver_raised_foil.png",
+                  image: "/images/products/main%20page/business_cards_silver_raised_foil-toronto-printing-ca.png",
                 },
               ],
             },
@@ -2957,14 +2957,14 @@ Why Choose Our Professional Rollup Banners?
                   value: "single",
                   priceAdder: 0,
                   priceMultiplier: 1.0,
-                  description: "Printed on front side only.",
+                  description: "Manufactured using front side only.",
                 },
                 {
                   label: "Double-Sided",
                   value: "double",
                   priceAdder: 0,
                   priceMultiplier: 1.25,
-                  description: "Printed on both front and back sides.",
+                  description: "Manufactured using both front and back sides.",
                 },
               ],
             },
@@ -2986,7 +2986,7 @@ Why Choose Our Professional Rollup Banners?
           ],
           qtyDiscount: "Predefined package quantities selected below",
           keyFeatures: [
-            "Vibrant color offset printing",
+            "Vivid color offset printing",
             "Ultra-thick cardstock options",
             "Easy design templates",
           ],
@@ -3001,15 +3001,15 @@ Why Choose Our Professional Rollup Banners?
           ],
           faqs: [
             {
-              q: "What is the standard size of a business card?",
-              a: 'The standard size for standard business cards is 3.5 inches by 2 inches. This fits perfectly into standard wallets, cardholders, and organizer slots.',
+              q: "What is the standard size of a corporate card?",
+              a: 'The standard size for standard corporate cards is 3.5 inches by 2 inches. This fits perfectly into standard wallets, cardholders, and organizer slots.',
             },
             {
               q: "What is the difference between 14 pt and 16 pt cardstock?",
-              a: 'The point (pt) unit measures paper thickness. 14 pt cardstock is the industry standard for high-quality business cards. 16 pt cardstock is thicker and sturdier, providing a heavier, more premium feel.',
+              a: 'The point (pt) unit measures paper thickness. 14 pt cardstock is the industry standard for high-quality corporate cards. 16 pt cardstock is thicker and sturdier, providing a heavier, more high-quality feel.',
             },
             {
-              q: "Can I write on both matte and glossy business cards?",
+              q: "Can I write on both matte and glossy corporate cards?",
               a: 'You can write on matte and uncoated cards using standard ballpoint pens or pencils. Glossy cards have a slick UV coating that resists ink, making them harder to write on.',
             },
             {
@@ -3021,21 +3021,21 @@ Why Choose Our Professional Rollup Banners?
             {
               author: "Marcus K., Event Director",
               rating: 5,
-              text: "The metallic foil cards look amazing! They really capture attention when handed out. Exact color registration and excellent premium paper stock.",
+              text: "The metallic foil cards look amazing! They really capture attention when handed out. Exact color registration and excellent high-quality paper stock.",
             },
             {
               author: "Sarah J., Retail Manager",
               rating: 5,
-              text: "I ordered the Pearl business cards and have received so many compliments on the shimmer. The offset print quality is pristine.",
+              text: "I ordered the Pearl corporate cards and have received so many compliments on the shimmer. The offset print quality is pristine.",
             },
             {
               author: "David T., Startup Founder",
               rating: 5,
-              text: "Sturdy 16 pt premium cards. Excellent price point and extremely fast turnaround. Will definitely reorder standard cards here.",
+              text: "Sturdy 16 pt high-quality cards. Excellent price point and extremely fast turnaround. Will definitely reorder standard cards here.",
             },
           ],
-          ctaHeading: "Design business cards now",
-          ctaBody: "Upload your business info and logo to print double-sided cards fast.",
+          ctaHeading: "Design corporate cards now",
+          ctaBody: "Upload your corporate info and logo to print double-sided cards fast.",
           ctaLabel: "Customize Cards",
         },
       },
@@ -3043,24 +3043,24 @@ Why Choose Our Professional Rollup Banners?
         id: "custom-postcards",
         name: "Postcards",
         description:
-          "Hand out rich, full-color Custom Postcards at your event table to advertise promotions, catalog your services, or distribute coupons. Printed in high definition on heavy 14pt gloss cover paper, they feel substantial and professional. Choose between matte or high-gloss front finishes and custom sizes to create flyers, handouts, or mailers that prompt action from potential clients.",
-        image: "/images/products/main%20page/postcard_glossy.png",
-        price: "Starting at $60.00 for 100",
+          "Hand out rich, full-color Personalized Postcards at your event table to advertise promotions, catalog your services, or distribute coupons. Printed in high definition on heavy 14pt gloss cover paper, they feel substantial and expert-grade. Choose between matte or high-gloss front finishes and personalized sizes to create flyers, handouts, or mailers that prompt action from potential clients.",
+        image: "/images/products/main%20page/postcard_glossy-toronto-printing-ca.png",
+        price: "Starting at CAD 60.00 for 100",
         config: {
-          title: "Custom Postcards",
+          title: "Personalized Postcards",
           quantityOptions: [100, 250, 500, 750, 1000, 1500, 2000],
           subtitle:
             "Standard promotional postcards printed in high definition gloss or matte cardstock.",
           breadcrumb: "Tradeshow",
           breadcrumbHref: "/trade-show",
           promoText: "25% OFF ALL POSTCARDS AND HANDOUTS",
-          image: "/images/products/main%20page/postcard_glossy.png",
+          image: "/images/products/main%20page/postcard_glossy-toronto-printing-ca.png",
           images: [
-            "/images/products/main%20page/postcard_glossy.png",
-            "/images/products/main%20page/postcard_matte.png",
-            "/images/products/main%20page/postcard_action_1.png",
-            "/images/products/main%20page/postcard_action_2.png",
-            "/images/products/main%20page/postcard_action_3.png",
+            "/images/products/main%20page/postcard_glossy-toronto-printing-ca.png",
+            "/images/products/main%20page/postcard_matte-toronto-printing-ca.png",
+            "/images/products/main%20page/postcard_action_1-toronto-printing-ca.png",
+            "/images/products/main%20page/postcard_action_2-toronto-printing-ca.png",
+            "/images/products/main%20page/postcard_action_3-toronto-printing-ca.png",
           ],
           ratingCount: "280",
           ratingScore: "4.8",
@@ -3131,14 +3131,14 @@ Why Choose Our Professional Rollup Banners?
                   value: "glossy",
                   priceAdder: 0,
                   description: "High-shine glossy finish that makes colors pop.",
-                  image: "/images/products/main%20page/postcard_glossy.png",
+                  image: "/images/products/main%20page/postcard_glossy-toronto-printing-ca.png",
                 },
                 {
                   label: "Matte",
                   value: "matte",
                   priceAdder: 0,
-                  description: "Clean, professional look with a smooth non-glare matte finish.",
-                  image: "/images/products/main%20page/postcard_matte.png",
+                  description: "Clean, expert-grade look with a smooth non-glare matte finish.",
+                  image: "/images/products/main%20page/postcard_matte-toronto-printing-ca.png",
                 },
               ],
             },
@@ -3162,9 +3162,9 @@ Why Choose Our Professional Rollup Banners?
           ],
           qtyDiscount: "Save more when printing in bulk",
           keyFeatures: [
-            "Premium heavyweight 14pt cardstock",
-            "Vibrant double-sided printing available",
-            "Premium glossy or matte textures",
+            "High-quality heavyweight 14pt cardstock",
+            "Vivid double-sided printing available",
+            "High-quality glossy or matte textures",
           ],
           useCases: [
             "Product coupon codes",
@@ -3177,18 +3177,18 @@ Why Choose Our Professional Rollup Banners?
           ],
           description:
             `<div class="space-y-4">
-              <h3 class="text-lg font-bold text-slate-900">Custom Event Postcards & Table Handouts</h3>
+              <h3 class="text-lg font-bold text-slate-900">Personalized Event Postcards & Table Handouts</h3>
               <p class="text-sm text-gray-700 leading-relaxed">
-                Nano Signs provides high-quality postcard printing tailored for trade shows, networking events, and corporate displays nationwide. Printed on rigid 14pt cardstock, these postcards make outstanding spec sheets, coupon hand-outs, and direct mail ads. The clean, square-cornered trim ensures a simple, modern look that matches corporate guidelines.
+                Nano Signs provides high-quality postcard printing tailored for trade shows, networking events, and corporate displays nationwide. Manufactured using rigid 14pt cardstock, these postcards make outstanding spec sheets, coupon hand-outs, and direct mail ads. The clean, square-cornered trim ensures a simple, modern look that matches corporate guidelines.
               </p>
               <p class="text-sm text-gray-700 leading-relaxed">
-                Choose between high-gloss coating for ultimate vibrance or matte finish for a elegant, non-glare appearance that is easy to write on. Personalize with your logo and messaging in our Design Studio or upload custom layouts to print single-sided or double-sided.
+                Choose between high-gloss coating for ultimate vibrance or matte finish for a elegant, non-glare appearance that is simple to write on. Personalize with your logo and messaging in our Design Studio or upload personalized layouts to print single-sided or double-sided.
               </p>
             </div>`,
           faqs: [
             {
-              q: "What paper stock options do you offer for custom postcards?",
-              a: "We print our postcards on premium heavy 14pt glossy cover or matte cardstock, giving them a stiff and substantial feel. Our glossy finish offers a high-shine coating that enhances photographic prints, while our smooth matte finish offers an elegant, writeable surface that resists smudging.",
+              q: "What paper stock options do you offer for personalized postcards?",
+              a: "We print our postcards on high-quality heavy 14pt glossy cover or matte cardstock, giving them a stiff and substantial feel. Our glossy finish offers a high-shine coating that enhances photographic prints, while our smooth matte finish offers an elegant, writeable surface that resists smudging.",
             },
             {
               q: "Can I print on both the front and back of the postcards?",
@@ -3200,23 +3200,23 @@ Why Choose Our Professional Rollup Banners?
             },
             {
               q: "What is the difference between glossy and matte postcard finishes?",
-              a: "Glossy paper has a reflective coating that makes images pop with intense color and deep contrasts, perfect for real estate flyers. Matte finish is non-reflective, soft to the touch, and makes text highly legible, ideal for info-dense postcards.",
+              a: "Glossy paper has a reflective coating that makes images pop with intense color and deep contrasts, ideal for real estate flyers. Matte finish is non-reflective, soft to the touch, and makes text highly legible, ideal for info-dense postcards.",
             },
             {
               q: "Do you offer layout templates for designing postcards?",
-              a: "Yes, our online Design Studio provides easy-to-use layouts, shapes, cliparts, and text boxes. You can design your custom postcard from scratch or upload a print-ready PDF/AI file directly to place your order.",
+              a: "Yes, our online Design Studio provides easy-to-use layouts, shapes, cliparts, and text boxes. You can design your personalized postcard from scratch or upload a print-ready PDF/AI file directly to place your order.",
             },
           ],
           reviews: [
             {
               author: "Tina M., Sales Rep",
               rating: 5,
-              text: "Used these as handout spec sheets for our trade show in Fort Lauderdale. Colors are bright, and the 14pt stock feels very thick and expensive. Highly recommended local print shop!",
+              text: "Used these as handout spec sheets for our trade show in Toronto. Colors are bright, and the 14pt stock feels very thick and expensive. Highly recommended local print shop!",
             },
             {
               author: "Robert G., General Contractor",
               rating: 5,
-              text: "Durable, thick cards. Square corners look very modern. Handed out to clients and got a great response.",
+              text: "Resilient, thick cards. Square corners look very modern. Handed out to clients and got a great response.",
             },
           ],
           ctaHeading: "Build flyers & postcards",
@@ -3227,37 +3227,37 @@ Why Choose Our Professional Rollup Banners?
     ],
   },
   "custom-decals": {
-    title: "Custom Decals",
-    breadcrumbLabel: "Custom Decals",
+    title: "Personalized Decals",
+    breadcrumbLabel: "Personalized Decals",
     description:
-      "Discover our full lineup of custom decal solutions, including vinyl decals, static clings, sticker sheets, and roll labels.",
-    heroImage: "/images/products/main%20page/stickers%20%26%20decals%20hero%20image.png",
-    tabletHeroImage: "/images/products/main%20page/stickers%20%26%20decals%20hero%20image.png",
-    mobileHeroImage: "/images/products/main%20page/stickers%20%26%20decals%20hero%20image.png",
+      "Discover our full lineup of personalized decal solutions, including vinyl decals, static clings, sticker sheets, and roll labels.",
+    heroImage: "/images/products/main%20page/stickers%20%26%20decals%20hero%20image-toronto-printing-ca.png",
+    tabletHeroImage: "/images/products/main%20page/stickers%20%26%20decals%20hero%20image-toronto-printing-ca.png",
+    mobileHeroImage: "/images/products/main%20page/stickers%20%26%20decals%20hero%20image-toronto-printing-ca.png",
     heroSubtitle: "Design It. Stick It. Leave Your Mark.",
     reviewRating: "4.9",
     reviewCount: "1,840",
     reviewQuote:
-      "The custom window decals turned out perfectly! Extremely easy to apply without bubbles, and the resolution is incredibly sharp. Will buy again!",
+      "The personalized window decals turned out perfectly! Extremely simple to apply without bubbles, and the resolution is incredibly sharp. Will buy again!",
     categoryDescriptionText:
-      "Discover our full lineup of custom decal solutions, including vinyl decals, static clings, sticker sheets, and roll labels. Perfect for use indoors or out, our decals are built to last and ideal for everything from storefront displays to vehicle branding and promotional giveaways. Easily personalize your decals with our intuitive design tools by uploading your own artwork or choosing from our ready-made templates to get started today.",
-    categorySecondaryImage: "/images/products/main%20page/custom_decals_desc.png",
+      "Discover our full lineup of personalized decal solutions, including vinyl decals, static clings, sticker sheets, and roll labels. Ideal for use indoors or out, our decals are built to last and ideal for everything from storefront displays to vehicle branding and promotional giveaways. Easily personalize your decals with our intuitive design tools by uploading your own artwork or choosing from our ready-made templates to get started today.",
+    categorySecondaryImage: "/images/products/main%20page/custom_decals_desc-toronto-printing-ca.png",
     faqs: [
       {
         q: "What type of decal material should I choose?",
-        a: "It depends on your surface and how you plan to use the decal. Clear decals are great for glass and offer a sleek, see-through look where the background shows through. Opaque decals have a solid white backing, making colors pop and providing full coverage making them ideal for most surfaces and long-term use. Static clings use no adhesive, are easy to reposition, and perfect for short-term use on smooth surfaces like windows. For bulk needs, sticker sheets and roll labels offer flexible, efficient options.",
+        a: "It depends on your surface and how you plan to use the decal. Clear decals are excellent for glass and offer a sleek, see-through look where the background shows through. Opaque decals have a solid white backing, making colors pop and providing full coverage making them ideal for most surfaces and long-term use. Static clings use no adhesive, are simple to reposition, and ideal for short-term use on smooth surfaces like windows. For bulk needs, sticker sheets and roll labels offer flexible, efficient options.",
       },
       {
         q: "Can these decals be used indoors and outdoors?",
-        a: "Yes! We offer materials that suit both environments. Opaque vinyl and clear decals are durable enough for outdoor use, while static clings and wall decals are best for indoor or short-term outdoor placement.",
+        a: "Yes! We offer materials that suit both environments. Opaque vinyl and clear decals are resilient enough for exterior use, while static clings and wall decals are best for interior or short-term exterior placement.",
       },
       {
         q: "What surfaces do your decals stick to best?",
         a: "All our decals are made for smooth, non-porous surfaces like glass, metal, painted walls, and plastic. For best results, apply to clean, flat areas free of dust or texture.",
       },
       {
-        q: "Are custom decals easy to apply and remove?",
-        a: "Yes! Most apply with simple pressure and can be removed without damage. Static clings are especially easy to reposition or remove, while adhesive decals may require heat or adhesive remover for clean removal. Sticker sheets and roll labels are designed for peel-and-stick convenience and are easy to handle in bulk.",
+        q: "Are personalized decals simple to apply and remove?",
+        a: "Yes! Most apply with simple pressure and can be removed without damage. Static clings are especially simple to reposition or remove, while adhesive decals may require heat or adhesive remover for clean removal. Sticker sheets and roll labels are engineered for peel-and-stick convenience and are simple to handle in bulk.",
       },
       {
         q: "Can I upload my own design or logo?",
@@ -3265,7 +3265,7 @@ Why Choose Our Professional Rollup Banners?
       },
       {
         q: "What decal sizes do you offer?",
-        a: "We offer a wide range of standard and custom sizes to fit your needs; whether it's a small window graphic or a large wall display. You can select your preferred size on each product page or enter a custom dimension if needed.",
+        a: "We offer a wide range of standard and personalized sizes to fit your needs; whether it's a small window graphic or a large wall display. You can select your preferred size on each product page or enter a personalized dimension if needed.",
       },
     ],
     products: [
@@ -3273,19 +3273,19 @@ Why Choose Our Professional Rollup Banners?
         id: "bumper-stickers",
         name: "Bumper Stickers",
         description:
-          "Classic adhesive labels for car bumpers and windows. High visibility branding.",
-        image: "/images/products/main%20page/bumper_sticker_product.png",
-        price: "Starting at $2.24",
+          "Traditional adhesive labels for car bumpers and windows. Maximum exposure branding.",
+        image: "/images/products/main%20page/bumper_sticker_product-toronto-printing-ca.png",
+        price: "Starting at CAD 2.24",
         badge: "Car Favorite",
         config: {
-          title: "Custom Bumper Stickers",
+          title: "Personalized Bumper Stickers",
           quantityOptions: [100, 250, 500, 1000, 2500, 5000, 10000],
           subtitle:
-            "Standard bumper stickers printed on waterproof, UV-proof outdoor vinyl adhesive.",
+            "Standard bumper stickers manufactured using weather-resistant, UV-proof exterior vinyl adhesive.",
           breadcrumb: "Decals",
-          breadcrumbHref: "/custom-decals",
+          breadcrumbHref: "/personalized-decals",
           promoText: "20% OFF BUMPER STICKERS - SHIPS NEXT DAY",
-          image: "/images/products/main%20page/bumper_sticker_product.png",
+          image: "/images/products/main%20page/bumper_sticker_product-toronto-printing-ca.png",
           ratingCount: "850",
           ratingScore: "4.8",
           sizes: [
@@ -3310,12 +3310,12 @@ Why Choose Our Professional Rollup Banners?
           ],
           qtyDiscount: "Bulk packs save up to 80% per sticker",
           keyFeatures: [
-            "Premium 4mil vinyl layer",
-            "Waterproof and car-wash safe",
+            "High-quality 4mil vinyl layer",
+            "Weather-resistant and car-wash safe",
             "Easy bubble-free application",
           ],
           useCases: [
-            "Business giveaways",
+            "Corporate giveaways",
             "School spirit labels",
             "Political campaigns",
           ],
@@ -3325,7 +3325,7 @@ Why Choose Our Professional Rollup Banners?
           faqs: [],
           reviews: [],
           ctaHeading: "Print bumper stickers today",
-          ctaBody: "Add custom text, sports numbers, or business graphics.",
+          ctaBody: "Add personalized text, sports numbers, or corporate graphics.",
           ctaLabel: "Customize Bumper Sticker",
         },
       },
@@ -3333,17 +3333,17 @@ Why Choose Our Professional Rollup Banners?
         id: "car-door-decals",
         name: "Car Door Decals",
         description:
-          "Adhesive door decals for car bodies. Durable semi-permanent advertising.",
-        image: "/images/products/main%20page/car_door_decal_product.png",
-        price: "Starting at $23.86",
+          "Adhesive door decals for car bodies. Resilient semi-permanent marketing.",
+        image: "/images/products/main%20page/car_door_decal_product-toronto-printing-ca.png",
+        price: "Starting at CAD 23.86",
         config: {
-          title: "Custom Car Door Decals",
+          title: "Personalized Car Door Decals",
           subtitle:
-            "Professional semi-permanent adhesive branding decals for truck and car door panels.",
+            "Expert-grade semi-permanent adhesive branding decals for truck and car door panels.",
           breadcrumb: "Decals",
-          breadcrumbHref: "/custom-decals",
+          breadcrumbHref: "/personalized-decals",
           promoText: "20% OFF SEMI-PERMANENT DOOR DECALS",
-          image: "/images/products/main%20page/car_door_decal_product.png",
+          image: "/images/products/main%20page/car_door_decal_product-toronto-printing-ca.png",
           ratingCount: "320",
           ratingScore: "4.7",
           sizes: [
@@ -3373,11 +3373,11 @@ Why Choose Our Professional Rollup Banners?
           qtyDiscount: "Volume discounts on door pairs",
           keyFeatures: [
             "High performance calendered vinyl",
-            "Waterproof and UV laminated",
+            "Weather-resistant and UV laminated",
             "Semi-permanent solid adhesion",
           ],
           useCases: [
-            "Business logos",
+            "Corporate logos",
             "Regulation USDOT numbers",
             "Contractor branding",
           ],
@@ -3394,16 +3394,16 @@ Why Choose Our Professional Rollup Banners?
         name: "Car Window Decals",
         description:
           "Rear and side window adhesive graphics, available in transparent and opaque materials.",
-        image: "/images/products/main%20page/car_window_decal_product.png",
-        price: "Starting at $23.86",
+        image: "/images/products/main%20page/car_window_decal_product-toronto-printing-ca.png",
+        price: "Starting at CAD 23.86",
         config: {
-          title: "Custom Car Window Decals",
+          title: "Personalized Car Window Decals",
           subtitle:
-            "Highly visible rear window adhesive decals. Perfect for glass surfaces.",
+            "Highly visible rear window adhesive decals. Ideal for glass surfaces.",
           breadcrumb: "Decals",
-          breadcrumbHref: "/custom-decals",
+          breadcrumbHref: "/personalized-decals",
           promoText: "20% OFF WINDOW ADHESIVE DECALS",
-          image: "/images/products/main%20page/car_window_decal_product.png",
+          image: "/images/products/main%20page/car_window_decal_product-toronto-printing-ca.png",
           ratingCount: "285",
           ratingScore: "4.8",
           sizes: [
@@ -3438,7 +3438,7 @@ Why Choose Our Professional Rollup Banners?
           qtyDiscount: "Volume savings apply",
           keyFeatures: [
             "Window safe adhesive backing",
-            "Vibrant inks pop on transparent base",
+            "Vivid inks pop on transparent base",
             "Rain and rear-wiper proof",
           ],
           useCases: [
@@ -3461,23 +3461,23 @@ Why Choose Our Professional Rollup Banners?
         id: "window-decals",
         name: "Window Decals",
         description:
-          "Adhesive signage for business storefront windows and glass panels.",
-        image: "/images/products/main%20page/vinyl_sticker.png",
-        price: "Starting at $23.86",
+          "Adhesive signage for corporate storefront windows and glass panels.",
+        image: "/images/products/main%20page/vinyl_sticker-toronto-printing-ca.png",
+        price: "Starting at CAD 23.86",
         badge: "Best Seller",
         config: {
-          title: "Custom Storefront Window Decals",
+          title: "Personalized Storefront Window Decals",
           subtitle:
-            "Professional adhesive decals for storefront glass, entrances, and office doors.",
+            "Expert-grade adhesive decals for storefront glass, entrances, and office doors.",
           breadcrumb: "Decals",
-          breadcrumbHref: "/custom-decals",
+          breadcrumbHref: "/personalized-decals",
           promoText: "20% OFF STOREFRONT WINDOW DECALS",
-          image: "/images/products/main%20page/vinyl_sticker.png",
+          image: "/images/products/main%20page/vinyl_sticker-toronto-printing-ca.png",
           images: [
-            "/images/products/main%20page/vinyl_sticker.png",
-            "/images/products/gallery/vinyl_decal_use_1.png",
-            "/images/products/gallery/vinyl_decal_use_1.png",
-            "/images/products/gallery/vinyl_decal_use_1.png",
+            "/images/products/main%20page/vinyl_sticker-toronto-printing-ca.png",
+            "/images/products/gallery/vinyl_decal_use_1-toronto-printing-ca.png",
+            "/images/products/gallery/vinyl_decal_use_1-toronto-printing-ca.png",
+            "/images/products/gallery/vinyl_decal_use_1-toronto-printing-ca.png",
           ],
           ratingCount: "940",
           ratingScore: "4.9",
@@ -3507,7 +3507,7 @@ Why Choose Our Professional Rollup Banners?
                   value: "opaque",
                   priceAdder: 0,
                   description:
-                    "Solid background makes colors extremely vibrant.",
+                    "Solid background makes colors extremely vivid.",
                 },
                 {
                   label: "Clear Transparent Adhesive Glass",
@@ -3520,19 +3520,19 @@ Why Choose Our Professional Rollup Banners?
                   value: "frosted",
                   priceAdder: 12.0,
                   description:
-                    "Offers privacy with a premium sandblasted look.",
+                    "Offers privacy with a high-quality sandblasted look.",
                 },
               ],
             },
           ],
           qtyDiscount: "Saves up to 15% on commercial building orders",
           keyFeatures: [
-            "Weatherproof outdoor vinyl print",
+            "Weatherproof exterior vinyl print",
             "Apply on inside or outside of glass",
-            "Vibrant UV inks resist fading",
+            "Vivid UV inks resist fading",
           ],
           useCases: [
-            "Business hours lists",
+            "Corporate hours lists",
             "Storefront branding logos",
             "Open/Closed door banners",
             "Office partition privacy",
@@ -3555,18 +3555,18 @@ Why Choose Our Professional Rollup Banners?
         id: "roll-labels",
         name: "Roll Labels",
         description:
-          "Bulk promotional logo stickers printed on paper or plastic rolls, perfect for packaging.",
-        image: "/images/products/main%20page/roll_labels_product.png",
-        price: "Starting at $0.54 each",
+          "Bulk promotional logo stickers manufactured using paper or plastic rolls, ideal for packaging.",
+        image: "/images/products/main%20page/roll_labels_product-toronto-printing-ca.png",
+        price: "Starting at CAD 0.54 each",
         config: {
-          title: "Custom Printed Roll Labels",
+          title: "Personalized Printed Roll Labels",
           quantityOptions: [100, 250, 500, 1000, 2500, 5000, 10000],
           subtitle:
-            "Bulk logo and product label rolls, perfect for quick peeling, boxing, and product jars.",
+            "Bulk logo and product label rolls, ideal for quick peeling, boxing, and product jars.",
           breadcrumb: "Decals",
-          breadcrumbHref: "/custom-decals",
+          breadcrumbHref: "/personalized-decals",
           promoText: "20% OFF ALL BULK ROLL LABELS",
-          image: "/images/products/main%20page/roll_labels_product.png",
+          image: "/images/products/main%20page/roll_labels_product-toronto-printing-ca.png",
           ratingCount: "410",
           ratingScore: "4.8",
           sizes: [
@@ -3592,11 +3592,11 @@ Why Choose Our Professional Rollup Banners?
             },
           ],
           qtyDiscount:
-            "Pricing drops as low as $0.05 per label in high bulk quantities",
+            "Pricing drops as low as CAD 0.05 per label in high bulk quantities",
           keyFeatures: [
             'Wound on standard 3" cardboard cores',
             "Easy machine or hand dispensing",
-            "Vibrant colors",
+            "Vivid colors",
           ],
           useCases: [
             "Product jar branding",
@@ -3616,19 +3616,19 @@ Why Choose Our Professional Rollup Banners?
         id: "window-clings",
         name: "Static Window Clings",
         description:
-          "Glueless static clings that stick to glass using static energy. Easy to reposition.",
+          "Glueless static clings that stick to glass using static energy. Simple to reposition.",
         image:
-          "/images/products/main%20page/window_clings_product.png",
-        price: "Starting at $62.96",
+          "/images/products/main%20page/window_clings_product-toronto-printing-ca.png",
+        price: "Starting at CAD 62.96",
         config: {
           title: "Static Window Clings",
           subtitle:
             "No-adhesive window clings. Slide in place, remove, and reuse with static cling science.",
           breadcrumb: "Decals",
-          breadcrumbHref: "/custom-decals",
+          breadcrumbHref: "/personalized-decals",
           promoText: "20% OFF REPOSITIONABLE WINDOW CLINGS",
           image:
-            "/images/products/main%20page/window_clings_product.png",
+            "/images/products/main%20page/window_clings_product-toronto-printing-ca.png",
           ratingCount: "220",
           ratingScore: "4.7",
           sizes: [
@@ -3690,23 +3690,23 @@ Why Choose Our Professional Rollup Banners?
         id: "sheet-stickers",
         name: "Sheet Stickers",
         description:
-          "Multiple custom stickers printed on a flat sheet, perfect for retail labelling.",
-        image: "/images/products/main%20page/sticker_and_labels.png",
-        price: "Starting at $11.16",
+          "Multiple personalized stickers manufactured using a flat sheet, ideal for retail labelling.",
+        image: "/images/products/main%20page/sticker_and_labels-toronto-printing-ca.png",
+        price: "Starting at CAD 11.16",
         config: {
-          title: "Custom Sheet Stickers",
+          title: "Personalized Sheet Stickers",
           quantityOptions: [100, 250, 500, 1000, 2500, 5000, 10000],
           subtitle:
             "Sticker sheets featuring multiple peel-off sticker cut contours on a single page.",
           breadcrumb: "Decals",
-          breadcrumbHref: "/custom-decals",
+          breadcrumbHref: "/personalized-decals",
           promoText: "20% OFF PRINTED STICKER SHEETS",
-          image: "/images/products/main%20page/sticker_and_labels.png",
+          image: "/images/products/main%20page/sticker_and_labels-toronto-printing-ca.png",
           images: [
-            "/images/products/main%20page/sticker_and_labels.png",
-            "/images/products/gallery/sticker_use_1.png",
-            "/images/products/gallery/sticker_use_1.png",
-            "/images/products/gallery/sticker_use_1.png",
+            "/images/products/main%20page/sticker_and_labels-toronto-printing-ca.png",
+            "/images/products/gallery/sticker_use_1-toronto-printing-ca.png",
+            "/images/products/gallery/sticker_use_1-toronto-printing-ca.png",
+            "/images/products/gallery/sticker_use_1-toronto-printing-ca.png",
           ],
           ratingCount: "340",
           ratingScore: "4.8",
@@ -3737,7 +3737,7 @@ Why Choose Our Professional Rollup Banners?
           qtyDiscount: "Saves up to 40% on bulk sheets",
           keyFeatures: [
             "Multiple stickers per sheet",
-            "Durable peel-and-stick backings",
+            "Resilient peel-and-stick backings",
             "Contour kiss-cut contours",
           ],
           useCases: [
@@ -3749,7 +3749,7 @@ Why Choose Our Professional Rollup Banners?
           faqs: [],
           reviews: [],
           ctaHeading: "Design multi-sticker layouts",
-          ctaBody: "Order flat sheets containing multiple business stickers.",
+          ctaBody: "Order flat sheets containing multiple corporate stickers.",
           ctaLabel: "Customize Sticker Sheet",
         },
       },
@@ -3759,18 +3759,18 @@ Why Choose Our Professional Rollup Banners?
         description:
           "Mini address stickers for envelope branding, packaging returns, and office logs.",
         image:
-          "/images/products/main%20page/return_address_labels_product.png",
-        price: "Starting at $0.14 each",
+          "/images/products/main%20page/return_address_labels_product-toronto-printing-ca.png",
+        price: "Starting at CAD 0.14 each",
         config: {
           title: "Return Address Labels",
           quantityOptions: [100, 250, 500, 1000, 2500, 5000, 10000],
           subtitle:
-            "Convenient return address labels printed on premium sticky sheets.",
+            "Convenient return address labels manufactured using high-quality sticky sheets.",
           breadcrumb: "Decals",
-          breadcrumbHref: "/custom-decals",
+          breadcrumbHref: "/personalized-decals",
           promoText: "20% OFF RETURN ADDRESS LABELS",
           image:
-            "/images/products/main%20page/return_address_labels_product.png",
+            "/images/products/main%20page/return_address_labels_product-toronto-printing-ca.png",
           ratingCount: "480",
           ratingScore: "4.9",
           sizes: [
@@ -3799,12 +3799,12 @@ Why Choose Our Professional Rollup Banners?
           ],
           qtyDiscount: "Pack options of 100, 250, 500",
           keyFeatures: [
-            "Peel & stick quickly",
-            "Vibrant black text layout",
-            "Durable cardstock box container",
+            "Peel & stick rapidly",
+            "Vivid black text layout",
+            "Resilient cardstock box container",
           ],
           useCases: [
-            "Business correspondence envelopes",
+            "Corporate correspondence envelopes",
             "Wedding invitations",
             "Product labels",
           ],
@@ -3824,8 +3824,8 @@ Why Choose Our Professional Rollup Banners?
     title: "Stands & Sign Holders",
     breadcrumbLabel: "Sign Accessories",
     description:
-      "Premium stakes, frames and heavy duty steel mounts to hold your yard signs, outdoor notices, and trade show displays.",
-    heroImage: "https://ext.same-assets.com/1114826555/1286398033.png",
+      "High-quality stakes, frames and commercial-grade steel mounts to hold your yard signs, exterior notices, and trade show displays.",
+    heroImage: "https://ext.same-assets.com/1114826555/1286398033-toronto-printing-ca.png",
     reviewRating: "4.8",
     reviewCount: "980",
     reviewQuote:
@@ -3835,17 +3835,17 @@ Why Choose Our Professional Rollup Banners?
         id: "h-frames",
         name: "Metal H-Frame Stakes",
         description:
-          "Heavy duty metal wire stakes to hold corrugated plastic signs in lawns.",
-        image: "https://ext.same-assets.com/1114826555/1286398033.png",
-        price: "Starting at $1.49",
+          "Commercial-grade metal wire stakes to hold corrugated plastic signs in lawns.",
+        image: "https://ext.same-assets.com/1114826555/1286398033-toronto-printing-ca.png",
+        price: "Starting at CAD 1.49",
         config: {
           title: "Metal Yard Stakes (H-Frames)",
           subtitle:
-            "Heavy duty galvanized steel wire stakes designed to hold 4mm coroplast yard signs.",
+            "Commercial-grade galvanized steel wire stakes designed to hold 4mm coroplast yard signs.",
           breadcrumb: "Sign Holders",
           breadcrumbHref: "/sign-accessories",
           promoText: "25% OFF WIRE STAKES & HOLDERS",
-          image: "https://ext.same-assets.com/1114826555/1286398033.png",
+          image: "https://ext.same-assets.com/1114826555/1286398033-toronto-printing-ca.png",
           ratingCount: "940",
           ratingScore: "4.8",
           sizes: [
@@ -3868,7 +3868,7 @@ Why Choose Our Professional Rollup Banners?
                   label: "Standard 9-Gauge Steel",
                   value: "9gauge",
                   priceAdder: 0,
-                  description: "Classic sturdy wire, fits standard lawns.",
+                  description: "Traditional sturdy wire, fits standard lawns.",
                 },
                 {
                   label: "Heavy Duty Galvanized Steel",
@@ -3880,7 +3880,7 @@ Why Choose Our Professional Rollup Banners?
             },
           ],
           qtyDiscount:
-            "Volume pricing drops under $0.99 for quantities over 100",
+            "Volume pricing drops under CAD 0.99 for quantities over 100",
           keyFeatures: [
             "Corrosion-resistant steel",
             "Slides easily into yard sign flutes",
@@ -3890,7 +3890,7 @@ Why Choose Our Professional Rollup Banners?
           useCases: [
             "Political campaigns",
             "Real estate open houses",
-            "Contractor lawn advertising",
+            "Contractor lawn marketing",
             "Community event notices",
           ],
           specs: [
@@ -3911,7 +3911,7 @@ Why Choose Our Professional Rollup Banners?
             {
               author: "Arthur L.",
               rating: 5,
-              text: "Sturdy stakes. Did not bend even in dry Florida lawn dirt.",
+              text: "Sturdy stakes. Did not bend even in cold Canadian lawn soil.",
             },
           ],
           ctaHeading: "Order stakes for your yard signs",
@@ -3925,29 +3925,29 @@ Why Choose Our Professional Rollup Banners?
   "marketing-materials": {
     title: "Marketing Materials",
     breadcrumbLabel: "Marketing Materials",
-    heroSubtitle: "Professional Print. Promoted Brand.",
+    heroSubtitle: "Expert-grade Print. Promoted Brand.",
     description:
-      "Grow your business and look professional with customized business cards, flyers, and brochures.",
-    heroImage: "/images/products/main%20page/marketing%20_materials_hero_image.png",
+      "Grow your corporate and look expert-grade with customized corporate cards, flyers, and brochures.",
+    heroImage: "/images/products/main%20page/marketing%20_materials_hero_image-toronto-printing-ca.png",
     reviewRating: "4.9",
     reviewCount: "1,150",
     reviewQuote:
       "The flyers and folded menus turned out absolutely gorgeous! Perfect color alignment with our corporate branding guidelines and the paper quality is very thick.",
     categoryDescriptionText:
       `<div class="space-y-4">
-        <h3 class="text-xl font-bold text-slate-900">Elevate Your Brand in Broward County with Premium Marketing Materials</h3>
+        <h3 class="text-xl font-bold text-slate-900">Elevate Your Brand in Toronto with High-quality Marketing Materials</h3>
         <p class="text-sm text-gray-700 leading-relaxed">
-          At <strong>Nano Signs</strong>, we deliver industry-leading commercial printing and sign services designed to grab attention and convert leads. Serving <strong>Fort Lauderdale</strong>, <strong>Oakland Park</strong>, and the wider <strong>Broward County</strong> area, we specialize in high-definition print collateral that represents your business with distinction. Whether you need standard business cards for networking events, door hangers for targeted local neighborhood mailings, or folded brochures to pitch complex services, our state-of-the-art print production facilities ensure crisp details, harmonious colors, and premium paper weights.
+          At <strong>Nano Signs</strong>, we deliver industry-leading commercial printing and sign services designed to grab attention and convert leads. Serving <strong>Toronto</strong>, <strong>Mississauga</strong>, and the wider <strong>Greater Toronto Area</strong>, we specialize in high-definition print collateral that represents your corporate with distinction. Whether you need standard corporate cards for networking events, door hangers for targeted local neighbourhood mailings, or folded brochures to pitch complex services, our state-of-the-art print production facilities ensure crisp details, harmonious colors, and high-quality paper weights.
         </p>
         <p class="text-sm text-gray-700 leading-relaxed">
-          Our complete suite of custom marketing collateral includes premium business cards (including our 14pt semi-gloss profit maximizer), custom postcards and direct mailers, vibrant flyers and folded brochures, and pre-cut door hangers. We print on heavy cardstock and high-density text papers using advanced offset lithography. Plus, with our local facility advantages, we support next-day shipping throughout South Florida, ensuring you never show up empty-handed to your next client pitch or local tradeshow event.
+          Our complete suite of personalized marketing collateral includes high-quality corporate cards (including our 14pt semi-gloss profit maximizer), personalized postcards and direct mailers, vivid flyers and folded brochures, and pre-cut door hangers. We print on heavy cardstock and high-density text papers using advanced offset lithography. Plus, with our local facility advantages, we support next-day shipping throughout Ontario, ensuring you never show up empty-handed to your next client pitch or local tradeshow event.
         </p>
       </div>`,
-    categorySecondaryImage: "/images/products/main%20page/marketing_materials_desc.png",
+    categorySecondaryImage: "/images/products/main%20page/marketing_materials_desc-toronto-printing-ca.png",
     faqs: [
       {
         q: "What cardstock and paper options do you offer?",
-        a: "We offer a variety of professional materials tailored to each product. Our cards, door hangers, rack cards, and table tents are printed on thick 14pt or 16pt cardstock with gloss or matte finishes. Our flyers and brochures are printed on high-density 100lb glossy or matte text paper for high foldability.",
+        a: "We offer a variety of expert-grade materials tailored to each product. Our cards, door hangers, rack cards, and table tents are manufactured using thick 14pt or 16pt cardstock with gloss or matte finishes. Our flyers and brochures are manufactured using high-density 100lb glossy or matte text paper for high foldability.",
       },
       {
         q: "Can I write on the glossy printed materials?",
@@ -3961,13 +3961,13 @@ Why Choose Our Professional Rollup Banners?
     products: [
       {
         id: "business-cards",
-        name: "Business Cards",
+        name: "Corporate Cards",
         description:
-          'Leave a lasting impression with premium Custom Business Cards. Printed on ultra-thick 14pt or 16pt cardstock with offset high-resolution printing, these standard 3.5" x 2" cards represent your business with absolute quality. Customize your finish with professional non-glare matte or high-gloss UV sheen, and choose single or double-sided layouts to distribute to tradeshow attendees, recruits, and new leads.',
-        image: "/images/products/main%20page/business_cards.png",
-        price: "Starting at $29.98",
+          'Leave a lasting impression with high-quality Personalized Corporate Cards. Manufactured using ultra-thick 14pt or 16pt cardstock with offset high-resolution printing, these standard 3.5" x 2" cards represent your corporate with absolute quality. Customize your finish with expert-grade non-glare matte or high-gloss UV sheen, and choose single or double-sided layouts to distribute to tradeshow attendees, recruits, and new leads.',
+        image: "/images/products/main%20page/business_cards-toronto-printing-ca.png",
+        price: "Starting at CAD 29.98",
         config: {
-          title: "Custom Business Cards",
+          title: "Personalized Corporate Cards",
           quantityOptions: [100, 250, 500, 1000, 1500, 2000, 2500, 5000, 10000],
           quantityPrices: {
             100: 29.98,
@@ -3981,11 +3981,11 @@ Why Choose Our Professional Rollup Banners?
             10000: 559.98,
           },
           subtitle:
-            'Standard 3.5" x 2" cards printed on ultra-thick cardstock with multiple finishes.',
+            'Standard 3.5" x 2" cards manufactured using ultra-thick cardstock with multiple finishes.',
           breadcrumb: "Marketing",
           breadcrumbHref: "/marketing-materials",
           promoText: "25% OFF ALL CORPORATE STATIONERY",
-          image: "/images/products/main%20page/business_cards.png",
+          image: "/images/products/main%20page/business_cards-toronto-printing-ca.png",
           ratingCount: "1120",
           ratingScore: "4.9",
           sizes: [
@@ -4003,71 +4003,71 @@ Why Choose Our Professional Rollup Banners?
                   label: "14pt semi gloss (profit maximizer)",
                   value: "semi_gloss",
                   priceAdder: 0,
-                  description: "Clean, professional look with a smooth semi-gloss finish. Easy to write on.",
-                  image: "/images/products/main%20page/business_cards_semigloss.png",
+                  description: "Clean, expert-grade look with a smooth semi-gloss finish. Simple to write on.",
+                  image: "/images/products/main%20page/business_cards_semigloss-toronto-printing-ca.png",
                 },
                 {
                   label: "Glossy",
                   value: "glossy",
                   priceAdder: 0,
                   description: "High-shine glossy finish that makes colors pop.",
-                  image: "/images/products/main%20page/business_cards_glossy.png",
+                  image: "/images/products/main%20page/business_cards_glossy-toronto-printing-ca.png",
                 },
                 {
                   label: "Embossed Gloss",
                   value: "embossed_gloss",
                   priceAdder: 0.15,
                   description: "Raised clear gloss accents for a textured, high-end feel.",
-                  image: "/images/products/main%20page/business_cards_foil.png",
+                  image: "/images/products/main%20page/business_cards_foil-toronto-printing-ca.png",
                 },
                 {
                   label: "Soft Touch",
                   value: "soft_touch",
                   priceAdder: 0.12,
-                  description: "Velvety coating that feels soft and premium in the hand.",
-                  image: "/images/products/main%20page/business_cards.png",
+                  description: "Velvety coating that feels soft and high-quality in the hand.",
+                  image: "/images/products/main%20page/business_cards-toronto-printing-ca.png",
                 },
                 {
                   label: "Painted Edge",
                   value: "painted_edge",
                   priceAdder: 0.25,
                   description: "Thick cards with colored edges for a bold, modern look.",
-                  image: "/images/products/main%20page/business_cards_painted_edge.png",
+                  image: "/images/products/main%20page/business_cards_painted_edge-toronto-printing-ca.png",
                 },
                 {
                   label: "Ultra Thick",
                   value: "ultra_thick",
                   priceAdder: 0.23,
                   description: "Double-thick cardstock for a substantial, sturdy feel.",
-                  image: "/images/products/main%20page/business_cards_ultra_thick.png",
+                  image: "/images/products/main%20page/business_cards_ultra_thick-toronto-printing-ca.png",
                 },
                 {
                   label: "Clear Plastic",
                   value: "clear_plastic",
                   priceAdder: 0.35,
                   description: "See-through modern plastic cards that make a unique statement.",
-                  image: "/images/products/main%20page/business_cards_clear_plastic.png",
+                  image: "/images/products/main%20page/business_cards_clear_plastic-toronto-printing-ca.png",
                 },
                 {
                   label: "Pearl",
                   value: "pearl",
                   priceAdder: 0.12,
                   description: "Glimmering, light-catching surface with a pearlescent shine.",
-                  image: "/images/products/main%20page/business_cards_pearl.png",
+                  image: "/images/products/main%20page/business_cards_pearl-toronto-printing-ca.png",
                 },
                 {
                   label: "Gold Raised Foil",
                   value: "gold_raised_foil",
                   priceAdder: 0.20,
                   description: "Elevated, 3D raised gold foil accents for a luxury feel.",
-                  image: "/images/products/main%20page/business_cards_gold_raised_foil.png",
+                  image: "/images/products/main%20page/business_cards_gold_raised_foil-toronto-printing-ca.png",
                 },
                 {
                   label: "Silver Raised Foil",
                   value: "silver_raised_foil",
                   priceAdder: 0.20,
                   description: "Elevated, 3D raised silver foil accents for a luxury feel.",
-                  image: "/images/products/main%20page/business_cards_silver_raised_foil.png",
+                  image: "/images/products/main%20page/business_cards_silver_raised_foil-toronto-printing-ca.png",
                 },
               ],
             },
@@ -4079,14 +4079,14 @@ Why Choose Our Professional Rollup Banners?
                   value: "single",
                   priceAdder: 0,
                   priceMultiplier: 1.0,
-                  description: "Printed on front side only.",
+                  description: "Manufactured using front side only.",
                 },
                 {
                   label: "Double-Sided",
                   value: "double",
                   priceAdder: 0,
                   priceMultiplier: 1.25,
-                  description: "Printed on both front and back sides.",
+                  description: "Manufactured using both front and back sides.",
                 },
               ],
             },
@@ -4108,7 +4108,7 @@ Why Choose Our Professional Rollup Banners?
           ],
           qtyDiscount: "Predefined package quantities selected below",
           keyFeatures: [
-            "Vibrant color offset printing",
+            "Vivid color offset printing",
             "Ultra-thick cardstock options",
             "Easy design templates",
           ],
@@ -4123,25 +4123,25 @@ Why Choose Our Professional Rollup Banners?
           ],
           description:
             `<div class="space-y-4">
-              <h3 class="text-lg font-bold text-slate-900">Premium Business Cards Printed in Fort Lauderdale</h3>
+              <h3 class="text-lg font-bold text-slate-900">High-quality Corporate Cards Printed in Toronto</h3>
               <p class="text-sm text-gray-700 leading-relaxed">
-                Make a striking professional statement with custom business cards from Nano Signs. Serving Fort Lauderdale, Oakland Park, and Broward County, we specialize in high-definition offset business card printing that sets your brand apart. Our cards are printed on ultra-sturdy 14pt semi-gloss cardstock (our profit maximizer option) or heavy-weight 16pt stock, ensuring they never feel flimsy or cheap. Choose between a glossy UV protective coating for high vibrant contrast, or a smooth matte coating for a sophisticated, writable surface.
+                Make a striking expert-grade statement with personalized corporate cards from Nano Signs. Serving Toronto, Mississauga, and the Greater Toronto Area, we specialize in high-definition offset corporate card printing that sets your brand apart. Our cards are manufactured using ultra-sturdy 14pt semi-gloss cardstock (our profit maximizer option) or heavy-weight 16pt stock, ensuring they never feel flimsy or cheap. Choose between a glossy UV protective coating for high vivid contrast, or a smooth matte coating for a sophisticated, writable surface.
               </p>
               <p class="text-sm text-gray-700 leading-relaxed">
-                Whether you are an independent contractor in Broward County, a startup founder in Oakland Park, or a real estate agent in Fort Lauderdale, having a pocket full of pristine, double-sided business cards ensures you are always ready to network. Customize yours with raised foil accents, custom shapes, or painted edges to leave a memorable physical impression.
+                Whether you are an independent contractor in the GTA, a startup founder in Mississauga, or a real estate agent in Toronto, having a pocket full of pristine, double-sided corporate cards ensures you are always ready to network. Customize yours with raised foil accents, personalized shapes, or painted edges to leave a memorable physical impression.
               </p>
             </div>`,
           faqs: [
             {
-              q: "What is the standard size of a business card?",
-              a: 'The standard size for standard business cards is 3.5 inches by 2 inches. This fits perfectly into standard wallets, cardholders, and organizer slots.',
+              q: "What is the standard size of a corporate card?",
+              a: 'The standard size for standard corporate cards is 3.5 inches by 2 inches. This fits perfectly into standard wallets, cardholders, and organizer slots.',
             },
             {
               q: "What is the difference between 14 pt and 16 pt cardstock?",
-              a: 'The point (pt) unit measures paper thickness. 14 pt cardstock is the industry standard for high-quality business cards. 16 pt cardstock is thicker and sturdier, providing a heavier, more premium feel.',
+              a: 'The point (pt) unit measures paper thickness. 14 pt cardstock is the industry standard for high-quality corporate cards. 16 pt cardstock is thicker and sturdier, providing a heavier, more high-quality feel.',
             },
             {
-              q: "Can I write on both matte and glossy business cards?",
+              q: "Can I write on both matte and glossy corporate cards?",
               a: 'You can write on matte and uncoated cards using standard ballpoint pens or pencils. Glossy cards have a slick UV coating that resists ink, making them harder to write on.',
             },
             {
@@ -4149,7 +4149,7 @@ Why Choose Our Professional Rollup Banners?
               a: 'Pearl cardstock uses a specialized paper embedded with natural shimmering fibers that give the entire card a pearlescent sheen. Soft Touch is a velvet-matte protective coating applied after printing that gives the cards a soft, suede-like texture.',
             },
             {
-              q: "What is the minimum order quantity for custom business cards?",
+              q: "What is the minimum order quantity for personalized corporate cards?",
               a: "Our minimum quantity starts at just 100 cards. We provide significant bulk printing discounts for quantities of 250, 500, 1000, and up to 10,000 cards per order, giving you maximum value.",
             },
           ],
@@ -4157,47 +4157,47 @@ Why Choose Our Professional Rollup Banners?
             {
               author: "Marcus K., Event Director",
               rating: 5,
-              text: "The metallic foil cards look amazing! They really capture attention when handed out. Exact color registration and excellent premium paper stock.",
+              text: "The metallic foil cards look amazing! They really capture attention when handed out. Exact color registration and excellent high-quality paper stock.",
             },
             {
               author: "Sarah J., Retail Manager",
               rating: 5,
-              text: "I ordered the Pearl business cards and have received so many compliments on the shimmer. The offset print quality is pristine.",
+              text: "I ordered the Pearl corporate cards and have received so many compliments on the shimmer. The offset print quality is pristine.",
             },
             {
               author: "David T., Startup Founder",
               rating: 5,
-              text: "Sturdy 16 pt premium cards. Excellent price point and extremely fast turnaround. Will definitely reorder standard cards here.",
+              text: "Sturdy 16 pt high-quality cards. Excellent price point and extremely fast turnaround. Will definitely reorder standard cards here.",
             },
           ],
-          ctaHeading: "Design business cards now",
-          ctaBody: "Upload your business info and logo to print double-sided cards fast.",
+          ctaHeading: "Design corporate cards now",
+          ctaBody: "Upload your corporate info and logo to print double-sided cards fast.",
           ctaLabel: "Customize Cards",
         },
       },
       {
         id: "postcards",
-        name: "Custom Postcards",
+        name: "Personalized Postcards",
         description:
           "High-quality postcards for direct mail, handouts, and promotional inserts.",
-        image: "/images/products/main%20page/postcard_glossy.png",
-        price: "Starting at $60.00 for 100",
+        image: "/images/products/main%20page/postcard_glossy-toronto-printing-ca.png",
+        price: "Starting at CAD 60.00 for 100",
         badge: "Event Choice",
         config: {
-          title: "Custom Postcards",
+          title: "Personalized Postcards",
           quantityOptions: [100, 250, 500, 750, 1000, 1500, 2000],
           subtitle:
-            "Full-color promotional postcards printed on premium thick cardstock.",
+            "Full-color promotional postcards manufactured using high-quality thick cardstock.",
           breadcrumb: "Marketing",
           breadcrumbHref: "/marketing-materials",
           promoText: "25% OFF ALL EVENT MARKETING PRINTS",
-          image: "/images/products/main%20page/postcard_glossy.png",
+          image: "/images/products/main%20page/postcard_glossy-toronto-printing-ca.png",
           images: [
-            "/images/products/main%20page/postcard_glossy.png",
-            "/images/products/main%20page/postcard_matte.png",
-            "/images/products/main%20page/postcard_action_1.png",
-            "/images/products/main%20page/postcard_action_2.png",
-            "/images/products/main%20page/postcard_action_3.png",
+            "/images/products/main%20page/postcard_glossy-toronto-printing-ca.png",
+            "/images/products/main%20page/postcard_matte-toronto-printing-ca.png",
+            "/images/products/main%20page/postcard_action_1-toronto-printing-ca.png",
+            "/images/products/main%20page/postcard_action_2-toronto-printing-ca.png",
+            "/images/products/main%20page/postcard_action_3-toronto-printing-ca.png",
           ],
           ratingCount: "580",
           ratingScore: "4.8",
@@ -4268,14 +4268,14 @@ Why Choose Our Professional Rollup Banners?
                   value: "glossy",
                   priceAdder: 0,
                   description: "High-shine glossy finish that makes colors pop.",
-                  image: "/images/products/main%20page/postcard_glossy.png",
+                  image: "/images/products/main%20page/postcard_glossy-toronto-printing-ca.png",
                 },
                 {
                   label: "Matte",
                   value: "matte",
                   priceAdder: 0,
-                  description: "Clean, professional look with a smooth non-glare matte finish.",
-                  image: "/images/products/main%20page/postcard_matte.png",
+                  description: "Clean, expert-grade look with a smooth non-glare matte finish.",
+                  image: "/images/products/main%20page/postcard_matte-toronto-printing-ca.png",
                 },
               ],
             },
@@ -4304,7 +4304,7 @@ Why Choose Our Professional Rollup Banners?
             "Double sided color printing available",
           ],
           useCases: [
-            "Direct mail advertising",
+            "Direct mail marketing",
             "Coupons & promotional hand-outs",
             "Event invitations",
             "Product package inserts",
@@ -4315,18 +4315,18 @@ Why Choose Our Professional Rollup Banners?
           ],
           description:
             `<div class="space-y-4">
-              <h3 class="text-lg font-bold text-slate-900">Custom Printed Postcards in Fort Lauderdale & Oakland Park</h3>
+              <h3 class="text-lg font-bold text-slate-900">Personalized Printed Postcards in Toronto & Mississauga</h3>
               <p class="text-sm text-gray-700 leading-relaxed">
-                Take your local direct mail marketing or client handouts to the next level with premium custom postcards from Nano Signs. Serving Broward County, Fort Lauderdale, and Oakland Park, FL, we offer crisp, full-color postcard printing that is perfect for neighborhood outreach, retail promotions, coupons, and corporate invitations. Our postcards are cut with square corners to comply with standard USPS and Canada Post specifications, guaranteeing a clean and simple product-focused aesthetic.
+                Take your local direct mail marketing or client handouts to the next level with high-quality personalized postcards from Nano Signs. Serving the Greater Toronto Area, Toronto, and Mississauga, ON, we offer crisp, full-color postcard printing that is ideal for neighbourhood outreach, retail promotions, coupons, and corporate invitations. Our postcards are cut with square corners to comply with standard Canada Post specifications, guaranteeing a clean and simple product-focused aesthetic.
               </p>
               <p class="text-sm text-gray-700 leading-relaxed">
-                Choose between high-shine glossy finish that accentuates photographic imagery and makes colors pop, or smooth matte cardstock for a non-glare, writeable finish. With single-sided or double-sided printing options, you can design your postcard layout to showcase eye-catching graphics on the front while keeping the back clear for address, postage, and local business details.
+                Choose between high-shine glossy finish that accentuates photographic imagery and makes colors pop, or smooth matte cardstock for a non-glare, writeable finish. With single-sided or double-sided printing options, you can design your postcard layout to showcase striking graphics on the front while keeping the back clear for address, postage, and local corporate details.
               </p>
             </div>`,
           faqs: [
             {
-              q: "What paper stock options do you offer for custom postcards?",
-              a: "We print our postcards on premium heavy 14pt glossy cover or matte cardstock, giving them a stiff and substantial feel. Our glossy finish offers a high-shine coating that enhances photographic prints, while our smooth matte finish offers an elegant, writeable surface that resists smudging.",
+              q: "What paper stock options do you offer for personalized postcards?",
+              a: "We print our postcards on high-quality heavy 14pt glossy cover or matte cardstock, giving them a stiff and substantial feel. Our glossy finish offers a high-shine coating that enhances photographic prints, while our smooth matte finish offers an elegant, writeable surface that resists smudging.",
             },
             {
               q: "Can I print on both the front and back of the postcards?",
@@ -4338,51 +4338,51 @@ Why Choose Our Professional Rollup Banners?
             },
             {
               q: "What is the difference between glossy and matte postcard finishes?",
-              a: "Glossy paper has a reflective coating that makes images pop with intense color and deep contrasts, perfect for real estate flyers. Matte finish is non-reflective, soft to the touch, and makes text highly legible, ideal for info-dense postcards.",
+              a: "Glossy paper has a reflective coating that makes images pop with intense color and deep contrasts, ideal for real estate flyers. Matte finish is non-reflective, soft to the touch, and makes text highly legible, ideal for info-dense postcards.",
             },
             {
               q: "Do you offer layout templates for designing postcards?",
-              a: "Yes, our online Design Studio provides easy-to-use layouts, shapes, cliparts, and text boxes. You can design your custom postcard from scratch or upload a print-ready PDF/AI file directly to place your order.",
+              a: "Yes, our online Design Studio provides easy-to-use layouts, shapes, cliparts, and text boxes. You can design your personalized postcard from scratch or upload a print-ready PDF/AI file directly to place your order.",
             },
           ],
           reviews: [
             {
               author: "Elena R., Boutique Owner",
               rating: 5,
-              text: "The matte postcards were perfect for our summer collection mailer! They feel very high-quality and the printing is incredibly sharp. Excellent Broward local service.",
+              text: "The matte postcards were ideal for our summer collection mailer! They feel very high-quality and the printing is incredibly sharp. Excellent Toronto local service.",
             },
             {
               author: "Jason L., Realtor",
               rating: 5,
-              text: "Exactly what I was looking for. No rounded corners, very simple and professional. Will buy all my listing postcards here.",
+              text: "Exactly what I was looking for. No rounded corners, very simple and expert-grade. Will buy all my listing postcards here.",
             },
           ],
           ctaHeading: "Ready to design postcards?",
           ctaBody:
-            "Custom print postcards using our online template catalog or upload artwork.",
+            "Personalized print postcards using our online template catalog or upload artwork.",
           ctaLabel: "Customize Postcards",
         },
       },
       {
         id: "flyers",
-        name: "Custom Flyers",
+        name: "Personalized Flyers",
         description:
-          "Vibrant single or double sided flyers to promote events, menus, and packages.",
-        image: "/images/products/main%20page/flyer_glossy.png",
-        price: "Starting at $74.00 for 100",
+          "Vivid single or double sided flyers to promote events, menus, and packages.",
+        image: "/images/products/main%20page/flyer_glossy-toronto-printing-ca.png",
+        price: "Starting at CAD 74.00 for 100",
         badge: "Best Value",
         config: {
-          title: "Custom Flyers",
+          title: "Personalized Flyers",
           quantityOptions: [100, 250, 500, 750, 1000, 1500, 2000, 2500],
           subtitle:
-            "Premium full color flyers printed on professional paper stock.",
+            "High-quality full color flyers manufactured using expert-grade paper stock.",
           breadcrumb: "Marketing",
           breadcrumbHref: "/marketing-materials",
           promoText: "25% OFF BULK EVENT FLYERS",
-          image: "/images/products/main%20page/flyer_glossy.png",
+          image: "/images/products/main%20page/flyer_glossy-toronto-printing-ca.png",
           images: [
-            "/images/products/main%20page/flyer_glossy.png",
-            "/images/products/main%20page/flyer_matte.png",
+            "/images/products/main%20page/flyer_glossy-toronto-printing-ca.png",
+            "/images/products/main%20page/flyer_matte-toronto-printing-ca.png",
           ],
           ratingCount: "430",
           ratingScore: "4.7",
@@ -4442,14 +4442,14 @@ Why Choose Our Professional Rollup Banners?
                   value: "glossy",
                   priceAdder: 0,
                   description: "High-shine glossy finish that makes colors pop.",
-                  image: "/images/products/main%20page/flyer_glossy.png",
+                  image: "/images/products/main%20page/flyer_glossy-toronto-printing-ca.png",
                 },
                 {
                   label: "Matte",
                   value: "matte",
                   priceAdder: 0,
-                  description: "Clean, professional look with a smooth non-glare matte finish.",
-                  image: "/images/products/main%20page/flyer_matte.png",
+                  description: "Clean, expert-grade look with a smooth non-glare matte finish.",
+                  image: "/images/products/main%20page/flyer_matte-toronto-printing-ca.png",
                 },
               ],
             },
@@ -4474,8 +4474,8 @@ Why Choose Our Professional Rollup Banners?
           qtyDiscount: "Save more when printing in bulk",
           keyFeatures: [
             "High definition color reproduction",
-            "Vibrant double-sided printing available",
-            "Premium glossy or matte textures",
+            "Vivid double-sided printing available",
+            "High-quality glossy or matte textures",
           ],
           useCases: [
             "Event handouts",
@@ -4489,25 +4489,25 @@ Why Choose Our Professional Rollup Banners?
           ],
           description:
             `<div class="space-y-4">
-              <h3 class="text-lg font-bold text-slate-900">Custom Flyer Printing in Fort Lauderdale</h3>
+              <h3 class="text-lg font-bold text-slate-900">Personalized Flyer Printing in Toronto</h3>
               <p class="text-sm text-gray-700 leading-relaxed">
-                Promote your next corporate event, local restaurant menu, or real estate open house with custom flyers from Nano Signs. Serving Oakland Park, Fort Lauderdale, and all of Broward County, we specialize in high-definition offset flyer printing with fast turnarounds. Printed on premium 100lb glossy text paper (which makes colors pop with photographic vibrance) or smooth matte text paper (ideal for a sophisticated, glare-free readable finish), our flyers offer a thick, substantial feel.
+                Promote your next corporate event, local restaurant menu, or real estate open house with personalized flyers from Nano Signs. Serving Mississauga, Toronto, and all of the Greater Toronto Area, we specialize in high-definition offset flyer printing with fast turnarounds. Manufactured using high-quality 100lb glossy text paper (which makes colors pop with photographic vibrance) or smooth matte text paper (ideal for a sophisticated, glare-free readable finish), our flyers offer a thick, substantial feel.
               </p>
               <p class="text-sm text-gray-700 leading-relaxed">
-                Choose single or double-sided layouts and orientation options (horizontal or vertical) to match your campaign goals. Hand them out at local South Florida events, display them at front desks, or mail them directly to neighborhood prospects.
+                Choose single or double-sided layouts and orientation options (horizontal or vertical) to match your campaign goals. Hand them out at local Toronto events, display them at front desks, or mail them directly to neighbourhood prospects.
               </p>
             </div>`,
           faqs: [
             {
-              q: "What sizes are available for custom flyers?",
-              a: "Our flyers are available in three versatile sizes: 5.5\"x8.5\" (compact handouts), 8.5\"x14\" (legal-size sheets), and 11\"x17\" (large display posters).",
+              q: "What sizes are available for personalized flyers?",
+              a: "Our flyers are available in three adaptable sizes: 5.5\"x8.5\" (compact handouts), 8.5\"x14\" (legal-size sheets), and 11\"x17\" (large display posters).",
             },
             {
               q: "What paper stocks are used for printing flyers?",
-              a: "We use high-density 100lb glossy text paper and smooth matte text paper, ensuring a thick, premium feel without compromising on flexibility.",
+              a: "We use high-density 100lb glossy text paper and smooth matte text paper, ensuring a thick, high-quality feel without compromising on flexibility.",
             },
             {
-              q: "Are flyers printed on both sides?",
+              q: "Are flyers manufactured using both sides?",
               a: "Yes! You can choose between single-sided and double-sided printing. Double-sided flyers are excellent for menus, pamphlets, and product sheets.",
             },
             {
@@ -4523,12 +4523,12 @@ Why Choose Our Professional Rollup Banners?
             {
               author: "Kevin M., Event Coordinator",
               rating: 5,
-              text: "The glossy 100lb text flyers looked stunning under the venue lighting. Very fast local pickup in Broward County.",
+              text: "The glossy 100lb text flyers looked stunning under the venue lighting. Very fast local pickup in Toronto.",
             },
             {
               author: "Maria S., Restaurant Owner",
               rating: 5,
-              text: "Printed our double-sided takeout menus on the matte stock. Beautifully clean, easy to read, and very thick. Excellent value!",
+              text: "Printed our double-sided takeout menus on the matte stock. Beautifully clean, simple to read, and very thick. Excellent value!",
             },
           ],
           ctaHeading: "Design flyers online",
@@ -4541,19 +4541,19 @@ Why Choose Our Professional Rollup Banners?
         id: "brochures",
         name: "Folded Brochures",
         description:
-          "Professional tri-fold or half-fold brochures to showcase your services, menus, and business details.",
-        image: "/images/products/main%20page/custom_brochures.png",
-        price: "Starting at $29.99 for 50",
+          "Expert-grade tri-fold or half-fold brochures to showcase your services, menus, and corporate details.",
+        image: "/images/products/main%20page/custom_brochures-toronto-printing-ca.png",
+        price: "Starting at CAD 29.99 for 50",
         badge: "Corporate Choice",
         config: {
           title: "Folded Brochures",
           quantityOptions: [100, 250, 500, 1000, 2500, 5000, 10000],
           subtitle:
-            "Premium full color folded brochures printed on professional paper stock.",
+            "High-quality full color folded brochures manufactured using expert-grade paper stock.",
           breadcrumb: "Marketing",
           breadcrumbHref: "/marketing-materials",
-          promoText: "25% OFF FOLDED BUSINESS BROCHURES",
-          image: "/images/products/main%20page/custom_brochures.png",
+          promoText: "25% OFF FOLDED CORPORATE BROCHURES",
+          image: "/images/products/main%20page/custom_brochures-toronto-printing-ca.png",
           ratingCount: "320",
           ratingScore: "4.8",
           sizes: [
@@ -4599,7 +4599,7 @@ Why Choose Our Professional Rollup Banners?
             "Tri-fold & half-fold options",
           ],
           useCases: [
-            "Business guides & service lists",
+            "Corporate guides & service lists",
             "Restaurant take-out menus",
             "Marketing handouts",
             "Product display pamphlets",
@@ -4610,17 +4610,17 @@ Why Choose Our Professional Rollup Banners?
           ],
           description:
             `<div class="space-y-4">
-              <h3 class="text-lg font-bold text-slate-900">Custom Folded Brochures in Broward County</h3>
+              <h3 class="text-lg font-bold text-slate-900">Personalized Folded Brochures in Ontario</h3>
               <p class="text-sm text-gray-700 leading-relaxed">
-                Present your products, services, or menu items in an elegant, structured format with custom folded brochures from Nano Signs. Serving businesses in Fort Lauderdale, Oakland Park, and neighboring South Florida cities, we provide high-definition brochure printing with clean scoring and machine-folding. Our standard 8.5" x 11" brochures are available in standard Tri-Fold or Half-Fold configurations, ensuring your layouts line up perfectly.
+                Present your products, services, or menu items in an elegant, structured format with personalized folded brochures from Nano Signs. Serving businesses in Toronto, Mississauga, and neighbouring Ontario cities, we provide high-definition brochure printing with clean scoring and machine-folding. Our standard 8.5" x 11" brochures are available in standard Tri-Fold or Half-Fold configurations, ensuring your layouts line up perfectly.
               </p>
               <p class="text-sm text-gray-700 leading-relaxed">
-                Customize your print run with premium 100lb glossy text paper (vibrant and eye-catching), 100lb matte text paper (sophisticated, smudge-resistant), or 80lb recycled text paper for green-focused branding. Organize complex business information, portfolios, or restaurant menu items into readable panels that encourage prospective customers to learn more.
+                Customize your print run with high-quality 100lb glossy text paper (vivid and striking), 100lb matte text paper (sophisticated, smudge-resistant), or 80lb recycled text paper for green-focused branding. Organize complex corporate information, portfolios, or restaurant menu items into readable panels that encourage prospective customers to learn more.
               </p>
             </div>`,
           faqs: [
             {
-              q: "What fold styles do you offer for custom brochures?",
+              q: "What fold styles do you offer for personalized brochures?",
               a: "We offer pre-folded brochures in two styles: Tri-Fold (divided into 3 panels per side) and Half-Fold (folded down the middle into 4 pages).",
             },
             {
@@ -4636,7 +4636,7 @@ Why Choose Our Professional Rollup Banners?
               a: "Yes, absolutely! We score and fold your brochures in-house, so they arrive fully assembled and ready to hand out.",
             },
             {
-              q: "Can I design a brochure with custom layouts?",
+              q: "Can I design a brochure with personalized layouts?",
               a: "Yes! Our online customizer lets you place images, logos, and descriptions in dedicated text panels matching the folding guidelines.",
             },
           ],
@@ -4644,17 +4644,17 @@ Why Choose Our Professional Rollup Banners?
             {
               author: "Clarissa W., Medical Clinic Manager",
               rating: 5,
-              text: "The matte 100lb tri-fold brochures looked highly professional. Text is very sharp and the folds are perfectly aligned. Excellent South Florida printer.",
+              text: "The matte 100lb tri-fold brochures looked highly expert-grade. Text is very sharp and the folds are perfectly aligned. Excellent Ontario printer.",
             },
             {
               author: "Daniel H., HVAC Owner",
               rating: 5,
-              text: "Tri-fold brochures were perfect for listing our residential seasonal maintenance packages. Very sturdy paper weight.",
+              text: "Tri-fold brochures were ideal for listing our residential seasonal maintenance packages. Very sturdy paper weight.",
             },
           ],
           ctaHeading: "Design brochures online",
           ctaBody:
-            "Create beautiful brochures with professional folding styles.",
+            "Create beautiful brochures with expert-grade folding styles.",
           ctaLabel: "Customize Brochures",
         },
       },
@@ -4662,18 +4662,18 @@ Why Choose Our Professional Rollup Banners?
         id: "door-hangers",
         name: "Door Hangers",
         description:
-          "Targeted local advertising hangers that slip easily onto front door handles.",
-        image: "/images/products/main%20page/door_hangers.png",
-        price: "Starting at $39.99 for 100",
+          "Targeted local marketing hangers that slip easily onto front door handles.",
+        image: "/images/products/main%20page/door_hangers-toronto-printing-ca.png",
+        price: "Starting at CAD 39.99 for 100",
         config: {
-          title: "Custom Door Hangers",
+          title: "Personalized Door Hangers",
           quantityOptions: [100, 250, 500, 1000, 2500, 5000, 10000],
           subtitle:
-            "Vibrant door hangers pre-cut with handle holes, perfect for local business advertising.",
+            "Vivid door hangers pre-cut with handle holes, ideal for local corporate marketing.",
           breadcrumb: "Marketing",
           breadcrumbHref: "/marketing-materials",
-          promoText: "25% OFF BUSINESS DOOR HANGERS",
-          image: "/images/products/main%20page/door_hangers.png",
+          promoText: "25% OFF CORPORATE DOOR HANGERS",
+          image: "/images/products/main%20page/door_hangers-toronto-printing-ca.png",
           ratingCount: "310",
           ratingScore: "4.8",
           sizes: [
@@ -4723,13 +4723,13 @@ Why Choose Our Professional Rollup Banners?
           qtyDiscount: "Bulk local campaigns save up to 70%",
           keyFeatures: [
             "Pre-cut hole and slit fits all door handles",
-            "Durable 14pt thick cover stock",
+            "Resilient 14pt thick cover stock",
             "Double-sided full color printing",
           ],
           useCases: [
             "Home services (lawn, roofing, cleaning)",
             "Political campaigning",
-            "Local restaurant menu advertising",
+            "Local restaurant menu marketing",
             "Do Not Disturb door signs",
           ],
           specs: [
@@ -4738,12 +4738,12 @@ Why Choose Our Professional Rollup Banners?
           ],
           description:
             `<div class="space-y-4">
-              <h3 class="text-lg font-bold text-slate-900">Custom Door Hanger Printing in Fort Lauderdale & Oakland Park</h3>
+              <h3 class="text-lg font-bold text-slate-900">Personalized Door Hanger Printing in Toronto & Mississauga</h3>
               <p class="text-sm text-gray-700 leading-relaxed">
-                Connect directly with local neighborhoods using custom door hangers from Nano Signs. Highly popular for landscaping, pressure washing, pest control, roofing, plumbing, and local restaurant delivery campaigns, door hangers provide a guaranteed physical touchpoint on the front doors of Fort Lauderdale, Oakland Park, and Broward County homes. Printed on heavy 14pt cardstock, these hangers hold up against South Florida's outdoor humidity without curling.
+                Connect directly with local neighbourhoods using personalized door hangers from Nano Signs. Highly popular for landscaping, pressure washing, pest control, roofing, plumbing, and local restaurant delivery campaigns, door hangers provide a guaranteed physical touchpoint on the front doors of Toronto, Mississauga, and GTA homes. Manufactured using heavy 14pt cardstock, these hangers hold up against Ontario's exterior weather without curling.
               </p>
               <p class="text-sm text-gray-700 leading-relaxed">
-                Our door hangers are pre-cut with a circular hole and a slit (or curved arch hook) at the top, sliding effortlessly onto any standard handle. Design your custom door hangers with double-sided printing: use the front for bold, high-gloss promos and contact details, and the back for detailed service pricing or client reviews.
+                Our door hangers are pre-cut with a circular hole and a slit (or curved arch hook) at the top, sliding effortlessly onto any standard handle. Design your personalized door hangers with double-sided printing: use the front for bold, high-gloss promos and contact details, and the back for detailed service pricing or client reviews.
               </p>
             </div>`,
           faqs: [
@@ -4757,11 +4757,11 @@ Why Choose Our Professional Rollup Banners?
             },
             {
               q: "What cardstock weight do you use for door hangers?",
-              a: "We print on thick, durable 14pt cardstock. This ensures they resist bending and withstand outdoor humidity while hanging on front doors.",
+              a: "We print on thick, resilient 14pt cardstock. This ensures they resist bending and withstand exterior humidity while hanging on front doors.",
             },
             {
               q: "Are door hangers weather-resistant?",
-              a: "Our 14pt Gloss Cardstock has a light protective sheen that helps resist light South Florida moisture, but they are designed for temporary outdoor hangings.",
+              a: "Our 14pt Gloss Cardstock has a light protective sheen that helps resist light Ontario moisture, but they are engineered for temporary exterior hangings.",
             },
             {
               q: "What businesses benefit most from door hangers?",
@@ -4772,7 +4772,7 @@ Why Choose Our Professional Rollup Banners?
             {
               author: "Dwayne K., Lawn Care Owner",
               rating: 5,
-              text: "Our response rate was excellent! We distributed 500 hangers in Oakland Park and gained 12 new monthly accounts. Very clean cut, thick cardstock.",
+              text: "Our response rate was excellent! We distributed 500 hangers in Mississauga and gained 12 new monthly accounts. Very clean cut, thick cardstock.",
             },
             {
               author: "Linda J., Pizzeria Manager",
@@ -4782,7 +4782,7 @@ Why Choose Our Professional Rollup Banners?
           ],
           ctaHeading: "Kick off local door hanger campaigns",
           ctaBody:
-            "Custom print door hangers with coupon codes and contact numbers.",
+            "Personalized print door hangers with coupon codes and contact numbers.",
           ctaLabel: "Customize Door Hangers",
         },
       },
@@ -4796,19 +4796,19 @@ Why Choose Our Professional Rollup Banners?
     breadcrumbLabel: "Promotional Products",
     heroSubtitle: "Brand It. Share It. Grow It.",
     description:
-      "Customize apparel, mugs, and trade show giveaways with your business branding.",
-    heroImage: "/images/products/main%20page/promotional_products_hero_image.png",
+      "Customize apparel, mugs, and trade show giveaways with your corporate branding.",
+    heroImage: "/images/products/main%20page/promotional_products_hero_image-toronto-printing-ca.png",
     reviewRating: "4.9",
     reviewCount: "1,480",
     reviewQuote:
-      "We ordered 500 custom logo pens and a couple dozen ceramic mugs for our annual summit giveaway bags. The logo resolution is incredibly sharp and the mugs look amazing.",
+      "We ordered 500 personalized logo pens and a couple dozen ceramic mugs for our annual summit giveaway bags. The logo resolution is incredibly sharp and the mugs look amazing.",
     categoryDescriptionText:
-      "Promote your business and look professional with customized promo swag. From screen-printed cotton t-shirts and ceramic coffee mugs to canvas tote bags, retractable logo pens, executive journals, keychains, and fridge magnets, we have everything you need to leave a lasting impression. All items are constructed with high-grade, durable materials designed to proudly showcase your brand.",
-    categorySecondaryImage: "/images/products/main%20page/promotional_products_desc.png",
+      "Promote your corporate and look expert-grade with customized promo swag. From screen-printed cotton t-shirts and ceramic coffee mugs to canvas tote bags, retractable logo pens, executive journals, keychains, and fridge magnets, we have everything you need to leave a lasting impression. All items are constructed with high-grade, resilient materials designed to proudly showcase your brand.",
+    categorySecondaryImage: "/images/products/main%20page/promotional_products_desc-toronto-printing-ca.png",
     faqs: [
       {
         q: "Is there a minimum order quantity (MOQ) for promotional products?",
-        a: "Many of our promotional products, including custom t-shirts, mugs, and journals, have no minimum order quantity—you can order just a single item! For items like custom pens or fridge magnets, we sell them in convenient pack sizes (e.g., packs of 50 or 100) to ensure you get the absolute best bulk rates.",
+        a: "Many of our promotional products, including personalized t-shirts, mugs, and journals, have no minimum order quantity—you can order just a single item! For items like personalized pens or fridge magnets, we sell them in convenient pack sizes (e.g., packs of 50 or 100) to ensure you get the absolute best bulk rates.",
       },
       {
         q: "What print file formats do you recommend for logos?",
@@ -4816,27 +4816,27 @@ Why Choose Our Professional Rollup Banners?
       },
       {
         q: "Are ceramic mugs and tumblers dishwasher safe?",
-        a: "Yes! Our custom ceramic mugs are printed using industrial dye-sublimation wraps that are fully microwave and dishwasher safe, meaning your design won't fade or peel over time.",
+        a: "Yes! Our personalized ceramic mugs are printed using industrial dye-sublimation wraps that are fully microwave and dishwasher safe, meaning your design won't fade or peel over time.",
       },
     ],
     products: [
       {
         id: "t-shirts",
-        name: "Custom T-Shirts",
+        name: "Personalized T-Shirts",
         description:
           "Screen printed cotton shirts featuring your company logo or message.",
-        image: "/images/products/main%20page/custom_t_shirts.png",
-        price: "Starting at $14.99",
+        image: "/images/products/main%20page/custom_t_shirts-toronto-printing-ca.png",
+        price: "Starting at CAD 14.99",
         badge: "Staff Wear",
         config: {
-          title: "Custom Printed T-Shirts",
+          title: "Personalized Printed T-Shirts",
           minQuantity: 12,
           subtitle:
             "Comfortable cotton tees customized with full-color heat-press or screen prints.",
           breadcrumb: "Promotional",
           breadcrumbHref: "/promotional-products",
           promoText: "25% OFF PROMOTIONAL MERCHANDISE",
-          image: "/images/products/main%20page/custom_t_shirts.png",
+          image: "/images/products/main%20page/custom_t_shirts-toronto-printing-ca.png",
           ratingCount: "740",
           ratingScore: "4.8",
           sizes: [
@@ -4900,7 +4900,7 @@ Why Choose Our Professional Rollup Banners?
           ],
           ctaHeading: "Design shirts for your team",
           ctaBody:
-            "Add logo prints to front or back positions on premium shirts.",
+            "Add logo prints to front or back positions on high-quality shirts.",
           ctaLabel: "Customize Shirt",
         },
       },
@@ -4908,19 +4908,19 @@ Why Choose Our Professional Rollup Banners?
         id: "mugs",
         name: "Coffee Mugs & Tumblers",
         description:
-          "Vibrant ceramic coffee mugs and travel tumblers with your company logo.",
-        image: "/images/products/main%20page/coffee_mugs.png",
-        price: "Starting at $4.99 each",
+          "Vivid ceramic coffee mugs and travel tumblers with your company logo.",
+        image: "/images/products/main%20page/coffee_mugs-toronto-printing-ca.png",
+        price: "Starting at CAD 4.99 each",
         badge: "Office Best-Seller",
         config: {
-          title: "Custom Coffee Mugs",
+          title: "Personalized Coffee Mugs",
           minQuantity: 12,
           subtitle:
-            "Full-color sublimation print ceramic mugs, perfect for corporate swag and office desks.",
+            "Full-color sublimation print ceramic mugs, ideal for corporate swag and office desks.",
           breadcrumb: "Promotional",
           breadcrumbHref: "/promotional-products",
-          promoText: "25% OFF CUSTOM LOGO DRINKWARE",
-          image: "/images/products/main%20page/coffee_mugs.png",
+          promoText: "25% OFF PERSONALIZED LOGO DRINKWARE",
+          image: "/images/products/main%20page/coffee_mugs-toronto-printing-ca.png",
           ratingCount: "840",
           ratingScore: "4.9",
           sizes: [
@@ -4963,7 +4963,7 @@ Why Choose Our Professional Rollup Banners?
           faqs: [],
           reviews: [],
           ctaHeading: "Brand your office drinkware",
-          ctaBody: "Upload your logo to design custom coffee mugs today.",
+          ctaBody: "Upload your logo to design personalized coffee mugs today.",
           ctaLabel: "Customize Coffee Mugs",
         },
       },
@@ -4971,18 +4971,18 @@ Why Choose Our Professional Rollup Banners?
         id: "tote-bags",
         name: "Canvas Tote Bags",
         description:
-          "Durable cotton canvas tote bags custom printed with your logo.",
-        image: "/images/products/main%20page/canvas_tote_bags.png",
-        price: "Starting at $5.99 each",
+          "Resilient cotton canvas tote bags personalized printed with your logo.",
+        image: "/images/products/main%20page/canvas_tote_bags-toronto-printing-ca.png",
+        price: "Starting at CAD 5.99 each",
         config: {
-          title: "Custom Canvas Tote Bags",
+          title: "Personalized Canvas Tote Bags",
           minQuantity: 12,
           subtitle:
-            "Eco-friendly, reusable cotton canvas totes printed with vibrant logo colors.",
+            "Eco-friendly, reusable cotton canvas totes printed with vivid logo colors.",
           breadcrumb: "Promotional",
           breadcrumbHref: "/promotional-products",
           promoText: "25% OFF ECO-FRIENDLY PROM BAGS",
-          image: "/images/products/main%20page/canvas_tote_bags.png",
+          image: "/images/products/main%20page/canvas_tote_bags-toronto-printing-ca.png",
           ratingCount: "490",
           ratingScore: "4.8",
           sizes: [
@@ -5029,27 +5029,27 @@ Why Choose Our Professional Rollup Banners?
           reviews: [],
           ctaHeading: "Design reusable event bags",
           ctaBody:
-            "Custom print canvas tote bags with your graphics and emblems.",
+            "Personalized print canvas tote bags with your graphics and emblems.",
           ctaLabel: "Customize Tote Bags",
         },
       },
       {
         id: "pens",
-        name: "Custom Logo Pens",
+        name: "Personalized Logo Pens",
         description:
-          "Retractable ballpoint writing guidelines, perfect for trade shows and lobbies.",
-        image: "/images/products/main%20page/custom_pens.png",
-        price: "Starting at $0.89 each",
+          "Retractable ballpoint writing guidelines, ideal for trade shows and lobbies.",
+        image: "/images/products/main%20page/custom_pens-toronto-printing-ca.png",
+        price: "Starting at CAD 0.89 each",
         badge: "Trade Show Choice",
         config: {
-          title: "Custom Logo Pens",
+          title: "Personalized Logo Pens",
           quantityOptions: [100, 250, 500, 1000, 2500, 5000, 10000],
           subtitle:
-            "Sleek retractable clicker pens printed with your business website or phone number.",
+            "Sleek retractable clicker pens printed with your corporate website or phone number.",
           breadcrumb: "Promotional",
           breadcrumbHref: "/promotional-products",
           promoText: "25% OFF BULK LOGO WRITING PENS",
-          image: "/images/products/main%20page/custom_pens.png",
+          image: "/images/products/main%20page/custom_pens-toronto-printing-ca.png",
           ratingCount: "1250",
           ratingScore: "4.8",
           sizes: [
@@ -5092,11 +5092,11 @@ Why Choose Our Professional Rollup Banners?
               ],
             },
           ],
-          qtyDiscount: "Super bulk prices drop to $0.29 each",
+          qtyDiscount: "Super bulk prices drop to CAD 0.29 each",
           keyFeatures: [
             "Smooth ink flow prevents smudges",
             "Soft rubber grip for comfort",
-            "Durable pocket clip attachment",
+            "Resilient pocket clip attachment",
           ],
           useCases: [
             "Lobby counter registers",
@@ -5111,26 +5111,26 @@ Why Choose Our Professional Rollup Banners?
           faqs: [],
           reviews: [],
           ctaHeading: "Order bulk giveaway pens",
-          ctaBody: "Custom print barrels with logo text and web address.",
+          ctaBody: "Personalized print barrels with logo text and web address.",
           ctaLabel: "Customize Pens",
         },
       },
       {
         id: "notebooks",
-        name: "Custom Journals & Notebooks",
+        name: "Personalized Journals & Notebooks",
         description:
-          "Pre-ruled journals and notebooks, perfect for client meetings and logs.",
-        image: "/images/products/main%20page/custom_notebooks.png",
-        price: "Starting at $3.99 each",
+          "Pre-ruled journals and notebooks, ideal for client meetings and logs.",
+        image: "/images/products/main%20page/custom_notebooks-toronto-printing-ca.png",
+        price: "Starting at CAD 3.99 each",
         config: {
-          title: "Custom Notebooks & Journals",
+          title: "Personalized Notebooks & Journals",
           minQuantity: 10,
           subtitle:
-            "Lined paper journals with premium custom covers to organize meetings and ideas.",
+            "Lined paper journals with high-quality personalized covers to organize meetings and ideas.",
           breadcrumb: "Promotional",
           breadcrumbHref: "/promotional-products",
-          promoText: "25% OFF CUSTOM EXECUTIVE NOTEBOOKS",
-          image: "/images/products/main%20page/custom_notebooks.png",
+          promoText: "25% OFF PERSONALIZED EXECUTIVE NOTEBOOKS",
+          image: "/images/products/main%20page/custom_notebooks-toronto-printing-ca.png",
           ratingCount: "380",
           ratingScore: "4.8",
           sizes: [
@@ -5171,28 +5171,28 @@ Why Choose Our Professional Rollup Banners?
           ],
           faqs: [],
           reviews: [],
-          ctaHeading: "Create custom corporate journals",
+          ctaHeading: "Create personalized corporate journals",
           ctaBody:
-            "Custom print journal covers with debossed logos or full color prints.",
+            "Personalized print journal covers with debossed logos or full color prints.",
           ctaLabel: "Customize Notebooks",
         },
       },
       {
         id: "keychains",
-        name: "Custom Logo Keychains",
+        name: "Personalized Logo Keychains",
         description:
           "Acrylic and metallic keyring tags customized with your company logo.",
-        image: "/images/products/main%20page/custom_keychains.png",
-        price: "Starting at $1.29 each",
+        image: "/images/products/main%20page/custom_keychains-toronto-printing-ca.png",
+        price: "Starting at CAD 1.29 each",
         config: {
-          title: "Custom Logo Keychains",
+          title: "Personalized Logo Keychains",
           minQuantity: 25,
           subtitle:
-            "Sturdy custom key rings featuring printed acrylic shapes or laser engraved metal.",
+            "Sturdy personalized key rings featuring printed acrylic shapes or laser engraved metal.",
           breadcrumb: "Promotional",
           breadcrumbHref: "/promotional-products",
-          promoText: "25% OFF CUSTOM ENGRAVED KEYCHAINS",
-          image: "/images/products/main%20page/custom_keychains.png",
+          promoText: "25% OFF PERSONALIZED ENGRAVED KEYCHAINS",
+          image: "/images/products/main%20page/custom_keychains-toronto-printing-ca.png",
           ratingCount: "290",
           ratingScore: "4.7",
           sizes: [
@@ -5240,21 +5240,21 @@ Why Choose Our Professional Rollup Banners?
       },
       {
         id: "fridge-magnets",
-        name: "Custom Fridge Magnets",
+        name: "Personalized Fridge Magnets",
         description:
-          "Flexible promo magnets, perfect for household fridges and direct mail.",
-        image: "/images/products/main%20page/custom_fridge_magnets.png",
-        price: "Starting at $0.49 each",
+          "Flexible promo magnets, ideal for household fridges and direct mail.",
+        image: "/images/products/main%20page/custom_fridge_magnets-toronto-printing-ca.png",
+        price: "Starting at CAD 0.49 each",
         badge: "Household Favorite",
         config: {
-          title: "Custom Fridge Magnets",
+          title: "Personalized Fridge Magnets",
           quantityOptions: [100, 250, 500, 1000, 2500, 5000, 10000],
           subtitle:
-            "Lightweight flexible promo magnets, perfect for direct mail and fridge doors.",
+            "Lightweight flexible promo magnets, ideal for direct mail and fridge doors.",
           breadcrumb: "Promotional",
           breadcrumbHref: "/promotional-products",
-          promoText: "25% OFF CUSTOM HOUSEHOLD MAGNETS",
-          image: "/images/products/main%20page/custom_fridge_magnets.png",
+          promoText: "25% OFF PERSONALIZED HOUSEHOLD MAGNETS",
+          image: "/images/products/main%20page/custom_fridge_magnets-toronto-printing-ca.png",
           ratingCount: "710",
           ratingScore: "4.9",
           sizes: [
@@ -5274,7 +5274,7 @@ Why Choose Our Professional Rollup Banners?
               ],
             },
           ],
-          qtyDiscount: "Volume packs drop price under $0.15 each",
+          qtyDiscount: "Volume packs drop price under CAD 0.15 each",
           keyFeatures: [
             "Flexible 20mil magnetic backings",
             "Sticks tight to fridges & whiteboards",
@@ -5294,33 +5294,33 @@ Why Choose Our Professional Rollup Banners?
           reviews: [],
           ctaHeading: "Print fridge promo magnets",
           ctaBody:
-            "Design business card magnets for household services and dispatch centers.",
+            "Design corporate card magnets for household services and dispatch centers.",
           ctaLabel: "Customize Fridge Magnets",
         },
       },
     ],
   },
   "custom-signs": {
-    title: "Custom Signs",
+    title: "Personalized Signs",
     breadcrumbLabel: "Signs",
-    heroSubtitle: "Built to Stand Out. Built to Last.",
+    heroSubtitle: "Built to Command attention. Built to Last.",
     description:
-      "From yard signs to premium acrylic, we print stunning custom signs fast. Choose your product, upload your design, and we ship next day.",
-    heroImage: "/images/products/main%20page/nano%20hero%20signs%20section.png",
-    tabletHeroImage: "/images/products/main%20page/nano%20hero%20signs%20section.png",
-    mobileHeroImage: "/images/products/main%20page/nano%20hero%20signs%20section.png",
+      "From yard signs to high-quality acrylic, we print stunning personalized signs fast. Choose your product, upload your design, and we ship next day.",
+    heroImage: "/images/products/main%20page/nano%20hero%20signs%20section-toronto-printing-ca.png",
+    tabletHeroImage: "/images/products/main%20page/nano%20hero%20signs%20section-toronto-printing-ca.png",
+    mobileHeroImage: "/images/products/main%20page/nano%20hero%20signs%20section-toronto-printing-ca.png",
     reviewRating: "4.9",
     reviewCount: "8,420",
     reviewQuote:
       "Ordered 200 yard signs for a local election campaign. They arrived the next day and looked exactly like the proof!",
     categoryDescriptionText:
-      "Discover our complete lineup of custom sign solutions. From lightweight corrugated plastic yard signs that withstand any weather to premium acrylic and aluminum signs built for permanent installations. Whether you need a single sign for your business or thousands for a nationwide campaign, we deliver vibrant, full-color prints with next-day shipping.",
+      "Discover our complete lineup of personalized sign solutions. From lightweight corrugated plastic yard signs that withstand any weather to high-quality acrylic and aluminum signs built for permanent installations. Whether you need a single sign for your corporate or thousands for a nationwide campaign, we deliver vivid, full-color prints with next-day shipping.",
     categorySecondaryImage:
-      "/images/products/main%20page/custom_signs_desc.png",
+      "/images/products/main%20page/custom_signs_desc-toronto-printing-ca.png",
     faqs: [
       {
         q: "What sign materials do you offer?",
-        a: "We offer a variety of materials including corrugated plastic (Coroplast), aluminum, foam board, acrylic, and PVC. Each material has unique benefits suited for different indoor and outdoor applications.",
+        a: "We offer a variety of materials including corrugated plastic (Coroplast), aluminum, foam board, acrylic, and PVC. Each material has unique benefits suited for different interior and exterior applications.",
       },
       {
         q: "How long will signs last outdoors?",
@@ -5344,21 +5344,21 @@ Why Choose Our Professional Rollup Banners?
         id: "yard-signs",
         name: "Yard Signs",
         description:
-          "Hanging corrugated plastic signs suspended from premium L-shaped stands, perfect for real estate, campaigns, and storefronts.",
-        image: "/images/products/main%20page/yard_sign.jpeg",
-        price: "Starting at $3.99",
+          "Hanging corrugated plastic signs suspended from high-quality L-shaped stands, ideal for real estate, campaigns, and storefronts.",
+        image: "/images/products/main%20page/yard_sign-toronto-printing-ca.jpeg",
+        price: "Starting at CAD 3.99",
         badge: "Best Seller",
         config: {
-          title: "Custom Yard Signs",
+          title: "Personalized Yard Signs",
           subtitle: "Hanging lawn and commercial signs suspended from wood or metal L-stands.",
           breadcrumb: "Signs",
-          breadcrumbHref: "/custom-signs",
+          breadcrumbHref: "/personalized-signs",
           promoText: "🏡 25% OFF Yard Signs + Free Shipping — Most Popular Sign in America!",
-          image: "/images/products/main%20page/yard_sign.jpeg",
+          image: "/images/products/main%20page/yard_sign-toronto-printing-ca.jpeg",
           images: [
-            "/images/products/main%20page/yard_sign.jpeg",
-            "/images/products/gallery/yard_sign_in_action_1.png",
-            "/images/products/gallery/yard_sign_in_action_2.png",
+            "/images/products/main%20page/yard_sign-toronto-printing-ca.jpeg",
+            "/images/products/gallery/yard_sign_in_action_1-toronto-printing-ca.png",
+            "/images/products/gallery/yard_sign_in_action_2-toronto-printing-ca.png",
           ],
           ratingScore: "4.9",
           ratingCount: "8,420",
@@ -5378,21 +5378,21 @@ Why Choose Our Professional Rollup Banners?
                   value: "4mm",
                   priceAdder: 0,
                   description:
-                    "Lightweight, weatherproof, great for short-term outdoor use.",
+                    "Lightweight, weatherproof, excellent for short-term exterior use.",
                 },
                 {
                   label: "6mm Heavy-Duty Coroplast",
                   value: "6mm",
                   priceAdder: 1.5,
                   description:
-                    "50% thicker — perfect for long-term yard sign campaigns.",
+                    "50% thicker — ideal for long-term yard sign campaigns.",
                 },
                 {
                   label: "Aluminum (Substrate)",
                   value: "aluminum",
                   priceAdder: 4,
                   description:
-                    "Rigid aluminum for permanent outdoor installations.",
+                    "Rigid aluminum for permanent exterior installations.",
                 },
               ],
             },
@@ -5430,13 +5430,13 @@ Why Choose Our Professional Rollup Banners?
                   id: "wood_l_stand",
                   label: "White L-Shaped Wood Yard Arm Stand",
                   priceAdder: 39.99,
-                  description: "Premium wooden colonial yard post",
+                  description: "High-quality wooden colonial yard post",
                 },
                 {
                   id: "metal_l_stand",
                   label: "Black L-Shaped Metal Yard Arm Stand",
                   priceAdder: 49.99,
-                  description: "Heavy-duty steel hanging sign post",
+                  description: "Industrial-strength steel hanging sign post",
                 },
               ],
             },
@@ -5457,7 +5457,7 @@ Why Choose Our Professional Rollup Banners?
           keyFeatures: [
             "Weather-resistant corrugated plastic",
             "Full-color edge-to-edge printing",
-            "Ships in as fast as 1 business day",
+            "Ships in as fast as 1 corporate day",
             "Optional L-shaped wood or metal stands available",
             "Recyclable & eco-friendly material",
             "Single or double-sided printing",
@@ -5467,7 +5467,7 @@ Why Choose Our Professional Rollup Banners?
             "Real Estate",
             "Open Houses",
             "Elections",
-            "Business Promotions",
+            "Corporate Promotions",
             "Events",
           ],
           specs: [
@@ -5485,7 +5485,7 @@ Why Choose Our Professional Rollup Banners?
           faqs: [
             {
               q: "How long will yard signs last outdoors?",
-              a: "Standard 4mm coroplast yard signs typically last 6–12 months outdoors. The 6mm heavy-duty option can last 1–2+ years depending on conditions.",
+              a: "Standard 4mm coroplast yard signs typically last 6–12 months outdoors. The 6mm industrial-strength option can last 1–2+ years depending on conditions.",
             },
             {
               q: "Do your yard signs come with stands?",
@@ -5496,8 +5496,8 @@ Why Choose Our Professional Rollup Banners?
               a: "Yes! We have no minimum order quantity. Single signs ship just as fast as bulk orders.",
             },
             {
-              q: "Are the signs waterproof?",
-              a: "Yes. Corrugated plastic is inherently waterproof. Our inks are UV-resistant and won't run or fade in rain.",
+              q: "Are the signs weather-resistant?",
+              a: "Yes. Corrugated plastic is inherently weather-resistant. Our inks are UV-resistant and won't run or fade in rain.",
             },
           ],
           reviews: [
@@ -5509,16 +5509,16 @@ Why Choose Our Professional Rollup Banners?
             {
               author: "Sandra R.",
               rating: 5,
-              text: "Used for our open house. Very professional look, easy to hang on the L-stand. Will definitely order again.",
+              text: "Used for our open house. Very expert-grade look, simple to hang on the L-stand. Will definitely order again.",
             },
             {
               author: "Tom B.",
               rating: 4,
-              text: "Great quality for the price. Colors were vibrant and matched perfectly.",
+              text: "Great quality for the price. Colors were vivid and matched perfectly.",
             },
           ],
           ctaHeading: "Get Your Signs Out There",
-          ctaBody: "Order by 5 PM and your custom yard signs ship tomorrow.",
+          ctaBody: "Order by 5 PM and your personalized yard signs ship tomorrow.",
           ctaLabel: "Order Yard Signs Now",
         },
       },
@@ -5526,22 +5526,22 @@ Why Choose Our Professional Rollup Banners?
         id: "real-estate-panels",
         name: "Real Estate Panels",
         description:
-          "Professional-grade aluminum and coroplast panels for property listings, open houses, and riders.",
-        image: "/images/products/main%20page/Real_estate_panels.png",
-        price: "Starting at $12.99",
+          "Expert-grade-grade aluminum and coroplast panels for property listings, open houses, and riders.",
+        image: "/images/products/main%20page/Real_estate_panels-toronto-printing-ca.png",
+        price: "Starting at CAD 12.99",
         badge: "Most Popular",
         config: {
-          title: "Custom Real Estate Panels",
+          title: "Personalized Real Estate Panels",
           subtitle:
-            "Professional-grade panels for property listings and open houses.",
+            "Expert-grade-grade panels for property listings and open houses.",
           breadcrumb: "Signs",
-          breadcrumbHref: "/custom-signs",
+          breadcrumbHref: "/personalized-signs",
           promoText: "🏠 Real Estate Panels — Next Day Delivery Available!",
-          image: "/images/products/main%20page/Real_estate_panels.png",
+          image: "/images/products/main%20page/Real_estate_panels-toronto-printing-ca.png",
           images: [
-            "/images/products/main%20page/Real_estate_panels.png",
-            "/images/products/gallery/real_estate_panels_in_action_1.png",
-            "/images/products/gallery/real_estate_panels_in_action_2.png",
+            "/images/products/main%20page/Real_estate_panels-toronto-printing-ca.png",
+            "/images/products/gallery/real_estate_panels_in_action_1-toronto-printing-ca.png",
+            "/images/products/gallery/real_estate_panels_in_action_2-toronto-printing-ca.png",
           ],
           ratingScore: "4.9",
           ratingCount: "3,150",
@@ -5561,13 +5561,13 @@ Why Choose Our Professional Rollup Banners?
                   value: "4mm_coro",
                   priceAdder: 0,
                   description:
-                    "Lightweight, waterproof. Best for short listings.",
+                    "Lightweight, weather-resistant. Best for short listings.",
                 },
                 {
                   label: ".040 Aluminum",
                   value: "aluminum_040",
                   priceAdder: 6,
-                  description: "Rigid, durable metal. Lasts years outdoors.",
+                  description: "Rigid, resilient metal. Lasts years outdoors.",
                 },
                 {
                   label: "6mm Heavy-Duty Coroplast",
@@ -5595,7 +5595,7 @@ Why Choose Our Professional Rollup Banners?
                   id: "yard_arm",
                   label: "Yard Arm Post",
                   priceAdder: 18.99,
-                  description: "Classic single-post arm",
+                  description: "Traditional single-post arm",
                 },
                 {
                   id: "full_frame",
@@ -5608,8 +5608,8 @@ Why Choose Our Professional Rollup Banners?
           ],
           qtyDiscount: "Agent bulk pricing — buy 10+ and save",
           keyFeatures: [
-            "Professional real estate layouts",
-            "Durable outdoor materials",
+            "Expert-grade real estate layouts",
+            "Resilient exterior materials",
             "Rider slot compatible",
             "UV-resistant fade-proof printing",
             "Compatible with standard real estate frames",
@@ -5632,7 +5632,7 @@ Why Choose Our Professional Rollup Banners?
             },
             {
               q: "Can I order rider panels to match my main panel?",
-              a: "Absolutely. Select the rider size in the dropdown and we'll match the design style for a cohesive, professional look.",
+              a: "Absolutely. Select the rider size in the dropdown and we'll match the design style for a cohesive, expert-grade look.",
             },
             {
               q: "Can I include my brokerage logo and headshot?",
@@ -5657,11 +5657,11 @@ Why Choose Our Professional Rollup Banners?
             {
               author: "Patricia W.",
               rating: 5,
-              text: "The aluminum panels look incredibly professional. My clients always comment on them.",
+              text: "The aluminum panels look incredibly expert-grade. My clients always comment on them.",
             },
           ],
           ctaHeading: "List More. Sell Faster.",
-          ctaBody: "Professional real estate panels shipped next day.",
+          ctaBody: "Expert-grade real estate panels shipped next day.",
           ctaLabel: "Order Real Estate Panels",
         },
       },
@@ -5669,21 +5669,21 @@ Why Choose Our Professional Rollup Banners?
         id: "aluminum-signs",
         name: "Aluminum Signs",
         description:
-          "Durable rust-proof aluminum signs for permanent indoor and outdoor branding, safety, and parking installations.",
-        image: "/images/products/main%20page/aluminum_sign.png",
-        price: "Starting at $8.99",
-        badge: "Heavy Duty",
+          "Resilient rust-proof aluminum signs for permanent interior and exterior branding, safety, and parking installations.",
+        image: "/images/products/main%20page/aluminum_sign-toronto-printing-ca.png",
+        price: "Starting at CAD 8.99",
+        badge: "Commercial-grade",
         config: {
-          title: "Custom Aluminum Signs",
+          title: "Personalized Aluminum Signs",
           subtitle:
-            "Heavy-duty, rust-proof aluminum signs built to last years in any weather.",
+            "Industrial-strength, rust-proof aluminum signs built to last years in any weather.",
           breadcrumb: "Signs",
-          breadcrumbHref: "/custom-signs",
+          breadcrumbHref: "/personalized-signs",
           promoText: "⚙️ Aluminum Signs — Rust-Proof, Fade-Proof, Weatherproof. Ships Next Day!",
-          image: "/images/products/main%20page/aluminum_sign.png",
+          image: "/images/products/main%20page/aluminum_sign-toronto-printing-ca.png",
           images: [
-            "/images/products/main%20page/aluminum_sign.png",
-            "/images/products/alum_sign_hover.png",
+            "/images/products/main%20page/aluminum_sign-toronto-printing-ca.png",
+            "/images/products/alum_sign_hover-toronto-printing-ca.png",
           ],
           ratingScore: "4.9",
           ratingCount: "2,840",
@@ -5704,7 +5704,7 @@ Why Choose Our Professional Rollup Banners?
                   label: ".040 Aluminum (Standard)",
                   value: "040",
                   priceAdder: 0,
-                  description: "Standard gauge — great for most applications.",
+                  description: "Standard gauge — excellent for most applications.",
                 },
                 {
                   label: ".080 Aluminum (Heavy Duty)",
@@ -5772,7 +5772,7 @@ Why Choose Our Professional Rollup Banners?
             "Square or rounded corner options",
           ],
           useCases: [
-            "Business Signs",
+            "Corporate Signs",
             "Parking Signs",
             "Street Signs",
             "Safety Signs",
@@ -5796,15 +5796,15 @@ Why Choose Our Professional Rollup Banners?
             },
             {
               q: "Can I get reflective aluminum signs?",
-              a: "Yes! Select the 'Reflective' finish option. Our reflective signs meet ASTM D4956 standards and are great for regulatory, safety, and parking applications.",
+              a: "Yes! Select the 'Reflective' finish option. Our reflective signs meet ASTM D4956 standards and are excellent for regulatory, safety, and parking applications.",
             },
             {
               q: "Are mounting holes included?",
-              a: 'Mounting holes are optional. Choose corner holes (standard 5/16") or custom placement in the configurator — always free to add.',
+              a: 'Mounting holes are optional. Choose corner holes (standard 5/16") or personalized placement in the configurator — always free to add.',
             },
             {
-              q: "Do you offer custom shapes?",
-              a: "Standard shapes (square/rectangle with optional rounded corners) are available online. Contact us for completely custom cut shapes.",
+              q: "Do you offer personalized shapes?",
+              a: "Standard shapes (square/rectangle with optional rounded corners) are available online. Contact us for completely personalized cut shapes.",
             },
           ],
           reviews: [
@@ -5821,7 +5821,7 @@ Why Choose Our Professional Rollup Banners?
             {
               author: "Brian T.",
               rating: 5,
-              text: "The reflective signs are exactly what we needed for night visibility. Very professional.",
+              text: "The reflective signs are exactly what we needed for night visibility. Very expert-grade.",
             },
           ],
           ctaHeading: "Signs That Last a Decade",
@@ -5835,20 +5835,20 @@ Why Choose Our Professional Rollup Banners?
         name: "A-Frame Signs",
         description:
           "Portable double-sided sandwich board sidewalk signs that grab foot traffic and drive customers through your door.",
-        image: "/images/products/main%20page/A-frame_sign.jpeg",
-        price: "Starting at $89.99",
-        badge: "Eye-Catching",
+        image: "/images/products/main%20page/A-frame_sign-toronto-printing-ca.jpeg",
+        price: "Starting at CAD 89.99",
+        badge: "Striking",
         config: {
           title: "A-Frame Signs (Sandwich Boards)",
           subtitle:
             "Portable, double-sided sidewalk signs that grab foot traffic and drive customers through your door.",
           breadcrumb: "Signs",
-          breadcrumbHref: "/custom-signs",
+          breadcrumbHref: "/personalized-signs",
           promoText: "🪧 A-Frame Signs — Double-Sided, Portable, Ships Tomorrow!",
-          image: "/images/products/main%20page/A-frame_sign.jpeg",
+          image: "/images/products/main%20page/A-frame_sign-toronto-printing-ca.jpeg",
           images: [
-            "/images/products/main%20page/A-frame_sign.jpeg",
-            "/images/products/aframe_sign_hover.png",
+            "/images/products/main%20page/A-frame_sign-toronto-printing-ca.jpeg",
+            "/images/products/aframe_sign_hover-toronto-printing-ca.png",
           ],
           ratingScore: "4.8",
           ratingCount: "1,640",
@@ -5892,19 +5892,19 @@ Why Choose Our Professional Rollup Banners?
                   label: "Coroplast Insert (Standard)",
                   value: "coro",
                   priceAdder: 0,
-                  description: "Waterproof, lightweight corrugated plastic.",
+                  description: "Weather-resistant, lightweight corrugated plastic.",
                 },
                 {
                   label: "PVC Foam Board Insert",
                   value: "pvc",
                   priceAdder: 8,
-                  description: "Rigid, premium look for upscale establishments.",
+                  description: "Rigid, high-quality look for upscale establishments.",
                 },
                 {
                   label: "Aluminum Insert",
                   value: "alum",
                   priceAdder: 14,
-                  description: "The most durable, longest-lasting option.",
+                  description: "The most resilient, longest-lasting option.",
                 },
               ],
             },
@@ -6004,7 +6004,7 @@ Why Choose Our Professional Rollup Banners?
             {
               author: "Maria C.",
               rating: 4,
-              text: "Sturdy and looks professional on the sidewalk. The chain accessory was a great add-on.",
+              text: "Sturdy and looks expert-grade on the sidewalk. The chain accessory was a great add-on.",
             },
           ],
           ctaHeading: "Bring Customers Through the Door",
@@ -6017,22 +6017,22 @@ Why Choose Our Professional Rollup Banners?
         id: "foam-board-signs",
         name: "Foam Board Signs",
         description:
-          "Lightweight, professional indoor display signs for presentations and lobbies.",
-        image: "/images/products/main%20page/foam_board.jpeg",
-        price: "Starting at $7.99",
-        badge: "Indoor Favorite",
+          "Lightweight, expert-grade interior display signs for presentations and lobbies.",
+        image: "/images/products/main%20page/foam_board-toronto-printing-ca.jpeg",
+        price: "Starting at CAD 7.99",
+        badge: "Interior Favorite",
         config: {
           title: "Foam Board Signs",
           subtitle:
-            "Lightweight and professional indoor display signs for presentations, lobbies, and events.",
+            "Lightweight and expert-grade interior display signs for presentations, lobbies, and events.",
           breadcrumb: "Signs",
-          breadcrumbHref: "/custom-signs",
+          breadcrumbHref: "/personalized-signs",
           promoText:
-            "✨ Foam Board Signs — Ultra-Light, Ultra-Crisp. Perfect for Presentations!",
-          image: "/images/products/main%20page/foam_board.jpeg",
+            "✨ Foam Board Signs — Ultra-Light, Ultra-Crisp. Ideal for Presentations!",
+          image: "/images/products/main%20page/foam_board-toronto-printing-ca.jpeg",
           images: [
-            "/images/products/main%20page/foam_board.jpeg",
-            "/images/products/foam_sign_hover.png",
+            "/images/products/main%20page/foam_board-toronto-printing-ca.jpeg",
+            "/images/products/foam_sign_hover-toronto-printing-ca.png",
           ],
           ratingScore: "4.8",
           ratingCount: "1,280",
@@ -6066,7 +6066,7 @@ Why Choose Our Professional Rollup Banners?
                   label: '1" (25mm) Ultra-Thick',
                   value: "1in",
                   priceAdder: 9,
-                  description: "Museum-quality thickness for premium displays.",
+                  description: "Museum-quality thickness for high-quality displays.",
                 },
               ],
             },
@@ -6078,7 +6078,7 @@ Why Choose Our Professional Rollup Banners?
                   value: "matte",
                   priceAdder: 0,
                   description:
-                    "No glare — great for photography and presentations.",
+                    "No glare — excellent for photography and presentations.",
                 },
                 {
                   label: "Gloss",
@@ -6133,7 +6133,7 @@ Why Choose Our Professional Rollup Banners?
           keyFeatures: [
             "Crisp, vivid full-color printing",
             "Ultra-lightweight for easy transport",
-            "Smooth white surface for premium look",
+            "Smooth white surface for high-quality look",
             "Multiple thickness options",
             "Matte, Gloss or Satin finish",
             "Self-adhesive or easel-back options",
@@ -6159,8 +6159,8 @@ Why Choose Our Professional Rollup Banners?
           ],
           faqs: [
             {
-              q: "Are foam board signs suitable for outdoor use?",
-              a: "Foam board is designed for indoor use. It can be used outdoors briefly, but prolonged sun and moisture exposure will damage the board. For outdoor use, consider our coroplast or aluminum signs.",
+              q: "Are foam board signs suitable for exterior use?",
+              a: "Foam board is engineered for interior use. It can be used outdoors briefly, but prolonged sun and moisture exposure will damage the board. For exterior use, consider our coroplast or aluminum signs.",
             },
             {
               q: "Can foam board signs stand on their own?",
@@ -6172,29 +6172,29 @@ Why Choose Our Professional Rollup Banners?
             },
             {
               q: 'Can I get large format foam boards over 36"?',
-              a: "Yes, contact us for larger custom sizes. We can print foam boards up to 4' x 8' with seams jointed for larger displays.",
+              a: "Yes, contact us for larger personalized sizes. We can print foam boards up to 4' x 8' with seams jointed for larger displays.",
             },
           ],
           reviews: [
             {
               author: "Linda K.",
               rating: 5,
-              text: "Perfect for our trade show booth. They were lightweight and the print quality was stunning!",
+              text: "Ideal for our trade show booth. They were lightweight and the print quality was stunning!",
             },
             {
               author: "Jason R.",
               rating: 5,
-              text: "Used these for an open house. Very professional looking and easy to carry around the property.",
+              text: "Used these for an open house. Very expert-grade looking and simple to carry around the property.",
             },
             {
               author: "Amanda T.",
               rating: 4,
-              text: "Great for indoor use. Colors were accurate to my file. The easel back is a nice touch.",
+              text: "Excellent for interior use. Colors were accurate to my file. The easel back is a nice touch.",
             },
           ],
           ctaHeading: "Make Your Presentation Pop",
           ctaBody:
-            "Vivid foam board signs that command attention at any indoor event.",
+            "Vivid foam board signs that command attention at any interior event.",
           ctaLabel: "Order Foam Board Signs",
         },
       },
@@ -6202,22 +6202,22 @@ Why Choose Our Professional Rollup Banners?
         id: "acrylic-signs",
         name: "Acrylic Signs",
         description:
-          "Premium clear or colored acrylic for a polished, modern look.",
-        image: "/images/products/main%20page/acrylic_sign.png",
-        price: "Starting at $24.99",
-        badge: "Premium",
+          "High-quality clear or colored acrylic for a polished, modern look.",
+        image: "/images/products/main%20page/acrylic_sign-toronto-printing-ca.png",
+        price: "Starting at CAD 24.99",
+        badge: "High-quality",
         config: {
-          title: "Custom Acrylic Signs",
+          title: "Personalized Acrylic Signs",
           subtitle:
-            "Premium clear and colored acrylic signs for a sleek, modern, upscale look.",
+            "High-quality clear and colored acrylic signs for a sleek, modern, upscale look.",
           breadcrumb: "Signs",
-          breadcrumbHref: "/custom-signs",
+          breadcrumbHref: "/personalized-signs",
           promoText:
-            "💎 Premium Acrylic Signs — Crystal-Clear Quality, Ships Next Day!",
-          image: "/images/products/main%20page/acrylic_sign.png",
+            "💎 High-quality Acrylic Signs — Crystal-Clear Quality, Ships Next Day!",
+          image: "/images/products/main%20page/acrylic_sign-toronto-printing-ca.png",
           images: [
-            "/images/products/main%20page/acrylic_sign.png",
-            "/images/products/acryl_sign_hover.png",
+            "/images/products/main%20page/acrylic_sign-toronto-printing-ca.png",
+            "/images/products/acryl_sign_hover-toronto-printing-ca.png",
           ],
           ratingScore: "4.9",
           ratingCount: "980",
@@ -6258,7 +6258,7 @@ Why Choose Our Professional Rollup Banners?
                   value: "black",
                   priceAdder: 10,
                   description:
-                    "Dramatic and modern — great for gold/silver text.",
+                    "Dramatic and modern — excellent for gold/silver text.",
                 },
               ],
             },
@@ -6270,7 +6270,7 @@ Why Choose Our Professional Rollup Banners?
                   label: '1/4" (6mm) Heavy',
                   value: "6mm",
                   priceAdder: 15,
-                  description: "Premium weight that commands respect.",
+                  description: "High-quality weight that commands respect.",
                 },
                 {
                   label: '3/8" (9mm) Ultra-Thick',
@@ -6287,14 +6287,14 @@ Why Choose Our Professional Rollup Banners?
                   label: "UV Printed (Front)",
                   value: "uv_front",
                   priceAdder: 0,
-                  description: "Direct printed on the front surface.",
+                  description: "Direct manufactured using the front surface.",
                 },
                 {
                   label: "Second-Surface Print (Back)",
                   value: "second_surface",
                   priceAdder: 10,
                   description:
-                    "Image printed on the back for a glass-effect look.",
+                    "Image manufactured using the back for a glass-effect look.",
                 },
               ],
             },
@@ -6324,14 +6324,14 @@ Why Choose Our Professional Rollup Banners?
               ],
             },
           ],
-          qtyDiscount: "Volume pricing — perfect for office signage packages",
+          qtyDiscount: "Volume pricing — ideal for office signage packages",
           keyFeatures: [
-            "Premium cast acrylic material",
+            "High-quality cast acrylic material",
             "Laser-cut edges for a perfect finish",
             "Multiple color and thickness options",
             "Second-surface printing for glass effect",
             "Standoff mounting hardware available",
-            "Custom shapes and sizes supported",
+            "Personalized shapes and sizes supported",
           ],
           useCases: [
             "Office Reception",
@@ -6357,7 +6357,7 @@ Why Choose Our Professional Rollup Banners?
           faqs: [
             {
               q: "What is second-surface printing?",
-              a: "The design is printed on the back of clear acrylic. You view it through the clear surface, creating a premium glass-like appearance that protects the ink from scratches.",
+              a: "The design is manufactured using the back of clear acrylic. You view it through the clear surface, creating a high-quality glass-like appearance that protects the ink from scratches.",
             },
             {
               q: "What standoff mounts do you recommend?",
@@ -6389,7 +6389,7 @@ Why Choose Our Professional Rollup Banners?
               text: "The standoff mounts are a great touch. The floating effect on the wall looks very high-end.",
             },
           ],
-          ctaHeading: "Upgrade to Premium Acrylic",
+          ctaHeading: "Upgrade to High-quality Acrylic",
           ctaBody:
             "Crystal-clear signs that make your brand look like a million dollars.",
           ctaLabel: "Design Your Acrylic Sign",
@@ -6399,22 +6399,22 @@ Why Choose Our Professional Rollup Banners?
         id: "coroplast-signs",
         name: "Coroplast Signs",
         description:
-          "Waterproof corrugated plastic signs — the most versatile, lightweight, and affordable outdoor advertising signs.",
-        image: "/images/products/main%20page/coroplast_sign.png",
-        price: "Starting at $4.99",
-        badge: "Waterproof",
+          "Weather-resistant corrugated plastic signs — the most adaptable, lightweight, and cost-effective exterior marketing signs.",
+        image: "/images/products/main%20page/coroplast_sign-toronto-printing-ca.png",
+        price: "Starting at CAD 4.99",
+        badge: "Weather-resistant",
         config: {
-          title: "Custom Coroplast Signs",
+          title: "Personalized Coroplast Signs",
           subtitle:
-            "The most versatile waterproof outdoor sign — durable, colorful, and incredibly affordable.",
+            "The most adaptable weather-resistant exterior sign — resilient, colorful, and incredibly cost-effective.",
           breadcrumb: "Signs",
-          breadcrumbHref: "/custom-signs",
-          promoText: "💧 Waterproof Coroplast Signs — Weatherproof & Budget-Friendly. Ships Tomorrow!",
-          image: "/images/products/main%20page/coroplast_sign.png",
+          breadcrumbHref: "/personalized-signs",
+          promoText: "💧 Weather-resistant Coroplast Signs — Weatherproof & Budget-Friendly. Ships Tomorrow!",
+          image: "/images/products/main%20page/coroplast_sign-toronto-printing-ca.png",
           images: [
-            "/images/products/main%20page/coroplast_sign.png",
-            "/images/products/coro_sign_hover.png",
-            "/images/products/yard_sign_hover.png",
+            "/images/products/main%20page/coroplast_sign-toronto-printing-ca.png",
+            "/images/products/coro_sign_hover-toronto-printing-ca.png",
+            "/images/products/yard_sign_hover-toronto-printing-ca.png",
           ],
           ratingScore: "4.8",
           ratingCount: "5,620",
@@ -6440,7 +6440,7 @@ Why Choose Our Professional Rollup Banners?
                   value: "4mm",
                   priceAdder: 0,
                   description:
-                    "Best for general outdoor signage up to 12 months.",
+                    "Best for general exterior signage up to 12 months.",
                 },
                 {
                   label: "6mm Heavy Duty",
@@ -6517,12 +6517,12 @@ Why Choose Our Professional Rollup Banners?
           ],
           qtyDiscount: "Buy more, save more — up to 13% off on large orders",
           keyFeatures: [
-            "100% waterproof corrugated plastic",
+            "100% weather-resistant corrugated plastic",
             "UV-resistant full-color printing",
             "Available in 4mm, 6mm, and 8mm",
-            "Lightweight and easy to transport",
+            "Lightweight and simple to transport",
             "Double-sided printing available",
-            "Custom sizes available",
+            "Personalized sizes available",
           ],
           useCases: [
             "Yard Signs",
@@ -6531,7 +6531,7 @@ Why Choose Our Professional Rollup Banners?
             "Event Signage",
             "Political Signs",
             "For Sale Signs",
-            "Business Promotions",
+            "Corporate Promotions",
             "Directional Signs",
           ],
           specs: [
@@ -6553,11 +6553,11 @@ Why Choose Our Professional Rollup Banners?
           faqs: [
             {
               q: "What is the difference between coroplast and regular cardboard?",
-              a: "Coroplast is corrugated polypropylene plastic — it is 100% waterproof, flexible, and far more durable than cardboard. It won't absorb moisture or warp in the rain.",
+              a: "Coroplast is corrugated polypropylene plastic — it is 100% weather-resistant, flexible, and far more resilient than cardboard. It won't absorb moisture or warp in the rain.",
             },
             {
               q: "Can I use coroplast signs indoors?",
-              a: "Absolutely. Coroplast is a great indoor sign material too — it's lightweight, rigid, and easy to display with stakes, grommets, or adhesive.",
+              a: "Absolutely. Coroplast is a great interior sign material too — it's lightweight, rigid, and simple to display with stakes, grommets, or adhesive.",
             },
             {
               q: "How do I attach coroplast signs to a fence?",
@@ -6594,22 +6594,22 @@ Why Choose Our Professional Rollup Banners?
         id: "window-signs",
         name: "Window Signs",
         description:
-          "Custom window graphics, clings, perforated vinyl, and decals for storefronts and offices.",
-        image: "/images/products/main%20page/window_sign.png",
-        price: "Starting at $9.99",
+          "Personalized window graphics, clings, perforated vinyl, and decals for storefronts and offices.",
+        image: "/images/products/main%20page/window_sign-toronto-printing-ca.png",
+        price: "Starting at CAD 9.99",
         badge: "Storefront",
         config: {
           title: "Window Signs & Clings",
           subtitle:
-            "Custom window graphics, clings, perforated vinyl, and decals for storefronts and offices.",
+            "Personalized window graphics, clings, perforated vinyl, and decals for storefronts and offices.",
           breadcrumb: "Signs",
-          breadcrumbHref: "/custom-signs",
+          breadcrumbHref: "/personalized-signs",
           promoText:
             "🪟 Window Signs That Turn Passersby Into Customers — Ships Next Day!",
-          image: "/images/products/main%20page/window_sign.png",
+          image: "/images/products/main%20page/window_sign-toronto-printing-ca.png",
           images: [
-            "/images/products/main%20page/window_sign.png",
-            "/images/products/wind_sign_hover.png",
+            "/images/products/main%20page/window_sign-toronto-printing-ca.png",
+            "/images/products/wind_sign_hover-toronto-printing-ca.png",
           ],
           ratingScore: "4.8",
           ratingCount: "1,940",
@@ -6638,7 +6638,7 @@ Why Choose Our Professional Rollup Banners?
                   value: "clear_vinyl",
                   priceAdder: 2,
                   description:
-                    "Permanent adhesive on clear film. Very professional look.",
+                    "Permanent adhesive on clear film. Very expert-grade look.",
                 },
                 {
                   label: "White Vinyl Decal",
@@ -6658,7 +6658,7 @@ Why Choose Our Professional Rollup Banners?
                   value: "frosted",
                   priceAdder: 5,
                   description:
-                    "Privacy glass effect. Great for offices & conference rooms.",
+                    "Privacy glass effect. Excellent for offices & conference rooms.",
                 },
               ],
             },
@@ -6688,7 +6688,7 @@ Why Choose Our Professional Rollup Banners?
                   id: "inside",
                   label: "Apply Inside (Facing Out)",
                   priceAdder: 0,
-                  description: "Protected from weather — most durable.",
+                  description: "Protected from weather — most resilient.",
                 },
                 {
                   id: "outside",
@@ -6719,7 +6719,7 @@ Why Choose Our Professional Rollup Banners?
                   id: "gloss_lam",
                   label: "Gloss Laminate",
                   priceAdder: 2,
-                  description: "Vibrant colors, scratch-resistant.",
+                  description: "Vivid colors, scratch-resistant.",
                 },
               ],
             },
@@ -6789,12 +6789,12 @@ Why Choose Our Professional Rollup Banners?
             {
               author: "Kyle R.",
               rating: 5,
-              text: "Ordered frosted vinyl for our conference room for privacy. Looks extremely professional and high-end.",
+              text: "Ordered frosted vinyl for our conference room for privacy. Looks extremely expert-grade and high-end.",
             },
             {
               author: "Isabella T.",
               rating: 4,
-              text: "Great quality static clings for a seasonal sale promotion. Easy to put up and remove — will reorder.",
+              text: "Great quality static clings for a seasonal sale promotion. Simple to put up and remove — will reorder.",
             },
           ],
           ctaHeading: "Your Window Is Your Best Billboard",
@@ -6807,22 +6807,22 @@ Why Choose Our Professional Rollup Banners?
         id: "parking-signs",
         name: "Parking Signs",
         description:
-          "Regulatory, reserved, and custom parking signs — aluminum or coroplast, ships next day.",
-        image: "/images/products/main%20page/Parking_sign.jpeg",
-        price: "Starting at $6.99",
+          "Regulatory, reserved, and personalized parking signs — aluminum or coroplast, ships next day.",
+        image: "/images/products/main%20page/Parking_sign-toronto-printing-ca.jpeg",
+        price: "Starting at CAD 6.99",
         badge: "Ready to Ship",
         config: {
-          title: "Custom Parking Signs",
+          title: "Personalized Parking Signs",
           subtitle:
-            "Regulatory, reserved, and custom parking signs — aluminum or coroplast, ships next day.",
+            "Regulatory, reserved, and personalized parking signs — aluminum or coroplast, ships next day.",
           breadcrumb: "Signs",
-          breadcrumbHref: "/custom-signs",
+          breadcrumbHref: "/personalized-signs",
           promoText:
-            "🅿️ Custom Parking Signs — MUTCD-Compliant Reflective Available. Ships Tomorrow!",
-          image: "/images/products/main%20page/Parking_sign.jpeg",
+            "🅿️ Personalized Parking Signs — MUTCD-Compliant Reflective Available. Ships Tomorrow!",
+          image: "/images/products/main%20page/Parking_sign-toronto-printing-ca.jpeg",
           images: [
-            "/images/products/main%20page/Parking_sign.jpeg",
-            "/images/products/park_sign_hover.png",
+            "/images/products/main%20page/Parking_sign-toronto-printing-ca.jpeg",
+            "/images/products/park_sign_hover-toronto-printing-ca.png",
           ],
           ratingScore: "4.9",
           ratingCount: "2,310",
@@ -6843,7 +6843,7 @@ Why Choose Our Professional Rollup Banners?
                   value: "040_alum",
                   priceAdder: 0,
                   description:
-                    "Industry standard for parking signs. Rigid and durable.",
+                    "Industry standard for parking signs. Rigid and resilient.",
                 },
                 {
                   label: ".080 Aluminum Heavy Duty",
@@ -6856,7 +6856,7 @@ Why Choose Our Professional Rollup Banners?
                   value: "coro",
                   priceAdder: -3,
                   description:
-                    "Lightweight and waterproof — best for temporary use.",
+                    "Lightweight and weather-resistant — best for temporary use.",
                 },
               ],
             },
@@ -6936,7 +6936,7 @@ Why Choose Our Professional Rollup Banners?
                   id: "square_post",
                   label: "Square Tubing Post",
                   priceAdder: 22.99,
-                  description: "Heavy-duty square post for permanent installs",
+                  description: "Industrial-strength square post for permanent installs",
                 },
               ],
             },
@@ -6945,14 +6945,14 @@ Why Choose Our Professional Rollup Banners?
           keyFeatures: [
             "Industry-standard .040 aluminum",
             "Reflective finish available (ASTM D4956 Type I & III)",
-            "Standard templates or fully custom designs",
+            "Standard templates or fully personalized designs",
             "Pre-drilled mounting holes included free",
             "MUTCD-compliant options available",
             "U-channel and square post add-ons",
           ],
           useCases: [
             "Private Parking Lots",
-            "Business Parking",
+            "Corporate Parking",
             "HOA Communities",
             "Hotels & Motels",
             "Hospitals & Clinics",
@@ -6968,7 +6968,7 @@ Why Choose Our Professional Rollup Banners?
               value: "ASTM D4956 Type I (Engineer Grade)",
             },
             {
-              key: "Reflective Premium",
+              key: "Reflective High-quality",
               value: "ASTM D4956 Type III (High Intensity)",
             },
             { key: "Hole Diameter", value: '5/16" standard' },
@@ -6991,7 +6991,7 @@ Why Choose Our Professional Rollup Banners?
             },
             {
               q: "Can I include time restrictions on my parking sign?",
-              a: "Absolutely. Our custom design upload lets you include any specific text, time ranges, or language. We also have templates with 'Hours of Enforcement' sections.",
+              a: "Absolutely. Our personalized design upload lets you include any specific text, time ranges, or language. We also have templates with 'Hours of Enforcement' sections.",
             },
           ],
           reviews: [
@@ -7003,7 +7003,7 @@ Why Choose Our Professional Rollup Banners?
             {
               author: "Rebecca O.",
               rating: 5,
-              text: "Fast, high quality, and exactly the right regulatory look. Our HOA board approved them immediately.",
+              text: "Fast, superior quality, and exactly the right regulatory look. Our HOA board approved them immediately.",
             },
             {
               author: "Marcus J.",
@@ -7013,7 +7013,7 @@ Why Choose Our Professional Rollup Banners?
           ],
           ctaHeading: "Control Your Parking. Protect Your Space.",
           ctaBody:
-            "Professional-grade parking signs that are clear, visible, and regulation-ready.",
+            "Expert-grade-grade parking signs that are clear, visible, and regulation-ready.",
           ctaLabel: "Order Parking Signs Now",
         },
       },
@@ -7021,22 +7021,22 @@ Why Choose Our Professional Rollup Banners?
         id: "channel-letter-signs",
         name: "Channel Letter Signs",
         description:
-          "Premium 3D backlit and front-lit channel letters to make your business storefront stand out.",
-        image: "/images/products/main%20page/channel_letter_signs.png",
-        price: "Starting at $149.99",
-        badge: "Premium",
+          "High-quality 3D backlit and front-lit channel letters to make your corporate storefront command attention.",
+        image: "/images/products/main%20page/channel_letter_signs-toronto-printing-ca.png",
+        price: "Starting at CAD 149.99",
+        badge: "High-quality",
         config: {
-          title: "Custom Channel Letter Signs",
+          title: "Personalized Channel Letter Signs",
           subtitle:
-            "Professional dimensional signage with brilliant LED illumination options.",
+            "Expert-grade dimensional signage with brilliant LED illumination options.",
           breadcrumb: "Signs",
-          breadcrumbHref: "/custom-signs",
-          promoText: "✨ Modern LED Channel Letters — Professional Storefront Impact. Shipped Fast!",
-          image: "/images/products/main%20page/channel_letter_signs.png",
+          breadcrumbHref: "/personalized-signs",
+          promoText: "✨ Modern LED Channel Letters — Expert-grade Storefront Impact. Shipped Fast!",
+          image: "/images/products/main%20page/channel_letter_signs-toronto-printing-ca.png",
           images: [
-            "/images/products/main%20page/channel_letter_signs.png",
-            "/images/products/gallery/channel_letter_storefront_1.png",
-            "/images/products/gallery/channel_letter_storefront_2.png",
+            "/images/products/main%20page/channel_letter_signs-toronto-printing-ca.png",
+            "/images/products/gallery/channel_letter_storefront_1-toronto-printing-ca.png",
+            "/images/products/gallery/channel_letter_storefront_2-toronto-printing-ca.png",
           ],
           ratingScore: "4.9",
           ratingCount: "820",
@@ -7115,9 +7115,9 @@ Why Choose Our Professional Rollup Banners?
           ],
           qtyDiscount: "Volume discounts on complex multi-letter signs",
           keyFeatures: [
-            "Heavy-duty aluminum returns (side walls) will not rust",
+            "Industrial-strength aluminum returns (side walls) will not rust",
             "Energy-efficient and long-lasting UL-listed LEDs",
-            "Custom fonts, colors, and logos supported",
+            "Personalized fonts, colors, and logos supported",
             "Front-lit and halo-lit options for stunning looks",
             "Raceway mount option for simplified building installation",
           ],
@@ -7159,12 +7159,12 @@ Why Choose Our Professional Rollup Banners?
             {
               author: "Samantha V.",
               rating: 5,
-              text: "Fantastic customer support in setting up our custom vector logo. The letters arrived securely crated and installation templates were exact.",
+              text: "Fantastic customer support in setting up our personalized vector logo. The letters arrived securely crated and installation templates were exact.",
             },
           ],
-          ctaHeading: "Brighten Your Business Facade",
+          ctaHeading: "Brighten Your Corporate Facade",
           ctaBody:
-            "Custom 3D LED channel letters manufactured with commercial-grade components.",
+            "Personalized 3D LED channel letters manufactured with commercial-grade components.",
           ctaLabel: "Order Channel Letter Signs Now",
         },
       },

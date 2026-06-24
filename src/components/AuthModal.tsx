@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useState } from "react";
 import {
@@ -193,7 +193,7 @@ export function AuthModal() {
                     onChange={(e) => setFullName(e.target.value)}
                     placeholder="John Doe"
                     disabled={loading}
-                    className="w-full bg-slate-50 border border-gray-200 rounded-2xl py-3 pl-11 pr-4 text-sm focus:outline-none focus:ring-2 focus:ring-[#ff2d78] focus:border-transparent transition-all"
+                    className="w-full bg-slate-50 border border-gray-200 rounded-2xl py-3 pl-11 pr-4 text-sm focus:outline-none focus:ring-2 focus:ring-[#f7f82d] focus:border-transparent transition-all"
                   />
                 </div>
               </div>
@@ -214,7 +214,7 @@ export function AuthModal() {
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder="name@example.com"
                   disabled={loading}
-                  className="w-full bg-slate-50 border border-gray-200 rounded-2xl py-3 pl-11 pr-4 text-sm focus:outline-none focus:ring-2 focus:ring-[#ff2d78] focus:border-transparent transition-all"
+                  className="w-full bg-slate-50 border border-gray-200 rounded-2xl py-3 pl-11 pr-4 text-sm focus:outline-none focus:ring-2 focus:ring-[#f7f82d] focus:border-transparent transition-all"
                 />
               </div>
             </div>
@@ -234,7 +234,7 @@ export function AuthModal() {
                   onChange={(e) => setPassword(e.target.value)}
                   placeholder="••••••••"
                   disabled={loading}
-                  className="w-full bg-slate-50 border border-gray-200 rounded-2xl py-3 pl-11 pr-4 text-sm focus:outline-none focus:ring-2 focus:ring-[#ff2d78] focus:border-transparent transition-all"
+                  className="w-full bg-slate-50 border border-gray-200 rounded-2xl py-3 pl-11 pr-4 text-sm focus:outline-none focus:ring-2 focus:ring-[#f7f82d] focus:border-transparent transition-all"
                 />
               </div>
             </div>
@@ -242,10 +242,10 @@ export function AuthModal() {
             <button
               type="submit"
               disabled={loading}
-              className="w-full active:scale-[0.98] text-white font-extrabold py-3.5 rounded-2xl transition-all text-sm uppercase tracking-wider shadow-md font-poppins flex items-center justify-center gap-2 hover:opacity-90 disabled:opacity-50"
+              className="w-full active:scale-[0.98] text-gray-900 font-extrabold py-3.5 rounded-2xl transition-all text-sm uppercase tracking-wider shadow-md font-poppins flex items-center justify-center gap-2 hover:opacity-90 disabled:opacity-50"
               style={{
                 background:
-                  "linear-gradient(135deg, #ff2d78, #b020ff, #00e5ff)",
+                  "#f7f82d",
                 boxShadow: "0 4px 15px rgba(255,45,120,0.2)",
               }}
             >
@@ -272,7 +272,7 @@ export function AuthModal() {
                     setIsSignUp(false);
                     setError(null);
                   }}
-                  className="font-bold text-[#ff2d78] hover:underline transition-colors"
+                  className="font-bold text-[#ca8a04] hover:underline transition-colors"
                 >
                   Sign In
                 </button>
@@ -285,7 +285,7 @@ export function AuthModal() {
                     setIsSignUp(true);
                     setError(null);
                   }}
-                  className="font-bold text-[#ff2d78] hover:underline transition-colors"
+                  className="font-bold text-[#ca8a04] hover:underline transition-colors"
                 >
                   Sign Up
                 </button>

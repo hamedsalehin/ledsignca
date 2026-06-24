@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import React, { useState, useEffect, useRef, useCallback } from "react";
 import {
@@ -506,14 +506,14 @@ export function DesignCanvas({
     const handles = ["nw", "ne", "se", "sw", "n", "e", "s", "w"];
 
     return (
-      <div className="absolute inset-0 border-2 border-[#ff2d78] pointer-events-none select-none">
+      <div className="absolute inset-0 border-2 border-[#f7f82d] pointer-events-none select-none">
         {/* Rotation Handle */}
         <div
           className="absolute left-1/2 -top-9 -translate-x-1/2 flex flex-col items-center cursor-alias pointer-events-auto"
           onMouseDown={(e) => handleInteractionStart(e, "rotate")}
         >
-          <div className="w-0.5 h-5 bg-[#ff2d78]" />
-          <div className="w-3.5 h-3.5 bg-[#ff2d78] hover:bg-yellow-300 rounded-full border-2 border-slate-900 shadow-md transition-colors" />
+          <div className="w-0.5 h-5 bg-[#f7f82d]" />
+          <div className="w-3.5 h-3.5 bg-[#f7f82d] hover:bg-yellow-300 rounded-full border-2 border-slate-900 shadow-md transition-colors" />
         </div>
 
         {/* Quick Toolbar overlay — counter-rotate so it stays readable */}
@@ -590,7 +590,7 @@ export function DesignCanvas({
           <div className="flex items-center gap-1.5 text-[10px] text-slate-300 hover:text-white select-none cursor-pointer pl-2 border-l border-slate-700 ml-1">
             <input
               type="checkbox"
-              id={`aspect-lock-${el.id}`}
+              id={`aspect-lock-CAD {el.id}`}
               checked={el.aspectLocked !== undefined ? el.aspectLocked : (el.type === "image" || el.type === "clipart")}
               onChange={(e) => {
                 const updated = elements.map((item) =>
@@ -601,9 +601,9 @@ export function DesignCanvas({
                 onElementsChange(updated);
                 historyPush(updated);
               }}
-              className="accent-[#ff2d78] w-3 h-3 rounded bg-slate-850 border-slate-700 cursor-pointer"
+              className="accent-[#f7f82d] w-3 h-3 rounded bg-slate-850 border-slate-700 cursor-pointer"
             />
-            <label htmlFor={`aspect-lock-${el.id}`} className="whitespace-nowrap cursor-pointer select-none">
+            <label htmlFor={`aspect-lock-CAD {el.id}`} className="whitespace-nowrap cursor-pointer select-none">
               Lock Aspect
             </label>
           </div>
@@ -643,7 +643,7 @@ export function DesignCanvas({
           return (
             <div
               key={h}
-              className={`absolute w-3 h-3 bg-white border-2 border-[#ff2d78] pointer-events-auto rounded-full shadow-md z-40 transition-transform hover:scale-125 ${posClass}`}
+              className={`absolute w-3 h-3 bg-white border-2 border-[#f7f82d] pointer-events-auto rounded-full shadow-md z-40 transition-transform hover:scale-125 ${posClass}`}
               onMouseDown={(e) => handleInteractionStart(e, "resize", h)}
             />
           );
@@ -681,13 +681,13 @@ export function DesignCanvas({
       {/* Center Snap Lines */}
       {showSnapX && (
         <div
-          className="absolute top-0 bottom-0 w-0.5 bg-[#ff2d78] z-35 pointer-events-none shadow-[0_0_8px_#ff2d78]"
+          className="absolute top-0 bottom-0 w-0.5 bg-[#f7f82d] z-35 pointer-events-none shadow-[0_0_8px_#f7f82d]"
           style={{ left: "50%", transform: "translateX(-50%)" }}
         />
       )}
       {showSnapY && (
         <div
-          className="absolute left-0 right-0 h-0.5 bg-[#ff2d78] z-35 pointer-events-none shadow-[0_0_8px_#ff2d78]"
+          className="absolute left-0 right-0 h-0.5 bg-[#f7f82d] z-35 pointer-events-none shadow-[0_0_8px_#f7f82d]"
           style={{ top: "50%", transform: "translateY(-50%)" }}
         />
       )}
@@ -883,7 +883,7 @@ export function DesignCanvas({
                       >
                         <polygon
                           points="50,2 64,36 100,36 71,57 81,95 50,72 19,95 29,57 0,36 36,36"
-                          fill={el.fillColor || "#eab308"}
+                          fill={el.fillColor || "#f7f82d"}
                           stroke={el.borderColor || "#000"}
                           strokeWidth={el.borderWidth ? el.borderWidth * 2 : 0}
                         />
@@ -909,7 +909,7 @@ export function DesignCanvas({
 
                 {el.type === "image" && el.imageUrl && (
                   <div className="w-full h-full relative p-0">
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    
                     <img
                       src={el.imageUrl}
                       alt="Uploaded element"

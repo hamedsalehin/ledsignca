@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import React, { useState } from "react";
 import Link from "next/link";
@@ -159,7 +159,7 @@ export default function QuotePageClient() {
       <main className="flex-grow py-12">
         {/* Breadcrumb */}
         <div className="max-w-[1440px] mx-auto px-4 md:px-8 lg:px-12 mb-8 flex items-center gap-2 text-sm text-slate-500 font-['Open_Sans']">
-          <Link href="/" className="hover:text-[#ff2d78] transition-colors">
+          <Link href="/" className="hover:text-yellow-600 transition-colors">
             Home
           </Link>
           <span>/</span>
@@ -172,14 +172,14 @@ export default function QuotePageClient() {
             <div className="space-y-8">
               {/* Form Header */}
               <div className="border-b border-slate-100 pb-6">
-                <span className="text-[10px] md:text-xs font-extrabold uppercase tracking-widest text-[#ff2d78] flex items-center gap-1.5 mb-2">
+                <span className="text-[10px] md:text-xs font-extrabold uppercase tracking-widest text-[#ca8a04] flex items-center gap-1.5 mb-2">
                   <Sparkles className="w-3.5 h-3.5" /> <span className="text-black">WE PRINT EVERYTHING</span>
                 </span>
                 <h1 className="text-3xl md:text-4xl font-black font-poppins text-slate-800 leading-tight">
-                  Custom Signage &amp; Print Quote in Fort Lauderdale
+                  Custom Signage &amp; Print Quote in Toronto
                 </h1>
                 <p className="text-sm text-slate-500 font-medium leading-relaxed mt-2 font-opensans max-w-3xl">
-                  Need premium custom signs, LED signs, banners, business cards, or other marketing materials in Fort Lauderdale and Broward County? Specify your dimensions and upload your artwork files below. Our print specialists will email you a layout proof and pricing quote within 12 hours.
+                  Need premium custom signs, LED signs, banners, business cards, or other marketing materials in Toronto and the Greater Toronto Area? Specify your dimensions and upload your artwork files below. Our print specialists will email you a layout proof and pricing quote within 12 hours.
                 </p>
 
 
@@ -207,7 +207,7 @@ export default function QuotePageClient() {
                         placeholder="John Doe"
                         value={fullName}
                         onChange={(e) => setFullName(e.target.value)}
-                        className="w-full px-4 py-3 bg-white border border-slate-200 rounded-xl text-sm focus:outline-none focus:border-[#ff2d78] focus:ring-1 focus:ring-[#ff2d78] transition-all font-semibold text-slate-700"
+                        className="w-full px-4 py-3 bg-white border border-slate-200 rounded-xl text-sm focus:outline-none focus:border-[#ca8a04] focus:ring-1 focus:ring-[#f7f82d] transition-all font-semibold text-slate-700"
                       />
                     </div>
 
@@ -222,7 +222,7 @@ export default function QuotePageClient() {
                         placeholder="john@example.com"
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
-                        className="w-full px-4 py-3 bg-white border border-slate-200 rounded-xl text-sm focus:outline-none focus:border-[#ff2d78] focus:ring-1 focus:ring-[#ff2d78] transition-all font-semibold text-slate-700"
+                        className="w-full px-4 py-3 bg-white border border-slate-200 rounded-xl text-sm focus:outline-none focus:border-[#ca8a04] focus:ring-1 focus:ring-[#f7f82d] transition-all font-semibold text-slate-700"
                       />
                     </div>
                   </div>
@@ -239,7 +239,7 @@ export default function QuotePageClient() {
                         placeholder="305-555-0199"
                         value={phone}
                         onChange={(e) => setPhone(e.target.value)}
-                        className="w-full px-4 py-3 bg-white border border-slate-200 rounded-xl text-sm focus:outline-none focus:border-[#ff2d78] focus:ring-1 focus:ring-[#ff2d78] transition-all font-semibold text-slate-700"
+                        className="w-full px-4 py-3 bg-white border border-slate-200 rounded-xl text-sm focus:outline-none focus:border-[#ca8a04] focus:ring-1 focus:ring-[#f7f82d] transition-all font-semibold text-slate-700"
                       />
                     </div>
 
@@ -254,7 +254,7 @@ export default function QuotePageClient() {
                         min="1"
                         value={quantity}
                         onChange={(e) => setQuantity(Number(e.target.value) || 1)}
-                        className="w-full px-4 py-3 bg-white border border-slate-200 rounded-xl text-sm focus:outline-none focus:border-[#ff2d78] focus:ring-1 focus:ring-[#ff2d78] transition-all font-semibold text-slate-700"
+                        className="w-full px-4 py-3 bg-white border border-slate-200 rounded-xl text-sm focus:outline-none focus:border-[#ca8a04] focus:ring-1 focus:ring-[#f7f82d] transition-all font-semibold text-slate-700"
                       />
                     </div>
                   </div>
@@ -270,14 +270,14 @@ export default function QuotePageClient() {
                         placeholder="Width (e.g. 24 inches)"
                         value={width}
                         onChange={(e) => setWidth(e.target.value)}
-                        className="w-full px-4 py-3 bg-white border border-slate-200 rounded-xl text-sm focus:outline-none focus:border-[#ff2d78] focus:ring-1 focus:ring-[#ff2d78] transition-all font-semibold text-slate-700"
+                        className="w-full px-4 py-3 bg-white border border-slate-200 rounded-xl text-sm focus:outline-none focus:border-[#ca8a04] focus:ring-1 focus:ring-[#f7f82d] transition-all font-semibold text-slate-700"
                       />
                       <input
                         type="text"
                         placeholder="Height (e.g. 36 inches)"
                         value={height}
                         onChange={(e) => setHeight(e.target.value)}
-                        className="w-full px-4 py-3 bg-white border border-slate-200 rounded-xl text-sm focus:outline-none focus:border-[#ff2d78] focus:ring-1 focus:ring-[#ff2d78] transition-all font-semibold text-slate-700"
+                        className="w-full px-4 py-3 bg-white border border-slate-200 rounded-xl text-sm focus:outline-none focus:border-[#ca8a04] focus:ring-1 focus:ring-[#f7f82d] transition-all font-semibold text-slate-700"
                       />
                     </div>
                   </div>
@@ -296,7 +296,7 @@ export default function QuotePageClient() {
                       placeholder="Describe your project requirements (e.g. materials, shape, double-sided, stakes, or custom finishing)."
                       value={description}
                       onChange={(e) => setDescription(e.target.value)}
-                      className="w-full px-4 py-3 bg-white border border-slate-200 rounded-xl text-sm focus:outline-none focus:border-[#ff2d78] focus:ring-1 focus:ring-[#ff2d78] transition-all font-semibold text-slate-700 resize-y min-h-[120px]"
+                      className="w-full px-4 py-3 bg-white border border-slate-200 rounded-xl text-sm focus:outline-none focus:border-[#ca8a04] focus:ring-1 focus:ring-[#f7f82d] transition-all font-semibold text-slate-700 resize-y min-h-[120px]"
                     />
                   </div>
 
@@ -308,7 +308,7 @@ export default function QuotePageClient() {
                     )}
 
                     {!fileUrl ? (
-                      <div className="relative group border-2 border-dashed border-slate-200 hover:border-[#ff2d78] rounded-xl p-5 text-center bg-slate-50/30 transition-colors cursor-pointer flex flex-col items-center justify-center gap-1.5">
+                      <div className="relative group border-2 border-dashed border-slate-200 hover:border-[#ca8a04] rounded-xl p-5 text-center bg-slate-50/30 transition-colors cursor-pointer flex flex-col items-center justify-center gap-1.5">
                         <input
                           type="file"
                           accept="application/pdf,image/png,image/jpeg,image/jpg"
@@ -325,14 +325,14 @@ export default function QuotePageClient() {
                         />
                         {fileUploading ? (
                           <>
-                            <Loader2 className="w-6 h-6 text-[#ff2d78] animate-spin" />
+                            <Loader2 className="w-6 h-6 text-[#ca8a04] animate-spin" />
                             <p className="text-xs text-slate-500 font-semibold">Uploading artwork...</p>
                           </>
                         ) : (
                           <>
-                            <UploadCloud className="w-6 h-6 text-slate-400 group-hover:text-[#ff2d78] transition-colors" />
+                            <UploadCloud className="w-6 h-6 text-slate-400 group-hover:text-yellow-600 transition-colors" />
                             <p className="text-xs text-slate-600 font-bold">
-                              Drag &amp; drop or <span className="text-[#ff2d78] underline font-bold">browse file</span>
+                              Drag &amp; drop or <span className="text-[#ca8a04] underline font-bold">browse file</span>
                             </p>
                             <p className="text-[9px] text-slate-400 font-medium">PDF, PNG, JPG up to 25MB</p>
                           </>
@@ -367,7 +367,7 @@ export default function QuotePageClient() {
                   <button
                     type="submit"
                     disabled={submitting || fileUploading}
-                    className="w-full text-center border-2 border-[#ff2d78] text-[#ff2d78] hover:bg-[#ff2d78] hover:text-white bg-transparent active:scale-[0.99] font-extrabold py-3.5 rounded-xl transition-all text-xs md:text-sm uppercase tracking-wider flex items-center justify-center gap-2 disabled:opacity-50"
+                    className="w-full text-center border-2 border-[#ca8a04] text-[#ca8a04] hover:bg-[#f7f82d] hover:text-gray-900 bg-transparent active:scale-[0.99] font-extrabold py-3.5 rounded-xl transition-all text-xs md:text-sm uppercase tracking-wider flex items-center justify-center gap-2 disabled:opacity-50"
                   >
                     {submitting ? (
                       <>
@@ -391,7 +391,7 @@ export default function QuotePageClient() {
                 <h3 className="text-2xl font-black font-poppins text-slate-800 leading-tight">
                   Request Received!
                 </h3>
-                <p className="text-[#ff2d78] font-extrabold uppercase tracking-wider text-xs">
+                <p className="text-[#ca8a04] font-extrabold uppercase tracking-wider text-xs">
                   We will get back to you shortly
                 </p>
               </div>
@@ -401,7 +401,7 @@ export default function QuotePageClient() {
                   Thank you, <span className="font-extrabold text-slate-800">{fullName}</span>. Your custom quote request has been saved.
                 </p>
                 <p className="leading-relaxed">
-                  Our formatting and layout specialists will review your specs and details. We will email you a print proof and pricing breakdown at <span className="font-bold text-slate-800">{email}</span> within <span className="font-bold text-[#ff2d78]">12 hours</span>.
+                  Our formatting and layout specialists will review your specs and details. We will email you a print proof and pricing breakdown at <span className="font-bold text-slate-800">{email}</span> within <span className="font-bold text-[#ca8a04]">12 hours</span>.
                 </p>
 
                 {!emailsInitialized && (
@@ -429,7 +429,7 @@ export default function QuotePageClient() {
               <div className="flex flex-col sm:flex-row gap-3 pt-4 justify-center">
                 <Link
                   href="/"
-                  className="px-6 py-3 border-2 border-[#ff2d78] text-[#ff2d78] hover:bg-[#ff2d78] hover:text-white bg-transparent font-bold text-xs uppercase tracking-wider rounded-xl transition-all text-center"
+                  className="px-6 py-3 border-2 border-[#ca8a04] text-[#ca8a04] hover:bg-[#f7f82d] hover:text-gray-900 bg-transparent font-bold text-xs uppercase tracking-wider rounded-xl transition-all text-center"
                 >
                   Back to Homepage
                 </Link>
@@ -446,7 +446,7 @@ export default function QuotePageClient() {
                     setFile(null);
                     setFileUrl(null);
                   }}
-                  className="px-6 py-3 border-2 border-slate-200 hover:border-[#ff2d78] hover:text-[#ff2d78] text-slate-500 font-bold text-xs uppercase tracking-wider rounded-xl transition-all bg-white"
+                  className="px-6 py-3 border-2 border-slate-200 hover:border-[#ca8a04] hover:text-yellow-600 text-slate-500 font-bold text-xs uppercase tracking-wider rounded-xl transition-all bg-white"
                 >
                   Submit Another Quote
                 </button>

@@ -19,10 +19,10 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   if (!categoryData) return {};
   const productData = categoryData.products.find((p) => p.id === decodedProduct);
   if (!productData) return {};
-  const title = `${productData.name} Fort Lauderdale FL | Fast Turnaround | Nano Signs`;
+  const title = `${productData.name} Toronto ON | Fast Turnaround | Nano Signs`;
   const description = productData.description
-    ? `Design custom ${productData.name.toLowerCase()} online or in person in Broward County. Fastest turnaround times. ${productData.description}`
-    : `Custom ${productData.name} design and high-quality printing in Fort Lauderdale & Oakland Park FL. Fastest turnaround times in Broward. Call 305-967-1005!`;
+    ? `Design custom ${productData.name.toLowerCase()} online or in person in the Greater Toronto Area. Fastest turnaround times. ${productData.description}`
+    : `Custom ${productData.name} design and high-quality printing in Toronto & Mississauga, ON. Fastest turnaround times in Ontario. Call +1 416-838-8994!`;
 
   return {
     title,

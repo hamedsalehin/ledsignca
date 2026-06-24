@@ -1,65 +1,65 @@
-import Image from "next/image";
+﻿import Image from "next/image";
 import Link from "next/link";
 
 const products = [
   {
     name: "Tablecloths",
-    image: "/images/products/main%20page/tablecloths.png",
+    image: "/images/products/main%20page/tablecloths-toronto-printing-ca.png",
     href: "/trade-show/tablecloths",
   },
   {
     name: "Car Magnets",
-    image: "/images/products/main%20page/vehicle_magnets.png",
+    image: "/images/products/main%20page/vehicle_magnets-toronto-printing-ca.png",
     href: "/vehicle-signs/magnetic-signs",
   },
   {
     name: "Retractable Banners",
-    image: "/images/products/main%20page/retractable_roll_up_banner.png",
+    image: "/images/products/main%20page/retractable_roll_up_banner-toronto-printing-ca.png",
     href: "/custom-banners/roll-up-banners",
   },
   {
     name: "Backdrop Banners",
-    image: "/images/products/main%20page/backdrop_banners.png",
+    image: "/images/products/main%20page/backdrop_banners-toronto-printing-ca.png",
     href: "/custom-banners/step-and-repeat-banners",
   },
   {
     name: "Vinyl Decals",
-    image: "/images/products/main%20page/vinyl_sticker.png",
+    image: "/images/products/main%20page/vinyl_sticker-toronto-printing-ca.png",
     href: "/custom-decals/window-decals",
   },
   {
     name: "Flags",
-    image: "/images/products/main%20page/flags.png",
+    image: "/images/products/main%20page/flags-toronto-printing-ca.png",
     href: "/custom-flags/flags",
   },
   {
     name: "Fabric Banners",
-    image: "/images/products/main%20page/fabric_banner.png",
+    image: "/images/products/main%20page/fabric_banner-toronto-printing-ca.png",
     href: "/custom-banners/fabric-banners",
   },
   {
     name: "Event Tents",
-    image: "/images/products/main%20page/event_tents.png",
+    image: "/images/products/main%20page/event_tents-toronto-printing-ca.png",
     href: "/trade-show/custom-canopy-tents",
   },
   {
     name: "Business Cards",
-    image: "/images/products/main%20page/business_cards.png",
+    image: "/images/products/main%20page/business_cards-toronto-printing-ca.png",
     href: "/marketing-materials/business-cards",
   },
   {
     name: "Labels and Stickers",
-    image: "/images/products/main%20page/sticker_and_labels.png",
+    image: "/images/products/main%20page/sticker_and_labels-toronto-printing-ca.png",
     href: "/custom-decals/sheet-stickers",
   },
   {
     name: "Neon Sign",
-    image: "/images/products/main%20page/neon_sign.jpeg",
+    image: "/images/products/main%20page/neon_sign-toronto-printing-ca.jpeg",
     href: "https://neonfl.com",
   },
   {
     name: "Programmable LED Sign",
-    image: "/images/products/main%20page/programmable_led_sign.jpeg",
+    image: "/images/products/main%20page/programmable_led_sign-toronto-printing-ca.jpeg",
     href: "https://led-signs.us/",
   },
 ];
@@ -69,7 +69,7 @@ export function ProductsGrid() {
     <section
       className="py-4 md:py-6"
       style={{
-        background: "linear-gradient(160deg, #f0faff 0%, #fdf0f8 100%)",
+        background: "#fffde7",
       }}
     >
       <div className="w-full px-6 md:px-16 lg:px-24 xl:px-32">

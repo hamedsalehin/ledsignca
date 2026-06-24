@@ -1,4 +1,4 @@
-import Image from "next/image";
+﻿import Image from "next/image";
 import {
   Facebook,
   Instagram,
@@ -82,7 +82,7 @@ export function Footer({ light = false }: { light?: boolean } = {}) {
           ? undefined
           : {
               background:
-                "linear-gradient(160deg, #0d0d1a 0%, #130a1f 50%, #001a22 100%)",
+                "#0d0d1a",
             }
       }
     >
@@ -92,7 +92,7 @@ export function Footer({ light = false }: { light?: boolean } = {}) {
           className="h-1 w-full"
           style={{
             background:
-              "linear-gradient(90deg, #ff2d78 0%, #b020ff 50%, #00e5ff 100%)",
+              "#f7f82d",
           }}
         />
       )}
@@ -103,7 +103,7 @@ export function Footer({ light = false }: { light?: boolean } = {}) {
           <div className="lg:col-span-2">
             <div className="mb-4">
               <Image
-                src="/images/nano logo complete.png"
+                src="/images/nano logo complete-toronto-printing-ca.png"
                 alt="Nano Signs"
                 width={160}
                 height={60}
@@ -111,47 +111,47 @@ export function Footer({ light = false }: { light?: boolean } = {}) {
               />
             </div>
             <p className={`text-sm mb-6 leading-relaxed ${light ? "text-slate-500" : "text-gray-400"}`}>
-              Your trusted custom printing expert in Oakland Park, FL. Quality
+              Your trusted custom printing expert in Toronto, ON. Quality
               signs, banners, and more.
             </p>
 
             <div className="space-y-3 mb-6">
               <a
-                href="tel:305-967-1005"
-                className={`flex items-center gap-2 transition-colors ${light ? "text-slate-600 hover:text-[#ff2d78]" : "text-gray-300 hover:text-[#ff2d78]"}`}
+                href="tel:+14168388994"
+                className={`flex items-center gap-2 transition-colors ${light ? "text-slate-600 hover:text-yellow-600" : "text-gray-300 hover:text-yellow-600"}`}
               >
                 <Phone
                   className="w-4 h-4 flex-shrink-0"
-                  style={{ color: "#ff2d78" }}
+                  style={{ color: "#f7f82d" }}
                 />
-                <span>305-967-1005</span>
+                <span>+1 416-838-8994</span>
               </a>
               <a
-                href="tel:305-967-9654"
-                className={`flex items-center gap-2 transition-colors ${light ? "text-slate-600 hover:text-[#ff2d78]" : "text-gray-300 hover:text-[#ff2d78]"}`}
+                href="tel:+14168388994"
+                className={`flex items-center gap-2 transition-colors ${light ? "text-slate-600 hover:text-yellow-600" : "text-gray-300 hover:text-yellow-600"}`}
               >
                 <Phone
                   className="w-4 h-4 flex-shrink-0"
-                  style={{ color: "#ff2d78" }}
+                  style={{ color: "#f7f82d" }}
                 />
-                <span>305-967-9654</span>
+                <span>+1 416-838-8994</span>
               </a>
               <a
-                href="mailto:nanosign1@gmail.com"
-                className={`flex items-center gap-2 transition-colors ${light ? "text-slate-600 hover:text-[#ff2d78]" : "text-gray-300 hover:text-[#00e5ff]"}`}
+                href="mailto:info@led-sign.ca"
+                className={`flex items-center gap-2 transition-colors ${light ? "text-slate-600 hover:text-yellow-600" : "text-gray-300 hover:text-yellow-600"}`}
               >
                 <Mail
                   className="w-4 h-4 flex-shrink-0"
-                  style={{ color: light ? "#ff2d78" : "#00e5ff" }}
+                  style={{ color: light ? "#f7f82d" : "#f7f82d" }}
                 />
-                <span>nanosign1@gmail.com</span>
+                <span>info@led-sign.ca</span>
               </a>
               <div className={`flex items-start gap-2 ${light ? "text-slate-600" : "text-gray-300"}`}>
                 <MapPin
                   className="w-4 h-4 mt-0.5 flex-shrink-0"
-                  style={{ color: light ? "#ff2d78" : "#00e5ff" }}
+                  style={{ color: light ? "#f7f82d" : "#f7f82d" }}
                 />
-                <span>4567 Powerline Rd, Oakland Park, FL 33309</span>
+                <span>2190 Warden Ave, Scarborough, ON M1T 1V6</span>
               </div>
             </div>
 
@@ -182,7 +182,7 @@ export function Footer({ light = false }: { light?: boolean } = {}) {
                 <li key={link.name}>
                   <a
                     href={link.href}
-                    className={`transition-colors text-sm ${light ? "text-slate-500 hover:text-[#ff2d78]" : "text-gray-400 hover:text-[#00e5ff]"}`}
+                    className={`transition-colors text-sm ${light ? "text-slate-500 hover:text-yellow-600" : "text-gray-400 hover:text-yellow-600"}`}
                   >
                     {link.name}
                   </a>
@@ -201,7 +201,7 @@ export function Footer({ light = false }: { light?: boolean } = {}) {
                 <li key={link.name}>
                   <a
                     href={link.href}
-                    className={`transition-colors text-sm ${light ? "text-slate-500 hover:text-[#ff2d78]" : "text-gray-400 hover:text-[#00e5ff]"}`}
+                    className={`transition-colors text-sm ${light ? "text-slate-500 hover:text-yellow-600" : "text-gray-400 hover:text-yellow-600"}`}
                   >
                     {link.name}
                   </a>
@@ -220,7 +220,7 @@ export function Footer({ light = false }: { light?: boolean } = {}) {
                 <li key={link.name}>
                   <a
                     href={link.href}
-                    className={`transition-colors text-sm ${light ? "text-slate-500 hover:text-[#ff2d78]" : "text-gray-400 hover:text-[#00e5ff]"}`}
+                    className={`transition-colors text-sm ${light ? "text-slate-500 hover:text-yellow-600" : "text-gray-400 hover:text-yellow-600"}`}
                   >
                     {link.name}
                   </a>
@@ -232,7 +232,7 @@ export function Footer({ light = false }: { light?: boolean } = {}) {
               <p className={`text-sm mb-2 ${light ? "text-slate-400" : "text-gray-500"}`}>We accept:</p>
               <div className="flex flex-wrap gap-2">
                 {paymentMethods.map((method) => (
-                  <img
+                  <Image
                     key={method.name}
                     src={method.icon}
                     alt={method.name}
@@ -249,14 +249,14 @@ export function Footer({ light = false }: { light?: boolean } = {}) {
         {/* Google Maps Location Embed */}
         <div className={`mt-12 rounded-2xl overflow-hidden shadow-lg h-[250px] w-full border ${light ? "border-slate-200" : "border-gray-800"}`}>
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d7160.8801455159755!2d-80.15735434976504!3d26.182359067699164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e0!4m0!4m5!1s0x88d903da421a5ec5%3A0xdd627ecbac01c685!2s4567%20Powerline%20Rd%2C%20Oakland%20Park%2C%20FL%2033309!3m2!1d26.1835062!2d-80.1554943!5e0!3m2!1sen!2sus!4v1781380571760!5m2!1sen!2sus"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.4!2d-79.2765!3d43.7830!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4d05d5e3a4b4b%3A0x1a2b3c4d5e6f7a8b!2s2190%20Warden%20Ave%2C%20Scarborough%2C%20ON%20M1T%201V6!5e0!3m2!1sen!2sca!4v1781380571760!5m2!1sen!2sca"
             width="100%"
             height="100%"
             style={{ border: 0 }}
             allowFullScreen={true}
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
-            title="Nano Signs Location"
+            title="Nano Signs Toronto Location"
           ></iframe>
         </div>
       </div>
@@ -273,7 +273,7 @@ export function Footer({ light = false }: { light?: boolean } = {}) {
                 <a
                   key={link.name}
                   href={link.href}
-                  className={`transition-colors text-sm ${light ? "text-slate-400 hover:text-[#ff2d78]" : "text-gray-500 hover:text-[#ff2d78]"}`}
+                  className={`transition-colors text-sm ${light ? "text-slate-400 hover:text-yellow-600" : "text-gray-500 hover:text-yellow-600"}`}
                 >
                   {link.name}
                 </a>

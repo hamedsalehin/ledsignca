@@ -23,20 +23,20 @@ export default function AboutUsPage() {
 
       {/* Hero Header */}
       <section className="relative text-white py-16 md:py-24" style={{
-        background: "linear-gradient(135deg, #0d0d1a 0%, #1a0a2f 50%, #00222a 100%)"
+        background: "#0d0d1a"
       }}>
         {/* Decorative elements */}
         <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff03_1px,transparent_1px),linear-gradient(to_bottom,#ffffff03_1px,transparent_1px)] bg-[size:32px_32px] pointer-events-none" />
         
         <div className="relative max-w-7xl mx-auto px-4 text-center z-10">
-          <span className="inline-block px-3 py-1 rounded-full text-xs font-bold bg-[#ff2d78]/20 text-[#ff2d78] mb-4 uppercase tracking-widest border border-[#ff2d78]/30">
-            Our Story
+          <span className="inline-block px-3 py-1 rounded-full text-xs font-bold bg-[#f7f82d]/20 text-[#f7f82d] mb-4 uppercase tracking-widest border border-[#f7f82d]/30">
+            Who We Are
           </span>
           <h1 className="text-4xl md:text-6xl font-poppins font-black mb-6 tracking-tight leading-tight">
-            We Print Everything.
+            Your Vision, Printed Perfectly.
           </h1>
           <p className="max-w-2xl mx-auto text-sm md:text-base text-gray-300 font-medium">
-            Nano Signs is Oakland Park's premier custom signage and digital printing workshop. We turn your visual ideas into high-impact reality, fast.
+            As the leading custom sign and commercial printing company in the Greater Toronto Area, Nano Signs transforms your creative concepts into durable, eye-catching displays with unmatched speed.
           </p>
         </div>
       </section>
@@ -48,50 +48,50 @@ export default function AboutUsPage() {
         <section className="grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-12 items-center">
           <div className="lg:col-span-7 space-y-6">
             <h2 className="text-2xl md:text-3xl font-poppins font-black text-slate-800 tracking-tight leading-tight">
-              Oakland Park's Local Printing Experts
+              The GTA's Trusted Commercial Printers
             </h2>
             <p className="text-sm md:text-base text-slate-650 leading-relaxed font-medium">
-              Established with a single goal in mind—to deliver premium quality commercial printing with lightning-fast turnaround times—Nano Signs has grown to serve real estate agents, contractors, political campaigns, and retail shops across Broward County.
+              Founded on the principle of providing top-tier print materials with industry-leading turnaround times, Nano Signs proudly partners with contractors, political campaigns, retailers, and real estate professionals across Ontario.
             </p>
             <p className="text-sm md:text-base text-slate-650 leading-relaxed font-medium">
-              Unlike generic online printing conglomerates, we print locally at our Powerline Road headquarters. We oversee every single sign, banner, flag, and card that rolls off our high-resolution UV flatbeds, ensuring vibrant, fade-proof colors that withstand the harsh South Florida sun and humidity.
+              We don't outsource. All production happens locally at our Scarborough facility on Warden Ave. Our dedicated technicians monitor every single banner, flag, and coroplast board that passes through our advanced UV flatbed printers, ensuring your branding stays vibrant and withstands the tough Canadian weather.
             </p>
             <div className="pt-2">
               <Link
                 href="/custom-signs"
-                className="inline-flex items-center gap-2 px-6 py-3.5 bg-gradient-to-r from-[#ff2d78] to-[#b020ff] hover:opacity-90 transition-opacity text-white rounded-xl text-sm font-bold shadow-md"
+                className="inline-flex items-center gap-2 px-6 py-3.5 bg-gradient-to-r bg-[#f7f82d] hover:opacity-90 transition-opacity text-gray-900 rounded-xl text-sm font-bold shadow-md"
               >
-                Browse Products <ArrowRight className="w-4 h-4" />
+                View Our Catalog <ArrowRight className="w-4 h-4" />
               </Link>
             </div>
           </div>
 
           <div className="lg:col-span-5 bg-gradient-to-tr from-pink-500/10 to-cyan-500/10 border border-pink-100 rounded-3xl p-8 shadow-sm text-center relative overflow-hidden">
-            <div className="absolute top-0 right-0 w-32 h-32 bg-[#00e5ff]/10 rounded-full filter blur-xl" />
-            <div className="absolute bottom-0 left-0 w-32 h-32 bg-[#ff2d78]/10 rounded-full filter blur-xl" />
+            <div className="absolute top-0 right-0 w-32 h-32 bg-[#f7f82d]/10 rounded-full filter blur-xl" />
+            <div className="absolute bottom-0 left-0 w-32 h-32 bg-[#f7f82d]/10 rounded-full filter blur-xl" />
 
             <div className="relative z-10 space-y-4">
-              <div className="w-12 h-12 rounded-2xl bg-white flex items-center justify-center text-[#ff2d78] mx-auto shadow border border-pink-50">
+              <div className="w-12 h-12 rounded-2xl bg-white flex items-center justify-center text-yellow-600 mx-auto shadow border border-pink-50">
                 <Sparkles className="w-6 h-6" />
               </div>
               <h3 className="font-poppins font-black text-xl text-slate-800">
-                Our Guarantee
+                The Nano Signs Promise
               </h3>
               <p className="text-xs text-slate-500 font-semibold leading-relaxed">
-                Whether you need a single custom-cut aluminum parking sign or 5,000 political corrugated yard signs, we back every project with our Quality Proofing check. We check resolutions, bleed lines, and print settings before ink hits the substrate.
+                From a single custom acrylic lobby sign to thousands of campaign lawn signs, every order passes our rigorous Quality Check. We verify bleed margins, image resolution, and color profiles before printing begins.
               </p>
               <div className="border-t border-slate-200/50 pt-4 mt-4 text-left space-y-2">
                 <div className="flex items-center gap-2 text-xs font-bold text-slate-700">
                   <ShieldCheck className="w-4.5 h-4.5 text-emerald-500" />
-                  <span>Next-Day Pick-up / Delivery Available</span>
+                  <span>Rush Production &amp; Local Delivery</span>
                 </div>
                 <div className="flex items-center gap-2 text-xs font-bold text-slate-700">
                   <ShieldCheck className="w-4.5 h-4.5 text-emerald-500" />
-                  <span>UV-Stabilized Weatherproof Inks</span>
+                  <span>Fade-Resistant Canadian-Tough Inks</span>
                 </div>
                 <div className="flex items-center gap-2 text-xs font-bold text-slate-700">
                   <ShieldCheck className="w-4.5 h-4.5 text-emerald-500" />
-                  <span>Free Design Layout Checks</span>
+                  <span>Complimentary File Verification</span>
                 </div>
               </div>
             </div>
@@ -102,35 +102,35 @@ export default function AboutUsPage() {
         <section className="bg-white rounded-3xl p-8 md:p-12 shadow-md border border-gray-150">
           <div className="text-center max-w-2xl mx-auto mb-10">
             <h2 className="text-2xl md:text-3xl font-poppins font-black text-slate-800">
-              Core Principles
+              Our Values
             </h2>
             <p className="text-sm text-slate-500 font-medium mt-1">
-              We construct our entire operation around what matters most to your business.
+              Every aspect of our business is built to support your success and timeline.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="space-y-3">
-              <div className="w-10 h-10 rounded-xl bg-pink-50 text-[#ff2d78] flex items-center justify-center flex-shrink-0">
+              <div className="w-10 h-10 rounded-xl bg-pink-50 text-yellow-600 flex items-center justify-center flex-shrink-0">
                 <Zap className="w-5 h-5" />
               </div>
               <h3 className="text-lg font-poppins font-black text-slate-800">
-                Turnaround Speed
+                Lightning Fast Production
               </h3>
               <p className="text-xs text-slate-500 font-semibold leading-relaxed">
-                Time is money. We specialize in next-day local pickup and fast express delivery. When you have a last-minute open house or campaign event, we ensure your signs are ready on time.
+                We know that in business, deadlines are non-negotiable. With options for next-day pickup and rapid shipping, we make sure you have your marketing materials exactly when you need them.
               </p>
             </div>
 
             <div className="space-y-3">
-              <div className="w-10 h-10 rounded-xl bg-cyan-50 text-[#00e5ff] flex items-center justify-center flex-shrink-0">
+              <div className="w-10 h-10 rounded-xl bg-cyan-50 text-yellow-600 flex items-center justify-center flex-shrink-0">
                 <Award className="w-5 h-5" />
               </div>
               <h3 className="text-lg font-poppins font-black text-slate-800">
-                Material Durability
+                Built for Ontario Weather
               </h3>
               <p className="text-xs text-slate-500 font-semibold leading-relaxed">
-                South Florida weather presents unique challenges. We use premium cast acrylics, rust-proof alloys, heavy-duty coroplast, and laminate films designed specifically to block moisture and UV rays.
+                Canadian winters and hot summers require tough materials. We exclusively use high-grade corrugated plastics, rust-resistant aluminum, and premium vinyl laminates engineered to resist fading and cracking.
               </p>
             </div>
 
@@ -139,10 +139,10 @@ export default function AboutUsPage() {
                 <Users className="w-5 h-5" />
               </div>
               <h3 className="text-lg font-poppins font-black text-slate-800">
-                Expert Assistance
+                Real Human Support
               </h3>
               <p className="text-xs text-slate-500 font-semibold leading-relaxed">
-                We're a team of designers and print technicians. If you need help modifying a template, scaling a logo, or selecting the right mount or stake, our live chat and phone support are staffed by actual print experts.
+                Skip the automated bots. Whether you need help resizing a logo, choosing the right banner stand, or setting up a custom cut path, our local printing specialists are just a phone call or live chat away.
               </p>
             </div>
           </div>
@@ -152,10 +152,10 @@ export default function AboutUsPage() {
         <section className="space-y-6">
           <div className="text-center max-w-2xl mx-auto">
             <h2 className="text-2xl md:text-3xl font-poppins font-black text-slate-800">
-              Our Fort Lauderdale Facility
+              Visit Our Scarborough Print Shop
             </h2>
             <p className="text-sm text-slate-500 font-medium mt-1">
-              Visit our local showroom and production facility on Powerline Road. See our state-of-the-art printers in action and check out physical material samples before you order.
+              We invite you to drop by our manufacturing hub and showroom located on Warden Ave. Inspect material samples in person and see our wide-format printers running your orders live.
             </p>
           </div>
 
@@ -163,20 +163,20 @@ export default function AboutUsPage() {
             <div className="group overflow-hidden rounded-2xl border border-slate-200 bg-white p-3 shadow-sm hover:shadow-md transition-shadow">
               <div className="relative aspect-[4/3] w-full overflow-hidden rounded-xl bg-slate-100">
                 <Image
-                  src="/images/about/storefront.jpg"
-                  alt="Nano Signs Storefront in Fort Lauderdale"
+                  src="/images/about/storefront-toronto-printing-ca.jpg"
+                  alt="Nano Signs Storefront in Toronto"
                   fill
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                   className="object-cover group-hover:scale-105 transition-transform duration-300"
                 />
               </div>
-              <p className="mt-3 text-center text-xs font-bold text-slate-700 font-poppins">Fort Lauderdale Storefront</p>
+              <p className="mt-3 text-center text-xs font-bold text-slate-700 font-poppins">Toronto Storefront</p>
             </div>
 
             <div className="group overflow-hidden rounded-2xl border border-slate-200 bg-white p-3 shadow-sm hover:shadow-md transition-shadow">
               <div className="relative aspect-[4/3] w-full overflow-hidden rounded-xl bg-slate-100">
                 <Image
-                  src="/images/about/interior_2.jpg"
+                  src="/images/about/interior_2-toronto-printing-ca.jpg"
                   alt="Nano Signs Lobby & Showroom"
                   fill
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
@@ -189,7 +189,7 @@ export default function AboutUsPage() {
             <div className="group overflow-hidden rounded-2xl border border-slate-200 bg-white p-3 shadow-sm hover:shadow-md transition-shadow">
               <div className="relative aspect-[4/3] w-full overflow-hidden rounded-xl bg-slate-100">
                 <Image
-                  src="/images/about/interior_1.png"
+                  src="/images/about/interior_1-toronto-printing-ca.png"
                   alt="Custom Print Product Display"
                   fill
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
@@ -202,7 +202,7 @@ export default function AboutUsPage() {
             <div className="group overflow-hidden rounded-2xl border border-slate-200 bg-white p-3 shadow-sm hover:shadow-md transition-shadow">
               <div className="relative aspect-[4/3] w-full overflow-hidden rounded-xl bg-slate-100">
                 <Image
-                  src="/images/about/printer.jpg"
+                  src="/images/about/printer-toronto-printing-ca.jpg"
                   alt="High-Resolution Wide Format Mimaki Printer"
                   fill
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
@@ -218,10 +218,10 @@ export default function AboutUsPage() {
         <section className="text-center space-y-8">
           <div>
             <h2 className="text-2xl md:text-3xl font-poppins font-black text-slate-800">
-              One Shop. Infinite Possibilities.
+              Everything You Need, Under One Roof.
             </h2>
             <p className="text-sm text-slate-500 font-medium mt-1">
-              If it can be printed, we can construct it. Explore our primary product categories.
+              From storefront graphics to trade show displays, explore our extensive selection of print capabilities.
             </p>
           </div>
 
@@ -229,14 +229,14 @@ export default function AboutUsPage() {
             <Link href="/custom-signs" className="group">
               <div className="product-card-hover bg-white rounded-2xl p-4 mb-3 aspect-square flex items-center justify-center border border-slate-200 shadow-sm relative overflow-hidden">
                 <Image
-                  src="/images/products/main%20page/all_signs_product.png"
+                  src="/images/products/main%20page/all_signs_product-toronto-printing-ca.png"
                   alt="Custom Signs"
                   fill
                   sizes="(max-width: 640px) 50vw, 250px"
                   className="object-contain p-4 group-hover:scale-105 transition-transform duration-300"
                 />
               </div>
-              <p className="text-center font-poppins font-black text-slate-800 text-xs sm:text-sm transition-colors group-hover:text-[#ff2d78]">
+              <p className="text-center font-poppins font-black text-slate-800 text-xs sm:text-sm transition-colors group-hover:text-yellow-600">
                 Custom Signs
               </p>
             </Link>
@@ -244,14 +244,14 @@ export default function AboutUsPage() {
             <Link href="/custom-banners" className="group">
               <div className="product-card-hover bg-white rounded-2xl p-4 mb-3 aspect-square flex items-center justify-center border border-slate-200 shadow-sm relative overflow-hidden">
                 <Image
-                  src="/images/products/main%20page/fabric_banner.png"
+                  src="/images/products/main%20page/fabric_banner-toronto-printing-ca.png"
                   alt="Vinyl Banners"
                   fill
                   sizes="(max-width: 640px) 50vw, 250px"
                   className="object-contain p-4 group-hover:scale-105 transition-transform duration-300"
                 />
               </div>
-              <p className="text-center font-poppins font-black text-slate-800 text-xs sm:text-sm transition-colors group-hover:text-[#ff2d78]">
+              <p className="text-center font-poppins font-black text-slate-800 text-xs sm:text-sm transition-colors group-hover:text-yellow-600">
                 Vinyl Banners
               </p>
             </Link>
@@ -259,14 +259,14 @@ export default function AboutUsPage() {
             <Link href="/custom-flags" className="group">
               <div className="product-card-hover bg-white rounded-2xl p-4 mb-3 aspect-square flex items-center justify-center border border-slate-200 shadow-sm relative overflow-hidden">
                 <Image
-                  src="/images/products/main%20page/flags.png"
+                  src="/images/products/main%20page/flags-toronto-printing-ca.png"
                   alt="Business Flags"
                   fill
                   sizes="(max-width: 640px) 50vw, 250px"
                   className="object-contain p-4 group-hover:scale-105 transition-transform duration-300"
                 />
               </div>
-              <p className="text-center font-poppins font-black text-slate-800 text-xs sm:text-sm transition-colors group-hover:text-[#ff2d78]">
+              <p className="text-center font-poppins font-black text-slate-800 text-xs sm:text-sm transition-colors group-hover:text-yellow-600">
                 Business Flags
               </p>
             </Link>
@@ -274,14 +274,14 @@ export default function AboutUsPage() {
             <Link href="/marketing-materials" className="group">
               <div className="product-card-hover bg-white rounded-2xl p-4 mb-3 aspect-square flex items-center justify-center border border-slate-200 shadow-sm relative overflow-hidden">
                 <Image
-                  src="/images/products/main%20page/business_cards.png"
+                  src="/images/products/main%20page/business_cards-toronto-printing-ca.png"
                   alt="Business Cards"
                   fill
                   sizes="(max-width: 640px) 50vw, 250px"
                   className="object-contain p-4 group-hover:scale-105 transition-transform duration-300"
                 />
               </div>
-              <p className="text-center font-poppins font-black text-slate-800 text-xs sm:text-sm transition-colors group-hover:text-[#ff2d78]">
+              <p className="text-center font-poppins font-black text-slate-800 text-xs sm:text-sm transition-colors group-hover:text-yellow-600">
                 Business Cards
               </p>
             </Link>

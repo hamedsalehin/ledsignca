@@ -64,21 +64,21 @@ export default function ContactUsPage() {
 
       {/* Hero Header */}
       <section className="relative text-white py-16 md:py-20" style={{
-        background: "linear-gradient(135deg, #0d0d1a 0%, #1a0a2f 50%, #00222a 100%)"
+        background: "#0d0d1a"
       }}>
         {/* Decorative Grid Patterns */}
         <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff05_1px,transparent_1px),linear-gradient(to_bottom,#ffffff05_1px,transparent_1px)] bg-[size:24px_24px] pointer-events-none" />
         
         {/* Content */}
         <div className="relative max-w-7xl mx-auto px-4 text-center z-10">
-          <span className="inline-block px-3 py-1 rounded-full text-xs font-bold bg-pink-500/20 text-[#ff2d78] mb-4 uppercase tracking-widest border border-pink-500/30">
+          <span className="inline-block px-3 py-1 rounded-full text-xs font-bold bg-pink-500/20 text-[#f7f82d] mb-4 uppercase tracking-widest border border-pink-500/30">
             Contact Support
           </span>
           <h1 className="text-4xl md:text-5xl font-poppins font-black mb-4 tracking-tight leading-tight">
-            How Can We Help You?
+            Get in Touch With Us
           </h1>
           <p className="max-w-2xl mx-auto text-sm md:text-base text-gray-300 font-medium">
-            Have a question about a custom print or want to check progress? Reach out to us via direct chat, phone, email, or visit our Oakland Park office.
+            Looking for a quote or want to track an existing order? Contact our support team via live messaging, give us a call, or drop by our Scarborough facility.
           </p>
         </div>
       </section>
@@ -90,10 +90,10 @@ export default function ContactUsPage() {
         <section className="mb-16">
           <div className="text-center mb-8">
             <h2 className="text-2xl md:text-3xl font-poppins font-black text-slate-800">
-              Connect With Us Instantly
+              Reach Us Right Away
             </h2>
             <p className="text-sm text-slate-500 font-medium mt-1.5">
-              Click below to start a live chat with our printing experts.
+              Use one of our instant messaging channels to speak directly with our team.
             </p>
           </div>
 
@@ -164,10 +164,10 @@ export default function ContactUsPage() {
           {/* Left: Contact Form (Lg: 7 cols) */}
           <div className="lg:col-span-7 bg-white rounded-3xl p-8 shadow-md border border-gray-150">
             <h2 className="text-xl md:text-2xl font-poppins font-black text-slate-800 mb-2">
-              Send Us a Message
+              Drop Us an Email
             </h2>
             <p className="text-sm text-slate-500 mb-6 font-medium">
-              Fill out this form and our support agents will email you back within 12 hours.
+              Submit your inquiry below and one of our specialists will reply within a few hours.
             </p>
 
             {submitError && (
@@ -206,7 +206,7 @@ export default function ContactUsPage() {
                       value={formData.name}
                       onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                       placeholder="John Doe"
-                      className="w-full px-4 py-3 border border-gray-200 rounded-xl text-sm focus:outline-none focus:border-[#ff2d78] transition-colors"
+                      className="w-full px-4 py-3 border border-gray-200 rounded-xl text-sm focus:outline-none focus:border-[#f7f82d] transition-colors"
                     />
                   </div>
                   <div>
@@ -220,7 +220,7 @@ export default function ContactUsPage() {
                       value={formData.email}
                       onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                       placeholder="john@example.com"
-                      className="w-full px-4 py-3 border border-gray-200 rounded-xl text-sm focus:outline-none focus:border-[#ff2d78] transition-colors"
+                      className="w-full px-4 py-3 border border-gray-200 rounded-xl text-sm focus:outline-none focus:border-[#f7f82d] transition-colors"
                     />
                   </div>
                 </div>
@@ -235,7 +235,7 @@ export default function ContactUsPage() {
                     value={formData.subject}
                     onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
                     placeholder="Questions regarding design approval..."
-                    className="w-full px-4 py-3 border border-gray-200 rounded-xl text-sm focus:outline-none focus:border-[#ff2d78] transition-colors"
+                    className="w-full px-4 py-3 border border-gray-200 rounded-xl text-sm focus:outline-none focus:border-[#f7f82d] transition-colors"
                   />
                 </div>
                 <div>
@@ -249,13 +249,13 @@ export default function ContactUsPage() {
                     value={formData.message}
                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                     placeholder="Enter details of your inquiry..."
-                    className="w-full px-4 py-3 border border-gray-200 rounded-xl text-sm focus:outline-none focus:border-[#ff2d78] transition-colors resize-none"
+                    className="w-full px-4 py-3 border border-gray-200 rounded-xl text-sm focus:outline-none focus:border-[#f7f82d] transition-colors resize-none"
                   />
                 </div>
                 <button
                   type="submit"
                   disabled={submitting}
-                  className="w-full py-3.5 bg-gradient-to-r from-[#ff2d78] to-[#b020ff] hover:opacity-90 transition-opacity text-white rounded-xl text-sm font-bold flex items-center justify-center gap-2 shadow-md disabled:opacity-55"
+                  className="w-full py-3.5 bg-gradient-to-r bg-[#f7f82d] hover:opacity-90 transition-opacity text-gray-900 rounded-xl text-sm font-bold flex items-center justify-center gap-2 shadow-md disabled:opacity-55"
                 >
                   {submitting ? (
                     <>Sending Message...</>
@@ -274,57 +274,57 @@ export default function ContactUsPage() {
             {/* Quick Contact Box */}
             <div className="bg-white rounded-3xl p-8 shadow-md border border-gray-150 space-y-6">
               <h2 className="text-xl font-poppins font-black text-slate-800">
-                Contact Details
+                Our Contact Information
               </h2>
 
               <div className="space-y-4">
                 <a
-                  href="tel:305-967-1005"
+                  href="tel:+14168388994"
                   className="flex items-start gap-4 p-1 hover:bg-slate-50 rounded-xl transition-colors group"
                 >
-                  <div className="w-10 h-10 rounded-lg bg-pink-50 text-[#ff2d78] flex items-center justify-center flex-shrink-0">
+                  <div className="w-10 h-10 rounded-lg bg-pink-50 text-[#f7f82d] flex items-center justify-center flex-shrink-0">
                     <Phone className="w-5 h-5" />
                   </div>
                   <div>
                     <h4 className="text-xs font-bold text-slate-400 uppercase tracking-wide">
                       Main Phone Support
                     </h4>
-                    <p className="text-sm font-bold text-slate-700 group-hover:text-[#ff2d78] transition-colors">
-                      305-967-1005
+                    <p className="text-sm font-bold text-slate-700 group-hover:text-yellow-600 transition-colors">
+                      +1 416-838-8994
                     </p>
                   </div>
                 </a>
 
                 <a
-                  href="tel:305-967-9654"
+                  href="tel:+14168388994"
                   className="flex items-start gap-4 p-1 hover:bg-slate-50 rounded-xl transition-colors group"
                 >
-                  <div className="w-10 h-10 rounded-lg bg-pink-50 text-[#ff2d78] flex items-center justify-center flex-shrink-0">
+                  <div className="w-10 h-10 rounded-lg bg-pink-50 text-[#f7f82d] flex items-center justify-center flex-shrink-0">
                     <Phone className="w-5 h-5" />
                   </div>
                   <div>
                     <h4 className="text-xs font-bold text-slate-400 uppercase tracking-wide">
                       Secondary Support Line
                     </h4>
-                    <p className="text-sm font-bold text-slate-700 group-hover:text-[#ff2d78] transition-colors">
-                      305-967-9654
+                    <p className="text-sm font-bold text-slate-700 group-hover:text-yellow-600 transition-colors">
+                      +1 416-838-8994
                     </p>
                   </div>
                 </a>
 
                 <a
-                  href="mailto:nanosign1@gmail.com"
+                  href="mailto:info@led-sign.ca"
                   className="flex items-start gap-4 p-1 hover:bg-slate-50 rounded-xl transition-colors group"
                 >
-                  <div className="w-10 h-10 rounded-lg bg-cyan-50 text-[#00e5ff] flex items-center justify-center flex-shrink-0">
+                  <div className="w-10 h-10 rounded-lg bg-cyan-50 text-[#f7f82d] flex items-center justify-center flex-shrink-0">
                     <Mail className="w-5 h-5" />
                   </div>
                   <div>
                     <h4 className="text-xs font-bold text-slate-400 uppercase tracking-wide">
                       Email Inquiries
                     </h4>
-                    <p className="text-sm font-bold text-slate-700 group-hover:text-[#00e5ff] transition-colors">
-                      nanosign1@gmail.com
+                    <p className="text-sm font-bold text-slate-700 group-hover:text-yellow-600 transition-colors">
+                      info@led-sign.ca
                     </p>
                   </div>
                 </a>
@@ -338,7 +338,7 @@ export default function ContactUsPage() {
                       Headquarters
                     </h4>
                     <p className="text-sm font-bold text-slate-700">
-                      4567 Powerline Rd, Oakland Park, FL 33309
+                      2190 Warden Ave, Scarborough, ON M1T 1V6
                     </p>
                   </div>
                 </div>
@@ -388,14 +388,14 @@ export default function ContactUsPage() {
         {/* Map Section */}
         <section className="mt-16 bg-white rounded-3xl overflow-hidden shadow-md border border-gray-150 p-4">
           <div className="flex items-center gap-2 mb-4 px-2">
-            <MapPin className="w-5 h-5 text-[#ff2d78]" />
+            <MapPin className="w-5 h-5 text-[#f7f82d]" />
             <h3 className="font-poppins font-black text-slate-800 text-lg">
-              Visit Our Print Shop
+              Our Manufacturing Facility Location
             </h3>
           </div>
           <div className="rounded-2xl overflow-hidden h-[350px] border border-gray-200">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d7160.8801455159755!2d-80.15735434976504!3d26.182359067699164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e0!4m0!4m5!1s0x88d903da421a5ec5%3A0xdd627ecbac01c685!2s4567%20Powerline%20Rd%2C%20Oakland%20Park%2C%20FL%2033309!3m2!1d26.1835062!2d-80.1554943!5e0!3m2!1sen!2sus!4v1781380571760!5m2!1sen!2sus"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.4!2d-79.2765!3d43.7830!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4d05d5e3a4b4b%3A0x1a2b3c4d5e6f7a8b!2s2190%20Warden%20Ave%2C%20Scarborough%2C%20ON%20M1T%201V6!5e0!3m2!1sen!2sca!4v1781380571760!5m2!1sen!2sca"
               width="100%"
               height="100%"
               style={{ border: 0 }}

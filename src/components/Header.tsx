@@ -15,11 +15,14 @@ import {
   X,
   ChevronDown,
   Info,
+  BookOpen,
+  Grid,
 } from "lucide-react";
 import { useAuth } from "./AuthContext";
 import { useCart } from "./CartContext";
 
 const navItems = [
+  { name: "Home", href: "/" },
   { name: "Signs", href: "/custom-signs" },
   { name: "Banners", href: "/custom-banners" },
   { name: "Flags", href: "/custom-flags" },
@@ -50,35 +53,51 @@ export function Header() {
         <div className="max-w-7xl mx-auto px-4 flex items-center justify-end gap-4 md:gap-6">
           <Link
             href="/about-us"
-            className="flex items-center gap-1.5 hover:text-[#ff2d78] transition-colors duration-200"
+            className="flex items-center gap-1.5 hover:text-yellow-600 transition-colors duration-200"
             aria-label="About Us"
           >
             <Info className="w-4 h-4" />
             <span className="hidden sm:inline">About Us</span>
           </Link>
+          <Link
+            href="/blog"
+            className="flex items-center gap-1.5 hover:text-yellow-600 transition-colors duration-200"
+            aria-label="Blog"
+          >
+            <BookOpen className="w-4 h-4" />
+            <span className="hidden sm:inline">Blog</span>
+          </Link>
+          <Link
+            href="/projects"
+            className="flex items-center gap-1.5 hover:text-yellow-600 transition-colors duration-200"
+            aria-label="Projects Gallery"
+          >
+            <Grid className="w-4 h-4" />
+            <span className="hidden sm:inline">Projects</span>
+          </Link>
           <a
-            href="mailto:nanosign1@gmail.com"
-            className="flex items-center gap-1.5 hover:text-[#ff2d78] transition-colors duration-200"
-            aria-label="Email support at nanosign1@gmail.com"
+            href="mailto:info@led-sign.ca"
+            className="flex items-center gap-1.5 hover:text-yellow-600 transition-colors duration-200"
+            aria-label="Email support at info@led-sign.ca"
           >
             <MessageCircle className="w-4 h-4" />
-            <span className="hidden sm:inline">nanosign1@gmail.com</span>
+            <span className="hidden sm:inline">info@led-sign.ca</span>
           </a>
           <Link
             href="/contact-us"
-            className="flex items-center gap-1.5 hover:text-[#ff2d78] transition-colors duration-200"
+            className="flex items-center gap-1.5 hover:text-yellow-600 transition-colors duration-200"
             aria-label="Contact Us"
           >
             <HelpCircle className="w-4 h-4" />
             <span className="hidden sm:inline">Contact Us</span>
           </Link>
           <a
-            href="tel:305-967-1005"
-            className="flex items-center gap-1.5 hover:text-[#ff2d78] transition-colors duration-200"
-            aria-label="Call support at 305-967-1005"
+            href="tel:+14168388994"
+            className="flex items-center gap-1.5 hover:text-yellow-600 transition-colors duration-200"
+            aria-label="Call support at +1 416-838-8994"
           >
             <Phone className="w-4 h-4" />
-            <span className="hidden sm:inline">305-967-1005</span>
+            <span className="hidden sm:inline">+1 416-838-8994</span>
           </a>
         </div>
       </div>
@@ -90,7 +109,7 @@ export function Header() {
             {/* Logo */}
             <Link href="/" className="flex-shrink-0">
               <Image
-                src="/images/nano logo complete.png"
+                src="/images/nano logo complete-toronto-printing-ca.png"
                 alt="Nano Signs Logo"
                 width={180}
                 height={70}
@@ -107,7 +126,7 @@ export function Header() {
                   placeholder="Search products..."
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
-                  className="w-full px-4 py-2.5 border-2 border-gray-200 rounded-full focus:outline-none focus:border-[#ff2d78] transition-colors duration-200"
+                  className="w-full px-4 py-2.5 border-2 border-gray-200 rounded-full focus:outline-none focus:border-[#ca8a04] transition-colors duration-200"
                 />
                 <button
                   type="button"
@@ -127,7 +146,7 @@ export function Header() {
                   <>
                     <button
                       onClick={() => setUserDropdownOpen(!userDropdownOpen)}
-                      className="hidden sm:flex items-center gap-2 text-gray-700 hover:text-[#ff2d78] transition-colors duration-200"
+                      className="hidden sm:flex items-center gap-2 text-gray-700 hover:text-yellow-600 transition-colors duration-200"
                     >
                       <User className="w-5 h-5" />
                       <span className="text-sm font-medium truncate max-w-[100px]">
@@ -156,7 +175,7 @@ export function Header() {
                         <Link
                           href="/account/orders"
                           onClick={() => setUserDropdownOpen(false)}
-                          className="block px-4 py-2.5 text-sm text-gray-700 hover:bg-slate-50 hover:text-[#ff2d78] font-semibold transition-colors"
+                          className="block px-4 py-2.5 text-sm text-gray-700 hover:bg-slate-50 hover:text-yellow-600 font-semibold transition-colors"
                         >
                           My Orders
                         </Link>
@@ -175,7 +194,7 @@ export function Header() {
                 ) : (
                   <Link
                     href="/login"
-                    className="hidden sm:flex items-center gap-2 text-gray-700 hover:text-[#ff2d78] transition-colors duration-200"
+                    className="hidden sm:flex items-center gap-2 text-gray-700 hover:text-yellow-600 transition-colors duration-200"
                   >
                     <User className="w-5 h-5" />
                     <span className="text-sm font-medium">Sign In</span>
@@ -186,16 +205,16 @@ export function Header() {
 
               <button
                 onClick={() => setCartOpen(true)}
-                className="relative flex items-center gap-2 text-gray-700 hover:text-[#ff2d78] transition-colors duration-200"
+                className="relative flex items-center gap-2 text-gray-700 hover:text-yellow-600 transition-colors duration-200"
                 aria-label="Shopping Cart"
               >
                 <div className="relative">
                   <ShoppingCart className="w-5 h-5" />
                   {items.length > 0 && (
                     <span
-                      className="absolute -top-2 -right-2 text-white text-[10px] w-4.5 h-4.5 rounded-full flex items-center justify-center font-extrabold animate-in zoom-in duration-300"
+                      className="absolute -top-2 -right-2 text-gray-900 text-[10px] w-4.5 h-4.5 rounded-full flex items-center justify-center font-extrabold animate-in zoom-in duration-300"
                       style={{
-                        background: "linear-gradient(135deg, #ff2d78, #00e5ff)",
+                        background: "#f7f82d",
                       }}
                     >
                       {items.length}
@@ -210,7 +229,7 @@ export function Header() {
               {/* Mobile menu button */}
               <button
                 type="button"
-                className="md:hidden p-2 text-gray-700 hover:text-[#ff2d78] transition-colors"
+                className="md:hidden p-2 text-gray-700 hover:text-yellow-600 transition-colors"
                 onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
                 aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
               >
@@ -229,11 +248,11 @@ export function Header() {
               <input
                 type="text"
                 placeholder="Search products..."
-                className="w-full px-3.5 py-1.5 border border-gray-200 rounded-full text-xs focus:outline-none focus:border-[#ff2d78] transition-colors"
+                className="w-full px-3.5 py-1.5 border border-gray-200 rounded-full text-xs focus:outline-none focus:border-[#ca8a04] transition-colors"
               />
               <button
                 type="button"
-                className="absolute right-3 top-1/2 -translate-y-1/2 text-[#ff2d78]"
+                className="absolute right-3 top-1/2 -translate-y-1/2 text-[#ca8a04]"
                 aria-label="Search"
               >
                 <Search className="w-4 h-4" />
@@ -256,14 +275,14 @@ export function Header() {
                       href={item.href}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="block w-full h-full relative px-1.5 lg:px-2.5 xl:px-3.5 py-2 font-bold text-white hover:text-[#00e5ff] transition-colors duration-200 font-poppins text-[12px] lg:text-[14px] xl:text-[15.5px] whitespace-nowrap after:content-[''] after:absolute after:h-[3px] after:bg-[#00e5ff] after:bottom-0 after:left-0 after:w-full after:opacity-0 hover:after:opacity-100 after:transition-opacity after:duration-200"
+                      className="block w-full h-full relative px-1.5 lg:px-2.5 xl:px-3.5 py-2 font-bold text-gray-900 hover:text-yellow-600 transition-colors duration-200 font-poppins text-[12px] lg:text-[14px] xl:text-[15.5px] whitespace-nowrap after:content-[''] after:absolute after:h-[3px] after:bg-[#f7f82d] after:bottom-0 after:left-0 after:w-full after:opacity-0 hover:after:opacity-100 after:transition-opacity after:duration-200"
                     >
                       {item.name}
                     </a>
                   ) : (
                     <Link
                       href={item.href}
-                      className="block w-full h-full relative px-1.5 lg:px-2.5 xl:px-3.5 py-2 font-bold text-white hover:text-[#00e5ff] transition-colors duration-200 font-poppins text-[12px] lg:text-[14px] xl:text-[15.5px] whitespace-nowrap after:content-[''] after:absolute after:h-[3px] after:bg-[#00e5ff] after:bottom-0 after:left-0 after:w-full after:opacity-0 hover:after:opacity-100 after:transition-opacity after:duration-200"
+                      className="block w-full h-full relative px-1.5 lg:px-2.5 xl:px-3.5 py-2 font-bold text-gray-900 hover:text-yellow-600 transition-colors duration-200 font-poppins text-[12px] lg:text-[14px] xl:text-[15.5px] whitespace-nowrap after:content-[''] after:absolute after:h-[3px] after:bg-[#f7f82d] after:bottom-0 after:left-0 after:w-full after:opacity-0 hover:after:opacity-100 after:transition-opacity after:duration-200"
                     >
                       {item.name}
                     </Link>
@@ -285,14 +304,14 @@ export function Header() {
                       href={item.href}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="block px-4 py-3 text-sm font-medium text-white hover:text-[#00e5ff] hover:bg-white/10 transition-colors"
+                      className="block px-4 py-3 text-sm font-medium text-white hover:text-yellow-600 hover:bg-white/10 transition-colors"
                     >
                       {item.name}
                     </a>
                   ) : (
                     <Link
                       href={item.href}
-                      className="block px-4 py-3 text-sm font-medium text-white hover:text-[#00e5ff] hover:bg-white/10 transition-colors"
+                      className="block px-4 py-3 text-sm font-medium text-white hover:text-yellow-600 hover:bg-white/10 transition-colors"
                     >
                       {item.name}
                     </Link>
@@ -310,7 +329,7 @@ export function Header() {
                     <Link
                       href="/account/orders"
                       onClick={() => setMobileMenuOpen(false)}
-                      className="block px-4 py-3 text-sm font-bold text-white hover:text-[#00e5ff] hover:bg-white/10 transition-colors"
+                      className="block px-4 py-3 text-sm font-bold text-white hover:text-yellow-600 hover:bg-white/10 transition-colors"
                     >
                       My Orders
                     </Link>
@@ -328,7 +347,7 @@ export function Header() {
                   <Link
                     href="/login"
                     onClick={() => setMobileMenuOpen(false)}
-                    className="block px-4 py-3 text-sm font-bold text-white hover:text-[#00e5ff] hover:bg-white/10 transition-colors"
+                    className="block px-4 py-3 text-sm font-bold text-white hover:text-yellow-600 hover:bg-white/10 transition-colors"
                   >
                     Sign In
                   </Link>
@@ -341,13 +360,13 @@ export function Header() {
 
       {/* Promo banner — white with pink text */}
       <div className="py-1.5 text-center bg-white border-b border-pink-100">
-        <p className="text-xs md:text-sm font-bold text-[#ff2d78] tracking-wide px-4 flex flex-wrap justify-center items-center gap-x-2 gap-y-0.5">
+        <p className="text-xs md:text-sm font-bold text-[#ca8a04] tracking-wide px-4 flex flex-wrap justify-center items-center gap-x-2 gap-y-0.5">
           <span className="hidden md:inline">✨ Custom Printing &amp; Signage — Fast Turnaround!</span>
           <a
-            href="tel:305-967-1005"
-            className="hidden md:inline underline hover:no-underline hover:text-[#b020ff] transition-colors"
+            href="tel:+14168388994"
+            className="flex items-center gap-2 text-sm font-bold text-[#ca8a04] hover:opacity-80 transition-opacity"
           >
-            Call 305-967-1005
+            Call +1 416-838-8994
           </a>
           <span className="hidden md:inline text-gray-300 font-normal">|</span>
           {/* Desktop Version */}
@@ -356,7 +375,7 @@ export function Header() {
             <span className="text-black font-bold">WE PRINT EVERYTHING, </span>
             <Link
               href="/get-a-quote"
-              className="underline font-bold text-[#ff2d78] hover:text-[#b020ff] transition-colors"
+              className="underline font-bold text-[#ca8a04] hover:text-[#b020ff] transition-colors"
             >
               ask for a quote
             </Link>{" "}
@@ -368,7 +387,7 @@ export function Header() {
             <span className="text-black font-bold">WE PRINT EVERYTHING, </span>
             <Link
               href="/get-a-quote"
-              className="underline font-bold text-[#ff2d78] hover:text-[#b020ff] transition-colors"
+              className="underline font-bold text-[#ca8a04] hover:text-[#b020ff] transition-colors"
             >
               get your custom quote in 12 hrs
             </Link>

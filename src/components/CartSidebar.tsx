@@ -58,7 +58,7 @@ export function CartSidebar() {
           {/* Header */}
           <div className="px-6 py-5 border-b flex items-center justify-between">
             <h2 className="text-lg font-bold text-gray-900 flex items-center gap-2 font-poppins">
-              <ShoppingBag className="w-5 h-5 text-[#ff2d78]" />
+              <ShoppingBag className="w-5 h-5 text-[#ca8a04]" />
               Your Shopping Cart
             </h2>
             <button
@@ -92,7 +92,7 @@ export function CartSidebar() {
                   {successOrderIds.map((id) => (
                     <code
                       key={id}
-                      className="block text-xs bg-white border rounded px-2 py-1 text-[#ff2d78] overflow-x-auto"
+                      className="block text-xs bg-white border rounded px-2 py-1 text-[#ca8a04] overflow-x-auto"
                     >
                       {id}
                     </code>
@@ -113,7 +113,7 @@ export function CartSidebar() {
                 <p className="text-gray-500 font-medium">Your cart is empty.</p>
                 <button
                   onClick={closeSidebar}
-                  className="text-sm font-bold text-[#ff2d78] hover:underline"
+                  className="text-sm font-bold text-[#ca8a04] hover:underline"
                 >
                   Continue Shopping
                 </button>
@@ -173,7 +173,7 @@ export function CartSidebar() {
                       )}
 
                       <div className="mt-3 font-poppins font-extrabold text-sm text-gray-900">
-                        ${item.totalPrice.toFixed(2)}
+                        CAD {item.totalPrice.toFixed(2)}
                       </div>
                     </div>
 
@@ -199,7 +199,7 @@ export function CartSidebar() {
                     Subtotal
                   </span>
                   <span className="text-base font-bold text-gray-800">
-                    ${totalCartPrice.toFixed(2)}
+                    CAD {totalCartPrice.toFixed(2)}
                   </span>
                 </div>
                 {discountApplied && (
@@ -211,7 +211,7 @@ export function CartSidebar() {
                       Promo Discount
                     </span>
                     <span className="text-sm font-extrabold">
-                      -${discountAmount.toFixed(2)}
+                      -CAD {discountAmount.toFixed(2)}
                     </span>
                   </div>
                 )}
@@ -219,8 +219,8 @@ export function CartSidebar() {
                   <span className="text-sm font-extrabold text-gray-900">
                     Total
                   </span>
-                  <span className="text-2xl font-extrabold text-[#ff2d78] drop-shadow-[0_0_8px_rgba(255,45,120,0.1)]">
-                    ${finalCartPrice.toFixed(2)}
+                  <span className="text-2xl font-extrabold text-[#ca8a04] drop-shadow-[0_0_8px_rgba(255,45,120,0.1)]">
+                    CAD {finalCartPrice.toFixed(2)}
                   </span>
                 </div>
               </div>
@@ -231,10 +231,10 @@ export function CartSidebar() {
 
               <button
                 onClick={handleCheckout}
-                className="w-full active:scale-[0.98] text-white font-extrabold py-4 rounded-xl transition-all text-sm uppercase tracking-wider shadow-md font-poppins flex items-center justify-center gap-2 hover:opacity-90"
+                className="w-full active:scale-[0.98] text-gray-900 font-extrabold py-4 rounded-xl transition-all text-sm uppercase tracking-wider shadow-md font-poppins flex items-center justify-center gap-2 hover:opacity-90"
                 style={{
                   background:
-                    "linear-gradient(135deg, #ff2d78, #b020ff, #00e5ff)",
+                    "#f7f82d",
                   boxShadow: "0 4px 15px rgba(255,45,120,0.2)",
                 }}
               >

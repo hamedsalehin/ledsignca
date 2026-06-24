@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import React, { useState } from "react";
 import Link from "next/link";
@@ -70,7 +70,7 @@ export function CategoryPageClient({
         {/* Breadcrumb */}
         <div className="bg-white border-b">
           <div className="max-w-7xl mx-auto px-[20px] lg:px-[48px] 3xl:px-[96px] py-3 flex items-center gap-2 text-sm text-gray-500 font-['Open_Sans']">
-            <Link href="/" className="hover:text-[#ff2d78] transition-colors">
+            <Link href="/" className="hover:text-yellow-600 transition-colors">
               Home
             </Link>
             <span>/</span>
@@ -82,7 +82,7 @@ export function CategoryPageClient({
 
         {/* Hero Section Banner */}
         <section className="relative w-full lg:px-[48px] 3xl:px-[96px] pt-1">
-          <h1 className="sr-only">{title} — Custom Printing &amp; Signage in Oakland Park &amp; Fort Lauderdale, FL</h1>
+          <h1 className="sr-only">{title} — Custom Printing &amp; Signage in Toronto &amp; Mississauga, ON</h1>
           <div className="relative overflow-hidden rounded-xl">
             <picture>
               {tabletHeroImage && (
@@ -91,7 +91,7 @@ export function CategoryPageClient({
               {tabletHeroImage && (
                 <source srcSet={tabletHeroImage} media="(min-width: 481px)" />
               )}
-              <img
+              <Image
                 className="w-full h-[220px] lg:h-[480px] object-cover object-top pointer-events-none"
                 src={mobileHeroImage || tabletHeroImage || heroImage}
                 alt={`${title} Banner`}
@@ -116,9 +116,9 @@ export function CategoryPageClient({
                   {ctaProduct1 && (
                     <Link
                       href={ctaProduct1.href}
-                      className="flex-1 text-white font-extrabold px-5 py-3.5 rounded-lg text-center text-sm font-poppins shadow-md hover:opacity-90 transition-opacity"
+                      className="flex-1 text-gray-900 font-extrabold px-5 py-3.5 rounded-lg text-center text-sm font-poppins shadow-md hover:opacity-90 transition-opacity"
                       style={{
-                        background: "linear-gradient(135deg, #ff2d78, #b020ff)",
+                        background: "#f7f82d",
                       }}
                     >
                       {ctaProduct1.name}
@@ -128,7 +128,7 @@ export function CategoryPageClient({
                     <Link
                       href={ctaProduct2.href}
                       className="flex-1 border-2 font-extrabold px-5 py-3.5 rounded-lg text-center transition-colors text-sm font-poppins"
-                      style={{ borderColor: "#00e5ff", color: "#00e5ff" }}
+                      style={{ borderColor: "#f7f82d", color: "#f7f82d" }}
                     >
                       {ctaProduct2.name}
                     </Link>
@@ -150,9 +150,9 @@ export function CategoryPageClient({
               {ctaProduct1 && (
                 <Link
                   href={ctaProduct1.href}
-                  className="flex-1 text-white font-bold px-4 py-3 rounded-lg text-center text-sm font-poppins shadow hover:opacity-90 transition-opacity"
+                  className="flex-1 text-gray-900 font-bold px-4 py-3 rounded-lg text-center text-sm font-poppins shadow hover:opacity-90 transition-opacity"
                   style={{
-                    background: "linear-gradient(135deg, #ff2d78, #b020ff)",
+                    background: "#f7f82d",
                   }}
                 >
                   {ctaProduct1.name}
@@ -162,7 +162,7 @@ export function CategoryPageClient({
                 <Link
                   href={ctaProduct2.href}
                   className="flex-1 border-2 font-bold px-4 py-3 rounded-lg text-center transition-colors text-sm font-poppins"
-                  style={{ borderColor: "#00e5ff", color: "#00e5ff" }}
+                  style={{ borderColor: "#f7f82d", color: "#f7f82d" }}
                 >
                   {ctaProduct2.name}
                 </Link>
@@ -202,7 +202,7 @@ export function CategoryPageClient({
                 </div>
                 {/* Product Name */}
                 <div className="mt-3 flex items-center justify-center min-h-[40px]">
-                  <h3 className="text-base font-bold text-gray-900 leading-snug group-hover:text-[#ff2d78] transition-colors">
+                  <h3 className="text-base font-bold text-gray-900 leading-snug group-hover:text-yellow-600 transition-colors">
                     {p.name}
                   </h3>
                 </div>
@@ -295,7 +295,7 @@ export function CategoryPageClient({
                 {[1, 2, 3, 4, 5].map((star) => (
                   <svg
                     key={star}
-                    className="w-5 h-5 text-[#ff2d78] fill-current"
+                    className="w-5 h-5 text-[#f7f82d] fill-current"
                     viewBox="0 0 20 20"
                   >
                     <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />

@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useState, useEffect } from "react";
 import { useAuth } from "@/components/AuthContext";
@@ -123,7 +123,7 @@ export default function LoginPage() {
         <Header />
         <div className="flex-grow flex items-center justify-center py-24">
           <div className="text-center flex flex-col items-center gap-3">
-            <Loader2 className="w-10 h-10 text-[#ff2d78] animate-spin" />
+            <Loader2 className="w-10 h-10 text-[#ca8a04] animate-spin" />
             <p className="text-gray-500 font-semibold">
               Checking authentication status...
             </p>
@@ -194,7 +194,7 @@ export default function LoginPage() {
                       onChange={(e) => setFullName(e.target.value)}
                       placeholder="John Doe"
                       disabled={loading}
-                      className="w-full bg-slate-50 border border-gray-200 rounded-2xl py-3.5 pl-12 pr-4 text-sm focus:outline-none focus:ring-2 focus:ring-[#ff2d78] focus:border-transparent transition-all"
+                      className="w-full bg-slate-50 border border-gray-200 rounded-2xl py-3.5 pl-12 pr-4 text-sm focus:outline-none focus:ring-2 focus:ring-[#f7f82d] focus:border-transparent transition-all"
                     />
                   </div>
                 </div>
@@ -215,7 +215,7 @@ export default function LoginPage() {
                     onChange={(e) => setEmail(e.target.value)}
                     placeholder="name@example.com"
                     disabled={loading}
-                    className="w-full bg-slate-50 border border-gray-200 rounded-2xl py-3.5 pl-12 pr-4 text-sm focus:outline-none focus:ring-2 focus:ring-[#ff2d78] focus:border-transparent transition-all"
+                    className="w-full bg-slate-50 border border-gray-200 rounded-2xl py-3.5 pl-12 pr-4 text-sm focus:outline-none focus:ring-2 focus:ring-[#f7f82d] focus:border-transparent transition-all"
                   />
                 </div>
               </div>
@@ -235,7 +235,7 @@ export default function LoginPage() {
                     onChange={(e) => setPassword(e.target.value)}
                     placeholder="••••••••"
                     disabled={loading}
-                    className="w-full bg-slate-50 border border-gray-200 rounded-2xl py-3.5 pl-12 pr-4 text-sm focus:outline-none focus:ring-2 focus:ring-[#ff2d78] focus:border-transparent transition-all"
+                    className="w-full bg-slate-50 border border-gray-200 rounded-2xl py-3.5 pl-12 pr-4 text-sm focus:outline-none focus:ring-2 focus:ring-[#f7f82d] focus:border-transparent transition-all"
                   />
                 </div>
               </div>
@@ -243,10 +243,10 @@ export default function LoginPage() {
               <button
                 type="submit"
                 disabled={loading}
-                className="w-full active:scale-[0.98] text-white font-extrabold py-4 rounded-2xl transition-all text-sm uppercase tracking-wider shadow-md font-poppins flex items-center justify-center gap-2 hover:opacity-90 disabled:opacity-50"
+                className="w-full active:scale-[0.98] text-gray-900 font-extrabold py-4 rounded-2xl transition-all text-sm uppercase tracking-wider shadow-md font-poppins flex items-center justify-center gap-2 hover:opacity-90 disabled:opacity-50"
                 style={{
                   background:
-                    "linear-gradient(135deg, #ff2d78, #b020ff, #00e5ff)",
+                    "#f7f82d",
                   boxShadow: "0 4px 15px rgba(255,45,120,0.15)",
                 }}
               >
@@ -274,7 +274,7 @@ export default function LoginPage() {
                       setError(null);
                       setSuccess(null);
                     }}
-                    className="font-bold text-[#ff2d78] hover:underline transition-colors"
+                    className="font-bold text-[#ca8a04] hover:underline transition-colors"
                   >
                     Sign In
                   </button>
@@ -288,7 +288,7 @@ export default function LoginPage() {
                       setError(null);
                       setSuccess(null);
                     }}
-                    className="font-bold text-[#ff2d78] hover:underline transition-colors"
+                    className="font-bold text-[#ca8a04] hover:underline transition-colors"
                   >
                     Sign Up
                   </button>

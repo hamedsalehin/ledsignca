@@ -144,7 +144,7 @@ export default function OrdersPage() {
         {authLoading || (loading && user) ? (
           /* Loading State */
           <div className="py-24 text-center flex flex-col items-center justify-center space-y-4">
-            <Loader2 className="w-10 h-10 text-[#ff2d78] animate-spin" />
+            <Loader2 className="w-10 h-10 text-[#f7f82d] animate-spin" />
             <p className="text-gray-500 font-semibold">
               Loading your order history...
             </p>
@@ -152,7 +152,7 @@ export default function OrdersPage() {
         ) : !user ? (
           /* Access Denied / Log In Prompt */
           <div className="max-w-md mx-auto bg-white rounded-3xl border border-pink-100 shadow-xl p-8 text-center my-12 animate-in fade-in duration-300">
-            <div className="w-16 h-16 bg-pink-50 text-[#ff2d78] rounded-full flex items-center justify-center mx-auto mb-6 border border-pink-100">
+            <div className="w-16 h-16 bg-pink-50 text-[#f7f82d] rounded-full flex items-center justify-center mx-auto mb-6 border border-pink-100">
               <ShieldAlert className="w-8 h-8" />
             </div>
             <h2 className="text-2xl font-bold font-poppins text-slate-950">
@@ -165,10 +165,10 @@ export default function OrdersPage() {
             <div className="mt-8 space-y-3">
               <button
                 onClick={() => setShowAuthModal(true)}
-                className="w-full active:scale-[0.98] text-white font-extrabold py-3.5 rounded-2xl transition-all text-sm uppercase tracking-wider shadow-md font-poppins flex items-center justify-center gap-2 hover:opacity-90"
+                className="w-full active:scale-[0.98] text-gray-900 font-extrabold py-3.5 rounded-2xl transition-all text-sm uppercase tracking-wider shadow-md font-poppins flex items-center justify-center gap-2 hover:opacity-90"
                 style={{
                   background:
-                    "linear-gradient(135deg, #ff2d78, #b020ff, #00e5ff)",
+                    "#f7f82d",
                   boxShadow: "0 4px 15px rgba(255,45,120,0.2)",
                 }}
               >
@@ -206,10 +206,10 @@ export default function OrdersPage() {
             <div className="mt-8">
               <Link
                 href="/custom-signs"
-                className="inline-flex items-center gap-2 active:scale-[0.98] text-white font-extrabold px-8 py-3.5 rounded-2xl transition-all text-xs uppercase tracking-wider shadow-md font-poppins hover:opacity-90"
+                className="inline-flex items-center gap-2 active:scale-[0.98] text-gray-900 font-extrabold px-8 py-3.5 rounded-2xl transition-all text-xs uppercase tracking-wider shadow-md font-poppins hover:opacity-90"
                 style={{
                   background:
-                    "linear-gradient(135deg, #ff2d78, #b020ff, #00e5ff)",
+                    "#f7f82d",
                   boxShadow: "0 4px 15px rgba(255,45,120,0.2)",
                 }}
               >
@@ -243,7 +243,7 @@ export default function OrdersPage() {
                         Order Total
                       </span>
                       <span className="text-slate-900 font-extrabold text-sm font-poppins">
-                        ${order.total_price.toFixed(2)}
+                        CAD {order.total_price.toFixed(2)}
                       </span>
                     </div>
                     <div>
@@ -266,7 +266,7 @@ export default function OrdersPage() {
                       {order.product_title}
                     </h3>
                     <p className="text-xs text-gray-500 font-semibold mt-1">
-                      Size: {order.product_size} • Quantity: {order.quantity} ($
+                      Size: {order.product_size} • Quantity: {order.quantity} (CAD
                       {order.unit_price.toFixed(2)} each)
                     </p>
 

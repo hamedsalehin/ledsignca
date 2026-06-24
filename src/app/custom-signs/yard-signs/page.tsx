@@ -22,11 +22,11 @@ export default function YardSignsPage() {
         breadcrumbHref: "/custom-signs",
         promoText:
           "🏡 25% OFF Yard Signs + Free Shipping — Most Popular Sign in America!",
-        image: "/images/products/main%20page/yard_sign.jpeg",
+        image: "/images/products/main%20page/yard_sign-toronto-printing-ca.jpeg",
         images: [
-          "/images/products/main%20page/yard_sign.jpeg",
-          "/images/products/gallery/yard_sign_in_action_1.png",
-          "/images/products/gallery/yard_sign_in_action_2.png",
+          "/images/products/main%20page/yard_sign-toronto-printing-ca.jpeg",
+          "/images/products/gallery/yard_sign_in_action_1-toronto-printing-ca.png",
+          "/images/products/gallery/yard_sign_in_action_2-toronto-printing-ca.png",
         ],
         ratingScore: "4.9",
         ratingCount: "8,420",
@@ -193,7 +193,7 @@ export default function YardSignsPage() {
         uniqueCallout: {
           icon: <Layers className="w-8 h-8 text-green-500" />,
           heading: "America's #1 Most-Ordered Sign",
-          body: "Yard signs are the most cost-effective marketing tool available. At just $3.99 each, no other medium gets your message in front of more people for less money.",
+          body: "Yard signs are the most cost-effective marketing tool available. At just CAD 3.99 each, no other medium gets your message in front of more people for less money.",
           color: "bg-green-50 border border-green-200 text-green-900",
         },
       }}

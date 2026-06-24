@@ -23,7 +23,7 @@ export default function ReturnPolicyPage() {
 
       {/* Hero Header */}
       <section className="relative text-white py-16 md:py-20" style={{
-        background: "linear-gradient(135deg, #0d0d1a 0%, #1a0a2f 50%, #00222a 100%)"
+        background: "#0d0d1a"
       }}>
         <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff03_1px,transparent_1px),linear-gradient(to_bottom,#ffffff03_1px,transparent_1px)] bg-[size:24px_24px] pointer-events-none" />
         
@@ -32,10 +32,10 @@ export default function ReturnPolicyPage() {
             Terms & Conditions
           </span>
           <h1 className="text-4xl md:text-5xl font-poppins font-black mb-4 tracking-tight leading-tight">
-            Return & Refund Policy
+            Returns, Refunds &amp; Cancellations
           </h1>
           <p className="max-w-2xl mx-auto text-sm md:text-base text-gray-300 font-medium">
-            Please read this document carefully. By ordering from Nano Signs, you agree to these strict return conditions.
+            Review these terms before placing an order. Purchasing from Nano Signs constitutes full agreement with these non-negotiable return rules.
           </p>
         </div>
       </section>
@@ -52,12 +52,12 @@ export default function ReturnPolicyPage() {
                 <Mail className="w-5 h-5" />
               </div>
               <h2 className="text-xl md:text-2xl font-poppins font-black text-slate-800">
-                Simple Return Procedure
+                How to Request a Return
               </h2>
             </div>
             
             <p className="text-sm text-slate-650 leading-relaxed mb-6 font-medium">
-              If your claim meets our eligibility conditions, you must initiate the return request via email to our support team within the designated time window.
+              Should your issue fall under our eligible return criteria, you are required to email our support department before the reporting period expires.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 font-poppins">
@@ -65,7 +65,7 @@ export default function ReturnPolicyPage() {
                 <span className="absolute top-4 right-4 text-xs font-black text-slate-350">STEP 01</span>
                 <h3 className="text-sm font-bold text-slate-800 mb-2">Send Email</h3>
                 <p className="text-[11px] text-slate-500 leading-relaxed font-semibold">
-                  Email us at <a href="mailto:nanosign1@gmail.com" className="underline font-bold text-indigo-600">nanosign1@gmail.com</a> with the subject line <code className="bg-slate-150 px-1 py-0.5 rounded font-mono text-slate-700">Return Request: Order #[YourOrderNo]</code>.
+                  Email us at <a href="mailto:info@led-sign.ca" className="underline font-bold text-indigo-600">info@led-sign.ca</a> with the subject line <code className="bg-slate-150 px-1 py-0.5 rounded font-mono text-slate-700">Return Request: Order #[YourOrderNo]</code>.
                 </p>
               </div>
 
@@ -91,9 +91,9 @@ export default function ReturnPolicyPage() {
         {/* Strict Conditions Section */}
         <section className="space-y-6">
           <div className="flex items-center gap-2 mb-2">
-            <ShieldAlert className="w-6 h-6 text-[#ff2d78]" />
+            <ShieldAlert className="w-6 h-6 text-[#ca8a04]" />
             <h2 className="text-2xl font-poppins font-black text-slate-800">
-              Strict Eligibility Conditions
+              Non-Negotiable Return Criteria
             </h2>
           </div>
 
@@ -101,11 +101,11 @@ export default function ReturnPolicyPage() {
             
             {/* Condition 1: Custom Printed Products */}
             <div className="bg-white rounded-3xl p-6 shadow-sm border border-gray-150 space-y-3">
-              <div className="w-9 h-9 rounded-lg bg-pink-50 text-[#ff2d78] flex items-center justify-center">
+              <div className="w-9 h-9 rounded-lg bg-pink-50 text-[#ca8a04] flex items-center justify-center">
                 <AlertTriangle className="w-5 h-5" />
               </div>
               <h3 className="text-base font-poppins font-black text-slate-800">
-                1. Custom Products are Final Sale
+                1. No Returns on Bespoke Orders
               </h3>
               <p className="text-xs text-slate-500 leading-relaxed font-semibold">
                 All customized products (signs, banners, flags, decals, business cards, t-shirts, mugs, etc.) are manufactured on-demand with customer-specific graphics and designs. Under no circumstances are returns, refunds, or exchanges accepted for custom prints.
@@ -114,11 +114,11 @@ export default function ReturnPolicyPage() {
 
             {/* Condition 2: Strict 24-Hour Reporting Window */}
             <div className="bg-white rounded-3xl p-6 shadow-sm border border-gray-150 space-y-3">
-              <div className="w-9 h-9 rounded-lg bg-pink-50 text-[#ff2d78] flex items-center justify-center">
+              <div className="w-9 h-9 rounded-lg bg-pink-50 text-[#ca8a04] flex items-center justify-center">
                 <AlertTriangle className="w-5 h-5" />
               </div>
               <h3 className="text-base font-poppins font-black text-slate-800">
-                2. Mandatory 24-Hour Damage Window
+                2. Strict 24-Hour Reporting Period
               </h3>
               <p className="text-xs text-slate-500 leading-relaxed font-semibold">
                 In the rare case of transit damage or a physical print defect, you must report it within exactly **24 hours** from timestamped carrier delivery or local store pickup. Requests received after 24 hours are automatically disqualified, and no refunds or reprints will be issued.
@@ -127,11 +127,11 @@ export default function ReturnPolicyPage() {
 
             {/* Condition 3: Evidence Requirements */}
             <div className="bg-white rounded-3xl p-6 shadow-sm border border-gray-150 space-y-3">
-              <div className="w-9 h-9 rounded-lg bg-pink-50 text-[#ff2d78] flex items-center justify-center">
+              <div className="w-9 h-9 rounded-lg bg-pink-50 text-[#ca8a04] flex items-center justify-center">
                 <Camera className="w-5 h-5" />
               </div>
               <h3 className="text-base font-poppins font-black text-slate-800">
-                3. Video & Photo Evidence Clauses
+                3. Required Visual Proof
               </h3>
               <p className="text-xs text-slate-500 leading-relaxed font-semibold">
                 Claims for items damaged during shipping require a continuous, unedited unboxing video that shows the package condition, shipping label, and item extraction. Photo-only claims for transit damage will be rejected immediately.
@@ -140,11 +140,11 @@ export default function ReturnPolicyPage() {
 
             {/* Condition 4: Non-Custom Products & Restocking Fee */}
             <div className="bg-white rounded-3xl p-6 shadow-sm border border-gray-150 space-y-3">
-              <div className="w-9 h-9 rounded-lg bg-pink-50 text-[#ff2d78] flex items-center justify-center">
+              <div className="w-9 h-9 rounded-lg bg-pink-50 text-[#ca8a04] flex items-center justify-center">
                 <FileCheck className="w-5 h-5" />
               </div>
               <h3 className="text-base font-poppins font-black text-slate-800">
-                4. 35% Restocking Fee on Hardware
+                4. Hardware Returns &amp; Restocking Fees
               </h3>
               <p className="text-xs text-slate-500 leading-relaxed font-semibold">
                 Only blank non-custom accessories (e.g. metal frames, unused posts, empty standoffs, or stakes) are eligible for return. These items must be returned completely unused, in their original, unopened packaging, and are subject to a **35% restocking and processing fee**.
@@ -153,11 +153,11 @@ export default function ReturnPolicyPage() {
 
             {/* Condition 5: Color Matching Disclaimer */}
             <div className="bg-white rounded-3xl p-6 shadow-sm border border-gray-150 space-y-3">
-              <div className="w-9 h-9 rounded-lg bg-pink-50 text-[#ff2d78] flex items-center justify-center">
+              <div className="w-9 h-9 rounded-lg bg-pink-50 text-[#ca8a04] flex items-center justify-center">
                 <Layers className="w-5 h-5" />
               </div>
               <h3 className="text-base font-poppins font-black text-slate-800">
-                5. CMYK Color Variations
+                5. Print Color Shifting
               </h3>
               <p className="text-xs text-slate-500 leading-relaxed font-semibold">
                 Please note that digital screens render colors in RGB, whereas commercial printers utilize CMYK. Slight color variations, shade differences, or brightness shifts are inherent to the printing process and are not deemed defects. Returns based on color shifts will be rejected.
@@ -166,11 +166,11 @@ export default function ReturnPolicyPage() {
 
             {/* Condition 6: Customer Design and Layout Approvals */}
             <div className="bg-white rounded-3xl p-6 shadow-sm border border-gray-150 space-y-3">
-              <div className="w-9 h-9 rounded-lg bg-pink-50 text-[#ff2d78] flex items-center justify-center">
+              <div className="w-9 h-9 rounded-lg bg-pink-50 text-[#ca8a04] flex items-center justify-center">
                 <Settings className="w-5 h-5" />
               </div>
               <h3 className="text-base font-poppins font-black text-slate-800">
-                6. Design Layout and Typographical Liability
+                6. Customer File Liability
               </h3>
               <p className="text-xs text-slate-500 leading-relaxed font-semibold">
                 Customers assume full responsibility for all content submitted. Spells, typos, grammar errors, low-resolution fuzzy artwork, color mismatching, alignment slips, or orientation selection errors made in the editor or uploaded in templates are completely ineligible for returns.
@@ -193,7 +193,7 @@ export default function ReturnPolicyPage() {
               <ArrowLeft className="w-4 h-4" /> Back to Contact Us
             </Link>
             <a
-              href="mailto:nanosign1@gmail.com"
+              href="mailto:info@led-sign.ca"
               className="inline-flex items-center gap-2 px-5 py-3 bg-white/10 hover:bg-white/20 transition-colors text-white rounded-xl text-xs font-bold border border-white/20"
             >
               Email Support

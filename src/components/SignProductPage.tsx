@@ -100,7 +100,7 @@ function StarRating({ rating }: { rating: number }) {
       {[1, 2, 3, 4, 5].map((s) => (
         <Star
           key={s}
-          className={`w-4 h-4 ${s <= rating ? "fill-[#ff2d78] text-[#ff2d78]" : "text-gray-300"}`}
+          className={`w-4 h-4 ${s <= rating ? "fill-[#ca8a04] text-[#ca8a04]" : "text-gray-300"}`}
         />
       ))}
     </div>
@@ -531,13 +531,13 @@ export function SignProductPage({ cfg }: { cfg: ProductPageConfig }) {
       {/* Breadcrumb */}
       <div className="bg-gray-50 border-b text-sm">
         <div className="max-w-7xl mx-auto px-4 py-3 flex items-center gap-2 text-gray-500">
-          <Link href="/" className="hover:text-[#ff2d78] transition-colors">
+          <Link href="/" className="hover:text-yellow-600 transition-colors">
             Home
           </Link>
           <span>/</span>
           <Link
             href={cfg.breadcrumbHref}
-            className="hover:text-[#ff2d78] transition-colors"
+            className="hover:text-yellow-600 transition-colors"
           >
             {cfg.breadcrumb}
           </Link>
@@ -548,9 +548,9 @@ export function SignProductPage({ cfg }: { cfg: ProductPageConfig }) {
 
       {/* Promo */}
       <div
-        className="text-white text-center py-2 text-sm font-bold tracking-wide"
+        className="text-gray-900 text-center py-2 text-sm font-bold tracking-wide"
         style={{
-          background: "linear-gradient(90deg, #ff2d78, #b020ff, #00e5ff)",
+          background: "#f7f82d",
         }}
       >
         {cfg.promoText}
@@ -599,7 +599,7 @@ export function SignProductPage({ cfg }: { cfg: ProductPageConfig }) {
                     }}
                     className={`w-16 h-16 rounded-lg border-2 cursor-pointer p-1 bg-gray-50 transition-all ${
                       activeIndex === idx
-                        ? "border-[#ff2d78] ring-2 ring-pink-100"
+                        ? "border-[#ca8a04] ring-2 ring-pink-100"
                         : "border-gray-150 hover:border-gray-350"
                     }`}
                     aria-label={`View product gallery image ${idx + 1}`}
@@ -640,22 +640,22 @@ export function SignProductPage({ cfg }: { cfg: ProductPageConfig }) {
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-10">
               {[
                 {
-                  icon: <Truck className="w-5 h-5 text-[#ff2d78]" />,
+                  icon: <Truck className="w-5 h-5 text-[#ca8a04]" />,
                   t: "Next Day Ship",
                   s: "Order by 5 PM",
                 },
                 {
-                  icon: <ShieldCheck className="w-5 h-5 text-[#00e5ff]" />,
+                  icon: <ShieldCheck className="w-5 h-5 text-[#ca8a04]" />,
                   t: "100% Guarantee",
                   s: "Love it or reprint",
                 },
                 {
-                  icon: <CheckCircle2 className="w-5 h-5 text-[#ff2d78]" />,
+                  icon: <CheckCircle2 className="w-5 h-5 text-[#ca8a04]" />,
                   t: "Free Proof",
                   s: "Before we print",
                 },
                 {
-                  icon: <Star className="w-5 h-5 text-[#00e5ff]" />,
+                  icon: <Star className="w-5 h-5 text-[#ca8a04]" />,
                   t: "Top Rated",
                   s: cfg.ratingScore + " stars",
                 },
@@ -680,7 +680,7 @@ export function SignProductPage({ cfg }: { cfg: ProductPageConfig }) {
                   <button
                     key={tab}
                     onClick={() => setActiveTab(tab)}
-                    className={`px-5 py-3 text-sm font-bold capitalize whitespace-nowrap border-b-2 -mb-px transition-colors ${activeTab === tab ? "border-[#ff2d78] text-[#ff2d78]" : "border-transparent text-gray-500 hover:text-gray-800"}`}
+                    className={`px-5 py-3 text-sm font-bold capitalize whitespace-nowrap border-b-2 -mb-px transition-colors ${activeTab === tab ? "border-[#ca8a04] text-[#ca8a04]" : "border-transparent text-gray-500 hover:text-gray-800"}`}
                   >
                     {tab === "faqs"
                       ? "FAQs"
@@ -707,7 +707,7 @@ export function SignProductPage({ cfg }: { cfg: ProductPageConfig }) {
                           key={f}
                           className="flex items-center gap-2 text-sm text-gray-600"
                         >
-                          <CheckCircle2 className="w-4 h-4 text-[#ff2d78] shrink-0" />
+                          <CheckCircle2 className="w-4 h-4 text-[#ca8a04] shrink-0" />
                           {f}
                         </li>
                       ))}
@@ -717,7 +717,7 @@ export function SignProductPage({ cfg }: { cfg: ProductPageConfig }) {
                     className="rounded-xl p-5"
                     style={{
                       background:
-                        "linear-gradient(135deg, rgba(255,45,120,0.06), rgba(0,229,255,0.06))",
+                        "rgba(247,248,45,0.06)",
                     }}
                   >
                     <h3 className="font-bold mb-3">Great For</h3>
@@ -786,10 +786,10 @@ export function SignProductPage({ cfg }: { cfg: ProductPageConfig }) {
               <div className="pb-5 border-b mb-5">
                 <div className="flex items-end gap-2.5 mb-1.5">
                   <span className="text-4xl font-extrabold text-gray-900 font-poppins">
-                    ${totalPrice}
+                    CAD {totalPrice}
                   </span>
                   <span className="text-lg text-gray-400 line-through font-semibold mb-0.5">
-                    ${originalTotalPrice}
+                    CAD {originalTotalPrice}
                   </span>
                   <span className="text-red-500 font-extrabold text-sm mb-1 bg-red-50 px-2 py-0.5 rounded-full">
                     25% OFF
@@ -797,7 +797,7 @@ export function SignProductPage({ cfg }: { cfg: ProductPageConfig }) {
                 </div>
                 <div className="flex justify-between text-sm">
                   <span className="text-gray-500 font-semibold">
-                    ${unitPrice.toFixed(2)} each
+                    CAD {unitPrice.toFixed(2)} each
                   </span>
                   {isBulkDiscountApplied && (
                     <span className="text-green-600 font-extrabold">
@@ -820,7 +820,7 @@ export function SignProductPage({ cfg }: { cfg: ProductPageConfig }) {
                         );
                         setUserClickedThumbnail(false);
                       }}
-                      className="w-full appearance-none bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 pr-10 text-sm focus:outline-none focus:ring-2 focus:ring-[#ff2d78] cursor-pointer font-semibold"
+                      className="w-full appearance-none bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 pr-10 text-sm focus:outline-none focus:ring-2 focus:ring-[#f7f82d] cursor-pointer font-semibold"
                     >
                       {cfg.sizes.map((s) => (
                         <option key={s.value} value={s.value}>
@@ -853,13 +853,13 @@ export function SignProductPage({ cfg }: { cfg: ProductPageConfig }) {
                             setUserClickedThumbnail(false);
                           }
                         }}
-                        className="w-full appearance-none bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 pr-10 text-sm focus:outline-none focus:ring-2 focus:ring-[#ff2d78] cursor-pointer font-semibold"
+                        className="w-full appearance-none bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 pr-10 text-sm focus:outline-none focus:ring-2 focus:ring-[#f7f82d] cursor-pointer font-semibold"
                       >
                         {sel.options.map((o) => (
                           <option key={o.value} value={o.value}>
                             {o.label}
                             {o.priceAdder > 0
-                              ? ` (+$${o.priceAdder.toFixed(2)})`
+                              ? ` (+CAD ${o.priceAdder.toFixed(2)})`
                               : ""}
                           </option>
                         ))}
@@ -892,14 +892,14 @@ export function SignProductPage({ cfg }: { cfg: ProductPageConfig }) {
                             }));
                             setUserClickedThumbnail(false);
                           }}
-                          className={`p-3 text-left rounded-xl border-2 transition-all duration-200 ${toggleValues[grp.label]?.id === o.id ? "border-[#ff2d78] bg-pink-50" : "border-gray-200 hover:border-gray-300 bg-white"}`}
+                          className={`p-3 text-left rounded-xl border-2 transition-all duration-200 ${toggleValues[grp.label]?.id === o.id ? "border-[#ca8a04] bg-pink-50" : "border-gray-200 hover:border-gray-300 bg-white"}`}
                         >
                           <span className="block text-xs font-bold text-gray-900">
                             {o.label}
                           </span>
                           {o.priceAdder > 0 && (
                             <span className="text-[10px] text-gray-500 font-semibold">
-                              +${o.priceAdder.toFixed(2)}
+                              +CAD {o.priceAdder.toFixed(2)}
                             </span>
                           )}
                           {o.description && (
@@ -1035,16 +1035,16 @@ export function SignProductPage({ cfg }: { cfg: ProductPageConfig }) {
                   ) : (
                     <label
                       htmlFor="pdf-upload-input"
-                      className="w-full cursor-pointer flex items-center justify-center gap-2 border-2 border-dashed border-pink-200 hover:border-[#ff2d78] text-gray-800 bg-pink-50/10 hover:bg-pink-50/30 active:scale-[0.98] font-bold py-3.5 rounded-xl transition-all text-xs uppercase tracking-wider font-poppins text-center"
+                      className="w-full cursor-pointer flex items-center justify-center gap-2 border-2 border-dashed border-pink-200 hover:border-[#ca8a04] text-gray-800 bg-pink-50/10 hover:bg-pink-50/30 active:scale-[0.98] font-bold py-3.5 rounded-xl transition-all text-xs uppercase tracking-wider font-poppins text-center"
                     >
                       {pdfUploading ? (
                         <>
-                          <Loader2 className="w-4 h-4 animate-spin text-[#ff2d78]" />
+                          <Loader2 className="w-4 h-4 animate-spin text-[#ca8a04]" />
                           Uploading file...
                         </>
                       ) : (
                         <>
-                          <UploadCloud className="w-4 h-4 text-[#ff2d78]" />
+                          <UploadCloud className="w-4 h-4 text-[#ca8a04]" />
                           Upload Your Own Finished Design (PDF, PNG, JPG)
                         </>
                       )}
@@ -1059,10 +1059,10 @@ export function SignProductPage({ cfg }: { cfg: ProductPageConfig }) {
 
                 <Link
                   href={customizeUrl}
-                  className="w-full block text-center active:scale-[0.98] text-white font-extrabold py-4 rounded-xl transition-all text-sm uppercase tracking-wider shadow-md font-poppins hover:opacity-90"
+                  className="w-full block text-center active:scale-[0.98] text-gray-900 font-extrabold py-4 rounded-xl transition-all text-sm uppercase tracking-wider shadow-md font-poppins hover:opacity-90"
                   style={{
                     background:
-                      "linear-gradient(135deg, #ff2d78, #b020ff, #00e5ff)",
+                      "#f7f82d",
                     boxShadow: "0 0 20px rgba(255,45,120,0.4)",
                   }}
                 >
@@ -1092,9 +1092,9 @@ export function SignProductPage({ cfg }: { cfg: ProductPageConfig }) {
           <p className="text-gray-400 text-lg mb-8">{cfg.ctaBody}</p>
           <Link
             href={customizeUrl}
-            className="inline-block text-white font-bold px-10 py-4 rounded-full hover:opacity-90 transition-all text-lg font-poppins"
+            className="inline-block text-gray-900 font-bold px-10 py-4 rounded-full hover:opacity-90 transition-all text-lg font-poppins"
             style={{
-              background: "linear-gradient(135deg, #ff2d78, #b020ff, #00e5ff)",
+              background: "#f7f82d",
               boxShadow: "0 0 24px rgba(255,45,120,0.4)",
             }}
           >

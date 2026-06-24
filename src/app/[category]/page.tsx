@@ -14,10 +14,10 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const categoryData = PRODUCTS_REGISTRY[decodedCategory];
   if (!categoryData) return {};
   
-  const title = `${categoryData.title} Fort Lauderdale FL | Fast Turnaround | Nano Signs`;
+  const title = `${categoryData.title} Toronto ON | Fast Turnaround | Nano Signs`;
   const description = categoryData.description
-    ? `Design & order custom ${categoryData.title.toLowerCase()} online or in person in Broward County. Fastest turnaround times. ${categoryData.description}`
-    : `High-quality custom ${categoryData.title.toLowerCase()} printing in Fort Lauderdale & Oakland Park FL. Fastest turnaround times in Broward. Call 305-967-1005!`;
+    ? `Design & order custom ${categoryData.title.toLowerCase()} online or in person in the Greater Toronto Area. Fastest turnaround times. ${categoryData.description}`
+    : `High-quality custom ${categoryData.title.toLowerCase()} printing in Toronto & Mississauga, ON. Fastest turnaround times in Ontario. Call +1 416-838-8994!`;
 
   return {
     title,

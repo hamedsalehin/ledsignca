@@ -66,9 +66,10 @@ export async function POST(req: NextRequest) {
 
     const shippingCost = selectedRate.price;
 
-    // 4. Calculate sales tax (7% if in Florida, 0% otherwise)
-    const isFlorida = shippingAddress.postal.trim().startsWith("32") || shippingAddress.postal.trim().startsWith("33") || shippingAddress.postal.trim().startsWith("34");
-    const taxRate = isFlorida ? 0.07 : 0.0;
+    // 4. Calculate sales tax (13% HST if Ontario postal code, 0% otherwise)
+    const postalUpper = shippingAddress.postal.trim().toUpperCase();
+    const isOntario = ["K", "L", "M", "N", "P"].some(prefix => postalUpper.startsWith(prefix));
+    const taxRate = isOntario ? 0.13 : 0.0;
     const taxAmount = Math.round(itemsTotal * taxRate * 100) / 100;
 
     // 5. Total cost
@@ -78,7 +79,7 @@ export async function POST(req: NextRequest) {
     // Create Stripe PaymentIntent
     const paymentIntent = await stripe.paymentIntents.create({
       amount: finalTotalCents,
-      currency: "usd",
+      currency: "cad",
       payment_method_types: ["card"],
       metadata: {
         zipCode: shippingAddress.postal,

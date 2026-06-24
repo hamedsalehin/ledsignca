@@ -1,4 +1,4 @@
-import { NextRequest, NextResponse } from "next/server";
+﻿import { NextRequest, NextResponse } from "next/server";
 import { createClient } from "@supabase/supabase-js";
 import { Resend } from "resend";
 
@@ -83,7 +83,7 @@ export async function POST(req: NextRequest) {
       const adminHtml = `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; background: #0f172a; color: #f1f5f9; padding: 32px; border-radius: 12px;">
           <div style="text-align: center; margin-bottom: 28px;">
-            <h1 style="color: #ff2d78; font-size: 28px; margin: 0; letter-spacing: -0.5px;">NANO SIGNS</h1>
+            <h1 style="color: #f7f82d; font-size: 28px; margin: 0; letter-spacing: -0.5px;">NANO SIGNS</h1>
             <p style="color: #94a3b8; margin: 4px 0 0;">New Order Received</p>
           </div>
 
@@ -92,11 +92,11 @@ export async function POST(req: NextRequest) {
               📦 Order #${shortId}
             </h2>
             <table style="width: 100%; border-collapse: collapse; font-size: 14px;">
-              <tr><td style="padding: 6px 0; color: #94a3b8; width: 40%;">Product:</td><td style="color: #f1f5f9; font-weight: bold;">${productTitle}</td></tr>
-              <tr><td style="padding: 6px 0; color: #94a3b8;">Size:</td><td style="color: #f1f5f9;">${productSize || "—"}</td></tr>
-              <tr><td style="padding: 6px 0; color: #94a3b8;">Quantity:</td><td style="color: #f1f5f9;">${quantity} unit(s)</td></tr>
-              <tr><td style="padding: 6px 0; color: #94a3b8;">Unit Price:</td><td style="color: #f1f5f9;">$${unitPrice.toFixed(2)}</td></tr>
-              <tr><td style="padding: 6px 0; color: #94a3b8;">Total:</td><td style="color: #ff2d78; font-weight: bold; font-size: 16px;">$${totalPrice.toFixed(2)}</td></tr>
+              <tr><td style="padding: 6px 0; color: #94a3b8; width: 40%;">Product:</td><td style="color: #f1f5f9; font-weight: bold;">CAD {productTitle}</td></tr>
+              <tr><td style="padding: 6px 0; color: #94a3b8;">Size:</td><td style="color: #f1f5f9;">CAD {productSize || "—"}</td></tr>
+              <tr><td style="padding: 6px 0; color: #94a3b8;">Quantity:</td><td style="color: #f1f5f9;">CAD {quantity} unit(s)</td></tr>
+              <tr><td style="padding: 6px 0; color: #94a3b8;">Unit Price:</td><td style="color: #f1f5f9;">CAD ${unitPrice.toFixed(2)}</td></tr>
+              <tr><td style="padding: 6px 0; color: #94a3b8;">Total:</td><td style="color: #f7f82d; font-weight: bold; font-size: 16px;">CAD ${totalPrice.toFixed(2)}</td></tr>
             </table>
           </div>
 
@@ -109,7 +109,7 @@ export async function POST(req: NextRequest) {
             .filter(([k]) => k !== "Design Data")
             .map(
               ([k, v]) => `
-                <tr><td style="padding: 4px 0; color: #64748b; width: 40%;">${k}:</td><td style="color: #e2e8f0;">${v}</td></tr>
+                <tr><td style="padding: 4px 0; color: #64748b; width: 40%;">CAD {k}:</td><td style="color: #e2e8f0;">CAD {v}</td></tr>
               `,
             )
             .join("")}
@@ -133,7 +133,7 @@ export async function POST(req: NextRequest) {
           <div style="background: #1e293b; border-radius: 10px; padding: 20px; margin-bottom: 20px;">
             <h3 style="margin: 0 0 12px; font-size: 14px; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.05em;">Customer Artwork</h3>
             <p style="margin: 0 0 10px; font-size: 13px; color: #cbd5e1;">Filename: ${designFilename}</p>
-            <a href="${designUrl}" style="display: inline-block; background: #ff2d78; color: white; padding: 10px 20px; border-radius: 8px; text-decoration: none; font-size: 13px; font-weight: bold;">
+            <a href="${designUrl}" style="display: inline-block; background: #f7f82d; color: white; padding: 10px 20px; border-radius: 8px; text-decoration: none; font-size: 13px; font-weight: bold;">
               Download Design File
             </a>
           </div>
@@ -156,7 +156,7 @@ export async function POST(req: NextRequest) {
       const customerHtml = `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; background: #ffffff; padding: 0; border-radius: 12px; overflow: hidden; border: 1px solid #e2e8f0;">
           <!-- Header -->
-          <div style="background: linear-gradient(135deg, #ff2d78, #b020ff, #00e5ff); padding: 32px; text-align: center;">
+          <div style="background: #f7f82d; padding: 32px; text-align: center;">
             <h1 style="color: white; font-size: 32px; margin: 0; letter-spacing: -0.5px; font-weight: 900;">NANO SIGNS</h1>
             <p style="color: rgba(255,255,255,0.85); margin: 6px 0 0; font-size: 14px;">Your order is confirmed and in our queue!</p>
           </div>
@@ -179,19 +179,19 @@ export async function POST(req: NextRequest) {
               </tr>
               <tr style="border-bottom: 1px solid #f1f5f9;">
                 <td style="padding: 10px 0; color: #64748b;">Product</td>
-                <td style="padding: 10px 0; color: #0f172a; font-weight: 600;">${productTitle}</td>
+                <td style="padding: 10px 0; color: #0f172a; font-weight: 600;">CAD {productTitle}</td>
               </tr>
               <tr style="border-bottom: 1px solid #f1f5f9;">
                 <td style="padding: 10px 0; color: #64748b;">Size</td>
-                <td style="padding: 10px 0; color: #0f172a;">${productSize || "—"}</td>
+                <td style="padding: 10px 0; color: #0f172a;">CAD {productSize || "—"}</td>
               </tr>
               <tr style="border-bottom: 1px solid #f1f5f9;">
                 <td style="padding: 10px 0; color: #64748b;">Quantity</td>
-                <td style="padding: 10px 0; color: #0f172a;">${quantity} unit(s)</td>
+                <td style="padding: 10px 0; color: #0f172a;">CAD {quantity} unit(s)</td>
               </tr>
               <tr>
                 <td style="padding: 10px 0; color: #64748b; font-weight: bold;">Total Charged</td>
-                <td style="padding: 10px 0; color: #ff2d78; font-size: 18px; font-weight: 900;">$${totalPrice.toFixed(2)}</td>
+                <td style="padding: 10px 0; color: #f7f82d; font-size: 18px; font-weight: 900;">CAD ${totalPrice.toFixed(2)}</td>
               </tr>
             </table>
 
@@ -199,7 +199,7 @@ export async function POST(req: NextRequest) {
             ? `
             <h2 style="font-size: 16px; color: #0f172a; margin: 0 0 12px;">Shipping To</h2>
             <div style="background: #f8fafc; border-radius: 8px; padding: 14px; font-size: 14px; color: #334155; line-height: 1.6; margin-bottom: 24px;">
-              <strong>${shippingName}</strong><br/>
+              <strong>CAD {shippingName}</strong><br/>
               ${shippingAddress || ""}<br/>
               ${shippingCity || ""} ${shippingPostal || ""}
             </div>
@@ -227,7 +227,7 @@ export async function POST(req: NextRequest) {
 
             <div style="text-align: center;">
               <p style="font-size: 13px; color: #64748b; margin: 0 0 16px;">Expected delivery: <strong style="color: #0f172a;">Next Business Day</strong></p>
-              <a href="${process.env.NEXT_PUBLIC_SUPABASE_URL?.replace("supabase.co", "") || ""}account/orders" style="display: inline-block; background: linear-gradient(135deg, #ff2d78, #b020ff); color: white; padding: 12px 28px; border-radius: 50px; text-decoration: none; font-size: 13px; font-weight: bold;">
+              <a href="${process.env.NEXT_PUBLIC_SUPABASE_URL?.replace("supabase.co", "") || ""}account/orders" style="display: inline-block; background: #f7f82d; color: white; padding: 12px 28px; border-radius: 50px; text-decoration: none; font-size: 13px; font-weight: bold;">
                 View My Orders
               </a>
             </div>

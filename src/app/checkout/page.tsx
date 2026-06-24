@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import React, { useState, useEffect, useMemo, useCallback } from "react";
 import Link from "next/link";
@@ -71,8 +71,9 @@ export default function CheckoutPage() {
   const selectedRate = shippingRates.find((r) => r.id === selectedRateId);
   const shippingCost = selectedRate ? selectedRate.price : 0;
 
-  const isFlorida = shippingAddress.postal.trim().startsWith("32") || shippingAddress.postal.trim().startsWith("33") || shippingAddress.postal.trim().startsWith("34");
-  const taxRate = isFlorida ? 0.07 : 0.0;
+  const postalUpper = shippingAddress.postal.trim().toUpperCase();
+  const isOntario = ["K", "L", "M", "N", "P"].some(prefix => postalUpper.startsWith(prefix));
+  const taxRate = isOntario ? 0.13 : 0.0;
   const taxAmount = Math.round(itemsTotal * taxRate * 100) / 100;
 
   const finalTotal = itemsTotal + shippingCost + taxAmount;
@@ -211,9 +212,9 @@ export default function CheckoutPage() {
             custom_options: {
               ...item.customOptions,
               "Stripe Payment ID": `simulated_${Date.now()}`,
-              "Shipping Cost": `$${shippingCost.toFixed(2)}`,
-              "Tax Paid": `$${taxAmount.toFixed(2)}`,
-              "Discount Applied": `$${discount.toFixed(2)}`,
+              "Shipping Cost": `CAD ${shippingCost.toFixed(2)}`,
+              "Tax Paid": `CAD ${taxAmount.toFixed(2)}`,
+              "Discount Applied": `CAD ${discount.toFixed(2)}`,
               "Shipping Method": selectedRateId,
             },
             shipping_name: shippingAddress.name,
@@ -279,7 +280,7 @@ export default function CheckoutPage() {
             <div className="bg-slate-50 border border-slate-200 rounded-2xl p-4 w-full text-left space-y-2 text-sm font-semibold">
               <p className="text-gray-600">Order Reference IDs:</p>
               {successOrderIds.map((id) => (
-                <code key={id} className="block text-xs bg-white border rounded px-2 py-1 text-[#ff2d78] overflow-x-auto">
+                <code key={id} className="block text-xs bg-white border rounded px-2 py-1 text-[#f7f82d] overflow-x-auto">
                   {id}
                 </code>
               ))}
@@ -303,7 +304,7 @@ export default function CheckoutPage() {
 
       {/* Hero Header */}
       <section className="relative text-white py-12" style={{
-        background: "linear-gradient(135deg, #0d0d1a 0%, #1a0a2f 50%, #00222a 100%)"
+        background: "#0d0d1a"
       }}>
         <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff03_1px,transparent_1px),linear-gradient(to_bottom,#ffffff03_1px,transparent_1px)] bg-[size:24px_24px] pointer-events-none" />
         <div className="relative max-w-7xl mx-auto px-4 text-center z-10">
@@ -321,7 +322,7 @@ export default function CheckoutPage() {
           <div className="text-center py-16 bg-white border rounded-3xl p-8 max-w-md mx-auto shadow">
             <ShoppingBag className="w-16 h-16 text-gray-200 mx-auto" />
             <p className="text-gray-500 font-medium mt-4">Your shopping cart is empty.</p>
-            <Link href="/" className="text-sm font-bold text-[#ff2d78] hover:underline mt-2 inline-block">
+            <Link href="/" className="text-sm font-bold text-[#f7f82d] hover:underline mt-2 inline-block">
               Return to Homepage
             </Link>
           </div>
@@ -334,7 +335,7 @@ export default function CheckoutPage() {
               {/* Shipping Address Box */}
               <div className="bg-white rounded-3xl p-6 md:p-8 shadow-md border border-gray-150 space-y-5">
                 <h2 className="text-lg font-bold font-poppins text-slate-800 flex items-center gap-2 border-b pb-3">
-                  <MapPin className="w-5 h-5 text-[#ff2d78]" />
+                  <MapPin className="w-5 h-5 text-[#f7f82d]" />
                   1. Shipping Information
                 </h2>
 
@@ -349,7 +350,7 @@ export default function CheckoutPage() {
                       value={shippingAddress.name}
                       onChange={(e) => setShippingAddress({ ...shippingAddress, name: e.target.value })}
                       placeholder="Jane Doe"
-                      className="w-full px-4 py-3 border border-gray-200 rounded-xl text-sm focus:outline-none focus:border-[#ff2d78] transition-colors"
+                      className="w-full px-4 py-3 border border-gray-200 rounded-xl text-sm focus:outline-none focus:border-[#f7f82d] transition-colors"
                     />
                   </div>
 
@@ -363,7 +364,7 @@ export default function CheckoutPage() {
                       value={shippingAddress.address}
                       onChange={(e) => setShippingAddress({ ...shippingAddress, address: e.target.value })}
                       placeholder="123 Printing Ave"
-                      className="w-full px-4 py-3 border border-gray-200 rounded-xl text-sm focus:outline-none focus:border-[#ff2d78] transition-colors"
+                      className="w-full px-4 py-3 border border-gray-200 rounded-xl text-sm focus:outline-none focus:border-[#f7f82d] transition-colors"
                     />
                   </div>
 
@@ -377,7 +378,7 @@ export default function CheckoutPage() {
                       value={shippingAddress.city}
                       onChange={(e) => setShippingAddress({ ...shippingAddress, city: e.target.value })}
                       placeholder="Oakland Park"
-                      className="w-full px-4 py-3 border border-gray-200 rounded-xl text-sm focus:outline-none focus:border-[#ff2d78] transition-colors"
+                      className="w-full px-4 py-3 border border-gray-200 rounded-xl text-sm focus:outline-none focus:border-[#f7f82d] transition-colors"
                     />
                   </div>
 
@@ -393,7 +394,7 @@ export default function CheckoutPage() {
                         onChange={(e) => setShippingAddress({ ...shippingAddress, state: e.target.value })}
                         placeholder="FL"
                         maxLength={2}
-                        className="w-full px-4 py-3 border border-gray-200 rounded-xl text-sm focus:outline-none focus:border-[#ff2d78] transition-colors uppercase"
+                        className="w-full px-4 py-3 border border-gray-200 rounded-xl text-sm focus:outline-none focus:border-[#f7f82d] transition-colors uppercase"
                       />
                     </div>
                     <div>
@@ -406,7 +407,7 @@ export default function CheckoutPage() {
                         value={shippingAddress.postal}
                         onChange={(e) => setShippingAddress({ ...shippingAddress, postal: e.target.value })}
                         placeholder="33309"
-                        className="w-full px-4 py-3 border border-gray-200 rounded-xl text-sm focus:outline-none focus:border-[#ff2d78] transition-colors"
+                        className="w-full px-4 py-3 border border-gray-200 rounded-xl text-sm focus:outline-none focus:border-[#f7f82d] transition-colors"
                       />
                     </div>
                   </div>
@@ -420,8 +421,8 @@ export default function CheckoutPage() {
                       required
                       value={shippingAddress.phone}
                       onChange={(e) => setShippingAddress({ ...shippingAddress, phone: e.target.value })}
-                      placeholder="305-967-1005"
-                      className="w-full px-4 py-3 border border-gray-200 rounded-xl text-sm focus:outline-none focus:border-[#ff2d78] transition-colors"
+                      placeholder="+1 416-838-8994"
+                      className="w-full px-4 py-3 border border-gray-200 rounded-xl text-sm focus:outline-none focus:border-[#f7f82d] transition-colors"
                     />
                   </div>
                 </div>
@@ -447,7 +448,7 @@ export default function CheckoutPage() {
                           onChange={(e) => setFreightOptions({ ...freightOptions, residential: e.target.checked })}
                           className="w-4 h-4 rounded text-amber-600 border-gray-300 focus:ring-amber-500"
                         />
-                        <span>Delivery Address is Residential (Adds $55.00 surcharge)</span>
+                        <span>Delivery Address is Residential (Adds CAD 55.00 surcharge)</span>
                       </label>
 
                       <label className="flex items-center gap-2 text-xs font-bold text-slate-700 cursor-pointer">
@@ -457,7 +458,7 @@ export default function CheckoutPage() {
                           onChange={(e) => setFreightOptions({ ...freightOptions, liftgate: e.target.checked })}
                           className="w-4 h-4 rounded text-amber-600 border-gray-300 focus:ring-amber-500"
                         />
-                        <span>Liftgate Service Required at Unload (Adds $45.00 surcharge)</span>
+                        <span>Liftgate Service Required at Unload (Adds CAD 45.00 surcharge)</span>
                       </label>
                     </div>
                   </div>
@@ -467,13 +468,13 @@ export default function CheckoutPage() {
               {/* Shipping Rate Options */}
               <div className="bg-white rounded-3xl p-6 md:p-8 shadow-md border border-gray-150 space-y-5">
                 <h2 className="text-lg font-bold font-poppins text-slate-800 flex items-center gap-2 border-b pb-3">
-                  <Truck className="w-5 h-5 text-[#ff2d78]" />
+                  <Truck className="w-5 h-5 text-[#f7f82d]" />
                   2. Choose Shipping Method
                 </h2>
 
                 {calculatingRates ? (
                   <div className="flex items-center justify-center py-8 gap-2.5">
-                    <Loader2 className="w-6 h-6 animate-spin text-[#ff2d78]" />
+                    <Loader2 className="w-6 h-6 animate-spin text-[#f7f82d]" />
                     <span className="text-sm font-semibold text-slate-500">Calculating shipping quotes...</span>
                   </div>
                 ) : rateError ? (
@@ -492,7 +493,7 @@ export default function CheckoutPage() {
                         key={rate.id}
                         onClick={() => setSelectedRateId(rate.id)}
                         className={`flex items-start justify-between p-4 border rounded-2xl cursor-pointer hover:border-pink-300 transition-all ${
-                          selectedRateId === rate.id ? "border-[#ff2d78] bg-pink-50/20" : "border-gray-200"
+                          selectedRateId === rate.id ? "border-[#f7f82d] bg-pink-50/20" : "border-gray-200"
                         }`}
                       >
                         <div className="flex items-start gap-3">
@@ -502,7 +503,7 @@ export default function CheckoutPage() {
                             value={rate.id}
                             checked={selectedRateId === rate.id}
                             onChange={() => {}}
-                            className="mt-1 text-[#ff2d78] focus:ring-[#ff2d78]"
+                            className="mt-1 text-[#f7f82d] focus:ring-[#f7f82d]"
                           />
                           <div>
                             <p className="text-sm font-bold text-slate-800">{rate.name}</p>
@@ -513,7 +514,7 @@ export default function CheckoutPage() {
                           </div>
                         </div>
                         <span className="font-extrabold text-sm text-slate-900">
-                          {rate.price === 0 ? "FREE" : `$${rate.price.toFixed(2)}`}
+                          {rate.price === 0 ? "FREE" : `CAD ${rate.price.toFixed(2)}`}
                         </span>
                       </label>
                     ))}
@@ -524,7 +525,7 @@ export default function CheckoutPage() {
               {/* Stripe Payment Form */}
               <div className="bg-white rounded-3xl p-6 md:p-8 shadow-md border border-gray-150 space-y-5">
                 <h2 className="text-lg font-bold font-poppins text-slate-800 flex items-center gap-2 border-b pb-3">
-                  <CreditCard className="w-5 h-5 text-[#ff2d78]" />
+                  <CreditCard className="w-5 h-5 text-[#f7f82d]" />
                   3. Secure Payment
                 </h2>
 
@@ -586,7 +587,7 @@ export default function CheckoutPage() {
                       <button
                         onClick={handleInitiatePayment}
                         disabled={intentLoading || !shippingAddress.name || !shippingAddress.address || !selectedRateId}
-                        className="w-full py-3.5 bg-gradient-to-r from-[#ff2d78] to-[#b020ff] hover:opacity-95 text-white rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-2 shadow disabled:opacity-50 font-poppins uppercase tracking-wide"
+                        className="w-full py-3.5 bg-gradient-to-r bg-[#f7f82d] hover:opacity-95 text-gray-900 rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-2 shadow disabled:opacity-50 font-poppins uppercase tracking-wide"
                       >
                         {intentLoading ? (
                           <>
@@ -606,7 +607,7 @@ export default function CheckoutPage() {
             {/* Right Column: Order Summary (Lg: 5 cols) */}
             <div className="lg:col-span-5 bg-white rounded-3xl p-6 md:p-8 shadow-md border border-gray-150 space-y-6">
               <h2 className="text-lg font-bold font-poppins text-slate-800 flex items-center gap-2 border-b pb-3">
-                <ShoppingBag className="w-5 h-5 text-[#ff2d78]" />
+                <ShoppingBag className="w-5 h-5 text-[#f7f82d]" />
                 Order Summary
               </h2>
 
@@ -625,7 +626,7 @@ export default function CheckoutPage() {
                         </p>
                       )}
                     </div>
-                    <span className="font-extrabold text-slate-700">${item.totalPrice.toFixed(2)}</span>
+                    <span className="font-extrabold text-slate-700">CAD {item.totalPrice.toFixed(2)}</span>
                   </div>
                 ))}
               </div>
@@ -634,31 +635,31 @@ export default function CheckoutPage() {
               <div className="border-t pt-4 space-y-3 font-poppins text-xs font-bold text-slate-500">
                 <div className="flex items-center justify-between">
                   <span>Subtotal</span>
-                  <span className="text-slate-700">${subtotal.toFixed(2)}</span>
+                  <span className="text-slate-700">CAD {subtotal.toFixed(2)}</span>
                 </div>
 
                 {discountApplied && (
                   <div className="flex items-center justify-between text-green-600">
                     <span>10% Promo Discount</span>
-                    <span>-${discount.toFixed(2)}</span>
+                    <span>-CAD {discount.toFixed(2)}</span>
                   </div>
                 )}
 
                 <div className="flex items-center justify-between">
                   <span>Shipping &amp; Delivery</span>
                   <span className="text-slate-700">
-                    {selectedRate ? `$${shippingCost.toFixed(2)}` : "Select shipping method"}
+                    {selectedRate ? `CAD ${shippingCost.toFixed(2)}` : "Select shipping method"}
                   </span>
                 </div>
 
                 <div className="flex items-center justify-between">
                   <span>Estimated Sales Tax (FL)</span>
-                  <span className="text-slate-700">${taxAmount.toFixed(2)}</span>
+                  <span className="text-slate-700">CAD {taxAmount.toFixed(2)}</span>
                 </div>
 
                 <div className="flex items-center justify-between border-t border-slate-200/60 pt-3.5">
                   <span className="text-sm text-slate-900 font-extrabold">Total</span>
-                  <span className="text-xl text-[#ff2d78] font-black">${finalTotal.toFixed(2)}</span>
+                  <span className="text-xl text-[#f7f82d] font-black">CAD {finalTotal.toFixed(2)}</span>
                 </div>
               </div>
 
@@ -745,9 +746,9 @@ function StripeElementsForm({
             design_filename: item.designFilename || null,
             custom_options: {
               ...item.customOptions,
-              "Shipping Cost": `$${shippingCost.toFixed(2)}`,
-              "Tax Paid": `$${taxAmount.toFixed(2)}`,
-              "Discount Applied": `$${discount.toFixed(2)}`,
+              "Shipping Cost": `CAD ${shippingCost.toFixed(2)}`,
+              "Tax Paid": `CAD ${taxAmount.toFixed(2)}`,
+              "Discount Applied": `CAD ${discount.toFixed(2)}`,
               "Shipping Method": selectedRateId,
             },
             shipping_name: shippingAddress.name,
@@ -852,7 +853,7 @@ function StripeElementsForm({
       <button
         type="submit"
         disabled={loading || !stripe}
-        className="w-full py-4 bg-gradient-to-r from-[#ff2d78] to-[#b020ff] hover:opacity-95 text-white rounded-xl text-sm font-bold transition-all flex items-center justify-center gap-2 shadow disabled:opacity-50 uppercase tracking-wide"
+        className="w-full py-4 bg-gradient-to-r bg-[#f7f82d] hover:opacity-95 text-gray-900 rounded-xl text-sm font-bold transition-all flex items-center justify-center gap-2 shadow disabled:opacity-50 uppercase tracking-wide"
       >
         {loading ? (
           <>

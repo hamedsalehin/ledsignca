@@ -81,12 +81,12 @@ export function ProductConfigurator({
         <div className="pb-6 border-b border-gray-100">
           <div className="flex items-end gap-2 mb-1">
             <span className="text-3xl font-bold text-gray-900">
-              ${totalPrice}
+              CAD {totalPrice}
             </span>
             <span className="text-gray-500 mb-1 text-sm">Total</span>
           </div>
           <div className="flex items-center justify-between text-sm">
-            <span className="text-gray-600">${unitPrice} each</span>
+            <span className="text-gray-600">CAD {unitPrice} each</span>
             {quantity >= 5 && (
               <span className="text-green-600 font-bold bg-green-50 px-2 py-0.5 rounded">
                 Bulk Discount Applied!
@@ -110,7 +110,7 @@ export function ProductConfigurator({
                     sizes.find((s) => s.value === e.target.value)!,
                   )
                 }
-                className="w-full appearance-none bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 pr-10 focus:outline-none focus:ring-2 focus:ring-[#ff2d78] cursor-pointer text-sm"
+                className="w-full appearance-none bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 pr-10 focus:outline-none focus:ring-2 focus:ring-[#f7f82d] cursor-pointer text-sm"
               >
                 {sizes.map((s) => (
                   <option key={s.value} value={s.value}>
@@ -162,7 +162,7 @@ export function ProductConfigurator({
                   onClick={() => setSelectedSide(option)}
                   className={`px-4 py-2.5 text-sm font-medium rounded-xl border transition-all ${
                     selectedSide.value === option.value
-                      ? "border-[#ff2d78] bg-pink-50 text-gray-900 border-2"
+                      ? "border-[#f7f82d] bg-pink-50 text-gray-900 border-2"
                       : "border-gray-200 bg-white text-gray-600 hover:border-gray-300"
                   }`}
                 >
@@ -209,7 +209,7 @@ export function ProductConfigurator({
                   onClick={() => setSelectedCoating(option)}
                   className={`px-4 py-2.5 text-sm font-medium rounded-xl border transition-all ${
                     selectedCoating.value === option.value
-                      ? "border-[#ff2d78] bg-pink-50 text-gray-900 border-2"
+                      ? "border-[#f7f82d] bg-pink-50 text-gray-900 border-2"
                       : "border-gray-200 bg-white text-gray-600 hover:border-gray-300"
                   }`}
                 >
@@ -262,9 +262,9 @@ export function ProductConfigurator({
         <div className="space-y-3 pt-4">
           <Link
             href={customizeUrl}
-            className="w-full block text-center text-white font-bold py-4 rounded-xl transition-all shadow-lg active:scale-[0.98] hover:opacity-90"
+            className="w-full block text-center text-gray-900 font-bold py-4 rounded-xl transition-all shadow-lg active:scale-[0.98] hover:opacity-90"
             style={{
-              background: "linear-gradient(135deg, #ff2d78, #b020ff, #00e5ff)",
+              background: "#f7f82d",
             }}
           >
             Customize Now
@@ -277,13 +277,13 @@ export function ProductConfigurator({
         {/* Trust Factors */}
         <div className="grid grid-cols-2 gap-4 pt-6 border-t border-gray-100">
           <div className="flex flex-col items-center text-center gap-1">
-            <Zap className="w-5 h-5 text-[#ff2d78]" />
+            <Zap className="w-5 h-5 text-[#f7f82d]" />
             <span className="text-[10px] font-bold uppercase tracking-wider text-gray-400">
               Fast Ship
             </span>
           </div>
           <div className="flex flex-col items-center text-center gap-1">
-            <ShieldCheck className="w-5 h-5 text-[#00e5ff]" />
+            <ShieldCheck className="w-5 h-5 text-[#f7f82d]" />
             <span className="text-[10px] font-bold uppercase tracking-wider text-gray-400">
               Secure
             </span>

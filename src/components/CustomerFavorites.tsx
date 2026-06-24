@@ -1,35 +1,35 @@
-import Image from "next/image";
+﻿import Image from "next/image";
 import Link from "next/link";
 import { Star } from "lucide-react";
 
 const favorites = [
   {
     name: "Retractable Banners",
-    image: "/images/customer-favorites/retractable_banners.jpeg",
+    image: "/images/customer-favorites/retractable_banners-toronto-printing-ca.jpeg",
     href: "/custom-banners/roll-up-banners",
     rating: 5,
   },
   {
     name: "Feather Flags",
-    image: "/images/customer-favorites/Feather_flags.jpeg",
+    image: "/images/customer-favorites/Feather_flags-toronto-printing-ca.jpeg",
     href: "/custom-flags/feather-flags",
     rating: 5,
   },
   {
     name: "Parking Signs",
-    image: "/images/customer-favorites/parking_sign.jpeg",
+    image: "/images/customer-favorites/parking_sign-toronto-printing-ca.jpeg",
     href: "/custom-signs/parking-signs",
     rating: 5,
   },
   {
     name: "Real Estate Panels",
-    image: "/images/customer-favorites/real_estate_signs.jpeg",
+    image: "/images/customer-favorites/real_estate_signs-toronto-printing-ca.jpeg",
     href: "/custom-signs/real-estate-panels",
     rating: 5,
   },
   {
     name: "Car Magnets",
-    image: "/images/customer-favorites/car_magnet.jpeg",
+    image: "/images/customer-favorites/car_magnet-toronto-printing-ca.jpeg",
     href: "/vehicle-signs/magnetic-signs",
     rating: 5,
   },
@@ -41,7 +41,7 @@ function StarRating({ rating }: { rating: number }) {
       {[1, 2, 3, 4, 5].map((star) => (
         <Star
           key={star}
-          className={`w-4 h-4 ${star <= rating ? "fill-[#ff2d78] text-[#ff2d78]" : "text-gray-300"}`}
+          className={`w-4 h-4 ${star <= rating ? "fill-[#ca8a04] text-[#ca8a04]" : "text-gray-300"}`}
         />
       ))}
     </div>

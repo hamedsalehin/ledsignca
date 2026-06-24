@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import React, { useState, useEffect, useRef } from "react";
 import Link from "next/link";
@@ -204,7 +204,7 @@ const PRESET_TEMPLATES = [
         shapeType: "rect",
         fillColor: "#0f172a",
         borderWidth: 6,
-        borderColor: "#eab308",
+        borderColor: "#f7f82d",
       },
       {
         id: "h-badge",
@@ -215,7 +215,7 @@ const PRESET_TEMPLATES = [
         height: 12,
         rotation: 0,
         shapeType: "rect",
-        fillColor: "#eab308",
+        fillColor: "#f7f82d",
       },
       {
         id: "h-badge-txt",
@@ -258,7 +258,7 @@ const PRESET_TEMPLATES = [
         content: "FULL-TIME ASSOCIATES",
         fontFamily: "Inter",
         fontSize: 22,
-        color: "#eab308",
+        color: "#f7f82d",
         bold: true,
         align: "center",
       },
@@ -508,7 +508,7 @@ const BUSINESS_CARD_TEMPLATES = [
         height: 50,
         rotation: 0,
         shapeType: "circle",
-        fillColor: "#ff2d78",
+        fillColor: "#f7f82d",
       },
       {
         id: "bc-c-name",
@@ -536,7 +536,7 @@ const BUSINESS_CARD_TEMPLATES = [
         content: "Creative Director",
         fontFamily: "Inter",
         fontSize: 16,
-        color: "#00e5ff",
+        color: "#f7f82d",
         italic: true,
         align: "left",
       },
@@ -602,7 +602,7 @@ const TSHIRT_TEMPLATES = [
         content: "STAFF",
         fontFamily: "Montserrat",
         fontSize: 60,
-        color: "#ff2d78",
+        color: "#f7f82d",
         bold: true,
         align: "center",
       },
@@ -617,7 +617,7 @@ const TSHIRT_TEMPLATES = [
         content: "How Can I Help You?",
         fontFamily: "Inter",
         fontSize: 20,
-        color: "#00e5ff",
+        color: "#f7f82d",
         bold: true,
         align: "center",
       },
@@ -638,7 +638,7 @@ const TSHIRT_TEMPLATES = [
         shapeType: "rect",
         fillColor: "#0f172a",
         borderWidth: 2,
-        borderColor: "#00e5ff",
+        borderColor: "#f7f82d",
       },
       {
         id: "ts-ev-year",
@@ -681,7 +681,7 @@ const TSHIRT_TEMPLATES = [
         content: "ANNUAL SUMMIT",
         fontFamily: "Montserrat",
         fontSize: 22,
-        color: "#00e5ff",
+        color: "#f7f82d",
         bold: true,
         align: "center",
       },
@@ -720,7 +720,7 @@ const MUG_TEMPLATES = [
         content: "Nano Prints Family",
         fontFamily: "Montserrat",
         fontSize: 16,
-        color: "#ff2d78",
+        color: "#f7f82d",
         bold: true,
         align: "center",
       },
@@ -741,7 +741,7 @@ const MUG_TEMPLATES = [
         shapeType: "circle",
         fillColor: "#1e3a8a",
         borderWidth: 2,
-        borderColor: "#00e5ff",
+        borderColor: "#f7f82d",
       },
       {
         id: "mug-c-title",
@@ -979,7 +979,7 @@ const KEYCHAIN_TEMPLATES = [
         height: 50,
         rotation: 0,
         shapeType: "circle",
-        fillColor: "#ff2d78",
+        fillColor: "#f7f82d",
       },
       {
         id: "kc-text",
@@ -1097,7 +1097,7 @@ const POSTCARD_TEMPLATES = [
         shapeType: "rect",
         fillColor: "#0f172a",
         borderWidth: 4,
-        borderColor: "#ff2d78",
+        borderColor: "#f7f82d",
       },
       {
         id: "pc-tag",
@@ -1110,7 +1110,7 @@ const POSTCARD_TEMPLATES = [
         content: "EXCLUSIVE INVITATION",
         fontFamily: "Inter",
         fontSize: 14,
-        color: "#ff2d78",
+        color: "#f7f82d",
         bold: true,
         align: "center",
       },
@@ -1154,7 +1154,7 @@ const POSTCARD_TEMPLATES = [
         content: "VIP25OFF",
         fontFamily: "Courier New",
         fontSize: 24,
-        color: "#00e5ff",
+        color: "#f7f82d",
         bold: true,
         align: "center",
       },
@@ -1192,7 +1192,7 @@ const FLYER_TEMPLATES = [
         shapeType: "rect",
         fillColor: "#020617",
         borderWidth: 2,
-        borderColor: "#00e5ff",
+        borderColor: "#f7f82d",
       },
       {
         id: "fl-date",
@@ -1205,7 +1205,7 @@ const FLYER_TEMPLATES = [
         content: "OCTOBER 15-16, 2026",
         fontFamily: "Montserrat",
         fontSize: 16,
-        color: "#00e5ff",
+        color: "#f7f82d",
         bold: true,
         align: "center",
       },
@@ -1233,7 +1233,7 @@ const FLYER_TEMPLATES = [
         height: 1,
         rotation: 0,
         shapeType: "line",
-        fillColor: "#00e5ff",
+        fillColor: "#f7f82d",
       },
       {
         id: "fl-loc",
@@ -1243,7 +1243,7 @@ const FLYER_TEMPLATES = [
         width: 80,
         height: 8,
         rotation: 0,
-        content: "Fort Lauderdale Convention Center",
+        content: "Toronto Convention Centre",
         fontFamily: "Inter",
         fontSize: 14,
         color: "#cbd5e1",
@@ -1251,7 +1251,7 @@ const FLYER_TEMPLATES = [
         align: "center",
       },
       {
-        id: "fl-register",
+        id: "to-register",
         type: "text",
         x: 10,
         y: 72,
@@ -1414,7 +1414,7 @@ const ROLLUP_TEMPLATES = [
         shapeType: "rect",
         fillColor: "#0f172a",
         borderWidth: 4,
-        borderColor: "#eab308",
+        borderColor: "#f7f82d",
       },
       {
         id: "ru-logo-bg",
@@ -1425,7 +1425,7 @@ const ROLLUP_TEMPLATES = [
         height: 10,
         rotation: 0,
         shapeType: "circle",
-        fillColor: "#eab308",
+        fillColor: "#f7f82d",
       },
       {
         id: "ru-title",
@@ -1438,7 +1438,7 @@ const ROLLUP_TEMPLATES = [
         content: "WELCOME",
         fontFamily: "Montserrat",
         fontSize: 48,
-        color: "#eab308",
+        color: "#f7f82d",
         bold: true,
         align: "center",
       },
@@ -1465,7 +1465,7 @@ const ROLLUP_TEMPLATES = [
         height: 1,
         rotation: 0,
         shapeType: "line",
-        fillColor: "#eab308",
+        fillColor: "#f7f82d",
       },
       {
         id: "ru-date",
@@ -2056,7 +2056,7 @@ function TemplatePreview({
                       >
                         <polygon
                           points="50,2 64,36 100,36 71,57 81,95 50,72 19,95 29,57 0,36 36,36"
-                          fill={el.fillColor || "#eab308"}
+                          fill={el.fillColor || "#f7f82d"}
                           stroke={el.borderColor || "#000"}
                           strokeWidth={el.borderWidth ? el.borderWidth * 2 : 0}
                         />
@@ -2082,7 +2082,7 @@ function TemplatePreview({
 
                 {el.type === "image" && el.imageUrl && (
                   <div className="w-full h-full relative p-0">
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    
                     <img
                       src={el.imageUrl}
                       alt="Template image preview"
@@ -2733,7 +2733,7 @@ function DesignPageContent() {
         // 1. Upload pre-existing custom artwork file
         const fileBuffer = await finishedDesignFile.arrayBuffer();
         const fileBytes = new Uint8Array(fileBuffer);
-        const safeFileName = `${user.id}/${Date.now()}-${finishedDesignFile.name.replace(/[^a-zA-Z0-9._-]/g, "_")}`;
+        const safeFileName = `${user.id}/${Date.now()}-CAD {finishedDesignFile.name.replace(/[^a-zA-Z0-9._-]/g, "_")}`;
 
         const { data: uploadData, error: uploadError } = await supabase.storage
           .from("designs")
@@ -2871,7 +2871,7 @@ function DesignPageContent() {
       width: 30,
       height: 30,
       rotation: 0,
-      fillColor: shapeType === "star" ? "#eab308" : "#3b82f6",
+      fillColor: shapeType === "star" ? "#f7f82d" : "#3b82f6",
       borderWidth: 0,
       borderColor: "#000000",
     };
@@ -3200,7 +3200,7 @@ function DesignPageContent() {
           </Link>
           <div className="h-4 w-px bg-slate-800" />
           <div className="flex items-center gap-2">
-            <span className="text-[#ff2d78] font-extrabold font-poppins text-lg tracking-wider">
+            <span className="text-[#f7f82d] font-extrabold font-poppins text-lg tracking-wider">
               NANO
             </span>
             <span className="font-semibold text-slate-200 text-sm bg-slate-800 px-2 py-0.5 rounded uppercase tracking-wide">
@@ -3232,14 +3232,14 @@ function DesignPageContent() {
 
           <button
             onClick={() => setShowGrid(!showGrid)}
-            className={`p-2 rounded-lg transition-colors ${showGrid ? "bg-[#ff2d78] text-slate-950 font-bold" : "text-slate-350 hover:bg-slate-800"}`}
+            className={`p-2 rounded-lg transition-colors ${showGrid ? "bg-[#f7f82d] text-slate-950 font-bold" : "text-slate-350 hover:bg-slate-800"}`}
             title="Toggle Grid"
           >
             <Grid className="w-4 h-4" />
           </button>
           <button
             onClick={() => setSnapToGrid(!snapToGrid)}
-            className={`p-2 rounded-lg transition-all text-xs font-bold ${snapToGrid ? "bg-slate-800 text-[#ff2d78] border border-[#ff2d78]/40" : "text-slate-400 hover:bg-slate-800 border border-transparent"}`}
+            className={`p-2 rounded-lg transition-all text-xs font-bold ${snapToGrid ? "bg-slate-800 text-[#f7f82d] border border-[#f7f82d]/40" : "text-slate-400 hover:bg-slate-800 border border-transparent"}`}
             title="Snap to Grid (5% increments)"
           >
             Snap
@@ -3288,14 +3288,14 @@ function DesignPageContent() {
         <div className="flex items-center gap-3">
           <div className="text-right hidden md:block">
             <span className="text-xs text-slate-400">Estimated Total:</span>
-            <div className="text-base font-bold text-[#ff2d78]">
+            <div className="text-base font-bold text-[#f7f82d]">
               ${calculatedPrice.total}
             </div>
           </div>
           <button
             onClick={handleAddToCart}
             disabled={isSubmitting}
-            className="bg-[#ff2d78] hover:opacity-90 text-slate-950 font-bold px-6 py-2.5 rounded-xl shadow-lg hover:shadow-pink-500/20 flex items-center gap-2 transition-all active:scale-[0.98] disabled:opacity-50 disabled:cursor-not-allowed"
+            className="bg-[#f7f82d] hover:opacity-90 text-slate-950 font-bold px-6 py-2.5 rounded-xl shadow-lg hover:shadow-pink-500/20 flex items-center gap-2 transition-all active:scale-[0.98] disabled:opacity-50 disabled:cursor-not-allowed"
           >
             {isSubmitting ? (
               <>
@@ -3342,7 +3342,7 @@ function DesignPageContent() {
                   onClick={() => setActiveTab(tab)}
                   className={`py-3 flex flex-col items-center justify-center border-b-2 transition-all ${
                     activeTab === tab
-                      ? "border-[#ff2d78] text-[#ff2d78] bg-slate-800/40"
+                      ? "border-[#f7f82d] text-[#f7f82d] bg-slate-800/40"
                       : "border-transparent text-slate-400 hover:text-slate-200 hover:bg-slate-800/20"
                   }`}
                   title={tab.charAt(0).toUpperCase() + tab.slice(1)}
@@ -3368,7 +3368,7 @@ function DesignPageContent() {
                     <button
                       key={tmpl.id}
                       onClick={() => loadTemplate(tmpl)}
-                      className="w-full text-left bg-slate-800/60 hover:bg-slate-750 border border-slate-700/80 hover:border-[#ff2d78]/60 rounded-xl overflow-hidden transition-all group shadow-sm hover:-translate-y-0.5 flex flex-col focus:outline-none focus:ring-2 focus:ring-[#ff2d78]/45"
+                      className="w-full text-left bg-slate-800/60 hover:bg-slate-750 border border-slate-700/80 hover:border-[#f7f82d]/60 rounded-xl overflow-hidden transition-all group shadow-sm hover:-translate-y-0.5 flex flex-col focus:outline-none focus:ring-2 focus:ring-[#f7f82d]/45"
                       title={`Load ${tmpl.name} template`}
                     >
                       <div className="w-full p-1.5 bg-slate-950/40 border-b border-slate-850/40 aspect-[4/3] flex items-center justify-center overflow-hidden">
@@ -3381,7 +3381,7 @@ function DesignPageContent() {
                         />
                       </div>
                       <div className="p-2 w-full flex-grow flex flex-col justify-between bg-slate-900/30">
-                        <div className="font-bold text-slate-200 group-hover:text-[#ff2d78] transition-colors text-[10px] truncate leading-tight">
+                        <div className="font-bold text-slate-200 group-hover:text-yellow-600 transition-colors text-[10px] truncate leading-tight">
                           {tmpl.name}
                         </div>
                         <div className="text-[8px] text-slate-450 mt-1 uppercase tracking-wider font-semibold">
@@ -3405,7 +3405,7 @@ function DesignPageContent() {
                 </p>
                 <button
                   onClick={addTextElement}
-                  className="w-full bg-slate-800 hover:bg-slate-750 border-2 border-dashed border-slate-700 hover:border-[#ff2d78] text-[#ff2d78] font-bold py-3.5 px-4 rounded-xl flex items-center justify-center gap-2 transition-all active:scale-[0.98]"
+                  className="w-full bg-slate-800 hover:bg-slate-750 border-2 border-dashed border-slate-700 hover:border-[#f7f82d] text-[#f7f82d] font-bold py-3.5 px-4 rounded-xl flex items-center justify-center gap-2 transition-all active:scale-[0.98]"
                 >
                   <Type className="w-5 h-5" />
                   Add Custom Text Line
@@ -3472,7 +3472,7 @@ function DesignPageContent() {
                     <button
                       key={sh.type}
                       onClick={() => addShapeElement(sh.type)}
-                      className="bg-slate-800 hover:bg-slate-700/80 border border-slate-700 hover:border-[#ff2d78]/40 rounded-xl p-3 flex flex-col items-center justify-center gap-2 text-slate-200 transition-all hover:scale-[1.02] active:scale-[0.97]"
+                      className="bg-slate-800 hover:bg-slate-700/80 border border-slate-700 hover:border-[#f7f82d]/40 rounded-xl p-3 flex flex-col items-center justify-center gap-2 text-slate-200 transition-all hover:scale-[1.02] active:scale-[0.97]"
                     >
                       {sh.icon}
                       <span className="text-xs font-semibold">{sh.label}</span>
@@ -3500,7 +3500,7 @@ function DesignPageContent() {
                 </h3>
                 <div
                   onClick={() => fileInputRef.current?.click()}
-                  className="border-2 border-dashed border-slate-700 hover:border-[#ff2d78] rounded-xl p-6 text-center cursor-pointer bg-slate-800/40 hover:bg-slate-800/85 transition-all group"
+                  className="border-2 border-dashed border-slate-700 hover:border-[#f7f82d] rounded-xl p-6 text-center cursor-pointer bg-slate-800/40 hover:bg-slate-800/85 transition-all group"
                 >
                   <input
                     ref={fileInputRef}
@@ -3509,7 +3509,7 @@ function DesignPageContent() {
                     onChange={handleImageUpload}
                     className="hidden"
                   />
-                  <ImageIcon className="w-8 h-8 text-slate-500 group-hover:text-[#ff2d78] mx-auto mb-2 transition-colors" />
+                  <ImageIcon className="w-8 h-8 text-slate-500 group-hover:text-yellow-600 mx-auto mb-2 transition-colors" />
                   <span className="block text-sm font-bold text-slate-350 group-hover:text-slate-200">
                     Select Logo or Artwork
                   </span>
@@ -3518,7 +3518,7 @@ function DesignPageContent() {
                   </span>
                 </div>
                 <div className="bg-slate-950/45 p-3 rounded-lg border border-slate-800">
-                  <h4 className="text-[11px] font-bold text-[#ff2d78] flex items-center gap-1 mb-1">
+                  <h4 className="text-[11px] font-bold text-[#f7f82d] flex items-center gap-1 mb-1">
                     <ShieldCheck className="w-3.5 h-3.5" /> High-Resolution
                     Printing
                   </h4>
@@ -3548,7 +3548,7 @@ function DesignPageContent() {
                         }}
                         className={`w-full aspect-square rounded-lg border border-slate-700 relative flex items-center justify-center transition-transform hover:scale-105 ${
                           bgColor === c.value && !bgGradient
-                            ? "ring-2 ring-[#ff2d78]"
+                            ? "ring-2 ring-[#f7f82d]"
                             : ""
                         }`}
                         style={{ backgroundColor: c.value }}
@@ -3578,7 +3578,7 @@ function DesignPageContent() {
                         }}
                         className={`h-10 rounded-lg border border-slate-700 relative text-left p-2 flex items-center justify-between transition-all hover:border-slate-500 overflow-hidden ${
                           bgGradient === g.value
-                            ? "ring-2 ring-[#ff2d78] font-bold"
+                            ? "ring-2 ring-[#f7f82d] font-bold"
                             : ""
                         }`}
                         style={{ background: g.value || "rgb(30, 41, 59)" }}
@@ -3607,7 +3607,7 @@ function DesignPageContent() {
                   onClick={() => handleSwitchSide("front")}
                   className={`px-4 py-2 text-xs font-bold rounded-lg transition-all ${
                     activeSide === "front"
-                      ? "bg-[#ff2d78] text-slate-950 shadow"
+                      ? "bg-[#f7f82d] text-slate-950 shadow"
                       : "text-slate-400 hover:text-white hover:bg-slate-800"
                   }`}
                 >
@@ -3617,7 +3617,7 @@ function DesignPageContent() {
                   onClick={() => handleSwitchSide("back")}
                   className={`px-4 py-2 text-xs font-bold rounded-lg transition-all ${
                     activeSide === "back"
-                      ? "bg-[#ff2d78] text-slate-950 shadow"
+                      ? "bg-[#f7f82d] text-slate-950 shadow"
                       : "text-slate-400 hover:text-white hover:bg-slate-800"
                   }`}
                 >
@@ -3666,7 +3666,7 @@ function DesignPageContent() {
             {selectedEl ? (
               <div className="space-y-4">
                 <div className="flex items-center justify-between">
-                  <span className="text-xs font-bold text-[#ff2d78] uppercase tracking-wider flex items-center gap-1.5">
+                  <span className="text-xs font-bold text-[#f7f82d] uppercase tracking-wider flex items-center gap-1.5">
                     <Sparkles className="w-3.5 h-3.5" />
                     Modify {selectedEl.type}
                   </span>
@@ -3720,7 +3720,7 @@ function DesignPageContent() {
                           updateSelectedElement({ content: e.target.value })
                         }
                         onBlur={commitPropertyChange}
-                        className="w-full bg-slate-800 border border-slate-700 rounded-lg p-2 text-sm text-slate-100 focus:outline-none focus:ring-2 focus:ring-[#ff2d78]"
+                        className="w-full bg-slate-800 border border-slate-700 rounded-lg p-2 text-sm text-slate-100 focus:outline-none focus:ring-2 focus:ring-[#f7f82d]"
                         rows={3}
                       />
                     </div>
@@ -3739,7 +3739,7 @@ function DesignPageContent() {
                             });
                             commitPropertyChange();
                           }}
-                          className="w-full bg-slate-800 border border-slate-700 rounded-lg p-2 text-xs text-slate-100 focus:outline-none focus:ring-2 focus:ring-[#ff2d78]"
+                          className="w-full bg-slate-800 border border-slate-700 rounded-lg p-2 text-xs text-slate-100 focus:outline-none focus:ring-2 focus:ring-[#f7f82d]"
                         >
                           {FONTS.map((font) => (
                             <option key={font} value={font} className="bg-slate-900 text-white">
@@ -3764,7 +3764,7 @@ function DesignPageContent() {
                             })
                           }
                           onBlur={commitPropertyChange}
-                          className="w-full bg-slate-800 border border-slate-700 rounded-lg p-2 text-xs text-slate-100 focus:outline-none focus:ring-2 focus:ring-[#ff2d78]"
+                          className="w-full bg-slate-800 border border-slate-700 rounded-lg p-2 text-xs text-slate-100 focus:outline-none focus:ring-2 focus:ring-[#f7f82d]"
                         />
                       </div>
                     </div>
@@ -3782,7 +3782,7 @@ function DesignPageContent() {
                           }}
                           className={`flex-1 py-1.5 text-xs font-bold rounded-lg border transition-all ${
                             selectedEl.bold
-                              ? "bg-[#ff2d78] border-[#ff2d78] text-slate-950"
+                              ? "bg-[#f7f82d] border-[#f7f82d] text-slate-950"
                               : "bg-slate-800 border-slate-700 text-slate-350 hover:bg-slate-800"
                           }`}
                         >
@@ -3797,7 +3797,7 @@ function DesignPageContent() {
                           }}
                           className={`flex-1 py-1.5 text-xs italic rounded-lg border transition-all ${
                             selectedEl.italic
-                              ? "bg-[#ff2d78] border-[#ff2d78] text-slate-950"
+                              ? "bg-[#f7f82d] border-[#f7f82d] text-slate-950"
                               : "bg-slate-800 border-slate-700 text-slate-350 hover:bg-slate-800"
                           }`}
                         >
@@ -3812,7 +3812,7 @@ function DesignPageContent() {
                           }}
                           className={`flex-1 py-1.5 text-xs underline rounded-lg border transition-all ${
                             selectedEl.underline
-                              ? "bg-[#ff2d78] border-[#ff2d78] text-slate-950"
+                              ? "bg-[#f7f82d] border-[#f7f82d] text-slate-950"
                               : "bg-slate-800 border-slate-700 text-slate-350 hover:bg-slate-800"
                           }`}
                         >
@@ -3836,7 +3836,7 @@ function DesignPageContent() {
                             }}
                             className={`py-1.5 rounded flex items-center justify-center transition-all ${
                               selectedEl.align === al
-                                ? "bg-slate-800 text-[#ff2d78]"
+                                ? "bg-slate-800 text-[#f7f82d]"
                                 : "text-slate-400 hover:text-slate-200"
                             }`}
                           >
@@ -4028,7 +4028,7 @@ function DesignPageContent() {
                         </div>
                       )}
                       {selectedEl.resolutionQuality === "good" && (
-                        <div className="text-[#ff2d78] font-bold flex items-center gap-1">
+                        <div className="text-[#f7f82d] font-bold flex items-center gap-1">
                           <ShieldCheck className="w-3.5 h-3.5" /> Good Quality
                         </div>
                       )}
@@ -4127,7 +4127,7 @@ function DesignPageContent() {
                           });
                         }
                       }}
-                      className="w-full bg-slate-800 border border-slate-700 rounded-lg p-2.5 text-xs text-slate-100 focus:outline-none focus:ring-2 focus:ring-[#ff2d78] font-semibold"
+                      className="w-full bg-slate-800 border border-slate-700 rounded-lg p-2.5 text-xs text-slate-100 focus:outline-none focus:ring-2 focus:ring-[#f7f82d] font-semibold"
                     >
                       {registryProduct.config.sizes.map((sz) => (
                         <option key={sz.value} value={sz.label} className="bg-slate-900 text-white">
@@ -4155,7 +4155,7 @@ function DesignPageContent() {
                           );
                           if (found) setCanvasSize(found);
                         }}
-                        className="w-full bg-slate-800 border border-slate-700 rounded-lg p-2.5 text-xs text-slate-100 focus:outline-none focus:ring-2 focus:ring-[#ff2d78]"
+                        className="w-full bg-slate-800 border border-slate-700 rounded-lg p-2.5 text-xs text-slate-100 focus:outline-none focus:ring-2 focus:ring-[#f7f82d]"
                       >
                         {BOARD_SIZES.map((sz) => (
                           <option key={sz.label} value={sz.label} className="bg-slate-900 text-white">
@@ -4163,7 +4163,7 @@ function DesignPageContent() {
                             {sz.priceAdder > 0
                               ? `(+${sz.priceAdder.toFixed(2)})`
                               : sz.priceAdder < 0
-                                ? `(-${Math.abs(sz.priceAdder).toFixed(2)})`
+                                ? `(-CAD {Math.abs(sz.priceAdder).toFixed(2)})`
                                 : ""}
                           </option>
                         ))}
@@ -4202,7 +4202,7 @@ function DesignPageContent() {
                               }
                             }
                           }}
-                          className="w-full bg-slate-800 border border-slate-700 rounded-lg p-2.5 text-xs text-slate-100 focus:outline-none focus:ring-2 focus:ring-[#ff2d78] font-semibold"
+                          className="w-full bg-slate-800 border border-slate-700 rounded-lg p-2.5 text-xs text-slate-100 focus:outline-none focus:ring-2 focus:ring-[#f7f82d] font-semibold"
                         >
                           {sel.options.map((o) => (
                             <option key={o.value} value={o.value} className="bg-slate-900 text-white">
@@ -4235,7 +4235,7 @@ function DesignPageContent() {
                         );
                         if (found) setMaterial(found);
                       }}
-                      className="w-full bg-slate-800 border border-slate-700 rounded-lg p-2.5 text-xs text-slate-100 focus:outline-none focus:ring-2 focus:ring-[#ff2d78]"
+                      className="w-full bg-slate-800 border border-slate-700 rounded-lg p-2.5 text-xs text-slate-100 focus:outline-none focus:ring-2 focus:ring-[#f7f82d]"
                     >
                       {availableMaterials.map((m) => (
                         <option key={m.value} value={m.value} className="bg-slate-900 text-white">
@@ -4264,7 +4264,7 @@ function DesignPageContent() {
                     </div>
                     <button
                       onClick={() => setDoubleSided(!doubleSided)}
-                      className={`w-11 h-6 rounded-full relative transition-colors ${doubleSided ? "bg-[#ff2d78]" : "bg-slate-700"}`}
+                      className={`w-11 h-6 rounded-full relative transition-colors ${doubleSided ? "bg-[#f7f82d]" : "bg-slate-700"}`}
                     >
                       <div
                         className={`w-4 h-4 bg-slate-950 rounded-full absolute top-1 transition-transform ${doubleSided ? "left-6" : "left-1"}`}
@@ -4334,14 +4334,14 @@ function DesignPageContent() {
               <div className="bg-slate-950/60 rounded-xl border border-slate-800 p-4 space-y-2">
                 <div className="flex justify-between text-xs text-slate-400">
                   <span>Unit Cost:</span>
-                  <span>${calculatedPrice.unitPrice} each</span>
+                  <span>CAD {calculatedPrice.unitPrice} each</span>
                 </div>
                 <div className="h-px bg-slate-800 my-1" />
                 <div className="flex justify-between items-baseline">
                   <span className="text-xs font-bold text-slate-350">
                     Final Subtotal:
                   </span>
-                  <span className="text-xl font-bold text-[#ff2d78]">
+                  <span className="text-xl font-bold text-[#f7f82d]">
                     ${calculatedPrice.total}
                   </span>
                 </div>
@@ -4351,7 +4351,7 @@ function DesignPageContent() {
               <button
                 onClick={handleAddToCart}
                 disabled={isSubmitting}
-                className="w-full bg-[#ff2d78] hover:opacity-90 text-slate-950 font-bold py-3.5 rounded-xl text-xs uppercase tracking-wider flex items-center justify-center gap-2 transition-all active:scale-[0.98] shadow-lg hover:shadow-pink-500/10 mb-2.5 disabled:opacity-50 disabled:cursor-not-allowed"
+                className="w-full bg-[#f7f82d] hover:opacity-90 text-slate-950 font-bold py-3.5 rounded-xl text-xs uppercase tracking-wider flex items-center justify-center gap-2 transition-all active:scale-[0.98] shadow-lg hover:shadow-pink-500/10 mb-2.5 disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 {isSubmitting ? (
                   <>
@@ -4416,7 +4416,7 @@ function DesignPageContent() {
                           onClick={() => setModalPreviewSide("front")}
                           className={`px-2 py-1 text-[10px] font-bold rounded ${
                             modalPreviewSide === "front"
-                              ? "bg-[#ff2d78] text-slate-950"
+                              ? "bg-[#f7f82d] text-slate-950"
                               : "text-slate-400 hover:text-white"
                           }`}
                         >
@@ -4426,7 +4426,7 @@ function DesignPageContent() {
                           onClick={() => setModalPreviewSide("back")}
                           className={`px-2 py-1 text-[10px] font-bold rounded ${
                             modalPreviewSide === "back"
-                              ? "bg-[#ff2d78] text-slate-950"
+                              ? "bg-[#f7f82d] text-slate-950"
                               : "text-slate-400 hover:text-white"
                           }`}
                         >
@@ -4503,7 +4503,7 @@ function DesignPageContent() {
                         )}
                         {el.type === "image" && el.imageUrl && (
                           <div className="w-full h-full p-0.5 flex items-center justify-center">
-                            {/* eslint-disable-next-line @next/next/no-img-element */}
+                            
                             <img
                               src={el.imageUrl}
                               alt="preview"
@@ -4583,7 +4583,7 @@ function DesignPageContent() {
                   <div className="pt-2">
                     <div className="flex justify-between text-sm mb-1.5">
                       <span className="text-slate-400">Total Price:</span>
-                      <span className="font-bold text-[#ff2d78]">
+                      <span className="font-bold text-[#f7f82d]">
                         ${calculatedPrice.total}
                       </span>
                     </div>
@@ -4606,7 +4606,7 @@ function DesignPageContent() {
                     <button
                       onClick={handleAddDesignToCartAndCheckout}
                       disabled={isSubmitting || !user}
-                      className="w-full bg-[#ff2d78] hover:opacity-90 disabled:opacity-50 disabled:cursor-not-allowed text-slate-950 font-bold py-3.5 rounded-xl text-xs uppercase tracking-wide transition-all shadow-md flex items-center justify-center gap-2"
+                      className="w-full bg-[#f7f82d] hover:opacity-90 disabled:opacity-50 disabled:cursor-not-allowed text-slate-950 font-bold py-3.5 rounded-xl text-xs uppercase tracking-wide transition-all shadow-md flex items-center justify-center gap-2"
                     >
                       {isSubmitting ? (
                         <>
@@ -4736,7 +4736,7 @@ function DesignPageContent() {
                       >
                         <polygon
                           points="50,2 64,36 100,36 71,57 81,95 50,72 19,95 29,57 0,36 36,36"
-                          fill={el.fillColor || "#eab308"}
+                          fill={el.fillColor || "#f7f82d"}
                           stroke={el.borderColor || "#000"}
                           strokeWidth={el.borderWidth ? el.borderWidth * 2 : 0}
                         />
@@ -4769,7 +4769,7 @@ function DesignPageContent() {
 
                 {el.type === "image" && el.imageUrl && (
                   <div className="w-full h-full relative flex items-center justify-center p-0.5">
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    
                     <img
                       src={el.imageUrl}
                       alt="Uploaded element"
@@ -4886,7 +4886,7 @@ function DesignPageContent() {
                       >
                         <polygon
                           points="50,2 64,36 100,36 71,57 81,95 50,72 19,95 29,57 0,36 36,36"
-                          fill={el.fillColor || "#eab308"}
+                          fill={el.fillColor || "#f7f82d"}
                           stroke={el.borderColor || "#000"}
                           strokeWidth={el.borderWidth ? el.borderWidth * 2 : 0}
                         />
@@ -4919,7 +4919,7 @@ function DesignPageContent() {
 
                 {el.type === "image" && el.imageUrl && (
                   <div className="w-full h-full relative flex items-center justify-center p-0.5">
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    
                     <img
                       src={el.imageUrl}
                       alt="Uploaded element"

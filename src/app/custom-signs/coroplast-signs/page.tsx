@@ -22,11 +22,11 @@ export default function CoroplastSignsPage() {
         breadcrumbHref: "/custom-signs",
         promoText:
           "💧 Waterproof Coroplast Signs — Weatherproof & Budget-Friendly. Ships Tomorrow!",
-        image: "/images/products/main%20page/coroplast_sign.png",
+        image: "/images/products/main%20page/coroplast_sign-toronto-printing-ca.png",
         images: [
-          "/images/products/main%20page/coroplast_sign.png",
-          "/images/products/coro_sign_hover.png",
-          "/images/products/yard_sign_hover.png",
+          "/images/products/main%20page/coroplast_sign-toronto-printing-ca.png",
+          "/images/products/coro_sign_hover-toronto-printing-ca.png",
+          "/images/products/yard_sign_hover-toronto-printing-ca.png",
         ],
         ratingScore: "4.8",
         ratingCount: "5,620",

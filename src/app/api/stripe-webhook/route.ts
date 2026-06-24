@@ -78,9 +78,9 @@ export async function POST(req: NextRequest) {
               custom_options: {
                 ...existingOptions,
                 "Stripe Payment ID": paymentIntent.id,
-                "Shipping Cost": `$${metadata.shippingCost || "0.00"}`,
-                "Tax Paid": `$${metadata.taxAmount || "0.00"}`,
-                "Discount Applied": `$${metadata.discountAmount || "0.00"}`,
+                "Shipping Cost": `CAD ${metadata.shippingCost || "0.00"}`,
+                "Tax Paid": `CAD ${metadata.taxAmount || "0.00"}`,
+                "Discount Applied": `CAD ${metadata.discountAmount || "0.00"}`,
                 "Shipping Method": metadata.shippingRateId || "Standard",
               }
             })

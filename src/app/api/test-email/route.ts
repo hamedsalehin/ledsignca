@@ -51,9 +51,9 @@ export async function GET(req: NextRequest) {
           <p>This email was triggered by visiting the diagnostic endpoint on your live website.</p>
           <h3>Configuration details:</h3>
           <ul>
-            <li><strong>Resend API Key:</strong> <code>${resendApiKeyMasked}</code></li>
-            <li><strong>Admin Email:</strong> <code>${adminEmail}</code></li>
-            <li><strong>From Address:</strong> <code>${FROM}</code></li>
+            <li><strong>Resend API Key:</strong> <code>CAD {resendApiKeyMasked}</code></li>
+            <li><strong>Admin Email:</strong> <code>CAD {adminEmail}</code></li>
+            <li><strong>From Address:</strong> <code>CAD {FROM}</code></li>
           </ul>
           <p>If you received this, Resend email dispatch on your host is configured and working perfectly!</p>
         </div>
