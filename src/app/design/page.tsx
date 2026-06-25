@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import React, { useState, useEffect, useRef } from "react";
 import Link from "next/link";
@@ -2461,7 +2461,7 @@ function DesignPageContent() {
         const defaultSize = registryProduct.config.sizes[0];
         let initialSize = defaultSize;
         if (urlWidth && urlHeight) {
-          const matched = registryProduct.config.sizes.find(s => {
+          const matched = registryProduct.config.sizes.find((s: any) => {
             const parts = s.value.split('x');
             return parts.includes(urlWidth) && parts.includes(urlHeight);
           });
