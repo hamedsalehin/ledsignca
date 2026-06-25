@@ -10,9 +10,11 @@
     "format": "bunx biome format --write"
   },
   "dependencies": {
+    "@ai-sdk/openai": "^4.0.0",
     "@stripe/react-stripe-js": "^6.6.0",
     "@stripe/stripe-js": "^9.8.0",
     "@supabase/supabase-js": "^2.108.0",
+    "ai": "^7.0.0",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "gray-matter": "^4.0.3",

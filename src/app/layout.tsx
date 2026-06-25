@@ -3,6 +3,7 @@ import { Open_Sans, Poppins } from "next/font/google";
 import "./globals.css";
 import { ClientBody } from "./ClientBody";
 import Script from "next/script";
+import { Chatbot } from "@/components/Chatbot";
 
 const openSans = Open_Sans({
   subsets: ["latin"],
@@ -29,10 +30,36 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://led-sign.ca"),
   title: "Premium Custom Signage, Led signs & Banners Toronto, ON | Nano Signs",
   description:
-    "Design and order custom signs, LED signs, retractable banners, business cards and all other marketing materials online or in person. Fastest turnaround times in Toronto.",
+    "Design and order custom signs, LED signs, retractable banners, business cards and all other marketing materials online or in person. Fastest turnaround times in the Greater Toronto Area.",
+  keywords: [
+    "led signs toronto",
+    "custom signs toronto",
+    "business signs toronto",
+    "neon signs toronto",
+    "channel letters toronto",
+    "pylon signs toronto",
+    "banners toronto",
+    "print shop toronto"
+  ],
   icons: {
     icon: "/images/nano logo O-toronto-printing-ca.png",
     apple: "/images/nano logo O-toronto-printing-ca.png",
+  },
+  openGraph: {
+    title: "Nano Signs",
+    description: "Premium custom signage and print in Toronto",
+    url: "https://led-sign.ca",
+    siteName: "Nano Signs",
+    images: [
+      {
+        url: "/images/nano logo O-toronto-printing-ca.png",
+        width: 1200,
+        height: 630,
+        alt: "Nano Signs Logo",
+      },
+    ],
+    locale: "en_CA",
+    type: "website",
   },
   alternates: {
     canonical: "/",
@@ -99,7 +126,7 @@ export default function RootLayout({
           }}
         />
       </head>
-      <ClientBody>{children}</ClientBody>
+      <ClientBody>\n        {children}\n        <Chatbot />\n      </ClientBody>
     </html>
   );
 }
