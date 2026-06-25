@@ -1,6 +1,7 @@
 import { GoogleGenerativeAI } from "@google/generative-ai";
 import { GoogleGenerativeAIStream, StreamingTextResponse } from "ai";
 
+// Trigger rebuild to apply new GEMINI_API_KEY environment variable
 // Allow streaming responses up to 30 seconds - fallback enabled
 export const maxDuration = 30;
 
