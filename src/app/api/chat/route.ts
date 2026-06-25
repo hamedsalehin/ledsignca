@@ -56,8 +56,9 @@ export async function POST(req: Request) {
     
     // Respond with the stream
     return new StreamingTextResponse(stream);
-  } catch (error) {
+  } catch (error: any) {
     console.error("Chat API Error:", error);
-    return new Response("An error occurred. Make sure your GEMINI_API_KEY is set in Vercel.", { status: 500 });
+    const errorMessage = error?.message || String(error);
+    return new Response(`Chat API Error: ${errorMessage}. Make sure your GEMINI_API_KEY is set correctly in Vercel.`, { status: 500 });
   }
 }
