@@ -3,6 +3,7 @@
 import { useState, useMemo, useEffect, ReactNode } from "react";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { ContactSection } from "@/components/contact-section";
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -783,29 +784,31 @@ export function SignProductPage({ cfg }: { cfg: ProductPageConfig }) {
           <div className="w-full lg:w-[420px] shrink-0 font-opensans">
             <div className="bg-white rounded-2xl border border-gray-200 shadow-md p-6 sticky top-6">
               {/* Price */}
-              <div className="pb-5 border-b mb-5">
-                <div className="flex items-end gap-2.5 mb-1.5">
-                  <span className="text-4xl font-extrabold text-gray-900 font-poppins">
-                    CAD {totalPrice}
-                  </span>
-                  <span className="text-lg text-gray-400 line-through font-semibold mb-0.5">
-                    CAD {originalTotalPrice}
-                  </span>
-                  <span className="text-red-500 font-extrabold text-sm mb-1 bg-red-50 px-2 py-0.5 rounded-full">
-                    25% OFF
-                  </span>
-                </div>
-                <div className="flex justify-between text-sm">
-                  <span className="text-gray-500 font-semibold">
-                    CAD {unitPrice.toFixed(2)} each
-                  </span>
-                  {isBulkDiscountApplied && (
-                    <span className="text-green-600 font-extrabold">
-                      Bulk Discount Applied!
+              {cfg.breadcrumb !== "LED Display Signs" && (
+                <div className="pb-5 border-b mb-5">
+                  <div className="flex items-end gap-2.5 mb-1.5">
+                    <span className="text-4xl font-extrabold text-gray-900 font-poppins">
+                      CAD {totalPrice}
                     </span>
-                  )}
+                    <span className="text-lg text-gray-400 line-through font-semibold mb-0.5">
+                      CAD {originalTotalPrice}
+                    </span>
+                    <span className="text-red-500 font-extrabold text-sm mb-1 bg-red-50 px-2 py-0.5 rounded-full">
+                      25% OFF
+                    </span>
+                  </div>
+                  <div className="flex justify-between text-sm">
+                    <span className="text-gray-500 font-semibold">
+                      CAD {unitPrice.toFixed(2)} each
+                    </span>
+                    {isBulkDiscountApplied && (
+                      <span className="text-green-600 font-extrabold">
+                        Bulk Discount Applied!
+                      </span>
+                    )}
+                  </div>
                 </div>
-              </div>
+              )}
 
               <div className="space-y-5">
                 {/* Size */}
@@ -997,83 +1000,95 @@ export function SignProductPage({ cfg }: { cfg: ProductPageConfig }) {
 
               <div className="space-y-3 mt-4">
                 {/* Upload Finished Design Button */}
-                <div className="relative">
-                  <input
-                    type="file"
-                    accept=".pdf,.png,.jpg,.jpeg"
-                    onChange={handlePdfUpload}
-                    onClick={(e) => {
-                      if (!user) {
-                        e.preventDefault();
-                        setPdfError("Please sign in or create an account to upload your design.");
-                        setShowAuthModal(true);
-                      }
-                    }}
-                    id="pdf-upload-input"
-                    className="hidden"
-                    disabled={pdfUploading}
-                  />
-                  {pdfUrl ? (
-                    <div className="bg-green-50 border border-green-200 rounded-xl p-3.5 flex items-center justify-between text-xs text-green-800 font-semibold animate-in fade-in duration-300">
-                      <div className="flex items-center gap-2 min-w-0">
-                        <CheckCircle2 className="w-4 h-4 text-green-600 shrink-0" />
-                        <span
-                          className="truncate block max-w-[220px]"
-                          title={pdfName || "Finished Design.pdf"}
-                        >
-                          {pdfName || "Finished Design.pdf"}
-                        </span>
-                      </div>
-                      <button
-                        type="button"
-                        onClick={handleRemovePdf}
-                        className="text-red-500 hover:text-red-700 underline font-bold shrink-0 ml-2 cursor-pointer"
-                      >
-                        Remove
-                      </button>
-                    </div>
-                  ) : (
-                    <label
-                      htmlFor="pdf-upload-input"
-                      className="w-full cursor-pointer flex items-center justify-center gap-2 border-2 border-dashed border-pink-200 hover:border-[#ca8a04] text-gray-800 bg-pink-50/10 hover:bg-pink-50/30 active:scale-[0.98] font-bold py-3.5 rounded-xl transition-all text-xs uppercase tracking-wider font-poppins text-center"
-                    >
-                      {pdfUploading ? (
-                        <>
-                          <Loader2 className="w-4 h-4 animate-spin text-[#ca8a04]" />
-                          Uploading file...
-                        </>
+                {!(cfg.breadcrumb === "Neon Signs" || cfg.breadcrumb === "LED Display Signs") && (
+                  <>
+                    <div className="relative">
+                      <input
+                        type="file"
+                        accept=".pdf,.png,.jpg,.jpeg"
+                        onChange={handlePdfUpload}
+                        onClick={(e) => {
+                          if (!user) {
+                            e.preventDefault();
+                            setPdfError("Please sign in or create an account to upload your design.");
+                            setShowAuthModal(true);
+                          }
+                        }}
+                        id="pdf-upload-input"
+                        className="hidden"
+                        disabled={pdfUploading}
+                      />
+                      {pdfUrl ? (
+                        <div className="bg-green-50 border border-green-200 rounded-xl p-3.5 flex items-center justify-between text-xs text-green-800 font-semibold animate-in fade-in duration-300">
+                          <div className="flex items-center gap-2 min-w-0">
+                            <CheckCircle2 className="w-4 h-4 text-green-600 shrink-0" />
+                            <span
+                              className="truncate block max-w-[220px]"
+                              title={pdfName || "Finished Design.pdf"}
+                            >
+                              {pdfName || "Finished Design.pdf"}
+                            </span>
+                          </div>
+                          <button
+                            type="button"
+                            onClick={handleRemovePdf}
+                            className="text-red-500 hover:text-red-700 underline font-bold shrink-0 ml-2 cursor-pointer"
+                          >
+                            Remove
+                          </button>
+                        </div>
                       ) : (
-                        <>
-                          <UploadCloud className="w-4 h-4 text-[#ca8a04]" />
-                          Upload Your Own Finished Design (PDF, PNG, JPG)
-                        </>
+                        <label
+                          htmlFor="pdf-upload-input"
+                          className="w-full cursor-pointer flex items-center justify-center gap-2 border-2 border-dashed border-pink-200 hover:border-[#ca8a04] text-gray-800 bg-pink-50/10 hover:bg-pink-50/30 active:scale-[0.98] font-bold py-3.5 rounded-xl transition-all text-xs uppercase tracking-wider font-poppins text-center"
+                        >
+                          {pdfUploading ? (
+                            <>
+                              <Loader2 className="w-4 h-4 animate-spin text-[#ca8a04]" />
+                              Uploading file...
+                            </>
+                          ) : (
+                            <>
+                              <UploadCloud className="w-4 h-4 text-[#ca8a04]" />
+                              Upload Your Own Finished Design (PDF, PNG, JPG)
+                            </>
+                          )}
+                        </label>
                       )}
-                    </label>
-                  )}
-                  {pdfError && (
-                    <p className="text-[11px] text-red-500 font-semibold mt-1 animate-in fade-in duration-250">
-                      ⚠️ {pdfError}
-                    </p>
-                  )}
-                </div>
+                      {pdfError && (
+                        <p className="text-[11px] text-red-500 font-semibold mt-1 animate-in fade-in duration-250">
+                          ⚠️ {pdfError}
+                        </p>
+                      )}
+                    </div>
 
-                <Link
-                  href={customizeUrl}
-                  className="w-full block text-center active:scale-[0.98] text-gray-900 font-extrabold py-4 rounded-xl transition-all text-sm uppercase tracking-wider shadow-md font-poppins hover:opacity-90"
-                  style={{
-                    background:
-                      "#f7f82d",
-                    boxShadow: "0 0 20px rgba(255,45,120,0.4)",
-                  }}
-                >
-                  Customize & Upload Artwork
-                </Link>
-                <button
-                  onClick={handleAddToCart}
-                  className="w-full bg-black hover:bg-gray-900 active:scale-[0.98] text-white font-extrabold py-4 rounded-xl transition-all text-sm uppercase tracking-wider shadow-md font-poppins"
-                >
-                  Add to Cart
-                </button>
+                    <Link
+                      href={customizeUrl}
+                      className="w-full block text-center active:scale-[0.98] text-gray-900 font-extrabold py-4 rounded-xl transition-all text-sm uppercase tracking-wider shadow-md font-poppins hover:opacity-90"
+                      style={{
+                        background: "#f7f82d",
+                        boxShadow: "0 0 20px rgba(255,45,120,0.4)",
+                      }}
+                    >
+                      Customize & Upload Artwork
+                    </Link>
+                  </>
+                )}
+                {cfg.breadcrumb === "LED Display Signs" ? (
+                  <Link
+                    href="#configurator"
+                    className="w-full block text-center bg-black hover:bg-gray-900 active:scale-[0.98] text-white font-extrabold py-4 rounded-xl transition-all text-sm uppercase tracking-wider shadow-md font-poppins"
+                  >
+                    Request Quote
+                  </Link>
+                ) : (
+                  <button
+                    onClick={handleAddToCart}
+                    className="w-full bg-black hover:bg-gray-900 active:scale-[0.98] text-white font-extrabold py-4 rounded-xl transition-all text-sm uppercase tracking-wider shadow-md font-poppins"
+                  >
+                    Add to Cart
+                  </button>
+                )}
                 <p className="text-center text-xs text-gray-400 font-semibold pt-1">
                   Free artwork check included with every order
                 </p>
@@ -1083,25 +1098,31 @@ export function SignProductPage({ cfg }: { cfg: ProductPageConfig }) {
         </div>
       </main>
 
-      {/* CTA */}
-      <section className="py-20 bg-black text-white text-center">
-        <div className="max-w-3xl mx-auto px-4">
-          <h2 className="text-4xl font-bold font-poppins mb-4">
-            {cfg.ctaHeading}
-          </h2>
-          <p className="text-gray-400 text-lg mb-8">{cfg.ctaBody}</p>
-          <Link
-            href={customizeUrl}
-            className="inline-block text-gray-900 font-bold px-10 py-4 rounded-full hover:opacity-90 transition-all text-lg font-poppins"
-            style={{
-              background: "#f7f82d",
-              boxShadow: "0 0 24px rgba(255,45,120,0.4)",
-            }}
-          >
-            {cfg.ctaLabel}
-          </Link>
+      {/* CTA / Configurator */}
+      {cfg.breadcrumb === "LED Display Signs" ? (
+        <div id="configurator">
+          <ContactSection />
         </div>
-      </section>
+      ) : (
+        <section className="py-20 bg-black text-white text-center">
+          <div className="max-w-3xl mx-auto px-4">
+            <h2 className="text-4xl font-bold font-poppins mb-4">
+              {cfg.ctaHeading}
+            </h2>
+            <p className="text-gray-400 text-lg mb-8">{cfg.ctaBody}</p>
+            <Link
+              href={customizeUrl}
+              className="inline-block text-gray-900 font-bold px-10 py-4 rounded-full hover:opacity-90 transition-all text-lg font-poppins"
+              style={{
+                background: "#f7f82d",
+                boxShadow: "0 0 24px rgba(255,45,120,0.4)",
+              }}
+            >
+              {cfg.ctaLabel}
+            </Link>
+          </div>
+        </section>
+      )}
 
       <Footer />
 

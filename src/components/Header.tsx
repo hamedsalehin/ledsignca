@@ -31,11 +31,10 @@ const navItems = [
   { name: "Stickers & Decals", href: "/custom-decals" },
   { name: "Marketing Materials", href: "/marketing-materials" },
   { name: "Promotional Products", href: "/promotional-products" },
-  { name: "Neon Signs", href: "https://neonFL.com", isExternal: true },
+  { name: "Neon Signs", href: "/neon-signs" },
   {
-    name: "Programmable LED Signs",
-    href: "https://led-signs.us",
-    isExternal: true,
+    name: "LED Display Signs",
+    href: "/led-display-signs",
   },
 ];
 

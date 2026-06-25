@@ -1,3 +1,4 @@
+import { ledProducts } from "./ledProducts";
 import { ProductPageConfig } from "@/components/SignProductPage";
 
 export interface RegistryProduct {
@@ -8,7 +9,7 @@ export interface RegistryProduct {
   hoverImage?: string;
   price: string;
   badge?: string;
-  config: ProductPageConfig;
+  config?: any;
 }
 
 export interface RegistryCategory {
@@ -29,6 +30,66 @@ export interface RegistryCategory {
 }
 
 export const PRODUCTS_REGISTRY: Record<string, RegistryCategory> = {
+  "neon-signs": {
+    title: "Neon Signs",
+    breadcrumbLabel: "Neon Signs",
+    heroSubtitle: "Vibrant. Custom. Built to Last.",
+    description: "Design premium, bespoke illuminated neon displays for business backdrops, storefronts, and offices.",
+    heroImage: "/images/products/main%20page/neon_sign-toronto-printing-ca.jpeg",
+    tabletHeroImage: "/images/products/main%20page/neon_sign-toronto-printing-ca.jpeg",
+    mobileHeroImage: "/images/products/main%20page/neon_sign-toronto-printing-ca.jpeg",
+    reviewRating: "4.9",
+    reviewCount: "184",
+    reviewQuote: "Absolutely perfect. Bright, flawless, and arrived earlier than expected!",
+    categoryDescriptionText: "Create a vibrant, customized atmosphere for your business storefront, wedding backdrop, home décor, or events.",
+    products: [
+      { id: "good-vibes-only", name: "Good Vibes Only", description: "Inspirational", image: "/images/products/neon-signs/nano-signs-good-vibes-neon-canada.png", price: "$169.00", badge: "Popular" },
+      { id: "lets-party", name: "Let's Party", description: "Bar & Party", image: "/images/products/neon-signs/nano-signs-lets-party-neon-canada.png", price: "$189.00", badge: "Popular" },
+      { id: "game-on", name: "Game On", description: "Gaming", image: "/images/products/neon-signs/nano-signs-game-controller-neon-canada.png", price: "$159.00", badge: "Popular" },
+      { id: "dream-big", name: "Dream Big", description: "Inspirational", image: "/images/products/neon-signs/nano-signs-dream-big-neon-canada.png", price: "$149.00", badge: "Popular" },
+      { id: "bar-open", name: "Bar Open", description: "Bar & Party", image: "/images/products/neon-signs/nano-signs-bar-neon-canada.png", price: "$179.00", badge: "Popular" },
+      { id: "hustle", name: "Hustle", description: "Inspirational", image: "/images/products/neon-signs/nano-signs-hustle-neon-canada.png", price: "$139.00", badge: "Popular" },
+      { id: "open-24-7", name: "Open 24/7", description: "Business", image: "/images/products/neon-signs/nano-signs-open-neon-canada.png", price: "$169.00", badge: "Popular" },
+      { id: "stay-wild", name: "Stay Wild", description: "Inspirational", image: "/images/products/neon-signs/nano-signs-stay-wild-neon-canada.png", price: "$159.00", badge: "Popular" },
+      { id: "love-her-wild", name: "Love Her Wild", description: "Home Decor", image: "/images/products/neon-signs/nano-signs-love-wild-neon-canada.png", price: "$179.00", badge: "Popular" },
+      { id: "glow-getter", name: "Glow Getter", description: "Inspirational", image: "/images/products/neon-signs/nano-signs-glow-getter-neon-canada.png", price: "$149.00", badge: "Popular" },
+      { id: "man-cave", name: "Man Cave", description: "Home Decor", image: "/images/products/neon-signs/nano-signs-man-cave-neon-canada.png", price: "$169.00", badge: "Popular" },
+      { id: "adventure-awaits", name: "Adventure Awaits", description: "Home Decor", image: "/images/products/neon-signs/nano-signs-adventure-neon-canada.png", price: "$179.00", badge: "Popular" }
+    ].map(p => ({
+      ...p,
+      config: {
+        title: p.name,
+        subtitle: p.description,
+        breadcrumb: "Neon Signs",
+        breadcrumbHref: "/neon-signs",
+        promoText: "FREE SHIPPING ON NEON SIGNS",
+        image: p.image,
+        ratingCount: "25",
+        ratingScore: "4.9",
+        sizes: [
+          { label: "Standard Size", value: "standard", basePrice: parseFloat(p.price.replace("$", "")) }
+        ],
+        selects: [
+          {
+            label: "Color",
+            options: [
+              { label: "Pink", value: "pink", priceAdder: 0 },
+              { label: "Blue", value: "blue", priceAdder: 0 },
+              { label: "Warm White", value: "warm-white", priceAdder: 0 }
+            ]
+          }
+        ],
+        qtyDiscount: "",
+        keyFeatures: ["Energy efficient LED", "Shatterproof silicone", "Includes mounting kit", "1 Year Warranty"],
+        useCases: ["Home decor", "Parties", "Bedrooms", "Storefronts"],
+        specs: [{ key: "Material", value: "LED flex neon" }, { key: "Lifespan", value: "50,000 hours" }, { key: "Power", value: "12V adapter included" }],
+        faqs: [],
+        reviews: [],
+        ctaHeading: "Ready to glow?",
+        ctaLabel: "Add to Cart"
+      }
+    }))
+  },
   "custom-banners": {
     title: "Custom Banners",
     breadcrumbLabel: "Custom Banners",
@@ -142,10 +203,7 @@ export const PRODUCTS_REGISTRY: Record<string, RegistryCategory> = {
           faqs: [],
           reviews: [],
           ctaHeading: "Ready to design your banner?",
-          ctaBody:
-            "Start designing online in minutes or upload your print-ready files.",
-          ctaLabel: "Customize Vinyl Banner",
-        },
+          },
       },
       {
         id: "fabric-banners",
@@ -235,10 +293,7 @@ export const PRODUCTS_REGISTRY: Record<string, RegistryCategory> = {
           faqs: [],
           reviews: [],
           ctaHeading: "Elevate your indoor displays",
-          ctaBody:
-            "Order a luxury fabric banner today for your business or corporate lobby.",
-          ctaLabel: "Customize Fabric Banner",
-        },
+          },
       },
       {
         id: "mesh-banners",
@@ -303,9 +358,7 @@ export const PRODUCTS_REGISTRY: Record<string, RegistryCategory> = {
           faqs: [],
           reviews: [],
           ctaHeading: "Order your breathable fence banner",
-          ctaBody: "Apply custom graphics and safety warnings to your site perimeter.",
-          ctaLabel: "Customize Mesh Banner",
-        },
+          },
       },
       {
         id: "pole-banners",
@@ -371,9 +424,7 @@ export const PRODUCTS_REGISTRY: Record<string, RegistryCategory> = {
           faqs: [],
           reviews: [],
           ctaHeading: "Enhance your streetscape",
-          ctaBody: "Create striking dual-sided graphics for city lampposts.",
-          ctaLabel: "Customize Pole Banner",
-        },
+          },
       },
       {
         id: "breakaway-banners",
@@ -436,9 +487,7 @@ export const PRODUCTS_REGISTRY: Record<string, RegistryCategory> = {
           faqs: [],
           reviews: [],
           ctaHeading: "Supercharge your team's entrance",
-          ctaBody: "Design a reusable sports breakaway banner.",
-          ctaLabel: "Customize Breakaway",
-        },
+          },
       },
       {
         id: "vertical-banners",
@@ -501,10 +550,7 @@ export const PRODUCTS_REGISTRY: Record<string, RegistryCategory> = {
           faqs: [],
           reviews: [],
           ctaHeading: "Create pillar-mounted banners",
-          ctaBody:
-            "Fill vertical pillar assets with clean logos and phone markers.",
-          ctaLabel: "Customize Vertical Banner",
-        },
+          },
       },
       {
         id: "roll-up-banners",
@@ -641,10 +687,7 @@ Advantages of our Roll-Up Systems:
             },
           ],
           ctaHeading: "Launch your portable promotion",
-          ctaBody:
-            "Deploy professional pull-up stands for your next event.",
-          ctaLabel: "Customize Retractable Banner",
-        },
+          },
       },
       {
         id: "x-banner-stands",
@@ -703,9 +746,7 @@ Advantages of our Roll-Up Systems:
           faqs: [],
           reviews: [],
           ctaHeading: "Cost-effective standing displays",
-          ctaBody: "Order lightweight X-stands that fold down flat in seconds.",
-          ctaLabel: "Customize X-Stand Banner",
-        },
+          },
       },
       {
         id: "step-and-repeat-banners",
@@ -776,10 +817,7 @@ Advantages of our Roll-Up Systems:
           faqs: [],
           reviews: [],
           ctaHeading: "Create your logo background backdrop",
-          ctaBody:
-            "Upload your sponsor logos and create repeated patterns instantly.",
-          ctaLabel: "Customize Backdrop",
-        },
+          },
       },
       {
         id: "tabletop-retractable-banners",
@@ -843,9 +881,7 @@ Advantages of our Roll-Up Systems:
           faqs: [],
           reviews: [],
           ctaHeading: "Maximize register branding",
-          ctaBody: "Order mini tabletop roll-up stands today.",
-          ctaLabel: "Customize Mini Roll-Up",
-        },
+          },
       },
     ],
   },
@@ -1107,10 +1143,7 @@ Advantages of our Roll-Up Systems:
             },
           ],
           ctaHeading: "Ready to capture passing traffic?",
-          ctaBody:
-            "Design your custom feather flag now and start turning drivers into customers.",
-          ctaLabel: "Customize Flag",
-        },
+          },
       },
       {
         id: "teardrop-flags",
@@ -1186,10 +1219,7 @@ Advantages of our Roll-Up Systems:
             },
           ],
           ctaHeading: "Command attention with teardrop banners",
-          ctaBody:
-            "Launch your custom curved banner design instantly.",
-          ctaLabel: "Customize Teardrop Flag",
-        },
+          },
       },
       {
         id: "straight-flags",
@@ -1245,9 +1275,7 @@ Advantages of our Roll-Up Systems:
           faqs: [],
           reviews: [],
           ctaHeading: "Configure your vertical flag",
-          ctaBody: "Craft your towering rectangular display using our builder.",
-          ctaLabel: "Customize Straight Flag",
-        },
+          },
       },
       {
         id: "flags",
@@ -1313,10 +1341,7 @@ Advantages of our Roll-Up Systems:
           faqs: [],
           reviews: [],
           ctaHeading: "Produce your traditional custom flag",
-          ctaBody:
-            "Submit your corporate logo or family crest to begin manufacturing.",
-          ctaLabel: "Customize Flag",
-        },
+          },
       },
       {
         id: "pennant-flags",
@@ -1366,9 +1391,7 @@ Advantages of our Roll-Up Systems:
           faqs: [],
           reviews: [],
           ctaHeading: "Design custom spirit pennants",
-          ctaBody: "Personalize your triangular banner with your mascot and branding.",
-          ctaLabel: "Customize Pennant",
-        },
+          },
       },
     ],
   },
@@ -1454,9 +1477,7 @@ Advantages of our Roll-Up Systems:
           faqs: [],
           reviews: [],
           ctaHeading: "Order automotive decals",
-          ctaBody: "Personalize your vehicle stickers with your brand message.",
-          ctaLabel: "Customize Bumper Sticker",
-        },
+          },
       },
       {
         id: "license-plates",
@@ -1509,10 +1530,7 @@ Advantages of our Roll-Up Systems:
           faqs: [],
           reviews: [],
           ctaHeading: "Create your custom auto tag",
-          ctaBody:
-            "Embed your corporate identity onto an eye-catching metal license plate.",
-          ctaLabel: "Customize License Plate",
-        },
+          },
       },
       {
         id: "magnetic-signs",
@@ -1611,10 +1629,7 @@ Advantages of our Roll-Up Systems:
             },
           ],
           ctaHeading: "Start marketing on the go",
-          ctaBody:
-            "Design a clean car magnet with your logo, services, and phone number.",
-          ctaLabel: "Customize Magnet",
-        },
+          },
       },
       {
         id: "car-door-decals",
@@ -1672,9 +1687,7 @@ Advantages of our Roll-Up Systems:
           faqs: [],
           reviews: [],
           ctaHeading: "Brand your fleet vehicles",
-          ctaBody: "Design car door branding decals using our templates.",
-          ctaLabel: "Customize Door Decal",
-        },
+          },
       },
       {
         id: "car-window-decals",
@@ -1739,10 +1752,7 @@ Advantages of our Roll-Up Systems:
           faqs: [],
           reviews: [],
           ctaHeading: "Make your rear window sell",
-          ctaBody:
-            "Build rear window banners with easy-to-read font and phone info.",
-          ctaLabel: "Customize Window Decal",
-        },
+          },
       },
     ],
   },
@@ -1872,10 +1882,7 @@ Advantages of our Roll-Up Systems:
             },
           ],
           ctaHeading: "Elevate your booth display",
-          ctaBody:
-            "Customize a high-quality table throw with your core branding and logos.",
-          ctaLabel: "Customize Cover",
-        },
+          },
       },
       {
         id: "table-runners",
@@ -1928,9 +1935,7 @@ Advantages of our Roll-Up Systems:
           faqs: [],
           reviews: [],
           ctaHeading: "Ready to design table runners?",
-          ctaBody: "Personalized print table runners with corporate logos.",
-          ctaLabel: "Customize Table Runner",
-        },
+          },
       },
       {
         id: "fitted-tablecloths",
@@ -1985,9 +1990,7 @@ Advantages of our Roll-Up Systems:
           faqs: [],
           reviews: [],
           ctaHeading: "Tailor your booth layout",
-          ctaBody: "Order fitted box tablecloths with personalized printed fronts.",
-          ctaLabel: "Customize Fitted Cover",
-        },
+          },
       },
       {
         id: "round-tablecloths",
@@ -2046,9 +2049,7 @@ Advantages of our Roll-Up Systems:
           faqs: [],
           reviews: [],
           ctaHeading: "Decorate round tables",
-          ctaBody: "Brand circular lobby high-boys or food service rounds.",
-          ctaLabel: "Customize Round Cover",
-        },
+          },
       },
       {
         id: "stretch-tablecloths",
@@ -2109,10 +2110,7 @@ Advantages of our Roll-Up Systems:
           faqs: [],
           reviews: [],
           ctaHeading: "Go modern with stretch spandex",
-          ctaBody:
-            "Order contoured tablecloth covers that hook securely in place.",
-          ctaLabel: "Customize Stretch Cover",
-        },
+          },
       },
       {
         id: "pop-up-displays",
@@ -2189,9 +2187,7 @@ Advantages of our Roll-Up Systems:
           faqs: [],
           reviews: [],
           ctaHeading: "Dominate the show floor",
-          ctaBody: "Order a massive accordion pop-up wall back wall.",
-          ctaLabel: "Customize Pop-Up Display",
-        },
+          },
       },
       {
         id: "step-and-repeat-banner",
@@ -2257,10 +2253,7 @@ Advantages of our Roll-Up Systems:
           faqs: [],
           reviews: [],
           ctaHeading: "Create your logo background backdrop",
-          ctaBody:
-            "Upload your sponsor logos and create repeated patterns instantly.",
-          ctaLabel: "Customize Backdrop",
-        },
+          },
       },
       {
         id: "retractable-banners",
@@ -2384,10 +2377,7 @@ Why Choose Our Expert-grade Rollup Banners?
             },
           ],
           ctaHeading: "Ready to make an impression?",
-          ctaBody:
-            "Order a retractable banner stand and roll out your messages rapidly.",
-          ctaLabel: "Customize Retractable Banner",
-        },
+          },
       },
       {
         id: "x-banner-stand",
@@ -2446,9 +2436,7 @@ Why Choose Our Expert-grade Rollup Banners?
           faqs: [],
           reviews: [],
           ctaHeading: "Promote on a budget",
-          ctaBody: "Order lightweight X-stands that fold down flat in seconds.",
-          ctaLabel: "Customize X-Stand Banner",
-        },
+          },
       },
       {
         id: "tabletop-retractable-banners",
@@ -2514,9 +2502,7 @@ Why Choose Our Expert-grade Rollup Banners?
           faqs: [],
           reviews: [],
           ctaHeading: "Maximize register branding",
-          ctaBody: "Order mini tabletop roll-up stands today.",
-          ctaLabel: "Customize Mini Roll-Up",
-        },
+          },
       },
       {
         id: "custom-canopy-tents",
@@ -2580,9 +2566,7 @@ Why Choose Our Expert-grade Rollup Banners?
           faqs: [],
           reviews: [],
           ctaHeading: "Establish exterior presence",
-          ctaBody: "Print full-color canopy tops today.",
-          ctaLabel: "Customize Canopy Tent",
-        },
+          },
       },
       {
         id: "feather-flags",
@@ -2773,9 +2757,7 @@ Why Choose Our Expert-grade Rollup Banners?
           faqs: [],
           reviews: [],
           ctaHeading: "Get noticed from the road",
-          ctaBody: "Order fluttering marketing flags.",
-          ctaLabel: "Customize Feather Flag",
-        },
+          },
       },
       {
         id: "vinyl-banners",
@@ -2833,10 +2815,7 @@ Why Choose Our Expert-grade Rollup Banners?
           faqs: [],
           reviews: [],
           ctaHeading: "Ready to design your banner?",
-          ctaBody:
-            "Start designing online in minutes or upload your print-ready files.",
-          ctaLabel: "Customize Vinyl Banner",
-        },
+          },
       },      {
         id: "business-cards",
         name: "Corporate Cards",
@@ -3035,9 +3014,7 @@ Why Choose Our Expert-grade Rollup Banners?
             },
           ],
           ctaHeading: "Design corporate cards now",
-          ctaBody: "Upload your corporate info and logo to print double-sided cards fast.",
-          ctaLabel: "Customize Cards",
-        },
+          },
       },
       {
         id: "custom-postcards",
@@ -3220,9 +3197,7 @@ Why Choose Our Expert-grade Rollup Banners?
             },
           ],
           ctaHeading: "Build flyers & postcards",
-          ctaBody: "Design promotional cards to hand out at your event tables.",
-          ctaLabel: "Customize Postcards",
-        },
+          },
       },
     ],
   },
@@ -3325,9 +3300,7 @@ Why Choose Our Expert-grade Rollup Banners?
           faqs: [],
           reviews: [],
           ctaHeading: "Print bumper stickers today",
-          ctaBody: "Add personalized text, sports numbers, or corporate graphics.",
-          ctaLabel: "Customize Bumper Sticker",
-        },
+          },
       },
       {
         id: "car-door-decals",
@@ -3385,9 +3358,7 @@ Why Choose Our Expert-grade Rollup Banners?
           faqs: [],
           reviews: [],
           ctaHeading: "Brand your fleet vehicles",
-          ctaBody: "Design car door branding decals using our templates.",
-          ctaLabel: "Customize Door Decal",
-        },
+          },
       },
       {
         id: "car-window-decals",
@@ -3452,10 +3423,7 @@ Why Choose Our Expert-grade Rollup Banners?
           faqs: [],
           reviews: [],
           ctaHeading: "Make your rear window sell",
-          ctaBody:
-            "Build rear window banners with easy-to-read font and phone info.",
-          ctaLabel: "Customize Window Decal",
-        },
+          },
       },
       {
         id: "window-decals",
@@ -3547,9 +3515,7 @@ Why Choose Our Expert-grade Rollup Banners?
           faqs: [],
           reviews: [],
           ctaHeading: "Brand your glass fronts",
-          ctaBody: "Order clean die-cut window layouts or frosted bands.",
-          ctaLabel: "Customize Window Decal",
-        },
+          },
       },
       {
         id: "roll-labels",
@@ -3607,10 +3573,7 @@ Why Choose Our Expert-grade Rollup Banners?
           faqs: [],
           reviews: [],
           ctaHeading: "Print product packaging rolls",
-          ctaBody:
-            "Design labels in bulk for box sealing and retail containers.",
-          ctaLabel: "Customize Roll Labels",
-        },
+          },
       },
       {
         id: "window-clings",
@@ -3682,9 +3645,7 @@ Why Choose Our Expert-grade Rollup Banners?
           faqs: [],
           reviews: [],
           ctaHeading: "Get flexible glass branding",
-          ctaBody: "Order clings that peel right off without clean-up.",
-          ctaLabel: "Customize Window Cling",
-        },
+          },
       },
       {
         id: "sheet-stickers",
@@ -3749,9 +3710,7 @@ Why Choose Our Expert-grade Rollup Banners?
           faqs: [],
           reviews: [],
           ctaHeading: "Design multi-sticker layouts",
-          ctaBody: "Order flat sheets containing multiple corporate stickers.",
-          ctaLabel: "Customize Sticker Sheet",
-        },
+          },
       },
       {
         id: "return-address-labels",
@@ -3814,9 +3773,7 @@ Why Choose Our Expert-grade Rollup Banners?
           faqs: [],
           reviews: [],
           ctaHeading: "Design return labels",
-          ctaBody: "Input your name and corporate address details.",
-          ctaLabel: "Customize Address Labels",
-        },
+          },
       },
     ],
   },
@@ -3915,10 +3872,7 @@ Why Choose Our Expert-grade Rollup Banners?
             },
           ],
           ctaHeading: "Order stakes for your yard signs",
-          ctaBody:
-            "Pair stakes with your yard signs for a complete campaign ready to deploy.",
-          ctaLabel: "Configure Stakes",
-        },
+          },
       },
     ],
   },
@@ -4171,9 +4125,7 @@ Why Choose Our Expert-grade Rollup Banners?
             },
           ],
           ctaHeading: "Design corporate cards now",
-          ctaBody: "Upload your corporate info and logo to print double-sided cards fast.",
-          ctaLabel: "Customize Cards",
-        },
+          },
       },
       {
         id: "postcards",
@@ -4358,10 +4310,7 @@ Why Choose Our Expert-grade Rollup Banners?
             },
           ],
           ctaHeading: "Ready to design postcards?",
-          ctaBody:
-            "Personalized print postcards using our online template catalog or upload artwork.",
-          ctaLabel: "Customize Postcards",
-        },
+          },
       },
       {
         id: "flyers",
@@ -4532,10 +4481,7 @@ Why Choose Our Expert-grade Rollup Banners?
             },
           ],
           ctaHeading: "Design flyers online",
-          ctaBody:
-            "Input your logo, menus, and corporate text using templates.",
-          ctaLabel: "Customize Flyers",
-        },
+          },
       },
       {
         id: "brochures",
@@ -4653,10 +4599,7 @@ Why Choose Our Expert-grade Rollup Banners?
             },
           ],
           ctaHeading: "Design brochures online",
-          ctaBody:
-            "Create beautiful brochures with expert-grade folding styles.",
-          ctaLabel: "Customize Brochures",
-        },
+          },
       },
       {
         id: "door-hangers",
@@ -4781,10 +4724,7 @@ Why Choose Our Expert-grade Rollup Banners?
             },
           ],
           ctaHeading: "Kick off local door hanger campaigns",
-          ctaBody:
-            "Personalized print door hangers with coupon codes and contact numbers.",
-          ctaLabel: "Customize Door Hangers",
-        },
+          },
       },
 
 
@@ -4899,10 +4839,7 @@ Why Choose Our Expert-grade Rollup Banners?
             },
           ],
           ctaHeading: "Design shirts for your team",
-          ctaBody:
-            "Add logo prints to front or back positions on high-quality shirts.",
-          ctaLabel: "Customize Shirt",
-        },
+          },
       },
       {
         id: "mugs",
@@ -4963,9 +4900,7 @@ Why Choose Our Expert-grade Rollup Banners?
           faqs: [],
           reviews: [],
           ctaHeading: "Brand your office drinkware",
-          ctaBody: "Upload your logo to design personalized coffee mugs today.",
-          ctaLabel: "Customize Coffee Mugs",
-        },
+          },
       },
       {
         id: "tote-bags",
@@ -5028,10 +4963,7 @@ Why Choose Our Expert-grade Rollup Banners?
           faqs: [],
           reviews: [],
           ctaHeading: "Design reusable event bags",
-          ctaBody:
-            "Personalized print canvas tote bags with your graphics and emblems.",
-          ctaLabel: "Customize Tote Bags",
-        },
+          },
       },
       {
         id: "pens",
@@ -5111,9 +5043,7 @@ Why Choose Our Expert-grade Rollup Banners?
           faqs: [],
           reviews: [],
           ctaHeading: "Order bulk giveaway pens",
-          ctaBody: "Personalized print barrels with logo text and web address.",
-          ctaLabel: "Customize Pens",
-        },
+          },
       },
       {
         id: "notebooks",
@@ -5172,10 +5102,7 @@ Why Choose Our Expert-grade Rollup Banners?
           faqs: [],
           reviews: [],
           ctaHeading: "Create personalized corporate journals",
-          ctaBody:
-            "Personalized print journal covers with debossed logos or full color prints.",
-          ctaLabel: "Customize Notebooks",
-        },
+          },
       },
       {
         id: "keychains",
@@ -5234,9 +5161,7 @@ Why Choose Our Expert-grade Rollup Banners?
           faqs: [],
           reviews: [],
           ctaHeading: "Design key ring promos",
-          ctaBody: "Engrave steel tags or print acrylic shapes with logos.",
-          ctaLabel: "Customize Keychains",
-        },
+          },
       },
       {
         id: "fridge-magnets",
@@ -5293,10 +5218,7 @@ Why Choose Our Expert-grade Rollup Banners?
           faqs: [],
           reviews: [],
           ctaHeading: "Print fridge promo magnets",
-          ctaBody:
-            "Design corporate card magnets for household services and dispatch centers.",
-          ctaLabel: "Customize Fridge Magnets",
-        },
+          },
       },
     ],
   },
@@ -5518,9 +5440,7 @@ Why Choose Our Expert-grade Rollup Banners?
             },
           ],
           ctaHeading: "Get Your Signs Out There",
-          ctaBody: "Order by 5 PM and your personalized yard signs ship tomorrow.",
-          ctaLabel: "Order Yard Signs Now",
-        },
+          },
       },
       {
         id: "real-estate-panels",
@@ -5661,9 +5581,7 @@ Why Choose Our Expert-grade Rollup Banners?
             },
           ],
           ctaHeading: "List More. Sell Faster.",
-          ctaBody: "Expert-grade real estate panels shipped next day.",
-          ctaLabel: "Order Real Estate Panels",
-        },
+          },
       },
       {
         id: "aluminum-signs",
@@ -5825,10 +5743,7 @@ Why Choose Our Expert-grade Rollup Banners?
             },
           ],
           ctaHeading: "Signs That Last a Decade",
-          ctaBody:
-            "Rust-proof aluminum signs printed with UV inks that resist fading for years.",
-          ctaLabel: "Order Aluminum Signs Now",
-        },
+          },
       },
       {
         id: "a-frame-signs",
@@ -6008,10 +5923,7 @@ Why Choose Our Expert-grade Rollup Banners?
             },
           ],
           ctaHeading: "Bring Customers Through the Door",
-          ctaBody:
-            "A-frame signs are proven to increase foot traffic. Order yours today.",
-          ctaLabel: "Design Your A-Frame Sign",
-        },
+          },
       },
       {
         id: "foam-board-signs",
@@ -6193,10 +6105,7 @@ Why Choose Our Expert-grade Rollup Banners?
             },
           ],
           ctaHeading: "Make Your Presentation Pop",
-          ctaBody:
-            "Vivid foam board signs that command attention at any interior event.",
-          ctaLabel: "Order Foam Board Signs",
-        },
+          },
       },
       {
         id: "acrylic-signs",
@@ -6390,10 +6299,7 @@ Why Choose Our Expert-grade Rollup Banners?
             },
           ],
           ctaHeading: "Upgrade to High-quality Acrylic",
-          ctaBody:
-            "Crystal-clear signs that make your brand look like a million dollars.",
-          ctaLabel: "Design Your Acrylic Sign",
-        },
+          },
       },
       {
         id: "coroplast-signs",
@@ -6586,9 +6492,7 @@ Why Choose Our Expert-grade Rollup Banners?
             },
           ],
           ctaHeading: "Sign Big, Spend Small",
-          ctaBody: "Coroplast signs deliver maximum impact at the lowest possible price per sign.",
-          ctaLabel: "Order Coroplast Signs Now",
-        },
+          },
       },
       {
         id: "window-signs",
@@ -6798,10 +6702,7 @@ Why Choose Our Expert-grade Rollup Banners?
             },
           ],
           ctaHeading: "Your Window Is Your Best Billboard",
-          ctaBody:
-            "Window signs turn every passerby into a potential customer. Start designing yours.",
-          ctaLabel: "Design Your Window Sign",
-        },
+          },
       },
       {
         id: "parking-signs",
@@ -7012,10 +6913,7 @@ Why Choose Our Expert-grade Rollup Banners?
             },
           ],
           ctaHeading: "Control Your Parking. Protect Your Space.",
-          ctaBody:
-            "Expert-grade-grade parking signs that are clear, visible, and regulation-ready.",
-          ctaLabel: "Order Parking Signs Now",
-        },
+          },
       },
       {
         id: "channel-letter-signs",
@@ -7163,11 +7061,17 @@ Why Choose Our Expert-grade Rollup Banners?
             },
           ],
           ctaHeading: "Brighten Your Corporate Facade",
-          ctaBody:
-            "Personalized 3D LED channel letters manufactured with commercial-grade components.",
-          ctaLabel: "Order Channel Letter Signs Now",
-        },
+          },
       },
     ],
+  },
+  "led-display-signs": {
+    title: "LED Display Signs",
+    breadcrumbLabel: "LED Displays",
+    description: "Discover Nano Signs' high-impact, programmable commercial LED display signs in Toronto. Perfect for retail storefronts, events, window displays, and outdoor advertising. Energy-efficient, ultra-bright, and customizable.",
+    heroSubtitle: "High-Brightness Commercial Screens & Programmable Billboards",
+    heroImage: "/images/products/led-display-signs/hero4.jpeg",
+    categoryDescriptionText: "Elevate your brand presence with our premium, high-brightness commercial LED display signs. From massive outdoor fixed billboards and dynamic vehicle displays to sleek indoor screens and flexible retail windows, Nano Signs delivers cutting-edge, energy-efficient solutions built for the Canadian climate. Our Toronto-based experts provide comprehensive support from design and manufacturing to installation, ensuring your digital signage drives unmatched foot traffic and visibility.",
+    products: ledProducts
   },
 };

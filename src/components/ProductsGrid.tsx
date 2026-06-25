@@ -1,4 +1,4 @@
-﻿import Image from "next/image";
+import Image from "next/image";
 import Link from "next/link";
 
 const products = [
@@ -53,14 +53,14 @@ const products = [
     href: "/custom-decals/sheet-stickers",
   },
   {
-    name: "Neon Sign",
+    name: "Neon Signs",
     image: "/images/products/main%20page/neon_sign-toronto-printing-ca.jpeg",
-    href: "https://neonfl.com",
+    href: "/neon-signs",
   },
   {
-    name: "Programmable LED Sign",
+    name: "LED Display Signs",
     image: "/images/products/main%20page/programmable_led_sign-toronto-printing-ca.jpeg",
-    href: "https://led-signs.us/",
+    href: "/led-display-signs",
   },
 ];
 

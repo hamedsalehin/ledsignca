@@ -26,6 +26,7 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://led-sign.ca"),
   title: "Premium Custom Signage, Led signs & Banners Toronto, ON | Nano Signs",
   description:
     "Design and order custom signs, LED signs, retractable banners, business cards and all other marketing materials online or in person. Fastest turnaround times in Toronto.",
@@ -34,7 +35,7 @@ export const metadata: Metadata = {
     apple: "/images/nano logo O-toronto-printing-ca.png",
   },
   alternates: {
-    canonical: "https://led-sign.ca",
+    canonical: "/",
   },
 };
 
