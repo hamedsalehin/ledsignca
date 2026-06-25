@@ -1,15 +1,22 @@
 import { GoogleGenerativeAI } from "@google/generative-ai";
 import { GoogleGenerativeAIStream, StreamingTextResponse } from "ai";
 
-// Initialize the Google Generative AI client
-const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY || process.env.GOOGLE_GENERATIVE_AI_API_KEY || "");
-
 // Allow streaming responses up to 30 seconds
 export const maxDuration = 30;
 
 export async function POST(req: Request) {
   try {
     const { messages } = await req.json();
+    const apiKey = process.env.GEMINI_API_KEY || process.env.GOOGLE_GENERATIVE_AI_API_KEY;
+
+    if (!apiKey) {
+      return new Response(
+        "Hi there! Our AI chatbot is currently offline for setup/maintenance. \n\nPlease contact us directly at info@led-sign.ca or call +1 416-838-8994. \n\n(Admin note: Please add the GEMINI_API_KEY to your Vercel Environment Variables or local .env file to enable the AI)",
+        { status: 200 }
+      );
+    }
+
+    const genAI = new GoogleGenerativeAI(apiKey);
 
     // The system prompt gives the AI its persona and business knowledge
     const systemPrompt = `You are a helpful, friendly, and professional customer support assistant for "Nano Signs", a premium custom sign shop based in Toronto, Canada.
@@ -54,4 +61,3 @@ export async function POST(req: Request) {
     return new Response("An error occurred. Make sure your GEMINI_API_KEY is set in Vercel.", { status: 500 });
   }
 }
-
