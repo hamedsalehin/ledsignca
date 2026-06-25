@@ -11,8 +11,13 @@ export async function POST(req: Request) {
 
     if (!apiKey) {
       return new Response(
-        "Hi there! Our AI chatbot is currently offline for setup/maintenance. \n\nPlease contact us directly at info@led-sign.ca or call +1 416-838-8994. \n\n(Admin note: Please add the GEMINI_API_KEY to your Vercel Environment Variables or local .env file to enable the AI)",
-        { status: 200 }
+        JSON.stringify({
+          error: "Hi there! Our AI chatbot is currently offline for setup/maintenance. \n\nPlease contact us directly at info@led-sign.ca or call +1 416-838-8994. \n\n(Admin note: Please add the GEMINI_API_KEY to your Amplify Environment Variables and redeploy your app to enable the AI)"
+        }),
+        { 
+          status: 503,
+          headers: { "Content-Type": "application/json" }
+        }
       );
     }
 
