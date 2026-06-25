@@ -6,7 +6,11 @@ import { MessageCircle, X, Send, Bot, User } from "lucide-react";
 
 export function Chatbot() {
   const [isOpen, setIsOpen] = useState(false);
-  const { messages, input, handleInputChange, handleSubmit, isLoading } = useChat();
+  const { messages, input, handleInputChange, handleSubmit, isLoading } = useChat({
+    onError: (err) => {
+      alert("Chatbot Error: " + err.message + "\\n\\nIf you are the admin, make sure you Redeployed Vercel after adding the OPENAI_API_KEY, and ensure your OpenAI account is funded with credits!");
+    }
+  });
   const messagesEndRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
