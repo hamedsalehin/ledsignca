@@ -32,24 +32,40 @@ export async function POST(req: Request) {
     
     If you don't know the answer, politely tell the customer to fill out the Contact Form or Quote form so a human representative can email them back.`;
 
-    const model = genAI.getGenerativeModel({
-      model: "gemini-3.5-flash",
-      systemInstruction: systemPrompt,
-    });
+    // Helper function to attempt generation with a specific model
+    const attemptGeneration = async (modelName: string) => {
+      const model = genAI.getGenerativeModel({
+        model: modelName,
+        systemInstruction: systemPrompt,
+      });
 
-    // Format messages for Gemini API format: { role: 'user' | 'model', parts: [{ text: string }] }
-    // We filter out any system or invalid messages as systemPrompt is handled by systemInstruction above.
-    const geminiMessages = messages
-      .filter((m: any) => m.role === "user" || m.role === "assistant")
-      .map((m: any) => ({
-        role: m.role === "user" ? "user" : "model",
-        parts: [{ text: m.content }],
-      }));
+      const geminiMessages = messages
+        .filter((m: any) => m.role === "user" || m.role === "assistant")
+        .map((m: any) => ({
+          role: m.role === "user" ? "user" : "model",
+          parts: [{ text: m.content }],
+        }));
 
-    // Generate the stream from Gemini
-    const geminiStream = await model.generateContentStream({
-      contents: geminiMessages,
-    });
+      return await model.generateContentStream({
+        contents: geminiMessages,
+      });
+    };
+
+    let geminiStream;
+    try {
+      // 1. Try primary flagship model (Gemini 3.5 Flash)
+      geminiStream = await attemptGeneration("gemini-3.5-flash");
+    } catch (primaryError: any) {
+      console.warn("Primary model (gemini-3.5-flash) failed, attempting fallback to gemini-3.1-flash-lite...", primaryError);
+      try {
+        // 2. Fall back to Gemini 3.1 Flash Lite
+        geminiStream = await attemptGeneration("gemini-3.1-flash-lite");
+      } catch (secondaryError: any) {
+        console.warn("Secondary model (gemini-3.1-flash-lite) failed, attempting fallback to gemini-2.5-flash-lite...", secondaryError);
+        // 3. Final fallback to Gemini 2.5 Flash Lite
+        geminiStream = await attemptGeneration("gemini-2.5-flash-lite");
+      }
+    }
 
     // Convert the Gemini stream to Vercel AI SDK compatible stream
     const stream = GoogleGenerativeAIStream(geminiStream);
