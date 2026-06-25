@@ -1,5 +1,10 @@
-import { openai } from "@ai-sdk/openai";
-import { streamText } from "ai";
+import OpenAI from "openai";
+import { OpenAIStream, StreamingTextResponse } from "ai";
+
+// Create an OpenAI API client (that's edge friendly!)
+const openai = new OpenAI({
+  apiKey: process.env.OPENAI_API_KEY || "",
+});
 
 // Allow streaming responses up to 30 seconds
 export const maxDuration = 30;
@@ -22,15 +27,20 @@ export async function POST(req: Request) {
     
     If you don't know the answer, politely tell the customer to fill out the Contact Form or Quote form so a human representative can email them back.`;
 
-    const result = await streamText({
-      model: openai("gpt-4o-mini"),
+    const response = await openai.chat.completions.create({
+      model: "gpt-4o-mini",
+      stream: true,
       messages: [
         { role: "system", content: systemPrompt },
         ...messages,
       ],
     });
 
-    return result.toDataStreamResponse();
+    // Convert the response into a friendly text-stream
+    const stream = OpenAIStream(response);
+    
+    // Respond with the stream
+    return new StreamingTextResponse(stream);
   } catch (error) {
     console.error("Chat API Error:", error);
     return new Response("An error occurred. Make sure your OPENAI_API_KEY is set in Vercel.", { status: 500 });
