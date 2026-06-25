@@ -88,8 +88,6 @@ const nextConfig = {
       { source: "/contact-rgb-sign-screen-sign-for-store-citylight-group", destination: "/contact-us", permanent: true },
       { source: "/refund_returns/", destination: "/return-policy", permanent: true },
       { source: "/refund_returns", destination: "/return-policy", permanent: true },
-      { source: "/projects/", destination: "/projects", permanent: true },
-      { source: "/projects", destination: "/projects", permanent: true },
       { source: "/support/", destination: "/contact-us", permanent: true },
       { source: "/support", destination: "/contact-us", permanent: true },
       { source: "/request-quote/", destination: "/get-a-quote", permanent: true },
