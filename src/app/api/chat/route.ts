@@ -58,17 +58,17 @@ export async function POST(req: Request) {
 
     let geminiStream;
     try {
-      // 1. Try primary flagship model (Gemini 3.5 Flash)
-      geminiStream = await attemptGeneration("gemini-3.5-flash");
+      // 1. Try primary flagship model (Gemini 2.5 Flash / Gemini 1.5 Flash depending on environment support)
+      geminiStream = await attemptGeneration("gemini-2.5-flash");
     } catch (primaryError: any) {
-      console.warn("Primary model (gemini-3.5-flash) failed, attempting fallback to gemini-3.1-flash-lite...", primaryError);
+      console.warn("Primary model (gemini-2.5-flash) failed, attempting fallback to gemini-1.5-flash...", primaryError);
       try {
-        // 2. Fall back to Gemini 3.1 Flash Lite
-        geminiStream = await attemptGeneration("gemini-3.1-flash-lite");
+        // 2. Fall back to stable Gemini 1.5 Flash
+        geminiStream = await attemptGeneration("gemini-1.5-flash");
       } catch (secondaryError: any) {
-        console.warn("Secondary model (gemini-3.1-flash-lite) failed, attempting fallback to gemini-2.5-flash-lite...", secondaryError);
-        // 3. Final fallback to Gemini 2.5 Flash Lite
-        geminiStream = await attemptGeneration("gemini-2.5-flash-lite");
+        console.warn("Secondary model (gemini-1.5-flash) failed, attempting fallback to gemini-1.5-pro...", secondaryError);
+        // 3. Final fallback to Gemini 1.5 Pro
+        geminiStream = await attemptGeneration("gemini-1.5-pro");
       }
     }
 

@@ -6,11 +6,23 @@ import { MessageCircle, X, Send, Bot, User } from "lucide-react";
 
 export function Chatbot() {
   const [isOpen, setIsOpen] = useState(false);
+  const [errorMsg, setErrorMsg] = useState<string | null>(null);
+  
   const { messages, input, handleInputChange, handleSubmit, isLoading } = useChat({
     onError: (err) => {
-      alert("Chatbot Error: " + err.message + "\n\nIf you are the admin, make sure you added GEMINI_API_KEY to your Vercel Environment Variables or local .env file, and redeployed!");
+      let msg = err.message;
+      try {
+        const parsed = JSON.parse(err.message);
+        if (parsed.error) msg = parsed.error;
+      } catch (e) {}
+      setErrorMsg(msg);
     }
   });
+
+  const handleFormSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    setErrorMsg(null);
+    handleSubmit(e);
+  };
   const messagesEndRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -107,12 +119,27 @@ export function Chatbot() {
                 </div>
               </div>
             )}
+            {errorMsg && (
+              <div className="bg-red-50 border border-red-200 text-slate-700 p-3.5 rounded-xl text-xs flex flex-col gap-2 shadow-sm animate-in fade-in zoom-in-95">
+                <span className="font-semibold text-red-800 flex items-center gap-1.5">
+                  ⚠️ Chatbot Offline
+                </span>
+                <p className="whitespace-pre-wrap text-slate-600 leading-relaxed">{errorMsg}</p>
+                <button
+                  type="button"
+                  onClick={() => setErrorMsg(null)}
+                  className="text-left text-xs font-semibold text-slate-500 hover:text-slate-800 underline transition-colors self-start mt-1"
+                >
+                  Dismiss
+                </button>
+              </div>
+            )}
             <div ref={messagesEndRef} />
           </div>
 
           {/* Input Area */}
           <form
-            onSubmit={handleSubmit}
+            onSubmit={handleFormSubmit}
             className="p-3 bg-white border-t border-slate-200 shrink-0"
           >
             <div className="relative flex items-center">
