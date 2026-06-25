@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   description: "Request a custom printing quote for signs, LED signs, banners, business cards, & marketing materials in Toronto. Fast 12-hour response turnaround.",
 
   alternates: {
-    canonical: "https://nano-signs.com/get-a-quote",
+    canonical: "https://led-sign.ca/get-a-quote",
   },
 };
 

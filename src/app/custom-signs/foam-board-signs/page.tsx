@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Foam Board Signs Fort Lauderdale FL | Fast Turnaround | Nano Signs",
   description: "Lightweight and professional indoor display signs for presentations, lobbies, and events in Broward County. Fast turnaround in Fort Lauderdale.",
   alternates: {
-    canonical: "https://nano-signs.com/custom-signs/foam-board-signs",
+    canonical: "https://led-sign.ca/custom-signs/foam-board-signs",
   },
 };
 

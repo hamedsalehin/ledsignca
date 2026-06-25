@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import React, { useState } from "react";
 import Link from "next/link";
@@ -408,7 +408,7 @@ export default function QuotePageClient() {
                   <div className="mt-3 p-3.5 bg-amber-55/60 border border-amber-200 rounded-xl text-xs text-amber-800 leading-normal flex gap-2 items-start font-sans">
                     <AlertCircle className="w-4 h-4 shrink-0 text-amber-600 mt-0.5" />
                     <div>
-                      <span className="font-bold">⚠️ Server Notification:</span> Email confirmation was skipped because the server does not have <code>RESEND_API_KEY</code> configured. Please configure it in your Netlify settings.
+                      <span className="font-bold">?? Server Notification:</span> Email confirmation was skipped because the server does not have <code>RESEND_API_KEY</code> configured. Please configure it in your Netlify settings.
                     </div>
                   </div>
                 )}
@@ -416,7 +416,7 @@ export default function QuotePageClient() {
                   <div className="mt-3 p-3.5 bg-red-55/60 border border-red-200 rounded-xl text-xs text-red-800 leading-normal flex gap-2 items-start font-sans">
                     <AlertCircle className="w-4 h-4 shrink-0 text-red-600 mt-0.5" />
                     <div>
-                      <span className="font-bold">❌ Email Confirmation Failed:</span>
+                      <span className="font-bold">? Email Confirmation Failed:</span>
                       <ul className="list-disc list-inside mt-1 space-y-1">
                         {emailErrors.admin && <li>Admin Notify: {emailErrors.admin.message || JSON.stringify(emailErrors.admin)}</li>}
                         {emailErrors.customer && <li>Customer Confirm: {emailErrors.customer.message || JSON.stringify(emailErrors.customer)}</li>}

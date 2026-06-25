@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "A-Frame Sidewalk Signs Fort Lauderdale FL | Fast Turnaround | Nano Signs",
   description: "Design & order portable, double-sided sidewalk A-frame signs in Fort Lauderdale & Oakland Park FL. Fastest turnaround times in Broward County.",
   alternates: {
-    canonical: "https://nano-signs.com/custom-signs/a-frame-signs",
+    canonical: "https://led-sign.ca/custom-signs/a-frame-signs",
   },
 };
 

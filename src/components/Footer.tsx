@@ -1,4 +1,4 @@
-﻿import Image from "next/image";
+import Image from "next/image";
 import {
   Facebook,
   Instagram,
@@ -155,7 +155,7 @@ export function Footer({ light = false }: { light?: boolean } = {}) {
               </div>
             </div>
 
-            {/* Social icons — pure CSS hover via .social-icon-hover */}
+            {/* Social icons � pure CSS hover via .social-icon-hover */}
             <div className="flex gap-3">
               {socialIcons.map((social, i) => (
                 <a

@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Custom Yard Signs Fort Lauderdale FL | Fast Turnaround | Nano Signs",
   description: "Design custom corrugated plastic yard signs online with H-stakes. Fastest turnaround times in Broward County. Next-day shipping/local pickup.",
   alternates: {
-    canonical: "https://nano-signs.com/custom-signs/yard-signs",
+    canonical: "https://led-sign.ca/custom-signs/yard-signs",
   },
 };
 

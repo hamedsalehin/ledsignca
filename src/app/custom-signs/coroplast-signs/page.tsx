@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Custom Coroplast Signs Fort Lauderdale FL | Fast Turnaround | Nano Signs",
   description: "Design and order waterproof corrugated plastic coroplast signs in Broward County. Cheap prices & fast turnaround times in Fort Lauderdale.",
   alternates: {
-    canonical: "https://nano-signs.com/custom-signs/coroplast-signs",
+    canonical: "https://led-sign.ca/custom-signs/coroplast-signs",
   },
 };
 

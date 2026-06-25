@@ -28,7 +28,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     title,
     description: description.slice(0, 160),
     alternates: {
-      canonical: `https://nano-signs.com/${decodedCategory}/${decodedProduct}`,
+      canonical: `https://led-sign.ca/${decodedCategory}/${decodedProduct}`,
     },
   };
 }

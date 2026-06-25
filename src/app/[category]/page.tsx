@@ -23,7 +23,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     title,
     description: description.slice(0, 160), // Keep description within SEO limits
     alternates: {
-      canonical: `https://nano-signs.com/${decodedCategory}`,
+      canonical: `https://led-sign.ca/${decodedCategory}`,
     },
   };
 }

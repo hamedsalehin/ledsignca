@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Custom Aluminum Signs Fort Lauderdale FL | Fast Turnaround | Nano Signs",
   description: "Heavy-duty, rust-proof custom aluminum signs in Broward County. Durable metal sign prints with fast turnaround and local pickup in Fort Lauderdale.",
   alternates: {
-    canonical: "https://nano-signs.com/custom-signs/aluminum-signs",
+    canonical: "https://led-sign.ca/custom-signs/aluminum-signs",
   },
 };
 

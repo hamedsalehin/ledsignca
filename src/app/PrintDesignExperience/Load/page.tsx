@@ -1,4 +1,4 @@
-﻿import React, { Suspense } from "react";
+import React, { Suspense } from "react";
 import DesignPage from "../../design/page";
 
 export default function LoadPage() {

@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Custom Acrylic Signs Fort Lauderdale FL | Fast Turnaround | Nano Signs",
   description: "Premium clear, colored, and frosted custom acrylic signs in Broward County. Online design and next-day local pick up in Fort Lauderdale.",
   alternates: {
-    canonical: "https://nano-signs.com/custom-signs/acrylic-signs",
+    canonical: "https://led-sign.ca/custom-signs/acrylic-signs",
   },
 };
 

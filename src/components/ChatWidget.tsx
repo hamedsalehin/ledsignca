@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { useState } from "react";
 import { MessageCircle, X } from "lucide-react";
@@ -10,7 +10,7 @@ export function ChatWidget() {
 
   return (
     <div className="fixed bottom-6 left-6 z-40 font-poppins">
-      {/* ─── Floating Popup Card ─── */}
+      {/* --- Floating Popup Card --- */}
       {isOpen && (
         <div
           className="absolute bottom-16 left-0 w-72 bg-[#09090b] text-white border border-slate-800/80 rounded-2xl p-4 shadow-2xl z-50 animate-in fade-in slide-in-from-bottom-4 duration-300 flex flex-col gap-3.5"
@@ -70,7 +70,7 @@ export function ChatWidget() {
         </div>
       )}
 
-      {/* ─── Floating Toggle Bubble ─── */}
+      {/* --- Floating Toggle Bubble --- */}
       <button
         onClick={toggleOpen}
         className="flex items-center justify-center w-14 h-14 bg-[#0a0a0c] text-white border border-cyan-500/30 rounded-full shadow-2xl hover:border-cyan-400 transition-all duration-300 group hover:scale-105 active:scale-95"
