@@ -30,7 +30,12 @@ export function ContactSection() {
       const response = await fetch("/api/submit-quote", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
+        body: JSON.stringify({
+          fullName: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          description: Product: \nCompany: \n\nMessage:\n
+        }),
       })
 
       const data = await response.json()
