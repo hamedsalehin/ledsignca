@@ -72,7 +72,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${openSans.variable} ${poppins.variable}`}>
+    <html lang="en-CA" className={`${openSans.variable} ${poppins.variable}`}>
       <head>
         {/* Google tag (gtag.js) */}
         <Script strategy="afterInteractive" src="https://www.googletagmanager.com/gtag/js?id=G-8N8L6WV8RE" />
@@ -92,9 +92,9 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "LocalBusiness",
               "name": "Nano Signs",
-              "image": "https://nano-signs.com/images/nano%20logo%20complete-toronto-printing-ca.png",
-              "@id": "https://nano-signs.com/#localbusiness",
-              "url": "https://nano-signs.com",
+              "image": "https://led-sign.ca/images/nano%20logo%20complete-toronto-printing-ca.png",
+              "@id": "https://led-sign.ca/#localbusiness",
+              "url": "https://led-sign.ca",
               "telephone": "+1 416-838-8994",
               "priceRange": "$$",
               "address": {
