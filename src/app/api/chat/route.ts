@@ -33,7 +33,7 @@ export async function POST(req: Request) {
     If you don't know the answer, politely tell the customer to fill out the Contact Form or Quote form so a human representative can email them back.`;
 
     const model = genAI.getGenerativeModel({
-      model: "gemini-1.5-flash",
+      model: "gemini-3.5-flash",
       systemInstruction: systemPrompt,
     });
 
