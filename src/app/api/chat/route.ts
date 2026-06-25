@@ -1,10 +1,8 @@
-import OpenAI from "openai";
-import { OpenAIStream, StreamingTextResponse } from "ai";
+import { GoogleGenerativeAI } from "@google/generative-ai";
+import { GoogleGenerativeAIStream, StreamingTextResponse } from "ai";
 
-// Create an OpenAI API client (that's edge friendly!)
-const openai = new OpenAI({
-  apiKey: process.env.OPENAI_API_KEY || "",
-});
+// Initialize the Google Generative AI client
+const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY || process.env.GOOGLE_GENERATIVE_AI_API_KEY || "");
 
 // Allow streaming responses up to 30 seconds
 export const maxDuration = 30;
@@ -27,22 +25,33 @@ export async function POST(req: Request) {
     
     If you don't know the answer, politely tell the customer to fill out the Contact Form or Quote form so a human representative can email them back.`;
 
-    const response = await openai.chat.completions.create({
-      model: "gpt-4o-mini",
-      stream: true,
-      messages: [
-        { role: "system", content: systemPrompt },
-        ...messages,
-      ],
+    const model = genAI.getGenerativeModel({
+      model: "gemini-1.5-flash",
+      systemInstruction: systemPrompt,
     });
 
-    // Convert the response into a friendly text-stream
-    const stream = OpenAIStream(response);
+    // Format messages for Gemini API format: { role: 'user' | 'model', parts: [{ text: string }] }
+    // We filter out any system or invalid messages as systemPrompt is handled by systemInstruction above.
+    const geminiMessages = messages
+      .filter((m: any) => m.role === "user" || m.role === "assistant")
+      .map((m: any) => ({
+        role: m.role === "user" ? "user" : "model",
+        parts: [{ text: m.content }],
+      }));
+
+    // Generate the stream from Gemini
+    const geminiStream = await model.generateContentStream({
+      contents: geminiMessages,
+    });
+
+    // Convert the Gemini stream to Vercel AI SDK compatible stream
+    const stream = GoogleGenerativeAIStream(geminiStream);
     
     // Respond with the stream
     return new StreamingTextResponse(stream);
   } catch (error) {
     console.error("Chat API Error:", error);
-    return new Response("An error occurred. Make sure your OPENAI_API_KEY is set in Vercel.", { status: 500 });
+    return new Response("An error occurred. Make sure your GEMINI_API_KEY is set in Vercel.", { status: 500 });
   }
 }
+

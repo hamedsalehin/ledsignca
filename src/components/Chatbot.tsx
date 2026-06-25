@@ -8,7 +8,7 @@ export function Chatbot() {
   const [isOpen, setIsOpen] = useState(false);
   const { messages, input, handleInputChange, handleSubmit, isLoading } = useChat({
     onError: (err) => {
-      alert("Chatbot Error: " + err.message + "\\n\\nIf you are the admin, make sure you Redeployed Vercel after adding the OPENAI_API_KEY, and ensure your OpenAI account is funded with credits!");
+      alert("Chatbot Error: " + err.message + "\n\nIf you are the admin, make sure you added GEMINI_API_KEY to your Vercel Environment Variables or local .env file, and redeployed!");
     }
   });
   const messagesEndRef = useRef<HTMLDivElement>(null);
@@ -132,7 +132,7 @@ export function Chatbot() {
               </button>
             </div>
             <div className="text-center mt-2">
-               <p className="text-[10px] text-slate-400">Powered by Nano Signs AI</p>
+               <p className="text-[10px] text-slate-400">Powered by Nano Signs AI (Gemini)</p>
             </div>
           </form>
         </div>
