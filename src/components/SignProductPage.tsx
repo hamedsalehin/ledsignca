@@ -257,6 +257,12 @@ export function SignProductPage({ cfg }: { cfg: ProductPageConfig }) {
   };
 
   const handleAddToCart = () => {
+    // Enforce $25 minimum order
+    if (parseFloat((unitPrice * quantity).toFixed(2)) < 25) {
+      alert(`Minimum order is $25.00. Please increase quantity to at least ${minOrderQty} to continue.`);
+      setQuantity(minOrderQty);
+      return;
+    }
     const customOptions: Record<string, string> = {};
     Object.entries(selectValues).forEach(([k, v]) => {
       customOptions[k] = v.label;
@@ -386,6 +392,12 @@ export function SignProductPage({ cfg }: { cfg: ProductPageConfig }) {
 
   const totalPrice = (unitPrice * quantity).toFixed(2);
   const originalTotalPrice = ((unitPrice / 0.75) * quantity).toFixed(2); // 25% off display
+
+  // ─── $25 Minimum Order Enforcement ────────────────────────────────────────
+  const MIN_ORDER = 25;
+  // How many units are needed so total >= $25?
+  const minOrderQty = unitPrice > 0 ? Math.max(cfg.minQuantity || 1, Math.ceil(MIN_ORDER / unitPrice)) : (cfg.minQuantity || 1);
+  const isBelowMinOrder = parseFloat(totalPrice) < MIN_ORDER;
 
   const customizeUrl = useMemo(() => {
     const parts = selectedSize.value.split("x");
@@ -797,6 +809,11 @@ export function SignProductPage({ cfg }: { cfg: ProductPageConfig }) {
                       25% OFF
                     </span>
                   </div>
+                  {isBelowMinOrder && (
+                    <div className="text-red-600 font-extrabold text-xs mb-2">
+                      ⚠️ Minimum order total is CAD $25.00 (Current total: CAD {totalPrice})
+                    </div>
+                  )}
                   <div className="flex justify-between text-sm">
                     <span className="text-gray-500 font-semibold">
                       CAD {unitPrice.toFixed(2)} each
@@ -938,9 +955,9 @@ export function SignProductPage({ cfg }: { cfg: ProductPageConfig }) {
                         <ChevronDown className="absolute right-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400 pointer-events-none" />
                       </div>
                     ) : (
-                      <div className="flex items-center bg-gray-50 border border-gray-200 rounded-xl overflow-hidden">
+                       <div className="flex items-center bg-gray-50 border border-gray-200 rounded-xl overflow-hidden">
                         <button
-                          onClick={() => setQuantity(Math.max(cfg.minQuantity || 1, quantity - 1))}
+                          onClick={() => setQuantity(Math.max(minOrderQty, quantity - 1))}
                           className="px-4 py-2.5 hover:bg-gray-100 text-lg font-bold transition-colors"
                         >
                           −
@@ -948,12 +965,12 @@ export function SignProductPage({ cfg }: { cfg: ProductPageConfig }) {
                         <input
                           type="number"
                           value={quantity}
-                          min={cfg.minQuantity || 1}
+                          min={minOrderQty}
                           onChange={(e) =>
                             setQuantity(
                               Math.max(
-                                cfg.minQuantity || 1,
-                                parseInt(e.target.value) || (cfg.minQuantity || 1),
+                                minOrderQty,
+                                parseInt(e.target.value) || minOrderQty,
                               ),
                             )
                           }
@@ -971,6 +988,11 @@ export function SignProductPage({ cfg }: { cfg: ProductPageConfig }) {
                       {cfg.qtyDiscount}
                     </span>
                   </div>
+                  {isBelowMinOrder && (
+                    <div className="mt-2 text-xs text-red-600 font-bold">
+                      💡 Minimum quantity for this option is {minOrderQty} to reach the $25.00 order minimum.
+                    </div>
+                  )}
                   {/* Qty tiers */}
                   {!cfg.quantityPrices && (
                     <div className="mt-3 grid grid-cols-4 gap-1.5 text-center text-[10px] font-bold">
