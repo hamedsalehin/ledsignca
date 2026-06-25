@@ -2501,7 +2501,7 @@ function DesignPageContent() {
       let initialSize = defaultSize;
       
       if (urlWidth && urlHeight) {
-        const matched = registryProduct.config.sizes.find(s => {
+        const matched = registryProduct.config.sizes.find((s: any) => {
           const parts = s.value.split('x');
           return parts.includes(urlWidth) && parts.includes(urlHeight);
         });
@@ -2560,7 +2560,7 @@ function DesignPageContent() {
         try {
           const parsed = JSON.parse(decodeURIComponent(urlSelects));
           Object.entries(parsed).forEach(([key, val]) => {
-            const selectDef = registryProduct.config.selects?.find(s => s.label === key);
+            const selectDef = registryProduct.config.selects?.find((s: any) => s.label === key);
             if (selectDef) {
               const matchedOption = selectDef.options.find(o => o.value === val);
               if (matchedOption) {
@@ -2980,7 +2980,7 @@ function DesignPageContent() {
   const calculatedPrice = React.useMemo(() => {
     if (registryProduct) {
       const cfg = registryProduct.config;
-      const matchedSize = cfg.sizes.find(s => s.label === canvasSize.label) || cfg.sizes[0];
+      const matchedSize = cfg.sizes.find((s: any) => s.label === canvasSize.label) || cfg.sizes[0];
       let baseUnitPrice = matchedSize.basePrice;
       const sizeQtyPrices = (matchedSize as any).quantityPrices;
       if (sizeQtyPrices && sizeQtyPrices[quantity] !== undefined) {
