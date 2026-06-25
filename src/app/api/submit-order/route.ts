@@ -1,4 +1,4 @@
-﻿import { NextRequest, NextResponse } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 import { createClient } from "@supabase/supabase-js";
 import { Resend } from "resend";
 
@@ -78,7 +78,7 @@ export async function POST(req: NextRequest) {
       const fileBuffer = await designFile.arrayBuffer();
       fileBufferNode = Buffer.from(fileBuffer);
       const fileBytes = new Uint8Array(fileBuffer);
-      const safeFileName = `${userId}/${Date.now()}-CAD {designFile.name.replace(/[^a-zA-Z0-9._-]/g, "_")}`;
+      const safeFileName = `${userId}/${Date.now()}-${designFile.name.replace(/[^a-zA-Z0-9._-]/g, "_")}`;
 
       const { data: uploadData, error: uploadError } =
         await supabaseAdmin.storage
@@ -157,9 +157,9 @@ export async function POST(req: NextRequest) {
               📦 Order #${shortId}
             </h2>
             <table style="width: 100%; border-collapse: collapse; font-size: 14px;">
-              <tr><td style="padding: 6px 0; color: #94a3b8; width: 40%;">Product:</td><td style="color: #f1f5f9; font-weight: bold;">CAD {productTitle}</td></tr>
-              <tr><td style="padding: 6px 0; color: #94a3b8;">Size:</td><td style="color: #f1f5f9;">CAD {productSize || "—"}</td></tr>
-              <tr><td style="padding: 6px 0; color: #94a3b8;">Quantity:</td><td style="color: #f1f5f9;">CAD {quantity} unit(s)</td></tr>
+              <tr><td style="padding: 6px 0; color: #94a3b8; width: 40%;">Product:</td><td style="color: #f1f5f9; font-weight: bold;">${productTitle}</td></tr>
+              <tr><td style="padding: 6px 0; color: #94a3b8;">Size:</td><td style="color: #f1f5f9;">${productSize || "—"}</td></tr>
+              <tr><td style="padding: 6px 0; color: #94a3b8;">Quantity:</td><td style="color: #f1f5f9;">${quantity} unit(s)</td></tr>
               <tr><td style="padding: 6px 0; color: #94a3b8;">Unit Price:</td><td style="color: #f1f5f9;">CAD ${unitPrice.toFixed(2)}</td></tr>
               <tr><td style="padding: 6px 0; color: #94a3b8;">Total:</td><td style="color: #f7f82d; font-weight: bold; font-size: 16px;">CAD ${totalPrice.toFixed(2)}</td></tr>
             </table>
@@ -174,7 +174,7 @@ export async function POST(req: NextRequest) {
             .filter(([k]) => k !== "Design Data")
             .map(
               ([k, v]) => `
-                <tr><td style="padding: 4px 0; color: #64748b; width: 40%;">CAD {k}:</td><td style="color: #e2e8f0;">CAD {v}</td></tr>
+                <tr><td style="padding: 4px 0; color: #64748b; width: 40%;">${k}:</td><td style="color: #e2e8f0;">${v}</td></tr>
               `,
             )
             .join("")}
@@ -269,15 +269,15 @@ export async function POST(req: NextRequest) {
               </tr>
               <tr style="border-bottom: 1px solid #f1f5f9;">
                 <td style="padding: 10px 0; color: #64748b;">Product</td>
-                <td style="padding: 10px 0; color: #0f172a; font-weight: 600;">CAD {productTitle}</td>
+                <td style="padding: 10px 0; color: #0f172a; font-weight: 600;">${productTitle}</td>
               </tr>
               <tr style="border-bottom: 1px solid #f1f5f9;">
                 <td style="padding: 10px 0; color: #64748b;">Size</td>
-                <td style="padding: 10px 0; color: #0f172a;">CAD {productSize || "—"}</td>
+                <td style="padding: 10px 0; color: #0f172a;">${productSize || "—"}</td>
               </tr>
               <tr style="border-bottom: 1px solid #f1f5f9;">
                 <td style="padding: 10px 0; color: #64748b;">Quantity</td>
-                <td style="padding: 10px 0; color: #0f172a;">CAD {quantity} unit(s)</td>
+                <td style="padding: 10px 0; color: #0f172a;">${quantity} unit(s)</td>
               </tr>
               <tr>
                 <td style="padding: 10px 0; color: #64748b; font-weight: bold;">Total Charged</td>
@@ -289,7 +289,7 @@ export async function POST(req: NextRequest) {
             ? `
             <h2 style="font-size: 16px; color: #0f172a; margin: 0 0 12px;">Shipping To</h2>
             <div style="background: #f8fafc; border-radius: 8px; padding: 14px; font-size: 14px; color: #334155; line-height: 1.6; margin-bottom: 24px;">
-              <strong>CAD {shippingName}</strong><br/>
+              <strong>${shippingName}</strong><br/>
               ${shippingAddress || ""}<br/>
               ${shippingCity || ""} ${shippingPostal || ""}
             </div>

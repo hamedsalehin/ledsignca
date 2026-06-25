@@ -1,4 +1,4 @@
-﻿import { NextRequest, NextResponse } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 import { Resend } from "resend";
 
 const resendApiKey = process.env.RESEND_API_KEY;
@@ -46,24 +46,24 @@ export async function POST(req: NextRequest) {
             <table style="width: 100%; border-collapse: collapse; font-size: 14px;">
               <tr>
                 <td style="padding: 6px 0; color: #94a3b8; width: 30%;">Name:</td>
-                <td style="color: #f1f5f9; font-weight: bold;">CAD {name}</td>
+                <td style="color: #f1f5f9; font-weight: bold;">${name}</td>
               </tr>
               <tr>
                 <td style="padding: 6px 0; color: #94a3b8;">Email:</td>
                 <td style="color: #f1f5f9;">
-                  <a href="mailto:${email}" style="color: #f7f82d; text-decoration: none;">CAD {email}</a>
+                  <a href="mailto:${email}" style="color: #f7f82d; text-decoration: none;">${email}</a>
                 </td>
               </tr>
               <tr>
                 <td style="padding: 6px 0; color: #94a3b8;">Subject:</td>
-                <td style="color: #f1f5f9; font-weight: bold;">CAD {subject}</td>
+                <td style="color: #f1f5f9; font-weight: bold;">${subject}</td>
               </tr>
             </table>
           </div>
 
           <div style="background: #1e293b; border-radius: 10px; padding: 20px;">
             <h3 style="margin: 0 0 12px; font-size: 14px; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.05em;">Message</h3>
-            <p style="margin: 0; font-size: 14px; color: #e2e8f0; line-height: 1.6; white-space: pre-wrap;">CAD {message}</p>
+            <p style="margin: 0; font-size: 14px; color: #e2e8f0; line-height: 1.6; white-space: pre-wrap;">${message}</p>
           </div>
         </div>
       `

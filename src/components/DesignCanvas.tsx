@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import React, { useState, useEffect, useRef, useCallback } from "react";
 import {
@@ -590,7 +590,7 @@ export function DesignCanvas({
           <div className="flex items-center gap-1.5 text-[10px] text-slate-300 hover:text-white select-none cursor-pointer pl-2 border-l border-slate-700 ml-1">
             <input
               type="checkbox"
-              id={`aspect-lock-CAD {el.id}`}
+              id={`aspect-lock-${el.id}`}
               checked={el.aspectLocked !== undefined ? el.aspectLocked : (el.type === "image" || el.type === "clipart")}
               onChange={(e) => {
                 const updated = elements.map((item) =>
@@ -603,7 +603,7 @@ export function DesignCanvas({
               }}
               className="accent-[#f7f82d] w-3 h-3 rounded bg-slate-850 border-slate-700 cursor-pointer"
             />
-            <label htmlFor={`aspect-lock-CAD {el.id}`} className="whitespace-nowrap cursor-pointer select-none">
+            <label htmlFor={`aspect-lock-${el.id}`} className="whitespace-nowrap cursor-pointer select-none">
               Lock Aspect
             </label>
           </div>

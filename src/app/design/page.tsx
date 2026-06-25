@@ -2735,7 +2735,7 @@ function DesignPageContent() {
         // 1. Upload pre-existing custom artwork file
         const fileBuffer = await finishedDesignFile.arrayBuffer();
         const fileBytes = new Uint8Array(fileBuffer);
-        const safeFileName = `${user.id}/${Date.now()}-CAD {finishedDesignFile.name.replace(/[^a-zA-Z0-9._-]/g, "_")}`;
+        const safeFileName = `${user.id}/${Date.now()}-${finishedDesignFile.name.replace(/[^a-zA-Z0-9._-]/g, "_")}`;
 
         const { data: uploadData, error: uploadError } = await supabase.storage
           .from("designs")
@@ -4165,7 +4165,7 @@ function DesignPageContent() {
                             {sz.priceAdder > 0
                               ? `(+${sz.priceAdder.toFixed(2)})`
                               : sz.priceAdder < 0
-                                ? `(-CAD {Math.abs(sz.priceAdder).toFixed(2)})`
+                                ? `(-${Math.abs(sz.priceAdder).toFixed(2)})`
                                 : ""}
                           </option>
                         ))}
