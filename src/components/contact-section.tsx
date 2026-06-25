@@ -34,7 +34,7 @@ export function ContactSection() {
           fullName: formData.name,
           email: formData.email,
           phone: formData.phone,
-          description: Product: \nCompany: \n\nMessage:\n
+          description: `Product: ${formData.productType}\nCompany: ${formData.company}\n\nMessage:\n${formData.message}`
         }),
       })
 
