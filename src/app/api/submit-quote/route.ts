@@ -77,7 +77,7 @@ export async function POST(req: NextRequest) {
     const shortId = quoteId.slice(0, 8).toUpperCase();
 
     let adminEmailError: any = null;
-    let customerEmailError: any = null;
+    const customerEmailError: any = null;
 
     // ── Send Admin Notification Email ─────────────────────────────────────────
     if (ADMIN_EMAIL) {
