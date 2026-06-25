@@ -1,7 +1,7 @@
 import { GoogleGenerativeAI } from "@google/generative-ai";
 import { GoogleGenerativeAIStream, StreamingTextResponse } from "ai";
 
-// Allow streaming responses up to 30 seconds
+// Allow streaming responses up to 30 seconds - fallback enabled
 export const maxDuration = 30;
 
 export async function POST(req: Request) {
