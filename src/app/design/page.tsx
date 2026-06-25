@@ -2551,7 +2551,7 @@ function DesignPageContent() {
   useEffect(() => {
     if (registryProduct) {
       const initialSelects: Record<string, any> = {};
-      registryProduct.config.selects?.forEach((s) => {
+      registryProduct.config.selects?.forEach((s: any) => {
         initialSelects[s.label] = s.options[0];
       });
 
@@ -2562,7 +2562,7 @@ function DesignPageContent() {
           Object.entries(parsed).forEach(([key, val]) => {
             const selectDef = registryProduct.config.selects?.find((s: any) => s.label === key);
             if (selectDef) {
-              const matchedOption = selectDef.options.find(o => o.value === val);
+              const matchedOption = selectDef.options.find((o: any) => o.value === val);
               if (matchedOption) {
                 initialSelects[key] = matchedOption;
               }
@@ -4204,7 +4204,7 @@ function DesignPageContent() {
                           }}
                           className="w-full bg-slate-800 border border-slate-700 rounded-lg p-2.5 text-xs text-slate-100 focus:outline-none focus:ring-2 focus:ring-[#f7f82d] font-semibold"
                         >
-                          {sel.options.map((o) => (
+                          {sel.options.map((o: any) => (
                             <option key={o.value} value={o.value} className="bg-slate-900 text-white">
                               {o.label}
                               {o.priceAdder > 0
