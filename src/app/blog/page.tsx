@@ -2,6 +2,8 @@ import { getSortedPostsData } from "@/lib/blog";
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight, Calendar } from "lucide-react";
+import { Header } from "@/components/Header";
+import { Footer } from "@/components/Footer";
 
 export const metadata = {
   title: "Blog & News | Nano Signs",
@@ -12,7 +14,9 @@ export default function BlogIndex() {
   const allPostsData = getSortedPostsData();
 
   return (
-    <main className="min-h-screen bg-slate-50 pt-8 pb-20">
+    <>
+      <Header />
+      <main className="min-h-screen bg-slate-50 pt-8 pb-20">
       <div className="max-w-7xl mx-auto px-4 md:px-8">
         <Link href="/" className="inline-flex items-center text-sm font-bold text-gray-500 hover:text-pink-500 transition-colors mb-8">
           <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" /></svg> Back to Home
@@ -65,5 +69,7 @@ export default function BlogIndex() {
         )}
       </div>
     </main>
+    <Footer />
+  </>
   );
 }

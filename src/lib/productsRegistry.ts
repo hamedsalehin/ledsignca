@@ -2582,7 +2582,7 @@ Why Choose Our Expert-grade Rollup Banners?
           breadcrumb: "Tradeshow",
           breadcrumbHref: "/trade-show",
           promoText: "25% OFF ALL MARKETING FLAGS - SHIPS NEXT DAY",
-          image: "/api/assets/0085996_feather-flags_360-toronto-printing-ca.png",
+          image: "/images/products/main%20page/feather_flag-toronto-printing-ca.png",
           ratingCount: "820",
           ratingScore: "4.8",
           sizes: [

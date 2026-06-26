@@ -15,6 +15,7 @@ const footerLinks = {
     title: "Help Center",
     links: [
       { name: "Contact Us", href: "/contact-us" },
+      { name: "Design Online", href: "/design" },
       { name: "Frequently Asked Questions", href: "#" },
       { name: "Corporate Pricing", href: "#" },
     ],

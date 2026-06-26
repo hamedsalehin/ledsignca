@@ -19,6 +19,7 @@ import {
   Info,
   BookOpen,
   Grid,
+  Sparkles,
 } from "lucide-react";
 import { useAuth } from "./AuthContext";
 import { useCart } from "./CartContext";
@@ -52,6 +53,14 @@ export function Header() {
       {/* Top utility bar — simple white */}
       <div className="bg-white border-b border-gray-150 text-gray-500 text-xs py-1.5 font-medium">
         <div className="max-w-7xl mx-auto px-4 flex items-center justify-end gap-4 md:gap-6">
+          <Link
+            href="/design"
+            className="flex items-center gap-1.5 hover:text-yellow-600 transition-colors duration-200 text-yellow-600"
+            aria-label="Design Online"
+          >
+            <Sparkles className="w-4 h-4 text-yellow-500" />
+            <span>Design Online</span>
+          </Link>
           <Link
             href="/about-us"
             className="flex items-center gap-1.5 hover:text-yellow-600 transition-colors duration-200"

@@ -4,6 +4,8 @@ import Link from "next/link";
 import { ArrowLeft, Calendar, ArrowRight } from "lucide-react";
 import { notFound } from "next/navigation";
 import { PRODUCTS_REGISTRY } from "@/lib/productsRegistry";
+import { Header } from "@/components/Header";
+import { Footer } from "@/components/Footer";
 
 export async function generateStaticParams() {
   const posts = getSortedPostsData();
@@ -83,7 +85,9 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
   const relatedProducts = scoredProducts.sort((a, b) => b.score - a.score).slice(0, 3).map(p => p.product);
 
   return (
-    <main className="min-h-screen bg-slate-50 pt-8 pb-20">
+    <>
+      <Header />
+      <main className="min-h-screen bg-slate-50 pt-8 pb-20">
       <div className="max-w-7xl mx-auto px-4 md:px-8">
         <Link href="/blog" className="inline-flex items-center text-sm font-bold text-gray-500 hover:text-pink-500 transition-colors mb-8">
           <ArrowLeft className="w-4 h-4 mr-2" /> Back to Blog
@@ -173,5 +177,7 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
         </article>
       </div>
     </main>
+    <Footer />
+  </>
   );
 }
