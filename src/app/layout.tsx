@@ -72,8 +72,8 @@ export default function RootLayout({
     <html lang="en-CA" className={`${openSans.variable} ${poppins.variable}`}>
       <head>
         {/* Google tag (gtag.js) */}
-        <Script strategy="afterInteractive" src="https://www.googletagmanager.com/gtag/js?id=G-8N8L6WV8RE" />
-        <Script id="google-analytics" strategy="afterInteractive" dangerouslySetInnerHTML={{
+        <Script strategy="lazyOnload" src="https://www.googletagmanager.com/gtag/js?id=G-8N8L6WV8RE" />
+        <Script id="google-analytics" strategy="lazyOnload" dangerouslySetInnerHTML={{
           __html: `
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
