@@ -48,7 +48,6 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Nano Signs",
     description: "Premium custom signage and print in Toronto",
-    url: "https://led-sign.ca",
     siteName: "Nano Signs",
     images: [
       {
