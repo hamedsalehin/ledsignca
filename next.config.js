@@ -52,6 +52,18 @@ const nextConfig = {
   },
   async redirects() {
     return [
+      // ─── Global WWW to Non-WWW Redirect ─────────────────────────────────────
+      {
+        source: '/:path*',
+        has: [
+          {
+            type: 'host',
+            value: 'www.led-sign.ca',
+          },
+        ],
+        destination: 'https://led-sign.ca/:path*',
+        permanent: true,
+      },
       { source: "/why-programmable-led-signs/", destination: "/blog/why-programmable-led-signs", permanent: true },
       { source: "/why-programmable-led-signs", destination: "/blog/why-programmable-led-signs", permanent: true },
       { source: "/so-many-options-when-it-comes-down-to-brochures/", destination: "/blog/so-many-options-when-it-comes-down-to-brochures", permanent: true },
