@@ -25,7 +25,7 @@ type: "product"
 *     PVC
 *    Gold foil valve
 
-[LED Display screen](https://led-sign.ca/product/single-color-led-display/) /[LED channel Letters](https://led-sign.ca/product/led-channel-letters/)/[LED Light boxes](https://led-sign.ca/product/priting-light-box/)/[full color](https://led-sign.ca/product/full-color-led-display/)/[digital signage](https://led-sign.ca/product/single-color-led-display/)/[digital display board](https://led-sign.ca/product/single-color-led-display/)/[outdoor LED display](https://led-sign.ca/product/single-color-led-display/)/[Indoor LED display](https://led-sign.ca/product/led-display-full-color-indoor/)/Business card design/[Flyer](https://led-sign.ca/product/printing-flyer/)/[Banner](https://led-sign.ca/product/printing-banner/)/[Brochures](https://led-sign.ca/product/printing-brochures/)
+[LED Display screen](\ /[LED channel Letters](\/[LED Light boxes](\/[full color](\/[digital signage](\/[digital display board](\/[outdoor LED display](\/[Indoor LED display](\/Business card design/[Flyer](\/[Banner](\/[Brochures](\
 
 ### What is the difference between matte, glossy and soft touch ?
 
@@ -59,7 +59,7 @@ type: "product"
 
 ## Why design a business card ?
 
-To buy [Flyer](https://led-sign.ca/product/flyer/) call numbers in website.
+To buy [Flyer](\ call numbers in website.
 
 Imagine for a second you were transposed into the karmic driven world of Earl. However, you have a lot of work to do and you do not know where to go to repair a laptop. But suddenly you remember that some time ago you received a business card with information about a laptop repair service center engraved on it. Therefore, by contacting the center in question, you will solve the problem, and this will be a positive point in favor of that collection.
 
@@ -77,7 +77,7 @@ A business card is an opportunity to shape the First Impression in the mind and 
 
 ## Who is the right business card design?
 
-To buy [Banners](https://led-sign.ca/product/banners-vinyl-fabric-mesh-rull-up-retractable/) call numbers in website.
+To buy [Banners](\ call numbers in website.
 
 You may think that to have a business card, you need to have a professional group or at least one company to be allowed to take the first step in designing a business card, but business card design has no boundaries. You do not necessarily need to have a physical company to design a business card. What is printed on the business card is information such as contact information and a brief description of the services provided by you. For example, if you are teaching a language or you are a student and you are teaching basic courses, you can present the contact information and services you provide in your business card in a creative and attractive way and give it to the community. Reach the goal. Business cards are a must have, for any Affiliate, promoting any program. What a genuine and rooted business you are and what a small and start-up business; It does not matter, you need a business card anyway because you have to somehow explain to others how to communicate with yourself and what is better than a business card.
 
@@ -85,7 +85,7 @@ Businesses that want to present their visual identity to the audience in a creat
 
 All businesses that want to network, stay in the subconscious of the audience, create an attractive visual identity, increase sales and create a professional vision of their business in the eyes of the audience should start designing business cards.
 
-To buy [Light box](https://led-sign.ca/product/light-box-sign-led-backlight-sign-illuminated/) call numbers in website.
+To buy [Light box](\ call numbers in website.
 
 Even if you have a skill and want to show it to others, you can use business card design. You may not have provided services in this area before and you are planning to demonstrate your skills for the first time. If you are looking to get a project and create a job, you can inform others about your skills by designing and presenting business cards and remind them of your ways of communication. You can design a logo for yourself and engrave contact information, email, ways to communicate through social networks and your website address and business slogan on the business card to increase its effectiveness.
 
@@ -93,7 +93,7 @@ Even if you have a skill and want to show it to others, you can use business car
 
 ## Business card design cost
 
-To buy [Indoor Full Color LED Display](https://led-sign.ca/product/indoor-full-color-led-display-indoor4168388994/) call numbers in website.
+To buy [Indoor Full Color LED Display](\ call numbers in website.
 
 day by day We are receiving more creative business cards. The appearance of business cards is constantly changing and their prices vary accordingly. Undoubtedly, the more creativity and innovation the business card designer has implemented in its design, the higher the cost of business card design. The simplest form of business card is actually a cardboard card with brief information about the business engraved on it, but the tastes of today's audience are different and have a special look at business cards. The audience is mainly attracted to those cards that have a minimal, stylish and simple design and show innovative visual charms. This does not mean that the business card is crowded. Crowded business cards certainly do not get as much attention as they should. At the same time, the designer must implement modern and creative ideas in business card design, and the more innovation, skill and experience of the designer, the higher the cost of business card design will be.
 
@@ -113,7 +113,7 @@ Business cards can be designed and printed with special cuts. Therefore, the ove
 
 Some business cards are gold-plated, silver-plated or have prominent graphic designs that require special technologies to be produced and printed, so any option added to the business card can affect its price. For example, there is a way to print a business card called a letterpress method. This method of printing conveys a sense of prominence and luxury to the audience, and no doubt for the beauty of the work, your business card will remain with the customer for a long time.
 
-To buy [LED Display Screen](https://led-sign.ca/product/full-color-led-display-screen/) call numbers in website.
+To buy [LED Display Screen](\ call numbers in website.
 
 If you have covers for your business card to make it more durable, its price will change in the same proportion. UV cover for business card will make the surface of the business card shiny and thus its appearance will be more. Other coatings such as laminate, cellophane and matte and glossy coatings can also be applied to the surface of the business card, each of which fluctuates the price of the business card.
 

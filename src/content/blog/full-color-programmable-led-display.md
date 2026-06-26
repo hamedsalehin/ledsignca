@@ -8,7 +8,7 @@ type: "product"
 
 The days of utilizing small lights to change the color of a light source are long gone. Today, a single small diode is all that is required to produce infinite color. But, in compared to normal light bulbs, what causes LEDs to change color? How can something so technologically advanced be so small? Right now, we're discussing a Full Color programmable LED Display.
 
-To buy [LED Channel Letters](https://led-sign.ca/product/channel-letter-signs/) call numbers in website.
+To buy [LED Channel Letters](\ call numbers in website.
 
 ## **What does a Full Color programmable LED Display mean?**
 
@@ -28,7 +28,7 @@ Unlike air temperature, which is measured in degrees Celsius or Fahrenheit, warm
 
 The color spectrum of LEDs is up to 16 million. So, how exactly do they work? A color LED is made up of three red, green, and blue (RGB) diodes. The RBG model is an add-on model because human eyes interpret all colors as a blend of red, green, and blue wavelengths. But let's take a closer look at this subject.
 
-To buy [LED POSTER](https://led-sign.ca/product/led-poster-smart-led-poster-1-416-8388994/) call numbers in website.
+To buy [LED POSTER](\ call numbers in website.
 
 ## **Purchase a full-color programming led signs board**
 
@@ -48,7 +48,7 @@ The current passing through all three diodes produces white light of equal inten
 
 By altering the current so that it only goes through two diodes, three additional colors can be created. The current passing between the red and blue diodes produces magenta, red, green, yellow, blue, and cyan. A table is frequently used to display the primary color outputs that are formed by mixing different colors.
 
-To buy [Single Color Programable LED Sign](https://led-sign.ca/product/single-color-programable-led-sign-led-screen/) call numbers in website.
+To buy [Single Color Programable LED Sign](\ call numbers in website.
 
 ## **When choosing a Full Color programmable LED Display**
 
@@ -88,7 +88,7 @@ To begin, there are two types of color LEDs: monochrome and multicolor. If the L
 
 Due to the lack of essential components, altering the color of monochrome LEDs is theoretically impossible. On the other hand, most color LEDs include all three fundamental color diodes. They may be able to change colors, but the manufacturer determines the LEDs' composition.
 
-To buy [Indoor Full Color LED Display](https://led-sign.ca/product/indoor-full-color-led-display-indoor4168388994/) call numbers in website.
+To buy [Indoor Full Color LED Display](\ call numbers in website.
 
 ## **The cost of a Full Color programmable LED Display in Toronto**
 
@@ -104,7 +104,7 @@ So, you've got a great idea for a cool space and you think you have a lot of LED
 
 But don't let that stop you; this is a great opportunity for you and your kids to do some light bulb painting together.
 
-To buy [LED Display Screen](https://led-sign.ca/product/full-color-led-display-screen/) call numbers in website.  
+To buy [LED Display Screen](\ call numbers in website.  
 
 ## **The Importance of Purchasing a Full Color programming LED Display from Citylight**
 

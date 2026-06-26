@@ -28,7 +28,7 @@ Red/Green/White/Blue
 
 Channel letters are great for storefront signage and provide more dimension than flat cut and cast metal letters. The letter can is painted and fitted with light-emitting diode (LED) modules , transformers, and whips
 
-# [LED POSTER](https://led-sign.ca/product/personalised-mug/)
+# [LED POSTER](\
 
 Feature & parameter
 

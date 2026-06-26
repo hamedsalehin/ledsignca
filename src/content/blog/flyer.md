@@ -53,7 +53,7 @@ type: "product"
     # **Q: Can I use your custom flyers for different projects?** A: Yes. Our custom flyers are multi-purpose. You can use them as mailers e.g: campaign flyers, real estate appraisal postcards, cleaning services postcards. Or as pet sitting brochures. **Q: Which marketing flyers come with holders?** A: We offer holders for the following sizes: 3.75" x 8.25", 4" x 6", 8" x 8", and 8.5" x 11"
     
 
-[LED Display screen](https://led-sign.ca/product/led-display-single-color-digital-signage-digital-display-board-outdoor-led-display/) /[LED channel Letters](https://led-sign.ca/product/led-channel-letters/)/[LED Lightboxes](https://led-sign.ca/product/led-channel-letters/)/[full color](https://led-sign.ca/product/full-color-led-display-led_display_screen-led_channel_letters-led_light_boxes-sign-print/)/[outdoor LED display](https://led-sign.ca/product/full-color-led-display-led_display_screen-led_channel_letters-led_light_boxes-sign-print/)/[Indoor LED display](https://led-sign.ca/product/led-display-full-color-indoor/)/[Business card](https://led-sign.ca/product/printing-business-card/)/[Banner](https://led-sign.ca/product/vinyl-banners-fabric-banners-mesh-banners-rull-up-retractable-banners/)/[Brochures/](https://led-sign.ca/product/printing-brochures/)
+[LED Display screen](\ /[LED channel Letters](\/[LED Lightboxes](\/[full color](\/[outdoor LED display](\/[Indoor LED display](\/[Business card](\/[Banner](\/[Brochures/](\
 
 ![Flyer](/uploads/elementor/thumbs/6-p8xeiimc1xni2kqygqwddfzglff3qdqzlh38keg022.jpg "Flyer")
 
@@ -71,7 +71,7 @@ On the other hand, the flyer can be easily accessed and published by the audienc
 
 ## Who is the design of advertising flyer suitable for?
 
-To buy [Business cards](https://led-sign.ca/product/business-card-custom-design-toronto-4168388994/) call numbers in website.
+To buy [Business cards](\ call numbers in website.
 
 If we want to give the most correct answer to this question, we must say that flyers are suitable for any type of business. Both physical and online businesses can use flyer design services. Any kind of information can be placed inside the flyers. Exhibition advertisements, charity information, concert information, election campaigns, product sales, invitations, service delivery and events such as academic, research and artistic events can be informed through Flyer. It does not matter what your business is; Restaurant, music and language school, car repair services, beauty salon or house cleaning and carpet cleaning services. All your business information, including the type of service, face-to-face and offline communication channels, email address, virtual page address, contact number and company address will be printed on the flyers. In fact, you have no restrictions on providing information in the flyer and you can do any kind of information in the form of a flyer, so people who want to provide information in the best and most effective way possible can go to the design of the flyer.
 
@@ -81,7 +81,7 @@ Also, if you want to find new customers in your company, you can design a flyer.
 
 ## Cost of advertising flyer design
 
-To buy [Banner](https://led-sign.ca/product/banners-vinyl-fabric-mesh-rull-up-retractable/) call numbers in website.
+To buy [Banner](\ call numbers in website.
 
 One of the most important things that affect the cost of flyer design is the amount of experience and background of the graphic designer in flyer design. The design of the flyer, which has a ready-made template with predefined graphics and is downloaded from the Internet to the ground, is different from the design of the flyer on which the idea was conceived and the graphic designer took the trouble to design the visual elements. Therefore, it is natural for the designer to determine the cost of the flyer design as much time, energy and ideas as he does in the flyer design.
 
@@ -99,7 +99,7 @@ Before the original flyer is printed, a black and white sample must be printed t
 
 The color system for flyer printing should be CMYK and monochrome black (C: 0 M: 0 Y: 0 k: 100) should be used for small prints. When choosing flyer printing paper, you should choose the best and most suitable type of paper. Glossy papers come in a variety of shapes and thicknesses. The color printing on these papers is different, so great care must be taken in choosing the paper.
 
-To buy [Banners](https://led-sign.ca/product/banners-vinyl-fabric-mesh-rull-up-retractable/) call numbers in website.
+To buy [Banners](\ call numbers in website.
 
 According to the customer's request, offset or digital printing technique should be implemented. It should be noted that the colors printed in these two techniques are different from each other and this difference should be taken into account as a result of the work.
 
@@ -107,7 +107,7 @@ According to the customer's request, offset or digital printing technique should
 
 ## Cost of printing advertising flyers
 
-To buy [Light box Sign](https://led-sign.ca/product/light-box-sign-led-backlight-sign-illuminated/) call numbers in website.
+To buy [Light box Sign](\ call numbers in website.
 
 Flyers are mostly printed in A4 size, but these dimensions may vary according to the customer's wishes and tastes. One of the most important factors in determining the cost of flyer printing is its dimensions. Using tabs A4, A5, A6, B4, B5 and B6 can all come at a different cost.
 
@@ -127,7 +127,7 @@ Surely you, as the owner of a business, want to show a beautiful, colorful and g
 
 Enjoying reasonable and affordable prices is another feature that can be expected from a flyer design service provider. This does not mean that you can expect special services at half price! Rather, it means offering prices at the level and quality of work. For example, if you refer to a collection that does not speak in the design of flyer and offers first-class work, then the payment of the flyer should be at the level of the designs provided, and if the level of work of the designers of the collection is normal, the prices should not exceed Be from the work level. One of the most important features of Flyer that attracts businesses is its reasonable price Reasonable prices are an important feature that must be taken into account.
 
-To buy [LED POSTER](https://led-sign.ca/product/led-poster-smart-led-poster-1-416-8388994/) call numbers in website.
+To buy [LED POSTER](\ call numbers in website.
 
 The promising nature of the Flyer design service provider is another important point that if the opposite is true, you will practically be in a tight spot, because the promise of design and presentation of your work will be constantly postponed to today and tomorrow, and eventually you will be empty-handed. Stay so all your plans will fall apart. The first principle that the Flyer design service provider must adhere to is adhering to the design delivery schedule and respecting the customer's time.
 

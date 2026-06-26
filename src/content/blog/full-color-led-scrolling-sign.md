@@ -8,7 +8,7 @@ type: "product"
 
 The days of utilising small lights to change the colour of a light source are long gone. Today, a single small diode is all that is required to produce infinite colour. But, in compared to normal light bulbs, what causes LEDs to change colour? How can something so technologically advanced be so small? you can buy LED Scrolling Sign from citylight.
 
-To buy [LED Display Screen](https://led-sign.ca/product/full-color-led-display-screen/) call numbers in website. ![LED Scrolling Sign](/uploads/2022/02/LED-Scrolling-Sign-5-300x209.jpg)
+To buy [LED Display Screen](\ call numbers in website. ![LED Scrolling Sign](/uploads/2022/02/LED-Scrolling-Sign-5-300x209.jpg)
 
 ## **What does a Full Color LED Scrolling Sign mean?**
 
@@ -18,7 +18,7 @@ Colored LEDs can be found in a variety of places. In addition to cosmetic purpos
 
 Before I go any further, let me define colour for you. Color refers to the hue of the light emitted by the diode. You can use any hue from the rainbow. When referring to the colour of the emitted white light. White light can have a warmer or colder visual impact, which is measured in degrees Kelvin. The Kelvin scale was created by Lord Kelvin, a British surgeon who studied colour changes in heated metals. He noticed that when the temperature rose, the colour of a black substance changed from red to yellow to blue.
 
-To buy [Indoor Full Color LED Display](https://led-sign.ca/product/indoor-full-color-led-display-indoor4168388994/) call numbers in website.
+To buy [Indoor Full Color LED Display](\ call numbers in website.
 
 ### **Purchase a full-color LED display**
 
@@ -46,7 +46,7 @@ The current passing through all three diodes produces white light of equal inten
 
 By altering the current so that it only goes through two diodes, three additional colours can be created. The current passing between the red and blue diodes produces magenta, red, green, yellow, blue, and cyan. A table is frequently used to display the primary colour outputs that are formed by mixing different colours.
 
-To buy [Single Color Programable LED Sign](https://led-sign.ca/product/single-color-programable-led-sign-led-screen/) call numbers in website.
+To buy [Single Color Programable LED Sign](\ call numbers in website.
 
 ## **When choosing a Full Color LED Scrolling Sign**
 
@@ -60,7 +60,7 @@ Because each of the three colours may be modified to 256 values, there are 256 \
 
 In color-changing LEDs, a microcontroller is utilised to regulate whether each diode is on or off. A diode is dimmed with pulse width modulation, whereas LEDs are dimmed with pulse width modulation (PWM). As the name says, PWM operates by rapidly turning the diode on and off. This flicker is so fast that it is undetectable to the human eye. As a result, all our eyes see is the final result, which is colour. Most LEDs blink at 1000 Hz since the human eye can only detect flashes slower than 200 Hz.
 
-To buy [LED POSTER](https://led-sign.ca/product/led-poster-smart-led-poster-1-416-8388994/) call numbers in website.
+To buy [LED POSTER](\ call numbers in website.
 
 ## **cost of a full-color programmable led scrolling sign**
 
@@ -74,7 +74,7 @@ Obviously, the white produced by RGBW LEDs is purer than the white produced by R
 
 In general, changing the colour of an LED is simple, but can the same be said for changing the colour temperature of a lamp? Unfortunately, this is not a simple task. Certain Kelvin dyes are created with liquids, which implies that once made, the colour temperature is set and cannot be changed. you can buy LED Scrolling Sign from citylight.
 
-To buy [LED Channel Letters](https://led-sign.ca/product/channel-letter-signs/) call numbers in website. ![LED Scrolling Sign](/uploads/2022/02/LED-Scrolling-Sign-2-300x150.jpg)
+To buy [LED Channel Letters](\ call numbers in website. ![LED Scrolling Sign](/uploads/2022/02/LED-Scrolling-Sign-2-300x150.jpg)
 
 ## **Purchase a full-color LED scrolling sign.**
 

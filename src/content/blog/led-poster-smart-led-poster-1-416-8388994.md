@@ -21,7 +21,7 @@ type: "product"
 *   Lightweight and portable at 48 lbs per panel
 *   Update display content via Windows, iOS, or Android .
 
-[LED Display screen](https://led-sign.ca/product/single-color-led-display/) /[LED channel Letters](https://led-sign.ca/product/led-channel-letters/)/[LED Lightboxes](https://led-sign.ca/product/priting-light-box/)/[full color](https://led-sign.ca/product/full-color-led-display/)/[digital signage](https://led-sign.ca/product/single-color-led-display/)/[digital display board](https://led-sign.ca/product/single-color-led-display/)/[outdoor LED display](https://led-sign.ca/product/single-color-led-display/)/[Business card](https://led-sign.ca/product/printing-business-card/)/[Flyer](https://led-sign.ca/product/printing-flyer/)/[Banner](https://led-sign.ca/product/printing-banner/)/[Brochures](https://led-sign.ca/product/printing-brochures/)
+[LED Display screen](\ /[LED channel Letters](\/[LED Lightboxes](\/[full color](\/[digital signage](\/[digital display board](\/[outdoor LED display](\/[Business card](\/[Flyer](\/[Banner](\/[Brochures](\
 
 *   Easy to install and requires minimal infrastructure.
     

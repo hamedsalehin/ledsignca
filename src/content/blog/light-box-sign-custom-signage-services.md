@@ -8,7 +8,7 @@ type: "product"
 
 Light box sign is used to illuminate graphic displays and are made out of an exterior frame, a graphic, usually a fabric or light transducer that allows light to pass through, and LED lighting mounted on a frame or back panel that illuminates the installed graphics. Light box signs have been shown to boost customer notice and attention, and research reveals that clear visuals can increase sales by up to 30% through direct and sub-advertising messages. We're talking about light box signs right now.
 
-To buy [LED Channel Letters](https://led-sign.ca/product/channel-letter-signs/) call numbers in website.
+To buy [LED Channel Letters](\ call numbers in website.
 
 ## **What is the meaning of a Light box sign?**
 
@@ -40,7 +40,7 @@ Electricity Consumption: Retailers usually set energy consumption goals and keep
 
 Color temperature: LEDs are available in a variety of color temperatures, ranging from warm light (about 2700K) to cold light (approximately 2700K) (7000K). When (technical bit......) "a theoretical black body" emits the color temperature of the shadow of white light, it emits the color temperature of the shadow of white light (think of it as a metal string in a lamp, or more simply, an iron mass.) It's heated to a specific temperature, measured in Kelvin. The light appears to be cooler as the temperature rises. The designs appear to be closer to their original artwork when the color temperatures are changed. If your graphics were a snowy scene, for example, the cool white LED color temperature allows you to keep the blue or white instead of red or white.
 
-To buy [LED POSTER](https://led-sign.ca/product/led-poster-smart-led-poster-1-416-8388994/) call numbers in website. ![Lightbox sign](/uploads/2022/02/Lightbox-sign-1-300x300.jpg)
+To buy [LED POSTER](\ call numbers in website. ![Lightbox sign](/uploads/2022/02/Lightbox-sign-1-300x300.jpg)
 
 ## **Important considerations when purchasing an LED lightbox sign**
 
@@ -68,7 +68,7 @@ A bright screen that is used for advertising. Fluorescent lights or LED lighting
 
 A stock photography folder that allows the user to arrange digital photos. Photos can be saved in a thematically visible Lightbox sign LED folder for later use or to aggregate unrelated photos for a given project.
 
-To buy [Single Color Programable LED Sign](https://led-sign.ca/product/single-color-programable-led-sign-led-screen/) call numbers in website.
+To buy [Single Color Programable LED Sign](\ call numbers in website.
 
 ## **LED lightbox sign for sale**
 
@@ -96,7 +96,7 @@ Price Theory: Lightbox sign LEDs are available in a wide range of prices, rangin
 
 Consider where you'll be using your Lightbox sign LED the most (and keep in mind that many Lightbox sign LEDs are portable), as well as the dimensions you desire for the design surface. Do you prefer to work on multiple paintings at once or do you want to make rather massive works of art?
 
-To buy [Indoor Full Color LED Display](https://led-sign.ca/product/indoor-full-color-led-display-indoor4168388994/) call numbers in website.
+To buy [Indoor Full Color LED Display](\ call numbers in website.
 
 ## **The significance of purchasing an LED Lightbox sign from Citylight**
 
@@ -132,7 +132,7 @@ See our Light box sign LED FAQ at the end of the post for more information on wh
 
 Light box signs are a one-of-a-kind approach to brand and attract attention to your company. Ideal for use beneath awnings in high-traffic areas, where you'll be easy to spot from the street or the highway. Inside, they can place your logo over counters and reception areas to draw attention to your business. Giving your company's image a polished, professional appearance.
 
-To buy [LED Display Screen](https://led-sign.ca/product/full-color-led-display-screen/) call numbers in website. ![Lightbox sign](/uploads/2022/02/Lightbox-sign-3-300x225.jpg)
+To buy [LED Display Screen](\ call numbers in website. ![Lightbox sign](/uploads/2022/02/Lightbox-sign-3-300x225.jpg)
 
 ## **Sign in a lightbox**
 

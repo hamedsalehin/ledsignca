@@ -48,7 +48,7 @@ type: "product"
 · 3D ready with VESA standard  
 · Hot back-up for both power supply and panel receiving card
 
-##### [LED Display screen](https://led-sign.ca/product/led-display-single-color-digital-signage-digital-display-board-outdoor-led-display/) /[LED channel Letters](https://led-sign.ca/product/led-channel-letters/)/[LED](https://led-sign.ca/product/priting-lightbox-lighting-led-backlight-signage-lightbox-framed-illuminated-signs/) Lightbox/[full color](https://led-sign.ca/product/full-color-led-display-led_display_screen-led_channel_letters-led_light_boxes-sign-print/)/digital signage/digital display board/[outdoor LED display](https://led-sign.ca/product/full-color-led-display-led_display_screen-led_channel_letters-led_light_boxes-sign-print/)/Full Color LED Display Screen/[Business card](https://led-sign.ca/product/printing-business-card/)/[Flyer](https://led-sign.ca/product/printing-flyer-designing/)/[Banner](https://led-sign.ca/product/vinyl-banners-fabric-banners-mesh-banners-rull-up-retractable-banners/)/[Brochures](https://led-sign.ca/product/printing-brochures/)
+##### [LED Display screen](\ /[LED channel Letters](\/[LED](\ Lightbox/[full color](\/digital signage/digital display board/[outdoor LED display](\/Full Color LED Display Screen/[Business card](\/[Flyer](\/[Banner](\/[Brochures](\
 
 ### **Pixel Pitch (mm) 1.2  
 LED Type SMD  

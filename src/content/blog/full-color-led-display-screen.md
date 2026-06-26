@@ -35,7 +35,7 @@ type: "product"
 *   ###### **Reservations** – small, interactive screens on walls or desks that allow employees to reserve the space for a limited time.
     
 
-##### [custom led sign/](https://led-sign.ca/product/led-display-single-color/) LED Display Screen/[LED channel Letters](https://led-sign.ca/product/led-channel-letters/)/[LED Lightboxes](https://led-sign.ca/product/priting-light-box/)/[outdoor LED display](https://led-sign.ca/product/full-color-led-display-led_display_screen-led_channel_letters-led_light_boxes-sign-print/)/[Indoor LED display](https://led-sign.ca/product/led-display-full-color-indoor/)/[LED postr/](https://led-sign.ca/product/led-poster-display/) 
+##### [custom led sign/](\ LED Display Screen/[LED channel Letters](\/[LED Lightboxes](\/[outdoor LED display](\/[Indoor LED display](\/[LED postr/](\ 
 
 # Full color LED display LED displays, light boards or LED boards are one of the different types of electronic screens. These types of electronic devices are widely used in digitalmessaging. Another advantage of the full-color LED display is that menus, various types of advertisements, various TV programs, as well as other digitalmessages can be viewed as a digital and electronic display through a video.
 
