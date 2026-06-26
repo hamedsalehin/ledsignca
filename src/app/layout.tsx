@@ -72,13 +72,13 @@ export default function RootLayout({
     <html lang="en-CA" className={`${openSans.variable} ${poppins.variable}`}>
       <head>
         {/* Google tag (gtag.js) */}
-        <Script strategy="lazyOnload" src="https://www.googletagmanager.com/gtag/js?id=G-8N8L6WV8RE" />
+        <Script strategy="lazyOnload" src="https://www.googletagmanager.com/gtag/js?id=G-YESMFLCB2D" />
         <Script id="google-analytics" strategy="lazyOnload" dangerouslySetInnerHTML={{
           __html: `
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', 'G-8N8L6WV8RE');
+            gtag('config', 'G-YESMFLCB2D');
           `
         }} />
         {/* Local Business Schema Markup */}
