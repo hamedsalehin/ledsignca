@@ -55,7 +55,7 @@ type: "product"
 
 [LED Display screen](\ /[LED channel Letters](\/[LED Lightboxes](\/[full color](\/[outdoor LED display](\/[Indoor LED display](\/[Business card](\/[Banner](\/[Brochures/](\
 
-![Flyer](/uploads/elementor/thumbs/6-p8xeiimc1xni2kqygqwddfzglff3qdqzlh38keg022.jpg "Flyer")
+
 
 ## Why design advertising flyers?
 

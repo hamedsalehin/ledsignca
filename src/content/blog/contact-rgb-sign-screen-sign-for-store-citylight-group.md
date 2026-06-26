@@ -31,4 +31,4 @@ Cell:+1 416-498-5555
 
 ### Ask Your Queries
 
-\[wpforms id="3005"\] ![citylight sign](/uploads/elementor/thumbs/contact-pnp5yi1gw6slog08lm61yyk41mlazqz5oml0i8ifyg.jpg "citylight sign")
+\[wpforms id="3005"\] 
