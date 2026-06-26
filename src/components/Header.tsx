@@ -305,14 +305,14 @@ export function Header() {
                       href={item.href}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="block px-4 py-3 text-sm font-medium text-white hover:text-yellow-600 hover:bg-white/10 transition-colors"
+                      className="block px-4 py-3 text-sm font-medium text-gray-900 hover:text-yellow-600 hover:bg-black/5 transition-colors"
                     >
                       {item.name}
                     </a>
                   ) : (
                     <Link
                       href={item.href}
-                      className="block px-4 py-3 text-sm font-medium text-white hover:text-yellow-600 hover:bg-white/10 transition-colors"
+                      className="block px-4 py-3 text-sm font-medium text-gray-900 hover:text-yellow-600 hover:bg-black/5 transition-colors"
                     >
                       {item.name}
                     </Link>
@@ -321,16 +321,16 @@ export function Header() {
               ))}
 
               {/* Mobile Auth Items */}
-              <li className="border-t border-white/20 mt-2 pt-2">
+              <li className="border-t border-black/10 mt-2 pt-2">
                 {user ? (
                   <>
-                    <div className="px-4 py-2 text-xs text-white/60 font-semibold truncate">
+                    <div className="px-4 py-2 text-xs text-gray-600 font-semibold truncate">
                       Signed in: {user.email}
                     </div>
                     <Link
                       href="/account/orders"
                       onClick={() => setMobileMenuOpen(false)}
-                      className="block px-4 py-3 text-sm font-bold text-white hover:text-yellow-600 hover:bg-white/10 transition-colors"
+                      className="block px-4 py-3 text-sm font-bold text-gray-900 hover:text-yellow-600 hover:bg-black/5 transition-colors"
                     >
                       My Orders
                     </Link>
@@ -339,7 +339,7 @@ export function Header() {
                         setMobileMenuOpen(false);
                         signOut();
                       }}
-                      className="w-full text-left block px-4 py-3 text-sm font-bold text-red-200 hover:bg-white/10 transition-colors"
+                      className="w-full text-left block px-4 py-3 text-sm font-bold text-red-600 hover:bg-black/5 transition-colors"
                     >
                       Sign Out
                     </button>
@@ -348,7 +348,7 @@ export function Header() {
                   <Link
                     href="/login"
                     onClick={() => setMobileMenuOpen(false)}
-                    className="block px-4 py-3 text-sm font-bold text-white hover:text-yellow-600 hover:bg-white/10 transition-colors"
+                    className="block px-4 py-3 text-sm font-bold text-gray-900 hover:text-yellow-600 hover:bg-black/5 transition-colors"
                   >
                     Sign In
                   </Link>
