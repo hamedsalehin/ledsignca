@@ -61,9 +61,6 @@ export const metadata: Metadata = {
     locale: "en_CA",
     type: "website",
   },
-  alternates: {
-    canonical: "/",
-  },
 };
 
 export default function RootLayout({
