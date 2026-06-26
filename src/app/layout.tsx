@@ -63,6 +63,8 @@ export const metadata: Metadata = {
   },
 };
 
+import { CanonicalTag } from "@/components/CanonicalTag";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -71,6 +73,7 @@ export default function RootLayout({
   return (
     <html lang="en-CA" className={`${openSans.variable} ${poppins.variable}`}>
       <head>
+        <CanonicalTag />
         {/* Google tag (gtag.js) */}
         <Script strategy="lazyOnload" src="https://www.googletagmanager.com/gtag/js?id=G-YESMFLCB2D" />
         <Script id="google-analytics" strategy="lazyOnload" dangerouslySetInnerHTML={{
