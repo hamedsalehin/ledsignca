@@ -75,6 +75,21 @@ export async function POST(req: NextRequest) {
     let fileBufferNode: Buffer | null = null;
 
     if (designFile && designFile.size > 0) {
+      // Auto-create designs bucket on server-side if it doesn't exist
+      try {
+        const { data: bucket, error: getError } = await supabaseAdmin.storage.getBucket("designs");
+        if (getError && getError.message.toLowerCase().includes("not found")) {
+          console.log("Auto-creating designs storage bucket...");
+          await supabaseAdmin.storage.createBucket("designs", {
+            public: true,
+            fileSizeLimit: 52428800,
+            allowedMimeTypes: ["application/pdf", "image/png", "image/jpeg", "image/jpg", "image/webp"],
+          });
+        }
+      } catch (bucketErr) {
+        console.error("Auto-setup bucket failed in submit-order:", bucketErr);
+      }
+
       const fileBuffer = await designFile.arrayBuffer();
       fileBufferNode = Buffer.from(fileBuffer);
       const fileBytes = new Uint8Array(fileBuffer);

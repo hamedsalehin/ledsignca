@@ -3144,12 +3144,31 @@ function DesignPageContent() {
       const filePath = `designs/${fileName}`;
       
       console.log("Uploading visual proof PDF to Supabase...");
-      const { error: uploadError } = await supabase.storage
+      let { error: uploadError } = await supabase.storage
         .from("designs")
         .upload(filePath, pdfBlob, {
           contentType: "application/pdf",
           upsert: false,
         });
+
+      if (uploadError && uploadError.message.toLowerCase().includes("bucket not found")) {
+        console.log("Bucket 'designs' not found. Attempting automatic setup...");
+        try {
+          const setupRes = await fetch("/api/setup-bucket", { method: "POST" });
+          if (setupRes.ok) {
+            console.log("Bucket set up successfully. Retrying design proof upload...");
+            const retryRes = await supabase.storage
+              .from("designs")
+              .upload(filePath, pdfBlob, {
+                contentType: "application/pdf",
+                upsert: false,
+              });
+            uploadError = retryRes.error;
+          }
+        } catch (setupErr) {
+          console.error("Auto setup of storage bucket failed:", setupErr);
+        }
+      }
 
       if (uploadError) {
         throw uploadError;
