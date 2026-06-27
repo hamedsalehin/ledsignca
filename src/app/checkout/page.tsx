@@ -124,10 +124,9 @@ export default function CheckoutPage() {
       if (!res.ok || data.error) throw new Error(data.error || "Failed to calculate shipping.");
 
       setShippingRates(data.rates || []);
-      // Pre-select first non-pickup rate if available, otherwise local pickup
+      // Pre-select first rate if available
       if (data.rates && data.rates.length > 0) {
-        const firstRate = data.rates.find((r: any) => r.id !== "local_pickup") || data.rates[0];
-        setSelectedRateId(firstRate.id);
+        setSelectedRateId(data.rates[0].id);
       }
     } catch (err: any) {
       setRateError(err.message || "Failed to load shipping rates.");

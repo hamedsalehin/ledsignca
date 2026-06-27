@@ -224,16 +224,7 @@ export function calculateShippingRates(
     hasFreightItem = true;
   }
 
-  // 1. Free Local Pickup is always available
-  const rates: ShippingRate[] = [
-    {
-      id: "local_pickup",
-      name: "Free Local Pickup",
-      price: 0.0,
-      deliveryEstimate: "Next Business Day",
-      description: "Pick up at our Toronto headquarters: 100 Front St W",
-    },
-  ];
+  const rates: ShippingRate[] = [];
 
   const postal = zipCode.trim().toUpperCase();
   const isToronto = postal.startsWith("M");
