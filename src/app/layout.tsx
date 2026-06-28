@@ -28,9 +28,9 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://led-sign.ca"),
-  title: "Custom Signs, LED Signs & Banners Toronto | Nano Signs",
+  title: "Custom Signs, LED Signs & Banners Toronto | Neon LED Sign",
   description:
-    "Design and order custom signs, LED signs, retractable banners, business cards, and marketing materials online. Fast turnaround in the Toronto Area.",
+    "Design and order custom signs, Neon LED signs, retractable banners, business cards, and marketing materials online. Fast turnaround in the Toronto Area.",
   keywords: [
     "led signs toronto",
     "custom signs toronto",
