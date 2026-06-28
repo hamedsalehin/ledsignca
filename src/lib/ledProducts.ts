@@ -2465,7 +2465,7 @@ export const ledProducts = [
     "id": "programmable-led-signs",
     "name": "Programmable LED Signs",
     "description": "High-quality programmable LED signs for dynamic messaging, advertisements, and business branding with flexible control options.",
-    "image": "/images/products/main%20page/programmable_led_sign-toronto-printing-ca.jpeg",
+    "image": "/images/products/main-page/programmable_led_sign-toronto-printing-ca.jpeg",
     "price": "Request Quote",
     "config": {
       "title": "Programmable LED Signs",
@@ -2473,9 +2473,9 @@ export const ledProducts = [
       "breadcrumb": "LED Display Signs",
       "breadcrumbHref": "/led-display-signs",
       "promoText": "Free design consultation and quote",
-      "image": "/images/products/main%20page/programmable_led_sign-toronto-printing-ca.jpeg",
+      "image": "/images/products/main-page/programmable_led_sign-toronto-printing-ca.jpeg",
       "images": [
-        "/images/products/main%20page/programmable_led_sign-toronto-printing-ca.jpeg"
+        "/images/products/main-page/programmable_led_sign-toronto-printing-ca.jpeg"
       ],
       "ratingCount": "0",
       "ratingScore": "5.0",

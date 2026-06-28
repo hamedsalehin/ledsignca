@@ -22,9 +22,9 @@ export default function WindowSignsPage() {
         breadcrumbHref: "/custom-signs",
         promoText:
           "🪟 Window Signs That Turn Passersby Into Customers — Ships Next Day!",
-        image: "/images/products/main%20page/window_sign-toronto-printing-ca.png",
+        image: "/images/products/main-page/window_sign-toronto-printing-ca.png",
         images: [
-          "/images/products/main%20page/window_sign-toronto-printing-ca.png",
+          "/images/products/main-page/window_sign-toronto-printing-ca.png",
           "/images/products/wind_sign_hover-toronto-printing-ca.png",
         ],
         ratingScore: "4.8",

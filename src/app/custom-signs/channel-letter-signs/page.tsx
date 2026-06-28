@@ -20,9 +20,9 @@ export default function ChannelLetterSignsPage() {
         breadcrumb: "Signs",
         breadcrumbHref: "/custom-signs",
         promoText: "✨ Modern LED Channel Letters — Professional Storefront Impact. Shipped Fast!",
-        image: "/images/products/main%20page/channel_letter_signs-toronto-printing-ca.png",
+        image: "/images/products/main-page/channel_letter_signs-toronto-printing-ca.png",
         images: [
-          "/images/products/main%20page/channel_letter_signs-toronto-printing-ca.png",
+          "/images/products/main-page/channel_letter_signs-toronto-printing-ca.png",
           "/images/products/gallery/channel_letter_storefront_1-toronto-printing-ca.png",
           "/images/products/gallery/channel_letter_storefront_2-toronto-printing-ca.png",
         ],

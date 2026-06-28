@@ -22,9 +22,9 @@ export default function YardSignsPage() {
         breadcrumbHref: "/custom-signs",
         promoText:
           "🏡 25% OFF Yard Signs + Free Shipping — Most Popular Sign in America!",
-        image: "/images/products/main%20page/yard_sign-toronto-printing-ca.jpeg",
+        image: "/images/products/main-page/yard_sign-toronto-printing-ca.jpeg",
         images: [
-          "/images/products/main%20page/yard_sign-toronto-printing-ca.jpeg",
+          "/images/products/main-page/yard_sign-toronto-printing-ca.jpeg",
           "/images/products/gallery/yard_sign_in_action_1-toronto-printing-ca.png",
           "/images/products/gallery/yard_sign_in_action_2-toronto-printing-ca.png",
         ],

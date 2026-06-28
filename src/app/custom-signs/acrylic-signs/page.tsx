@@ -22,9 +22,9 @@ export default function AcrylicSignsPage() {
         breadcrumbHref: "/custom-signs",
         promoText:
           "💎 Premium Acrylic Signs — Crystal-Clear Quality, Ships Next Day!",
-        image: "/images/products/main%20page/acrylic_sign-toronto-printing-ca.png",
+        image: "/images/products/main-page/acrylic_sign-toronto-printing-ca.png",
         images: [
-          "/images/products/main%20page/acrylic_sign-toronto-printing-ca.png",
+          "/images/products/main-page/acrylic_sign-toronto-printing-ca.png",
           "/images/products/acryl_sign_hover-toronto-printing-ca.png",
         ],
         ratingScore: "4.9",

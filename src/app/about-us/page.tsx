@@ -229,7 +229,7 @@ export default function AboutUsPage() {
             <Link href="/custom-signs" className="group">
               <div className="product-card-hover bg-white rounded-2xl p-4 mb-3 aspect-square flex items-center justify-center border border-slate-200 shadow-sm relative overflow-hidden">
                 <Image
-                  src="/images/products/main%20page/all_signs_product-toronto-printing-ca.png"
+                  src="/images/products/main-page/all_signs_product-toronto-printing-ca.png"
                   alt="Custom Signs"
                   fill
                   sizes="(max-width: 640px) 50vw, 250px"
@@ -244,7 +244,7 @@ export default function AboutUsPage() {
             <Link href="/custom-banners" className="group">
               <div className="product-card-hover bg-white rounded-2xl p-4 mb-3 aspect-square flex items-center justify-center border border-slate-200 shadow-sm relative overflow-hidden">
                 <Image
-                  src="/images/products/main%20page/fabric_banner-toronto-printing-ca.png"
+                  src="/images/products/main-page/fabric_banner-toronto-printing-ca.png"
                   alt="Vinyl Banners"
                   fill
                   sizes="(max-width: 640px) 50vw, 250px"
@@ -259,7 +259,7 @@ export default function AboutUsPage() {
             <Link href="/custom-flags" className="group">
               <div className="product-card-hover bg-white rounded-2xl p-4 mb-3 aspect-square flex items-center justify-center border border-slate-200 shadow-sm relative overflow-hidden">
                 <Image
-                  src="/images/products/main%20page/flags-toronto-printing-ca.png"
+                  src="/images/products/main-page/flags-toronto-printing-ca.png"
                   alt="Business Flags"
                   fill
                   sizes="(max-width: 640px) 50vw, 250px"
@@ -274,7 +274,7 @@ export default function AboutUsPage() {
             <Link href="/marketing-materials" className="group">
               <div className="product-card-hover bg-white rounded-2xl p-4 mb-3 aspect-square flex items-center justify-center border border-slate-200 shadow-sm relative overflow-hidden">
                 <Image
-                  src="/images/products/main%20page/business_cards-toronto-printing-ca.png"
+                  src="/images/products/main-page/business_cards-toronto-printing-ca.png"
                   alt="Business Cards"
                   fill
                   sizes="(max-width: 640px) 50vw, 250px"

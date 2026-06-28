@@ -22,9 +22,9 @@ export default function AluminumSignsPage() {
         breadcrumbHref: "/custom-signs",
         promoText:
           "⚙️ Aluminum Signs — Rust-Proof, Fade-Proof, Weatherproof. Ships Next Day!",
-        image: "/images/products/main%20page/aluminum_sign-toronto-printing-ca.png",
+        image: "/images/products/main-page/aluminum_sign-toronto-printing-ca.png",
         images: [
-          "/images/products/main%20page/aluminum_sign-toronto-printing-ca.png",
+          "/images/products/main-page/aluminum_sign-toronto-printing-ca.png",
           "/images/products/alum_sign_hover-toronto-printing-ca.png",
         ],
         ratingScore: "4.9",

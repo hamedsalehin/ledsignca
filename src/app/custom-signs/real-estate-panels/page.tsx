@@ -21,9 +21,9 @@ export default function RealEstatePanelsPage() {
         breadcrumb: "Signs",
         breadcrumbHref: "/custom-signs",
         promoText: "🏠 Real Estate Panels — Next Day Delivery Available!",
-        image: "/images/products/main%20page/Real_estate_panels-toronto-printing-ca.png",
+        image: "/images/products/main-page/Real_estate_panels-toronto-printing-ca.png",
         images: [
-          "/images/products/main%20page/Real_estate_panels-toronto-printing-ca.png",
+          "/images/products/main-page/Real_estate_panels-toronto-printing-ca.png",
           "/images/products/gallery/real_estate_panels_in_action_1-toronto-printing-ca.png",
           "/images/products/gallery/real_estate_panels_in_action_2-toronto-printing-ca.png",
         ],
