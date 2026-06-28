@@ -4,8 +4,8 @@ import { Lightbulb } from "lucide-react";
 
 
 export const metadata: Metadata = {
-  title: "Foam Board Signs Fort Lauderdale FL | Fast Turnaround | Nano Signs",
-  description: "Lightweight and professional indoor display signs for presentations, lobbies, and events in Broward County. Fast turnaround in Fort Lauderdale.",
+  title: "Foam Board Signs Toronto ON | Fast Turnaround | Nano Signs",
+  description: "Lightweight and professional indoor display signs for presentations, lobbies, and events in the Greater Toronto Area. Fast turnaround in Toronto.",
   alternates: {
     canonical: "https://led-sign.ca/custom-signs/foam-board-signs",
   },

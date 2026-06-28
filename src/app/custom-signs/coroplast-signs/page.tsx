@@ -4,8 +4,8 @@ import { Droplets } from "lucide-react";
 
 
 export const metadata: Metadata = {
-  title: "Custom Coroplast Signs Fort Lauderdale FL | Fast Turnaround | Nano Signs",
-  description: "Design and order waterproof corrugated plastic coroplast signs in Broward County. Cheap prices & fast turnaround times in Fort Lauderdale.",
+  title: "Custom Coroplast Signs Toronto ON | Fast Turnaround | Nano Signs",
+  description: "Design and order waterproof corrugated plastic coroplast signs in the Greater Toronto Area. Cheap prices & fast turnaround times in Toronto.",
   alternates: {
     canonical: "https://led-sign.ca/custom-signs/coroplast-signs",
   },

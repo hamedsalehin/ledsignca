@@ -4,8 +4,8 @@ import { Layers } from "lucide-react";
 
 
 export const metadata: Metadata = {
-  title: "Custom Yard Signs Fort Lauderdale FL | Fast Turnaround | Nano Signs",
-  description: "Design custom corrugated plastic yard signs online with H-stakes. Fastest turnaround times in Broward County. Next-day shipping/local pickup.",
+  title: "Custom Yard Signs Toronto ON | Fast Turnaround | Nano Signs",
+  description: "Design custom corrugated plastic yard signs online with H-stakes. Fastest turnaround times in the Greater Toronto Area. Next-day shipping/local pickup.",
   alternates: {
     canonical: "https://led-sign.ca/custom-signs/yard-signs",
   },

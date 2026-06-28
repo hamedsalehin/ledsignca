@@ -4,8 +4,8 @@ import { ArrowUpDown } from "lucide-react";
 
 
 export const metadata: Metadata = {
-  title: "A-Frame Sidewalk Signs Fort Lauderdale FL | Fast Turnaround | Nano Signs",
-  description: "Design & order portable, double-sided sidewalk A-frame signs in Fort Lauderdale & Oakland Park FL. Fastest turnaround times in Broward County.",
+  title: "A-Frame Sidewalk Signs Toronto ON | Fast Turnaround | Nano Signs",
+  description: "Design & order portable, double-sided sidewalk A-frame signs in Toronto & Scarborough ON. Fastest turnaround times in the Greater Toronto Area.",
   alternates: {
     canonical: "https://led-sign.ca/custom-signs/a-frame-signs",
   },

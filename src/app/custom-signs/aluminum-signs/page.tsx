@@ -4,8 +4,8 @@ import { Shield } from "lucide-react";
 
 
 export const metadata: Metadata = {
-  title: "Custom Aluminum Signs Fort Lauderdale FL | Fast Turnaround | Nano Signs",
-  description: "Heavy-duty, rust-proof custom aluminum signs in Broward County. Durable metal sign prints with fast turnaround and local pickup in Fort Lauderdale.",
+  title: "Custom Aluminum Signs Toronto ON | Fast Turnaround | Nano Signs",
+  description: "Heavy-duty, rust-proof custom aluminum signs in the Greater Toronto Area. Durable metal sign prints with fast turnaround and local pickup in Toronto.",
   alternates: {
     canonical: "https://led-sign.ca/custom-signs/aluminum-signs",
   },

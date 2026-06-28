@@ -4,8 +4,8 @@ import { Home } from "lucide-react";
 
 
 export const metadata: Metadata = {
-  title: "Real Estate Sign Panels Fort Lauderdale FL | Nano Signs",
-  description: "Design custom real estate panels, riders, and frames online or in person in Broward County. High-durability property signs with fast turnaround.",
+  title: "Real Estate Sign Panels Toronto ON | Nano Signs",
+  description: "Design custom real estate panels, riders, and frames online or in person in the Greater Toronto Area. High-durability property signs with fast turnaround.",
   alternates: {
     canonical: "https://led-sign.ca/custom-signs/real-estate-panels",
   },

@@ -145,7 +145,7 @@ export function Footer({ light = false }: { light?: boolean } = {}) {
                   className="w-4 h-4 flex-shrink-0"
                   style={{ color: light ? "#f7f82d" : "#f7f82d" }}
                 />
-                <span>info@led-sign.ca</span>
+                <span>info [at] led-sign.ca</span>
               </a>
               <div className={`flex items-start gap-2 ${light ? "text-slate-600" : "text-gray-300"}`}>
                 <MapPin

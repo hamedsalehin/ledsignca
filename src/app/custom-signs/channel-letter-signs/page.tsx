@@ -3,8 +3,8 @@ import { SignProductPage } from "@/components/SignProductPage";
 import { Sparkles } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Custom Channel Letter Signs Fort Lauderdale FL | Nano Signs",
-  description: "Premium 3D backlit and front-lit channel letter storefront signs in Broward County. Fast quotes and high-quality fabrication in Fort Lauderdale, FL.",
+  title: "Custom Channel Letter Signs Toronto ON | Nano Signs",
+  description: "Premium 3D backlit and front-lit channel letter storefront signs in the Greater Toronto Area. Fast quotes and high-quality fabrication in Toronto, ON.",
   alternates: {
     canonical: "https://led-sign.ca/custom-signs/channel-letter-signs",
   },

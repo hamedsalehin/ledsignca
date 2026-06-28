@@ -64,14 +64,12 @@ export function ValuePropositions() {
               <div
                 className="flex-shrink-0 w-14 h-14 rounded-xl flex items-center justify-center"
                 style={{
-                  background: prop.even
-                    ? "rgba(247,248,45,0.12)"
-                    : "rgba(247,248,45,0.12)",
+                  background: "rgba(247,248,45,0.12)",
                 }}
               >
                 <Image
                   src={prop.icon}
-                  alt=""
+                  alt={prop.title}
                   width={32}
                   height={32}
                   className="w-8 h-8"

@@ -4,8 +4,8 @@ import { Eye } from "lucide-react";
 
 
 export const metadata: Metadata = {
-  title: "Custom Window Graphics & Decals Fort Lauderdale FL",
-  description: "Design high-res window decals, perforated vinyl, & clings online. Professional storefront graphics with fast turnaround in Broward County.",
+  title: "Custom Window Graphics & Decals Toronto ON | Nano Signs",
+  description: "Design high-res window decals, perforated vinyl, & clings online. Professional storefront graphics with fast turnaround in the Greater Toronto Area.",
   alternates: {
     canonical: "https://led-sign.ca/custom-signs/window-signs",
   },

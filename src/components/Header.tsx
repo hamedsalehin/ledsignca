@@ -91,7 +91,7 @@ export function Header() {
             aria-label="Email support at info@led-sign.ca"
           >
             <MessageCircle className="w-4 h-4" />
-            <span className="hidden sm:inline">info@led-sign.ca</span>
+            <span className="hidden sm:inline">info [at] led-sign.ca</span>
           </a>
           <Link
             href="/contact-us"

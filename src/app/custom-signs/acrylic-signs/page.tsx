@@ -4,8 +4,8 @@ import { Sparkles } from "lucide-react";
 
 
 export const metadata: Metadata = {
-  title: "Custom Acrylic Signs Fort Lauderdale FL | Fast Turnaround | Nano Signs",
-  description: "Premium clear, colored, and frosted custom acrylic signs in Broward County. Online design and next-day local pick up in Fort Lauderdale.",
+  title: "Custom Acrylic Signs Toronto ON | Fast Turnaround | Nano Signs",
+  description: "Premium clear, colored, and frosted custom acrylic signs in the Greater Toronto Area. Online design and next-day local pick up in Toronto.",
   alternates: {
     canonical: "https://led-sign.ca/custom-signs/acrylic-signs",
   },
