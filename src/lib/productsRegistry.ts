@@ -43,18 +43,18 @@ export const PRODUCTS_REGISTRY: Record<string, RegistryCategory> = {
     reviewQuote: "Absolutely perfect. Bright, flawless, and arrived earlier than expected!",
     categoryDescriptionText: "Create a vibrant, customized atmosphere for your business storefront, wedding backdrop, home décor, or events.",
     products: [
-      { id: "good-vibes-only", name: "Good Vibes Only", description: "Inspirational", image: "/images/products/neon-signs/nano-signs-good-vibes-neon-canada.png", price: "$169.00", badge: "Popular" },
-      { id: "lets-party", name: "Let's Party", description: "Bar & Party", image: "/images/products/neon-signs/nano-signs-lets-party-neon-canada.png", price: "$189.00", badge: "Popular" },
-      { id: "game-on", name: "Game On", description: "Gaming", image: "/images/products/neon-signs/nano-signs-game-controller-neon-canada.png", price: "$159.00", badge: "Popular" },
-      { id: "dream-big", name: "Dream Big", description: "Inspirational", image: "/images/products/neon-signs/nano-signs-dream-big-neon-canada.png", price: "$149.00", badge: "Popular" },
-      { id: "bar-open", name: "Bar Open", description: "Bar & Party", image: "/images/products/neon-signs/nano-signs-bar-neon-canada.png", price: "$179.00", badge: "Popular" },
-      { id: "hustle", name: "Hustle", description: "Inspirational", image: "/images/products/neon-signs/nano-signs-hustle-neon-canada.png", price: "$139.00", badge: "Popular" },
-      { id: "open-24-7", name: "Open 24/7", description: "Business", image: "/images/products/neon-signs/nano-signs-open-neon-canada.png", price: "$169.00", badge: "Popular" },
-      { id: "stay-wild", name: "Stay Wild", description: "Inspirational", image: "/images/products/neon-signs/nano-signs-stay-wild-neon-canada.png", price: "$159.00", badge: "Popular" },
-      { id: "love-her-wild", name: "Love Her Wild", description: "Home Decor", image: "/images/products/neon-signs/nano-signs-love-wild-neon-canada.png", price: "$179.00", badge: "Popular" },
-      { id: "glow-getter", name: "Glow Getter", description: "Inspirational", image: "/images/products/neon-signs/nano-signs-glow-getter-neon-canada.png", price: "$149.00", badge: "Popular" },
-      { id: "man-cave", name: "Man Cave", description: "Home Decor", image: "/images/products/neon-signs/nano-signs-man-cave-neon-canada.png", price: "$169.00", badge: "Popular" },
-      { id: "adventure-awaits", name: "Adventure Awaits", description: "Home Decor", image: "/images/products/neon-signs/nano-signs-adventure-neon-canada.png", price: "$179.00", badge: "Popular" }
+      { id: "good-vibes-only", name: "Good Vibes Only", description: "Inspirational", image: "/images/products/neon-signs/nano-signs-good-vibes-neon-canada.png", price: "$236.60", badge: "Popular" },
+      { id: "lets-party", name: "Let's Party", description: "Bar & Party", image: "/images/products/neon-signs/nano-signs-lets-party-neon-canada.png", price: "$264.60", badge: "Popular" },
+      { id: "game-on", name: "Game On", description: "Gaming", image: "/images/products/neon-signs/nano-signs-game-controller-neon-canada.png", price: "$222.60", badge: "Popular" },
+      { id: "dream-big", name: "Dream Big", description: "Inspirational", image: "/images/products/neon-signs/nano-signs-dream-big-neon-canada.png", price: "$208.60", badge: "Popular" },
+      { id: "bar-open", name: "Bar Open", description: "Bar & Party", image: "/images/products/neon-signs/nano-signs-bar-neon-canada.png", price: "$250.60", badge: "Popular" },
+      { id: "hustle", name: "Hustle", description: "Inspirational", image: "/images/products/neon-signs/nano-signs-hustle-neon-canada.png", price: "$194.60", badge: "Popular" },
+      { id: "open-24-7", name: "Open 24/7", description: "Business", image: "/images/products/neon-signs/nano-signs-open-neon-canada.png", price: "$236.60", badge: "Popular" },
+      { id: "stay-wild", name: "Stay Wild", description: "Inspirational", image: "/images/products/neon-signs/nano-signs-stay-wild-neon-canada.png", price: "$222.60", badge: "Popular" },
+      { id: "love-her-wild", name: "Love Her Wild", description: "Home Decor", image: "/images/products/neon-signs/nano-signs-love-wild-neon-canada.png", price: "$250.60", badge: "Popular" },
+      { id: "glow-getter", name: "Glow Getter", description: "Inspirational", image: "/images/products/neon-signs/nano-signs-glow-getter-neon-canada.png", price: "$208.60", badge: "Popular" },
+      { id: "man-cave", name: "Man Cave", description: "Home Decor", image: "/images/products/neon-signs/nano-signs-man-cave-neon-canada.png", price: "$236.60", badge: "Popular" },
+      { id: "adventure-awaits", name: "Adventure Awaits", description: "Home Decor", image: "/images/products/neon-signs/nano-signs-adventure-neon-canada.png", price: "$250.60", badge: "Popular" }
     ].map(p => ({
       ...p,
       config: {
@@ -140,13 +140,13 @@ export const PRODUCTS_REGISTRY: Record<string, RegistryCategory> = {
           ratingCount: "1,530",
           ratingScore: "4.8",
           sizes: [
-            { label: "2' x 4' Small Banner", value: "24x48", basePrice: 12.99 },
+            { label: "2' x 4' Small Banner", value: "24x48", basePrice: 18.19 },
             {
               label: "3' x 6' Standard Banner",
               value: "36x72",
-              basePrice: 24.99,
+              basePrice: 34.99,
             },
-            { label: "4' x 8' Large Banner", value: "48x96", basePrice: 45.99 },
+            { label: "4' x 8' Large Banner", value: "48x96", basePrice: 64.39 },
           ],
           selects: [
             {
@@ -230,13 +230,13 @@ export const PRODUCTS_REGISTRY: Record<string, RegistryCategory> = {
           ratingCount: "980",
           ratingScore: "4.9",
           sizes: [
-            { label: "2' x 6' Small Banner", value: "24x72", basePrice: 45.99 },
+            { label: "2' x 6' Small Banner", value: "24x72", basePrice: 64.39 },
             {
               label: "3' x 8' Standard Banner",
               value: "36x96",
-              basePrice: 74.99,
+              basePrice: 104.99,
             },
-            { label: "4' x 8' Large Banner", value: "48x96", basePrice: 94.99 },
+            { label: "4' x 8' Large Banner", value: "48x96", basePrice: 132.99 },
           ],
           selects: [
             {
@@ -317,17 +317,17 @@ export const PRODUCTS_REGISTRY: Record<string, RegistryCategory> = {
             {
               label: "2' x 6' Small Fence Banner",
               value: "24x72",
-              basePrice: 42.99,
+              basePrice: 60.19,
             },
             {
               label: "3' x 8' Standard Fence Banner",
               value: "36x96",
-              basePrice: 64.99,
+              basePrice: 90.99,
             },
             {
               label: "4' x 8' Large Fence Banner",
               value: "48x96",
-              basePrice: 84.99,
+              basePrice: 118.99,
             },
           ],
           selects: [
@@ -381,17 +381,17 @@ export const PRODUCTS_REGISTRY: Record<string, RegistryCategory> = {
             {
               label: '18" x 36" Small Pole Banner',
               value: "36x18",
-              basePrice: 29.99,
+              basePrice: 41.99,
             },
             {
               label: '24" x 48" Standard Pole Banner',
               value: "48x24",
-              basePrice: 49.99,
+              basePrice: 69.99,
             },
             {
               label: '30" x 60" Large Pole Banner',
               value: "60x30",
-              basePrice: 79.99,
+              basePrice: 111.99,
             },
           ],
           selects: [
@@ -447,12 +447,12 @@ export const PRODUCTS_REGISTRY: Record<string, RegistryCategory> = {
             {
               label: "8' x 10' Run-Through Banner",
               value: "96x120",
-              basePrice: 99.99,
+              basePrice: 139.99,
             },
             {
               label: "10' x 12' Giant Team Banner",
               value: "120x144",
-              basePrice: 149.99,
+              basePrice: 209.99,
             },
           ],
           selects: [
@@ -510,12 +510,12 @@ export const PRODUCTS_REGISTRY: Record<string, RegistryCategory> = {
             {
               label: "2' x 6' Vertical Banner",
               value: "72x24",
-              basePrice: 19.99,
+              basePrice: 27.99,
             },
             {
               label: "3' x 8' Large Vertical Banner",
               value: "96x36",
-              basePrice: 34.99,
+              basePrice: 48.99,
             },
           ],
           selects: [
@@ -579,12 +579,12 @@ export const PRODUCTS_REGISTRY: Record<string, RegistryCategory> = {
             {
               label: '33" x 80" Standard Stand Size',
               value: "33x80",
-              basePrice: 89.00,
+              basePrice: 124.60,
             },
             {
               label: '46" x 80" Vertical Size',
               value: "46x80",
-              basePrice: 220.00,
+              basePrice: 308.00,
             },
           ],
           selects: [
@@ -710,12 +710,12 @@ Advantages of our Roll-Up Systems:
             {
               label: '24" x 63" Small X-Stand',
               value: "63x24",
-              basePrice: 49.99,
+              basePrice: 69.99,
             },
             {
               label: '31" x 70" Large X-Stand',
               value: "70x31",
-              basePrice: 69.99,
+              basePrice: 97.99,
             },
           ],
           selects: [
@@ -776,12 +776,12 @@ Advantages of our Roll-Up Systems:
             {
               label: "8' x 8' Square Backdrop",
               value: "96x96",
-              basePrice: 145.99,
+              basePrice: 204.39,
             },
             {
               label: "10' x 8' Large Backdrop",
               value: "120x96",
-              basePrice: 179.99,
+              basePrice: 251.99,
             },
           ],
           selects: [
@@ -840,12 +840,12 @@ Advantages of our Roll-Up Systems:
             {
               label: '11.75" x 17" A3 Size Mini Stand',
               value: "17x11.75",
-              basePrice: 39.99,
+              basePrice: 55.99,
             },
             {
               label: '8.25" x 11.5" A4 Size Micro Stand',
               value: "11.5x8.25",
-              basePrice: 29.99,
+              basePrice: 41.99,
             },
           ],
           selects: [
@@ -950,22 +950,22 @@ Advantages of our Roll-Up Systems:
             {
               label: "9ft Feather Flag",
               value: "9ft",
-              basePrice: 80.00,
+              basePrice: 112.00,
             },
             {
               label: "10ft Feather Flag",
               value: "10ft",
-              basePrice: 100.00,
+              basePrice: 140.00,
             },
             {
               label: "13ft Feather Flag",
               value: "13ft",
-              basePrice: 110.00,
+              basePrice: 154.00,
             },
             {
               label: "16ft Feather Flag",
               value: "16ft",
-              basePrice: 130.00,
+              basePrice: 182.00,
             },
           ],
           selects: [
@@ -1166,17 +1166,17 @@ Advantages of our Roll-Up Systems:
             {
               label: "7ft Small Teardrop Flag",
               value: "84x30",
-              basePrice: 49.68,
+              basePrice: 69.55,
             },
             {
               label: "9ft Medium Teardrop Flag",
               value: "108x35",
-              basePrice: 74.99,
+              basePrice: 104.99,
             },
             {
               label: "11ft Large Teardrop Flag",
               value: "132x40",
-              basePrice: 109.99,
+              basePrice: 153.99,
             },
           ],
           selects: [
@@ -1242,17 +1242,17 @@ Advantages of our Roll-Up Systems:
             {
               label: "8ft Small Straight Flag",
               value: "96x24",
-              basePrice: 54.37,
+              basePrice: 76.12,
             },
             {
               label: "10.5ft Medium Straight Flag",
               value: "126x28",
-              basePrice: 79.99,
+              basePrice: 111.99,
             },
             {
               label: "14ft Large Straight Flag",
               value: "168x30",
-              basePrice: 119.99,
+              basePrice: 167.99,
             },
           ],
           selects: [
@@ -1304,10 +1304,10 @@ Advantages of our Roll-Up Systems:
             {
               label: "3' x 5' Standard Flag",
               value: "36x60",
-              basePrice: 38.43,
+              basePrice: 53.80,
             },
-            { label: "2' x 3' Small Flag", value: "24x36", basePrice: 24.99 },
-            { label: "4' x 6' Large Flag", value: "48x72", basePrice: 59.99 },
+            { label: "2' x 3' Small Flag", value: "24x36", basePrice: 34.99 },
+            { label: "4' x 6' Large Flag", value: "48x72", basePrice: 83.99 },
           ],
           selects: [
             {
@@ -1364,7 +1364,7 @@ Advantages of our Roll-Up Systems:
             {
               label: "3' x 5' Triangle Pennant",
               value: "36x60",
-              basePrice: 51.11,
+              basePrice: 71.55,
             },
           ],
           selects: [
@@ -1444,9 +1444,9 @@ Advantages of our Roll-Up Systems:
             {
               label: '3" x 10" Rectangle Bumper Sticker',
               value: "3x10",
-              basePrice: 2.24,
+              basePrice: 3.14,
             },
-            { label: '4" x 4" Circle Sticker', value: "4x4", basePrice: 3.49 },
+            { label: '4" x 4" Circle Sticker', value: "4x4", basePrice: 4.89 },
           ],
           selects: [
             {
@@ -1500,7 +1500,7 @@ Advantages of our Roll-Up Systems:
             {
               label: '6" x 12" Standard Vehicle Size',
               value: "6x12",
-              basePrice: 13.72,
+              basePrice: 19.21,
             },
           ],
           selects: [
@@ -1560,19 +1560,19 @@ Advantages of our Roll-Up Systems:
             {
               label: '12" x 24" Standard Door Size',
               value: "12x24",
-              basePrice: 19.99,
+              basePrice: 27.99,
             },
             {
               label: '12" x 18" Small Magnet',
               value: "12x18",
-              basePrice: 14.99,
+              basePrice: 20.99,
             },
             {
               label: '18" x 24" Large Door Size',
               value: "18x24",
-              basePrice: 27.99,
+              basePrice: 39.19,
             },
-            { label: '6" x 12" Mini Magnet', value: "6x12", basePrice: 4.99 },
+            { label: '6" x 12" Mini Magnet', value: "6x12", basePrice: 6.99 },
           ],
           selects: [
             {
@@ -1652,12 +1652,12 @@ Advantages of our Roll-Up Systems:
             {
               label: '12" x 18" Small Door Decal',
               value: "12x18",
-              basePrice: 23.86,
+              basePrice: 33.40,
             },
             {
               label: '18" x 24" Standard Door Decal',
               value: "18x24",
-              basePrice: 34.99,
+              basePrice: 48.99,
             },
           ],
           selects: [
@@ -1710,12 +1710,12 @@ Advantages of our Roll-Up Systems:
             {
               label: '12" x 18" Small Window Decal',
               value: "12x18",
-              basePrice: 23.86,
+              basePrice: 33.40,
             },
             {
               label: '18" x 24" Medium Window Decal',
               value: "18x24",
-              basePrice: 34.99,
+              basePrice: 48.99,
             },
           ],
           selects: [
@@ -1823,9 +1823,9 @@ Advantages of our Roll-Up Systems:
             {
               label: "6ft Table Throw (Standard)",
               value: "72x30",
-              basePrice: 89.99,
+              basePrice: 125.99,
             },
-            { label: "8ft Table Throw", value: "96x30", basePrice: 119.99 },
+            { label: "8ft Table Throw", value: "96x30", basePrice: 167.99 },
           ],
           selects: [
             {
@@ -1903,9 +1903,9 @@ Advantages of our Roll-Up Systems:
           ratingCount: "540",
           ratingScore: "4.8",
           sizes: [
-            { label: '24" x 84" (Standard)', value: "24x84", basePrice: 39.99 },
-            { label: '30" x 84"', value: "30x84", basePrice: 49.99 },
-            { label: '36" x 84" (Wide)', value: "36x84", basePrice: 59.99 },
+            { label: '24" x 84" (Standard)', value: "24x84", basePrice: 55.99 },
+            { label: '30" x 84"', value: "30x84", basePrice: 69.99 },
+            { label: '36" x 84" (Wide)', value: "36x84", basePrice: 83.99 },
           ],
           selects: [
             {
@@ -1959,12 +1959,12 @@ Advantages of our Roll-Up Systems:
             {
               label: '6ft Fitted (72" x 30" x 30")',
               value: "6ft_fitted",
-              basePrice: 109.99,
+              basePrice: 153.99,
             },
             {
               label: '8ft Fitted (96" x 30" x 30")',
               value: "8ft_fitted",
-              basePrice: 139.99,
+              basePrice: 195.99,
             },
           ],
           selects: [
@@ -2013,17 +2013,17 @@ Advantages of our Roll-Up Systems:
             {
               label: '30" Round Table Throw',
               value: "30_round",
-              basePrice: 129.99,
+              basePrice: 181.99,
             },
             {
               label: '60" Circular Banquet Cover',
               value: "60_round",
-              basePrice: 179.99,
+              basePrice: 251.99,
             },
             {
               label: '72" Large Circular Cover',
               value: "72_round",
-              basePrice: 219.99,
+              basePrice: 307.99,
             },
           ],
           selects: [
@@ -2073,12 +2073,12 @@ Advantages of our Roll-Up Systems:
             {
               label: "6ft Stretch Spandex (Standard)",
               value: "6ft_stretch",
-              basePrice: 129.99,
+              basePrice: 181.99,
             },
             {
               label: "8ft Stretch Spandex",
               value: "8ft_stretch",
-              basePrice: 159.99,
+              basePrice: 223.99,
             },
           ],
           selects: [
@@ -2133,22 +2133,22 @@ Advantages of our Roll-Up Systems:
             {
               label: "8ft Straight Accordion Frame",
               value: "8ft_straight",
-              basePrice: 299.99,
+              basePrice: 419.99,
             },
             {
               label: "10ft Straight Accordion Frame",
               value: "10ft_straight",
-              basePrice: 399.99,
+              basePrice: 559.99,
             },
             {
               label: "8ft Curved Exhibition Frame",
               value: "8ft_curved",
-              basePrice: 349.99,
+              basePrice: 489.99,
             },
             {
               label: "10ft Curved Exhibition Frame",
               value: "10ft_curved",
-              basePrice: 449.99,
+              basePrice: 629.99,
             },
           ],
           selects: [
@@ -2212,12 +2212,12 @@ Advantages of our Roll-Up Systems:
             {
               label: "8' x 8' Square Backdrop",
               value: "96x96",
-              basePrice: 145.99,
+              basePrice: 204.39,
             },
             {
               label: "10' x 8' Large Backdrop",
               value: "120x96",
-              basePrice: 179.99,
+              basePrice: 251.99,
             },
           ],
           selects: [
@@ -2278,12 +2278,12 @@ Advantages of our Roll-Up Systems:
             {
               label: '33" x 80" Standard Stand Size',
               value: "33x80",
-              basePrice: 89.00,
+              basePrice: 124.60,
             },
             {
               label: '46" x 80" Vertical Size',
               value: "46x80",
-              basePrice: 220.00,
+              basePrice: 308.00,
             },
           ],
           selects: [
@@ -2400,12 +2400,12 @@ Why Choose Our Expert-grade Rollup Banners?
             {
               label: '24" x 63" Small X-Stand',
               value: "63x24",
-              basePrice: 49.99,
+              basePrice: 69.99,
             },
             {
               label: '31" x 70" Large X-Stand',
               value: "70x31",
-              basePrice: 69.99,
+              basePrice: 97.99,
             },
           ],
           selects: [
@@ -2461,12 +2461,12 @@ Why Choose Our Expert-grade Rollup Banners?
             {
               label: '11.75" x 17" A3 Size Mini Stand',
               value: "17x11.75",
-              basePrice: 39.99,
+              basePrice: 55.99,
             },
             {
               label: '8.25" x 11.5" A4 Size Micro Stand',
               value: "11.5x8.25",
-              basePrice: 27.18,
+              basePrice: 38.05,
             },
           ],
           selects: [
@@ -2531,7 +2531,7 @@ Why Choose Our Expert-grade Rollup Banners?
             {
               label: "10ft x 10ft Canopy Tent",
               value: "10x10",
-              basePrice: 349.99,
+              basePrice: 489.99,
             },
           ],
           selects: [
@@ -2589,22 +2589,22 @@ Why Choose Our Expert-grade Rollup Banners?
             {
               label: "9ft Feather Flag",
               value: "9ft",
-              basePrice: 80.00,
+              basePrice: 112.00,
             },
             {
               label: "10ft Feather Flag",
               value: "10ft",
-              basePrice: 100.00,
+              basePrice: 140.00,
             },
             {
               label: "13ft Feather Flag",
               value: "13ft",
-              basePrice: 110.00,
+              basePrice: 154.00,
             },
             {
               label: "16ft Feather Flag",
               value: "16ft",
-              basePrice: 130.00,
+              basePrice: 182.00,
             },
           ],
           selects: [
@@ -2777,13 +2777,13 @@ Why Choose Our Expert-grade Rollup Banners?
           ratingCount: "1530",
           ratingScore: "4.8",
           sizes: [
-            { label: "2' x 4' Small Banner", value: "24x48", basePrice: 12.99 },
+            { label: "2' x 4' Small Banner", value: "24x48", basePrice: 18.19 },
             {
               label: "3' x 6' Standard Banner",
               value: "36x72",
-              basePrice: 24.99,
+              basePrice: 34.99,
             },
-            { label: "4' x 8' Large Banner", value: "48x96", basePrice: 45.99 },
+            { label: "4' x 8' Large Banner", value: "48x96", basePrice: 64.39 },
           ],
           selects: [
             {
@@ -2850,7 +2850,7 @@ Why Choose Our Expert-grade Rollup Banners?
             {
               label: '3.5" x 2" Standard size',
               value: "3.5x2",
-              basePrice: 29.98,
+              basePrice: 41.97,
             },
           ],
           selects: [
@@ -3046,7 +3046,7 @@ Why Choose Our Expert-grade Rollup Banners?
             {
               label: '4" x 6" Postcard',
               value: "4x6",
-              basePrice: 0.60,
+              basePrice: 0.84,
               quantityPrices: {
                 100: 60.00,
                 250: 100.00,
@@ -3060,7 +3060,7 @@ Why Choose Our Expert-grade Rollup Banners?
             {
               label: '5" x 7" Postcard',
               value: "5x7",
-              basePrice: 0.80,
+              basePrice: 1.12,
               quantityPrices: {
                 100: 80.00,
                 250: 140.00,
@@ -3074,7 +3074,7 @@ Why Choose Our Expert-grade Rollup Banners?
             {
               label: '6" x 9" Postcard',
               value: "6x9",
-              basePrice: 1.10,
+              basePrice: 1.54,
               quantityPrices: {
                 100: 110.00,
                 250: 210.00,
@@ -3088,7 +3088,7 @@ Why Choose Our Expert-grade Rollup Banners?
             {
               label: '6" x 11" Postcard',
               value: "6x11",
-              basePrice: 1.20,
+              basePrice: 1.68,
               quantityPrices: {
                 100: 120.00,
                 250: 220.00,
@@ -3268,9 +3268,9 @@ Why Choose Our Expert-grade Rollup Banners?
             {
               label: '3" x 10" Rectangle Bumper Sticker',
               value: "3x10",
-              basePrice: 2.24,
+              basePrice: 3.14,
             },
-            { label: '4" x 4" Circle Sticker', value: "4x4", basePrice: 3.49 },
+            { label: '4" x 4" Circle Sticker', value: "4x4", basePrice: 4.89 },
           ],
           selects: [
             {
@@ -3324,12 +3324,12 @@ Why Choose Our Expert-grade Rollup Banners?
             {
               label: '12" x 18" Small Door Decal',
               value: "12x18",
-              basePrice: 23.86,
+              basePrice: 33.40,
             },
             {
               label: '18" x 24" Standard Door Decal',
               value: "18x24",
-              basePrice: 34.99,
+              basePrice: 48.99,
             },
           ],
           selects: [
@@ -3382,12 +3382,12 @@ Why Choose Our Expert-grade Rollup Banners?
             {
               label: '12" x 18" Small Window Decal',
               value: "12x18",
-              basePrice: 23.86,
+              basePrice: 33.40,
             },
             {
               label: '18" x 24" Medium Window Decal',
               value: "18x24",
-              basePrice: 34.99,
+              basePrice: 48.99,
             },
           ],
           selects: [
@@ -3454,17 +3454,17 @@ Why Choose Our Expert-grade Rollup Banners?
             {
               label: '12" x 18" Small Window Decal',
               value: "12x18",
-              basePrice: 23.86,
+              basePrice: 33.40,
             },
             {
               label: '18" x 24" Standard Window Decal',
               value: "18x24",
-              basePrice: 34.99,
+              basePrice: 48.99,
             },
             {
               label: '24" x 36" Large Window Decal',
               value: "24x36",
-              basePrice: 54.99,
+              basePrice: 76.99,
             },
           ],
           selects: [
@@ -3537,9 +3537,9 @@ Why Choose Our Expert-grade Rollup Banners?
           ratingCount: "410",
           ratingScore: "4.8",
           sizes: [
-            { label: '2" x 2" Round Label', value: "2x2", basePrice: 0.54 },
-            { label: '3" x 3" Square Label', value: "3x3", basePrice: 0.75 },
-            { label: '4" x 2" Rectangle Label', value: "4x2", basePrice: 0.85 },
+            { label: '2" x 2" Round Label', value: "2x2", basePrice: 0.76 },
+            { label: '3" x 3" Square Label', value: "3x3", basePrice: 1.05 },
+            { label: '4" x 2" Rectangle Label', value: "4x2", basePrice: 1.19 },
           ],
           selects: [
             {
@@ -3599,17 +3599,17 @@ Why Choose Our Expert-grade Rollup Banners?
             {
               label: '12" x 18" Small Window Cling',
               value: "12x18",
-              basePrice: 62.96,
+              basePrice: 88.14,
             },
             {
               label: '18" x 24" Medium Window Cling',
               value: "18x24",
-              basePrice: 79.99,
+              basePrice: 111.99,
             },
             {
               label: '24" x 36" Large Window Cling',
               value: "24x36",
-              basePrice: 99.99,
+              basePrice: 139.99,
             },
           ],
           selects: [
@@ -3676,7 +3676,7 @@ Why Choose Our Expert-grade Rollup Banners?
             {
               label: '8.5" x 11" Standard Sheet Size',
               value: "8.5x11",
-              basePrice: 11.16,
+              basePrice: 15.62,
             },
           ],
           selects: [
@@ -3737,7 +3737,7 @@ Why Choose Our Expert-grade Rollup Banners?
             {
               label: '0.75" x 2.25" Mini Label size',
               value: "0.75x2.25",
-              basePrice: 0.14,
+              basePrice: 0.20,
             },
           ],
           selects: [
@@ -3812,12 +3812,12 @@ Why Choose Our Expert-grade Rollup Banners?
             {
               label: '30" x 10" Standard Wire Stake',
               value: "30x10",
-              basePrice: 1.99,
+              basePrice: 2.79,
             },
             {
               label: '15" x 10" Half Size Stake',
               value: "15x10",
-              basePrice: 1.49,
+              basePrice: 2.09,
             },
           ],
           selects: [
@@ -3951,7 +3951,7 @@ Why Choose Our Expert-grade Rollup Banners?
             {
               label: '3.5" x 2" Standard size',
               value: "3.5x2",
-              basePrice: 29.98,
+              basePrice: 41.97,
             },
           ],
           selects: [
@@ -4162,7 +4162,7 @@ Why Choose Our Expert-grade Rollup Banners?
             {
               label: '4" x 6" Standard Postcard',
               value: "4x6",
-              basePrice: 0.60,
+              basePrice: 0.84,
               quantityPrices: {
                 100: 60.00,
                 250: 100.00,
@@ -4176,7 +4176,7 @@ Why Choose Our Expert-grade Rollup Banners?
             {
               label: '5" x 7" Medium Postcard',
               value: "5x7",
-              basePrice: 0.80,
+              basePrice: 1.12,
               quantityPrices: {
                 100: 80.00,
                 250: 140.00,
@@ -4190,7 +4190,7 @@ Why Choose Our Expert-grade Rollup Banners?
             {
               label: '6" x 9" Large Postcard',
               value: "6x9",
-              basePrice: 1.10,
+              basePrice: 1.54,
               quantityPrices: {
                 100: 110.00,
                 250: 210.00,
@@ -4204,7 +4204,7 @@ Why Choose Our Expert-grade Rollup Banners?
             {
               label: '6" x 11" Jumbo Postcard',
               value: "6x11",
-              basePrice: 1.20,
+              basePrice: 1.68,
               quantityPrices: {
                 100: 120.00,
                 250: 220.00,
@@ -4344,7 +4344,7 @@ Why Choose Our Expert-grade Rollup Banners?
             {
               label: '5.5" x 8.5" Small Flyer',
               value: "5.5x8.5",
-              basePrice: 0.74,
+              basePrice: 1.04,
               quantityPrices: {
                 100: 74.00,
                 250: 120.00,
@@ -4359,7 +4359,7 @@ Why Choose Our Expert-grade Rollup Banners?
             {
               label: '8.5" x 14" Medium Flyer',
               value: "8.5x14",
-              basePrice: 1.08,
+              basePrice: 1.51,
               quantityPrices: {
                 100: 108.00,
                 250: 220.00,
@@ -4374,7 +4374,7 @@ Why Choose Our Expert-grade Rollup Banners?
             {
               label: '11" x 17" Large Flyer',
               value: "11x17",
-              basePrice: 1.48,
+              basePrice: 2.07,
               quantityPrices: {
                 100: 148.00,
                 250: 285.00,
@@ -4511,7 +4511,7 @@ Why Choose Our Expert-grade Rollup Banners?
             {
               label: '8.5" x 11" Standard Brochure',
               value: "8.5x11",
-              basePrice: 29.99,
+              basePrice: 41.99,
             },
           ],
           selects: [
@@ -4628,12 +4628,12 @@ Why Choose Our Expert-grade Rollup Banners?
             {
               label: '3.5" x 8.5" Compact Hanger',
               value: "3.5x8.5",
-              basePrice: 39.99,
+              basePrice: 55.99,
             },
             {
               label: '4.25" x 11" Standard Large Hanger',
               value: "4.25x11",
-              basePrice: 54.99,
+              basePrice: 76.99,
             },
           ],
           selects: [
@@ -4790,13 +4790,13 @@ Why Choose Our Expert-grade Rollup Banners?
             {
               label: "Medium Unisex Tee",
               value: "medium_tee",
-              basePrice: 14.99,
+              basePrice: 20.99,
             },
-            { label: "Large Unisex Tee", value: "large_tee", basePrice: 14.99 },
+            { label: "Large Unisex Tee", value: "large_tee", basePrice: 20.99 },
             {
               label: "Extra Large Unisex Tee",
               value: "xl_tee",
-              basePrice: 16.99,
+              basePrice: 23.79,
             },
           ],
           selects: [
@@ -4871,12 +4871,12 @@ Why Choose Our Expert-grade Rollup Banners?
             {
               label: "11oz Classic Ceramic Mug",
               value: "11oz",
-              basePrice: 4.99,
+              basePrice: 6.99,
             },
             {
               label: "15oz Deluxe Ceramic Mug",
               value: "15oz",
-              basePrice: 6.99,
+              basePrice: 9.79,
             },
           ],
           selects: [
@@ -4931,7 +4931,7 @@ Why Choose Our Expert-grade Rollup Banners?
             {
               label: 'Standard 15" x 16" Tote',
               value: "15x16",
-              basePrice: 5.99,
+              basePrice: 8.39,
             },
           ],
           selects: [
@@ -4995,7 +4995,7 @@ Why Choose Our Expert-grade Rollup Banners?
             {
               label: "Standard Fine Point Pen",
               value: "fine_pen",
-              basePrice: 0.89,
+              basePrice: 1.25,
             },
           ],
           selects: [
@@ -5074,7 +5074,7 @@ Why Choose Our Expert-grade Rollup Banners?
             {
               label: '5.5" x 8.5" Classic Journal',
               value: "5.5x8.5",
-              basePrice: 3.99,
+              basePrice: 5.59,
             },
           ],
           selects: [
@@ -5133,7 +5133,7 @@ Why Choose Our Expert-grade Rollup Banners?
             {
               label: '2" x 2" Acrylic Keychain',
               value: "2x2_acrylic",
-              basePrice: 1.29,
+              basePrice: 1.81,
             },
           ],
           selects: [
@@ -5190,11 +5190,11 @@ Why Choose Our Expert-grade Rollup Banners?
           ratingCount: "710",
           ratingScore: "4.9",
           sizes: [
-            { label: '2" x 2" Square Magnet', value: "2x2", basePrice: 0.49 },
+            { label: '2" x 2" Square Magnet', value: "2x2", basePrice: 0.69 },
             {
               label: '3.5" x 2" Business Card Magnet',
               value: "3.5x2",
-              basePrice: 0.79,
+              basePrice: 1.11,
             },
           ],
           selects: [
@@ -5292,11 +5292,11 @@ Why Choose Our Expert-grade Rollup Banners?
           ratingScore: "4.9",
           ratingCount: "8,420",
           sizes: [
-            { label: '12" x 18" (Standard)', value: "12x18", basePrice: 3.99 },
-            { label: '18" x 24"', value: "18x24", basePrice: 6.99 },
-            { label: '24" x 24"', value: "24x24", basePrice: 9.99 },
-            { label: '24" x 36"', value: "24x36", basePrice: 13.99 },
-            { label: '36" x 48"', value: "36x48", basePrice: 22.99 },
+            { label: '12" x 18" (Standard)', value: "12x18", basePrice: 5.59 },
+            { label: '18" x 24"', value: "18x24", basePrice: 9.79 },
+            { label: '24" x 24"', value: "24x24", basePrice: 13.99 },
+            { label: '24" x 36"', value: "24x36", basePrice: 19.59 },
+            { label: '36" x 48"', value: "36x48", basePrice: 32.19 },
           ],
           selects: [
             {
@@ -5473,11 +5473,11 @@ Why Choose Our Expert-grade Rollup Banners?
           ratingScore: "4.9",
           ratingCount: "3,150",
           sizes: [
-            { label: '18" x 24" (Standard)', value: "18x24", basePrice: 12.99 },
-            { label: '24" x 24"', value: "24x24", basePrice: 16.99 },
-            { label: '24" x 36"', value: "24x36", basePrice: 22.99 },
-            { label: '18" x 6" Rider', value: "18x6_rider", basePrice: 5.99 },
-            { label: '24" x 6" Rider', value: "24x6_rider", basePrice: 7.99 },
+            { label: '18" x 24" (Standard)', value: "18x24", basePrice: 18.19 },
+            { label: '24" x 24"', value: "24x24", basePrice: 23.79 },
+            { label: '24" x 36"', value: "24x36", basePrice: 32.19 },
+            { label: '18" x 6" Rider', value: "18x6_rider", basePrice: 8.39 },
+            { label: '24" x 6" Rider', value: "24x6_rider", basePrice: 11.19 },
           ],
           selects: [
             {
@@ -5613,13 +5613,13 @@ Why Choose Our Expert-grade Rollup Banners?
           ratingScore: "4.9",
           ratingCount: "2,840",
           sizes: [
-            { label: '6" x 12"', value: "6x12", basePrice: 8.99 },
-            { label: '12" x 12"', value: "12x12", basePrice: 12.99 },
-            { label: '12" x 18"', value: "12x18", basePrice: 14.99 },
-            { label: '18" x 24"', value: "18x24", basePrice: 21.99 },
-            { label: '24" x 24"', value: "24x24", basePrice: 28.99 },
-            { label: '24" x 36"', value: "24x36", basePrice: 38.99 },
-            { label: "Custom Size", value: "custom", basePrice: 0 },
+            { label: '6" x 12"', value: "6x12", basePrice: 12.59 },
+            { label: '12" x 12"', value: "12x12", basePrice: 18.19 },
+            { label: '12" x 18"', value: "12x18", basePrice: 20.99 },
+            { label: '18" x 24"', value: "18x24", basePrice: 30.79 },
+            { label: '24" x 24"', value: "24x24", basePrice: 40.59 },
+            { label: '24" x 36"', value: "24x36", basePrice: 54.59 },
+            { label: "Custom Size", value: "custom", basePrice: 0.00 },
           ],
           selects: [
             {
@@ -5778,10 +5778,10 @@ Why Choose Our Expert-grade Rollup Banners?
             {
               label: '18" x 24" Insert (Standard)',
               value: "18x24",
-              basePrice: 89.99,
+              basePrice: 125.99,
             },
-            { label: '22" x 28" Insert', value: "22x28", basePrice: 109.99 },
-            { label: '24" x 36" Insert', value: "24x36", basePrice: 134.99 },
+            { label: '22" x 28" Insert', value: "22x28", basePrice: 153.99 },
+            { label: '24" x 36" Insert', value: "24x36", basePrice: 188.99 },
           ],
           selects: [
             {
@@ -5956,13 +5956,13 @@ Why Choose Our Expert-grade Rollup Banners?
           ratingScore: "4.8",
           ratingCount: "1,280",
           sizes: [
-            { label: '8.5" x 11"', value: "8_5x11", basePrice: 7.99 },
-            { label: '11" x 14"', value: "11x14", basePrice: 10.99 },
-            { label: '11" x 17"', value: "11x17", basePrice: 12.99 },
-            { label: '18" x 24"', value: "18x24", basePrice: 19.99 },
-            { label: '24" x 36"', value: "24x36", basePrice: 32.99 },
-            { label: '36" x 48"', value: "36x48", basePrice: 54.99 },
-            { label: "Custom Size", value: "custom", basePrice: 0 },
+            { label: '8.5" x 11"', value: "8_5x11", basePrice: 11.19 },
+            { label: '11" x 14"', value: "11x14", basePrice: 15.39 },
+            { label: '11" x 17"', value: "11x17", basePrice: 18.19 },
+            { label: '18" x 24"', value: "18x24", basePrice: 27.99 },
+            { label: '24" x 36"', value: "24x36", basePrice: 46.19 },
+            { label: '36" x 48"', value: "36x48", basePrice: 76.99 },
+            { label: "Custom Size", value: "custom", basePrice: 0.00 },
           ],
           selects: [
             {
@@ -6138,13 +6138,13 @@ Why Choose Our Expert-grade Rollup Banners?
           ratingScore: "4.9",
           ratingCount: "980",
           sizes: [
-            { label: '5" x 7"', value: "5x7", basePrice: 24.99 },
-            { label: '8" x 10"', value: "8x10", basePrice: 34.99 },
-            { label: '12" x 12"', value: "12x12", basePrice: 49.99 },
-            { label: '12" x 18"', value: "12x18", basePrice: 59.99 },
-            { label: '18" x 24"', value: "18x24", basePrice: 89.99 },
-            { label: '24" x 36"', value: "24x36", basePrice: 139.99 },
-            { label: "Custom Size", value: "custom", basePrice: 0 },
+            { label: '5" x 7"', value: "5x7", basePrice: 34.99 },
+            { label: '8" x 10"', value: "8x10", basePrice: 48.99 },
+            { label: '12" x 12"', value: "12x12", basePrice: 69.99 },
+            { label: '12" x 18"', value: "12x18", basePrice: 83.99 },
+            { label: '18" x 24"', value: "18x24", basePrice: 125.99 },
+            { label: '24" x 36"', value: "24x36", basePrice: 195.99 },
+            { label: "Custom Size", value: "custom", basePrice: 0.00 },
           ],
           selects: [
             {
@@ -6332,17 +6332,17 @@ Why Choose Our Expert-grade Rollup Banners?
           ratingScore: "4.8",
           ratingCount: "5,620",
           sizes: [
-            { label: '12" x 18"', value: "12x18", basePrice: 4.99 },
+            { label: '12" x 18"', value: "12x18", basePrice: 6.99 },
             {
               label: '18" x 24" (Most Popular)',
               value: "18x24",
-              basePrice: 7.99,
+              basePrice: 11.19,
             },
-            { label: '24" x 24"', value: "24x24", basePrice: 10.99 },
-            { label: '24" x 36"', value: "24x36", basePrice: 14.99 },
-            { label: '24" x 48"', value: "24x48", basePrice: 19.99 },
-            { label: '48" x 96"', value: "48x96", basePrice: 64.99 },
-            { label: "Custom Size", value: "custom", basePrice: 0 },
+            { label: '24" x 24"', value: "24x24", basePrice: 15.39 },
+            { label: '24" x 36"', value: "24x36", basePrice: 20.99 },
+            { label: '24" x 48"', value: "24x48", basePrice: 27.99 },
+            { label: '48" x 96"', value: "48x96", basePrice: 90.99 },
+            { label: "Custom Size", value: "custom", basePrice: 0.00 },
           ],
           selects: [
             {
@@ -6525,13 +6525,13 @@ Why Choose Our Expert-grade Rollup Banners?
           ratingScore: "4.8",
           ratingCount: "1,940",
           sizes: [
-            { label: '12" x 12"', value: "12x12", basePrice: 9.99 },
-            { label: '12" x 24"', value: "12x24", basePrice: 14.99 },
-            { label: '24" x 24"', value: "24x24", basePrice: 22.99 },
-            { label: '24" x 36"', value: "24x36", basePrice: 32.99 },
-            { label: '36" x 48"', value: "36x48", basePrice: 49.99 },
-            { label: '48" x 72"', value: "48x72", basePrice: 79.99 },
-            { label: "Custom Size", value: "custom", basePrice: 0 },
+            { label: '12" x 12"', value: "12x12", basePrice: 13.99 },
+            { label: '12" x 24"', value: "12x24", basePrice: 20.99 },
+            { label: '24" x 24"', value: "24x24", basePrice: 32.19 },
+            { label: '24" x 36"', value: "24x36", basePrice: 46.19 },
+            { label: '36" x 48"', value: "36x48", basePrice: 69.99 },
+            { label: '48" x 72"', value: "48x72", basePrice: 111.99 },
+            { label: "Custom Size", value: "custom", basePrice: 0.00 },
           ],
           selects: [
             {
@@ -6735,12 +6735,12 @@ Why Choose Our Expert-grade Rollup Banners?
           ratingScore: "4.9",
           ratingCount: "2,310",
           sizes: [
-            { label: '6" x 12" (Small)', value: "6x12", basePrice: 6.99 },
-            { label: '9" x 12"', value: "9x12", basePrice: 8.99 },
-            { label: '12" x 18" (Standard)', value: "12x18", basePrice: 11.99 },
-            { label: '18" x 24" (Large)', value: "18x24", basePrice: 17.99 },
-            { label: '24" x 24"', value: "24x24", basePrice: 24.99 },
-            { label: "Custom Size", value: "custom", basePrice: 0 },
+            { label: '6" x 12" (Small)', value: "6x12", basePrice: 9.79 },
+            { label: '9" x 12"', value: "9x12", basePrice: 12.59 },
+            { label: '12" x 18" (Standard)', value: "12x18", basePrice: 16.79 },
+            { label: '18" x 24" (Large)', value: "18x24", basePrice: 25.19 },
+            { label: '24" x 24"', value: "24x24", basePrice: 34.99 },
+            { label: "Custom Size", value: "custom", basePrice: 0.00 },
           ],
           selects: [
             {
@@ -6946,10 +6946,10 @@ Why Choose Our Expert-grade Rollup Banners?
           ratingScore: "4.9",
           ratingCount: "820",
           sizes: [
-            { label: '12" High Letters', value: "12in", basePrice: 149.99 },
-            { label: '18" High Letters', value: "18in", basePrice: 224.99 },
-            { label: '24" High Letters', value: "24in", basePrice: 299.99 },
-            { label: '36" High Letters', value: "36in", basePrice: 449.99 },
+            { label: '12" High Letters', value: "12in", basePrice: 209.99 },
+            { label: '18" High Letters', value: "18in", basePrice: 314.99 },
+            { label: '24" High Letters', value: "24in", basePrice: 419.99 },
+            { label: '36" High Letters', value: "36in", basePrice: 629.99 },
           ],
           selects: [
             {
