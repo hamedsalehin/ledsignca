@@ -44,6 +44,7 @@ export function HeroSection() {
               quality={90}
               className="object-cover object-center"
               priority={index === 0}
+              fetchPriority={index === 0 ? "high" : "auto"}
             />
           </div>
         ))}

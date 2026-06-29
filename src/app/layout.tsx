@@ -3,7 +3,8 @@ import { Open_Sans, Poppins } from "next/font/google";
 import "./globals.css";
 import { ClientBody } from "./ClientBody";
 import Script from "next/script";
-import { Chatbot } from "@/components/Chatbot";
+import dynamic from 'next/dynamic';
+const Chatbot = dynamic(() => import('@/components/Chatbot').then(mod => mod.Chatbot));
 
 const openSans = Open_Sans({
   subsets: ["latin"],

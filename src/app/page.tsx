@@ -1,12 +1,14 @@
 import { Header } from "@/components/Header";
 import { HeroSection } from "@/components/HeroSection";
-import { CategoryCarousel } from "@/components/CategoryCarousel";
-import { CustomerFavorites } from "@/components/CustomerFavorites";
-import { ExpertsSection } from "@/components/ExpertsSection";
-import { ProductsGrid } from "@/components/ProductsGrid";
-import { ValuePropositions } from "@/components/ValuePropositions";
-import { CustomerHighlights } from "@/components/CustomerHighlights";
-import { Footer } from "@/components/Footer";
+import dynamic from 'next/dynamic';
+
+const CategoryCarousel = dynamic(() => import('@/components/CategoryCarousel').then(mod => mod.CategoryCarousel));
+const CustomerFavorites = dynamic(() => import('@/components/CustomerFavorites').then(mod => mod.CustomerFavorites));
+const ExpertsSection = dynamic(() => import('@/components/ExpertsSection').then(mod => mod.ExpertsSection));
+const ProductsGrid = dynamic(() => import('@/components/ProductsGrid').then(mod => mod.ProductsGrid));
+const ValuePropositions = dynamic(() => import('@/components/ValuePropositions').then(mod => mod.ValuePropositions));
+const CustomerHighlights = dynamic(() => import('@/components/CustomerHighlights').then(mod => mod.CustomerHighlights));
+const Footer = dynamic(() => import('@/components/Footer').then(mod => mod.Footer));
 
 export default function Home() {
   return (
