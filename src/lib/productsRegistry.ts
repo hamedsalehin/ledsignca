@@ -127,7 +127,7 @@ export const PRODUCTS_REGISTRY: Record<string, RegistryCategory> = {
         name: "Vinyl Banners",
         description: "Rugged, weatherproof banners perfect for any environment.",
         image: "/images/products/main-page/vinyl_banner-toronto-printing-ca.png",
-        price: "Starting at CAD 12.99",
+        price: "Starting at CAD 18.19",
         badge: "Most Popular",
         config: {
           title: "Custom Vinyl Banners",
@@ -140,13 +140,13 @@ export const PRODUCTS_REGISTRY: Record<string, RegistryCategory> = {
           ratingCount: "1,530",
           ratingScore: "4.8",
           sizes: [
-            { label: "2' x 4' Small Banner", value: "24x48", basePrice: 12.99 },
+            { label: "2' x 4' Small Banner", value: "24x48", basePrice: 18.19 },
             {
               label: "3' x 6' Standard Banner",
               value: "36x72",
-              basePrice: 24.99,
+              basePrice: 34.99,
             },
-            { label: "4' x 8' Large Banner", value: "48x96", basePrice: 45.99 },
+            { label: "4' x 8' Large Banner", value: "48x96", basePrice: 64.39 },
           ],
           selects: [
             {
@@ -211,7 +211,7 @@ export const PRODUCTS_REGISTRY: Record<string, RegistryCategory> = {
         description:
           "Wrinkle-resistant dye-sublimation polyester with a matte look.",
         image: "/images/products/main-page/fabric_banner-toronto-printing-ca.png",
-        price: "Starting at CAD 45.99",
+        price: "Starting at CAD 64.39",
         badge: "Premium",
         config: {
           title: "Custom Fabric Banners",
@@ -230,13 +230,13 @@ export const PRODUCTS_REGISTRY: Record<string, RegistryCategory> = {
           ratingCount: "980",
           ratingScore: "4.9",
           sizes: [
-            { label: "2' x 6' Small Banner", value: "24x72", basePrice: 45.99 },
+            { label: "2' x 6' Small Banner", value: "24x72", basePrice: 64.39 },
             {
               label: "3' x 8' Standard Banner",
               value: "36x96",
-              basePrice: 74.99,
+              basePrice: 104.99,
             },
-            { label: "4' x 8' Large Banner", value: "48x96", basePrice: 94.99 },
+            { label: "4' x 8' Large Banner", value: "48x96", basePrice: 132.99 },
           ],
           selects: [
             {
@@ -301,7 +301,7 @@ export const PRODUCTS_REGISTRY: Record<string, RegistryCategory> = {
         description:
           "Perforated vinyl that allows wind to pass through, ideal for fences.",
         image: "/images/products/main-page/mesh_banner-toronto-printing-ca.png",
-        price: "Starting at CAD 42.99",
+        price: "Starting at CAD 60.19",
         badge: "Wind-Resistant",
         config: {
           title: "Custom Mesh Banners",
@@ -317,17 +317,17 @@ export const PRODUCTS_REGISTRY: Record<string, RegistryCategory> = {
             {
               label: "2' x 6' Small Fence Banner",
               value: "24x72",
-              basePrice: 42.99,
+              basePrice: 60.19,
             },
             {
               label: "3' x 8' Standard Fence Banner",
               value: "36x96",
-              basePrice: 64.99,
+              basePrice: 90.99,
             },
             {
               label: "4' x 8' Large Fence Banner",
               value: "48x96",
-              basePrice: 84.99,
+              basePrice: 118.99,
             },
           ],
           selects: [
@@ -366,7 +366,7 @@ export const PRODUCTS_REGISTRY: Record<string, RegistryCategory> = {
         description:
           "Twin-sided boulevard banners featuring integrated pockets for lamppost mounting.",
         image: "/images/products/main-page/pole_banner-toronto-printing-ca.png",
-        price: "Starting at CAD 29.99",
+        price: "Starting at CAD 41.99",
         config: {
           title: "Custom Pole Banners",
           subtitle:
@@ -381,17 +381,17 @@ export const PRODUCTS_REGISTRY: Record<string, RegistryCategory> = {
             {
               label: '18" x 36" Small Pole Banner',
               value: "36x18",
-              basePrice: 29.99,
+              basePrice: 41.99,
             },
             {
               label: '24" x 48" Standard Pole Banner',
               value: "48x24",
-              basePrice: 49.99,
+              basePrice: 69.99,
             },
             {
               label: '30" x 60" Large Pole Banner',
               value: "60x30",
-              basePrice: 79.99,
+              basePrice: 111.99,
             },
           ],
           selects: [
@@ -432,7 +432,7 @@ export const PRODUCTS_REGISTRY: Record<string, RegistryCategory> = {
         description:
           "Tear-away sports entrance banners featuring a reusable hook-and-loop center.",
         image: "/images/products/main-page/breakaway_banner-toronto-printing-ca.png",
-        price: "Starting at CAD 34.99",
+        price: "Starting at CAD 48.99",
         config: {
           title: "Custom Breakaway Banners",
           subtitle:
@@ -447,12 +447,12 @@ export const PRODUCTS_REGISTRY: Record<string, RegistryCategory> = {
             {
               label: "8' x 10' Run-Through Banner",
               value: "96x120",
-              basePrice: 99.99,
+              basePrice: 139.99,
             },
             {
               label: "10' x 12' Giant Team Banner",
               value: "120x144",
-              basePrice: 149.99,
+              basePrice: 209.99,
             },
           ],
           selects: [
@@ -495,7 +495,7 @@ export const PRODUCTS_REGISTRY: Record<string, RegistryCategory> = {
         description:
           "Tall hanging displays tailored for narrow columns and hallway spaces.",
         image: "/images/products/main-page/vertical_banner-toronto-printing-ca.png",
-        price: "Starting at CAD 19.99",
+        price: "Starting at CAD 27.99",
         config: {
           title: "Custom Vertical Banners",
           subtitle:
@@ -510,12 +510,12 @@ export const PRODUCTS_REGISTRY: Record<string, RegistryCategory> = {
             {
               label: "2' x 6' Vertical Banner",
               value: "72x24",
-              basePrice: 19.99,
+              basePrice: 27.99,
             },
             {
               label: "3' x 8' Large Vertical Banner",
               value: "96x36",
-              basePrice: 34.99,
+              basePrice: 48.99,
             },
           ],
           selects: [
@@ -557,7 +557,7 @@ export const PRODUCTS_REGISTRY: Record<string, RegistryCategory> = {
         name: "Retractable Banners",
         description: "Lightweight and instantly deployable roll-up stands for exhibitions.",
         image: "/images/products/main-page/retractable_roll_up_banner-toronto-printing-ca.png",
-        price: "Starting at CAD 89.00",
+        price: "Starting at CAD 124.60",
         badge: "Best Seller",
         config: {
           title: "Retractable Banners (Roll Up)",
@@ -579,12 +579,12 @@ export const PRODUCTS_REGISTRY: Record<string, RegistryCategory> = {
             {
               label: '33" x 80" Standard Stand Size',
               value: "33x80",
-              basePrice: 89.00,
+              basePrice: 124.60,
             },
             {
               label: '46" x 80" Vertical Size',
               value: "46x80",
-              basePrice: 220.00,
+              basePrice: 308.00,
             },
           ],
           selects: [
@@ -695,7 +695,7 @@ Advantages of our Roll-Up Systems:
         description:
           "Ultra-lightweight tension frames paired with grommeted display prints.",
         image: "/images/products/main-page/x_banner_stand-toronto-printing-ca.png",
-        price: "Starting at CAD 49.99",
+        price: "Starting at CAD 69.99",
         config: {
           title: "X-Frame Banner Stands",
           subtitle:
@@ -710,12 +710,12 @@ Advantages of our Roll-Up Systems:
             {
               label: '24" x 63" Small X-Stand',
               value: "63x24",
-              basePrice: 49.99,
+              basePrice: 69.99,
             },
             {
               label: '31" x 70" Large X-Stand',
               value: "70x31",
-              basePrice: 69.99,
+              basePrice: 97.99,
             },
           ],
           selects: [
@@ -754,7 +754,7 @@ Advantages of our Roll-Up Systems:
         description:
           "Perfect for step-and-repeat photography, VIP entryways, and media walls.",
         image: "/images/products/main-page/backdrop_banners-toronto-printing-ca.png",
-        price: "Starting at CAD 145.99",
+        price: "Starting at CAD 204.39",
         badge: "Event Ready",
         config: {
           title: "Backdrop Banners",
@@ -776,12 +776,12 @@ Advantages of our Roll-Up Systems:
             {
               label: "8' x 8' Square Backdrop",
               value: "96x96",
-              basePrice: 145.99,
+              basePrice: 204.39,
             },
             {
               label: "10' x 8' Large Backdrop",
               value: "120x96",
-              basePrice: 179.99,
+              basePrice: 251.99,
             },
           ],
           selects: [
@@ -825,7 +825,7 @@ Advantages of our Roll-Up Systems:
         description:
           "Compact pull-up displays tailored for point-of-sale desks and reception areas.",
         image: "/images/products/main-page/tabletop_retractable-toronto-printing-ca.jpg",
-        price: "Starting at CAD 29.99",
+        price: "Starting at CAD 41.99",
         config: {
           title: "Tabletop Retractable Banners",
           subtitle:
@@ -840,12 +840,12 @@ Advantages of our Roll-Up Systems:
             {
               label: '11.75" x 17" A3 Size Mini Stand',
               value: "17x11.75",
-              basePrice: 39.99,
+              basePrice: 55.99,
             },
             {
               label: '8.25" x 11.5" A4 Size Micro Stand',
               value: "11.5x8.25",
-              basePrice: 29.99,
+              basePrice: 41.99,
             },
           ],
           selects: [
@@ -5275,7 +5275,7 @@ Why Choose Our Expert-grade Rollup Banners?
         description:
           "Hanging corrugated plastic signs suspended from high-quality L-shaped stands, ideal for real estate, campaigns, and storefronts.",
         image: "/images/products/main-page/yard_sign-toronto-printing-ca.jpeg",
-        price: "Starting at CAD 3.99",
+        price: "Starting at CAD 5.59",
         badge: "Best Seller",
         config: {
           title: "Personalized Yard Signs",
@@ -5292,11 +5292,11 @@ Why Choose Our Expert-grade Rollup Banners?
           ratingScore: "4.9",
           ratingCount: "8,420",
           sizes: [
-            { label: '12" x 18" (Standard)', value: "12x18", basePrice: 3.99 },
-            { label: '18" x 24"', value: "18x24", basePrice: 6.99 },
-            { label: '24" x 24"', value: "24x24", basePrice: 9.99 },
-            { label: '24" x 36"', value: "24x36", basePrice: 13.99 },
-            { label: '36" x 48"', value: "36x48", basePrice: 22.99 },
+            { label: '12" x 18" (Standard)', value: "12x18", basePrice: 5.59 },
+            { label: '18" x 24"', value: "18x24", basePrice: 9.79 },
+            { label: '24" x 24"', value: "24x24", basePrice: 13.99 },
+            { label: '24" x 36"', value: "24x36", basePrice: 19.59 },
+            { label: '36" x 48"', value: "36x48", basePrice: 32.19 },
           ],
           selects: [
             {
@@ -5455,7 +5455,7 @@ Why Choose Our Expert-grade Rollup Banners?
         description:
           "Expert-grade-grade aluminum and coroplast panels for property listings, open houses, and riders.",
         image: "/images/products/main-page/Real_estate_panels-toronto-printing-ca.png",
-        price: "Starting at CAD 12.99",
+        price: "Starting at CAD 18.19",
         badge: "Most Popular",
         config: {
           title: "Personalized Real Estate Panels",
@@ -5473,11 +5473,11 @@ Why Choose Our Expert-grade Rollup Banners?
           ratingScore: "4.9",
           ratingCount: "3,150",
           sizes: [
-            { label: '18" x 24" (Standard)', value: "18x24", basePrice: 12.99 },
-            { label: '24" x 24"', value: "24x24", basePrice: 16.99 },
-            { label: '24" x 36"', value: "24x36", basePrice: 22.99 },
-            { label: '18" x 6" Rider', value: "18x6_rider", basePrice: 5.99 },
-            { label: '24" x 6" Rider', value: "24x6_rider", basePrice: 7.99 },
+            { label: '18" x 24" (Standard)', value: "18x24", basePrice: 18.19 },
+            { label: '24" x 24"', value: "24x24", basePrice: 23.79 },
+            { label: '24" x 36"', value: "24x36", basePrice: 32.19 },
+            { label: '18" x 6" Rider', value: "18x6_rider", basePrice: 8.39 },
+            { label: '24" x 6" Rider', value: "24x6_rider", basePrice: 11.19 },
           ],
           selects: [
             {
@@ -5596,7 +5596,7 @@ Why Choose Our Expert-grade Rollup Banners?
         description:
           "Resilient rust-proof aluminum signs for permanent interior and exterior branding, safety, and parking installations.",
         image: "/images/products/main-page/aluminum_sign-toronto-printing-ca.png",
-        price: "Starting at CAD 8.99",
+        price: "Starting at CAD 12.59",
         badge: "Commercial-grade",
         config: {
           title: "Personalized Aluminum Signs",
@@ -5613,13 +5613,13 @@ Why Choose Our Expert-grade Rollup Banners?
           ratingScore: "4.9",
           ratingCount: "2,840",
           sizes: [
-            { label: '6" x 12"', value: "6x12", basePrice: 8.99 },
-            { label: '12" x 12"', value: "12x12", basePrice: 12.99 },
-            { label: '12" x 18"', value: "12x18", basePrice: 14.99 },
-            { label: '18" x 24"', value: "18x24", basePrice: 21.99 },
-            { label: '24" x 24"', value: "24x24", basePrice: 28.99 },
-            { label: '24" x 36"', value: "24x36", basePrice: 38.99 },
-            { label: "Custom Size", value: "custom", basePrice: 0 },
+            { label: '6" x 12"', value: "6x12", basePrice: 12.59 },
+            { label: '12" x 12"', value: "12x12", basePrice: 18.19 },
+            { label: '12" x 18"', value: "12x18", basePrice: 20.99 },
+            { label: '18" x 24"', value: "18x24", basePrice: 30.79 },
+            { label: '24" x 24"', value: "24x24", basePrice: 40.59 },
+            { label: '24" x 36"', value: "24x36", basePrice: 54.59 },
+            { label: "Custom Size", value: "custom", basePrice: 0.00 },
           ],
           selects: [
             {
@@ -5758,7 +5758,7 @@ Why Choose Our Expert-grade Rollup Banners?
         description:
           "Portable double-sided sandwich board sidewalk signs that grab foot traffic and drive customers through your door.",
         image: "/images/products/main-page/A-frame_sign-toronto-printing-ca.jpeg",
-        price: "Starting at CAD 89.99",
+        price: "Starting at CAD 125.99",
         badge: "Striking",
         config: {
           title: "A-Frame Signs (Sandwich Boards)",
@@ -5778,10 +5778,10 @@ Why Choose Our Expert-grade Rollup Banners?
             {
               label: '18" x 24" Insert (Standard)',
               value: "18x24",
-              basePrice: 89.99,
+              basePrice: 125.99,
             },
-            { label: '22" x 28" Insert', value: "22x28", basePrice: 109.99 },
-            { label: '24" x 36" Insert', value: "24x36", basePrice: 134.99 },
+            { label: '22" x 28" Insert', value: "22x28", basePrice: 153.99 },
+            { label: '24" x 36" Insert', value: "24x36", basePrice: 188.99 },
           ],
           selects: [
             {
@@ -5938,7 +5938,7 @@ Why Choose Our Expert-grade Rollup Banners?
         description:
           "Lightweight, expert-grade interior display signs for presentations and lobbies.",
         image: "/images/products/main-page/foam_board-toronto-printing-ca.jpeg",
-        price: "Starting at CAD 7.99",
+        price: "Starting at CAD 11.19",
         badge: "Interior Favorite",
         config: {
           title: "Foam Board Signs",
@@ -5956,13 +5956,13 @@ Why Choose Our Expert-grade Rollup Banners?
           ratingScore: "4.8",
           ratingCount: "1,280",
           sizes: [
-            { label: '8.5" x 11"', value: "8_5x11", basePrice: 7.99 },
-            { label: '11" x 14"', value: "11x14", basePrice: 10.99 },
-            { label: '11" x 17"', value: "11x17", basePrice: 12.99 },
-            { label: '18" x 24"', value: "18x24", basePrice: 19.99 },
-            { label: '24" x 36"', value: "24x36", basePrice: 32.99 },
-            { label: '36" x 48"', value: "36x48", basePrice: 54.99 },
-            { label: "Custom Size", value: "custom", basePrice: 0 },
+            { label: '8.5" x 11"', value: "8_5x11", basePrice: 11.19 },
+            { label: '11" x 14"', value: "11x14", basePrice: 15.39 },
+            { label: '11" x 17"', value: "11x17", basePrice: 18.19 },
+            { label: '18" x 24"', value: "18x24", basePrice: 27.99 },
+            { label: '24" x 36"', value: "24x36", basePrice: 46.19 },
+            { label: '36" x 48"', value: "36x48", basePrice: 76.99 },
+            { label: "Custom Size", value: "custom", basePrice: 0.00 },
           ],
           selects: [
             {
@@ -6120,7 +6120,7 @@ Why Choose Our Expert-grade Rollup Banners?
         description:
           "High-quality clear or colored acrylic for a polished, modern look.",
         image: "/images/products/main-page/acrylic_sign-toronto-printing-ca.png",
-        price: "Starting at CAD 24.99",
+        price: "Starting at CAD 34.99",
         badge: "High-quality",
         config: {
           title: "Personalized Acrylic Signs",
@@ -6138,13 +6138,13 @@ Why Choose Our Expert-grade Rollup Banners?
           ratingScore: "4.9",
           ratingCount: "980",
           sizes: [
-            { label: '5" x 7"', value: "5x7", basePrice: 24.99 },
-            { label: '8" x 10"', value: "8x10", basePrice: 34.99 },
-            { label: '12" x 12"', value: "12x12", basePrice: 49.99 },
-            { label: '12" x 18"', value: "12x18", basePrice: 59.99 },
-            { label: '18" x 24"', value: "18x24", basePrice: 89.99 },
-            { label: '24" x 36"', value: "24x36", basePrice: 139.99 },
-            { label: "Custom Size", value: "custom", basePrice: 0 },
+            { label: '5" x 7"', value: "5x7", basePrice: 34.99 },
+            { label: '8" x 10"', value: "8x10", basePrice: 48.99 },
+            { label: '12" x 12"', value: "12x12", basePrice: 69.99 },
+            { label: '12" x 18"', value: "12x18", basePrice: 83.99 },
+            { label: '18" x 24"', value: "18x24", basePrice: 125.99 },
+            { label: '24" x 36"', value: "24x36", basePrice: 195.99 },
+            { label: "Custom Size", value: "custom", basePrice: 0.00 },
           ],
           selects: [
             {
@@ -6314,7 +6314,7 @@ Why Choose Our Expert-grade Rollup Banners?
         description:
           "Weather-resistant corrugated plastic signs — the most adaptable, lightweight, and cost-effective exterior marketing signs.",
         image: "/images/products/main-page/coroplast_sign-toronto-printing-ca.png",
-        price: "Starting at CAD 4.99",
+        price: "Starting at CAD 6.99",
         badge: "Weather-resistant",
         config: {
           title: "Personalized Coroplast Signs",
@@ -6332,17 +6332,17 @@ Why Choose Our Expert-grade Rollup Banners?
           ratingScore: "4.8",
           ratingCount: "5,620",
           sizes: [
-            { label: '12" x 18"', value: "12x18", basePrice: 4.99 },
+            { label: '12" x 18"', value: "12x18", basePrice: 6.99 },
             {
               label: '18" x 24" (Most Popular)',
               value: "18x24",
-              basePrice: 7.99,
+              basePrice: 11.19,
             },
-            { label: '24" x 24"', value: "24x24", basePrice: 10.99 },
-            { label: '24" x 36"', value: "24x36", basePrice: 14.99 },
-            { label: '24" x 48"', value: "24x48", basePrice: 19.99 },
-            { label: '48" x 96"', value: "48x96", basePrice: 64.99 },
-            { label: "Custom Size", value: "custom", basePrice: 0 },
+            { label: '24" x 24"', value: "24x24", basePrice: 15.39 },
+            { label: '24" x 36"', value: "24x36", basePrice: 20.99 },
+            { label: '24" x 48"', value: "24x48", basePrice: 27.99 },
+            { label: '48" x 96"', value: "48x96", basePrice: 90.99 },
+            { label: "Custom Size", value: "custom", basePrice: 0.00 },
           ],
           selects: [
             {
@@ -6507,7 +6507,7 @@ Why Choose Our Expert-grade Rollup Banners?
         description:
           "Personalized window graphics, clings, perforated vinyl, and decals for storefronts and offices.",
         image: "/images/products/main-page/window_sign-toronto-printing-ca.png",
-        price: "Starting at CAD 9.99",
+        price: "Starting at CAD 13.99",
         badge: "Storefront",
         config: {
           title: "Window Signs & Clings",
@@ -6525,13 +6525,13 @@ Why Choose Our Expert-grade Rollup Banners?
           ratingScore: "4.8",
           ratingCount: "1,940",
           sizes: [
-            { label: '12" x 12"', value: "12x12", basePrice: 9.99 },
-            { label: '12" x 24"', value: "12x24", basePrice: 14.99 },
-            { label: '24" x 24"', value: "24x24", basePrice: 22.99 },
-            { label: '24" x 36"', value: "24x36", basePrice: 32.99 },
-            { label: '36" x 48"', value: "36x48", basePrice: 49.99 },
-            { label: '48" x 72"', value: "48x72", basePrice: 79.99 },
-            { label: "Custom Size", value: "custom", basePrice: 0 },
+            { label: '12" x 12"', value: "12x12", basePrice: 13.99 },
+            { label: '12" x 24"', value: "12x24", basePrice: 20.99 },
+            { label: '24" x 24"', value: "24x24", basePrice: 32.19 },
+            { label: '24" x 36"', value: "24x36", basePrice: 46.19 },
+            { label: '36" x 48"', value: "36x48", basePrice: 69.99 },
+            { label: '48" x 72"', value: "48x72", basePrice: 111.99 },
+            { label: "Custom Size", value: "custom", basePrice: 0.00 },
           ],
           selects: [
             {
@@ -6717,7 +6717,7 @@ Why Choose Our Expert-grade Rollup Banners?
         description:
           "Regulatory, reserved, and personalized parking signs — aluminum or coroplast, ships next day.",
         image: "/images/products/main-page/Parking_sign-toronto-printing-ca.jpeg",
-        price: "Starting at CAD 6.99",
+        price: "Starting at CAD 9.79",
         badge: "Ready to Ship",
         config: {
           title: "Personalized Parking Signs",
@@ -6735,12 +6735,12 @@ Why Choose Our Expert-grade Rollup Banners?
           ratingScore: "4.9",
           ratingCount: "2,310",
           sizes: [
-            { label: '6" x 12" (Small)', value: "6x12", basePrice: 6.99 },
-            { label: '9" x 12"', value: "9x12", basePrice: 8.99 },
-            { label: '12" x 18" (Standard)', value: "12x18", basePrice: 11.99 },
-            { label: '18" x 24" (Large)', value: "18x24", basePrice: 17.99 },
-            { label: '24" x 24"', value: "24x24", basePrice: 24.99 },
-            { label: "Custom Size", value: "custom", basePrice: 0 },
+            { label: '6" x 12" (Small)', value: "6x12", basePrice: 9.79 },
+            { label: '9" x 12"', value: "9x12", basePrice: 12.59 },
+            { label: '12" x 18" (Standard)', value: "12x18", basePrice: 16.79 },
+            { label: '18" x 24" (Large)', value: "18x24", basePrice: 25.19 },
+            { label: '24" x 24"', value: "24x24", basePrice: 34.99 },
+            { label: "Custom Size", value: "custom", basePrice: 0.00 },
           ],
           selects: [
             {
@@ -6928,7 +6928,7 @@ Why Choose Our Expert-grade Rollup Banners?
         description:
           "High-quality 3D backlit and front-lit channel letters to make your corporate storefront command attention.",
         image: "/images/products/main-page/channel_letter_signs-toronto-printing-ca.png",
-        price: "Starting at CAD 149.99",
+        price: "Starting at CAD 209.99",
         badge: "High-quality",
         config: {
           title: "Personalized Channel Letter Signs",
@@ -6946,10 +6946,10 @@ Why Choose Our Expert-grade Rollup Banners?
           ratingScore: "4.9",
           ratingCount: "820",
           sizes: [
-            { label: '12" High Letters', value: "12in", basePrice: 149.99 },
-            { label: '18" High Letters', value: "18in", basePrice: 224.99 },
-            { label: '24" High Letters', value: "24in", basePrice: 299.99 },
-            { label: '36" High Letters', value: "36in", basePrice: 449.99 },
+            { label: '12" High Letters', value: "12in", basePrice: 209.99 },
+            { label: '18" High Letters', value: "18in", basePrice: 314.99 },
+            { label: '24" High Letters', value: "24in", basePrice: 419.99 },
+            { label: '36" High Letters', value: "36in", basePrice: 629.99 },
           ],
           selects: [
             {
