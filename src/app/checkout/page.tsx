@@ -76,7 +76,10 @@ export default function CheckoutPage() {
   const taxRate = isOntario ? 0.13 : 0.0;
   const taxAmount = Math.round(itemsTotal * taxRate * 100) / 100;
 
-  const finalTotal = itemsTotal + shippingCost + taxAmount;
+  const finalTotalBase = itemsTotal + shippingCost + taxAmount;
+  const finalTotalRaw = (finalTotalBase + 0.30) / (1 - 0.03);
+  const finalTotal = Math.round(finalTotalRaw * 100) / 100;
+  const stripeFee = finalTotal - finalTotalBase;
 
   // Determine if freight LTL is required for cart items
   const isFreightEligible = useMemo(() => {
@@ -213,6 +216,7 @@ export default function CheckoutPage() {
               "Stripe Payment ID": `simulated_${Date.now()}`,
               "Shipping Cost": `CAD ${shippingCost.toFixed(2)}`,
               "Tax Paid": `CAD ${taxAmount.toFixed(2)}`,
+              "Stripe Processing Fee": `CAD ${stripeFee.toFixed(2)}`,
               "Discount Applied": `CAD ${discount.toFixed(2)}`,
               "Shipping Method": selectedRateId,
             },
@@ -542,6 +546,7 @@ export default function CheckoutPage() {
                       shippingAddress={shippingAddress}
                       shippingCost={shippingCost}
                       taxAmount={taxAmount}
+                      stripeFee={stripeFee}
                       discount={discount}
                       selectedRateId={selectedRateId}
                       items={items}
@@ -656,6 +661,11 @@ export default function CheckoutPage() {
                   <span className="text-slate-700">CAD {taxAmount.toFixed(2)}</span>
                 </div>
 
+                <div className="flex items-center justify-between">
+                  <span>Stripe processing fee</span>
+                  <span className="text-slate-700">CAD {stripeFee.toFixed(2)}</span>
+                </div>
+
                 <div className="flex items-center justify-between border-t border-slate-200/60 pt-3.5">
                   <span className="text-sm text-slate-900 font-extrabold">Total</span>
                   <span className="text-xl text-[#f7f82d] font-black">CAD {finalTotal.toFixed(2)}</span>
@@ -687,6 +697,7 @@ interface StripeElementsFormProps {
   shippingAddress: any;
   shippingCost: number;
   taxAmount: number;
+  stripeFee: number;
   discount: number;
   selectedRateId: string;
   items: any[];
@@ -702,6 +713,7 @@ function StripeElementsForm({
   shippingAddress,
   shippingCost,
   taxAmount,
+  stripeFee,
   discount,
   selectedRateId,
   items,
@@ -747,6 +759,7 @@ function StripeElementsForm({
               ...item.customOptions,
               "Shipping Cost": `CAD ${shippingCost.toFixed(2)}`,
               "Tax Paid": `CAD ${taxAmount.toFixed(2)}`,
+              "Stripe Processing Fee": `CAD ${stripeFee.toFixed(2)}`,
               "Discount Applied": `CAD ${discount.toFixed(2)}`,
               "Shipping Method": selectedRateId,
             },

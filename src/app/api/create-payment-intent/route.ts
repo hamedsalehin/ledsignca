@@ -72,8 +72,15 @@ export async function POST(req: NextRequest) {
     const taxRate = isOntario ? 0.13 : 0.0;
     const taxAmount = Math.round(itemsTotal * taxRate * 100) / 100;
 
-    // 5. Total cost
-    const finalTotal = itemsTotal + shippingCost + taxAmount;
+    // 5. Total cost before Stripe fee
+    const finalTotalBase = itemsTotal + shippingCost + taxAmount;
+    
+    // 6. Apply Stripe processing fee formula to ensure 100% payout: 
+    // Total Price = (Original Price + Fixed Fee) / (1 - Percentage Rate)
+    const finalTotalRaw = (finalTotalBase + 0.30) / (1 - 0.03);
+    const finalTotal = Math.round(finalTotalRaw * 100) / 100;
+    const stripeFee = finalTotal - finalTotalBase;
+    
     const finalTotalCents = Math.round(finalTotal * 100);
 
     // Create Stripe PaymentIntent
