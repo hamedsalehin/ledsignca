@@ -125,7 +125,10 @@ export default function RootLayout({
           }}
         />
       </head>
-      <ClientBody>\n        {children}\n        <Chatbot />\n      </ClientBody>
+      <ClientBody>
+        {children}
+        <Chatbot />
+      </ClientBody>
     </html>
   );
 }
