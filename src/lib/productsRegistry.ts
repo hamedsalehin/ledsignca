@@ -1557,22 +1557,10 @@ Advantages of our Roll-Up Systems:
           ratingCount: "1530",
           ratingScore: "4.9",
           sizes: [
-            {
-              label: '12" x 24" Standard Door Size',
-              value: "12x24",
-              basePrice: 19.99,
-            },
-            {
-              label: '12" x 18" Small Magnet',
-              value: "12x18",
-              basePrice: 14.99,
-            },
-            {
-              label: '18" x 24" Large Door Size',
-              value: "18x24",
-              basePrice: 27.99,
-            },
-            { label: '6" x 12" Mini Magnet', value: "6x12", basePrice: 4.99 },
+            { label: '6" x 12"', value: "6x12", basePrice: 18.99 },
+            { label: '12" x 18"', value: "12x18", basePrice: 20.99 },
+            { label: '12" x 24"', value: "12x24", basePrice: 25.99 },
+            { label: '18" x 24"', value: "18x24", basePrice: 28.99 }
           ],
           selects: [
             {
@@ -2718,29 +2706,11 @@ Why Choose Our Expert-grade Rollup Banners?
           ],
           toggleGroups: [
             {
-              label: "Print Direction",
+              label: "Printed Sides",
               options: [
-                {
-                  id: "single",
-                  label: "Single-Sided (Show through)",
-                  priceAdder: 0,
-                  description: "Design manufactured using one side, mirrored on back.",
-                },
-                {
-                  id: "double",
-                  label: "Double-Sided (Three layers)",
-                  priceAdder: 150.00,
-                  sizePriceAdders: {
-                    "9ft": 150.00,
-                    "10ft": 150.00,
-                    "13ft": 160.00,
-                    "16ft": 160.00,
-                  },
-                  description:
-                    "Two separate prints with blocker liner in between.",
-                },
-              ],
-            },
+                { id: "single", label: "Single Sided Only", priceAdder: 0 }
+              ]
+            }
           ],
           qtyDiscount: "Save up to 10% on bulk quantities",
           keyFeatures: [
@@ -5292,95 +5262,48 @@ Why Choose Our Expert-grade Rollup Banners?
           ratingScore: "4.9",
           ratingCount: "8,420",
           sizes: [
-            { label: '12" x 18" (Standard)', value: "12x18", basePrice: 5.59 },
-            { label: '18" x 24"', value: "18x24", basePrice: 9.79 },
-            { label: '24" x 24"', value: "24x24", basePrice: 13.99 },
-            { label: '24" x 36"', value: "24x36", basePrice: 19.59 },
-            { label: '36" x 48"', value: "36x48", basePrice: 32.19 },
+            { label: '24" x 32"', value: "24x32", basePrice: 45 },
+            { label: '24" x 36"', value: "24x36", basePrice: 65 },
+            { label: '32" x 48"', value: "32x48", basePrice: 70 },
+            { label: '36" x 48"', value: "36x48", basePrice: 80 }
           ],
           selects: [
             {
               label: "Material",
               options: [
-                {
-                  label: "4mm Corrugated Plastic (Standard)",
-                  value: "4mm",
-                  priceAdder: 0,
-                  description:
-                    "Lightweight, weatherproof, excellent for short-term exterior use.",
-                },
-                {
-                  label: "6mm Heavy-Duty Coroplast",
-                  value: "6mm",
-                  priceAdder: 1.5,
-                  description:
-                    "50% thicker — ideal for long-term yard sign campaigns.",
-                },
-                {
-                  label: "Aluminum (Substrate)",
-                  value: "aluminum",
-                  priceAdder: 4,
-                  description:
-                    "Rigid aluminum for permanent exterior installations.",
-                },
-              ],
+                { label: "4mm Coroplast", value: "4mm", priceAdder: 0 },
+                { label: "10mm Heavy Duty", value: "10mm", sizePriceAdders: { "24x32": 10, "24x36": 10, "32x48": 12, "36x48": 10 } },
+                { label: "Aluminum (ACM)", value: "acm", sizePriceAdders: { "24x32": 15, "24x36": 30, "32x48": 35, "36x48": 40 } }
+              ]
             },
             {
-              label: "Printing",
+              label: "Frame/Stand Options",
               options: [
-                { label: "Single Sided", value: "single", priceAdder: 0 },
-                { label: "Double Sided", value: "double", priceAdder: 2.5 },
-              ],
+                { label: "Sign Panel Only", value: "none", priceAdder: 0 },
+                { label: "Black L-Shaped Post Stand", value: "stand", priceAdder: 95 }
+              ]
             },
             {
-              label: "Hanging Holes",
+              label: "Coating",
               options: [
-                {
-                  label: "Top Hanging Holes (Grommets)",
-                  value: "top_holes",
-                  priceAdder: 0,
-                  description: "Pre-drilled holes at top corners to hang from the arm.",
-                },
-                {
-                  label: "No Holes",
-                  value: "no_holes",
-                  priceAdder: 0,
-                  description: "Solid panel without pre-drilled holes.",
-                },
-              ],
-            },
+                { label: "No Coating", value: "none", priceAdder: 0 },
+                { label: "UV Gloss Coating", value: "uv", sizePriceAdders: { "24x32": 5.33, "24x36": 6.00, "32x48": 10.66, "36x48": 12.00 } }
+              ]
+            }
           ],
           toggleGroups: [
             {
-              label: "Frame/Stand Option",
+              label: "Printed Sides",
               options: [
-                { id: "no_stand", label: "Sign Panel Only", priceAdder: 0 },
-                {
-                  id: "wood_l_stand",
-                  label: "White L-Shaped Wood Yard Arm Stand",
-                  priceAdder: 39.99,
-                  description: "High-quality wooden colonial yard post",
-                },
-                {
-                  id: "metal_l_stand",
-                  label: "Black L-Shaped Metal Yard Arm Stand",
-                  priceAdder: 49.99,
-                  description: "Industrial-strength steel hanging sign post",
-                },
-              ],
+                { id: "double", label: "ALL DOUBLE SIDED", priceAdder: 0 }
+              ]
             },
             {
-              label: "UV Coating",
+              label: "Grommets",
               options: [
-                { id: "no_coat", label: "None", priceAdder: 0 },
-                {
-                  id: "uv",
-                  label: "UV Gloss Coating",
-                  priceAdder: 0.75,
-                  description: "Adds scratch & fade protection.",
-                },
-              ],
-            },
+                { id: "grommets", label: "3 Standard Grommets Included", priceAdder: 0 }
+              ]
+            }
           ],
           qtyDiscount: "Buy more, save more — up to 13% off!",
           keyFeatures: [
@@ -5458,6 +5381,8 @@ Why Choose Our Expert-grade Rollup Banners?
         price: "Starting at CAD 18.19",
         badge: "Most Popular",
         config: {
+          minQuantity: 100,
+          quantityPrices: { 100: 330, 200: 650, 300: 970 },
           title: "Personalized Real Estate Panels",
           subtitle:
             "Expert-grade-grade panels for property listings and open houses.",
@@ -5473,11 +5398,7 @@ Why Choose Our Expert-grade Rollup Banners?
           ratingScore: "4.9",
           ratingCount: "3,150",
           sizes: [
-            { label: '18" x 24" (Standard)', value: "18x24", basePrice: 18.19 },
-            { label: '24" x 24"', value: "24x24", basePrice: 23.79 },
-            { label: '24" x 36"', value: "24x36", basePrice: 32.19 },
-            { label: '18" x 6" Rider', value: "18x6_rider", basePrice: 8.39 },
-            { label: '24" x 6" Rider', value: "24x6_rider", basePrice: 11.19 },
+            { label: '20" x 24"', value: "20x24", basePrice: 3.30 }
           ],
           selects: [
             {
@@ -5514,24 +5435,11 @@ Why Choose Our Expert-grade Rollup Banners?
           ],
           toggleGroups: [
             {
-              label: "Accessories",
+              label: "Printed Sides",
               options: [
-                { id: "none", label: "Sign Only", priceAdder: 0 },
-                { id: "h_frame", label: "Wire H-Frame Post", priceAdder: 4.99 },
-                {
-                  id: "yard_arm",
-                  label: "Yard Arm Post",
-                  priceAdder: 18.99,
-                  description: "Traditional single-post arm",
-                },
-                {
-                  id: "full_frame",
-                  label: "Full Frame Post Kit",
-                  priceAdder: 34.99,
-                  description: "Includes two posts + crossbar",
-                },
-              ],
-            },
+                { id: "double", label: "All Double Sided", priceAdder: 0 }
+              ]
+            }
           ],
           qtyDiscount: "Agent bulk pricing — buy 10+ and save",
           keyFeatures: [
@@ -5613,79 +5521,33 @@ Why Choose Our Expert-grade Rollup Banners?
           ratingScore: "4.9",
           ratingCount: "2,840",
           sizes: [
-            { label: '6" x 12"', value: "6x12", basePrice: 12.59 },
-            { label: '12" x 12"', value: "12x12", basePrice: 18.19 },
-            { label: '12" x 18"', value: "12x18", basePrice: 20.99 },
-            { label: '18" x 24"', value: "18x24", basePrice: 30.79 },
-            { label: '24" x 24"', value: "24x24", basePrice: 40.59 },
-            { label: '24" x 36"', value: "24x36", basePrice: 54.59 },
-            { label: "Custom Size", value: "custom", basePrice: 0.00 },
+            { label: '8" x 12"', value: "8x12", basePrice: 19.84, quantityPrices: { 1: 19.84, 10: 85.50, 20: 135.25 } },
+            { label: '12" x 18"', value: "12x18", basePrice: 35.84, quantityPrices: { 1: 35.84, 10: 105.50, 20: 250.25 } },
+            { label: '18" x 24"', value: "18x24", basePrice: 55.84, quantityPrices: { 1: 55.84, 10: 250.50, 20: 470.35 } },
+            { label: '24" x 32"', value: "24x32", basePrice: 60.84, quantityPrices: { 1: 60.84, 10: 410.50, 20: 850.35 } }
           ],
           selects: [
             {
               label: "Aluminum Grade",
               options: [
-                {
-                  label: ".040 Aluminum (Standard)",
-                  value: "040",
-                  priceAdder: 0,
-                  description: "Standard gauge — excellent for most applications.",
-                },
-                {
-                  label: ".080 Aluminum (Heavy Duty)",
-                  value: "080",
-                  priceAdder: 5.5,
-                  description: "Double thickness for maximum rigidity.",
-                },
-              ],
-            },
-            {
-              label: "Finish",
-              options: [
-                {
-                  label: "Matte White (Standard)",
-                  value: "matte",
-                  priceAdder: 0,
-                },
-                { label: "High Gloss", value: "gloss", priceAdder: 2.5 },
-                {
-                  label: "Reflective (ASTM D4956)",
-                  value: "reflective",
-                  priceAdder: 8,
-                  description:
-                    "Highly visible at night — for safety & regulatory use.",
-                },
-              ],
-            },
-            {
-              label: "Printing",
-              options: [
-                { label: "Single Sided", value: "single", priceAdder: 0 },
-                { label: "Double Sided", value: "double", priceAdder: 6 },
-              ],
-            },
+                { label: ".040 Aluminum (Standard)", value: "040", priceAdder: 0 }
+              ]
+            }
           ],
           toggleGroups: [
             {
-              label: "Mounting Holes",
+              label: "Printed Sides",
               options: [
-                { id: "no_holes", label: "No Holes", priceAdder: 0 },
-                { id: "corner_holes", label: "Corner Holes", priceAdder: 0 },
-                {
-                  id: "custom_holes",
-                  label: "Custom Hole Placement",
-                  priceAdder: 1,
-                },
-                { id: "grommets", label: "Grommets Added", priceAdder: 2 },
-              ],
+                { id: "single", label: "Single Sided Only", priceAdder: 0 }
+              ]
             },
             {
-              label: "Rounded Corners",
+              label: "Corner Option",
               options: [
                 { id: "square", label: "Square Corners", priceAdder: 0 },
-                { id: "rounded", label: "Rounded Corners", priceAdder: 1.5 },
-              ],
-            },
+                { id: "round", label: "Round Corners", priceAdder: 2 }
+              ]
+            }
           ],
           qtyDiscount: "Volume pricing — buy 10+ for up to 13% off",
           keyFeatures: [
@@ -5775,93 +5637,32 @@ Why Choose Our Expert-grade Rollup Banners?
           ratingScore: "4.8",
           ratingCount: "1,640",
           sizes: [
-            {
-              label: '18" x 24" Insert (Standard)',
-              value: "18x24",
-              basePrice: 125.99,
-            },
-            { label: '22" x 28" Insert', value: "22x28", basePrice: 153.99 },
-            { label: '24" x 36" Insert', value: "24x36", basePrice: 188.99 },
+            { label: '18" x 24"', value: "18x24", basePrice: 105 },
+            { label: '36" x 24"', value: "36x24", basePrice: 130 },
           ],
           selects: [
             {
-              label: "Frame Material",
-              options: [
-                {
-                  label: "Plastic A-Frame (Standard)",
-                  value: "plastic",
-                  priceAdder: 0,
-                  description: "Lightweight, weather-resistant. Budget-friendly.",
-                },
-                {
-                  label: "Aluminum A-Frame",
-                  value: "aluminum",
-                  priceAdder: 25,
-                  description: "Heavier, more stable in wind. Long-lasting.",
-                },
-                {
-                  label: "Premium Swinger Frame",
-                  value: "swinger",
-                  priceAdder: 45,
-                  description: "360° swivel top. Maximum visibility.",
-                },
-              ],
-            },
-            {
               label: "Insert Material",
               options: [
-                {
-                  label: "Coroplast Insert (Standard)",
-                  value: "coro",
-                  priceAdder: 0,
-                  description: "Weather-resistant, lightweight corrugated plastic.",
-                },
-                {
-                  label: "PVC Foam Board Insert",
-                  value: "pvc",
-                  priceAdder: 8,
-                  description: "Rigid, high-quality look for upscale establishments.",
-                },
-                {
-                  label: "Aluminum Insert",
-                  value: "alum",
-                  priceAdder: 14,
-                  description: "The most resilient, longest-lasting option.",
-                },
-              ],
+                { label: "Coroplast Regular", value: "coroplast", priceAdder: 0 },
+                { label: "ACM (Aluminum)", value: "acm", priceAdder: 25 }
+              ]
             },
+            {
+              label: "Frame Material",
+              options: [
+                { label: "Metal Regular", value: "metal", priceAdder: 0 },
+                { label: "Plastic", value: "plastic", priceAdder: 30 }
+              ]
+            }
           ],
           toggleGroups: [
             {
-              label: "Printing",
+              label: "Printed Sides",
               options: [
-                { id: "single", label: "1-Sided Print", priceAdder: 0 },
-                {
-                  id: "double",
-                  label: "2-Sided Print",
-                  priceAdder: 0,
-                  description: "Both panels printed (standard for A-frames)",
-                },
-              ],
-            },
-            {
-              label: "Anti-Wind Accessory",
-              options: [
-                { id: "none", label: "No Accessory", priceAdder: 0 },
-                {
-                  id: "chain",
-                  label: "Connecting Chain",
-                  priceAdder: 2.99,
-                  description: "Limits how far the sign opens in wind",
-                },
-                {
-                  id: "sandbag",
-                  label: "Sandbag Weight",
-                  priceAdder: 9.99,
-                  description: "Keeps sign stable in windy conditions",
-                },
-              ],
-            },
+                { id: "double", label: "Double Sided Only", priceAdder: 0 }
+              ]
+            }
           ],
           qtyDiscount: "Buy 3+ A-frames and save up to 10%",
           keyFeatures: [
@@ -5956,13 +5757,10 @@ Why Choose Our Expert-grade Rollup Banners?
           ratingScore: "4.8",
           ratingCount: "1,280",
           sizes: [
-            { label: '8.5" x 11"', value: "8_5x11", basePrice: 11.19 },
-            { label: '11" x 14"', value: "11x14", basePrice: 15.39 },
-            { label: '11" x 17"', value: "11x17", basePrice: 18.19 },
-            { label: '18" x 24"', value: "18x24", basePrice: 27.99 },
-            { label: '24" x 36"', value: "24x36", basePrice: 46.19 },
-            { label: '36" x 48"', value: "36x48", basePrice: 76.99 },
-            { label: "Custom Size", value: "custom", basePrice: 0.00 },
+            { label: '12" x 18"', value: "12x18", basePrice: 20 },
+            { label: '18" x 24"', value: "18x24", basePrice: 38 },
+            { label: '24" x 36"', value: "24x36", basePrice: 58 },
+            { label: '36" x 48"', value: "36x48", basePrice: 72 },
           ],
           selects: [
             {
@@ -6016,6 +5814,13 @@ Why Choose Our Expert-grade Rollup Banners?
             },
           ],
           toggleGroups: [
+            {
+              label: "Printed Sides",
+              options: [
+                { id: "single", label: "Single Sided", priceAdder: 0 },
+                { id: "double", label: "Double Sided", priceAdder: 0, priceMultiplier: 1.5 }
+              ]
+            },
             {
               label: "Mounting Backing",
               options: [
@@ -6735,119 +6540,32 @@ Why Choose Our Expert-grade Rollup Banners?
           ratingScore: "4.9",
           ratingCount: "2,310",
           sizes: [
-            { label: '6" x 12" (Small)', value: "6x12", basePrice: 9.79 },
-            { label: '9" x 12"', value: "9x12", basePrice: 12.59 },
-            { label: '12" x 18" (Standard)', value: "12x18", basePrice: 16.79 },
-            { label: '18" x 24" (Large)', value: "18x24", basePrice: 25.19 },
-            { label: '24" x 24"', value: "24x24", basePrice: 34.99 },
-            { label: "Custom Size", value: "custom", basePrice: 0.00 },
+            { label: '18" x 24"', value: "18x24", basePrice: 105 },
+            { label: '36" x 24"', value: "36x24", basePrice: 130 },
           ],
           selects: [
             {
-              label: "Material",
+              label: "Insert Material",
               options: [
-                {
-                  label: ".040 Aluminum (Most Popular)",
-                  value: "040_alum",
-                  priceAdder: 0,
-                  description:
-                    "Industry standard for parking signs. Rigid and resilient.",
-                },
-                {
-                  label: ".080 Aluminum Heavy Duty",
-                  value: "080_alum",
-                  priceAdder: 5,
-                  description: "Double thickness — ideal for high-traffic lots.",
-                },
-                {
-                  label: "4mm Coroplast (Budget)",
-                  value: "coro",
-                  priceAdder: -3,
-                  description:
-                    "Lightweight and weather-resistant — best for temporary use.",
-                },
-              ],
+                { label: "Coroplast Regular", value: "coroplast", priceAdder: 0 },
+                { label: "ACM (Aluminum)", value: "acm", priceAdder: 25 }
+              ]
             },
             {
-              label: "Finish",
+              label: "Frame Material",
               options: [
-                { label: "Matte (Standard)", value: "matte", priceAdder: 0 },
-                { label: "High Gloss", value: "gloss", priceAdder: 1.5 },
-                {
-                  label: "Engineer-Grade Reflective",
-                  value: "reflective_eng",
-                  priceAdder: 7,
-                  description:
-                    "ASTM D4956 Type I — visible at night with headlights.",
-                },
-                {
-                  label: "High-Intensity Reflective",
-                  value: "reflective_hi",
-                  priceAdder: 14,
-                  description: "ASTM D4956 Type III — maximum night visibility.",
-                },
-              ],
-            },
-            {
-              label: "Sign Template",
-              options: [
-                {
-                  label: "Custom Design (Upload Artwork)",
-                  value: "custom",
-                  priceAdder: 0,
-                },
-                {
-                  label: "No Parking (Standard Red/White)",
-                  value: "no_parking",
-                  priceAdder: 0,
-                },
-                { label: "Reserved Parking", value: "reserved", priceAdder: 0 },
-                {
-                  label: "Handicap Accessible",
-                  value: "handicap",
-                  priceAdder: 0,
-                },
-                { label: "Tow Away Zone", value: "tow_away", priceAdder: 0 },
-                {
-                  label: "Customer Parking Only",
-                  value: "customer_only",
-                  priceAdder: 0,
-                },
-              ],
-            },
+                { label: "Metal Regular", value: "metal", priceAdder: 0 },
+                { label: "Plastic", value: "plastic", priceAdder: 30 }
+              ]
+            }
           ],
           toggleGroups: [
             {
-              label: "Mounting Holes",
+              label: "Printed Sides",
               options: [
-                { id: "no_holes", label: "No Holes", priceAdder: 0 },
-                { id: "two_top", label: "2 Holes at Top", priceAdder: 0 },
-                { id: "four_corner", label: "4 Corner Holes", priceAdder: 0 },
-                {
-                  id: "center_holes",
-                  label: "2 Center-Side Holes",
-                  priceAdder: 0,
-                },
-              ],
-            },
-            {
-              label: "Post / Mounting Bracket",
-              options: [
-                { id: "sign_only", label: "Sign Only", priceAdder: 0 },
-                {
-                  id: "u_channel",
-                  label: "U-Channel Post (included)",
-                  priceAdder: 18.99,
-                  description: "Standard street-sign post",
-                },
-                {
-                  id: "square_post",
-                  label: "Square Tubing Post",
-                  priceAdder: 22.99,
-                  description: "Industrial-strength square post for permanent installs",
-                },
-              ],
-            },
+                { id: "double", label: "Double Sided Only", priceAdder: 0 }
+              ]
+            }
           ],
           qtyDiscount: "Bulk parking sign orders — save up to 13%",
           keyFeatures: [
