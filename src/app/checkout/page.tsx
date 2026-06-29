@@ -41,8 +41,9 @@ export default function CheckoutPage() {
     name: "",
     address: "",
     city: "",
-    state: "FL",
+    state: "ON",
     postal: "",
+    country: "CA",
     phone: "",
   });
 
@@ -380,7 +381,7 @@ export default function CheckoutPage() {
                       required
                       value={shippingAddress.city}
                       onChange={(e) => setShippingAddress({ ...shippingAddress, city: e.target.value })}
-                      placeholder="Oakland Park"
+                      placeholder="Toronto"
                       className="w-full px-4 py-3 border border-gray-200 rounded-xl text-sm focus:outline-none focus:border-[#f7f82d] transition-colors"
                     />
                   </div>
@@ -388,28 +389,28 @@ export default function CheckoutPage() {
                   <div className="grid grid-cols-2 gap-4">
                     <div>
                       <label className="block text-xs font-bold text-slate-600 mb-1.5 uppercase tracking-wide">
-                        State
+                        Province
                       </label>
                       <input
                         type="text"
                         required
                         value={shippingAddress.state}
                         onChange={(e) => setShippingAddress({ ...shippingAddress, state: e.target.value })}
-                        placeholder="FL"
+                        placeholder="ON"
                         maxLength={2}
                         className="w-full px-4 py-3 border border-gray-200 rounded-xl text-sm focus:outline-none focus:border-[#f7f82d] transition-colors uppercase"
                       />
                     </div>
                     <div>
                       <label className="block text-xs font-bold text-slate-600 mb-1.5 uppercase tracking-wide">
-                        ZIP Code
+                        Postal Code
                       </label>
                       <input
                         type="text"
                         required
                         value={shippingAddress.postal}
                         onChange={(e) => setShippingAddress({ ...shippingAddress, postal: e.target.value })}
-                        placeholder="33309"
+                        placeholder="M1T 1V6"
                         className="w-full px-4 py-3 border border-gray-200 rounded-xl text-sm focus:outline-none focus:border-[#f7f82d] transition-colors"
                       />
                     </div>
@@ -657,7 +658,7 @@ export default function CheckoutPage() {
                 </div>
 
                 <div className="flex items-center justify-between">
-                  <span>Estimated Sales Tax (FL)</span>
+                  <span>Estimated Sales Tax (13% HST)</span>
                   <span className="text-slate-700">CAD {taxAmount.toFixed(2)}</span>
                 </div>
 
