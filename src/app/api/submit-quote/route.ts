@@ -11,12 +11,14 @@ const supabaseAdmin = (supabaseUrl && supabaseServiceKey)
   ? createClient(supabaseUrl, supabaseServiceKey)
   : (null as any);
 
-const resend = resendApiKey ? new Resend(resendApiKey) : (null as any);
+
 
 const FROM = `${process.env.RESEND_FROM_NAME || "Nano Signs"} <${process.env.RESEND_FROM_EMAIL || "onboarding@resend.dev"}>`;
 const ADMIN_EMAIL = process.env.ADMIN_EMAIL || "";
 
 // ── POST /api/submit-quote ───────────────────────────────────────────────────
+export const dynamic = 'force-dynamic';
+
 export async function POST(req: NextRequest) {
   try {
     if (!supabaseAdmin) {
