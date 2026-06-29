@@ -3784,6 +3784,8 @@ Why Choose Our Expert-grade Rollup Banners?
     description:
       "High-quality stakes, frames and commercial-grade steel mounts to hold your yard signs, exterior notices, and trade show displays.",
     heroImage: "/images/products/main-page/yard_sign-toronto-printing-ca.jpeg",
+    tabletHeroImage: "/images/products/main-page/yard_sign-toronto-printing-ca.jpeg",
+    mobileHeroImage: "/images/products/main-page/yard_sign-toronto-printing-ca.jpeg",
     reviewRating: "4.8",
     reviewCount: "980",
     reviewQuote:
@@ -4741,6 +4743,8 @@ Why Choose Our Expert-grade Rollup Banners?
     description:
       "Customize apparel, mugs, and trade show giveaways with your corporate branding.",
     heroImage: "/images/products/main-page/promotional_products_hero_image-toronto-printing-ca.png",
+    tabletHeroImage: "/images/products/main-page/promotional_products_hero_image-toronto-printing-ca.png",
+    mobileHeroImage: "/images/products/main-page/promotional_products_hero_image-toronto-printing-ca.png",
     reviewRating: "4.9",
     reviewCount: "1,480",
     reviewQuote:
