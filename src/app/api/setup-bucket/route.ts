@@ -8,6 +8,12 @@ const supabaseAdmin = (supabaseUrl && supabaseServiceKey)
   ? createClient(supabaseUrl, supabaseServiceKey)
   : null;
 
+export const dynamic = "force-dynamic";
+
+export async function GET() {
+  return NextResponse.json({ status: "alive" });
+}
+
 export async function POST(req: NextRequest) {
   try {
     if (!supabaseAdmin) {

@@ -96,9 +96,9 @@ export const PRODUCTS_REGISTRY: Record<string, RegistryCategory> = {
     heroSubtitle: "Maximum Visibility. Rapid Turnaround. Built to Last.",
     description:
       "Premium printed banners for every event. Whether you need rugged outdoor vinyl or sleek retractable displays, we deliver the perfect branding solution.",
-    heroImage: "/images/products/main-page/banners%20hero%20image-toronto-printing-ca.png",
-    tabletHeroImage: "/images/products/main-page/banners%20hero%20image-toronto-printing-ca.png",
-    mobileHeroImage: "/images/products/main-page/banners%20hero%20image-toronto-printing-ca.png",
+    heroImage: "/images/products/main-page/banners_hero_image-toronto-printing-ca.png",
+    tabletHeroImage: "/images/products/main-page/banners_hero_image-toronto-printing-ca.png",
+    mobileHeroImage: "/images/products/main-page/banners_hero_image-toronto-printing-ca.png",
     reviewRating: "4.9",
     reviewCount: "2,680",
     reviewQuote:
@@ -891,9 +891,9 @@ Advantages of our Roll-Up Systems:
     heroSubtitle: "Weatherproof. High-Visibility. Cost-Effective.",
     description:
       "Seize roadside attention with towering custom flags. Exceptionally effective for retail storefronts, auto dealers, and outdoor festivals.",
-    heroImage: "/images/products/main-page/nano hero flag section-toronto-printing-ca.png",
-    tabletHeroImage: "/images/products/main-page/nano hero flag section-toronto-printing-ca.png",
-    mobileHeroImage: "/images/products/main-page/nano hero flag section-toronto-printing-ca.png",
+    heroImage: "/images/products/main-page/nano_hero_flag_section-toronto-printing-ca.png",
+    tabletHeroImage: "/images/products/main-page/nano_hero_flag_section-toronto-printing-ca.png",
+    mobileHeroImage: "/images/products/main-page/nano_hero_flag_section-toronto-printing-ca.png",
     reviewRating: "4.8",
     reviewCount: "1,920",
     reviewQuote:
@@ -1761,9 +1761,9 @@ Advantages of our Roll-Up Systems:
     breadcrumbLabel: "Tradeshow",
     description:
       "Get trade show ready with personalized products that make your brand command attention. Table covers, step and repeats, and stands.",
-    heroImage: "/images/products/main-page/tradeshow%20hero%20image-toronto-printing-ca.png",
-    tabletHeroImage: "/images/products/main-page/tradeshow%20hero%20image-toronto-printing-ca.png",
-    mobileHeroImage: "/images/products/main-page/tradeshow%20hero%20image-toronto-printing-ca.png",
+    heroImage: "/images/products/main-page/tradeshow_hero_image-toronto-printing-ca.png",
+    tabletHeroImage: "/images/products/main-page/tradeshow_hero_image-toronto-printing-ca.png",
+    mobileHeroImage: "/images/products/main-page/tradeshow_hero_image-toronto-printing-ca.png",
     heroSubtitle: "Where First Impressions Get Noticed.",
     reviewRating: "4.9",
     reviewCount: "3,240",
@@ -2816,7 +2816,8 @@ Why Choose Our Expert-grade Rollup Banners?
           reviews: [],
           ctaHeading: "Ready to design your banner?",
           },
-      },      {
+      },
+      {
         id: "business-cards",
         name: "Corporate Cards",
         description:
@@ -3206,9 +3207,9 @@ Why Choose Our Expert-grade Rollup Banners?
     breadcrumbLabel: "Personalized Decals",
     description:
       "Discover our full lineup of personalized decal solutions, including vinyl decals, static clings, sticker sheets, and roll labels.",
-    heroImage: "/images/products/main-page/stickers%20%26%20decals%20hero%20image-toronto-printing-ca.png",
-    tabletHeroImage: "/images/products/main-page/stickers%20%26%20decals%20hero%20image-toronto-printing-ca.png",
-    mobileHeroImage: "/images/products/main-page/stickers%20%26%20decals%20hero%20image-toronto-printing-ca.png",
+    heroImage: "/images/products/main-page/stickers_decals_hero_image-toronto-printing-ca.png",
+    tabletHeroImage: "/images/products/main-page/stickers_decals_hero_image-toronto-printing-ca.png",
+    mobileHeroImage: "/images/products/main-page/stickers_decals_hero_image-toronto-printing-ca.png",
     heroSubtitle: "Design It. Stick It. Leave Your Mark.",
     reviewRating: "4.9",
     reviewCount: "1,840",
@@ -3782,7 +3783,7 @@ Why Choose Our Expert-grade Rollup Banners?
     breadcrumbLabel: "Sign Accessories",
     description:
       "High-quality stakes, frames and commercial-grade steel mounts to hold your yard signs, exterior notices, and trade show displays.",
-    heroImage: "https://ext.same-assets.com/1114826555/1286398033-toronto-printing-ca.png",
+    heroImage: "/images/products/main-page/yard_sign-toronto-printing-ca.jpeg",
     reviewRating: "4.8",
     reviewCount: "980",
     reviewQuote:
@@ -3793,7 +3794,7 @@ Why Choose Our Expert-grade Rollup Banners?
         name: "Metal H-Frame Stakes",
         description:
           "Commercial-grade metal wire stakes to hold corrugated plastic signs in lawns.",
-        image: "https://ext.same-assets.com/1114826555/1286398033-toronto-printing-ca.png",
+        image: "/images/products/main-page/yard_sign-toronto-printing-ca.jpeg",
         price: "Starting at CAD 1.49",
         config: {
           title: "Metal Yard Stakes (H-Frames)",
@@ -3802,7 +3803,7 @@ Why Choose Our Expert-grade Rollup Banners?
           breadcrumb: "Sign Holders",
           breadcrumbHref: "/sign-accessories",
           promoText: "25% OFF WIRE STAKES & HOLDERS",
-          image: "https://ext.same-assets.com/1114826555/1286398033-toronto-printing-ca.png",
+          image: "/images/products/main-page/yard_sign-toronto-printing-ca.jpeg",
           ratingCount: "940",
           ratingScore: "4.8",
           sizes: [
@@ -3882,7 +3883,9 @@ Why Choose Our Expert-grade Rollup Banners?
     heroSubtitle: "Expert-grade Print. Promoted Brand.",
     description:
       "Grow your corporate and look expert-grade with customized corporate cards, flyers, and brochures.",
-    heroImage: "/images/products/main-page/marketing%20_materials_hero_image-toronto-printing-ca.png",
+    heroImage: "/images/products/main-page/marketing_materials_hero_image-toronto-printing-ca.png",
+    tabletHeroImage: "/images/products/main-page/marketing_materials_hero_image-toronto-printing-ca.png",
+    mobileHeroImage: "/images/products/main-page/marketing_materials_hero_image-toronto-printing-ca.png",
     reviewRating: "4.9",
     reviewCount: "1,150",
     reviewQuote:
@@ -7071,6 +7074,8 @@ Why Choose Our Expert-grade Rollup Banners?
     description: "Discover Nano Signs' high-impact, programmable commercial LED display signs in Toronto. Perfect for retail storefronts, events, window displays, and outdoor advertising. Energy-efficient, ultra-bright, and customizable.",
     heroSubtitle: "High-Brightness Commercial Screens & Programmable Billboards",
     heroImage: "/images/products/led-display-signs/hero4.jpeg",
+    tabletHeroImage: "/images/products/led-display-signs/hero4.jpeg",
+    mobileHeroImage: "/images/products/led-display-signs/hero4.jpeg",
     categoryDescriptionText: "Elevate your brand presence with our premium, high-brightness commercial LED display signs. From massive outdoor fixed billboards and dynamic vehicle displays to sleek indoor screens and flexible retail windows, Nano Signs delivers cutting-edge, energy-efficient solutions built for the Canadian climate. Our Toronto-based experts provide comprehensive support from design and manufacturing to installation, ensuring your digital signage drives unmatched foot traffic and visibility.",
     products: ledProducts
   },

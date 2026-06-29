@@ -6,7 +6,7 @@ image: ""
 type: "page"
 ---
 
-[Download Fkshow2020 windows \[Gen 8\]](https://led-sign.ca/FkShow2022.zip) [Download HDPlayer Software full color electronic signs](https://huidu-cn.oss-ap-southeast-1.aliyuncs.com/HDPlayer.7.6.40.0.exe) [Download HD2018 Software Single color electronic signs](https://huidu-cn.oss-ap-southeast-1.aliyuncs.com/HD2018%20V1.0.23.exe) [Download User Manual Of FKShow LED Picture & Text Edit Software](https://led-sign.ca/User%20Manual%20Of%20FK%20Show%20LED%20Picture%20&%20Text%20Edit%20Software.doc) [Download HDPlayer User manual Single color electronic signs](https://www.huidu.cn/uploads/20210911/e04de67adba59ff456ab13edb562d467.pdf) [Download HD2020 User manual Single color electronic signs](https://www.huidu.cn/uploads/20210911/1aa0986e873ace1081ab87d839260879.pdf) [Download HD2018 User manual Single color electronic signs](https://www.huidu.cn/uploads/20210911/e04de67adba59ff456ab13edb562d467.pdf) [Download LedArt app User manual](https://www.huidu.cn/uploads/20210911/7195e7f8b2bbdad9bbc0e20d7e889f05.pdf) [Download LedArt app for Android HD sign](https://play.google.com/store/apps/details?id=cn.huidu.huiduapp&hl=en_CA&gl=US) [Download LedArt app for IPhone HD sign](https://apps.apple.com/us/app/ledart/id1144062386) [Download FKshow app for IPhone FK sign](https://apps.apple.com/us/app/fkshow/id1135752741)
+
 
 # [FAQ (frequently asked questions)](https://led-sign.ca/support/)
 
