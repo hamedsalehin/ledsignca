@@ -5235,9 +5235,9 @@ Why Choose Our Expert-grade Rollup Banners?
     heroSubtitle: "Built to Command attention. Built to Last.",
     description:
       "From yard signs to high-quality acrylic, we print stunning personalized signs fast. Choose your product, upload your design, and we ship next day.",
-    heroImage: "/images/products/main-page/nano%20hero%20signs%20section-toronto-printing-ca.png",
-    tabletHeroImage: "/images/products/main-page/nano%20hero%20signs%20section-toronto-printing-ca.png",
-    mobileHeroImage: "/images/products/main-page/nano%20hero%20signs%20section-toronto-printing-ca.png",
+    heroImage: "/images/products/main-page/nano_hero_signs_section-toronto-printing-ca.png",
+    tabletHeroImage: "/images/products/main-page/nano_hero_signs_section-toronto-printing-ca.png",
+    mobileHeroImage: "/images/products/main-page/nano_hero_signs_section-toronto-printing-ca.png",
     reviewRating: "4.9",
     reviewCount: "8,420",
     reviewQuote:
