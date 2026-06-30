@@ -1711,57 +1711,62 @@
   },
   "coroplast-signs": {
     "sizes": {
-      "24x32": {
-        "basePrice": 45
+      "12x18": {
+        "basePrice": 12,
+        "quantityPrices": {
+          "1": 12,
+          "10": 55,
+          "20": 98,
+          "50": 180,
+          "100": 350
+        }
+      },
+      "18x24": {
+        "basePrice": 20,
+        "quantityPrices": {
+          "1": 20,
+          "10": 75,
+          "20": 120,
+          "50": 250,
+          "100": 430
+        }
+      },
+      "24x24": {
+        "basePrice": 30,
+        "quantityPrices": {
+          "1": 30,
+          "10": 95,
+          "20": 160,
+          "50": 320,
+          "100": 470
+        }
       },
       "24x36": {
-        "basePrice": 65
-      },
-      "32x48": {
-        "basePrice": 70
+        "basePrice": 40,
+        "quantityPrices": {
+          "1": 40,
+          "10": 140,
+          "20": 220,
+          "50": 410,
+          "100": 680
+        }
       },
       "36x48": {
-        "basePrice": 80
+        "basePrice": 60,
+        "quantityPrices": {
+          "1": 60,
+          "10": 210,
+          "20": 380,
+          "50": 680,
+          "100": 1350
+        }
       }
     },
     "options": {
-      "4mm": {
+      "single": {
         "priceAdder": 0
-      },
-      "10mm": {
-        "sizePriceAdders": {
-          "24x32": 10,
-          "24x36": 10,
-          "32x48": 12,
-          "36x48": 10
-        }
-      },
-      "acm": {
-        "sizePriceAdders": {
-          "24x32": 15,
-          "24x36": 30,
-          "32x48": 35,
-          "36x48": 40
-        }
-      },
-      "none": {
-        "priceAdder": 0
-      },
-      "stand": {
-        "priceAdder": 95
-      },
-      "uv": {
-        "sizePriceAdders": {
-          "24x32": 5.33,
-          "24x36": 6,
-          "32x48": 10.66,
-          "36x48": 12
-        }
       },
       "double": {
-        "priceAdder": 0
-      },
-      "grommets": {
         "priceAdder": 0
       }
     }

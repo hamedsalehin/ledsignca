@@ -6120,7 +6120,7 @@ Why Choose Our Expert-grade Rollup Banners?
         description:
           "Weather-resistant corrugated plastic signs — the most adaptable, lightweight, and cost-effective exterior marketing signs.",
         image: "/images/products/main-page/coroplast_sign-toronto-printing-ca.png",
-        price: "Starting at $45.00",
+        price: "Starting at $12.00",
         badge: "Weather-resistant",
         config: {
           title: "Personalized Coroplast Signs",
