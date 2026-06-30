@@ -20,6 +20,7 @@ import {
 import { useCart } from "./CartContext";
 import { supabase } from "@/lib/supabaseClient";
 import { useAuth } from "./AuthContext";
+import { usePathname } from "next/navigation";
 import { PRODUCTS_REGISTRY } from "@/lib/productsRegistry";
 
 /* ─── Generic Types ─────────────────────────────── */
@@ -184,13 +185,15 @@ function ShippingCountdown() {
 
 export function SignProductPage({ cfg: originalCfg }: { cfg: ProductPageConfig }) {
   // Dynamically merge pricing from the central registry
+  const pathname = usePathname();
   const cfg = useMemo(() => {
     const merged = { ...originalCfg };
-    // Find the product in the registry by title
+    const slug = pathname ? pathname.split('/').filter(Boolean).pop() : null;
+    // Find the product in the registry by slug
     for (const catKey of Object.keys(PRODUCTS_REGISTRY)) {
       const cat = PRODUCTS_REGISTRY[catKey];
       for (const product of cat.products) {
-        if (product.config && product.config.title === originalCfg.title) {
+        if (product.config && product.id === slug) {
           // Merge sizes
           if (product.config.sizes && merged.sizes) {
             merged.sizes = merged.sizes.map(size => {
@@ -218,7 +221,7 @@ export function SignProductPage({ cfg: originalCfg }: { cfg: ProductPageConfig }
       }
     }
     return merged;
-  }, [originalCfg]);
+  }, [originalCfg, pathname]);
 
   const [selectedSize, setSelectedSize] = useState(cfg.sizes[0]);
   const [activeImageIndex, setActiveImageIndex] = useState(0);
