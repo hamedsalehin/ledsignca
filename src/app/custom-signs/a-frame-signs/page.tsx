@@ -19,7 +19,7 @@ export default function AFrameSignsPage() {
           subtitle:
             "Portable, double-sided sidewalk signs that grab foot traffic and drive customers through your door.",
           breadcrumb: "Signs",
-          breadcrumbHref: "/personalized-signs",
+          breadcrumbHref: "/custom-signs",
           promoText: "🪧 A-Frame Signs — Double-Sided, Portable, Ships Tomorrow!",
           image: "/images/products/main-page/A-frame_sign-toronto-printing-ca.jpeg",
           images: [

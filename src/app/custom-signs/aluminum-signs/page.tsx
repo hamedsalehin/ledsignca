@@ -19,7 +19,7 @@ export default function AluminumSignsPage() {
           subtitle:
             "Industrial-strength, rust-proof aluminum signs built to last years in any weather.",
           breadcrumb: "Signs",
-          breadcrumbHref: "/personalized-signs",
+          breadcrumbHref: "/custom-signs",
           promoText: "⚙️ Aluminum Signs — Rust-Proof, Fade-Proof, Weatherproof. Ships Next Day!",
           image: "/images/products/main-page/aluminum_sign-toronto-printing-ca.png",
           images: [

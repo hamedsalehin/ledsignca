@@ -19,7 +19,7 @@ export default function FoamBoardSignsPage() {
           subtitle:
             "Lightweight and expert-grade interior display signs for presentations, lobbies, and events.",
           breadcrumb: "Signs",
-          breadcrumbHref: "/personalized-signs",
+          breadcrumbHref: "/custom-signs",
           promoText:
             "✨ Foam Board Signs — Ultra-Light, Ultra-Crisp. Ideal for Presentations!",
           image: "/images/products/main-page/foam_board-toronto-printing-ca.jpeg",

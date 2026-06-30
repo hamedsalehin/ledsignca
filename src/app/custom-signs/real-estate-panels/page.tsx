@@ -21,7 +21,7 @@ export default function RealEstatePanelsPage() {
           subtitle:
             "Expert-grade-grade panels for property listings and open houses.",
           breadcrumb: "Signs",
-          breadcrumbHref: "/personalized-signs",
+          breadcrumbHref: "/custom-signs",
           promoText: "🏠 Real Estate Panels — Next Day Delivery Available!",
           image: "/images/products/main-page/Real_estate_panels-toronto-printing-ca.png",
           images: [

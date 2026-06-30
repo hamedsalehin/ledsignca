@@ -5251,7 +5251,7 @@ Why Choose Our Expert-grade Rollup Banners?
           title: "Personalized Yard Signs",
           subtitle: "Hanging lawn and commercial signs suspended from wood or metal L-stands.",
           breadcrumb: "Signs",
-          breadcrumbHref: "/personalized-signs",
+          breadcrumbHref: "/custom-signs",
           promoText: "🏡 25% OFF Yard Signs + Free Shipping — Most Popular Sign in America!",
           image: "/images/products/main-page/yard_sign-toronto-printing-ca.jpeg",
           images: [
@@ -5387,7 +5387,7 @@ Why Choose Our Expert-grade Rollup Banners?
           subtitle:
             "Expert-grade-grade panels for property listings and open houses.",
           breadcrumb: "Signs",
-          breadcrumbHref: "/personalized-signs",
+          breadcrumbHref: "/custom-signs",
           promoText: "🏠 Real Estate Panels — Next Day Delivery Available!",
           image: "/images/products/main-page/Real_estate_panels-toronto-printing-ca.png",
           images: [
@@ -5511,7 +5511,7 @@ Why Choose Our Expert-grade Rollup Banners?
           subtitle:
             "Industrial-strength, rust-proof aluminum signs built to last years in any weather.",
           breadcrumb: "Signs",
-          breadcrumbHref: "/personalized-signs",
+          breadcrumbHref: "/custom-signs",
           promoText: "⚙️ Aluminum Signs — Rust-Proof, Fade-Proof, Weatherproof. Ships Next Day!",
           image: "/images/products/main-page/aluminum_sign-toronto-printing-ca.png",
           images: [
@@ -5627,7 +5627,7 @@ Why Choose Our Expert-grade Rollup Banners?
           subtitle:
             "Portable, double-sided sidewalk signs that grab foot traffic and drive customers through your door.",
           breadcrumb: "Signs",
-          breadcrumbHref: "/personalized-signs",
+          breadcrumbHref: "/custom-signs",
           promoText: "🪧 A-Frame Signs — Double-Sided, Portable, Ships Tomorrow!",
           image: "/images/products/main-page/A-frame_sign-toronto-printing-ca.jpeg",
           images: [
@@ -5746,7 +5746,7 @@ Why Choose Our Expert-grade Rollup Banners?
           subtitle:
             "Lightweight and expert-grade interior display signs for presentations, lobbies, and events.",
           breadcrumb: "Signs",
-          breadcrumbHref: "/personalized-signs",
+          breadcrumbHref: "/custom-signs",
           promoText:
             "✨ Foam Board Signs — Ultra-Light, Ultra-Crisp. Ideal for Presentations!",
           image: "/images/products/main-page/foam_board-toronto-printing-ca.jpeg",
@@ -5932,7 +5932,7 @@ Why Choose Our Expert-grade Rollup Banners?
           subtitle:
             "High-quality clear and colored acrylic signs for a sleek, modern, upscale look.",
           breadcrumb: "Signs",
-          breadcrumbHref: "/personalized-signs",
+          breadcrumbHref: "/custom-signs",
           promoText:
             "💎 High-quality Acrylic Signs — Crystal-Clear Quality, Ships Next Day!",
           image: "/images/products/main-page/acrylic_sign-toronto-printing-ca.png",
@@ -6126,7 +6126,7 @@ Why Choose Our Expert-grade Rollup Banners?
           subtitle:
             "The most adaptable weather-resistant exterior sign — resilient, colorful, and incredibly cost-effective.",
           breadcrumb: "Signs",
-          breadcrumbHref: "/personalized-signs",
+          breadcrumbHref: "/custom-signs",
           promoText: "💧 Weather-resistant Coroplast Signs — Weatherproof & Budget-Friendly. Ships Tomorrow!",
           image: "/images/products/main-page/coroplast_sign-toronto-printing-ca.png",
           images: [
@@ -6319,7 +6319,7 @@ Why Choose Our Expert-grade Rollup Banners?
           subtitle:
             "Personalized window graphics, clings, perforated vinyl, and decals for storefronts and offices.",
           breadcrumb: "Signs",
-          breadcrumbHref: "/personalized-signs",
+          breadcrumbHref: "/custom-signs",
           promoText:
             "🪟 Window Signs That Turn Passersby Into Customers — Ships Next Day!",
           image: "/images/products/main-page/window_sign-toronto-printing-ca.png",
@@ -6529,7 +6529,7 @@ Why Choose Our Expert-grade Rollup Banners?
           subtitle:
             "Regulatory, reserved, and personalized parking signs — aluminum or coroplast, ships next day.",
           breadcrumb: "Signs",
-          breadcrumbHref: "/personalized-signs",
+          breadcrumbHref: "/custom-signs",
           promoText:
             "🅿️ Personalized Parking Signs — MUTCD-Compliant Reflective Available. Ships Tomorrow!",
           image: "/images/products/main-page/Parking_sign-toronto-printing-ca.jpeg",
@@ -6653,7 +6653,7 @@ Why Choose Our Expert-grade Rollup Banners?
           subtitle:
             "Expert-grade dimensional signage with brilliant LED illumination options.",
           breadcrumb: "Signs",
-          breadcrumbHref: "/personalized-signs",
+          breadcrumbHref: "/custom-signs",
           promoText: "✨ Modern LED Channel Letters — Expert-grade Storefront Impact. Shipped Fast!",
           image: "/images/products/main-page/channel_letter_signs-toronto-printing-ca.png",
           images: [

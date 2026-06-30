@@ -19,7 +19,7 @@ export default function ParkingSignsPage() {
           subtitle:
             "Regulatory, reserved, and personalized parking signs — aluminum or coroplast, ships next day.",
           breadcrumb: "Signs",
-          breadcrumbHref: "/personalized-signs",
+          breadcrumbHref: "/custom-signs",
           promoText:
             "🅿️ Personalized Parking Signs — MUTCD-Compliant Reflective Available. Ships Tomorrow!",
           image: "/images/products/main-page/Parking_sign-toronto-printing-ca.jpeg",

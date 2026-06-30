@@ -18,7 +18,7 @@ export default function YardSignsPage() {
           title: "Personalized Yard Signs",
           subtitle: "Hanging lawn and commercial signs suspended from wood or metal L-stands.",
           breadcrumb: "Signs",
-          breadcrumbHref: "/personalized-signs",
+          breadcrumbHref: "/custom-signs",
           promoText: "🏡 25% OFF Yard Signs + Free Shipping — Most Popular Sign in America!",
           image: "/images/products/main-page/yard_sign-toronto-printing-ca.jpeg",
           images: [
