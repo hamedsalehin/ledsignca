@@ -20,6 +20,7 @@ import {
 import { useCart } from "./CartContext";
 import { supabase } from "@/lib/supabaseClient";
 import { useAuth } from "./AuthContext";
+import { PRODUCTS_REGISTRY } from "@/lib/productsRegistry";
 
 /* ─── Generic Types ─────────────────────────────── */
 export interface SizeOption {
@@ -181,7 +182,44 @@ function ShippingCountdown() {
   );
 }
 
-export function SignProductPage({ cfg }: { cfg: ProductPageConfig }) {
+export function SignProductPage({ cfg: originalCfg }: { cfg: ProductPageConfig }) {
+  // Dynamically merge pricing from the central registry
+  const cfg = useMemo(() => {
+    const merged = { ...originalCfg };
+    // Find the product in the registry by title
+    for (const catKey of Object.keys(PRODUCTS_REGISTRY)) {
+      const cat = PRODUCTS_REGISTRY[catKey];
+      for (const product of cat.products) {
+        if (product.config && product.config.title === originalCfg.title) {
+          // Merge sizes
+          if (product.config.sizes && merged.sizes) {
+            merged.sizes = merged.sizes.map(size => {
+              const regSize = product.config!.sizes!.find((s: any) => s.value === size.value);
+              return regSize ? { ...size, basePrice: regSize.basePrice, quantityPrices: regSize.quantityPrices } : size;
+            });
+          }
+          // Merge selects
+          if (product.config.selects && merged.selects) {
+            merged.selects = merged.selects.map(sel => {
+              const regSel = product.config!.selects!.find((s: any) => s.label === sel.label);
+              if (regSel) {
+                return {
+                  ...sel,
+                  options: sel.options.map(opt => {
+                    const regOpt = regSel.options.find((o: any) => o.value === opt.value);
+                    return regOpt ? { ...opt, priceAdder: regOpt.priceAdder, priceMultiplier: regOpt.priceMultiplier } : opt;
+                  })
+                };
+              }
+              return sel;
+            });
+          }
+        }
+      }
+    }
+    return merged;
+  }, [originalCfg]);
+
   const [selectedSize, setSelectedSize] = useState(cfg.sizes[0]);
   const [activeImageIndex, setActiveImageIndex] = useState(0);
   const [userClickedThumbnail, setUserClickedThumbnail] = useState(false);
