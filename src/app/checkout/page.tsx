@@ -734,147 +734,30 @@ function StripeElementsForm({
     e.preventDefault();
     if (!stripe || !elements || !user) return;
 
-    setLoading(true);
-    setPaymentError(null);
-
-    try {
-      // 1. Insert order rows into Supabase first (status: awaiting_payment)
-      const orderIds: string[] = [];
-
-      for (const item of items) {
-        const finalUnitPrice = discountApplied ? item.unitPrice * 0.9 : item.unitPrice;
-        const finalTotalPrice = discountApplied ? item.totalPrice * 0.9 : item.totalPrice;
-
-        const { data, error } = await supabase
-          .from("orders")
-          .insert({
-            user_id: user.id,
-            product_title: item.productTitle,
-            product_size: item.size,
-            quantity: item.quantity,
-            unit_price: finalUnitPrice,
-            total_price: finalTotalPrice,
-            design_url: item.designUrl || null,
-            design_filename: item.designFilename || null,
-            custom_options: {
-              ...item.customOptions,
-              "Shipping Cost": `CAD ${shippingCost.toFixed(2)}`,
-              "Tax Paid": `CAD ${taxAmount.toFixed(2)}`,
-              "Stripe Processing Fee": `CAD ${stripeFee.toFixed(2)}`,
-              "Discount Applied": `CAD ${discount.toFixed(2)}`,
-              "Shipping Method": selectedRateId,
-            },
-            shipping_name: shippingAddress.name,
-            shipping_address: shippingAddress.address,
-            shipping_city: `${shippingAddress.city}, ${shippingAddress.state}`,
-            shipping_postal: shippingAddress.postal,
-            status: "pending", // awaiting payment confirmation
-          })
-          .select("id")
-          .single();
-
-        if (error) throw error;
-        if (data) orderIds.push(data.id);
-      }
-
-      // 2. Associate the order ids to the payment intent metadata via backend updates
-      // This ensures when webhook fires it has the exact order ids to fulfill.
-      // We pass the paymentIntent ID to stripe confirmation below
-      const cardElement = elements.getElement(CardElement);
-      if (!cardElement) throw new Error("Stripe Elements card inputs not found.");
-
-      // 3. Confirm card payment with Stripe
-      const result = await stripe.confirmCardPayment(clientSecret, {
-        payment_method: {
-          card: cardElement,
-          billing_details: {
-            name: shippingAddress.name,
-            phone: shippingAddress.phone,
-            address: {
-              line1: shippingAddress.address,
-              city: shippingAddress.city,
-              state: shippingAddress.state,
-              postal_code: shippingAddress.postal,
-              country: "US",
-            },
-          },
-        },
-      });
-
-      if (result.error) {
-        throw new Error(result.error.message || "Payment confirmation failed.");
-      }
-
-      if (result.paymentIntent?.status === "succeeded") {
-        // Stripe webhook will process payment_intent.succeeded and update order status in Supabase.
-        // We will also update locally immediately for better UI experience.
-        for (const orderId of orderIds) {
-          await supabase
-            .from("orders")
-            .update({ status: "paid" })
-            .eq("id", orderId);
-        }
-
-        // Send emails immediately
-        fetch("/api/send-order-emails", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ orderIds, userEmail: user.email }),
-        }).catch(err => console.error("Email API failed:", err));
-
-        setSuccessOrderIds(orderIds);
-        setPaymentSuccess(true);
-        clearCart();
-      } else {
-        throw new Error("Payment was not completed successfully.");
-      }
-    } catch (err: any) {
-      console.error("Payment submission failure:", err);
-      setPaymentError(err.message || "Payment failed. Please try again.");
-    } finally {
-      setLoading(false);
-    }
+    setPaymentError("Online payments are currently disabled. Please call customer service at +1 416-838-8994 to complete your payment and order.");
+    return;
   };
 
   return (
     <form onSubmit={handleSubmit} className="space-y-4 font-poppins">
-      <div className="p-4 border border-gray-200 rounded-2xl bg-slate-50/50">
-        <label className="block text-xs font-bold text-slate-500 mb-2 uppercase tracking-wide">
-          Credit or Debit Card
-        </label>
-        <div className="p-3 bg-white border border-gray-200 rounded-xl">
-          <CardElement
-            options={{
-              style: {
-                base: {
-                  fontSize: "14px",
-                  color: "#1e293b",
-                  fontFamily: "Inter, sans-serif",
-                  "::placeholder": {
-                    color: "#94a3b8",
-                  },
-                },
-                invalid: {
-                  color: "#e11d48",
-                },
-              },
-            }}
-          />
-        </div>
+      <div className="p-4 border border-blue-100 rounded-2xl bg-blue-50/50 mb-4">
+        <p className="text-sm text-blue-800 font-medium text-center">
+          Online payments are currently disabled. Please click below to see instructions to complete your order.
+        </p>
       </div>
 
       <button
         type="submit"
-        disabled={loading || !stripe}
+        disabled={loading}
         className="w-full py-4 bg-gradient-to-r bg-[#f7f82d] hover:opacity-95 text-gray-900 rounded-xl text-sm font-bold transition-all flex items-center justify-center gap-2 shadow disabled:opacity-50 uppercase tracking-wide"
       >
         {loading ? (
           <>
             <Loader2 className="w-4 h-4 animate-spin" />
-            Processing secure payment...
+            Processing...
           </>
         ) : (
-          <>Pay Order Securely</>
+          <>Complete Order (Call Support)</>
         )}
       </button>
     </form>

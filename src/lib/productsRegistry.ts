@@ -29,10 +29,7 @@ export interface RegistryCategory {
   reviewQuote?: string;
 }
 
-import pricingData from './pricing.json';
-import { mergePricing } from './mergePricing';
-
-const BASE_REGISTRY: Record<string, RegistryCategory> = {
+export const PRODUCTS_REGISTRY: Record<string, RegistryCategory> = {
   "neon-signs": {
     title: "Neon Signs",
     breadcrumbLabel: "Neon Signs",
@@ -2792,13 +2789,13 @@ Why Choose Our Expert-grade Rollup Banners?
       },
       {
         id: "business-cards",
-        name: "Corporate Cards",
+        name: "Business Cards",
         description:
-          'Leave a lasting impression with high-quality Personalized Corporate Cards. Manufactured using ultra-thick 14pt or 16pt cardstock with offset high-resolution printing, these standard 3.5" x 2" cards represent your corporate with absolute quality. Customize your finish with expert-grade non-glare matte or high-gloss UV sheen, and choose single or double-sided layouts to distribute to tradeshow attendees, recruits, and new leads.',
+          'Leave a lasting impression with high-quality Business Cards. Manufactured using ultra-thick 14pt or 16pt cardstock with offset high-resolution printing, these standard 3.5" x 2" cards represent your business with absolute quality. Customize your finish with expert-grade non-glare matte or high-gloss UV sheen, and choose single or double-sided layouts to distribute to tradeshow attendees, recruits, and new leads.',
         image: "/images/products/main-page/business_cards-toronto-printing-ca.png",
         price: "Starting at CAD 29.98",
         config: {
-          title: "Personalized Corporate Cards",
+          title: "Business Cards",
           quantityOptions: [100, 250, 500, 1000, 1500, 2000, 2500, 5000, 10000],
           quantityPrices: {
             100: 29.98,
@@ -3893,13 +3890,13 @@ Why Choose Our Expert-grade Rollup Banners?
     products: [
       {
         id: "business-cards",
-        name: "Corporate Cards",
+        name: "Business Cards",
         description:
-          'Leave a lasting impression with high-quality Personalized Corporate Cards. Manufactured using ultra-thick 14pt or 16pt cardstock with offset high-resolution printing, these standard 3.5" x 2" cards represent your corporate with absolute quality. Customize your finish with expert-grade non-glare matte or high-gloss UV sheen, and choose single or double-sided layouts to distribute to tradeshow attendees, recruits, and new leads.',
+          'Leave a lasting impression with high-quality Business Cards. Manufactured using ultra-thick 14pt or 16pt cardstock with offset high-resolution printing, these standard 3.5" x 2" cards represent your business with absolute quality. Customize your finish with expert-grade non-glare matte or high-gloss UV sheen, and choose single or double-sided layouts to distribute to tradeshow attendees, recruits, and new leads.',
         image: "/images/products/main-page/business_cards-toronto-printing-ca.png",
         price: "Starting at CAD 29.98",
         config: {
-          title: "Personalized Corporate Cards",
+          title: "Business Cards",
           quantityOptions: [100, 250, 500, 1000, 1500, 2000, 2500, 5000, 10000],
           quantityPrices: {
             100: 29.98,
@@ -5381,11 +5378,10 @@ Why Choose Our Expert-grade Rollup Banners?
         description:
           "Expert-grade-grade aluminum and coroplast panels for property listings, open houses, and riders.",
         image: "/images/products/main-page/Real_estate_panels-toronto-printing-ca.png",
-        price: "Starting at CAD 18.19",
+        price: "$110.00",
         badge: "Most Popular",
         config: {
-          minQuantity: 100,
-          quantityPrices: { 100: 330, 200: 650, 300: 970 },
+          minQuantity: 1,
           title: "Personalized Real Estate Panels",
           subtitle:
             "Expert-grade-grade panels for property listings and open houses.",
@@ -5401,7 +5397,7 @@ Why Choose Our Expert-grade Rollup Banners?
           ratingScore: "4.9",
           ratingCount: "3,150",
           sizes: [
-            { label: '20" x 24"', value: "20x24", basePrice: 5.30 }
+            { label: '20" x 24"', value: "20x24", basePrice: 110 }
           ],
           selects: [
             {
@@ -5417,13 +5413,13 @@ Why Choose Our Expert-grade Rollup Banners?
                 {
                   label: ".040 Aluminum",
                   value: "aluminum_040",
-                  priceAdder: 6,
+                  priceAdder: 99,
                   description: "Rigid, resilient metal. Lasts years outdoors.",
                 },
                 {
                   label: "6mm Heavy-Duty Coroplast",
                   value: "6mm_coro",
-                  priceAdder: 2.5,
+                  priceAdder: 40,
                   description: "Thicker plastic for longer listing cycles.",
                 },
               ],
@@ -6805,5 +6801,3 @@ Why Choose Our Expert-grade Rollup Banners?
     products: ledProducts
   },
 };
-
-export const PRODUCTS_REGISTRY: Record<string, RegistryCategory> = mergePricing(BASE_REGISTRY, pricingData);
