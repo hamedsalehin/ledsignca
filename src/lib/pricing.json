@@ -1711,76 +1711,58 @@
   },
   "coroplast-signs": {
     "sizes": {
-      "12x18": {
-        "basePrice": 6.99
-      },
-      "18x24": {
-        "basePrice": 11.19
-      },
-      "24x24": {
-        "basePrice": 15.39
+      "24x32": {
+        "basePrice": 45
       },
       "24x36": {
-        "basePrice": 20.99
+        "basePrice": 65
       },
-      "24x48": {
-        "basePrice": 27.99
+      "32x48": {
+        "basePrice": 70
       },
-      "48x96": {
-        "basePrice": 90.99
-      },
-      "custom": {
-        "basePrice": 0
+      "36x48": {
+        "basePrice": 80
       }
     },
     "options": {
       "4mm": {
         "priceAdder": 0
       },
-      "6mm": {
-        "priceAdder": 1.75
+      "10mm": {
+        "sizePriceAdders": {
+          "24x32": 10,
+          "24x36": 10,
+          "32x48": 12,
+          "36x48": 10
+        }
       },
-      "8mm": {
-        "priceAdder": 4
-      },
-      "single": {
-        "priceAdder": 0
-      },
-      "double": {
-        "priceAdder": 2.5
-      },
-      "white": {
-        "priceAdder": 0
-      },
-      "yellow": {
-        "priceAdder": 0
-      },
-      "red": {
-        "priceAdder": 0
-      },
-      "blue": {
-        "priceAdder": 0
+      "acm": {
+        "sizePriceAdders": {
+          "24x32": 15,
+          "24x36": 30,
+          "32x48": 35,
+          "36x48": 40
+        }
       },
       "none": {
         "priceAdder": 0
       },
-      "9in": {
-        "priceAdder": 0.99
+      "stand": {
+        "priceAdder": 95
       },
-      "15in": {
-        "priceAdder": 1.49
+      "uv": {
+        "sizePriceAdders": {
+          "24x32": 5.33,
+          "24x36": 6,
+          "32x48": 10.66,
+          "36x48": 12
+        }
       },
-      "step": {
-        "priceAdder": 1.99
-      },
-      "no_grommets": {
+      "double": {
         "priceAdder": 0
       },
-      "corner_grommets": {
-        "priceAdder": 0.5
-      },
-      "perimeter_grommets": {
-        "priceAdder": 1.5
+      "grommets": {
+        "priceAdder": 0
       }
     }
   },

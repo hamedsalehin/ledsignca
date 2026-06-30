@@ -1540,7 +1540,7 @@ Advantages of our Roll-Up Systems:
         description:
           "Heavyweight vehicle magnets engineered for rapid installation and removal on automotive doors.",
         image: "/images/products/main-page/vehicle_magnets-toronto-printing-ca.png",
-        price: "Starting at CAD 4.99",
+        price: "Starting at $18.99",
         badge: "Most Popular",
         config: {
           title: "Custom Car Magnets",
@@ -5247,7 +5247,7 @@ Why Choose Our Expert-grade Rollup Banners?
         description:
           "Hanging corrugated plastic signs suspended from high-quality L-shaped stands, ideal for real estate, campaigns, and storefronts.",
         image: "/images/products/main-page/yard_sign-toronto-printing-ca.jpeg",
-        price: "Starting at CAD 5.59",
+        price: "Starting at $45.00",
         badge: "Best Seller",
         config: {
           title: "Personalized Yard Signs",
@@ -5505,7 +5505,7 @@ Why Choose Our Expert-grade Rollup Banners?
         description:
           "Resilient rust-proof aluminum signs for permanent interior and exterior branding, safety, and parking installations.",
         image: "/images/products/main-page/aluminum_sign-toronto-printing-ca.png",
-        price: "Starting at CAD 12.59",
+        price: "Starting at $19.84",
         badge: "Commercial-grade",
         config: {
           title: "Personalized Aluminum Signs",
@@ -5621,7 +5621,7 @@ Why Choose Our Expert-grade Rollup Banners?
         description:
           "Portable double-sided sandwich board sidewalk signs that grab foot traffic and drive customers through your door.",
         image: "/images/products/main-page/A-frame_sign-toronto-printing-ca.jpeg",
-        price: "Starting at CAD 125.99",
+        price: "Starting at $105.00",
         badge: "Striking",
         config: {
           title: "A-Frame Signs (Sandwich Boards)",
@@ -5740,7 +5740,7 @@ Why Choose Our Expert-grade Rollup Banners?
         description:
           "Lightweight, expert-grade interior display signs for presentations and lobbies.",
         image: "/images/products/main-page/foam_board-toronto-printing-ca.jpeg",
-        price: "Starting at CAD 11.19",
+        price: "Starting at $20.00",
         badge: "Interior Favorite",
         config: {
           title: "Foam Board Signs",
@@ -5926,7 +5926,7 @@ Why Choose Our Expert-grade Rollup Banners?
         description:
           "High-quality clear or colored acrylic for a polished, modern look.",
         image: "/images/products/main-page/acrylic_sign-toronto-printing-ca.png",
-        price: "Starting at CAD 34.99",
+        price: "Starting at $45.00",
         badge: "High-quality",
         config: {
           title: "Personalized Acrylic Signs",
@@ -6120,7 +6120,7 @@ Why Choose Our Expert-grade Rollup Banners?
         description:
           "Weather-resistant corrugated plastic signs — the most adaptable, lightweight, and cost-effective exterior marketing signs.",
         image: "/images/products/main-page/coroplast_sign-toronto-printing-ca.png",
-        price: "Starting at CAD 6.99",
+        price: "Starting at $45.00",
         badge: "Weather-resistant",
         config: {
           title: "Personalized Coroplast Signs",
@@ -6523,7 +6523,7 @@ Why Choose Our Expert-grade Rollup Banners?
         description:
           "Regulatory, reserved, and personalized parking signs — aluminum or coroplast, ships next day.",
         image: "/images/products/main-page/Parking_sign-toronto-printing-ca.jpeg",
-        price: "Starting at CAD 9.79",
+        price: "Starting at $105.00",
         badge: "Ready to Ship",
         config: {
           title: "Personalized Parking Signs",
