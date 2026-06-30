@@ -127,7 +127,7 @@ export const PRODUCTS_REGISTRY: Record<string, RegistryCategory> = {
         name: "Vinyl Banners",
         description: "Rugged, weatherproof banners perfect for any environment.",
         image: "/images/products/main-page/vinyl_banner-toronto-printing-ca.png",
-        price: "Starting at CAD 18.19",
+        price: "Starting at $45.00",
         badge: "Most Popular",
         config: {
           title: "Custom Vinyl Banners",
@@ -1283,7 +1283,7 @@ Advantages of our Roll-Up Systems:
         description:
           "Traditional grommeted horizontal flags designed for standard pole mounting and wall displays.",
         image: "/images/products/main-page/flags-toronto-printing-ca.png",
-        price: "Starting at CAD 38.43",
+        price: "Starting at $175.00",
         config: {
           title: "Standard Custom Flags",
           subtitle:
@@ -1789,7 +1789,7 @@ Advantages of our Roll-Up Systems:
         description:
           "Transform any standard folding table into a highly expert-grade promotional display with our Personalized Tablecloths. Printed using advanced dye-sublimation on high-quality 300D polyester twill, these covers feature a vivid, scratch-resistant print that won't crack or peel. They are completely machine washable, flame-retardant (meeting NFPA 701 safety certifications), and designed to stay wrinkle-free throughout long events. Available in standard 6ft and 8ft sizes in both 4-sided (closed back) and 3-sided (open back) configurations for convenient under-table storage access.",
         image: "/images/products/main-page/tablecloths-toronto-printing-ca.png",
-        price: "Starting at CAD 89.99",
+        price: "Starting at $200.00",
         badge: "Best Seller",
         config: {
           title: "Personalized Tablecloths",
@@ -2106,7 +2106,7 @@ Advantages of our Roll-Up Systems:
         description:
           "Make a massive impression on the trade show floor with our high-quality Pop-Up Backdrop Displays. Featuring a lightweight accordion-style aluminum frame that snaps open in under two minutes, this backdrop utilizes a large, high-definition tension fabric graphic that attaches securely around the perimeter with industrial-strength hook-and-loop velcro. It packs down into a compact trolley bag with rolling wheels for effortless travel and setup.",
         image: "/images/products/main-page/pop_up_display-toronto-printing-ca.png",
-        price: "Starting at CAD 299.99",
+        price: "Starting at $780.00",
         config: {
           title: "Pop-Up Backdrop Displays",
           subtitle:
@@ -2183,7 +2183,7 @@ Advantages of our Roll-Up Systems:
         description:
           "Create the perfect photo opportunity at red carpets, press conferences, weddings, and corporate summits with our Step & Repeat Banners. Designed to display repeated logos in a clean grid layout, the glare-free matte finish of our industrial-strength blockout vinyl ensures beautiful, flash-friendly photography. The package comes with an optional adjustable backdrop stand and top/bottom pole pockets for fast mounting.",
         image: "/images/products/main-page/backdrop_banners-toronto-printing-ca.png",
-        price: "Starting at CAD 145.99",
+        price: "Starting at $330.00",
         badge: "Event Ready",
         config: {
           title: "Backdrop Banners",
@@ -2793,7 +2793,7 @@ Why Choose Our Expert-grade Rollup Banners?
         description:
           'Leave a lasting impression with high-quality Business Cards. Manufactured using ultra-thick 14pt or 16pt cardstock with offset high-resolution printing, these standard 3.5" x 2" cards represent your business with absolute quality. Customize your finish with expert-grade non-glare matte or high-gloss UV sheen, and choose single or double-sided layouts to distribute to tradeshow attendees, recruits, and new leads.',
         image: "/images/products/main-page/business_cards-toronto-printing-ca.png",
-        price: "Starting at CAD 29.98",
+        price: "Starting at $55.00",
         config: {
           title: "Business Cards",
           quantityOptions: [100, 250, 500, 1000, 1500, 2000, 2500, 5000, 10000],
@@ -2993,7 +2993,7 @@ Why Choose Our Expert-grade Rollup Banners?
         description:
           "Hand out rich, full-color Personalized Postcards at your event table to advertise promotions, catalog your services, or distribute coupons. Printed in high definition on heavy 14pt gloss cover paper, they feel substantial and expert-grade. Choose between matte or high-gloss front finishes and personalized sizes to create flyers, handouts, or mailers that prompt action from potential clients.",
         image: "/images/products/main-page/postcard_glossy-toronto-printing-ca.png",
-        price: "Starting at CAD 60.00 for 100",
+        price: "Starting at $65.00",
         config: {
           title: "Personalized Postcards",
           quantityOptions: [100, 250, 500, 750, 1000, 1500, 2000],
@@ -3894,7 +3894,7 @@ Why Choose Our Expert-grade Rollup Banners?
         description:
           'Leave a lasting impression with high-quality Business Cards. Manufactured using ultra-thick 14pt or 16pt cardstock with offset high-resolution printing, these standard 3.5" x 2" cards represent your business with absolute quality. Customize your finish with expert-grade non-glare matte or high-gloss UV sheen, and choose single or double-sided layouts to distribute to tradeshow attendees, recruits, and new leads.',
         image: "/images/products/main-page/business_cards-toronto-printing-ca.png",
-        price: "Starting at CAD 29.98",
+        price: "Starting at $55.00",
         config: {
           title: "Business Cards",
           quantityOptions: [100, 250, 500, 1000, 1500, 2000, 2500, 5000, 10000],
@@ -5378,7 +5378,7 @@ Why Choose Our Expert-grade Rollup Banners?
         description:
           "Expert-grade-grade aluminum and coroplast panels for property listings, open houses, and riders.",
         image: "/images/products/main-page/Real_estate_panels-toronto-printing-ca.png",
-        price: "$110.00",
+        price: "Starting at $330.00",
         badge: "Most Popular",
         config: {
           minQuantity: 1,

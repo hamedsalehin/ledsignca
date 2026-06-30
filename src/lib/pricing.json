@@ -217,22 +217,26 @@
   },
   "vinyl-banners": {
     "sizes": {
-      "24x48": {
-        "basePrice": 12.99
+      "2x4": {
+        "basePrice": 45
       },
-      "36x72": {
-        "basePrice": 24.99
+      "3x6": {
+        "basePrice": 90
       },
-      "48x96": {
-        "basePrice": 45.99
+      "4x8": {
+        "basePrice": 160
       }
     },
     "options": {
-      "13oz_gloss": {
+      "13oz": {
         "priceAdder": 0
       },
-      "15oz_matte": {
-        "priceAdder": 5
+      "15oz": {
+        "sizePriceAdders": {
+          "2x4": 5,
+          "3x6": 8,
+          "4x8": 10
+        }
       }
     }
   },
@@ -514,22 +518,66 @@
   },
   "flags": {
     "sizes": {
-      "36x60": {
-        "basePrice": 38.43
+      "small": {
+        "basePrice": 175
       },
-      "24x36": {
-        "basePrice": 24.99
+      "medium": {
+        "basePrice": 215
       },
-      "48x72": {
-        "basePrice": 59.99
+      "large": {
+        "basePrice": 260
       }
     },
     "options": {
-      "grommets": {
+      "feather": {
         "priceAdder": 0
       },
-      "sleeve": {
-        "priceAdder": 5
+      "teardrop": {
+        "sizePriceAdders": {
+          "small": 5,
+          "medium": 5,
+          "large": 0
+        }
+      },
+      "square": {
+        "sizePriceAdders": {
+          "small": 55,
+          "medium": 75,
+          "large": 60
+        }
+      },
+      "single": {
+        "priceAdder": 0
+      },
+      "double": {
+        "sizePriceAdders": {
+          "small": 55,
+          "medium": 55,
+          "large": 70
+        }
+      },
+      "print_only_single": {
+        "sizePriceAdders": {
+          "small": -65,
+          "medium": -85,
+          "large": -100
+        }
+      },
+      "print_only_double": {
+        "sizePriceAdders": {
+          "small": 5,
+          "medium": -5,
+          "large": -20
+        }
+      },
+      "cross_base": {
+        "priceAdder": 70
+      },
+      "ground_spike": {
+        "priceAdder": 80
+      },
+      "water_bag": {
+        "priceAdder": 25
       }
     }
   },
@@ -634,42 +682,50 @@
   },
   "tablecloths": {
     "sizes": {
-      "72x30": {
-        "basePrice": 89.99
+      "6ft": {
+        "basePrice": 200
       },
-      "96x30": {
-        "basePrice": 119.99
+      "8ft": {
+        "basePrice": 225
       }
     },
     "options": {
-      "4sided": {
+      "3sided": {
         "priceAdder": 0
       },
-      "3sided": {
-        "priceAdder": -10
+      "4sided": {
+        "sizePriceAdders": {
+          "6ft": 40,
+          "8ft": 35
+        }
+      },
+      "stretch_single": {
+        "sizePriceAdders": {
+          "6ft": 65,
+          "8ft": 80
+        }
+      },
+      "fitted_single": {
+        "sizePriceAdders": {
+          "6ft": 55,
+          "8ft": 70
+        }
       }
     }
   },
   "table-runners": {
     "sizes": {
-      "24x84": {
-        "basePrice": 39.99
+      "3x7": {
+        "basePrice": 135
       },
-      "30x84": {
-        "basePrice": 49.99
+      "4x7": {
+        "basePrice": 165
       },
-      "36x84": {
-        "basePrice": 59.99
+      "5x7": {
+        "basePrice": 195
       }
     },
-    "options": {
-      "standard": {
-        "priceAdder": 0
-      },
-      "repellent": {
-        "priceAdder": 10
-      }
-    }
+    "options": {}
   },
   "fitted-tablecloths": {
     "sizes": {
@@ -721,43 +777,49 @@
   },
   "pop-up-displays": {
     "sizes": {
-      "8ft_straight": {
-        "basePrice": 299.99
+      "7.5x7.5": {
+        "basePrice": 780
       },
-      "10ft_straight": {
-        "basePrice": 399.99
-      },
-      "8ft_curved": {
-        "basePrice": 349.99
-      },
-      "10ft_curved": {
-        "basePrice": 449.99
+      "10x7.5": {
+        "basePrice": 920
       }
     },
     "options": {
-      "full_kit": {
-        "priceAdder": 120
-      },
-      "print_only": {
+      "premium": {
         "priceAdder": 0
+      },
+      "replacement": {
+        "sizePriceAdders": {
+          "7.5x7.5": -420,
+          "10x7.5": -500
+        }
       }
     }
   },
   "step-and-repeat-banner": {
     "sizes": {
-      "96x96": {
-        "basePrice": 145.99
+      "8x8": {
+        "basePrice": 330
       },
-      "120x96": {
-        "basePrice": 179.99
+      "10x7.5": {
+        "basePrice": 380
       }
     },
     "options": {
-      "with_stand": {
-        "priceAdder": 95
-      },
-      "banner_only": {
+      "premium": {
         "priceAdder": 0
+      },
+      "replacement": {
+        "sizePriceAdders": {
+          "8x8": -20,
+          "10x7.5": -20
+        }
+      },
+      "vinyl": {
+        "sizePriceAdders": {
+          "8x8": -180,
+          "10x7.5": -210
+        }
       }
     }
   },
@@ -812,121 +874,146 @@
   "business-cards": {
     "sizes": {
       "3.5x2": {
-        "basePrice": 29.98
+        "basePrice": 55,
+        "quantityPrices": {
+          "100": 55,
+          "500": 65,
+          "1000": 85,
+          "2500": 180,
+          "5000": 205
+        }
       }
     },
     "options": {
-      "semi_gloss": {
+      "regular": {
         "priceAdder": 0
       },
-      "glossy": {
-        "priceAdder": 0
-      },
-      "embossed_gloss": {
-        "priceAdder": 0.15
+      "gloss_lamination": {
+        "sizePriceAdders": {
+          "100": 20,
+          "500": 55,
+          "1000": 75,
+          "2500": 15,
+          "5000": 5
+        }
       },
       "soft_touch": {
-        "priceAdder": 0.12
+        "sizePriceAdders": {
+          "100": 40,
+          "500": 65,
+          "1000": 95,
+          "2500": 30,
+          "5000": 85
+        }
       },
       "painted_edge": {
-        "priceAdder": 0.25
+        "sizePriceAdders": {
+          "100": 55,
+          "500": 95,
+          "1000": 165,
+          "2500": 470,
+          "5000": 600
+        }
       },
-      "ultra_thick": {
-        "priceAdder": 0.23
+      "gold_foil": {
+        "sizePriceAdders": {
+          "100": 65,
+          "500": 120,
+          "1000": 145,
+          "2500": 200,
+          "5000": 435
+        }
       },
-      "clear_plastic": {
-        "priceAdder": 0.35
+      "silver_foil": {
+        "sizePriceAdders": {
+          "100": 65,
+          "500": 120,
+          "1000": 145,
+          "2500": 200,
+          "5000": 435
+        }
+      },
+      "spot_uv": {
+        "sizePriceAdders": {
+          "100": 30,
+          "500": 55,
+          "1000": 65,
+          "2500": 80,
+          "5000": 155
+        }
       },
       "pearl": {
-        "priceAdder": 0.12
+        "sizePriceAdders": {
+          "100": 5,
+          "500": 0,
+          "1000": 65,
+          "2500": 0,
+          "5000": 0
+        }
       },
-      "gold_raised_foil": {
-        "priceAdder": 0.2
-      },
-      "silver_raised_foil": {
-        "priceAdder": 0.2
-      },
-      "single": {
-        "priceAdder": 0,
-        "priceMultiplier": 1
-      },
-      "double": {
-        "priceAdder": 0,
-        "priceMultiplier": 1.25
-      },
-      "square": {
-        "priceAdder": 0
-      },
-      "rounded": {
-        "priceAdder": 0.05
+      "clear_plastic": {
+        "sizePriceAdders": {
+          "100": 105,
+          "500": 275,
+          "1000": 465,
+          "2500": 1020,
+          "5000": 2095
+        }
       }
     }
   },
   "custom-postcards": {
     "sizes": {
       "4x6": {
-        "basePrice": 0.6,
+        "basePrice": 0.65,
         "quantityPrices": {
-          "100": 60,
-          "250": 100,
+          "100": 65,
+          "250": 75,
           "500": 140,
-          "750": 165,
-          "1000": 180,
-          "1500": 240,
-          "2000": 280
+          "750": 160,
+          "1000": 170,
+          "2500": 180,
+          "5000": 250
         }
       },
       "5x7": {
-        "basePrice": 0.8,
+        "basePrice": 0.75,
         "quantityPrices": {
-          "100": 80,
-          "250": 140,
-          "500": 200,
-          "750": 225,
-          "1000": 260,
-          "1500": 330,
-          "2000": 360
+          "100": 75,
+          "250": 95,
+          "500": 155,
+          "750": 180,
+          "1000": 190,
+          "2500": 210,
+          "5000": 320
         }
       },
       "6x9": {
-        "basePrice": 1.1,
+        "basePrice": 0.85,
         "quantityPrices": {
-          "100": 110,
-          "250": 210,
-          "500": 290,
-          "750": 330,
-          "1000": 380,
-          "1500": 480,
-          "2000": 560
+          "100": 85,
+          "250": 110,
+          "500": 165,
+          "750": 195,
+          "1000": 220,
+          "2500": 260,
+          "5000": 450
         }
       },
       "6x11": {
-        "basePrice": 1.2,
+        "basePrice": 0.95,
         "quantityPrices": {
-          "100": 120,
-          "250": 220,
-          "500": 310,
-          "750": 360,
-          "1000": 400,
-          "1500": 480,
-          "2000": 600
+          "100": 95,
+          "250": 120,
+          "500": 185,
+          "750": 210,
+          "1000": 250,
+          "2500": 350,
+          "5000": 550
         }
       }
     },
-    "options": {
-      "glossy": {
-        "priceAdder": 0
-      },
-      "matte": {
-        "priceAdder": 0
-      },
-      "horizontal": {
-        "priceAdder": 0
-      },
-      "vertical": {
-        "priceAdder": 0
-      }
-    }
+    "options": {}
   },
   "window-decals": {
     "sizes": {
@@ -1396,26 +1483,15 @@
   "real-estate-panels": {
     "sizes": {
       "20x24": {
-        "basePrice": 5.3
+        "basePrice": 3.3,
+        "quantityPrices": {
+          "100": 330,
+          "200": 650,
+          "300": 970
+        }
       }
     },
-    "options": {
-      "4mm_coro": {
-        "priceAdder": 0
-      },
-      "aluminum_040": {
-        "priceAdder": 6
-      },
-      "6mm_coro": {
-        "priceAdder": 2.5
-      },
-      "single": {
-        "priceAdder": 0
-      },
-      "double": {
-        "priceAdder": 0
-      }
-    }
+    "options": {}
   },
   "aluminum-signs": {
     "sizes": {
