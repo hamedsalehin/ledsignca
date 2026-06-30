@@ -1,5 +1,7 @@
 import { ledProducts } from "./ledProducts";
 import { ProductPageConfig } from "@/components/SignProductPage";
+import { mergePricing } from "./mergePricing";
+import pricing from "./pricing.json";
 
 export interface RegistryProduct {
   id: string;
@@ -29,7 +31,7 @@ export interface RegistryCategory {
   reviewQuote?: string;
 }
 
-export const PRODUCTS_REGISTRY: Record<string, RegistryCategory> = {
+const RAW_REGISTRY: Record<string, RegistryCategory> = {
   "neon-signs": {
     title: "Neon Signs",
     breadcrumbLabel: "Neon Signs",
@@ -6801,3 +6803,5 @@ Why Choose Our Expert-grade Rollup Banners?
     products: ledProducts
   },
 };
+
+export const PRODUCTS_REGISTRY: Record<string, RegistryCategory> = mergePricing(RAW_REGISTRY, pricing);
