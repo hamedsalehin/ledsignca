@@ -31,7 +31,7 @@ export interface SizeOption {
 export interface SelectOption {
   label: string;
   value: string;
-  priceAdder: number;
+  priceAdder?: number;
   priceMultiplier?: number;
   description?: string;
   image?: string;
@@ -79,8 +79,8 @@ export interface ProductPageConfig {
   faqs: FaqItem[];
   reviews: ReviewItem[];
   ctaHeading: string;
-  ctaBody: string;
-  ctaLabel: string;
+  ctaBody?: string;
+  ctaLabel?: string;
   uniqueCallout?: {
     icon: ReactNode;
     heading: string;
@@ -878,8 +878,8 @@ export function SignProductPage({ cfg }: { cfg: ProductPageConfig }) {
                         {sel.options.map((o) => (
                           <option key={o.value} value={o.value}>
                             {o.label}
-                            {o.priceAdder > 0
-                              ? ` (+CAD ${o.priceAdder.toFixed(2)})`
+                            {(o.priceAdder || 0) > 0
+                              ? ` (+CAD ${(o.priceAdder || 0).toFixed(2)})`
                               : ""}
                           </option>
                         ))}
