@@ -1,0 +1,2132 @@
+{
+  "good-vibes-only": {
+    "sizes": {
+      "standard": {
+        "basePrice": 169
+      }
+    },
+    "options": {
+      "pink": {
+        "priceAdder": 0
+      },
+      "blue": {
+        "priceAdder": 0
+      },
+      "warm-white": {
+        "priceAdder": 0
+      }
+    }
+  },
+  "lets-party": {
+    "sizes": {
+      "standard": {
+        "basePrice": 189
+      }
+    },
+    "options": {
+      "pink": {
+        "priceAdder": 0
+      },
+      "blue": {
+        "priceAdder": 0
+      },
+      "warm-white": {
+        "priceAdder": 0
+      }
+    }
+  },
+  "game-on": {
+    "sizes": {
+      "standard": {
+        "basePrice": 159
+      }
+    },
+    "options": {
+      "pink": {
+        "priceAdder": 0
+      },
+      "blue": {
+        "priceAdder": 0
+      },
+      "warm-white": {
+        "priceAdder": 0
+      }
+    }
+  },
+  "dream-big": {
+    "sizes": {
+      "standard": {
+        "basePrice": 149
+      }
+    },
+    "options": {
+      "pink": {
+        "priceAdder": 0
+      },
+      "blue": {
+        "priceAdder": 0
+      },
+      "warm-white": {
+        "priceAdder": 0
+      }
+    }
+  },
+  "bar-open": {
+    "sizes": {
+      "standard": {
+        "basePrice": 179
+      }
+    },
+    "options": {
+      "pink": {
+        "priceAdder": 0
+      },
+      "blue": {
+        "priceAdder": 0
+      },
+      "warm-white": {
+        "priceAdder": 0
+      }
+    }
+  },
+  "hustle": {
+    "sizes": {
+      "standard": {
+        "basePrice": 139
+      }
+    },
+    "options": {
+      "pink": {
+        "priceAdder": 0
+      },
+      "blue": {
+        "priceAdder": 0
+      },
+      "warm-white": {
+        "priceAdder": 0
+      }
+    }
+  },
+  "open-24-7": {
+    "sizes": {
+      "standard": {
+        "basePrice": 169
+      }
+    },
+    "options": {
+      "pink": {
+        "priceAdder": 0
+      },
+      "blue": {
+        "priceAdder": 0
+      },
+      "warm-white": {
+        "priceAdder": 0
+      }
+    }
+  },
+  "stay-wild": {
+    "sizes": {
+      "standard": {
+        "basePrice": 159
+      }
+    },
+    "options": {
+      "pink": {
+        "priceAdder": 0
+      },
+      "blue": {
+        "priceAdder": 0
+      },
+      "warm-white": {
+        "priceAdder": 0
+      }
+    }
+  },
+  "love-her-wild": {
+    "sizes": {
+      "standard": {
+        "basePrice": 179
+      }
+    },
+    "options": {
+      "pink": {
+        "priceAdder": 0
+      },
+      "blue": {
+        "priceAdder": 0
+      },
+      "warm-white": {
+        "priceAdder": 0
+      }
+    }
+  },
+  "glow-getter": {
+    "sizes": {
+      "standard": {
+        "basePrice": 149
+      }
+    },
+    "options": {
+      "pink": {
+        "priceAdder": 0
+      },
+      "blue": {
+        "priceAdder": 0
+      },
+      "warm-white": {
+        "priceAdder": 0
+      }
+    }
+  },
+  "man-cave": {
+    "sizes": {
+      "standard": {
+        "basePrice": 169
+      }
+    },
+    "options": {
+      "pink": {
+        "priceAdder": 0
+      },
+      "blue": {
+        "priceAdder": 0
+      },
+      "warm-white": {
+        "priceAdder": 0
+      }
+    }
+  },
+  "adventure-awaits": {
+    "sizes": {
+      "standard": {
+        "basePrice": 179
+      }
+    },
+    "options": {
+      "pink": {
+        "priceAdder": 0
+      },
+      "blue": {
+        "priceAdder": 0
+      },
+      "warm-white": {
+        "priceAdder": 0
+      }
+    }
+  },
+  "vinyl-banners": {
+    "sizes": {
+      "24x48": {
+        "basePrice": 12.99
+      },
+      "36x72": {
+        "basePrice": 24.99
+      },
+      "48x96": {
+        "basePrice": 45.99
+      }
+    },
+    "options": {
+      "13oz_gloss": {
+        "priceAdder": 0
+      },
+      "15oz_matte": {
+        "priceAdder": 5
+      }
+    }
+  },
+  "fabric-banners": {
+    "sizes": {
+      "24x72": {
+        "basePrice": 64.39
+      },
+      "36x96": {
+        "basePrice": 104.99
+      },
+      "48x96": {
+        "basePrice": 132.99
+      }
+    },
+    "options": {
+      "polyester": {
+        "priceAdder": 0
+      },
+      "satin": {
+        "priceAdder": 12
+      },
+      "velvet": {
+        "priceAdder": 20
+      },
+      "none": {
+        "priceAdder": 0
+      },
+      "x_stand": {
+        "priceAdder": 35
+      },
+      "l_stand": {
+        "priceAdder": 55
+      }
+    }
+  },
+  "mesh-banners": {
+    "sizes": {
+      "24x72": {
+        "basePrice": 60.19
+      },
+      "36x96": {
+        "basePrice": 90.99
+      },
+      "48x96": {
+        "basePrice": 118.99
+      }
+    },
+    "options": {
+      "8oz_mesh": {
+        "priceAdder": 0
+      }
+    }
+  },
+  "pole-banners": {
+    "sizes": {
+      "36x18": {
+        "basePrice": 41.99
+      },
+      "48x24": {
+        "basePrice": 69.99
+      },
+      "60x30": {
+        "basePrice": 111.99
+      }
+    },
+    "options": {
+      "18oz_blockout": {
+        "priceAdder": 0
+      }
+    }
+  },
+  "breakaway-banners": {
+    "sizes": {
+      "96x120": {
+        "basePrice": 139.99
+      },
+      "120x144": {
+        "basePrice": 209.99
+      }
+    },
+    "options": {
+      "sleeves": {
+        "priceAdder": 0
+      }
+    }
+  },
+  "vertical-banners": {
+    "sizes": {
+      "72x24": {
+        "basePrice": 27.99
+      },
+      "96x36": {
+        "basePrice": 48.99
+      }
+    },
+    "options": {
+      "gloss": {
+        "priceAdder": 0
+      },
+      "matte": {
+        "priceAdder": 3.5
+      }
+    }
+  },
+  "roll-up-banners": {
+    "sizes": {
+      "33x80": {
+        "basePrice": 124.6
+      },
+      "46x80": {
+        "basePrice": 308
+      }
+    },
+    "options": {
+      "standard_stand": {
+        "priceAdder": 0
+      },
+      "black_plus": {
+        "priceAdder": 13.5
+      },
+      "professional": {
+        "priceAdder": 19.5
+      }
+    }
+  },
+  "x-banner-stands": {
+    "sizes": {
+      "63x24": {
+        "basePrice": 69.99
+      },
+      "70x31": {
+        "basePrice": 97.99
+      }
+    },
+    "options": {
+      "full_kit": {
+        "priceAdder": 0
+      }
+    }
+  },
+  "step-and-repeat-banners": {
+    "sizes": {
+      "96x96": {
+        "basePrice": 204.39
+      },
+      "120x96": {
+        "basePrice": 251.99
+      }
+    },
+    "options": {
+      "with_stand": {
+        "priceAdder": 95
+      },
+      "banner_only": {
+        "priceAdder": 0
+      }
+    }
+  },
+  "tabletop-retractable-banners": {
+    "sizes": {
+      "17x11.75": {
+        "basePrice": 39.99
+      },
+      "11.5x8.25": {
+        "basePrice": 27.18
+      }
+    },
+    "options": {
+      "mini_silver": {
+        "priceAdder": 0
+      }
+    }
+  },
+  "feather-flags": {
+    "sizes": {
+      "9ft": {
+        "basePrice": 80
+      },
+      "10ft": {
+        "basePrice": 100
+      },
+      "13ft": {
+        "basePrice": 110
+      },
+      "16ft": {
+        "basePrice": 130
+      }
+    },
+    "options": {
+      "no_pole": {
+        "priceAdder": 0
+      },
+      "pole": {
+        "priceAdder": 35
+      },
+      "no_base": {
+        "priceAdder": 0
+      },
+      "stake": {
+        "priceAdder": 40
+      },
+      "cross": {
+        "priceAdder": 55
+      },
+      "cs01": {
+        "priceAdder": 65
+      },
+      "cs02": {
+        "priceAdder": 45
+      },
+      "gs01": {
+        "priceAdder": 45
+      },
+      "no_water_bag": {
+        "priceAdder": 0
+      },
+      "water_bag_10": {
+        "priceAdder": 10
+      },
+      "wf08": {
+        "priceAdder": 14
+      },
+      "no_carry_bag": {
+        "priceAdder": 0
+      },
+      "carry_bag": {
+        "priceAdder": 45
+      },
+      "standard": {
+        "priceAdder": 0
+      },
+      "single": {
+        "priceAdder": 0
+      }
+    }
+  },
+  "teardrop-flags": {
+    "sizes": {
+      "84x30": {
+        "basePrice": 49.68
+      },
+      "108x35": {
+        "basePrice": 74.99
+      },
+      "132x40": {
+        "basePrice": 109.99
+      }
+    },
+    "options": {
+      "stake": {
+        "priceAdder": 0
+      },
+      "cross": {
+        "priceAdder": 15
+      }
+    }
+  },
+  "straight-flags": {
+    "sizes": {
+      "96x24": {
+        "basePrice": 54.37
+      },
+      "126x28": {
+        "basePrice": 79.99
+      },
+      "168x30": {
+        "basePrice": 119.99
+      }
+    },
+    "options": {
+      "spike": {
+        "priceAdder": 0
+      },
+      "cross": {
+        "priceAdder": 15
+      }
+    }
+  },
+  "flags": {
+    "sizes": {
+      "36x60": {
+        "basePrice": 38.43
+      },
+      "24x36": {
+        "basePrice": 24.99
+      },
+      "48x72": {
+        "basePrice": 59.99
+      }
+    },
+    "options": {
+      "grommets": {
+        "priceAdder": 0
+      },
+      "sleeve": {
+        "priceAdder": 5
+      }
+    }
+  },
+  "pennant-flags": {
+    "sizes": {
+      "36x60": {
+        "basePrice": 51.11
+      }
+    },
+    "options": {
+      "grommets": {
+        "priceAdder": 0
+      },
+      "sleeve": {
+        "priceAdder": 5
+      }
+    }
+  },
+  "bumper-stickers": {
+    "sizes": {
+      "3x10": {
+        "basePrice": 2.24
+      },
+      "4x4": {
+        "basePrice": 3.49
+      }
+    },
+    "options": {
+      "gloss": {
+        "priceAdder": 0
+      }
+    }
+  },
+  "license-plates": {
+    "sizes": {
+      "6x12": {
+        "basePrice": 13.72
+      }
+    },
+    "options": {
+      "slots": {
+        "priceAdder": 0
+      }
+    }
+  },
+  "magnetic-signs": {
+    "sizes": {
+      "6x12": {
+        "basePrice": 18.99
+      },
+      "12x18": {
+        "basePrice": 20.99
+      },
+      "12x24": {
+        "basePrice": 25.99
+      },
+      "18x24": {
+        "basePrice": 28.99
+      }
+    },
+    "options": {
+      "rounded": {
+        "priceAdder": 0
+      },
+      "square": {
+        "priceAdder": -1
+      }
+    }
+  },
+  "car-door-decals": {
+    "sizes": {
+      "12x18": {
+        "basePrice": 23.86
+      },
+      "18x24": {
+        "basePrice": 34.99
+      }
+    },
+    "options": {
+      "opaque": {
+        "priceAdder": 0
+      }
+    }
+  },
+  "car-window-decals": {
+    "sizes": {
+      "12x18": {
+        "basePrice": 23.86
+      },
+      "18x24": {
+        "basePrice": 34.99
+      }
+    },
+    "options": {
+      "opaque": {
+        "priceAdder": 0
+      },
+      "clear": {
+        "priceAdder": 4.5
+      }
+    }
+  },
+  "tablecloths": {
+    "sizes": {
+      "72x30": {
+        "basePrice": 89.99
+      },
+      "96x30": {
+        "basePrice": 119.99
+      }
+    },
+    "options": {
+      "4sided": {
+        "priceAdder": 0
+      },
+      "3sided": {
+        "priceAdder": -10
+      }
+    }
+  },
+  "table-runners": {
+    "sizes": {
+      "24x84": {
+        "basePrice": 39.99
+      },
+      "30x84": {
+        "basePrice": 49.99
+      },
+      "36x84": {
+        "basePrice": 59.99
+      }
+    },
+    "options": {
+      "standard": {
+        "priceAdder": 0
+      },
+      "repellent": {
+        "priceAdder": 10
+      }
+    }
+  },
+  "fitted-tablecloths": {
+    "sizes": {
+      "6ft_fitted": {
+        "basePrice": 109.99
+      },
+      "8ft_fitted": {
+        "basePrice": 139.99
+      }
+    },
+    "options": {
+      "standard": {
+        "priceAdder": 0
+      }
+    }
+  },
+  "round-tablecloths": {
+    "sizes": {
+      "30_round": {
+        "basePrice": 129.99
+      },
+      "60_round": {
+        "basePrice": 179.99
+      },
+      "72_round": {
+        "basePrice": 219.99
+      }
+    },
+    "options": {
+      "floor": {
+        "priceAdder": 0
+      }
+    }
+  },
+  "stretch-tablecloths": {
+    "sizes": {
+      "6ft_stretch": {
+        "basePrice": 129.99
+      },
+      "8ft_stretch": {
+        "basePrice": 159.99
+      }
+    },
+    "options": {
+      "reinforced": {
+        "priceAdder": 0
+      }
+    }
+  },
+  "pop-up-displays": {
+    "sizes": {
+      "8ft_straight": {
+        "basePrice": 299.99
+      },
+      "10ft_straight": {
+        "basePrice": 399.99
+      },
+      "8ft_curved": {
+        "basePrice": 349.99
+      },
+      "10ft_curved": {
+        "basePrice": 449.99
+      }
+    },
+    "options": {
+      "full_kit": {
+        "priceAdder": 120
+      },
+      "print_only": {
+        "priceAdder": 0
+      }
+    }
+  },
+  "step-and-repeat-banner": {
+    "sizes": {
+      "96x96": {
+        "basePrice": 145.99
+      },
+      "120x96": {
+        "basePrice": 179.99
+      }
+    },
+    "options": {
+      "with_stand": {
+        "priceAdder": 95
+      },
+      "banner_only": {
+        "priceAdder": 0
+      }
+    }
+  },
+  "retractable-banners": {
+    "sizes": {
+      "33x80": {
+        "basePrice": 89
+      },
+      "46x80": {
+        "basePrice": 220
+      }
+    },
+    "options": {
+      "standard_stand": {
+        "priceAdder": 0
+      },
+      "professional": {
+        "priceAdder": 19.5
+      }
+    }
+  },
+  "x-banner-stand": {
+    "sizes": {
+      "63x24": {
+        "basePrice": 49.99
+      },
+      "70x31": {
+        "basePrice": 69.99
+      }
+    },
+    "options": {
+      "full_kit": {
+        "priceAdder": 0
+      }
+    }
+  },
+  "custom-canopy-tents": {
+    "sizes": {
+      "10x10": {
+        "basePrice": 349.99
+      }
+    },
+    "options": {
+      "steel": {
+        "priceAdder": 0
+      },
+      "aluminum": {
+        "priceAdder": 120
+      }
+    }
+  },
+  "business-cards": {
+    "sizes": {
+      "3.5x2": {
+        "basePrice": 29.98
+      }
+    },
+    "options": {
+      "semi_gloss": {
+        "priceAdder": 0
+      },
+      "glossy": {
+        "priceAdder": 0
+      },
+      "embossed_gloss": {
+        "priceAdder": 0.15
+      },
+      "soft_touch": {
+        "priceAdder": 0.12
+      },
+      "painted_edge": {
+        "priceAdder": 0.25
+      },
+      "ultra_thick": {
+        "priceAdder": 0.23
+      },
+      "clear_plastic": {
+        "priceAdder": 0.35
+      },
+      "pearl": {
+        "priceAdder": 0.12
+      },
+      "gold_raised_foil": {
+        "priceAdder": 0.2
+      },
+      "silver_raised_foil": {
+        "priceAdder": 0.2
+      },
+      "single": {
+        "priceAdder": 0,
+        "priceMultiplier": 1
+      },
+      "double": {
+        "priceAdder": 0,
+        "priceMultiplier": 1.25
+      },
+      "square": {
+        "priceAdder": 0
+      },
+      "rounded": {
+        "priceAdder": 0.05
+      }
+    }
+  },
+  "custom-postcards": {
+    "sizes": {
+      "4x6": {
+        "basePrice": 0.6,
+        "quantityPrices": {
+          "100": 60,
+          "250": 100,
+          "500": 140,
+          "750": 165,
+          "1000": 180,
+          "1500": 240,
+          "2000": 280
+        }
+      },
+      "5x7": {
+        "basePrice": 0.8,
+        "quantityPrices": {
+          "100": 80,
+          "250": 140,
+          "500": 200,
+          "750": 225,
+          "1000": 260,
+          "1500": 330,
+          "2000": 360
+        }
+      },
+      "6x9": {
+        "basePrice": 1.1,
+        "quantityPrices": {
+          "100": 110,
+          "250": 210,
+          "500": 290,
+          "750": 330,
+          "1000": 380,
+          "1500": 480,
+          "2000": 560
+        }
+      },
+      "6x11": {
+        "basePrice": 1.2,
+        "quantityPrices": {
+          "100": 120,
+          "250": 220,
+          "500": 310,
+          "750": 360,
+          "1000": 400,
+          "1500": 480,
+          "2000": 600
+        }
+      }
+    },
+    "options": {
+      "glossy": {
+        "priceAdder": 0
+      },
+      "matte": {
+        "priceAdder": 0
+      },
+      "horizontal": {
+        "priceAdder": 0
+      },
+      "vertical": {
+        "priceAdder": 0
+      }
+    }
+  },
+  "window-decals": {
+    "sizes": {
+      "12x18": {
+        "basePrice": 23.86
+      },
+      "18x24": {
+        "basePrice": 34.99
+      },
+      "24x36": {
+        "basePrice": 54.99
+      }
+    },
+    "options": {
+      "opaque": {
+        "priceAdder": 0
+      },
+      "clear": {
+        "priceAdder": 4
+      },
+      "frosted": {
+        "priceAdder": 12
+      }
+    }
+  },
+  "roll-labels": {
+    "sizes": {
+      "2x2": {
+        "basePrice": 0.54
+      },
+      "3x3": {
+        "basePrice": 0.75
+      },
+      "4x2": {
+        "basePrice": 0.85
+      }
+    },
+    "options": {
+      "gloss_paper": {
+        "priceAdder": 0
+      },
+      "clear_film": {
+        "priceAdder": 0.1
+      }
+    }
+  },
+  "window-clings": {
+    "sizes": {
+      "12x18": {
+        "basePrice": 62.96
+      },
+      "18x24": {
+        "basePrice": 79.99
+      },
+      "24x36": {
+        "basePrice": 99.99
+      }
+    },
+    "options": {
+      "face_cling": {
+        "priceAdder": 0
+      },
+      "back_cling": {
+        "priceAdder": 0
+      }
+    }
+  },
+  "sheet-stickers": {
+    "sizes": {
+      "8.5x11": {
+        "basePrice": 11.16
+      }
+    },
+    "options": {
+      "gloss_sheet": {
+        "priceAdder": 0
+      },
+      "matte_sheet": {
+        "priceAdder": 0
+      }
+    }
+  },
+  "return-address-labels": {
+    "sizes": {
+      "0.75x2.25": {
+        "basePrice": 0.14
+      }
+    },
+    "options": {
+      "white_back": {
+        "priceAdder": 0
+      },
+      "clear_back": {
+        "priceAdder": 0.05
+      }
+    }
+  },
+  "h-frames": {
+    "sizes": {
+      "30x10": {
+        "basePrice": 1.99
+      },
+      "15x10": {
+        "basePrice": 1.49
+      }
+    },
+    "options": {
+      "9gauge": {
+        "priceAdder": 0
+      },
+      "heavy": {
+        "priceAdder": 1.25
+      }
+    }
+  },
+  "postcards": {
+    "sizes": {
+      "4x6": {
+        "basePrice": 0.6,
+        "quantityPrices": {
+          "100": 60,
+          "250": 100,
+          "500": 140,
+          "750": 165,
+          "1000": 180,
+          "1500": 240,
+          "2000": 280
+        }
+      },
+      "5x7": {
+        "basePrice": 0.8,
+        "quantityPrices": {
+          "100": 80,
+          "250": 140,
+          "500": 200,
+          "750": 225,
+          "1000": 260,
+          "1500": 330,
+          "2000": 360
+        }
+      },
+      "6x9": {
+        "basePrice": 1.1,
+        "quantityPrices": {
+          "100": 110,
+          "250": 210,
+          "500": 290,
+          "750": 330,
+          "1000": 380,
+          "1500": 480,
+          "2000": 560
+        }
+      },
+      "6x11": {
+        "basePrice": 1.2,
+        "quantityPrices": {
+          "100": 120,
+          "250": 220,
+          "500": 310,
+          "750": 360,
+          "1000": 400,
+          "1500": 480,
+          "2000": 600
+        }
+      }
+    },
+    "options": {
+      "glossy": {
+        "priceAdder": 0
+      },
+      "matte": {
+        "priceAdder": 0
+      },
+      "horizontal": {
+        "priceAdder": 0
+      },
+      "vertical": {
+        "priceAdder": 0
+      }
+    }
+  },
+  "flyers": {
+    "sizes": {
+      "5.5x8.5": {
+        "basePrice": 0.74,
+        "quantityPrices": {
+          "100": 74,
+          "250": 120,
+          "500": 160,
+          "750": 195,
+          "1000": 240,
+          "1500": 330,
+          "2000": 400,
+          "2500": 480
+        }
+      },
+      "8.5x14": {
+        "basePrice": 1.08,
+        "quantityPrices": {
+          "100": 108,
+          "250": 220,
+          "500": 330,
+          "750": 390,
+          "1000": 460,
+          "1500": 570,
+          "2000": 680,
+          "2500": 768
+        }
+      },
+      "11x17": {
+        "basePrice": 1.48,
+        "quantityPrices": {
+          "100": 148,
+          "250": 285,
+          "500": 440,
+          "750": 525,
+          "1000": 700,
+          "1500": 1050,
+          "2000": 1400,
+          "2500": 1698
+        }
+      }
+    },
+    "options": {
+      "glossy": {
+        "priceAdder": 0
+      },
+      "matte": {
+        "priceAdder": 0
+      },
+      "vertical": {
+        "priceAdder": 0
+      },
+      "horizontal": {
+        "priceAdder": 0
+      }
+    }
+  },
+  "brochures": {
+    "sizes": {
+      "8.5x11": {
+        "basePrice": 29.99
+      }
+    },
+    "options": {
+      "100lb_gloss": {
+        "priceAdder": 0
+      },
+      "100lb_matte": {
+        "priceAdder": 0
+      },
+      "80lb_recycled": {
+        "priceAdder": 3
+      },
+      "tri_fold": {
+        "priceAdder": 8
+      },
+      "half_fold": {
+        "priceAdder": 5
+      }
+    }
+  },
+  "door-hangers": {
+    "sizes": {
+      "3.5x8.5": {
+        "basePrice": 39.99
+      },
+      "4.25x11": {
+        "basePrice": 54.99
+      }
+    },
+    "options": {
+      "14pt_gloss": {
+        "priceAdder": 0
+      },
+      "14pt_matte": {
+        "priceAdder": 0
+      },
+      "circle_slit": {
+        "priceAdder": 0
+      },
+      "arch_hook": {
+        "priceAdder": 4
+      }
+    }
+  },
+  "t-shirts": {
+    "sizes": {
+      "medium_tee": {
+        "basePrice": 14.99
+      },
+      "large_tee": {
+        "basePrice": 14.99
+      },
+      "xl_tee": {
+        "basePrice": 16.99
+      }
+    },
+    "options": {
+      "cotton": {
+        "priceAdder": 0
+      }
+    }
+  },
+  "mugs": {
+    "sizes": {
+      "11oz": {
+        "basePrice": 4.99
+      },
+      "15oz": {
+        "basePrice": 6.99
+      }
+    },
+    "options": {
+      "white": {
+        "priceAdder": 0
+      },
+      "black": {
+        "priceAdder": 1.5
+      }
+    }
+  },
+  "tote-bags": {
+    "sizes": {
+      "15x16": {
+        "basePrice": 5.99
+      }
+    },
+    "options": {
+      "6oz": {
+        "priceAdder": 0
+      },
+      "12oz": {
+        "priceAdder": 2.5
+      }
+    }
+  },
+  "pens": {
+    "sizes": {
+      "fine_pen": {
+        "basePrice": 0.89
+      }
+    },
+    "options": {
+      "black_ink": {
+        "priceAdder": 0
+      },
+      "blue_ink": {
+        "priceAdder": 0
+      },
+      "yellow_trim": {
+        "priceAdder": 0
+      },
+      "black_trim": {
+        "priceAdder": 0
+      },
+      "silver_barrel": {
+        "priceAdder": 0.25
+      }
+    }
+  },
+  "notebooks": {
+    "sizes": {
+      "5.5x8.5": {
+        "basePrice": 3.99
+      }
+    },
+    "options": {
+      "soft": {
+        "priceAdder": 0
+      },
+      "hard": {
+        "priceAdder": 3
+      }
+    }
+  },
+  "keychains": {
+    "sizes": {
+      "2x2_acrylic": {
+        "basePrice": 1.29
+      }
+    },
+    "options": {
+      "acrylic": {
+        "priceAdder": 0
+      },
+      "steel": {
+        "priceAdder": 2
+      }
+    }
+  },
+  "fridge-magnets": {
+    "sizes": {
+      "2x2": {
+        "basePrice": 0.49
+      },
+      "3.5x2": {
+        "basePrice": 0.79
+      }
+    },
+    "options": {
+      "gloss_lam": {
+        "priceAdder": 0
+      },
+      "matte_lam": {
+        "priceAdder": 0
+      }
+    }
+  },
+  "yard-signs": {
+    "sizes": {
+      "24x32": {
+        "basePrice": 45
+      },
+      "24x36": {
+        "basePrice": 65
+      },
+      "32x48": {
+        "basePrice": 70
+      },
+      "36x48": {
+        "basePrice": 80
+      }
+    },
+    "options": {
+      "4mm": {
+        "priceAdder": 0
+      },
+      "10mm": {
+        "sizePriceAdders": {
+          "24x32": 10,
+          "24x36": 10,
+          "32x48": 12,
+          "36x48": 10
+        }
+      },
+      "acm": {
+        "sizePriceAdders": {
+          "24x32": 15,
+          "24x36": 30,
+          "32x48": 35,
+          "36x48": 40
+        }
+      },
+      "none": {
+        "priceAdder": 0
+      },
+      "stand": {
+        "priceAdder": 95
+      },
+      "uv": {
+        "sizePriceAdders": {
+          "24x32": 5.33,
+          "24x36": 6,
+          "32x48": 10.66,
+          "36x48": 12
+        }
+      },
+      "double": {
+        "priceAdder": 0
+      },
+      "grommets": {
+        "priceAdder": 0
+      }
+    }
+  },
+  "real-estate-panels": {
+    "sizes": {
+      "20x24": {
+        "basePrice": 5.3
+      }
+    },
+    "options": {
+      "4mm_coro": {
+        "priceAdder": 0
+      },
+      "aluminum_040": {
+        "priceAdder": 6
+      },
+      "6mm_coro": {
+        "priceAdder": 2.5
+      },
+      "single": {
+        "priceAdder": 0
+      },
+      "double": {
+        "priceAdder": 0
+      }
+    }
+  },
+  "aluminum-signs": {
+    "sizes": {
+      "8x12": {
+        "basePrice": 19.84,
+        "quantityPrices": {
+          "1": 19.84,
+          "10": 85.5,
+          "20": 135.25
+        }
+      },
+      "12x18": {
+        "basePrice": 35.84,
+        "quantityPrices": {
+          "1": 35.84,
+          "10": 105.5,
+          "20": 250.25
+        }
+      },
+      "18x24": {
+        "basePrice": 55.84,
+        "quantityPrices": {
+          "1": 55.84,
+          "10": 250.5,
+          "20": 470.35
+        }
+      },
+      "24x32": {
+        "basePrice": 60.84,
+        "quantityPrices": {
+          "1": 60.84,
+          "10": 410.5,
+          "20": 850.35
+        }
+      }
+    },
+    "options": {
+      "040": {
+        "priceAdder": 0
+      },
+      "single": {
+        "priceAdder": 0
+      },
+      "square": {
+        "priceAdder": 0
+      },
+      "round": {
+        "priceAdder": 2
+      }
+    }
+  },
+  "a-frame-signs": {
+    "sizes": {
+      "18x24": {
+        "basePrice": 105
+      },
+      "36x24": {
+        "basePrice": 130
+      }
+    },
+    "options": {
+      "coroplast": {
+        "priceAdder": 0
+      },
+      "acm": {
+        "priceAdder": 25
+      },
+      "metal": {
+        "priceAdder": 0
+      },
+      "plastic": {
+        "priceAdder": 30
+      },
+      "double": {
+        "priceAdder": 0
+      }
+    }
+  },
+  "foam-board-signs": {
+    "sizes": {
+      "12x18": {
+        "basePrice": 20
+      },
+      "18x24": {
+        "basePrice": 38
+      },
+      "24x36": {
+        "basePrice": 58
+      },
+      "36x48": {
+        "basePrice": 72
+      }
+    },
+    "options": {
+      "3_16": {
+        "priceAdder": 0
+      },
+      "half": {
+        "priceAdder": 4
+      },
+      "1in": {
+        "priceAdder": 9
+      },
+      "matte": {
+        "priceAdder": 0
+      },
+      "gloss": {
+        "priceAdder": 2.5
+      },
+      "satin": {
+        "priceAdder": 2
+      },
+      "single": {
+        "priceAdder": 0
+      },
+      "double": {
+        "priceAdder": 0,
+        "priceMultiplier": 1.5
+      },
+      "none": {
+        "priceAdder": 0
+      },
+      "self_stick": {
+        "priceAdder": 2.5
+      },
+      "easel": {
+        "priceAdder": 1.99
+      },
+      "no_border": {
+        "priceAdder": 0
+      },
+      "black_border": {
+        "priceAdder": 0
+      },
+      "white_border": {
+        "priceAdder": 0
+      },
+      "custom_frame": {
+        "priceAdder": 1
+      }
+    }
+  },
+  "acrylic-signs": {
+    "sizes": {
+      "5x7": {
+        "basePrice": 34.99
+      },
+      "8x10": {
+        "basePrice": 48.99
+      },
+      "12x12": {
+        "basePrice": 69.99
+      },
+      "12x18": {
+        "basePrice": 83.99
+      },
+      "18x24": {
+        "basePrice": 125.99
+      },
+      "24x36": {
+        "basePrice": 195.99
+      },
+      "custom": {
+        "basePrice": 0
+      }
+    },
+    "options": {
+      "clear": {
+        "priceAdder": 0
+      },
+      "white": {
+        "priceAdder": 5
+      },
+      "frosted": {
+        "priceAdder": 8
+      },
+      "black": {
+        "priceAdder": 10
+      },
+      "3mm": {
+        "priceAdder": 0
+      },
+      "6mm": {
+        "priceAdder": 15
+      },
+      "9mm": {
+        "priceAdder": 30
+      },
+      "uv_front": {
+        "priceAdder": 0
+      },
+      "second_surface": {
+        "priceAdder": 10
+      },
+      "square": {
+        "priceAdder": 0
+      },
+      "rounded": {
+        "priceAdder": 3
+      },
+      "custom_shape": {
+        "priceAdder": 15
+      },
+      "none": {
+        "priceAdder": 0
+      },
+      "standoffs": {
+        "priceAdder": 12.99
+      },
+      "adhesive": {
+        "priceAdder": 2.99
+      },
+      "holes": {
+        "priceAdder": 0
+      }
+    }
+  },
+  "coroplast-signs": {
+    "sizes": {
+      "12x18": {
+        "basePrice": 6.99
+      },
+      "18x24": {
+        "basePrice": 11.19
+      },
+      "24x24": {
+        "basePrice": 15.39
+      },
+      "24x36": {
+        "basePrice": 20.99
+      },
+      "24x48": {
+        "basePrice": 27.99
+      },
+      "48x96": {
+        "basePrice": 90.99
+      },
+      "custom": {
+        "basePrice": 0
+      }
+    },
+    "options": {
+      "4mm": {
+        "priceAdder": 0
+      },
+      "6mm": {
+        "priceAdder": 1.75
+      },
+      "8mm": {
+        "priceAdder": 4
+      },
+      "single": {
+        "priceAdder": 0
+      },
+      "double": {
+        "priceAdder": 2.5
+      },
+      "white": {
+        "priceAdder": 0
+      },
+      "yellow": {
+        "priceAdder": 0
+      },
+      "red": {
+        "priceAdder": 0
+      },
+      "blue": {
+        "priceAdder": 0
+      },
+      "none": {
+        "priceAdder": 0
+      },
+      "9in": {
+        "priceAdder": 0.99
+      },
+      "15in": {
+        "priceAdder": 1.49
+      },
+      "step": {
+        "priceAdder": 1.99
+      },
+      "no_grommets": {
+        "priceAdder": 0
+      },
+      "corner_grommets": {
+        "priceAdder": 0.5
+      },
+      "perimeter_grommets": {
+        "priceAdder": 1.5
+      }
+    }
+  },
+  "window-signs": {
+    "sizes": {
+      "12x12": {
+        "basePrice": 13.99
+      },
+      "12x24": {
+        "basePrice": 20.99
+      },
+      "24x24": {
+        "basePrice": 32.19
+      },
+      "24x36": {
+        "basePrice": 46.19
+      },
+      "36x48": {
+        "basePrice": 69.99
+      },
+      "48x72": {
+        "basePrice": 111.99
+      },
+      "custom": {
+        "basePrice": 0
+      }
+    },
+    "options": {
+      "static_cling": {
+        "priceAdder": 0
+      },
+      "clear_vinyl": {
+        "priceAdder": 2
+      },
+      "white_vinyl": {
+        "priceAdder": 2
+      },
+      "perforated": {
+        "priceAdder": 6
+      },
+      "frosted": {
+        "priceAdder": 5
+      },
+      "removable": {
+        "priceAdder": 0
+      },
+      "permanent": {
+        "priceAdder": 0
+      },
+      "inside": {
+        "priceAdder": 0
+      },
+      "outside": {
+        "priceAdder": 0
+      },
+      "second_surface": {
+        "priceAdder": 2
+      },
+      "no_lam": {
+        "priceAdder": 0
+      },
+      "matte_lam": {
+        "priceAdder": 2
+      },
+      "gloss_lam": {
+        "priceAdder": 2
+      }
+    }
+  },
+  "parking-signs": {
+    "sizes": {
+      "18x24": {
+        "basePrice": 105
+      },
+      "36x24": {
+        "basePrice": 130
+      }
+    },
+    "options": {
+      "coroplast": {
+        "priceAdder": 0
+      },
+      "acm": {
+        "priceAdder": 25
+      },
+      "metal": {
+        "priceAdder": 0
+      },
+      "plastic": {
+        "priceAdder": 30
+      },
+      "double": {
+        "priceAdder": 0
+      }
+    }
+  },
+  "channel-letter-signs": {
+    "sizes": {
+      "12in": {
+        "basePrice": 209.99
+      },
+      "18in": {
+        "basePrice": 314.99
+      },
+      "24in": {
+        "basePrice": 419.99
+      },
+      "36in": {
+        "basePrice": 629.99
+      }
+    },
+    "options": {
+      "front_lit": {
+        "priceAdder": 0
+      },
+      "halo_lit": {
+        "priceAdder": 50
+      },
+      "dual_lit": {
+        "priceAdder": 90
+      },
+      "non_illuminated": {
+        "priceAdder": -40
+      },
+      "raceway": {
+        "priceAdder": 0
+      },
+      "flush": {
+        "priceAdder": 35
+      },
+      "white_face": {
+        "priceAdder": 0
+      },
+      "red_face": {
+        "priceAdder": 0
+      },
+      "blue_face": {
+        "priceAdder": 0
+      },
+      "black_face": {
+        "priceAdder": 15
+      },
+      "black_return": {
+        "priceAdder": 0
+      },
+      "silver_return": {
+        "priceAdder": 0
+      },
+      "bronze_return": {
+        "priceAdder": 0
+      }
+    }
+  },
+  "outdoor-fixed-led-display": {
+    "sizes": {
+      "of4": {
+        "basePrice": 0
+      },
+      "of6": {
+        "basePrice": 0
+      },
+      "of10": {
+        "basePrice": 0
+      }
+    },
+    "options": {}
+  },
+  "outdoor-rental-led-display": {
+    "sizes": {
+      "ro3.9": {
+        "basePrice": 0
+      },
+      "ro4.8": {
+        "basePrice": 0
+      },
+      "ro6.2": {
+        "basePrice": 0
+      }
+    },
+    "options": {}
+  },
+  "transparent-led-screen": {
+    "sizes": {
+      "ts2.6": {
+        "basePrice": 0
+      },
+      "ts3.9": {
+        "basePrice": 0
+      }
+    },
+    "options": {}
+  },
+  "flexible-led-display": {
+    "sizes": {
+      "fd1.5": {
+        "basePrice": 0
+      },
+      "fd2.5": {
+        "basePrice": 0
+      }
+    },
+    "options": {}
+  },
+  "mobile-truck-led-display": {
+    "sizes": {
+      "standard": {
+        "basePrice": 0
+      }
+    },
+    "options": {}
+  },
+  "cylinder-led-display": {
+    "sizes": {
+      "standard": {
+        "basePrice": 0
+      }
+    },
+    "options": {}
+  },
+  "digital-led-poster": {
+    "sizes": {
+      "standard": {
+        "basePrice": 0
+      }
+    },
+    "options": {}
+  },
+  "taxi-top-led-display": {
+    "sizes": {
+      "standard": {
+        "basePrice": 0
+      }
+    },
+    "options": {}
+  },
+  "sphere-led-display": {
+    "sizes": {
+      "sp2": {
+        "basePrice": 0
+      },
+      "sp4": {
+        "basePrice": 0
+      }
+    },
+    "options": {}
+  },
+  "cube-led-display": {
+    "sizes": {
+      "cl1.5": {
+        "basePrice": 0
+      },
+      "cl2.5": {
+        "basePrice": 0
+      }
+    },
+    "options": {}
+  },
+  "led-curtain-display": {
+    "sizes": {
+      "lc15": {
+        "basePrice": 0
+      },
+      "lc25": {
+        "basePrice": 0
+      }
+    },
+    "options": {}
+  },
+  "led-dance-floor": {
+    "sizes": {
+      "df3.9": {
+        "basePrice": 0
+      },
+      "df6.2": {
+        "basePrice": 0
+      }
+    },
+    "options": {}
+  },
+  "food-delivery-box-led": {
+    "sizes": {
+      "standard": {
+        "basePrice": 0
+      }
+    },
+    "options": {}
+  },
+  "shop-window-led": {
+    "sizes": {
+      "standard": {
+        "basePrice": 0
+      }
+    },
+    "options": {}
+  },
+  "stadium-perimeter-led": {
+    "sizes": {
+      "standard": {
+        "basePrice": 0
+      }
+    },
+    "options": {}
+  },
+  "mobile-bus-led": {
+    "sizes": {
+      "standard": {
+        "basePrice": 0
+      }
+    },
+    "options": {}
+  },
+  "indoor-led-display": {
+    "sizes": {
+      "if1.2": {
+        "basePrice": 0
+      },
+      "if2.5": {
+        "basePrice": 0
+      }
+    },
+    "options": {}
+  },
+  "indoor-rental-led": {
+    "sizes": {
+      "ri1.9": {
+        "basePrice": 0
+      },
+      "ri3.9": {
+        "basePrice": 0
+      }
+    },
+    "options": {}
+  },
+  "pharmacy-cross-led-display": {
+    "sizes": {
+      "standard": {
+        "basePrice": 0
+      }
+    },
+    "options": {}
+  },
+  "outdoor-led-poster-display": {
+    "sizes": {
+      "standard": {
+        "basePrice": 0
+      }
+    },
+    "options": {}
+  },
+  "led-pillar-display": {
+    "sizes": {
+      "standard": {
+        "basePrice": 0
+      }
+    },
+    "options": {}
+  },
+  "hexagon-led-screen": {
+    "sizes": {
+      "standard": {
+        "basePrice": 0
+      }
+    },
+    "options": {}
+  },
+  "round-circle-led-display": {
+    "sizes": {
+      "standard": {
+        "basePrice": 0
+      }
+    },
+    "options": {}
+  },
+  "outdoor-led-totem-display": {
+    "sizes": {
+      "standard": {
+        "basePrice": 0
+      }
+    },
+    "options": {}
+  },
+  "triangle-led-display": {
+    "sizes": {
+      "standard": {
+        "basePrice": 0
+      }
+    },
+    "options": {}
+  },
+  "dj-booth-led-screen": {
+    "sizes": {
+      "standard": {
+        "basePrice": 0
+      }
+    },
+    "options": {}
+  },
+  "light-pole-led-display": {
+    "sizes": {
+      "standard": {
+        "basePrice": 0
+      }
+    },
+    "options": {}
+  },
+  "digital-shelf-led-display": {
+    "sizes": {
+      "standard": {
+        "basePrice": 0
+      }
+    },
+    "options": {}
+  },
+  "programmable-led-signs": {
+    "sizes": {
+      "ps2.5": {
+        "basePrice": 0
+      },
+      "ps5": {
+        "basePrice": 0
+      }
+    },
+    "options": {}
+  }
+}
