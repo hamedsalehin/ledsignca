@@ -773,18 +773,16 @@ Advantages of our Roll-Up Systems:
           ratingCount: "430",
           ratingScore: "4.8",
           sizes: [
-            { label: "8 x 8 feet", value: "8x8", basePrice: 330 },
-            { label: "10 x 7.5 feet", value: "10x7.5", basePrice: 380 }
-          ],
-          selects: [
             {
-              label: "Options",
-              options: [
-                { label: "Premium Pop-Up Frame + Carry Case", value: "premium", priceAdder: 0 },
-                { label: "Replacement Fabric only", value: "replacement", sizePriceAdders: { "8x8": -20, "10x7.5": -20 } },
-                { label: "13oz Vinyl Banner", value: "vinyl", sizePriceAdders: { "8x8": -180, "10x7.5": -210 } }
-              ]
-            }
+              label: "8' x 8' Square Backdrop",
+              value: "96x96",
+              basePrice: 204.39,
+            },
+            {
+              label: "10' x 8' Large Backdrop",
+              value: "120x96",
+              basePrice: 251.99,
+            },
           ],
           qtyDiscount: "Event planner package discounts available",
           keyFeatures: [
@@ -1903,43 +1901,18 @@ Advantages of our Roll-Up Systems:
           ratingCount: "430",
           ratingScore: "4.8",
           sizes: [
-            {
-              label: "8ft Straight Accordion Frame",
-              value: "8ft_straight",
-              basePrice: 299.99,
-            },
-            {
-              label: "10ft Straight Accordion Frame",
-              value: "10ft_straight",
-              basePrice: 399.99,
-            },
-            {
-              label: "8ft Curved Exhibition Frame",
-              value: "8ft_curved",
-              basePrice: 349.99,
-            },
-            {
-              label: "10ft Curved Exhibition Frame",
-              value: "10ft_curved",
-              basePrice: 449.99,
-            },
+            { label: "8 x 8 feet", value: "8x8", basePrice: 330 },
+            { label: "10 x 7.5 feet", value: "10x7.5", basePrice: 380 }
           ],
           selects: [
             {
-              label: "Frame Kit Option",
+              label: "Options",
               options: [
-                {
-                  label: "Include Collapsible Frame & Trolley Bag",
-                  value: "full_kit",
-                  priceAdder: 120.0,
-                },
-                {
-                  label: "Fabric Replacement Print Only",
-                  value: "print_only",
-                  priceAdder: 0,
-                },
-              ],
-            },
+                { label: "Premium Pop-Up Frame + Carry Case", value: "premium", priceAdder: 0 },
+                { label: "Replacement Fabric only", value: "replacement", sizePriceAdders: { "8x8": -20, "10x7.5": -20 } },
+                { label: "13oz Vinyl Banner", value: "vinyl", sizePriceAdders: { "8x8": -180, "10x7.5": -210 } }
+              ]
+            }
           ],
           qtyDiscount: "Exposition vendor rates apply",
           keyFeatures: [
@@ -1982,18 +1955,16 @@ Advantages of our Roll-Up Systems:
           ratingCount: "430",
           ratingScore: "4.8",
           sizes: [
-            { label: "8 x 8 feet", value: "8x8", basePrice: 330 },
-            { label: "10 x 7.5 feet", value: "10x7.5", basePrice: 380 }
-          ],
-          selects: [
             {
-              label: "Options",
-              options: [
-                { label: "Premium Pop-Up Frame + Carry Case", value: "premium", priceAdder: 0 },
-                { label: "Replacement Fabric only", value: "replacement", sizePriceAdders: { "8x8": -20, "10x7.5": -20 } },
-                { label: "13oz Vinyl Banner", value: "vinyl", sizePriceAdders: { "8x8": -180, "10x7.5": -210 } }
-              ]
-            }
+              label: "8' x 8' Square Backdrop",
+              value: "96x96",
+              basePrice: 145.99,
+            },
+            {
+              label: "10' x 8' Large Backdrop",
+              value: "120x96",
+              basePrice: 179.99,
+            },
           ],
           qtyDiscount: "Event planner package discounts available",
           keyFeatures: [
@@ -5525,57 +5496,6 @@ Why Choose Our Expert-grade Rollup Banners?
             { label: '24" x 36"', value: "24x36", basePrice: 58 },
             { label: '36" x 48"', value: "36x48", basePrice: 72 },
           ],
-          selects: [
-            {
-              label: "Board Thickness",
-              options: [
-                {
-                  label: '3/16" (5mm) Standard',
-                  value: "3_16",
-                  priceAdder: 0,
-                  description: "Best for most display applications.",
-                },
-                {
-                  label: '1/2" (12mm) Thick',
-                  value: "half",
-                  priceAdder: 4,
-                  description:
-                    "Extra rigid — stands up on its own with an easel.",
-                },
-                {
-                  label: '1" (25mm) Ultra-Thick',
-                  value: "1in",
-                  priceAdder: 9,
-                  description: "Museum-quality thickness for high-quality displays.",
-                },
-              ],
-            },
-            {
-              label: "Surface Finish",
-              options: [
-                {
-                  label: "Matte (Standard)",
-                  value: "matte",
-                  priceAdder: 0,
-                  description:
-                    "No glare — excellent for photography and presentations.",
-                },
-                {
-                  label: "Gloss",
-                  value: "gloss",
-                  priceAdder: 2.51,
-                  description: "Deep, vivid colors with a polished look.",
-                },
-                {
-                  label: "Satin",
-                  value: "satin",
-                  priceAdder: 2,
-                  description:
-                    "The best of both — minimal glare with rich color.",
-                },
-              ],
-            },
-          ],
           toggleGroups: [
             {
               label: "Printed Sides",
@@ -6306,22 +6226,6 @@ Why Choose Our Expert-grade Rollup Banners?
           sizes: [
             { label: '18" x 24"', value: "18x24", basePrice: 105 },
             { label: '36" x 24"', value: "36x24", basePrice: 130 },
-          ],
-          selects: [
-            {
-              label: "Insert Material",
-              options: [
-                { label: "Coroplast Regular", value: "coroplast", priceAdder: 0 },
-                { label: "ACM (Aluminum)", value: "acm", priceAdder: 25 }
-              ]
-            },
-            {
-              label: "Frame Material",
-              options: [
-                { label: "Metal Regular", value: "metal", priceAdder: 0 },
-                { label: "Plastic", value: "plastic", priceAdder: 30 }
-              ]
-            }
           ],
           toggleGroups: [
             {
