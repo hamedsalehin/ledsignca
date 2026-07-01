@@ -2735,8 +2735,8 @@ Why Choose Our Expert-grade Rollup Banners?
           ratingCount: "1120",
           ratingScore: "4.9",
           sizes: [
-            { label: "Standard Business Card", value: "standard", basePrice: 55 }
-          ],
+        { label: "Standard Business Card", value: "standard", basePrice: 55 }
+      ],
           selects: [
             {
               label: "Card Finish",
