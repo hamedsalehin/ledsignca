@@ -761,33 +761,18 @@ Advantages of our Roll-Up Systems:
           ratingCount: "430",
           ratingScore: "4.8",
           sizes: [
-            {
-              label: "8' x 8' Square Backdrop",
-              value: "96x96",
-              basePrice: 204.39,
-            },
-            {
-              label: "10' x 8' Large Backdrop",
-              value: "120x96",
-              basePrice: 251.99,
-            },
+            { label: "8 x 8 feet", value: "8x8", basePrice: 330 },
+            { label: "10 x 7.5 feet", value: "10x7.5", basePrice: 380 }
           ],
           selects: [
             {
-              label: "Adjustable Backdrop Stand Hardware",
+              label: "Options",
               options: [
-                {
-                  label: "Include Adjustable Backdrop Stand",
-                  value: "with_stand",
-                  priceAdder: 95.0,
-                },
-                {
-                  label: "Banner Print Only (No Stand)",
-                  value: "banner_only",
-                  priceAdder: 0,
-                },
-              ],
-            },
+                { label: "Premium Pop-Up Frame + Carry Case", value: "premium", priceAdder: 0 },
+                { label: "Replacement Fabric only", value: "replacement", sizePriceAdders: { "8x8": -20, "10x7.5": -20 } },
+                { label: "13oz Vinyl Banner", value: "vinyl", sizePriceAdders: { "8x8": -180, "10x7.5": -210 } }
+              ]
+            }
           ],
           qtyDiscount: "Event planner package discounts available",
           keyFeatures: [
@@ -1779,30 +1764,17 @@ Advantages of our Roll-Up Systems:
           ratingCount: "680",
           ratingScore: "4.9",
           sizes: [
-            { label: '6 feet (Regular 3 Sided)', value: "6ft-3sided", basePrice: 200 },
-            { label: '6 feet (Regular 4 Sided)', value: "6ft-4sided", basePrice: 240 },
-            { label: '8 feet (Regular 3 Sided)', value: "8ft-3sided", basePrice: 225 },
-            { label: '8 feet (Regular 4 Sided)', value: "8ft-4sided", basePrice: 260 }
+            { label: "6 feet", value: "6ft", basePrice: 200 },
+            { label: "8 feet", value: "8ft", basePrice: 225 }
           ],
           selects: [
             {
-              label: "Table Cloth Coverage",
+              label: "Options",
               options: [
-                {
-                  label: "4-Sided Closed Back Throw",
-                  value: "4sided",
-                  priceAdder: 0,
-                  description:
-                    "Covers all four sides, ideal for storage underneath.",
-                },
-                {
-                  label: "3-Sided Open Back Throw",
-                  value: "3sided",
-                  priceAdder: -10.0,
-                  description: "Leaves the back open for easy seating access.",
-                },
-              ],
-            },
+                { label: "3 sided", value: "3sided", priceAdder: 0 },
+                { label: "4 sided", value: "4sided", sizePriceAdders: { "6ft": 40, "8ft": 35 } }
+              ]
+            }
           ],
           qtyDiscount: "Volume discounts on bulk promotional items",
           keyFeatures: [
@@ -1860,26 +1832,9 @@ Advantages of our Roll-Up Systems:
           ratingCount: "540",
           ratingScore: "4.8",
           sizes: [
-            { label: '3 x 7 feet', value: "3x7", basePrice: 135 },
-            { label: '4 x 7 feet', value: "4x7", basePrice: 165 },
-            { label: '5 x 7 feet', value: "5x7", basePrice: 195 }
-          ],
-          selects: [
-            {
-              label: "Material Twill",
-              options: [
-                {
-                  label: "300D Polyester Twill (Standard)",
-                  value: "standard",
-                  priceAdder: 0,
-                },
-                {
-                  label: "Liquid-Repellent Twill",
-                  value: "repellent",
-                  priceAdder: 10.0,
-                },
-              ],
-            },
+            { label: "3 x 7 feet", value: "3x7", basePrice: 135 },
+            { label: "4 x 7 feet", value: "4x7", basePrice: 165 },
+            { label: "5 x 7 feet", value: "5x7", basePrice: 195 }
           ],
           qtyDiscount: "Volume discounts on promotional items",
           keyFeatures: [
@@ -1913,20 +1868,16 @@ Advantages of our Roll-Up Systems:
           ratingCount: "310",
           ratingScore: "4.8",
           sizes: [
-            { label: '6 feet (Single-Sided Printed)', value: "6ft", basePrice: 255 },
-            { label: '8 feet (Single-Sided Printed)', value: "8ft", basePrice: 295 }
+            { label: "6 feet", value: "6ft", basePrice: 255 },
+            { label: "8 feet", value: "8ft", basePrice: 295 }
           ],
           selects: [
             {
-              label: "Material",
+              label: "Options",
               options: [
-                {
-                  label: "300D Polyester Twill (Standard)",
-                  value: "standard",
-                  priceAdder: 0,
-                },
-              ],
-            },
+                { label: "Single-Sided printed", value: "single", priceAdder: 0 }
+              ]
+            }
           ],
           qtyDiscount: "Bulk event pricing applies",
           keyFeatures: [
@@ -2019,20 +1970,16 @@ Advantages of our Roll-Up Systems:
           ratingCount: "290",
           ratingScore: "4.9",
           sizes: [
-            { label: '6 feet (Single-Sided Printed)', value: "6ft", basePrice: 265 },
-            { label: '8 feet (Single-Sided Printed)', value: "8ft", basePrice: 305 }
+            { label: "6 feet", value: "6ft", basePrice: 265 },
+            { label: "8 feet", value: "8ft", basePrice: 305 }
           ],
           selects: [
             {
-              label: "Table Leg Pockets",
+              label: "Options",
               options: [
-                {
-                  label: "Reinforced Rubber Leg Pockets",
-                  value: "reinforced",
-                  priceAdder: 0,
-                },
-              ],
-            },
+                { label: "Single-Sided printed", value: "single", priceAdder: 0 }
+              ]
+            }
           ],
           qtyDiscount: "Spandex volume levels apply",
           keyFeatures: [
@@ -2126,15 +2073,15 @@ Advantages of our Roll-Up Systems:
           ratingCount: "430",
           ratingScore: "4.8",
           sizes: [
-            { label: "8' x 8'", value: "8x8", basePrice: 330 },
-            { label: "10' x 7.5'", value: "10x7.5", basePrice: 380 }
+            { label: "8 x 8 feet", value: "8x8", basePrice: 330 },
+            { label: "10 x 7.5 feet", value: "10x7.5", basePrice: 380 }
           ],
           selects: [
             {
-              label: "Package Type",
+              label: "Options",
               options: [
                 { label: "Premium Pop-Up Frame + Carry Case", value: "premium", priceAdder: 0 },
-                { label: "Replacement Fabric Only", value: "replacement", sizePriceAdders: { "8x8": -20, "10x7.5": -20 } },
+                { label: "Replacement Fabric only", value: "replacement", sizePriceAdders: { "8x8": -20, "10x7.5": -20 } },
                 { label: "13oz Vinyl Banner", value: "vinyl", sizePriceAdders: { "8x8": -180, "10x7.5": -210 } }
               ]
             }
