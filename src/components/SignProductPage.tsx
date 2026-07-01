@@ -837,7 +837,7 @@ export function SignProductPage({ cfg: originalCfg }: { cfg: ProductPageConfig }
           <div className="w-full lg:w-[420px] shrink-0 font-opensans">
             <div className="bg-white rounded-2xl border border-gray-200 shadow-md p-6 sticky top-6">
               {/* Price */}
-              {cfg.breadcrumb !== "LED Display Signs" && (
+              {cfg.breadcrumb !== "LED Display Signs" && unitPrice > 0 && (
                 <div className="pb-5 border-b mb-5">
                   <div className="flex items-end gap-2.5 mb-1.5">
                     <span className="text-4xl font-extrabold text-gray-900 font-poppins">
@@ -1063,7 +1063,7 @@ export function SignProductPage({ cfg: originalCfg }: { cfg: ProductPageConfig }
 
               <div className="space-y-3 mt-4">
                 {/* Upload Finished Design Button */}
-                {!(cfg.breadcrumb === "Neon Signs" || cfg.breadcrumb === "LED Display Signs") && (
+                {!(cfg.breadcrumb === "Neon Signs" || cfg.breadcrumb === "LED Display Signs" || unitPrice === 0) && (
                   <>
                     <div className="relative">
                       <input
@@ -1137,12 +1137,12 @@ export function SignProductPage({ cfg: originalCfg }: { cfg: ProductPageConfig }
                     </Link>
                   </>
                 )}
-                {cfg.breadcrumb === "LED Display Signs" ? (
+                {cfg.breadcrumb === "LED Display Signs" || unitPrice === 0 ? (
                   <Link
-                    href="#configurator"
+                    href="/get-a-quote"
                     className="w-full block text-center bg-black hover:bg-gray-900 active:scale-[0.98] text-white font-extrabold py-4 rounded-xl transition-all text-sm uppercase tracking-wider shadow-md font-poppins"
                   >
-                    Request Quote
+                    Get Quote
                   </Link>
                 ) : (
                   <button
@@ -1162,11 +1162,7 @@ export function SignProductPage({ cfg: originalCfg }: { cfg: ProductPageConfig }
       </main>
 
       {/* CTA / Configurator */}
-      {cfg.breadcrumb === "LED Display Signs" ? (
-        <div id="configurator">
-          <ContactSection />
-        </div>
-      ) : (
+      {!(cfg.breadcrumb === "LED Display Signs" || unitPrice === 0) && (
         <section className="py-20 bg-black text-white text-center">
           <div className="max-w-3xl mx-auto px-4">
             <h2 className="text-4xl font-bold font-poppins mb-4">

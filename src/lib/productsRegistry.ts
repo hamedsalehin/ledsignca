@@ -5647,20 +5647,20 @@ Why Choose Our Expert-grade Rollup Banners?
                 {
                   label: "White Acrylic",
                   value: "white",
-                  priceAdder: 5,
+                  priceAdder: 0, priceMultiplier: 1.2,
                   description: "Bright white base for maximum color vibrancy.",
                 },
                 {
                   label: "Frosted Acrylic",
                   value: "frosted",
-                  priceAdder: 7.99,
+                  priceAdder: 0, priceMultiplier: 1.4,
                   description:
                     "Elegant translucent appearance, ideal for office reception.",
                 },
                 {
                   label: "Black Acrylic",
                   value: "black",
-                  priceAdder: 10,
+                  priceAdder: 0, priceMultiplier: 1.4,
                   description:
                     "Dramatic and modern — excellent for gold/silver text.",
                 },
@@ -5673,13 +5673,13 @@ Why Choose Our Expert-grade Rollup Banners?
                 {
                   label: '1/4" (6mm) Heavy',
                   value: "6mm",
-                  priceAdder: 14.99,
+                  priceAdder: 0, priceMultiplier: 1.75,
                   description: "High-quality weight that commands respect.",
                 },
                 {
                   label: '3/8" (9mm) Ultra-Thick',
                   value: "9mm",
-                  priceAdder: 30,
+                  priceAdder: 0, priceMultiplier: 2.2,
                   description: "The heaviest, most substantial option.",
                 },
               ],
@@ -5696,7 +5696,7 @@ Why Choose Our Expert-grade Rollup Banners?
                 {
                   label: "Second-Surface Print (Back)",
                   value: "second_surface",
-                  priceAdder: 10,
+                  priceAdder: 0, priceMultiplier: 1.7,
                   description:
                     "Image manufactured using the back for a glass-effect look.",
                 },
@@ -5708,8 +5708,8 @@ Why Choose Our Expert-grade Rollup Banners?
               label: "Corners",
               options: [
                 { id: "square", label: "Square Corners", priceAdder: 0 },
-                { id: "rounded", label: "Rounded Corners", priceAdder: 3 },
-                { id: "custom_shape", label: "Custom Shape", priceAdder: 14.99 },
+                { id: "rounded", label: "Rounded Corners", priceAdder: 0, priceMultiplier: 1.3 },
+                { id: "custom_shape", label: "Custom Shape", priceAdder: 0, priceMultiplier: 1.5 },
               ],
             },
             {
@@ -5723,8 +5723,8 @@ Why Choose Our Expert-grade Rollup Banners?
                   description:
                     "Polished metal standoffs for wall floating effect.",
                 },
-                { id: "adhesive", label: "3M Adhesive Tape", priceAdder: 3 },
-                { id: "holes", label: "Pre-Drilled Holes", priceAdder: 0 },
+                { id: "adhesive", label: "3M Adhesive Tape", priceAdder: 0, priceMultiplier: 1.2 },
+                { id: "holes", label: "Pre-Drilled Holes", priceAdder: 0, multiMultiplier: 1.2 },
               ],
             },
           ],
