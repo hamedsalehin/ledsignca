@@ -140,29 +140,19 @@ export const PRODUCTS_REGISTRY: Record<string, RegistryCategory> = {
           ratingCount: "1,530",
           ratingScore: "4.8",
           sizes: [
-            { label: "2' x 4' Small Banner", value: "24x48", basePrice: 18.19 },
-            {
-              label: "3' x 6' Standard Banner",
-              value: "36x72",
-              basePrice: 34.99,
-            },
-            { label: "4' x 8' Large Banner", value: "48x96", basePrice: 64.39 },
+            { label: '2 x 4 feet', value: "2x4", basePrice: 45 },
+            { label: '3 x 6 feet', value: "3x6", basePrice: 90 },
+            { label: '4 x 8 feet', value: "4x8", basePrice: 160 }
           ],
           selects: [
             {
-              label: "Material Style",
+              label: "Material Options",
               options: [
-                {
-                  label: "13oz Standard Gloss Vinyl",
-                  value: "13oz_gloss",
-                  priceAdder: 0,
-                },
-                {
-                  label: "15oz Premium Matte Vinyl",
-                  value: "15oz_matte",
-                  priceAdder: 5.0,
-                },
-              ],
+                { label: "13 oz Standard Vinyl", value: "13oz", priceAdder: 0 },
+                { label: "15 oz Premium Vinyl", value: "15oz", sizePriceAdders: { "2x4": 5, "3x6": 8, "4x8": 10 } }
+              ]
+            }
+          ],
             },
             {
               label: "Finishing Option",
@@ -947,44 +937,29 @@ Advantages of our Roll-Up Systems:
           ratingCount: "820",
           ratingScore: "4.8",
           sizes: [
-            {
-              label: "9ft Feather Flag",
-              value: "9ft",
-              basePrice: 80.00,
-            },
-            {
-              label: "10ft Feather Flag",
-              value: "10ft",
-              basePrice: 100.00,
-            },
-            {
-              label: "13ft Feather Flag",
-              value: "13ft",
-              basePrice: 110.00,
-            },
-            {
-              label: "16ft Feather Flag",
-              value: "16ft",
-              basePrice: 130.00,
-            },
+            { label: "Small (9ft Long)", value: "small", basePrice: 175 },
+            { label: "Medium (12ft Long)", value: "medium", basePrice: 215 },
+            { label: "Large (15ft Long)", value: "large", basePrice: 260 }
           ],
           selects: [
             {
-              label: "Pole Option",
+              label: "Print Only Options",
               options: [
-                {
-                  label: "No Pole (Flag Fabric Only)",
-                  value: "no_pole",
-                  priceAdder: 0,
-                  description: "Select if you already have a pole.",
-                },
-                {
-                  label: "Include Pole (+CAD 35.00)",
-                  value: "pole",
-                  priceAdder: 35.00,
-                  description: "Premium carbon-fiberglass pole.",
-                },
-              ],
+                { label: "Full Kit (Print + Hardware)", value: "kit", priceAdder: 0 },
+                { label: "Print Only (Single-Sided)", value: "print_single", sizePriceAdders: { "small": -65, "medium": -85, "large": -100 } },
+                { label: "Print Only (Double-Sided)", value: "print_double", sizePriceAdders: { "small": 5, "medium": -5, "large": -20 } }
+              ]
+            },
+            {
+              label: "Accessories",
+              options: [
+                { label: "None", value: "none", priceAdder: 0 },
+                { label: "Cross Base Hardware", value: "cross", priceAdder: 70 },
+                { label: "Ground Spike", value: "spike", priceAdder: 80 },
+                { label: "Water Bags", value: "water", priceAdder: 25 }
+              ]
+            }
+          ],
             },
             {
               label: "Base Option",
@@ -1163,29 +1138,29 @@ Advantages of our Roll-Up Systems:
           ratingCount: "432",
           ratingScore: "4.7",
           sizes: [
-            {
-              label: "7ft Small Teardrop Flag",
-              value: "84x30",
-              basePrice: 49.68,
-            },
-            {
-              label: "9ft Medium Teardrop Flag",
-              value: "108x35",
-              basePrice: 74.99,
-            },
-            {
-              label: "11ft Large Teardrop Flag",
-              value: "132x40",
-              basePrice: 109.99,
-            },
+            { label: "Small (9ft Long)", value: "small", basePrice: 180 },
+            { label: "Medium (12ft Long)", value: "medium", basePrice: 220 },
+            { label: "Large (15ft Long)", value: "large", basePrice: 260 }
           ],
           selects: [
             {
-              label: "Base Mount Option",
+              label: "Print Only Options",
               options: [
-                { label: "Ground Stake", value: "stake", priceAdder: 0 },
-                { label: "Cross Base", value: "cross", priceAdder: 15.0 },
-              ],
+                { label: "Full Kit (Print + Hardware)", value: "kit", priceAdder: 0 },
+                { label: "Print Only (Single-Sided)", value: "print_single", sizePriceAdders: { "small": -70, "medium": -90, "large": -100 } },
+                { label: "Print Only (Double-Sided)", value: "print_double", sizePriceAdders: { "small": 0, "medium": -10, "large": -20 } }
+              ]
+            },
+            {
+              label: "Accessories",
+              options: [
+                { label: "None", value: "none", priceAdder: 0 },
+                { label: "Cross Base Hardware", value: "cross", priceAdder: 70 },
+                { label: "Ground Spike", value: "spike", priceAdder: 80 },
+                { label: "Water Bags", value: "water", priceAdder: 25 }
+              ]
+            }
+          ],
             },
           ],
           qtyDiscount: "Bulk discounts available",
@@ -1808,12 +1783,10 @@ Advantages of our Roll-Up Systems:
           ratingCount: "680",
           ratingScore: "4.9",
           sizes: [
-            {
-              label: "6ft Table Throw (Standard)",
-              value: "72x30",
-              basePrice: 89.99,
-            },
-            { label: "8ft Table Throw", value: "96x30", basePrice: 119.99 },
+            { label: '6 feet (Regular 3 Sided)', value: "6ft-3sided", basePrice: 200 },
+            { label: '6 feet (Regular 4 Sided)', value: "6ft-4sided", basePrice: 240 },
+            { label: '8 feet (Regular 3 Sided)', value: "8ft-3sided", basePrice: 225 },
+            { label: '8 feet (Regular 4 Sided)', value: "8ft-4sided", basePrice: 260 }
           ],
           selects: [
             {
@@ -1891,9 +1864,9 @@ Advantages of our Roll-Up Systems:
           ratingCount: "540",
           ratingScore: "4.8",
           sizes: [
-            { label: '24" x 84" (Standard)', value: "24x84", basePrice: 39.99 },
-            { label: '30" x 84"', value: "30x84", basePrice: 49.99 },
-            { label: '36" x 84" (Wide)', value: "36x84", basePrice: 59.99 },
+            { label: '3 x 7 feet', value: "3x7", basePrice: 135 },
+            { label: '4 x 7 feet', value: "4x7", basePrice: 165 },
+            { label: '5 x 7 feet', value: "5x7", basePrice: 195 }
           ],
           selects: [
             {
@@ -1944,16 +1917,8 @@ Advantages of our Roll-Up Systems:
           ratingCount: "310",
           ratingScore: "4.8",
           sizes: [
-            {
-              label: '6ft Fitted (72" x 30" x 30")',
-              value: "6ft_fitted",
-              basePrice: 109.99,
-            },
-            {
-              label: '8ft Fitted (96" x 30" x 30")',
-              value: "8ft_fitted",
-              basePrice: 139.99,
-            },
+            { label: '6 feet (Single-Sided Printed)', value: "6ft", basePrice: 255 },
+            { label: '8 feet (Single-Sided Printed)', value: "8ft", basePrice: 295 }
           ],
           selects: [
             {
@@ -2058,16 +2023,8 @@ Advantages of our Roll-Up Systems:
           ratingCount: "290",
           ratingScore: "4.9",
           sizes: [
-            {
-              label: "6ft Stretch Spandex (Standard)",
-              value: "6ft_stretch",
-              basePrice: 129.99,
-            },
-            {
-              label: "8ft Stretch Spandex",
-              value: "8ft_stretch",
-              basePrice: 159.99,
-            },
+            { label: '6 feet (Single-Sided Printed)', value: "6ft", basePrice: 265 },
+            { label: '8 feet (Single-Sided Printed)', value: "8ft", basePrice: 305 }
           ],
           selects: [
             {
@@ -2118,42 +2075,18 @@ Advantages of our Roll-Up Systems:
           ratingCount: "430",
           ratingScore: "4.8",
           sizes: [
-            {
-              label: "8ft Straight Accordion Frame",
-              value: "8ft_straight",
-              basePrice: 299.99,
-            },
-            {
-              label: "10ft Straight Accordion Frame",
-              value: "10ft_straight",
-              basePrice: 399.99,
-            },
-            {
-              label: "8ft Curved Exhibition Frame",
-              value: "8ft_curved",
-              basePrice: 349.99,
-            },
-            {
-              label: "10ft Curved Exhibition Frame",
-              value: "10ft_curved",
-              basePrice: 449.99,
-            },
+            { label: "7.5' x 7.5' (3 x 3)", value: "7.5x7.5", basePrice: 780 },
+            { label: "10' x 7.5' (4 x 3)", value: "10x7.5", basePrice: 920 }
           ],
           selects: [
             {
-              label: "Frame Kit Option",
+              label: "Package Type",
               options: [
-                {
-                  label: "Include Collapsible Frame & Trolley Bag",
-                  value: "full_kit",
-                  priceAdder: 120.0,
-                },
-                {
-                  label: "Fabric Replacement Print Only",
-                  value: "print_only",
-                  priceAdder: 0,
-                },
-              ],
+                { label: "Premium Pop-Up Frame + Carry Case", value: "premium", priceAdder: 0 },
+                { label: "Replacement Fabric Only", value: "replacement", sizePriceAdders: { "7.5x7.5": -420, "10x7.5": -500 } }
+              ]
+            }
+          ],
             },
           ],
           qtyDiscount: "Exposition vendor rates apply",
@@ -2197,32 +2130,19 @@ Advantages of our Roll-Up Systems:
           ratingCount: "430",
           ratingScore: "4.8",
           sizes: [
-            {
-              label: "8' x 8' Square Backdrop",
-              value: "96x96",
-              basePrice: 145.99,
-            },
-            {
-              label: "10' x 8' Large Backdrop",
-              value: "120x96",
-              basePrice: 179.99,
-            },
+            { label: "8' x 8'", value: "8x8", basePrice: 330 },
+            { label: "10' x 7.5'", value: "10x7.5", basePrice: 380 }
           ],
           selects: [
             {
-              label: "Adjustable Backdrop Stand Hardware",
+              label: "Package Type",
               options: [
-                {
-                  label: "Include Adjustable Backdrop Stand",
-                  value: "with_stand",
-                  priceAdder: 95.0,
-                },
-                {
-                  label: "Banner Print Only (No Stand)",
-                  value: "banner_only",
-                  priceAdder: 0,
-                },
-              ],
+                { label: "Premium Pop-Up Frame + Carry Case", value: "premium", priceAdder: 0 },
+                { label: "Replacement Fabric Only", value: "replacement", sizePriceAdders: { "8x8": -20, "10x7.5": -20 } },
+                { label: "13oz Vinyl Banner", value: "vinyl", sizePriceAdders: { "8x8": -180, "10x7.5": -210 } }
+              ]
+            }
+          ],
             },
           ],
           qtyDiscount: "Event planner package discounts available",
@@ -2817,87 +2737,24 @@ Why Choose Our Expert-grade Rollup Banners?
           ratingCount: "1120",
           ratingScore: "4.9",
           sizes: [
-            {
-              label: '3.5" x 2" Standard size',
-              value: "3.5x2",
-              basePrice: 29.98,
-            },
+            { label: "Standard Business Card", value: "standard", basePrice: 55 }
           ],
           selects: [
             {
-              label: "Paper Stock & Finish",
+              label: "Card Finish",
               options: [
-                {
-                  label: "14pt semi gloss (profit maximizer)",
-                  value: "semi_gloss",
-                  priceAdder: 0,
-                  description: "Clean, expert-grade look with a smooth semi-gloss finish. Simple to write on.",
-                  image: "/images/products/main-page/business_cards_semigloss-toronto-printing-ca.png",
-                },
-                {
-                  label: "Glossy",
-                  value: "glossy",
-                  priceAdder: 0,
-                  description: "High-shine glossy finish that makes colors pop.",
-                  image: "/images/products/main-page/business_cards_glossy-toronto-printing-ca.png",
-                },
-                {
-                  label: "Embossed Gloss",
-                  value: "embossed_gloss",
-                  priceAdder: 0.15,
-                  description: "Raised clear gloss accents for a textured, high-end feel.",
-                  image: "/images/products/main-page/business_cards_foil-toronto-printing-ca.png",
-                },
-                {
-                  label: "Soft Touch",
-                  value: "soft_touch",
-                  priceAdder: 0.12,
-                  description: "Velvety coating that feels soft and high-quality in the hand.",
-                  image: "/images/products/main-page/business_cards-toronto-printing-ca.png",
-                },
-                {
-                  label: "Painted Edge",
-                  value: "painted_edge",
-                  priceAdder: 0.25,
-                  description: "Thick cards with colored edges for a bold, modern look.",
-                  image: "/images/products/main-page/business_cards_painted_edge-toronto-printing-ca.png",
-                },
-                {
-                  label: "Ultra Thick",
-                  value: "ultra_thick",
-                  priceAdder: 0.23,
-                  description: "Double-thick cardstock for a substantial, sturdy feel.",
-                  image: "/images/products/main-page/business_cards_ultra_thick-toronto-printing-ca.png",
-                },
-                {
-                  label: "Clear Plastic",
-                  value: "clear_plastic",
-                  priceAdder: 0.35,
-                  description: "See-through modern plastic cards that make a unique statement.",
-                  image: "/images/products/main-page/business_cards_clear_plastic-toronto-printing-ca.png",
-                },
-                {
-                  label: "Pearl",
-                  value: "pearl",
-                  priceAdder: 0.12,
-                  description: "Glimmering, light-catching surface with a pearlescent shine.",
-                  image: "/images/products/main-page/business_cards_pearl-toronto-printing-ca.png",
-                },
-                {
-                  label: "Gold Raised Foil",
-                  value: "gold_raised_foil",
-                  priceAdder: 0.20,
-                  description: "Elevated, 3D raised gold foil accents for a luxury feel.",
-                  image: "/images/products/main-page/business_cards_gold_raised_foil-toronto-printing-ca.png",
-                },
-                {
-                  label: "Silver Raised Foil",
-                  value: "silver_raised_foil",
-                  priceAdder: 0.20,
-                  description: "Elevated, 3D raised silver foil accents for a luxury feel.",
-                  image: "/images/products/main-page/business_cards_silver_raised_foil-toronto-printing-ca.png",
-                },
-              ],
+                { label: "Regular Business Cards", value: "regular", priceAdder: 0 },
+                { label: "Gloss Lamination", value: "gloss", priceAdder: 20 },
+                { label: "Soft Touch", value: "soft", priceAdder: 40 },
+                { label: "Painted Edge", value: "painted", priceAdder: 55 },
+                { label: "Lamination + Gold Foil", value: "gold", priceAdder: 65 },
+                { label: "Lamination + Silver Foil", value: "silver", priceAdder: 65 },
+                { label: "Lamination + SPOT UV", value: "spot", priceAdder: 30 },
+                { label: "Pearl", value: "pearl", priceAdder: 5 },
+                { label: "Clear Plastic", value: "plastic", priceAdder: 105 }
+              ]
+            }
+          ],
             },
             {
               label: "Sides",
@@ -4129,62 +3986,10 @@ Why Choose Our Expert-grade Rollup Banners?
           ratingCount: "580",
           ratingScore: "4.8",
           sizes: [
-            {
-              label: '4" x 6" Standard Postcard',
-              value: "4x6",
-              basePrice: 0.60,
-              quantityPrices: {
-                100: 60.00,
-                250: 100.00,
-                500: 140.00,
-                750: 165.00,
-                1000: 180.00,
-                1500: 240.00,
-                2000: 280.00,
-              },
-            },
-            {
-              label: '5" x 7" Medium Postcard',
-              value: "5x7",
-              basePrice: 0.80,
-              quantityPrices: {
-                100: 80.00,
-                250: 140.00,
-                500: 200.00,
-                750: 225.00,
-                1000: 260.00,
-                1500: 330.00,
-                2000: 360.00,
-              },
-            },
-            {
-              label: '6" x 9" Large Postcard',
-              value: "6x9",
-              basePrice: 1.10,
-              quantityPrices: {
-                100: 110.00,
-                250: 210.00,
-                500: 290.00,
-                750: 330.00,
-                1000: 380.00,
-                1500: 480.00,
-                2000: 560.00,
-              },
-            },
-            {
-              label: '6" x 11" Jumbo Postcard',
-              value: "6x11",
-              basePrice: 1.20,
-              quantityPrices: {
-                100: 120.00,
-                250: 220.00,
-                500: 310.00,
-                750: 360.00,
-                1000: 400.00,
-                1500: 480.00,
-                2000: 600.00,
-              },
-            },
+            { label: "4 x 6", value: "4x6", basePrice: 65 },
+            { label: "5 x 7", value: "5x7", basePrice: 75 },
+            { label: "6 x 9", value: "6x9", basePrice: 85 },
+            { label: "6 x 11", value: "6x11", basePrice: 95 }
           ],
           selects: [
             {
@@ -5273,7 +5078,7 @@ Why Choose Our Expert-grade Rollup Banners?
               options: [
                 { label: "4mm Coroplast", value: "4mm", priceAdder: 0 },
                 { label: "10mm Heavy Duty", value: "10mm", sizePriceAdders: { "24x32": 10, "24x36": 10, "32x48": 12, "36x48": 10 } },
-                { label: "Aluminum (ACM)", value: "acm", sizePriceAdders: { "24x32": 14.99, "24x36": 30, "32x48": 35, "36x48": 40 } }
+                { label: "Aluminum (ACM)", value: "acm", sizePriceAdders: { "24x32": 15, "24x36": 30, "32x48": 35, "36x48": 40 } }
               ]
             },
             {
@@ -5287,7 +5092,7 @@ Why Choose Our Expert-grade Rollup Banners?
               label: "Coating",
               options: [
                 { label: "No Coating", value: "none", priceAdder: 0 },
-                { label: "UV Gloss Coating", value: "uv", sizePriceAdders: { "24x32": 5.33, "24x36": 6.01, "32x48": 10.65, "36x48": 12 } }
+                { label: "UV Gloss Coating", value: "uv", sizePriceAdders: { "24x32": 5.33, "24x36": 6.00, "32x48": 10.67, "36x48": 12.00 } }
               ]
             }
           ],
@@ -5397,7 +5202,7 @@ Why Choose Our Expert-grade Rollup Banners?
           ratingScore: "4.9",
           ratingCount: "3,150",
           sizes: [
-            { label: '20" x 24"', value: "20x24", basePrice: 110 }
+            { label: '20" x 24"', value: "20x24", basePrice: 330 }
           ],
           selects: [
             {
@@ -5520,10 +5325,10 @@ Why Choose Our Expert-grade Rollup Banners?
           ratingScore: "4.9",
           ratingCount: "2,840",
           sizes: [
-            { label: '8" x 12"', value: "8x12", basePrice: 19.84, quantityPrices: { 1: 19.84, 10: 85.5, 20: 135.25 } },
-            { label: '12" x 18"', value: "12x18", basePrice: 35.84, quantityPrices: { 1: 35.84, 10: 105.5, 20: 250.25 } },
-            { label: '18" x 24"', value: "18x24", basePrice: 55.85, quantityPrices: { 1: 55.85, 10: 250.5, 20: 470.34 } },
-            { label: '24" x 32"', value: "24x32", basePrice: 60.84, quantityPrices: { 1: 60.84, 10: 410.49, 20: 850.35 } }
+            { label: '8" x 12"', value: "8x12", basePrice: 19.84 },
+            { label: '12" x 18"', value: "12x18", basePrice: 35.84 },
+            { label: '18" x 24"', value: "18x24", basePrice: 55.84 },
+            { label: '24" x 32"', value: "24x32", basePrice: 60.84 }
           ],
           selects: [
             {
@@ -5631,14 +5436,14 @@ Why Choose Our Expert-grade Rollup Banners?
           ratingCount: "1,640",
           sizes: [
             { label: '18" x 24"', value: "18x24", basePrice: 105 },
-            { label: '36" x 24"', value: "36x24", basePrice: 130 },
+            { label: '24" x 36"', value: "36x24", basePrice: 130 }
           ],
           selects: [
             {
               label: "Insert Material",
               options: [
                 { label: "Coroplast Regular", value: "coroplast", priceAdder: 0 },
-                { label: "ACM (Aluminum)", value: "acm", priceAdder: 25 }
+                { label: "ACM (Aluminium)", value: "acm", priceAdder: 25 }
               ]
             },
             {
@@ -5750,10 +5555,10 @@ Why Choose Our Expert-grade Rollup Banners?
           ratingScore: "4.8",
           ratingCount: "1,280",
           sizes: [
-            { label: '12" x 18"', value: "12x18", basePrice: 20.01 },
+            { label: '12" x 18"', value: "12x18", basePrice: 20 },
             { label: '18" x 24"', value: "18x24", basePrice: 38 },
             { label: '24" x 36"', value: "24x36", basePrice: 58 },
-            { label: '36" x 48"', value: "36x48", basePrice: 72 },
+            { label: '36" x 48"', value: "36x48", basePrice: 72 }
           ],
           selects: [
             {
@@ -6535,14 +6340,14 @@ Why Choose Our Expert-grade Rollup Banners?
           ratingCount: "2,310",
           sizes: [
             { label: '18" x 24"', value: "18x24", basePrice: 105 },
-            { label: '36" x 24"', value: "36x24", basePrice: 130 },
+            { label: '24" x 36"', value: "36x24", basePrice: 130 }
           ],
           selects: [
             {
               label: "Insert Material",
               options: [
                 { label: "Coroplast Regular", value: "coroplast", priceAdder: 0 },
-                { label: "ACM (Aluminum)", value: "acm", priceAdder: 25 }
+                { label: "ACM (Aluminium)", value: "acm", priceAdder: 25 }
               ]
             },
             {
