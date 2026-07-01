@@ -932,135 +932,17 @@ Advantages of our Roll-Up Systems:
           ratingCount: "820",
           ratingScore: "4.8",
           sizes: [
-            {
-              label: "9ft Feather Flag",
-              value: "9ft",
-              basePrice: 80.00,
-            },
-            {
-              label: "10ft Feather Flag",
-              value: "10ft",
-              basePrice: 100.00,
-            },
-            {
-              label: "13ft Feather Flag",
-              value: "13ft",
-              basePrice: 110.00,
-            },
-            {
-              label: "16ft Feather Flag",
-              value: "16ft",
-              basePrice: 130.00,
-            },
+            { label: "10 feet", value: "10ft", basePrice: 95 },
+            { label: "13 feet", value: "13ft", basePrice: 125 }
           ],
           selects: [
             {
-              label: "Pole Option",
+              label: "Options",
               options: [
-                {
-                  label: "No Pole (Flag Fabric Only)",
-                  value: "no_pole",
-                  priceAdder: 0,
-                  description: "Select if you already have a pole.",
-                },
-                {
-                  label: "Include Pole (+CAD 35.00)",
-                  value: "pole",
-                  priceAdder: 35.00,
-                  description: "Premium carbon-fiberglass pole.",
-                },
-              ],
-            },
-            {
-              label: "Base Option",
-              options: [
-                {
-                  label: "No Base",
-                  value: "no_base",
-                  priceAdder: 0,
-                },
-                {
-                  label: "Ground Stake (+CAD 40.00)",
-                  value: "stake",
-                  priceAdder: 40.00,
-                  description: "Classic stake for soil or grass.",
-                },
-                {
-                  label: "Cross Base (+CAD 55.00)",
-                  value: "cross",
-                  priceAdder: 55.00,
-                  description: "Standard folding cross base.",
-                },
-                {
-                  label: "CS-01 Metal Cross Base (+CAD 65.00)",
-                  value: "cs01",
-                  priceAdder: 65.00,
-                  description: "Heavy duty metal cross base.",
-                },
-                {
-                  label: "CS-02 Cross Base (+CAD 45.00)",
-                  value: "cs02",
-                  priceAdder: 45.00,
-                  description: "Standard economy cross base.",
-                },
-                {
-                  label: "GS-01 Ground Spike (+CAD 45.00)",
-                  value: "gs01",
-                  priceAdder: 45.00,
-                  description: "Heavy duty ground spike.",
-                },
-              ],
-            },
-            {
-              label: "Water Bag Option",
-              options: [
-                {
-                  label: "No Water Bag",
-                  value: "no_water_bag",
-                  priceAdder: 0,
-                },
-                {
-                  label: "Water Bag (+CAD 10.00)",
-                  value: "water_bag_10",
-                  priceAdder: 10.00,
-                  description: "Adds stability for cross bases.",
-                },
-                {
-                  label: "WF-08 Water Bag (+CAD 14.00)",
-                  value: "wf08",
-                  priceAdder: 14.00,
-                  description: "Premium donut water weight bag.",
-                },
-              ],
-            },
-            {
-              label: "Carry Bag Option",
-              options: [
-                {
-                  label: "No Carry Bag",
-                  value: "no_carry_bag",
-                  priceAdder: 0,
-                },
-                {
-                  label: "Flag Carry Bag (+CAD 45.00)",
-                  value: "carry_bag",
-                  priceAdder: 45.00,
-                  description: "Convenient travel bag for hardware.",
-                },
-              ],
-            },
-            {
-              label: "Flag Material & Build",
-              options: [
-                {
-                  label: "Premium Polyester Knit",
-                  value: "standard",
-                  priceAdder: 0,
-                  description:
-                    "Lightweight mesh fabric designed for wind flow.",
-                },
-              ],
-            },
+                { label: "Single-Sided printed", value: "single", priceAdder: 0 },
+                { label: "Double-Sided printed", value: "double", sizePriceAdders: { "10ft": 25, "13ft": 50 } }
+              ]
+            }
           ],
           toggleGroups: [
             {
@@ -1148,30 +1030,17 @@ Advantages of our Roll-Up Systems:
           ratingCount: "432",
           ratingScore: "4.7",
           sizes: [
-            {
-              label: "7ft Small Teardrop Flag",
-              value: "84x30",
-              basePrice: 49.68,
-            },
-            {
-              label: "9ft Medium Teardrop Flag",
-              value: "108x35",
-              basePrice: 74.99,
-            },
-            {
-              label: "11ft Large Teardrop Flag",
-              value: "132x40",
-              basePrice: 109.99,
-            },
+            { label: "10 feet", value: "10ft", basePrice: 95 },
+            { label: "13 feet", value: "13ft", basePrice: 125 }
           ],
           selects: [
             {
-              label: "Base Mount Option",
+              label: "Options",
               options: [
-                { label: "Ground Stake", value: "stake", priceAdder: 0 },
-                { label: "Cross Base", value: "cross", priceAdder: 15.0 },
-              ],
-            },
+                { label: "Single-Sided printed", value: "single", priceAdder: 0 },
+                { label: "Double-Sided printed", value: "double", sizePriceAdders: { "10ft": 25, "13ft": 50 } }
+              ]
+            }
           ],
           qtyDiscount: "Bulk discounts available",
           keyFeatures: [
@@ -1224,30 +1093,17 @@ Advantages of our Roll-Up Systems:
           ratingCount: "295",
           ratingScore: "4.7",
           sizes: [
-            {
-              label: "8ft Small Straight Flag",
-              value: "96x24",
-              basePrice: 54.37,
-            },
-            {
-              label: "10.5ft Medium Straight Flag",
-              value: "126x28",
-              basePrice: 79.99,
-            },
-            {
-              label: "14ft Large Straight Flag",
-              value: "168x30",
-              basePrice: 119.99,
-            },
+            { label: "10 feet", value: "10ft", basePrice: 95 },
+            { label: "13 feet", value: "13ft", basePrice: 125 }
           ],
           selects: [
             {
-              label: "Hardware Base",
+              label: "Options",
               options: [
-                { label: "Ground Spike", value: "spike", priceAdder: 0 },
-                { label: "Cross Base", value: "cross", priceAdder: 15.0 },
-              ],
-            },
+                { label: "Single-Sided printed", value: "single", priceAdder: 0 },
+                { label: "Double-Sided printed", value: "double", sizePriceAdders: { "10ft": 25, "13ft": 50 } }
+              ]
+            }
           ],
           qtyDiscount: "Volume discounts apply",
           keyFeatures: [
