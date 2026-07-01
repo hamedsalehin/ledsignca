@@ -959,7 +959,6 @@ Advantages of our Roll-Up Systems:
             }
           ],
             },
-            {
               label: "Base Option",
               options: [
                 {
@@ -1159,8 +1158,7 @@ Advantages of our Roll-Up Systems:
               ]
             }
           ],
-            },
-          ],
+            }
           qtyDiscount: "Bulk discounts available",
           keyFeatures: [
             "Stiff teardrop loop structure",
