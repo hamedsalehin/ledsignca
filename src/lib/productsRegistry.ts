@@ -151,8 +151,7 @@ export const PRODUCTS_REGISTRY: Record<string, RegistryCategory> = {
                 { label: "13 oz Standard Vinyl", value: "13oz", priceAdder: 0 },
                 { label: "15 oz Premium Vinyl", value: "15oz", sizePriceAdders: { "2x4": 5, "3x6": 8, "4x8": 10 } }
               ]
-            }
-          ],
+            },
             {
               label: "Finishing Option",
               options: [
