@@ -8,12 +8,11 @@ export const metadata: Metadata = {
   description: "Search results for custom signage and printing.",
 };
 
-export default function SearchPage({
-  searchParams,
-}: {
-  searchParams: { q: string };
+export default async function SearchPage(props: {
+  searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
 }) {
-  const query = searchParams.q || "";
+  const searchParams = await props.searchParams;
+  const query = (typeof searchParams.q === 'string' ? searchParams.q : '') || "";
   const lowercaseQuery = query.toLowerCase();
 
   // Find products matching the search query
