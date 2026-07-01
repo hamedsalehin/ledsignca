@@ -901,7 +901,7 @@ Advantages of our Roll-Up Systems:
       },
     ],
     products: [
-      {      {
+      {
         id: "feather-flags",
         name: "Feather Flags",
         description:
@@ -1118,7 +1118,7 @@ Advantages of our Roll-Up Systems:
           ctaHeading: "Ready to capture passing traffic?",
         },
       },
-
+      {
         id: "teardrop-flags",
         name: "Teardrop Flags",
         description:
