@@ -5847,14 +5847,16 @@ Why Choose Our Expert-grade Rollup Banners?
                 {
                   label: "6mm Heavy Duty",
                   value: "6mm",
-                  priceAdder: 1.75,
+                  priceAdder: 0,
+                  priceMultiplier: 1.2,
                   description:
                     "50% thicker — ideal for long-term and reusable signs.",
                 },
                 {
-                  label: "8mm Ultra Heavy Duty",
-                  value: "8mm",
-                  priceAdder: 4,
+                  label: "10mm Ultra Heavy Duty",
+                  value: "10mm",
+                  priceAdder: 0,
+                  priceMultiplier: 1.4,
                   description: "The thickest option for maximum rigidity.",
                 },
               ],
@@ -5866,7 +5868,8 @@ Why Choose Our Expert-grade Rollup Banners?
                 {
                   label: "Double Sided",
                   value: "double",
-                  priceAdder: 2.51,
+                  priceAdder: 0,
+                  priceMultiplier: 1.3,
                   description: "Both faces printed for maximum visibility.",
                 },
               ],
@@ -5879,9 +5882,9 @@ Why Choose Our Expert-grade Rollup Banners?
                   value: "white",
                   priceAdder: 0,
                 },
-                { label: "Yellow Background", value: "yellow", priceAdder: 0 },
-                { label: "Red Background", value: "red", priceAdder: 0 },
-                { label: "Blue Background", value: "blue", priceAdder: 0 },
+                { label: "Yellow Background", value: "yellow", priceAdder: 10 },
+                { label: "Red Background", value: "red", priceAdder: 15 },
+                { label: "Blue Background", value: "blue", priceAdder: 20 },
               ],
             },
           ],
@@ -5907,7 +5910,7 @@ Why Choose Our Expert-grade Rollup Banners?
                 {
                   id: "corner_grommets",
                   label: "Corner Grommets",
-                  priceAdder: 0.5,
+                  priceAdder: 1.5,
                 },
                 {
                   id: "perimeter_grommets",
