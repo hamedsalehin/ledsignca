@@ -5261,10 +5261,10 @@ Why Choose Our Expert-grade Rollup Banners?
           ratingScore: "4.9",
           ratingCount: "2,840",
           sizes: [
-            { label: '8" x 12"', value: "8x12", basePrice: 19.84, quantityPrices: { 1: 19.84, 10: 85.5, 20: 135.25 } },
-            { label: '12" x 18"', value: "12x18", basePrice: 35.84, quantityPrices: { 1: 35.84, 10: 105.5, 20: 250.25 } },
-            { label: '18" x 24"', value: "18x24", basePrice: 55.85, quantityPrices: { 1: 55.85, 10: 250.5, 20: 470.34 } },
-            { label: '24" x 32"', value: "24x32", basePrice: 60.84, quantityPrices: { 1: 60.84, 10: 410.49, 20: 850.35 } }
+            { label: '8" x 12"', value: "8x12", basePrice: 29.84, quantityPrices: { 1: 29.84 } },
+            { label: '12" x 18"', value: "12x18", basePrice: 45.84, quantityPrices: { 1: 45.84 } },
+            { label: '18" x 24"', value: "18x24", basePrice: 65.85, quantityPrices: { 1: 65.85 } },
+            { label: '24" x 32"', value: "24x32", basePrice: 80.84, quantityPrices: { 1: 80.84 } }
           ],
           selects: [
             {
@@ -5278,8 +5278,8 @@ Why Choose Our Expert-grade Rollup Banners?
             {
               label: "Corner Option",
               options: [
-                { id: "square", label: "Square Corners", priceAdder: 0 },
-                { id: "round", label: "Round Corners", priceAdder: 2 }
+                { id: "square", label: "Square Corners", priceAdder: 0, priceMultiplier: 1.2 },
+                { id: "round", label: "Round Corners", priceAdder: 0, priceMultiplier: 1.7 }
               ]
             }
           ],
@@ -5473,7 +5473,7 @@ Why Choose Our Expert-grade Rollup Banners?
         description:
           "Lightweight, expert-grade interior display signs for presentations and lobbies.",
         image: "/images/products/main-page/foam_board-toronto-printing-ca.jpeg",
-        price: "Starting at CAD 11.19",
+        price: "Starting at CAD 22.19",
         badge: "Interior Favorite",
         config: {
           title: "Foam Board Signs",
@@ -5501,7 +5501,7 @@ Why Choose Our Expert-grade Rollup Banners?
               label: "Printed Sides",
               options: [
                 { id: "single", label: "Single Sided", priceAdder: 0 },
-                { id: "double", label: "Double Sided", priceAdder: 0, priceMultiplier: 1.5 }
+                { id: "double", label: "Double Sided", priceAdder: 0, priceMultiplier: 1.6 }
               ]
             },
             {
@@ -5511,13 +5511,13 @@ Why Choose Our Expert-grade Rollup Banners?
                 {
                   id: "self_stick",
                   label: "Self-Adhesive Back",
-                  priceAdder: 2.51,
+                  priceAdder: 0, priceMultiplier: 1.3,
                   description: "Peel & stick to any flat surface.",
                 },
                 {
                   id: "easel",
                   label: "Easel Back",
-                  priceAdder: 1.99,
+                  priceAdder: 0, priceMultiplier: 1.8,
                   description: "Stands up on any flat surface.",
                 },
               ],
@@ -5531,7 +5531,7 @@ Why Choose Our Expert-grade Rollup Banners?
                 {
                   id: "custom_frame",
                   label: "Custom Color Border",
-                  priceAdder: 0.99,
+                  priceAdder: 0, priceMultiplier: 1.22
                 },
               ],
             },
