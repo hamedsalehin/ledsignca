@@ -1810,8 +1810,6 @@ Advantages of our Roll-Up Systems:
               ]
             }
           ],
-            },
-          ],
           qtyDiscount: "Event planner package discounts available",
           keyFeatures: [
             "Large seamless backdrops",
