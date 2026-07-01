@@ -17,7 +17,7 @@ export default function SearchPage({
   const lowercaseQuery = query.toLowerCase();
 
   // Find products matching the search query
-  let results = [];
+  const results = [];
 
   if (query) {
     for (const [categoryId, categoryData] of Object.entries(PRODUCTS_REGISTRY)) {
