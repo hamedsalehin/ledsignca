@@ -901,7 +901,300 @@ Advantages of our Roll-Up Systems:
       },
     ],
     products: [
-      {      {      {
+      {      {
+        id: "feather-flags",
+        name: "Feather Flags",
+        description:
+          "Dynamic wind-driven sail flags engineered to capture roadside attention.",
+        image: "/images/products/main-page/feather_flag-toronto-printing-ca.png",
+        price: "Starting at CAD 80.00",
+        badge: "Best Seller",
+        config: {
+          title: "Custom Feather Flags",
+          subtitle:
+            "Towering promotional flutter flags crafted from heavy-duty mesh fabric, ready for outdoor mounting.",
+          breadcrumb: "Flags",
+          breadcrumbHref: "/custom-flags",
+          promoText: "20% OFF ALL ADVERTISING FLAGS - SHIPS NEXT DAY",
+          image: "/images/products/main-page/feather_flag-toronto-printing-ca.png",
+          ratingCount: "820",
+          ratingScore: "4.8",
+          sizes: [
+            {
+              label: "9ft Feather Flag",
+              value: "9ft",
+              basePrice: 80.00,
+            },
+            {
+              label: "10ft Feather Flag",
+              value: "10ft",
+              basePrice: 100.00,
+            },
+            {
+              label: "13ft Feather Flag",
+              value: "13ft",
+              basePrice: 110.00,
+            },
+            {
+              label: "16ft Feather Flag",
+              value: "16ft",
+              basePrice: 130.00,
+            },
+          ],
+          selects: [
+            {
+              label: "Pole Option",
+              options: [
+                {
+                  label: "No Pole (Flag Fabric Only)",
+                  value: "no_pole",
+                  priceAdder: 0,
+                  description: "Select if you already have a pole.",
+                },
+                {
+                  label: "Include Pole (+CAD 35.00)",
+                  value: "pole",
+                  priceAdder: 35.00,
+                  description: "Premium carbon-fiberglass pole.",
+                },
+              ],
+            },
+            {
+              label: "Base Option",
+              options: [
+                {
+                  label: "No Base",
+                  value: "no_base",
+                  priceAdder: 0,
+                },
+                {
+                  label: "Ground Stake (+CAD 40.00)",
+                  value: "stake",
+                  priceAdder: 40.00,
+                  description: "Classic stake for soil or grass.",
+                },
+                {
+                  label: "Cross Base (+CAD 55.00)",
+                  value: "cross",
+                  priceAdder: 55.00,
+                  description: "Standard folding cross base.",
+                },
+                {
+                  label: "CS-01 Metal Cross Base (+CAD 65.00)",
+                  value: "cs01",
+                  priceAdder: 65.00,
+                  description: "Heavy duty metal cross base.",
+                },
+                {
+                  label: "CS-02 Cross Base (+CAD 45.00)",
+                  value: "cs02",
+                  priceAdder: 45.00,
+                  description: "Standard economy cross base.",
+                },
+                {
+                  label: "GS-01 Ground Spike (+CAD 45.00)",
+                  value: "gs01",
+                  priceAdder: 45.00,
+                  description: "Heavy duty ground spike.",
+                },
+              ],
+            },
+            {
+              label: "Water Bag Option",
+              options: [
+                {
+                  label: "No Water Bag",
+                  value: "no_water_bag",
+                  priceAdder: 0,
+                },
+                {
+                  label: "Water Bag (+CAD 10.00)",
+                  value: "water_bag_10",
+                  priceAdder: 10.00,
+                  description: "Adds stability for cross bases.",
+                },
+                {
+                  label: "WF-08 Water Bag (+CAD 14.00)",
+                  value: "wf08",
+                  priceAdder: 14.00,
+                  description: "Premium donut water weight bag.",
+                },
+              ],
+            },
+            {
+              label: "Carry Bag Option",
+              options: [
+                {
+                  label: "No Carry Bag",
+                  value: "no_carry_bag",
+                  priceAdder: 0,
+                },
+                {
+                  label: "Flag Carry Bag (+CAD 45.00)",
+                  value: "carry_bag",
+                  priceAdder: 45.00,
+                  description: "Convenient travel bag for hardware.",
+                },
+              ],
+            },
+            {
+              label: "Flag Material & Build",
+              options: [
+                {
+                  label: "Premium Polyester Knit",
+                  value: "standard",
+                  priceAdder: 0,
+                  description:
+                    "Lightweight mesh fabric designed for wind flow.",
+                },
+              ],
+            },
+          ],
+          toggleGroups: [
+            {
+              label: "Print Direction",
+              options: [
+                {
+                  id: "single",
+                  label: "Single-Sided (Show through)",
+                  priceAdder: 0,
+                  description: "Design printed on one side, mirrored on back.",
+                },
+                {
+                  id: "double",
+                  label: "Double-Sided (Three layers)",
+                  priceAdder: 150.00,
+                  sizePriceAdders: {
+                    "9ft": 150.00,
+                    "10ft": 150.00,
+                    "13ft": 160.00,
+                    "16ft": 160.00,
+                  },
+                  description:
+                    "Two separate prints with blocker liner in between.",
+                },
+              ],
+            },
+          ],
+          qtyDiscount: "Save up to 10% on bulk quantities",
+          keyFeatures: [
+            "Fluttering wind-resistant design",
+            "Dye-sublimation high-contrast printing",
+            "Flexible fiberglass poles",
+            "Carrying bag included",
+          ],
+          useCases: [
+            "Business storefronts",
+            "Grand openings",
+            "Car dealerships",
+            "Outdoor sporting events",
+          ],
+          specs: [
+            { key: "Material", value: "110g Knit Polyester" },
+            {
+              key: "Pole Material",
+              value: "Premium carbon-fiberglass telescoping poles",
+            },
+            { key: "DPI", value: "720 DPI High density print" },
+            { key: "Wind Rating", value: "Up to 30 MPH wind gusts" },
+          ],
+          faqs: [
+            {
+              q: "Do these flags rotate in the wind?",
+              a: "Yes, our flagpole hardware includes a rotating spindle that allows the flag to pivot 360 degrees to face the oncoming breeze.",
+            },
+            {
+              q: "How long do feather flags last outdoors?",
+              a: "With normal day-to-day weather, outdoor flag fabrics last about 6 to 12 months. We recommend taking them inside during severe storms.",
+            },
+          ],
+          reviews: [
+            {
+              author: "Marcus G.",
+              rating: 5,
+              text: "Excellent height and print resolution. Brought people in for our bakery open house immediately!",
+            },
+          ],
+          ctaHeading: "Ready to capture passing traffic?",
+        },
+      },
+
+        id: "teardrop-flags",
+        name: "Teardrop Flags",
+        description:
+          "Distinctive drop-shaped banners engineered to maintain full graphic tension without wind.",
+        image: "/images/products/main-page/teardrop_flag-toronto-printing-ca.png",
+        price: "Starting at CAD 49.68",
+        config: {
+          title: "Custom Teardrop Flags",
+          subtitle:
+            "Eye-catching curved sail flags that guarantee your branding remains visible and legible at all times.",
+          breadcrumb: "Flags",
+          breadcrumbHref: "/custom-flags",
+          promoText: "20% OFF ALL TEARDROP FLAGS",
+          image: "/images/products/main-page/teardrop_flag-toronto-printing-ca.png",
+          ratingCount: "432",
+          ratingScore: "4.7",
+          sizes: [
+            {
+              label: "7ft Small Teardrop Flag",
+              value: "84x30",
+              basePrice: 49.68,
+            },
+            {
+              label: "9ft Medium Teardrop Flag",
+              value: "108x35",
+              basePrice: 74.99,
+            },
+            {
+              label: "11ft Large Teardrop Flag",
+              value: "132x40",
+              basePrice: 109.99,
+            },
+          ],
+          selects: [
+            {
+              label: "Base Mount Option",
+              options: [
+                { label: "Ground Stake", value: "stake", priceAdder: 0 },
+                { label: "Cross Base", value: "cross", priceAdder: 15.0 },
+              ],
+            },
+          ],
+          qtyDiscount: "Bulk discounts available",
+          keyFeatures: [
+            "Stiff teardrop loop structure",
+            "Resists flapping noises",
+            "Great for indoor trade shows",
+            "Durable outdoor knit polyester",
+          ],
+          useCases: [
+            "Corporate events",
+            "Store entrances",
+            "Sports tournaments",
+            "Lobbies",
+          ],
+          specs: [
+            { key: "Material", value: "110g Knit Polyester" },
+            { key: "Pole Structure", value: "Flexible composite fiber poles" },
+          ],
+          faqs: [
+            {
+              q: "Why choose a teardrop flag?",
+              a: "Teardrop flags remain fully tensioned, meaning your branding doesn't wrinkle or fold away even when there is no wind.",
+            },
+          ],
+          reviews: [
+            {
+              author: "Samantha L.",
+              rating: 5,
+              text: "The print colors are very rich. Easy to assemble, and looks extremely professional.",
+            },
+          ],
+          ctaHeading: "Command attention with teardrop banners",
+        },
+      },
+      {
         id: "straight-flags",
         name: "Straight Flags",
         description:
