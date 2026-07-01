@@ -6234,7 +6234,7 @@ Why Choose Our Expert-grade Rollup Banners?
             {
               label: "Printed Sides",
               options: [
-                { id: "double", label: "Double Sided Only", priceAdder: 0 }
+                { id: "single", label: "Single Sided Only", priceAdder: 0 }
               ]
             }
           ],

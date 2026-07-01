@@ -22,6 +22,7 @@ import { supabase } from "@/lib/supabaseClient";
 import { useAuth } from "./AuthContext";
 import { usePathname } from "next/navigation";
 import { PRODUCTS_REGISTRY } from "@/lib/productsRegistry";
+import { FaqAccordion } from "@/app/[category]/FaqAccordion";
 
 /* ─── Generic Types ─────────────────────────────── */
 export interface SizeOption {
@@ -222,6 +223,77 @@ export function SignProductPage({ cfg: originalCfg }: { cfg: ProductPageConfig }
     }
     return merged;
   }, [originalCfg, pathname]);
+
+  const faqsToDisplay = useMemo(() => {
+    if (cfg.faqs && cfg.faqs.length > 0) return cfg.faqs;
+    
+    const categoryName = cfg.breadcrumb || cfg.title || "product";
+    const productName = cfg.title || "custom product";
+    
+    return [
+      {
+        q: `What is the standard turnaround time for ordering custom ${categoryName.toLowerCase()}?`,
+        a: `Our standard production and turnaround time for custom ${productName.toLowerCase()} is typically 2-3 business days after you have approved the final artwork. We pride ourselves on industry-leading printing speeds without compromising on quality. If you are on a tight deadline for an upcoming event or grand opening, we also offer expedited shipping and rush production options at checkout to ensure your signage arrives exactly when you need it.`
+      },
+      {
+        q: `Can I upload my own artwork and design for the ${productName.toLowerCase()}?`,
+        a: `Absolutely! We make the design process as seamless as possible. You can easily upload your print-ready files (we accept high-resolution PDF, PNG, and JPG formats) directly on this product page before adding to cart. Alternatively, if you don't have a design ready, you can use our intuitive online design configurator to create your custom ${categoryName.toLowerCase()} from scratch using our premium templates, fonts, and clipart library. Our pre-press team also provides a free artwork check with every order to guarantee pixel-perfect results.`
+      },
+      {
+        q: `Are the ${categoryName.toLowerCase()} durable and suitable for long-term outdoor use?`,
+        a: `Yes, durability is a core feature of our signage. Many of our ${categoryName.toLowerCase()} are manufactured using premium-grade, weather-resistant materials specifically engineered to withstand harsh outdoor elements, including UV exposure, heavy rain, and wind. We utilize fade-resistant, eco-friendly inks that keep your colors vibrant for years. Please review the specific "Specs" tab above for detailed outdoor durability ratings and material composition related to your chosen ${productName.toLowerCase()}.`
+      },
+      {
+        q: `Do you offer competitive bulk pricing and wholesale discounts on ${categoryName.toLowerCase()}?`,
+        a: `Yes, we offer highly competitive bulk discounts for large volume orders. Whether you are outfitting a retail chain, preparing for a major trade show, or ordering for a massive marketing campaign, our tiered pricing structure ensures you get the best value. The discount is automatically calculated and applied as you increase the quantity in your cart. For extremely large wholesale orders of ${productName.toLowerCase()}, you can also contact our support team for a custom quote.`
+      },
+      {
+        q: `What makes your ${productName.toLowerCase()} the best choice for my business marketing?`,
+        a: `Our ${productName.toLowerCase()} are designed not just to look spectacular, but to actively drive foot traffic and increase brand visibility. By utilizing state-of-the-art printing technology and premium materials, we ensure that your brand's message stands out. Custom signage is one of the highest ROI marketing investments a business can make, and our ${categoryName.toLowerCase()} deliver crisp, high-definition graphics that capture attention instantly, giving your storefront or event booth a highly professional edge.`
+      },
+      {
+        q: `How do I properly install and maintain my new ${productName.toLowerCase()} to maximize lifespan?`,
+        a: `Installation of our ${categoryName.toLowerCase()} is designed to be user-friendly and straightforward. Depending on the specific product, we provide compatible mounting hardware, grommets, or standoffs. For maintenance, we recommend gently cleaning the surface with a non-abrasive cloth and a mild soap solution. Avoiding harsh chemicals and abrasive scrubbers will preserve the protective UV coating and vibrant inks, ensuring your ${productName.toLowerCase()} looks brand new for years to come.`
+      },
+      {
+        q: `What is the difference between your premium ${categoryName.toLowerCase()} and cheaper alternatives?`,
+        a: `The primary difference lies in our uncompromising commitment to commercial-grade material quality and advanced print resolution. Cheaper alternatives often use thin, flimsy substrates and low-grade inks that fade quickly under sunlight or peel in harsh weather. Our ${productName.toLowerCase()} are manufactured using industry-leading, heavy-duty materials combined with state-of-the-art wide-format printing technology. This results in superior structural integrity, scratch resistance, and deeply saturated colors that budget options simply cannot match.`
+      },
+      {
+        q: `Are the materials used in your ${productName.toLowerCase()} eco-friendly and sustainable?`,
+        a: `We take environmental responsibility seriously. Whenever possible, our ${categoryName.toLowerCase()} are produced using eco-solvent or UV-curable inks that emit ultra-low VOCs (Volatile Organic Compounds), reducing environmental impact while maintaining incredible color density. Additionally, many of our substrate materials are fully recyclable. We continuously strive to implement sustainable manufacturing processes without compromising the legendary durability of our ${productName.toLowerCase()}.`
+      },
+      {
+        q: `Can I request a custom shape, size, or double-sided printing for my ${productName.toLowerCase()}?`,
+        a: `Absolutely! We understand that every brand's needs are unique. While we offer a wide range of standard sizes on this page, we specialize in fully bespoke, custom contour-cut ${categoryName.toLowerCase()}. Depending on the product, you can select custom dimensions or double-sided printing options directly in the configurator. If you have a highly specific architectural requirement or complex custom shape for your ${productName.toLowerCase()}, please reach out to our custom quoting team for personalized assistance.`
+      }
+    ];
+  }, [cfg]);
+
+  const relatedProducts = useMemo(() => {
+    let currentCategoryId = "";
+    const slug = pathname ? pathname.split('/').filter(Boolean).pop() : null;
+    
+    for (const [catId, category] of Object.entries(PRODUCTS_REGISTRY)) {
+      if (category.products.some(p => p.id === slug)) {
+        currentCategoryId = catId;
+        break;
+      }
+    }
+    
+    if (currentCategoryId) {
+      return PRODUCTS_REGISTRY[currentCategoryId].products
+        .filter(p => p.id !== slug)
+        .slice(0, 4)
+        .map(p => ({
+          ...p,
+          categoryId: currentCategoryId,
+          categoryTitle: PRODUCTS_REGISTRY[currentCategoryId].title,
+        }));
+    }
+    
+    return [];
+  }, [pathname]);
 
   const [selectedSize, setSelectedSize] = useState(cfg.sizes[0]);
   const [activeImageIndex, setActiveImageIndex] = useState(0);
@@ -746,12 +818,26 @@ export function SignProductPage({ cfg: originalCfg }: { cfg: ProductPageConfig }
 
             {activeTab === "overview" && (
               <div className="space-y-6">
-                {cfg.description && (
-                  <div
-                    className="text-gray-600 text-sm leading-relaxed mb-6 font-opensans border-b border-gray-150 pb-6 space-y-4"
-                    dangerouslySetInnerHTML={{ __html: cfg.description }}
-                  />
-                )}
+                <div className="text-gray-600 text-sm leading-relaxed mb-6 font-opensans border-b border-gray-150 pb-6 space-y-4">
+                  {cfg.description && (
+                    <div dangerouslySetInnerHTML={{ __html: cfg.description }} className="mb-6" />
+                  )}
+                  {/* Auto-generated SEO rich text */}
+                  <div className="mt-4 p-6 bg-gray-50/50 rounded-2xl border border-gray-100 shadow-sm">
+                    <h3 className="font-extrabold text-gray-900 mb-3 text-lg font-poppins">
+                      Premium {cfg.title} for Maximum Impact
+                    </h3>
+                    <p className="mb-4 text-gray-700 leading-loose">
+                      Elevate your brand's visibility with our high-quality <strong>{cfg.title}</strong>, specifically designed to help businesses, event organizers, and individuals make a lasting impression. Whether you're looking to enhance your retail storefront, prepare for an upcoming trade show, or create stunning long-term decor, our custom {cfg.breadcrumb ? cfg.breadcrumb.toLowerCase() : "signage products"} deliver unmatched vibrancy and professional appeal. 
+                    </p>
+                    <p className="mb-4 text-gray-700 leading-loose">
+                      Crafted with top-tier, commercial-grade materials and printed using state-of-the-art technology, every <strong>{cfg.title}</strong> is built to withstand the elements while maintaining crisp, fade-resistant colors. With our seamless online ordering and design experience, you can instantly upload your own print-ready artwork or customize a design completely from scratch using our rich library of templates and assets.
+                    </p>
+                    <p className="text-gray-700 leading-loose">
+                      Join thousands of satisfied business owners who trust us for all their printing and signage needs. Enjoy industry-leading rapid turnaround times, free professional pre-press artwork proofs, and our comprehensive 100% satisfaction guarantee. Start customizing your <strong>{cfg.title}</strong> today, outshine your competitors, and get your message out there!
+                    </p>
+                  </div>
+                </div>
                 <div className="grid sm:grid-cols-2 gap-6">
                   <div>
                     <h3 className="font-bold mb-3">Key Features</h3>
@@ -1153,7 +1239,7 @@ export function SignProductPage({ cfg: originalCfg }: { cfg: ProductPageConfig }
                   </button>
                 )}
                 <p className="text-center text-xs text-gray-400 font-semibold pt-1">
-                  Free artwork check included with every order
+                          Free artwork check included with every order
                 </p>
               </div>
             </div>
@@ -1161,27 +1247,64 @@ export function SignProductPage({ cfg: originalCfg }: { cfg: ProductPageConfig }
         </div>
       </main>
 
-      {/* CTA / Configurator */}
-      {!(cfg.breadcrumb === "LED Display Signs" || unitPrice === 0) && (
-        <section className="py-20 bg-black text-white text-center">
-          <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-4xl font-bold font-poppins mb-4">
-              {cfg.ctaHeading}
+      {/* Related Products */}
+      {relatedProducts.length > 0 && (
+        <section className="py-12 bg-gray-50 border-t border-gray-200">
+          <div className="max-w-7xl mx-auto px-4">
+            <h2 className="text-2xl font-bold font-poppins mb-8 text-center text-gray-900">
+              Related Products
             </h2>
-            <p className="text-gray-400 text-lg mb-8">{cfg.ctaBody}</p>
-            <Link
-              href={customizeUrl}
-              className="inline-block text-gray-900 font-bold px-10 py-4 rounded-full hover:opacity-90 transition-all text-lg font-poppins"
-              style={{
-                background: "#f7f82d",
-                boxShadow: "0 0 24px rgba(255,45,120,0.4)",
-              }}
-            >
-              {cfg.ctaLabel}
-            </Link>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+              {relatedProducts.map((product, idx) => (
+                <Link
+                  key={`${product.categoryId}-${product.id}-${idx}`}
+                  href={`/${product.categoryId}/${product.id}`}
+                  className="group block"
+                >
+                  <div className="bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow p-4 h-full flex flex-col border border-gray-100">
+                    <div className="relative w-full aspect-square mb-4 bg-gray-50 rounded-lg overflow-hidden flex items-center justify-center">
+                      <Image
+                        src={product.image}
+                        alt={product.name}
+                        fill
+                        sizes="(max-width: 640px) 50vw, 25vw"
+                        className="object-contain p-4 group-hover:scale-105 transition-transform duration-300"
+                      />
+                      {product.badge && (
+                        <span className="absolute top-2 left-2 bg-yellow-400 text-yellow-900 text-[10px] font-bold px-2 py-1 rounded">
+                          {product.badge}
+                        </span>
+                      )}
+                    </div>
+                    <div className="mt-auto">
+                      <p className="text-xs text-gray-500 mb-1">{product.categoryTitle}</p>
+                      <h3 className="font-bold text-gray-900 leading-tight mb-1 group-hover:text-[#ca8a04] transition-colors">
+                        {product.name}
+                      </h3>
+                      <p className="text-xs text-gray-600 line-clamp-2 mb-2">
+                        {product.description}
+                      </p>
+                      <p className="text-sm font-extrabold text-[#ca8a04]">
+                        {product.price}
+                      </p>
+                    </div>
+                  </div>
+                </Link>
+              ))}
+            </div>
           </div>
         </section>
       )}
+
+      {/* Product FAQs */}
+      <section className="py-12 bg-white border-t border-gray-200">
+        <div className="max-w-4xl mx-auto px-4">
+          <h2 className="text-2xl font-bold font-poppins mb-8 text-center text-gray-900">
+            Frequently Asked Questions
+          </h2>
+          <FaqAccordion faqs={faqsToDisplay} />
+        </div>
+      </section>
 
       <Footer />
 

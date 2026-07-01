@@ -23,6 +23,7 @@ import {
 } from "lucide-react";
 import { useAuth } from "./AuthContext";
 import { useCart } from "./CartContext";
+import { useRouter } from "next/navigation";
 
 const navItems = [
   { name: "Home", href: "/" },
@@ -47,6 +48,15 @@ export function Header() {
   const { user, signOut, setShowAuthModal } = useAuth();
   const { items, setCartOpen } = useCart();
   const [userDropdownOpen, setUserDropdownOpen] = useState(false);
+  const router = useRouter();
+
+  const handleSearch = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (searchQuery.trim()) {
+      router.push(`/search?q=${encodeURIComponent(searchQuery.trim())}`);
+      setMobileMenuOpen(false);
+    }
+  };
 
   return (
     <header className="w-full">
@@ -130,7 +140,7 @@ export function Header() {
 
             {/* Search bar */}
             <div className="hidden md:flex flex-1 max-w-xl">
-              <div className="relative w-full">
+              <form onSubmit={handleSearch} className="relative w-full">
                 <input
                   type="text"
                   placeholder="Search products..."
@@ -139,13 +149,13 @@ export function Header() {
                   className="w-full px-4 py-2.5 border-2 border-gray-200 rounded-full focus:outline-none focus:border-[#ca8a04] transition-colors duration-200"
                 />
                 <button
-                  type="button"
+                  type="submit"
                   aria-label="Search"
                   className="absolute right-0 top-0 h-full px-5 rounded-r-full text-white font-semibold text-sm brand-gradient hover:opacity-90 transition-opacity"
                 >
                   <Search className="w-5 h-5" />
                 </button>
-              </div>
+              </form>
             </div>
 
             {/* Right side actions */}
@@ -254,20 +264,22 @@ export function Header() {
 
           {/* Mobile search */}
           <div className="md:hidden mt-2">
-            <div className="relative">
+            <form onSubmit={handleSearch} className="relative">
               <input
                 type="text"
                 placeholder="Search products..."
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
                 className="w-full px-3.5 py-1.5 border border-gray-200 rounded-full text-xs focus:outline-none focus:border-[#ca8a04] transition-colors"
               />
               <button
-                type="button"
+                type="submit"
                 className="absolute right-3 top-1/2 -translate-y-1/2 text-[#ca8a04]"
                 aria-label="Search"
               >
                 <Search className="w-4 h-4" />
               </button>
-            </div>
+            </form>
           </div>
         </div>
 
