@@ -153,7 +153,6 @@ export const PRODUCTS_REGISTRY: Record<string, RegistryCategory> = {
               ]
             }
           ],
-            },
             {
               label: "Finishing Option",
               options: [
