@@ -1,7 +1,13 @@
-import React from "react";
-import Link from "next/link";
-import { Header } from "@/components/Header";
-import { Footer } from "@/components/Footer";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Custom Neon Sign Creator | Design LED Neon Online | Nano Signs",
+  description:
+    "Design your custom LED neon sign online with custom text, fonts, colors, and sizes. Instant price quote and fast delivery in Toronto & GTA.",
+  alternates: {
+    canonical: "https://led-sign.ca/neon-signs/neon-creator",
+  },
+};
 
 export default function NeonCreatorPage() {
   return (
