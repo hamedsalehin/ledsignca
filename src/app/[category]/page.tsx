@@ -49,8 +49,31 @@ export default async function CategoryPage({ params }: PageProps) {
 
   const firstTwoProducts = categoryData.products.slice(0, 2);
 
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://led-sign.ca"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": categoryData.title,
+        "item": `https://led-sign.ca/${decodedCategory}`
+      }
+    ]
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
       {decodedCategory === "neon-signs" && (
         <>
           <Script strategy="lazyOnload" src="https://www.googletagmanager.com/gtag/js?id=G-C0T0585G3W" />

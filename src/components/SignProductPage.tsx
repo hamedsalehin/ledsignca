@@ -221,6 +221,30 @@ export function SignProductPage({ cfg: originalCfg }: { cfg: ProductPageConfig }
         }
       }
     }
+    const updatedSelects = [...(merged.selects || [])];
+    const hasTurnaround = updatedSelects.some(
+      (s) => s.label.toLowerCase().includes("turnaround")
+    );
+    if (!hasTurnaround) {
+      updatedSelects.push({
+        label: "Turnaround",
+        options: [
+          {
+            label: "Standard 4-5 business days",
+            value: "standard",
+            priceAdder: 0,
+            priceMultiplier: 1.0,
+          },
+          {
+            label: "Rush services 1-2 days",
+            value: "rush",
+            priceAdder: 0,
+            priceMultiplier: 1.5,
+          },
+        ],
+      });
+    }
+    merged.selects = updatedSelects;
     return merged;
   }, [originalCfg, pathname]);
 
@@ -457,14 +481,14 @@ export function SignProductPage({ cfg: originalCfg }: { cfg: ProductPageConfig }
     let multiplier = 1;
 
     Object.values(selectValues).forEach((v) => {
-      const adder = (v as any).sizePriceAdders?.[selectedSize.value] ?? v.priceAdder;
+      const adder = (v as any).sizePriceAdders?.[selectedSize.value] ?? v.priceAdder ?? 0;
       price += adder;
       if (v.priceMultiplier !== undefined) {
         multiplier *= v.priceMultiplier;
       }
     });
     Object.values(toggleValues).forEach((v) => {
-      const adder = (v as any).sizePriceAdders?.[selectedSize.value] ?? v.priceAdder;
+      const adder = (v as any).sizePriceAdders?.[selectedSize.value] ?? v.priceAdder ?? 0;
       price += adder;
       if (v.priceMultiplier !== undefined) {
         multiplier *= v.priceMultiplier;
@@ -709,7 +733,7 @@ export function SignProductPage({ cfg: originalCfg }: { cfg: ProductPageConfig }
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px"
                 quality={90}
                 unoptimized={currentImage.startsWith("/api/")}
-                className="object-cover"
+                className="object-contain p-2 bg-white"
                 priority
               />
             </div>
@@ -923,7 +947,7 @@ export function SignProductPage({ cfg: originalCfg }: { cfg: ProductPageConfig }
           <div className="w-full lg:w-[420px] shrink-0 font-opensans">
             <div className="bg-white rounded-2xl border border-gray-200 shadow-md p-6 sticky top-6">
               {/* Price */}
-              {cfg.breadcrumb !== "LED Display Signs" && unitPrice > 0 && (
+              {unitPrice > 0 && (
                 <div className="pb-5 border-b mb-5">
                   <div className="flex items-end gap-2.5 mb-1.5">
                     <span className="text-4xl font-extrabold text-gray-900 font-poppins">
@@ -1005,7 +1029,7 @@ export function SignProductPage({ cfg: originalCfg }: { cfg: ProductPageConfig }
                         {sel.options.map((o) => (
                           <option key={o.value} value={o.value}>
                             {o.label}
-                            {(o.priceAdder || 0) > 0
+                            {(o.priceAdder || 0) > 0 && sel.label.toLowerCase() !== "model"
                               ? ` (+CAD ${(o.priceAdder || 0).toFixed(2)})`
                               : ""}
                           </option>

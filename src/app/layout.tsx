@@ -45,9 +45,10 @@ export const metadata: Metadata = {
     apple: "/images/nano logo O-toronto-printing-ca.png",
   },
   openGraph: {
-    title: "Nano Signs",
-    description: "Premium custom signage and print in Toronto",
+    title: "Nano Signs Toronto | Custom Signs, LED Signs & Banners",
+    description: "Premium custom signage, Neon LED signs, retractable banners, and commercial print in the Greater Toronto Area.",
     siteName: "Nano Signs",
+    url: "https://led-sign.ca",
     images: [
       {
         url: "/images/nano logo O-toronto-printing-ca.png",
@@ -58,6 +59,12 @@ export const metadata: Metadata = {
     ],
     locale: "en_CA",
     type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Nano Signs Toronto | Custom Signs, LED Signs & Banners",
+    description: "Premium custom signage, Neon LED signs, retractable banners, and commercial print in the Greater Toronto Area.",
+    images: ["/images/nano logo O-toronto-printing-ca.png"],
   },
 };
 

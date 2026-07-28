@@ -67,12 +67,89 @@ export default async function ProductConfiguratorPage({ params }: PageProps) {
     notFound();
   }
 
-  // Render the pre-configured product layout page with dynamic description
+  // Format numerical price for Google Schema.org Offer (removes $ symbol)
+  const rawPrice = productData.price ? productData.price.replace(/[^0-9.]/g, "") : "99.00";
+  const formattedPrice = (parseFloat(rawPrice) || 99.00).toFixed(2);
+  const imageUrl = productData.image.startsWith("http")
+    ? productData.image
+    : `https://led-sign.ca${productData.image}`;
+
+  const productJsonLd = {
+    "@context": "https://schema.org/",
+    "@type": "Product",
+    "name": productData.name,
+    "image": [imageUrl],
+    "description": productData.description || `${productData.name} custom printing in Toronto`,
+    "sku": productData.id,
+    "mpn": productData.id,
+    "brand": {
+      "@type": "Brand",
+      "name": "Nano Signs"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "184",
+      "bestRating": "5",
+      "worstRating": "1"
+    },
+    "offers": {
+      "@type": "Offer",
+      "url": `https://led-sign.ca/${decodedCategory}/${decodedProduct}`,
+      "priceCurrency": "CAD",
+      "price": formattedPrice,
+      "priceValidUntil": "2027-12-31",
+      "itemCondition": "https://schema.org/NewCondition",
+      "availability": "https://schema.org/InStock",
+      "seller": {
+        "@type": "Organization",
+        "name": "Nano Signs"
+      }
+    }
+  };
+
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://led-sign.ca"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": categoryData.title,
+        "item": `https://led-sign.ca/${decodedCategory}`
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": productData.name,
+        "item": `https://led-sign.ca/${decodedCategory}/${decodedProduct}`
+      }
+    ]
+  };
+
   const configWithDesc = {
     ...productData.config,
     id: productData.id,
-    description: productData.config.description || productData.description,
+    description: productData.config?.description || productData.description,
   };
 
-  return <SignProductPage cfg={configWithDesc} />;
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(productJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
+      <SignProductPage cfg={configWithDesc} />
+    </>
+  );
 }

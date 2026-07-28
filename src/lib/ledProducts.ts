@@ -1,5 +1,134 @@
 export const ledProducts = [
   {
+    "id": "programmable-led-sign",
+    "name": "Programmable LED Signs",
+    "description": "Custom programmable LED signs in Toronto & GTA. Ultra-clear outdoor & indoor electronic message centers for retail storefronts, restaurants, and business advertising. Surpasses static signs with dynamic scrolling text & vivid motion graphics.",
+    "image": "/images/products/main-page/programmable_led_sign-toronto-printing-ca.jpeg",
+    "price": "Starting at $90/sqft",
+    "badge": "Popular",
+    "config": {
+      "id": "programmable-led-sign",
+      "title": "Programmable LED Signs",
+      "subtitle": "Ultra-bright programmable & scrolling LED signs for retail facades. Offered in various pixel pitches (P3, P5, P10) for indoor or outdoor use in Toronto & GTA.",
+      "breadcrumb": "Programmable LED Signs",
+      "breadcrumbHref": "/led-display-signs",
+      "promoText": "NANO SIGNS EXCLUSIVE: CUSTOM LED SIGNS - PREMIUM QUALITY",
+      "image": "/images/products/main-page/programmable_led_sign-toronto-printing-ca.jpeg",
+      "images": [
+        "/images/products/main-page/programmable_led_sign-toronto-printing-ca.jpeg"
+      ],
+      "ratingCount": "42",
+      "ratingScore": "4.8",
+      "sizes": [
+        {
+          "label": "Custom LED Dimension",
+          "value": "custom",
+          "basePrice": 0
+        }
+      ],
+      "selects": [
+        {
+          "label": "Width",
+          "options": [
+            { "label": "28.35\" (72 cm)", "value": "w_72cm", "priceMultiplier": 2.3625, "priceAdder": 0 },
+            { "label": "40.94\" (104 cm)", "value": "w_104cm", "priceMultiplier": 3.4116, "priceAdder": 0 },
+            { "label": "53.54\" (136 cm)", "value": "w_136cm", "priceMultiplier": 4.4616, "priceAdder": 0 },
+            { "label": "66.14\" (168 cm)", "value": "w_168cm", "priceMultiplier": 5.5116, "priceAdder": 0 },
+            { "label": "78.74\" (200 cm)", "value": "w_200cm", "priceMultiplier": 6.5616, "priceAdder": 0 },
+            { "label": "91.34\" (232 cm)", "value": "w_232cm", "priceMultiplier": 7.6116, "priceAdder": 0 },
+            { "label": "103.94\" (264 cm)", "value": "w_264cm", "priceMultiplier": 8.6616, "priceAdder": 0 },
+            { "label": "116.54\" (296 cm)", "value": "w_296cm", "priceMultiplier": 9.7116, "priceAdder": 0 }
+          ]
+        },
+        {
+          "label": "Height",
+          "options": [
+            { "label": "15.75\" (40 cm)", "value": "h_40cm", "priceMultiplier": 1.3125, "priceAdder": 0 },
+            { "label": "22.05\" (56 cm)", "value": "h_56cm", "priceMultiplier": 1.8375, "priceAdder": 0 },
+            { "label": "28.35\" (72 cm)", "value": "h_72cm", "priceMultiplier": 2.3625, "priceAdder": 0 },
+            { "label": "34.65\" (88 cm)", "value": "h_88cm", "priceMultiplier": 2.8875, "priceAdder": 0 },
+            { "label": "40.94\" (104 cm)", "value": "h_104cm", "priceMultiplier": 3.4116, "priceAdder": 0 },
+            { "label": "47.24\" (120 cm)", "value": "h_120cm", "priceMultiplier": 3.9366, "priceAdder": 0 },
+            { "label": "53.54\" (136 cm)", "value": "h_136cm", "priceMultiplier": 4.4616, "priceAdder": 0 },
+            { "label": "59.84\" (152 cm)", "value": "h_152cm", "priceMultiplier": 4.9866, "priceAdder": 0 }
+          ]
+        },
+        {
+          "label": "Model",
+          "options": [
+            { "label": "P10 (Low resolution for far view)", "value": "p10", "priceAdder": 90, "priceMultiplier": 1 },
+            { "label": "P5 (Medium resolution for medium view)", "value": "p5", "priceAdder": 145, "priceMultiplier": 1 },
+            { "label": "P3 (High resolution for close view)", "value": "p3", "priceAdder": 220, "priceMultiplier": 1 }
+          ]
+        },
+        {
+          "label": "Waterproof",
+          "options": [
+            { "label": "No", "value": "no", "priceMultiplier": 1 },
+            { "label": "Yes", "value": "yes", "priceAdder": 20, "priceMultiplier": 1 }
+          ]
+        }
+      ],
+      "keyFeatures": [
+        "WiFi & USB Wireless Scrolling Text Control",
+        "Ultra-Bright 6,500+ Nits Daylight Readable LEDs",
+        "IP65 All-Weather Waterproof Aluminum Housing",
+        "Full Color & RGB Motion Animation Capabilities",
+        "High Resolution P3, P5 & P10 Pixel Pitches"
+      ],
+      "useCases": [
+        "Retail Storefront Promotions & Sale Signs",
+        "Restaurant Daily Specials & Hours Display",
+        "Gas Station & Convenience Store Message Centers",
+        "Medical Office & Pharmacy Window Displays",
+        "Church, School & Community Announcement Boards"
+      ],
+      "specs": [
+        { "key": "Brightness", "value": "5,000 - 8,000 Nits (Sunlight Readable)" },
+        { "key": "Pixel Pitch", "value": "Available in P3, P5, P8, P10" },
+        { "key": "IP Rating", "value": "IP65 Waterproof (Outdoor Sealed)" },
+        { "key": "Lifespan", "value": "100,000+ Hours (10+ Years)" },
+        { "key": "Warranty", "value": "3-Year Limited Warranty" }
+      ],
+      "faqs": [
+        {
+          "q": "How do I program text and messages on my scrolling LED sign?",
+          "a": "You can easily update scrolling text, graphics, special offers, and animations via our free mobile app (iOS & Android) over WiFi, or using a USB drive connected to your computer. Updates take seconds!"
+        },
+        {
+          "q": "Are these programmable LED signs waterproof for Canadian winter & outdoor use?",
+          "a": "Yes! Our outdoor models feature heavy-duty IP65 sealed weatherproof aluminum cabinets, silicone sealed LED modules, and UV-resistant masks built to withstand Canadian freezing temperatures (-40°C), rain, and snow."
+        },
+        {
+          "q": "What pixel pitch (P3, P5, P10) should I choose for my Toronto business?",
+          "a": "Choose P3 for high-resolution close-up viewing (under 10 feet), P5 for medium viewing distances (10 to 30 feet, ideal for window displays), and P10 for long-distance roadside viewing (30+ feet)."
+        },
+        {
+          "q": "Can I display moving logos, animations, and time/date on this LED display?",
+          "a": "Yes! Our full-color RGB programmable LED displays support multi-line scrolling text, custom logos, moving animations, countdown timers, temperature, and date/time displays."
+        },
+        {
+          "q": "Where is Nano Signs located for local pickup and service in the Toronto area?",
+          "a": "Nano Signs is located at 2190 Warden Ave, Scarborough, ON M1T V6. We offer local pickup, GTA delivery, and dedicated customer support. Call +1 416-838-8994."
+        }
+      ],
+      "reviews": [
+        {
+          "author": "Michael T., Store Manager",
+          "rating": 5,
+          "text": "The brightness on this display is incredible. It easily cuts through direct sunlight and our foot traffic has noticeably increased."
+        },
+        {
+          "author": "Sarah J., Event Coordinator",
+          "rating": 5,
+          "text": "Nano Signs delivered exactly what we needed. The setup was straightforward and the image quality is flawless."
+        }
+      ],
+      "ctaHeading": "Ready to program your message?",
+      "ctaLabel": "Add to Cart"
+    }
+  },
+  {
     "id": "outdoor-fixed-led-display",
     "name": "Outdoor Fixed LED Display",
     "description": "High-performance outdoor LED billboard for permanent installations — building facades, rooftops, and large-scale advertising with 8000 nits brightness and IP65 protection.",
