@@ -337,6 +337,11 @@ const nextConfig = {
       { source: "/trade-show/retractable-banners", destination: "/custom-banners/retractable-banners", permanent: true },
       { source: "/trade-show/custom-postcards", destination: "/marketing-materials/custom-postcards", permanent: true },
       { source: "/product-tag/:path*", destination: "/", permanent: true },
+      { source: "/product/:path*", destination: "/custom-signs", permanent: true },
+      { source: "/author/:path*", destination: "/", permanent: true },
+      { source: "/embed/:path*", destination: "/", permanent: true },
+      { source: "/quote", destination: "/get-a-quote", permanent: true },
+      { source: "/quote/", destination: "/get-a-quote", permanent: true },
       { source: "/assets/mp4/:path*", destination: "/", permanent: true },
     ];
   },
