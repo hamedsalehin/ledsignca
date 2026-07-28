@@ -334,7 +334,8 @@ const nextConfig = {
       { source: "/product-tag/pylon-sign-construction", destination: "/custom-signs", permanent: true },
       { source: "/product-tag/pylon-sign-construction/", destination: "/custom-signs", permanent: true },
       { source: "/product-tag/multicolor-messages-images", destination: "/led-display-signs", permanent: true },
-      { source: "/product-tag/multicolor-messages-images/", destination: "/led-display-signs", permanent: true },
+      { source: "/trade-show/retractable-banners", destination: "/custom-banners/retractable-banners", permanent: true },
+      { source: "/trade-show/custom-postcards", destination: "/marketing-materials/custom-postcards", permanent: true },
       { source: "/product-tag/:path*", destination: "/", permanent: true },
       { source: "/assets/mp4/:path*", destination: "/", permanent: true },
     ];

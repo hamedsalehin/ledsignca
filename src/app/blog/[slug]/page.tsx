@@ -21,6 +21,9 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     return {
       title: `${postData.title} | Nano Signs Blog`,
       description: postData.description,
+      alternates: {
+        canonical: `https://led-sign.ca/blog/${slug}`,
+      },
     };
   } catch (e) {
     return {
