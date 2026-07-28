@@ -11,6 +11,7 @@ export default function robots(): MetadataRoute.Robots {
           "/checkout",
           "/account",
           "/login",
+          "/PrintDesignExperience/",
           "/wp-admin/",
           "/wp-content/",
           "/wp-includes/",
