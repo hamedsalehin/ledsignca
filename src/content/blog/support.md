@@ -3,7 +3,7 @@ title: "Support"
 date: "2023-04-17"
 description: "Support from our archive."
 image: ""
-type: "page"
+type: "post"
 ---
 
 

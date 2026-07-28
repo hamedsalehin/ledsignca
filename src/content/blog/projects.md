@@ -278,6 +278,6 @@ Mesh Banner For spot exchange
 
 Mesh Banner Printing
 
-© 2022 RGB Sign & Print. All Rights Reserved.
+© 2022 Nano Signs. All Rights Reserved.
 
 [](#top)

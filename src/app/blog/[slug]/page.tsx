@@ -21,6 +21,11 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     return {
       title: `${postData.title} | Nano Signs Blog`,
       description: postData.description,
+      openGraph: {
+        title: `${postData.title} | Nano Signs Blog`,
+        description: postData.description,
+        url: `https://led-sign.ca/blog/${slug}`,
+      },
       alternates: {
         canonical: `https://led-sign.ca/blog/${slug}`,
       },

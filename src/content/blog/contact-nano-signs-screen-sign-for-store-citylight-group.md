@@ -6,13 +6,13 @@ image: ""
 type: "page"
 ---
 
-*   +1 416-498-5555
+*   +1 4168388994
 
 ### Get in Touch
 
 We want to hear from you! Questions? Concerns? Don’t be shy…
 
-contact with [RGB sign(Citylight Group) :](https://led-sign.ca/)
+contact with [Nano Signs(Citylight Group) :](https://led-sign.ca/)
 
 ###### Address
 
@@ -25,7 +25,7 @@ Citylightgroup@yahoo.com
 ###### Call Us
 
   
-Cell:+1 416-498-5555
+Cell:+1 4168388994
 
 ###### [FREE QUOTE](https://led-sign.ca/quote-rental-industrial-led-displays/)
 

@@ -8,6 +8,6 @@ type: "page"
 
 ## SERVING OUR CLIENTS FOR OVER 12 YEARS
 
-# REQUEST A FREE QUOTE RGB Sign & print
+# REQUEST A FREE QUOTE Nano Signs
 
 \[wpforms id="4000"\]
