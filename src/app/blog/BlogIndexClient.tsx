@@ -58,15 +58,25 @@ export function BlogIndexClient({ posts }: { posts: BlogPostItem[] }) {
                     key={slug}
                     className="group flex flex-col bg-white rounded-2xl shadow-sm border border-pink-100/50 hover:shadow-xl hover:border-pink-200 transition-all duration-300 overflow-hidden"
                   >
-                    <div className="relative w-full h-48 bg-slate-100 overflow-hidden">
+                    <div className="relative w-full h-56 bg-slate-900 overflow-hidden flex items-center justify-center p-2">
+                      {image && (
+                        <Image
+                          src={image}
+                          alt=""
+                          fill
+                          unoptimized
+                          className="object-cover opacity-20 blur-md scale-110"
+                        />
+                      )}
                       <Image
                         src={image && image.trim() !== "" ? image : "/uploads/2023/08/neon-led2-300x146.jpg"}
                         alt={title}
                         fill
                         unoptimized
-                        className="object-cover group-hover:scale-105 transition-transform duration-500"
+                        className="object-contain relative z-10 p-2 group-hover:scale-105 transition-transform duration-500"
                       />
                     </div>
+
                     <div className="p-6 flex flex-col flex-1">
                       <div className="flex items-center gap-2 text-xs font-semibold text-pink-500 mb-3 uppercase tracking-wider">
                         <Calendar className="w-3.5 h-3.5" />

@@ -57,11 +57,12 @@ export async function getPostData(slug: string): Promise<BlogPost> {
   // Use gray-matter to parse the post metadata section
   const matterResult = matter(fileContents);
 
-  // Use remark to convert markdown into HTML string
+  // Use remark to convert markdown into HTML string (allowing raw HTML tags)
   const processedContent = await remark()
-    .use(html)
+    .use(html, { sanitize: false })
     .process(matterResult.content);
   const contentHtml = processedContent.toString();
+
 
   // Combine the data with the slug and contentHtml
   return {

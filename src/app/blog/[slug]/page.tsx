@@ -100,16 +100,27 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
         
         <article className="bg-white rounded-3xl shadow-sm border border-pink-100 overflow-hidden">
           {postData.image && (
-            <div className="relative w-full h-64 md:h-96 bg-slate-100">
+            <div className="relative w-full h-72 md:h-[450px] bg-slate-950 overflow-hidden flex items-center justify-center">
+              <Image
+                src={postData.image}
+                alt=""
+                fill
+                priority
+                unoptimized
+                className="object-cover opacity-25 blur-xl scale-110"
+              />
               <Image
                 src={postData.image}
                 alt={postData.title}
                 fill
                 priority
-                className="object-cover"
+                unoptimized
+                className="object-contain relative z-10 p-4 max-h-full"
               />
             </div>
           )}
+
+
           
           <div className="p-6 md:p-12">
             <header className="mb-10 text-center">
