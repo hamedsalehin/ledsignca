@@ -105,11 +105,21 @@ export default function RootLayout({
               "address": {
                 "@type": "PostalAddress",
                 "streetAddress": "2190 Warden Ave",
-                "addressLocality": "Scarborough",
+                "addressLocality": "Toronto",
                 "addressRegion": "ON",
                 "postalCode": "M1T 1V6",
                 "addressCountry": "CA"
               },
+              "areaServed": [
+                "Toronto",
+                "Scarborough",
+                "North York",
+                "Etobicoke",
+                "Mississauga",
+                "Markham",
+                "Vaughan",
+                "Richmond Hill"
+              ],
               "geo": {
                 "@type": "GeoCoordinates",
                 "latitude": 43.6532,

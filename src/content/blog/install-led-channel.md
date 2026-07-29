@@ -19,3 +19,4 @@ Using LED channel is a clean and perfect solution for linear lighting of places.
 #### Conclusion
 
 LED channels can be installed in different ways such as built-in, surface and corner and pendant. You can fix the extrusions or LED channels using counter-screws directly in the installed place, or if you wish, you can buy fixed brackets and channel the brackets after installation. Close the LED on it. Note that for the installation of this channel, you must be proficient in this area and follow the safety tips for working with electricity properly to prevent accidents.
+

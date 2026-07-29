@@ -89,3 +89,4 @@ LED-Display-single color-digital signage-digital display-outdoor LED display-PRO
 was developed by [Hewlett-Packard](https://en.wikipedia.org/wiki/Hewlett-Packard "Hewlett-Packard") (HP) and introduced in 1968. It was the result of [research and development](https://en.wikipedia.org/wiki/Research_and_development "Research and development") (R&D) on practical [LED](https://en.wikipedia.org/wiki/LED "LED") technology between 1962 and 1968, by a research team under Howard C. Borden, Gerald P. Pighini, and [Mohamed M. Atalla](https://en.wikipedia.org/wiki/Mohamed_M._Atalla "Mohamed M. Atalla"), at HP Associates and [HP Labs](https://en.wikipedia.org/wiki/HP_Labs "HP Labs"). In February 1969, they introduced the HP Model 5082-7000 Numeric Indicator.
 
 [LED Displayscreen](\ /[LED channel Letters](\/[LED Light boxes](\/[full color](\/[digital signage](\/[digital display board](\/[outdoor LED display](\/[Business card](\/[Flyer](\/[Banner](\/[Brochur](\
+

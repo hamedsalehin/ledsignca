@@ -16,18 +16,17 @@ const footerLinks = {
     links: [
       { name: "Contact Us", href: "/contact-us" },
       { name: "Design Online", href: "/design" },
-      { name: "Frequently Asked Questions", href: "#" },
-      { name: "Support", href: "/support" },
-      { name: "Corporate Pricing", href: "#" },
+      { name: "Support & Downloads", href: "/support" },
+      { name: "Get a Quote", href: "/get-a-quote" },
     ],
   },
   company: {
     title: "Company",
     links: [
       { name: "About Us", href: "/about-us" },
-      { name: "Our Services", href: "#" },
-      { name: "Portfolio", href: "#" },
-      { name: "Testimonials", href: "#" },
+      { name: "Projects Gallery", href: "/projects" },
+      { name: "Our Blog", href: "/blog" },
+      { name: "Return Policy", href: "/return-policy" },
     ],
   },
   products: {
@@ -35,8 +34,8 @@ const footerLinks = {
     links: [
       { name: "Custom Signs", href: "/custom-signs" },
       { name: "Banners", href: "/custom-banners" },
-      { name: "Vehicle Wraps", href: "#" },
-      { name: "Decals & Stickers", href: "#" },
+      { name: "Neon Signs", href: "/neon-signs" },
+      { name: "Custom Flags", href: "/custom-flags" },
     ],
   },
 };
@@ -61,10 +60,9 @@ const paymentMethods = [
 ];
 
 const bottomLinks = [
-  { name: "Privacy Policy", href: "#" },
-  { name: "Terms of Service", href: "#" },
   { name: "Return Policy", href: "/return-policy" },
-  { name: "Accessibility", href: "#" },
+  { name: "Contact Us", href: "/contact-us" },
+  { name: "Support", href: "/support" },
 ];
 
 const socialIcons = [
@@ -129,16 +127,6 @@ export function Footer({ light = false }: { light?: boolean } = {}) {
                 <span>+1 416-838-8994</span>
               </a>
               <a
-                href="tel:+14168388994"
-                className={`flex items-center gap-2 transition-colors ${light ? "text-slate-600 hover:text-yellow-600" : "text-gray-300 hover:text-yellow-600"}`}
-              >
-                <Phone
-                  className="w-4 h-4 flex-shrink-0"
-                  style={{ color: "#f7f82d" }}
-                />
-                <span>+1 416-838-8994</span>
-              </a>
-              <a
                 href="mailto:info@led-sign.ca"
                 className={`flex items-center gap-2 transition-colors ${light ? "text-slate-600 hover:text-yellow-600" : "text-gray-300 hover:text-yellow-600"}`}
               >
@@ -153,7 +141,7 @@ export function Footer({ light = false }: { light?: boolean } = {}) {
                   className="w-4 h-4 mt-0.5 flex-shrink-0"
                   style={{ color: light ? "#f7f82d" : "#f7f82d" }}
                 />
-                <span>2190 Warden Ave, Scarborough, ON M1T 1V6</span>
+                <span>2190 Warden Ave, Toronto, ON M1T 1V6</span>
               </div>
             </div>
 
@@ -282,7 +270,7 @@ export function Footer({ light = false }: { light?: boolean } = {}) {
               ))}
             </div>
             <p className={`text-sm ${light ? "text-slate-400" : "text-gray-600"}`}>
-              Copyright 2025 Nano Signs. All rights reserved.
+              Copyright 2026 Nano Signs. All rights reserved.
             </p>
           </div>
         </div>

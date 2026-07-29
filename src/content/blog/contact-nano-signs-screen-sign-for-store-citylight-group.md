@@ -12,7 +12,7 @@ type: "page"
 
 We want to hear from you! Questions? Concerns? Don’t be shy…
 
-contact with [Nano Signs(Citylight Group) :](https://led-sign.ca/)
+contact with [Nano Signs(Nano Signs) :](https://led-sign.ca/)
 
 ###### Address
 
@@ -20,7 +20,7 @@ contact with [Nano Signs(Citylight Group) :](https://led-sign.ca/)
 
 ###### Email
 
-Citylightgroup@yahoo.com
+Nano Signsgroup@yahoo.com
 
 ###### Call Us
 
@@ -32,3 +32,4 @@ Cell:+1 4168388994
 ### Ask Your Queries
 
 \[wpforms id="3005"\] 
+

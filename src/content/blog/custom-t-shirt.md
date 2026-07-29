@@ -21,3 +21,4 @@ that we want for our business activities. One of the ways that we can use it to 
 ### Conclusion
 
 In this article, we discuss Custom T-shirt printing which also could be one of the advertising tools for businessmen. If you want to be so famous, using Custom T-shirt design can be so effective for you because you can be seen by so many people who also can be your customers. We also define the way of printing on Custom t-shirt design.
+

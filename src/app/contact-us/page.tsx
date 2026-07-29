@@ -78,7 +78,7 @@ export default function ContactUsPage() {
             Get in Touch With Us
           </h1>
           <p className="max-w-2xl mx-auto text-sm md:text-base text-gray-300 font-medium">
-            Looking for a quote or want to track an existing order? Contact our support team via live messaging, give us a call, or drop by our Scarborough facility.
+            Looking for a quote or want to track an existing order? Contact our support team via live messaging, give us a call, or drop by our Toronto facility.
           </p>
         </div>
       </section>
@@ -296,23 +296,6 @@ export default function ContactUsPage() {
                 </a>
 
                 <a
-                  href="tel:+14168388994"
-                  className="flex items-start gap-4 p-1 hover:bg-slate-50 rounded-xl transition-colors group"
-                >
-                  <div className="w-10 h-10 rounded-lg bg-pink-50 text-[#f7f82d] flex items-center justify-center flex-shrink-0">
-                    <Phone className="w-5 h-5" />
-                  </div>
-                  <div>
-                    <h4 className="text-xs font-bold text-slate-400 uppercase tracking-wide">
-                      Secondary Support Line
-                    </h4>
-                    <p className="text-sm font-bold text-slate-700 group-hover:text-yellow-600 transition-colors">
-                      +1 416-838-8994
-                    </p>
-                  </div>
-                </a>
-
-                <a
                   href="mailto:info@led-sign.ca"
                   className="flex items-start gap-4 p-1 hover:bg-slate-50 rounded-xl transition-colors group"
                 >
@@ -338,7 +321,7 @@ export default function ContactUsPage() {
                       Headquarters
                     </h4>
                     <p className="text-sm font-bold text-slate-700">
-                      2190 Warden Ave, Scarborough, ON M1T 1V6
+                      2190 Warden Ave, Toronto, ON M1T 1V6
                     </p>
                   </div>
                 </div>

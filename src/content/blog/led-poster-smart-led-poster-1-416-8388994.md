@@ -52,3 +52,4 @@ type: "product"
 # **Plug & Play**
 
 # Switch on the power and it will show the stored HD video or image automatically. All the content can be uploaded by USB or WiFi on mobile app. It is also available to connect a real-time video source by HDMI cable.
+

@@ -8,6 +8,7 @@ const ExpertsSection = dynamic(() => import('@/components/ExpertsSection').then(
 const ProductsGrid = dynamic(() => import('@/components/ProductsGrid').then(mod => mod.ProductsGrid));
 const ValuePropositions = dynamic(() => import('@/components/ValuePropositions').then(mod => mod.ValuePropositions));
 const CustomerHighlights = dynamic(() => import('@/components/CustomerHighlights').then(mod => mod.CustomerHighlights));
+const FaqSection = dynamic(() => import('@/components/FaqSection').then(mod => mod.FaqSection));
 const Footer = dynamic(() => import('@/components/Footer').then(mod => mod.Footer));
 
 export default function Home() {
@@ -21,6 +22,7 @@ export default function Home() {
       <ProductsGrid />
       <ValuePropositions />
       <CustomerHighlights />
+      <FaqSection />
       <Footer />
     </main>
   );

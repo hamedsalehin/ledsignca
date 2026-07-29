@@ -91,3 +91,4 @@ Brightness Uniformity Luminance Discrepancy < 5%
 Colors :16777216 Grey Scale(Level) 4096  
 Best Viewing Distance: 3m-30m  
 Best Viewing Angle Horizontal:160°, Vertical:160°**
+

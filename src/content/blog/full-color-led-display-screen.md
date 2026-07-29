@@ -72,3 +72,4 @@ type: "product"
 ##### For big size led screen(custom led sign) can select SMD P8,SMD P10,SMD/DIP P16
 
 ##### Also we have researched outdoor high resolution SMD 3in1: P4- P5- P6 -P8- P10,there are good for high resolution led screen
+

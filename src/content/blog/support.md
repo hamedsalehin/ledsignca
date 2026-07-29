@@ -182,7 +182,7 @@ If maintained properly and taken good care of, our neon LED signs will last for 
 
 Where can I use LED signs?
 
-The neon LED signs provided by Citylights group are waterproof and highly durable. This makes them appropriate for exterior and/or interior usage.
+The neon LED signs provided by Nano Signss group are waterproof and highly durable. This makes them appropriate for exterior and/or interior usage.
 
 What are the backings made of?
 
@@ -217,3 +217,4 @@ The LED signs also of NEON on themselves, so if you want to know about the range
 The default password is as follows: 88888888
 
 fkshow password :88888888
+

@@ -44,7 +44,7 @@ This sleek designed LED POSTER is multi-functional, Cost-effective, and delivers
 ## Powerful Advertising Solution ! Full Color Led Display Screen  
 are the cost-effective choice, delivering brilliant messages, pictures and  
 animations under any weather conditions.Choose from mono red,  
-tri-color Red/Green/Amber or full colors RGB for eye-catching impact. Citylight Led  
+tri-color Red/Green/Amber or full colors RGB for eye-catching impact. Nano Signs Led  
 displays are engineered for versatility and long life with energy-saving and  
 low maintenance LED technology. Our modular design makes it easy to  
 choose the best customized displays to fit your requirements.A variety of pixel  
@@ -52,9 +52,10 @@ pitches allows you to select the right size for your space, viewing distance
 and budget without sacrificing the effectiveness of your advertising. We also  
 supply custom led window signs, led modules, power supply, LED Channel letters,  
 CNC Letter cuttings, Slim led menu board, decoration led lights ,..  
-Citylight sign produces high quality custom LED signs and  
+Nano Signs sign produces high quality custom LED signs and  
 programmable digital signage for any occasion.
 
 ### Reach your target market with a Full Color Led Display Screen
 
 ![LED display -Bilboard](/uploads/2020/08/LED-Screen-Outdoor-Rental-Q-Series.jpg)
+

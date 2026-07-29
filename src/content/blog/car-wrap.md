@@ -80,3 +80,4 @@ Of course, motorcycles can also be wrapped . Here, too, it is important to disma
 ## How do I recognize a high-quality car wrap?
 
 In order to recognize a high-quality car wrap , you have to look closely. If the wrap used is unsuitable, the wrap will begin to shrink and on your vehicle or it will wrinkle. In the worst case, it detaches itself from your vehicle. For this reason, you should take a very close look at the following areas on your vehicle: The body crevices on the doors The body columns on the trunk The body columns on the hood The body columns on the exterior mirrors The body gaps on the wheel arches/fenders The body crevices at the license plate indentations
+

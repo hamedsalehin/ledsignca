@@ -69,3 +69,4 @@ Absolutely not! Our LED lights are fabricated out of very sturdy material and th
 ##### Our Happy Clients!
 
 Great sign,easy to program. __________ 5/5 ![digital led sign](/uploads/2021/05/client02-free-img.jpg) Diana Burnwood I put on the sign my promotion.we love it. __________ 5/5 ![led message board](/uploads/2021/05/client2-free-img.png) Jessica Foxx​ Easy to operate programmable led sign The message can be updated via U flash drive & Mobile Wifi. __________ 5/5 ![electronic sign](/uploads/2021/05/adam-rew.jpg) Adam
+

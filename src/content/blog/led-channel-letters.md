@@ -6,7 +6,7 @@ image: "/uploads/2021/05/steel-channel-letters.jpg"
 type: "product"
 ---
 
-## best Channel Letter Signs in Citylight Group For standard fonts and sizes, there is also the option of molded plastic letters. Channel letters are not just for the exterior of the building, they can be incorporated on the interior in a shopping mall or business lobby.Channel letters could be fabricated from 10" high minimum up to 120" high depending on the size of your letter there are different production processes, these letters are made using either 3", 4" and 6" depth aluminum coils, these coils could either be painted to the color of choice, stainless steel, brushed steel or chrome.
+## best Channel Letter Signs in Nano Signs For standard fonts and sizes, there is also the option of molded plastic letters. Channel letters are not just for the exterior of the building, they can be incorporated on the interior in a shopping mall or business lobby.Channel letters could be fabricated from 10" high minimum up to 120" high depending on the size of your letter there are different production processes, these letters are made using either 3", 4" and 6" depth aluminum coils, these coils could either be painted to the color of choice, stainless steel, brushed steel or chrome.
 
 ## Channel Letter Sign options
 
@@ -39,6 +39,7 @@ Formed channel letters feature a molded plastic backer with a raised lip. A plas
 
 Light is emitted from both the face and the sides of the letter. Cut vinyl can also be applied to the face to create various colored light effects, or to produce a halo effect. The plastic face can also be made with a translucent chrome finish so the letters appear chrome by day, but still, light up at night.
 
-citylight group Toronto
+Nano Signs Toronto
 
 ###### [LED Display screen](\ /[LED channel Letters](\/[LED Lightboxes](\/[full color](\/[outdoor LED display](\/[Indoor LED display/](\[LED poster](\[/](\Custom LED sign
+

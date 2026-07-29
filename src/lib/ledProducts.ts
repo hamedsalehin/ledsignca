@@ -109,7 +109,7 @@ export const ledProducts = [
         },
         {
           "q": "Where is Nano Signs located for local pickup and service in the Toronto area?",
-          "a": "Nano Signs is located at 2190 Warden Ave, Scarborough, ON M1T V6. We offer local pickup, GTA delivery, and dedicated customer support. Call +1 416-838-8994."
+          "a": "Nano Signs is located at 2190 Warden Ave, Toronto, ON M1T 1V6. We offer local pickup, GTA delivery, and dedicated customer support. Call +1 416-838-8994."
         }
       ],
       "reviews": [

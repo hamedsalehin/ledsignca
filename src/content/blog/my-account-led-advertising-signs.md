@@ -7,3 +7,4 @@ type: "page"
 ---
 
 \[woocommerce\_my\_account\]
+

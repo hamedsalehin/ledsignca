@@ -1,5 +1,13 @@
 import React, { Suspense } from "react";
 import DesignPage from "../../design/page";
+import Metadata from "next";
+
+export const metadata = {
+  robots: {
+    index: false,
+    follow: false,
+  },
+};
 
 export default function LoadPage() {
   return (
@@ -17,3 +25,4 @@ export default function LoadPage() {
     </Suspense>
   );
 }
+

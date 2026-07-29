@@ -7,3 +7,4 @@ type: "page"
 ---
 
 \[woocommerce\_checkout\]
+
