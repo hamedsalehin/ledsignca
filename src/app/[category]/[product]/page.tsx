@@ -27,6 +27,14 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   return {
     title,
     description: description.slice(0, 160),
+    openGraph: {
+      title,
+      description: description.slice(0, 160),
+      url: `https://led-sign.ca/${decodedCategory}/${decodedProduct}`,
+      siteName: "Nano Signs",
+      locale: "en_CA",
+      type: "website",
+    },
     alternates: {
       canonical: `https://led-sign.ca/${decodedCategory}/${decodedProduct}`,
     },

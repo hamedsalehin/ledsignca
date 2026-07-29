@@ -23,6 +23,14 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   return {
     title,
     description: description.slice(0, 160), // Keep description within SEO limits
+    openGraph: {
+      title,
+      description: description.slice(0, 160),
+      url: `https://led-sign.ca/${decodedCategory}`,
+      siteName: "Nano Signs",
+      locale: "en_CA",
+      type: "website",
+    },
     alternates: {
       canonical: `https://led-sign.ca/${decodedCategory}`,
     },
