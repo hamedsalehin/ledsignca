@@ -2,7 +2,7 @@ import { getPostData, getSortedPostsData } from "@/lib/blog";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft, Calendar, ArrowRight } from "lucide-react";
-import { notFound } from "next/navigation";
+import { redirect, RedirectType } from "next/navigation";
 import { PRODUCTS_REGISTRY } from "@/lib/productsRegistry";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
@@ -11,7 +11,6 @@ export const revalidate = 0;
 export const dynamic = "force-dynamic";
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
-
   const { slug } = await params;
   try {
     const postData = await getPostData(slug);
@@ -29,7 +28,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     };
   } catch (e) {
     return {
-      title: "Blog Post Not Found | Nano Signs",
+      title: "Blog & News | Nano Signs",
     };
   }
 }
@@ -40,8 +39,10 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
   try {
     postData = await getPostData(slug);
   } catch (error) {
-    notFound();
+    // Automatically redirect deleted/missing blog URLs to main blog page with 301/308 redirect for SEO
+    redirect("/blog", RedirectType.replace);
   }
+
 
   // Extract all products
   const allProducts = Object.values(PRODUCTS_REGISTRY).map(c => c.products).flat();
