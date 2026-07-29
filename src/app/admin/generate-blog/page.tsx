@@ -16,8 +16,12 @@ import {
   PlusCircle,
   Edit3,
   Check,
-  Trash2
+  Trash2,
+  Image as ImageIcon,
+  Video,
+  Upload
 } from "lucide-react";
+
 
 
 interface DraftArticle {
@@ -445,9 +449,36 @@ export default function AdminBlogStudio() {
                 </div>
 
                 <div>
-                  <label className="block text-xs font-bold text-slate-300 mb-1">
-                    Image URL Path
-                  </label>
+                  <div className="flex items-center justify-between mb-1">
+                    <label className="block text-xs font-bold text-slate-300">
+                      Cover Image / Banner URL
+                    </label>
+                    <label className="text-[11px] text-[#f7f82d] font-bold cursor-pointer hover:underline flex items-center gap-1">
+                      <Upload className="w-3.5 h-3.5" />
+                      Upload Cover Image
+                      <input
+                        type="file"
+                        accept="image/*"
+                        className="hidden"
+                        onChange={async (e) => {
+                          const file = e.target.files?.[0];
+                          if (!file) return;
+                          const formData = new FormData();
+                          formData.append("file", file);
+                          try {
+                            const res = await fetch("/api/blog/upload", { method: "POST", body: formData });
+                            const data = await res.json();
+                            if (data.url) {
+                              setCustomImage(data.url);
+                              alert("✅ Cover image uploaded successfully!");
+                            }
+                          } catch (err: any) {
+                            alert("Upload failed: " + err.message);
+                          }
+                        }}
+                      />
+                    </label>
+                  </div>
                   <input
                     type="text"
                     value={customImage}
@@ -458,9 +489,66 @@ export default function AdminBlogStudio() {
                 </div>
 
                 <div>
-                  <label className="block text-xs font-bold text-slate-300 mb-1">
-                    Article Content (Supports HTML tags like &lt;h2&gt;, &lt;p&gt;, &lt;ul&gt;) *
-                  </label>
+                  <div className="flex items-center justify-between mb-1">
+                    <label className="block text-xs font-bold text-slate-300">
+                      Article Content (Supports HTML tags like &lt;h2&gt;, &lt;p&gt;, &lt;ul&gt;) *
+                    </label>
+                    <div className="flex items-center gap-3">
+                      <label className="text-[11px] text-cyan-400 font-bold cursor-pointer hover:underline flex items-center gap-1">
+                        <ImageIcon className="w-3.5 h-3.5" />
+                        + Insert Picture into Article
+                        <input
+                          type="file"
+                          accept="image/*"
+                          className="hidden"
+                          onChange={async (e) => {
+                            const file = e.target.files?.[0];
+                            if (!file) return;
+                            const formData = new FormData();
+                            formData.append("file", file);
+                            try {
+                              const res = await fetch("/api/blog/upload", { method: "POST", body: formData });
+                              const data = await res.json();
+                              if (data.url) {
+                                const imgTag = `\n<img src="${data.url}" alt="${file.name}" class="rounded-xl my-4 w-full object-cover max-h-96" />\n`;
+                                setCustomContent((prev) => prev + imgTag);
+                                alert("🖼️ Picture added into article text!");
+                              }
+                            } catch (err: any) {
+                              alert("Upload failed: " + err.message);
+                            }
+                          }}
+                        />
+                      </label>
+
+                      <label className="text-[11px] text-purple-400 font-bold cursor-pointer hover:underline flex items-center gap-1">
+                        <Video className="w-3.5 h-3.5" />
+                        + Insert Video into Article
+                        <input
+                          type="file"
+                          accept="video/*"
+                          className="hidden"
+                          onChange={async (e) => {
+                            const file = e.target.files?.[0];
+                            if (!file) return;
+                            const formData = new FormData();
+                            formData.append("file", file);
+                            try {
+                              const res = await fetch("/api/blog/upload", { method: "POST", body: formData });
+                              const data = await res.json();
+                              if (data.url) {
+                                const videoTag = `\n<video controls class="rounded-xl my-4 w-full max-h-96" src="${data.url}"></video>\n`;
+                                setCustomContent((prev) => prev + videoTag);
+                                alert("🎥 Video added into article text!");
+                              }
+                            } catch (err: any) {
+                              alert("Upload failed: " + err.message);
+                            }
+                          }}
+                        />
+                      </label>
+                    </div>
+                  </div>
                   <textarea
                     required
                     rows={8}
@@ -470,6 +558,7 @@ export default function AdminBlogStudio() {
                     className="w-full px-4 py-3 bg-slate-950 border border-slate-800 rounded-xl text-sm text-white focus:outline-none focus:border-[#f7f82d] font-mono resize-none"
                   />
                 </div>
+
 
                 <div className="flex items-center gap-3 pt-2">
                   <button
