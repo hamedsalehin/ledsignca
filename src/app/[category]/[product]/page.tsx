@@ -32,8 +32,26 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       description: description.slice(0, 160),
       url: `https://led-sign.ca/${decodedCategory}/${decodedProduct}`,
       siteName: "Nano Signs",
+      images: [
+        {
+          url: productData.image.startsWith("http")
+            ? productData.image
+            : `https://led-sign.ca${productData.image}`,
+          alt: productData.name,
+        },
+      ],
       locale: "en_CA",
       type: "website",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description: description.slice(0, 160),
+      images: [
+        productData.image.startsWith("http")
+          ? productData.image
+          : `https://led-sign.ca${productData.image}`,
+      ],
     },
     alternates: {
       canonical: `https://led-sign.ca/${decodedCategory}/${decodedProduct}`,
