@@ -236,6 +236,28 @@ export function Footer({ light = false }: { light?: boolean } = {}) {
           </div>
         </div>
 
+        {/* Popular Signage Guides & Blog Links (Internal Linking for SEO & Orphan Page Fix) */}
+        <div className={`mt-10 pt-8 border-t ${light ? "border-slate-200" : "border-slate-800/80"}`}>
+          <h4 className={`text-xs font-bold uppercase tracking-wider mb-4 ${light ? "text-slate-700" : "text-slate-300"}`}>
+            Popular Signage Guides &amp; Insights
+          </h4>
+          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-x-4 gap-y-2 text-xs">
+            <a href="/blog/all-about-led-signs" className="text-gray-400 hover:text-[#f7f82d] transition-colors truncate">All About LED Signs</a>
+            <a href="/blog/full-color-custom-led-sign-board" className="text-gray-400 hover:text-[#f7f82d] transition-colors truncate">Full Color LED Signs</a>
+            <a href="/blog/led-channel-letters" className="text-gray-400 hover:text-[#f7f82d] transition-colors truncate">LED Channel Letters</a>
+            <a href="/blog/front-store-signs" className="text-gray-400 hover:text-[#f7f82d] transition-colors truncate">Front Store Signs</a>
+            <a href="/blog/pylon-signs-and-all-about-pylon-signs-buy" className="text-gray-400 hover:text-[#f7f82d] transition-colors truncate">Pylon Signs Guide</a>
+            <a href="/blog/light-box-sign-custom-signage-services" className="text-gray-400 hover:text-[#f7f82d] transition-colors truncate">Light Box Signage</a>
+            <a href="/blog/neon-led-signs-neon-sign-led-sign" className="text-gray-400 hover:text-[#f7f82d] transition-colors truncate">Custom Neon LED Signs</a>
+            <a href="/blog/retractable-banners" className="text-gray-400 hover:text-[#f7f82d] transition-colors truncate">Retractable Banners</a>
+            <a href="/blog/car-wrap" className="text-gray-400 hover:text-[#f7f82d] transition-colors truncate">Vehicle Wraps Toronto</a>
+            <a href="/blog/real-estate-signs-all-about-real-estate-signs" className="text-gray-400 hover:text-[#f7f82d] transition-colors truncate">Real Estate Signs</a>
+            <a href="/blog/brochure-printing-design-4168388994" className="text-gray-400 hover:text-[#f7f82d] transition-colors truncate">Brochures &amp; Flyers</a>
+            <a href="/blog" className="text-[#f7f82d] font-bold hover:underline">View All Articles &rarr;</a>
+          </div>
+        </div>
+
+
         {/* Google Maps Location Embed */}
         <div className={`mt-12 rounded-2xl overflow-hidden shadow-lg h-[250px] w-full border ${light ? "border-slate-200" : "border-gray-800"}`}>
           <iframe

@@ -44,13 +44,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }));
   });
 
-  // Blog Posts
-  const blogPosts = getSortedPostsData().map((post) => ({
-    url: `${baseUrl}/blog/${post.slug}`,
-    lastModified: new Date(),
-    changeFrequency: "monthly" as const,
-    priority: 0.7,
-  }));
+  // Blog Posts (Filter out redirects like 'support')
+  const blogPosts = getSortedPostsData()
+    .filter((post) => post.slug !== "support")
+    .map((post) => ({
+      url: `${baseUrl}/blog/${post.slug}`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.7,
+    }));
+
 
   return [...staticRoutes, ...categoryRoutes, ...productRoutes, ...blogPosts];
 }
