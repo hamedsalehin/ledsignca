@@ -15,8 +15,10 @@ import {
   Lock,
   PlusCircle,
   Edit3,
-  Check
+  Check,
+  Trash2
 } from "lucide-react";
+
 
 interface DraftArticle {
   id: string;
@@ -197,8 +199,27 @@ export default function AdminBlogStudio() {
     }
   };
 
+  const handleDeletePost = async (draft: DraftArticle) => {
+    const slug = draft.title
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, "-")
+      .replace(/(^-|-$)+/g, "");
+
+    if (!confirm(`Are you sure you want to delete "${draft.title}"?`)) return;
+
+    try {
+      const res = await fetch(`/api/blog/delete?slug=${slug}`, { method: "DELETE" });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || "Failed to delete");
+
+      setDrafts((prev) => prev.filter((d) => d.id !== draft.id));
+      alert(`🗑️ Successfully deleted "${draft.title}"`);
+    } catch (err: any) {
+      alert(`Error deleting post: ${err.message}`);
+    }
   const handleSaveAndPublish = async (e: React.FormEvent) => {
     e.preventDefault();
+
     if (!customTitle.trim() || !customContent.trim()) {
       alert("Please fill in both Title and Content.");
       return;
@@ -529,6 +550,13 @@ export default function AdminBlogStudio() {
                       <Edit3 className="w-3.5 h-3.5" /> Edit Article
                     </button>
 
+                    <button
+                      onClick={() => handleDeletePost(draft)}
+                      className="px-3.5 py-1.5 bg-rose-950/60 border border-rose-800/40 hover:bg-rose-900/60 text-xs font-semibold rounded-lg text-rose-400 flex items-center gap-1.5 transition-colors"
+                    >
+                      <Trash2 className="w-3.5 h-3.5" /> Delete
+                    </button>
+
                     {!draft.published && (
                       <button
                         onClick={() => handlePublishPost(draft.id)}
@@ -537,6 +565,7 @@ export default function AdminBlogStudio() {
                         <Send className="w-3.5 h-3.5" /> Publish Now
                       </button>
                     )}
+
                   </div>
                 </div>
               ))}
@@ -596,3 +625,5 @@ export default function AdminBlogStudio() {
     </>
   );
 }
+
+
