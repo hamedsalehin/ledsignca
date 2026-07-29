@@ -217,8 +217,11 @@ export default function AdminBlogStudio() {
     } catch (err: any) {
       alert(`Error deleting post: ${err.message}`);
     }
+  };
+
   const handleSaveAndPublish = async (e: React.FormEvent) => {
     e.preventDefault();
+
 
     if (!customTitle.trim() || !customContent.trim()) {
       alert("Please fill in both Title and Content.");
@@ -625,7 +628,7 @@ export default function AdminBlogStudio() {
     </>
   );
 }
-}
+
 
 
 
