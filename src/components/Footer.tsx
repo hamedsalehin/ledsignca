@@ -236,9 +236,7 @@ export function Footer({ light = false }: { light?: boolean } = {}) {
               </div>
             </div>
           </div>
-        </div>
-
-        {/* Popular Signage Guides & Blog Links (Internal Linking for SEO & Orphan Page Fix) */}
+        </div>        {/* Popular Signage Guides & Blog Links (Internal Linking for SEO & Orphan Page Fix) */}
         <div className={`mt-10 pt-8 border-t ${light ? "border-slate-200" : "border-slate-800/80"}`}>
           <h4 className={`text-xs font-bold uppercase tracking-wider mb-4 ${light ? "text-slate-700" : "text-slate-300"}`}>
             Popular Signage Guides &amp; Insights
@@ -255,10 +253,50 @@ export function Footer({ light = false }: { light?: boolean } = {}) {
             <Link href="/blog/car-wrap" className="text-gray-400 hover:text-[#f7f82d] transition-colors truncate">Vehicle Wraps Toronto</Link>
             <Link href="/blog/real-estate-signs-all-about-real-estate-signs" className="text-gray-400 hover:text-[#f7f82d] transition-colors truncate">Real Estate Signs</Link>
             <Link href="/blog/brochure-printing-design-4168388994" className="text-gray-400 hover:text-[#f7f82d] transition-colors truncate">Brochures &amp; Flyers</Link>
+            <Link href="/blog/vinyl-printing" className="text-gray-400 hover:text-[#f7f82d] transition-colors truncate">Vinyl Printing Guide</Link>
+            <Link href="/blog/neon-sign" className="text-gray-400 hover:text-[#f7f82d] transition-colors truncate">Neon Signs Guide</Link>
+            <Link href="/blog/full-color-led-display-screen-citylight-sign" className="text-gray-400 hover:text-[#f7f82d] transition-colors truncate">Full Color Display</Link>
+            <Link href="/blog/led-channel-letter" className="text-gray-400 hover:text-[#f7f82d] transition-colors truncate">Channel Letter Info</Link>
+            <Link href="/blog/cart-advertising-signs-electronic-led-reader" className="text-gray-400 hover:text-[#f7f82d] transition-colors truncate">Cart LED Reader</Link>
+            <Link href="/blog/6901-2" className="text-gray-400 hover:text-[#f7f82d] transition-colors truncate">T-Shirt Printing</Link>
+            <Link href="/blog/mesh" className="text-gray-400 hover:text-[#f7f82d] transition-colors truncate">Mesh Banners</Link>
+            <Link href="/blog/full-color-led-scrolling-sign" className="text-gray-400 hover:text-[#f7f82d] transition-colors truncate">Scrolling Signs</Link>
+            <Link href="/blog/products-led-sign-board" className="text-gray-400 hover:text-[#f7f82d] transition-colors truncate">LED Products Guide</Link>
+            <Link href="/blog/request-quote" className="text-gray-400 hover:text-[#f7f82d] transition-colors truncate">Quote Guide</Link>
+            <Link href="/blog/led-poster-smart-led-poster-1-416-8388994" className="text-gray-400 hover:text-[#f7f82d] transition-colors truncate">LED Posters</Link>
+            <Link href="/blog/make-any-phrase-into-a-neon-sign" className="text-gray-400 hover:text-[#f7f82d] transition-colors truncate">Custom Neon Phrase</Link>
+            <Link href="/blog/flyer" className="text-gray-400 hover:text-[#f7f82d] transition-colors truncate">Flyers &amp; Printing</Link>
+            <Link href="/blog/light-box-sign-led-backlight-sign-illuminated" className="text-gray-400 hover:text-[#f7f82d] transition-colors truncate">Illuminated Lightbox</Link>
+            <Link href="/blog/contact-nano-signs-screen-sign-for-store-citylight-group" className="text-gray-400 hover:text-[#f7f82d] transition-colors truncate">Store Signs Contact</Link>
+            <Link href="/blog/checkout-led-digital-display-digital-printing-services" className="text-gray-400 hover:text-[#f7f82d] transition-colors truncate">Digital Display Info</Link>
+            <Link href="/blog/full-color-digital-display-screen" className="text-gray-400 hover:text-[#f7f82d] transition-colors truncate">Digital Display</Link>
+            <Link href="/blog/front-store-signs-and-all-about-front-store" className="text-gray-400 hover:text-[#f7f82d] transition-colors truncate">Front Store Guide</Link>
+            <Link href="/blog/so-many-options-when-it-comes-down-to-brochures" className="text-gray-400 hover:text-[#f7f82d] transition-colors truncate">Brochure Options</Link>
+            <Link href="/blog/full-color-electronic-signs" className="text-gray-400 hover:text-[#f7f82d] transition-colors truncate">Electronic Signs</Link>
+            <Link href="/blog/custom-t-shirt" className="text-gray-400 hover:text-[#f7f82d] transition-colors truncate">Custom T-Shirt</Link>
+            <Link href="/blog/billboards-and-their-impact-on-business" className="text-gray-400 hover:text-[#f7f82d] transition-colors truncate">Billboard Impact</Link>
+            <Link href="/blog/led-panels-toronto" className="text-gray-400 hover:text-[#f7f82d] transition-colors truncate">LED Panels Toronto</Link>
+            <Link href="/blog/single-color-programable-led-sign-led-screen" className="text-gray-400 hover:text-[#f7f82d] transition-colors truncate">Single Color Sign</Link>
+            <Link href="/blog/indoor-full-color-led-display-indoor4168388994" className="text-gray-400 hover:text-[#f7f82d] transition-colors truncate">Indoor Full Color</Link>
+            <Link href="/blog/car-magnet-signs-led-signs-toronto" className="text-gray-400 hover:text-[#f7f82d] transition-colors truncate">Car Magnet Signs</Link>
+            <Link href="/blog/quote-rental-industrial-led-displays-nano-signs" className="text-gray-400 hover:text-[#f7f82d] transition-colors truncate">Industrial Displays</Link>
+            <Link href="/blog/full-color-led-display-screen" className="text-gray-400 hover:text-[#f7f82d] transition-colors truncate">LED Display Screen</Link>
+            <Link href="/blog/programmable-led-sign-toronto-signs-company-signage" className="text-gray-400 hover:text-[#f7f82d] transition-colors truncate">Programmable Signs</Link>
+            <Link href="/blog/programmable-led-sign" className="text-gray-400 hover:text-[#f7f82d] transition-colors truncate">Programmable LED</Link>
+            <Link href="/blog/projects" className="text-gray-400 hover:text-[#f7f82d] transition-colors truncate">Project Showcase</Link>
+            <Link href="/blog/billboards" className="text-gray-400 hover:text-[#f7f82d] transition-colors truncate">Billboards Guide</Link>
+            <Link href="/blog/my-account-led-advertising-signs" className="text-gray-400 hover:text-[#f7f82d] transition-colors truncate">Account &amp; Signs</Link>
+            <Link href="/blog/about-us-citylight-group-citylight-sign" className="text-gray-400 hover:text-[#f7f82d] transition-colors truncate">About Signage</Link>
+            <Link href="/blog/install-led-channel" className="text-gray-400 hover:text-[#f7f82d] transition-colors truncate">Install LED Channel</Link>
+            <Link href="/blog/why-business-cards" className="text-gray-400 hover:text-[#f7f82d] transition-colors truncate">Why Business Cards</Link>
+            <Link href="/blog/full-color-programmable-led-display" className="text-gray-400 hover:text-[#f7f82d] transition-colors truncate">Full Color Display</Link>
+            <Link href="/blog/bag-lawn-signs-yard-signs-by-nano-signs" className="text-gray-400 hover:text-[#f7f82d] transition-colors truncate">Bag Lawn Signs</Link>
+            <Link href="/blog/metal-sign" className="text-gray-400 hover:text-[#f7f82d] transition-colors truncate">Metal Signage</Link>
+            <Link href="/blog/business-card-custom-design-toronto-4168388994" className="text-gray-400 hover:text-[#f7f82d] transition-colors truncate">Business Card Design</Link>
             <Link href="/blog" className="text-[#f7f82d] font-bold hover:underline">View All Articles &rarr;</Link>
           </div>
-
         </div>
+
 
 
         {/* Google Maps Location Embed */}
