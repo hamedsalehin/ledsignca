@@ -13,10 +13,15 @@ const DOWNLOAD_LINKS = [
   { text: "Download HDPlayer Software full color electronic signs", href: "https://huidu-cn.oss-ap-southeast-1.aliyuncs.com/HDPlayer.7.6.40.0.exe" },
   { text: "Download HD2018 Software Single color electronic signs", href: "https://huidu-cn.oss-ap-southeast-1.aliyuncs.com/HD2018%20V1.0.23.exe" },
   { text: "Download User Manual Of FKShow LED Picture & Text Edit Software", href: "https://www.fk188.com/download/FKShow2022.zip" },
-  { text: "Download LedArt app for Android HD sign", href: "https://play.google.com/store/apps/details?id=cn.huidu.huiduapp" },
-  { text: "Download LedArt app for iPhone HD sign", href: "https://apps.apple.com/us/app/ledart/id1144062386" },
-  { text: "Download FKshow app for iPhone FK sign", href: "https://apps.apple.com/us/app/fkshow/id1135752741" },
+  { text: "Download HDPlayer User manual Single color electronic signs", href: "https://www.huidu.cn/uploads/20210911/e04de67adba59ff456ab13edb562d467.pdf" },
+  { text: "Download HD2020 User manual Single color electronic signs", href: "https://www.huidu.cn/uploads/20210911/1aa0986e873ace1081ab87d839260879.pdf" },
+  { text: "Download HD2018 User manual Single color electronic signs", href: "https://www.huidu.cn/uploads/20210911/e04de67adba59ff456ab13edb562d467.pdf" },
+  { text: "Download LedArt app User manual", href: "https://www.huidu.cn/uploads/20210911/7195e7f8b2bbdad9bbc0e20d7e889f05.pdf" },
+  { text: "Download LedArt app for Android HD sign", href: "https://play.google.com/store/apps/details?id=cn.huidu.huiduapp&hl=en_CA&gl=US" },
+  { text: "Download LedArt app for IPhone HD sign", href: "https://apps.apple.com/us/app/ledart/id1144062386" },
+  { text: "Download FKshow app for IPhone FK sign", href: "https://apps.apple.com/us/app/fkshow/id1135752741" },
 ];
+
 
 
 
