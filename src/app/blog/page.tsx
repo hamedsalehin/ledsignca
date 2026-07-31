@@ -5,8 +5,9 @@ export const revalidate = 0;
 export const dynamic = "force-dynamic";
 
 export const metadata = {
-  title: "Blog & News | Nano Signs Toronto",
-  description: "Read the latest news, updates, and expert tips on signage and custom printing in Toronto.",
+  title: "Blog & Signage Industry News | Nano Signs Toronto",
+  description:
+    "Read expert guides, signage trends, and tips on custom LED signs, storefront channel letters, neon lights, and commercial printing in Toronto.",
 };
 
 export default function BlogIndex() {

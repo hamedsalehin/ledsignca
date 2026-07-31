@@ -6,9 +6,8 @@ image: ""
 type: "page"
 ---
 
-![](https://led-sign.ca/wp-content/plugins/elementor/assets/images/placeholder.png)
 
-# our Project
+## Our Projects
 
 ![](/uploads/2023/08/custom-neon4.jpg)
 

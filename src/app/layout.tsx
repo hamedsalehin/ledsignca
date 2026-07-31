@@ -44,6 +44,9 @@ export const metadata: Metadata = {
     icon: "/images/nano logo O-toronto-printing-ca.png",
     apple: "/images/nano logo O-toronto-printing-ca.png",
   },
+  alternates: {
+    canonical: "https://led-sign.ca",
+  },
   openGraph: {
     title: "Nano Signs Toronto | Custom Signs, LED Signs & Banners",
     description: "Premium custom signage, Neon LED signs, retractable banners, and commercial print in the Greater Toronto Area.",
@@ -78,7 +81,6 @@ export default function RootLayout({
   return (
     <html lang="en-CA" className={`${openSans.variable} ${poppins.variable}`}>
       <head>
-        <CanonicalTag />
         {/* Google tag (gtag.js) */}
         <Script strategy="lazyOnload" src="https://www.googletagmanager.com/gtag/js?id=G-YESMFLCB2D" />
         <Script id="google-analytics" strategy="lazyOnload" dangerouslySetInnerHTML={{

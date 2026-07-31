@@ -6,8 +6,9 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 
 export const metadata = {
-  title: "Projects Gallery | Nano Signs",
-  description: "Browse our gallery of custom signs, neon LEDs, car decals, and printed materials.",
+  title: "Custom Sign Projects & Portfolio Toronto | Nano Signs",
+  description:
+    "Browse our portfolio of custom signs, full-color LED displays, custom neon signs, storefront channel letters, pylon signs, and vehicle wraps in Toronto.",
 };
 
 export default async function ProjectsGallery() {

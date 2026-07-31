@@ -4,8 +4,9 @@ import Image from "next/image";
 import { PRODUCTS_REGISTRY } from "@/lib/productsRegistry";
 
 export const metadata: Metadata = {
-  title: "Search Results | Nano Signs",
-  description: "Search results for custom signage and printing.",
+  title: "Search Custom Signs & Commercial Printing | Nano Signs Toronto",
+  description:
+    "Search custom signs, LED sign boards, neon light signs, banners, business cards, and commercial printing services at Nano Signs Toronto.",
 };
 
 export default async function SearchPage(props: {

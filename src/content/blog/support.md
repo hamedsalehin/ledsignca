@@ -8,7 +8,7 @@ type: "post"
 
 
 
-# [FAQ (frequently asked questions)](https://led-sign.ca/support/)
+## FAQ (Frequently Asked Questions)
 
                                                                        Wi-Fi signal name and password questions
 
