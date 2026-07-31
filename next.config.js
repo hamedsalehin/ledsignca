@@ -1,6 +1,9 @@
+const path = require("path");
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: "standalone",
+  outputFileTracingRoot: path.join(__dirname),
   typescript: {
     ignoreBuildErrors: true,
   },
@@ -345,6 +348,7 @@ const nextConfig = {
       { source: "/FkShow2022.zip", destination: "/support", permanent: true },
       { source: "/User Manual Of FK Show LED Picture & Text Edit Software.doc", destination: "/support", permanent: true },
       { source: "/wp-login.php", destination: "/login", permanent: true },
+      { source: "/robot.txt", destination: "/robots.txt", permanent: true },
       { source: "/category/posts/:path*", destination: "/blog", permanent: true },
       { source: "/assets/mp4/:path*", destination: "/", permanent: true },
     ];
