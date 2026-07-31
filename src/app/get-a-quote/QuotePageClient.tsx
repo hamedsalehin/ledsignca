@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { supabase } from "@/lib/supabaseClient";
@@ -17,11 +18,20 @@ import {
   Mail,
   User,
   Scale,
-  Hash
+  Hash,
+  MapPin,
+  ShieldCheck,
+  Star,
+  Zap,
+  Tag,
+  Clock,
+  ArrowRight
 } from "lucide-react";
 
 export default function QuotePageClient() {
+  const router = useRouter();
   const { user, setShowAuthModal } = useAuth();
+
   // Form states
   const [fullName, setFullName] = useState("");
   const [email, setEmail] = useState("");
@@ -39,22 +49,12 @@ export default function QuotePageClient() {
 
   // Submission states
   const [submitting, setSubmitting] = useState(false);
-  const [submitSuccess, setSubmitSuccess] = useState(false);
   const [submitError, setSubmitError] = useState<string | null>(null);
-  const [emailsInitialized, setEmailsInitialized] = useState(true);
-  const [emailErrors, setEmailErrors] = useState<{ admin?: any; customer?: any } | null>(null);
 
   // Handle local file selection and Supabase storage upload
   const handleFileChange = async (e: React.ChangeEvent<HTMLInputElement>) => {
     const selectedFile = e.target.files?.[0];
     if (!selectedFile) return;
-
-    if (!user) {
-      setFileError("Please sign in or create an account to upload artwork.");
-      setShowAuthModal(true);
-      e.target.value = "";
-      return;
-    }
 
     // Validate size (max 25MB)
     if (selectedFile.size > 25 * 1024 * 1024) {
@@ -99,7 +99,7 @@ export default function QuotePageClient() {
     }
   };
 
-  // Handle db & email submission via API
+  // Handle submission and redirect to Google Ads Thank You page
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!fullName || !email || !phone || !description) {
@@ -109,6 +109,8 @@ export default function QuotePageClient() {
 
     setSubmitting(true);
     setSubmitError(null);
+
+    const fullDescription = description.trim();
 
     try {
       const res = await fetch("/api/submit-quote", {
@@ -120,7 +122,7 @@ export default function QuotePageClient() {
           fullName: fullName.trim(),
           email: email.trim().toLowerCase(),
           phone: phone.trim(),
-          description: description.trim(),
+          description: fullDescription,
           width: width ? width.trim() : null,
           height: height ? height.trim() : null,
           quantity: Number(quantity) || 1,
@@ -134,12 +136,10 @@ export default function QuotePageClient() {
         throw new Error(data.error || "Failed to submit quote request.");
       }
 
-      setEmailsInitialized(data.emailsInitialized !== false);
-      setEmailErrors({
-        admin: data.adminEmailError || null,
-        customer: data.customerEmailError || null,
-      });
-      setSubmitSuccess(true);
+      // Redirect to Thank You page for Google Ads Conversion Tracking
+      router.push(
+        `/get-a-quote/thank-you?name=${encodeURIComponent(fullName.trim())}&email=${encodeURIComponent(email.trim())}`
+      );
     } catch (err) {
       console.error("Quote submission failed:", err);
       setSubmitError(
@@ -147,227 +147,249 @@ export default function QuotePageClient() {
           ? err.message
           : "An unexpected error occurred. Please try again."
       );
-    } finally {
       setSubmitting(false);
     }
   };
 
   return (
-    <div className="min-h-screen bg-white flex flex-col font-sans">
+    <div className="min-h-screen bg-slate-50 flex flex-col font-sans">
       <Header />
 
-      <main className="flex-grow py-12">
-        {/* Breadcrumb */}
-        <div className="max-w-[1440px] mx-auto px-4 md:px-8 lg:px-12 mb-8 flex items-center gap-2 text-sm text-slate-500 font-['Open_Sans']">
-          <Link href="/" className="hover:text-yellow-600 transition-colors">
-            Home
-          </Link>
-          <span>/</span>
-          <span className="font-semibold text-slate-800">Get a Quote</span>
+      <main className="flex-grow py-8 md:py-12">
+        {/* Breadcrumb Header */}
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-6">
+          <div className="flex items-center gap-2 text-xs text-slate-500 font-medium">
+            <Link href="/" className="hover:text-yellow-600 transition-colors">
+              Home
+            </Link>
+            <span>/</span>
+            <span className="font-semibold text-slate-800">Request a Custom Quote</span>
+          </div>
         </div>
 
-        {/* Form section - Expanded & minimal light theme */}
-        <section className="max-w-[1440px] mx-auto px-4 md:px-8 lg:px-12 w-full">
-          {!submitSuccess ? (
-            <div className="space-y-8">
-              {/* Form Header */}
-              <div className="border-b border-slate-100 pb-6">
-                <span className="text-[10px] md:text-xs font-extrabold uppercase tracking-widest text-[#ca8a04] flex items-center gap-1.5 mb-2">
-                  <Sparkles className="w-3.5 h-3.5" /> <span className="text-black">WE PRINT EVERYTHING</span>
-                </span>
-                <h1 className="text-3xl md:text-4xl font-black font-poppins text-slate-800 leading-tight">
-                  Custom Signage &amp; Print Quote in Toronto
-                </h1>
-                <p className="text-sm text-slate-500 font-medium leading-relaxed mt-2 font-opensans max-w-3xl">
-                  Need premium custom signs, LED signs, banners, business cards, or other marketing materials in Toronto and the Greater Toronto Area? Specify your dimensions and upload your artwork files below. Our print specialists will email you a layout proof and pricing quote within 12 hours.
+        {/* Hero Banner Header */}
+        <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-6">
+          <div className="bg-slate-900 text-white rounded-2xl p-4 sm:p-5 relative overflow-hidden shadow-lg border border-slate-800">
+            {/* Background Pattern */}
+            <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff05_1px,transparent_1px),linear-gradient(to_bottom,#ffffff05_1px,transparent_1px)] bg-[size:24px_24px] pointer-events-none" />
+            <div className="absolute -right-16 -top-16 w-48 h-48 bg-[#f7f82d]/10 rounded-full blur-2xl pointer-events-none" />
+
+            <div className="relative z-10 max-w-none space-y-1.5">
+              <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-[#f7f82d]/10 border border-[#f7f82d]/30 text-[#f7f82d] text-[10px] font-extrabold uppercase tracking-wider">
+                <Sparkles className="w-3 h-3" /> WE PRINT EVERYTHING · FAST GTA TURNAROUND
+              </span>
+              <h1 className="text-lg sm:text-xl font-bold font-poppins text-white tracking-tight leading-tight">
+                Request a Free Custom Quote
+              </h1>
+              <p className="text-slate-300 text-xs max-w-none whitespace-nowrap overflow-hidden text-ellipsis">
+                Get an instant print proof and custom pricing for Neon LED signs, commercial LED display boards, vinyl banners, channel letters, and marketing signage in Toronto.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* Main Grid Container */}
+        <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+            
+            {/* LEFT COLUMN: Quote Request Form (7 Cols) */}
+            <div className="lg:col-span-7 bg-white rounded-3xl p-6 sm:p-8 shadow-xl border border-slate-200/80 space-y-6">
+              <div className="border-b border-slate-100 pb-4">
+                <h2 className="text-xl font-bold font-poppins text-slate-900 flex items-center gap-2">
+                  <FileText className="w-5 h-5 text-yellow-600" /> Your Project Information
+                </h2>
+                <p className="text-xs text-slate-500 mt-1">
+                  No account required. Fill in your details below to get an instant layout proof &amp; custom quote within 12 hours.
                 </p>
-
-
               </div>
 
               {submitError && (
-                <div className="p-4 bg-red-50 border border-red-200 rounded-xl flex gap-3 text-xs md:text-sm text-red-800 font-semibold">
+                <div className="p-4 bg-red-50 border border-red-200 rounded-xl flex gap-3 text-xs sm:text-sm text-red-800 font-semibold">
                   <AlertCircle className="w-5 h-5 text-red-500 shrink-0 mt-0.5" />
                   <span>{submitError}</span>
                 </div>
               )}
 
-              <form onSubmit={handleSubmit} className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12">
-                {/* Left Column: Input Fields */}
-                <div className="lg:col-span-7 space-y-6">
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-                    {/* Name */}
-                    <div className="space-y-1.5">
-                      <label className="text-xs font-bold text-slate-500 uppercase tracking-wider flex items-center gap-1.5">
-                        <User className="w-3.5 h-3.5 text-slate-400" /> Full Name *
-                      </label>
-                      <input
-                        type="text"
-                        required
-                        placeholder="John Doe"
-                        value={fullName}
-                        onChange={(e) => setFullName(e.target.value)}
-                        className="w-full px-4 py-3 bg-white border border-slate-200 rounded-xl text-sm focus:outline-none focus:border-[#ca8a04] focus:ring-1 focus:ring-[#f7f82d] transition-all font-semibold text-slate-700"
-                      />
-                    </div>
-
-                    {/* Email */}
-                    <div className="space-y-1.5">
-                      <label className="text-xs font-bold text-slate-500 uppercase tracking-wider flex items-center gap-1.5">
-                        <Mail className="w-3.5 h-3.5 text-slate-400" /> Email Address *
-                      </label>
-                      <input
-                        type="email"
-                        required
-                        placeholder="john@example.com"
-                        value={email}
-                        onChange={(e) => setEmail(e.target.value)}
-                        className="w-full px-4 py-3 bg-white border border-slate-200 rounded-xl text-sm focus:outline-none focus:border-[#ca8a04] focus:ring-1 focus:ring-[#f7f82d] transition-all font-semibold text-slate-700"
-                      />
-                    </div>
-                  </div>
-
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-                    {/* Phone */}
-                    <div className="space-y-1.5">
-                      <label className="text-xs font-bold text-slate-500 uppercase tracking-wider flex items-center gap-1.5">
-                        <Phone className="w-3.5 h-3.5 text-slate-400" /> Phone Number *
-                      </label>
-                      <input
-                        type="tel"
-                        required
-                        placeholder="305-555-0199"
-                        value={phone}
-                        onChange={(e) => setPhone(e.target.value)}
-                        className="w-full px-4 py-3 bg-white border border-slate-200 rounded-xl text-sm focus:outline-none focus:border-[#ca8a04] focus:ring-1 focus:ring-[#f7f82d] transition-all font-semibold text-slate-700"
-                      />
-                    </div>
-
-                    {/* Quantity */}
-                    <div className="space-y-1.5">
-                      <label className="text-xs font-bold text-slate-500 uppercase tracking-wider flex items-center gap-1.5">
-                        <Hash className="w-3.5 h-3.5 text-slate-400" /> Quantity *
-                      </label>
-                      <input
-                        type="number"
-                        required
-                        min="1"
-                        value={quantity}
-                        onChange={(e) => setQuantity(Number(e.target.value) || 1)}
-                        className="w-full px-4 py-3 bg-white border border-slate-200 rounded-xl text-sm focus:outline-none focus:border-[#ca8a04] focus:ring-1 focus:ring-[#f7f82d] transition-all font-semibold text-slate-700"
-                      />
-                    </div>
-                  </div>
-
-                  {/* Dimensions (Size) */}
+              <form onSubmit={handleSubmit} className="space-y-5">
+                {/* Name, Email & Phone Row */}
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
                   <div className="space-y-1.5">
-                    <label className="text-xs font-bold text-slate-500 uppercase tracking-wider flex items-center gap-1.5">
-                      <Scale className="w-3.5 h-3.5 text-slate-400" /> Dimensions (Optional)
+                    <label className="text-xs font-bold text-slate-700 uppercase tracking-wider flex items-center gap-1.5">
+                      <User className="w-3.5 h-3.5 text-slate-400" /> Full Name *
                     </label>
-                    <div className="grid grid-cols-2 gap-5">
-                      <input
-                        type="text"
-                        placeholder="Width (e.g. 24 inches)"
-                        value={width}
-                        onChange={(e) => setWidth(e.target.value)}
-                        className="w-full px-4 py-3 bg-white border border-slate-200 rounded-xl text-sm focus:outline-none focus:border-[#ca8a04] focus:ring-1 focus:ring-[#f7f82d] transition-all font-semibold text-slate-700"
-                      />
-                      <input
-                        type="text"
-                        placeholder="Height (e.g. 36 inches)"
-                        value={height}
-                        onChange={(e) => setHeight(e.target.value)}
-                        className="w-full px-4 py-3 bg-white border border-slate-200 rounded-xl text-sm focus:outline-none focus:border-[#ca8a04] focus:ring-1 focus:ring-[#f7f82d] transition-all font-semibold text-slate-700"
-                      />
-                    </div>
-                  </div>
-                </div>
-
-                {/* Right Column: Textarea & File Upload */}
-                <div className="lg:col-span-5 flex flex-col justify-between space-y-6">
-                  {/* Description */}
-                  <div className="space-y-1.5">
-                    <label className="text-xs font-bold text-slate-500 uppercase tracking-wider flex items-center gap-1.5">
-                      <FileText className="w-3.5 h-3.5 text-slate-400" /> What do you need printed? *
-                    </label>
-                    <textarea
+                    <input
+                      type="text"
                       required
-                      rows={5}
-                      placeholder="Describe your project requirements (e.g. materials, shape, double-sided, stakes, or custom finishing)."
-                      value={description}
-                      onChange={(e) => setDescription(e.target.value)}
-                      className="w-full px-4 py-3 bg-white border border-slate-200 rounded-xl text-sm focus:outline-none focus:border-[#ca8a04] focus:ring-1 focus:ring-[#f7f82d] transition-all font-semibold text-slate-700 resize-y min-h-[120px]"
+                      placeholder="e.g. Sarah Johnson"
+                      value={fullName}
+                      onChange={(e) => setFullName(e.target.value)}
+                      className="w-full px-4 py-3 bg-slate-50/50 border border-slate-200 rounded-xl text-sm focus:outline-none focus:bg-white focus:border-yellow-500 focus:ring-2 focus:ring-yellow-400/20 transition-all font-medium text-slate-800"
                     />
                   </div>
 
-                  {/* File Upload */}
                   <div className="space-y-1.5">
-                    <label className="text-xs font-bold text-slate-500 uppercase tracking-wider">Attach Artwork or Sketch</label>
-                    {fileError && (
-                      <p className="text-xs text-red-600 font-semibold">{fileError}</p>
-                    )}
-
-                    {!fileUrl ? (
-                      <div className="relative group border-2 border-dashed border-slate-200 hover:border-[#ca8a04] rounded-xl p-5 text-center bg-slate-50/30 transition-colors cursor-pointer flex flex-col items-center justify-center gap-1.5">
-                        <input
-                          type="file"
-                          accept="application/pdf,image/png,image/jpeg,image/jpg"
-                          onChange={handleFileChange}
-                          onClick={(e) => {
-                            if (!user) {
-                              e.preventDefault();
-                              setFileError("Please sign in or create an account to upload artwork.");
-                              setShowAuthModal(true);
-                            }
-                          }}
-                          disabled={fileUploading}
-                          className="absolute inset-0 opacity-0 cursor-pointer w-full h-full"
-                        />
-                        {fileUploading ? (
-                          <>
-                            <Loader2 className="w-6 h-6 text-[#ca8a04] animate-spin" />
-                            <p className="text-xs text-slate-500 font-semibold">Uploading artwork...</p>
-                          </>
-                        ) : (
-                          <>
-                            <UploadCloud className="w-6 h-6 text-slate-400 group-hover:text-yellow-600 transition-colors" />
-                            <p className="text-xs text-slate-600 font-bold">
-                              Drag &amp; drop or <span className="text-[#ca8a04] underline font-bold">browse file</span>
-                            </p>
-                            <p className="text-[9px] text-slate-400 font-medium">PDF, PNG, JPG up to 25MB</p>
-                          </>
-                        )}
-                      </div>
-                    ) : (
-                      <div className="p-3.5 bg-green-50/40 border border-green-200 rounded-xl flex items-center justify-between shadow-sm">
-                        <div className="flex items-center gap-3">
-                          <CheckCircle2 className="w-5 h-5 text-green-600" />
-                          <div>
-                            <p className="text-xs font-bold text-green-950 truncate max-w-[180px]">
-                              {file?.name}
-                            </p>
-                            <p className="text-[9px] text-green-600 font-medium">Uploaded successfully</p>
-                          </div>
-                        </div>
-                        <button
-                          type="button"
-                          onClick={() => {
-                            setFile(null);
-                            setFileUrl(null);
-                          }}
-                          className="text-xs text-red-500 hover:text-red-700 underline font-bold"
-                        >
-                          Remove
-                        </button>
-                      </div>
-                    )}
+                    <label className="text-xs font-bold text-slate-700 uppercase tracking-wider flex items-center gap-1.5">
+                      <Mail className="w-3.5 h-3.5 text-slate-400" /> Email Address *
+                    </label>
+                    <input
+                      type="email"
+                      required
+                      placeholder="e.g. sarah@company.com"
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
+                      className="w-full px-4 py-3 bg-slate-50/50 border border-slate-200 rounded-xl text-sm focus:outline-none focus:bg-white focus:border-yellow-500 focus:ring-2 focus:ring-yellow-400/20 transition-all font-medium text-slate-800"
+                    />
                   </div>
 
-                  {/* Submit button */}
+                  <div className="space-y-1.5">
+                    <label className="text-xs font-bold text-slate-700 uppercase tracking-wider flex items-center gap-1.5">
+                      <Phone className="w-3.5 h-3.5 text-slate-400" /> Phone Number *
+                    </label>
+                    <input
+                      type="tel"
+                      required
+                      placeholder="e.g. (416) 838-8994"
+                      value={phone}
+                      onChange={(e) => setPhone(e.target.value)}
+                      className="w-full px-4 py-3 bg-slate-50/50 border border-slate-200 rounded-xl text-sm focus:outline-none focus:bg-white focus:border-yellow-500 focus:ring-2 focus:ring-yellow-400/20 transition-all font-medium text-slate-800"
+                    />
+                  </div>
+                </div>
+
+                {/* Dimensions & Quantity Row */}
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                  <div className="space-y-1.5">
+                    <label className="text-xs font-bold text-slate-700 uppercase tracking-wider flex items-center gap-1.5">
+                      <Scale className="w-3.5 h-3.5 text-slate-400" /> Width (Optional)
+                    </label>
+                    <input
+                      type="text"
+                      placeholder="e.g. 4 ft or 48 in"
+                      value={width}
+                      onChange={(e) => setWidth(e.target.value)}
+                      className="w-full px-4 py-3 bg-slate-50/50 border border-slate-200 rounded-xl text-sm focus:outline-none focus:bg-white focus:border-yellow-500 focus:ring-2 focus:ring-yellow-400/20 transition-all font-medium text-slate-800"
+                    />
+                  </div>
+
+                  <div className="space-y-1.5">
+                    <label className="text-xs font-bold text-slate-700 uppercase tracking-wider flex items-center gap-1.5">
+                      <Scale className="w-3.5 h-3.5 text-slate-400" /> Height (Optional)
+                    </label>
+                    <input
+                      type="text"
+                      placeholder="e.g. 8 ft or 96 in"
+                      value={height}
+                      onChange={(e) => setHeight(e.target.value)}
+                      className="w-full px-4 py-3 bg-slate-50/50 border border-slate-200 rounded-xl text-sm focus:outline-none focus:bg-white focus:border-yellow-500 focus:ring-2 focus:ring-yellow-400/20 transition-all font-medium text-slate-800"
+                    />
+                  </div>
+
+                  <div className="space-y-1.5">
+                    <label className="text-xs font-bold text-slate-700 uppercase tracking-wider flex items-center gap-1.5">
+                      <Hash className="w-3.5 h-3.5 text-slate-400" /> Quantity *
+                    </label>
+                    <input
+                      type="number"
+                      required
+                      min="1"
+                      value={quantity}
+                      onChange={(e) => setQuantity(Number(e.target.value) || 1)}
+                      className="w-full px-4 py-3 bg-slate-50/50 border border-slate-200 rounded-xl text-sm focus:outline-none focus:bg-white focus:border-yellow-500 focus:ring-2 focus:ring-yellow-400/20 transition-all font-medium text-slate-800"
+                    />
+                  </div>
+                </div>
+
+                {/* Description Textarea */}
+                <div className="space-y-1.5">
+                  <label className="text-xs font-bold text-slate-700 uppercase tracking-wider flex items-center gap-1.5">
+                    <FileText className="w-3.5 h-3.5 text-slate-400" /> Describe Your Sign &amp; Print Needs *
+                  </label>
+                  <textarea
+                    required
+                    rows={4}
+                    placeholder="Tell us what you need printed (e.g. Storefront LED sign, 4x8 ft vinyl banner, acrylic sign, material preferences, colors, mounting needs, etc.)."
+                    value={description}
+                    onChange={(e) => setDescription(e.target.value)}
+                    className="w-full px-4 py-3 bg-slate-50/50 border border-slate-200 rounded-xl text-sm focus:outline-none focus:bg-white focus:border-yellow-500 focus:ring-2 focus:ring-yellow-400/20 transition-all font-medium text-slate-800 resize-y min-h-[110px]"
+                  />
+                </div>
+
+                {/* File Upload Box */}
+                <div className="space-y-1.5">
+                  <div className="flex items-center justify-between">
+                    <label className="text-xs font-bold text-slate-700 uppercase tracking-wider">
+                      Attach Artwork, Logo or Sketch (Optional)
+                    </label>
+                    <span className="text-[10px] text-emerald-700 font-bold bg-emerald-50 px-2 py-0.5 rounded-full border border-emerald-200">
+                      ⚡ No Account Needed
+                    </span>
+                  </div>
+
+                  {fileError && (
+                    <p className="text-xs text-red-600 font-semibold">{fileError}</p>
+                  )}
+
+                  {!fileUrl ? (
+                    <div className="relative group border-2 border-dashed border-slate-200 hover:border-yellow-500 rounded-2xl p-6 text-center bg-slate-50/40 hover:bg-yellow-50/20 transition-all cursor-pointer flex flex-col items-center justify-center gap-2">
+                      <input
+                        type="file"
+                        accept="application/pdf,image/png,image/jpeg,image/jpg"
+                        onChange={handleFileChange}
+                        disabled={fileUploading}
+                        className="absolute inset-0 opacity-0 cursor-pointer w-full h-full"
+                      />
+                      {fileUploading ? (
+                        <>
+                          <Loader2 className="w-7 h-7 text-yellow-600 animate-spin" />
+                          <p className="text-xs text-slate-600 font-semibold">Uploading artwork file...</p>
+                        </>
+                      ) : (
+                        <>
+                          <div className="w-10 h-10 rounded-full bg-white border border-slate-200 flex items-center justify-center shadow-sm group-hover:scale-110 transition-transform">
+                            <UploadCloud className="w-5 h-5 text-yellow-600" />
+                          </div>
+                          <div>
+                            <p className="text-xs text-slate-800 font-bold">
+                              Drag &amp; drop your artwork here or <span className="text-yellow-600 underline">browse file</span>
+                            </p>
+                            <p className="text-[10px] text-slate-400 mt-0.5">
+                              Supports PDF, PNG, JPG up to 25MB (Optional — you can also email files later)
+                            </p>
+                          </div>
+                        </>
+                      )}
+                    </div>
+                  ) : (
+                    <div className="p-4 bg-emerald-50/70 border border-emerald-200 rounded-2xl flex items-center justify-between shadow-sm">
+                      <div className="flex items-center gap-3">
+                        <CheckCircle2 className="w-6 h-6 text-emerald-600 shrink-0" />
+                        <div>
+                          <p className="text-xs font-bold text-emerald-950 truncate max-w-[200px]">
+                            {file?.name}
+                          </p>
+                          <p className="text-[10px] text-emerald-600 font-medium">Uploaded successfully</p>
+                        </div>
+                      </div>
+                      <button
+                        type="button"
+                        onClick={() => {
+                          setFile(null);
+                          setFileUrl(null);
+                        }}
+                        className="text-xs text-red-500 hover:text-red-700 underline font-bold px-2 py-1"
+                      >
+                        Remove
+                      </button>
+                    </div>
+                  )}
+                </div>
+
+                {/* Submit Button */}
+                <div className="pt-2 space-y-2">
                   <button
                     type="submit"
                     disabled={submitting || fileUploading}
-                    className="w-full text-center border-2 border-[#ca8a04] text-[#ca8a04] hover:bg-[#f7f82d] hover:text-gray-900 bg-transparent active:scale-[0.99] font-extrabold py-3.5 rounded-xl transition-all text-xs md:text-sm uppercase tracking-wider flex items-center justify-center gap-2 disabled:opacity-50"
+                    className="w-full py-4 bg-[#f7f82d] hover:bg-yellow-400 text-slate-950 active:scale-[0.99] font-black rounded-2xl transition-all text-sm uppercase tracking-wider flex items-center justify-center gap-2 shadow-lg shadow-yellow-400/20 disabled:opacity-50"
                   >
                     {submitting ? (
                       <>
@@ -375,88 +397,100 @@ export default function QuotePageClient() {
                         Submitting Request...
                       </>
                     ) : (
-                      "Submit Quote Request"
+                      <>
+                        <Zap className="w-4 h-4 fill-slate-950" /> SUBMIT MY FREE QUOTE REQUEST
+                      </>
                     )}
                   </button>
+                  <p className="text-center text-[11px] text-slate-500 font-medium">
+                    100% Free · No Credit Card Required · Instant 12-Hour Proof Response
+                  </p>
                 </div>
               </form>
             </div>
-          ) : (
-            /* SUCCESS CONFIRMATION BLOCK */
-            <div className="bg-white rounded-2xl border border-slate-100 shadow-md p-10 max-w-xl mx-auto text-center space-y-6">
-              <div className="w-16 h-16 bg-green-50 text-green-500 border border-green-200 rounded-full flex items-center justify-center shadow-md mx-auto">
-                <CheckCircle2 className="w-8 h-8" />
-              </div>
-              <div className="space-y-2">
-                <h3 className="text-2xl font-black font-poppins text-slate-800 leading-tight">
-                  Request Received!
+
+            {/* RIGHT COLUMN: Contact Info & Trust Badges (5 Cols) */}
+            <div className="lg:col-span-5 space-y-6">
+
+              {/* Direct Toronto Shop Contact Card */}
+              <div className="bg-slate-900 text-white rounded-3xl p-5 shadow-xl border border-slate-800 space-y-3">
+                <h3 className="text-xs font-semibold font-poppins text-slate-300">
+                  Talk to a Specialist or send email directly?
                 </h3>
-                <p className="text-[#ca8a04] font-extrabold uppercase tracking-wider text-xs">
-                  We will get back to you shortly
-                </p>
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-2">
+                  <a
+                    href="tel:+14168388994"
+                    className="w-full py-2.5 px-3 bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 font-semibold text-xs rounded-xl flex items-center justify-center gap-2 transition-colors"
+                  >
+                    <Phone className="w-3.5 h-3.5 text-yellow-400" /> (416) 838-8994
+                  </a>
+                  <a
+                    href="mailto:info@led-sign.ca"
+                    className="w-full py-2.5 px-3 bg-slate-800 hover:bg-slate-700 text-slate-200 font-semibold text-xs rounded-xl flex items-center justify-center gap-2 transition-colors border border-slate-700"
+                  >
+                    <Mail className="w-3.5 h-3.5 text-yellow-400" /> info@led-sign.ca
+                  </a>
+                </div>
               </div>
 
-              <div className="p-5 bg-slate-50 border border-slate-100 rounded-xl space-y-3 text-sm text-slate-600 text-left font-opensans">
-                <p className="leading-relaxed">
-                  Thank you, <span className="font-extrabold text-slate-800">{fullName}</span>. Your custom quote request has been saved.
-                </p>
-                <p className="leading-relaxed">
-                  Our formatting and layout specialists will review your specs and details. We will email you a print proof and pricing breakdown at <span className="font-bold text-slate-800">{email}</span> within <span className="font-bold text-[#ca8a04]">12 hours</span>.
-                </p>
+              {/* Why Choose Nano Signs Toronto */}
+              <div className="bg-white rounded-3xl p-6 sm:p-7 shadow-lg border border-slate-200/80 space-y-4">
+                <h3 className="text-base font-bold font-poppins text-slate-900 flex items-center gap-2">
+                  <ShieldCheck className="w-5 h-5 text-yellow-600" /> Why Choose Nano Signs?
+                </h3>
 
-                {!emailsInitialized && (
-                  <div className="mt-3 p-3.5 bg-amber-55/60 border border-amber-200 rounded-xl text-xs text-amber-800 leading-normal flex gap-2 items-start font-sans">
-                    <AlertCircle className="w-4 h-4 shrink-0 text-amber-600 mt-0.5" />
+                <ul className="space-y-3 text-xs text-slate-600 leading-relaxed">
+                  <li className="flex items-start gap-2.5">
+                    <CheckCircle2 className="w-4 h-4 text-emerald-500 shrink-0 mt-0.5" />
                     <div>
-                      <span className="font-bold">?? Server Notification:</span> Email confirmation was skipped because the server does not have <code>RESEND_API_KEY</code> configured. Please configure it in your Netlify settings.
+                      <strong className="text-slate-900">Free Layout &amp; Print Proof:</strong> See how your sign looks before paying anything.
                     </div>
-                  </div>
-                )}
-                {emailsInitialized && (emailErrors?.admin || emailErrors?.customer) && (
-                  <div className="mt-3 p-3.5 bg-red-55/60 border border-red-200 rounded-xl text-xs text-red-800 leading-normal flex gap-2 items-start font-sans">
-                    <AlertCircle className="w-4 h-4 shrink-0 text-red-600 mt-0.5" />
+                  </li>
+                  <li className="flex items-start gap-2.5">
+                    <CheckCircle2 className="w-4 h-4 text-emerald-500 shrink-0 mt-0.5" />
                     <div>
-                      <span className="font-bold">? Email Confirmation Failed:</span>
-                      <ul className="list-disc list-inside mt-1 space-y-1">
-                        {emailErrors.admin && <li>Admin Notify: {emailErrors.admin.message || JSON.stringify(emailErrors.admin)}</li>}
-                        {emailErrors.customer && <li>Customer Confirm: {emailErrors.customer.message || JSON.stringify(emailErrors.customer)}</li>}
-                      </ul>
+                      <strong className="text-slate-900">Fast Turnaround:</strong> Same-week production &amp; local Greater Toronto Area delivery/pickup.
                     </div>
-                  </div>
-                )}
+                  </li>
+                  <li className="flex items-start gap-2.5">
+                    <CheckCircle2 className="w-4 h-4 text-emerald-500 shrink-0 mt-0.5" />
+                    <div>
+                      <strong className="text-slate-900">Commercial Durability:</strong> Premium UV-resistant inks &amp; Canadian winter weatherproof materials.
+                    </div>
+                  </li>
+                  <li className="flex items-start gap-2.5">
+                    <CheckCircle2 className="w-4 h-4 text-emerald-500 shrink-0 mt-0.5" />
+                    <div>
+                      <strong className="text-slate-900">Best Price Guarantee:</strong> Volume discounts on corporate and bulk printing.
+                    </div>
+                  </li>
+                </ul>
               </div>
 
-              <div className="flex flex-col sm:flex-row gap-3 pt-4 justify-center">
-                <Link
-                  href="/"
-                  className="px-6 py-3 border-2 border-[#ca8a04] text-[#ca8a04] hover:bg-[#f7f82d] hover:text-gray-900 bg-transparent font-bold text-xs uppercase tracking-wider rounded-xl transition-all text-center"
-                >
-                  Back to Homepage
-                </Link>
-                <button
-                  onClick={() => {
-                    setSubmitSuccess(false);
-                    setFullName("");
-                    setEmail("");
-                    setPhone("");
-                    setDescription("");
-                    setWidth("");
-                    setHeight("");
-                    setQuantity(1);
-                    setFile(null);
-                    setFileUrl(null);
-                  }}
-                  className="px-6 py-3 border-2 border-slate-200 hover:border-[#ca8a04] hover:text-yellow-600 text-slate-500 font-bold text-xs uppercase tracking-wider rounded-xl transition-all bg-white"
-                >
-                  Submit Another Quote
-                </button>
+              {/* Customer Testimonial Box */}
+              <div className="bg-slate-900 text-white rounded-3xl p-6 shadow-xl border border-slate-800 space-y-3">
+                <div className="flex items-center gap-1 text-yellow-400">
+                  <Star className="w-4 h-4 fill-yellow-400" />
+                  <Star className="w-4 h-4 fill-yellow-400" />
+                  <Star className="w-4 h-4 fill-yellow-400" />
+                  <Star className="w-4 h-4 fill-yellow-400" />
+                  <Star className="w-4 h-4 fill-yellow-400" />
+                </div>
+                <p className="text-xs text-slate-300 italic leading-relaxed">
+                  &quot;Nano Signs fabricated our store&apos;s custom LED channel letter sign in 3 days. Beautiful quality, fair pricing, and outstanding local Toronto service!&quot;
+                </p>
+                <div className="text-[11px] text-slate-400 font-medium flex justify-between items-center pt-2 border-t border-slate-800">
+                  <span className="font-bold text-white">Michael R. — Storefront Owner</span>
+                  <span className="text-yellow-400 font-semibold">Toronto ON</span>
+                </div>
               </div>
+
             </div>
-          )}
+          </div>
         </section>
       </main>
 
-      <Footer light={true} />
+      <Footer />
     </div>
   );
 }

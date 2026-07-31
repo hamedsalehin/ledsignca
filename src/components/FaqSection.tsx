@@ -24,11 +24,6 @@ const FAQ_ITEMS = [
     answer:
       "We offer both indoor and weather-resistant outdoor IP67 waterproof Neon LED signs. Our outdoor models feature sealed silicone jackets and weather-proof power supplies engineered for Canadian winter conditions.",
   },
-  {
-    question: "Where are you located, and do you serve all of the Greater Toronto Area (GTA)?",
-    answer:
-      "Our facility is located at 2190 Warden Ave, Toronto, ON M1T 1V6. We offer local pickup as well as fast courier shipping to Toronto, Scarborough, North York, Etobicoke, Mississauga, Markham, Vaughan, and Richmond Hill.",
-  },
 ];
 
 export function FaqSection() {
@@ -51,55 +46,102 @@ export function FaqSection() {
     })),
   };
 
+  const leftColumnItems = FAQ_ITEMS.filter((_, i) => i % 2 === 0);
+  const rightColumnItems = FAQ_ITEMS.filter((_, i) => i % 2 === 1);
+
   return (
-    <section className="py-16 bg-slate-900/60 border-t border-slate-800 text-slate-100">
+    <section className="py-6 md:py-8 bg-gradient-to-b from-[#090c15] to-[#0e1222] border-t border-slate-800/80 text-slate-100">
       {/* Inject FAQPage Structured Data for Google AI & Rich Snippets */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
 
-      <div className="max-w-4xl mx-auto px-4">
-        <div className="text-center mb-12">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#f7f82d]/10 border border-[#f7f82d]/30 text-[#f7f82d] text-xs font-semibold uppercase tracking-wider mb-3">
-            <HelpCircle className="w-3.5 h-3.5" />
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-5">
+          <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-[#f7f82d]/10 border border-[#f7f82d]/30 text-[#f7f82d] text-[11px] font-semibold uppercase tracking-wider mb-1.5">
+            <HelpCircle className="w-3 h-3" />
             Frequently Asked Questions
           </div>
-          <h2 className="text-3xl md:text-4xl font-extrabold text-white tracking-tight">
+          <h2 className="text-xl md:text-2xl font-bold text-white tracking-tight">
             Got Questions? We&apos;ve Got Answers.
           </h2>
-          <p className="mt-3 text-slate-400 text-base max-w-2xl mx-auto">
+          <p className="mt-1 text-slate-400 text-xs md:text-sm max-w-none text-center">
             Everything you need to know about ordering custom signs, LED displays, and banners from Nano Signs Toronto.
           </p>
         </div>
 
-        <div className="space-y-4">
-          {FAQ_ITEMS.map((item, index) => {
-            const isOpen = openIndex === index;
-            return (
-              <div
-                key={index}
-                className="bg-slate-950/80 border border-slate-800 rounded-xl overflow-hidden transition-all duration-200"
-              >
-                <button
-                  onClick={() => toggleFaq(index)}
-                  className="w-full text-left px-6 py-5 flex items-center justify-between gap-4 font-semibold text-slate-100 hover:text-[#f7f82d] transition-colors"
+        {/* 2-Column Extra Compact Grid to minimize vertical space */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-3 items-start">
+          {/* Column 1 */}
+          <div className="space-y-2.5">
+            {leftColumnItems.map((item, colIdx) => {
+              const originalIndex = colIdx * 2;
+              const isOpen = openIndex === originalIndex;
+              return (
+                <div
+                  key={originalIndex}
+                  className={`border rounded-lg overflow-hidden transition-all duration-200 ${
+                    isOpen
+                      ? "bg-[#161c2e] border-[#f7f82d]/50 shadow-md shadow-black/40"
+                      : "bg-[#111625] border-slate-800 hover:border-slate-700 hover:bg-[#141a2c]"
+                  }`}
                 >
-                  <span className="text-base md:text-lg">{item.question}</span>
-                  <ChevronDown
-                    className={`w-5 h-5 flex-shrink-0 text-slate-400 transition-transform duration-200 ${
-                      isOpen ? "rotate-180 text-[#f7f82d]" : ""
-                    }`}
-                  />
-                </button>
-                {isOpen && (
-                  <div className="px-6 pb-5 pt-1 text-slate-300 text-sm md:text-base leading-relaxed border-t border-slate-800/60 bg-slate-900/30">
-                    {item.answer}
-                  </div>
-                )}
-              </div>
-            );
-          })}
+                  <button
+                    onClick={() => toggleFaq(originalIndex)}
+                    className="w-full text-left px-3.5 py-2.5 flex items-center justify-between gap-2.5 font-semibold text-slate-100 hover:text-[#f7f82d] transition-colors group"
+                  >
+                    <span className="text-xs md:text-sm leading-snug">{item.question}</span>
+                    <ChevronDown
+                      className={`w-3.5 h-3.5 flex-shrink-0 transition-transform duration-200 ${
+                        isOpen ? "rotate-180 text-[#f7f82d]" : "text-slate-400 group-hover:text-[#f7f82d]"
+                      }`}
+                    />
+                  </button>
+                  {isOpen && (
+                    <div className="px-3.5 pb-2.5 pt-1 text-slate-300 text-xs leading-relaxed border-t border-slate-800/60 bg-[#0d111d]/50">
+                      {item.answer}
+                    </div>
+                  )}
+                </div>
+              );
+            })}
+          </div>
+
+          {/* Column 2 */}
+          <div className="space-y-2.5">
+            {rightColumnItems.map((item, colIdx) => {
+              const originalIndex = colIdx * 2 + 1;
+              const isOpen = openIndex === originalIndex;
+              return (
+                <div
+                  key={originalIndex}
+                  className={`border rounded-lg overflow-hidden transition-all duration-200 ${
+                    isOpen
+                      ? "bg-[#161c2e] border-[#f7f82d]/50 shadow-md shadow-black/40"
+                      : "bg-[#111625] border-slate-800 hover:border-slate-700 hover:bg-[#141a2c]"
+                  }`}
+                >
+                  <button
+                    onClick={() => toggleFaq(originalIndex)}
+                    className="w-full text-left px-3.5 py-2.5 flex items-center justify-between gap-2.5 font-semibold text-slate-100 hover:text-[#f7f82d] transition-colors group"
+                  >
+                    <span className="text-xs md:text-sm leading-snug">{item.question}</span>
+                    <ChevronDown
+                      className={`w-3.5 h-3.5 flex-shrink-0 transition-transform duration-200 ${
+                        isOpen ? "rotate-180 text-[#f7f82d]" : "text-slate-400 group-hover:text-[#f7f82d]"
+                      }`}
+                    />
+                  </button>
+                  {isOpen && (
+                    <div className="px-3.5 pb-2.5 pt-1 text-slate-300 text-xs leading-relaxed border-t border-slate-800/60 bg-[#0d111d]/50">
+                      {item.answer}
+                    </div>
+                  )}
+                </div>
+              );
+            })}
+          </div>
         </div>
       </div>
     </section>

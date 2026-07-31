@@ -333,7 +333,7 @@ export function Footer({ light = false }: { light?: boolean } = {}) {
               ))}
             </div>
             <p className={`text-sm ${light ? "text-slate-400" : "text-gray-600"}`}>
-              Copyright 2026 Nano Signs. All rights reserved.
+              Copyright &copy; 2020-2026 Nano Signs. All rights reserved.
             </p>
           </div>
         </div>
