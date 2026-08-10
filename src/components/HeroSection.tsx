@@ -1,17 +1,16 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import Image from "next/image";
 import Link from "next/link";
 
 export function HeroSection() {
   const [showSecondarySlide, setShowSecondarySlide] = useState(false);
 
   useEffect(() => {
-    // Only load and animate the secondary slide after the initial page has settled (5 seconds)
+    // Only mount secondary slide after initial paint & interaction
     const timer = setTimeout(() => {
       setShowSecondarySlide(true);
-    }, 5000);
+    }, 4000);
     return () => clearTimeout(timer);
   }, []);
 
@@ -38,62 +37,43 @@ export function HeroSection() {
           />
         )}
 
-        {/* Primary Hero Slide (LCP Target) */}
+        {/* Primary Hero Slide (LCP Target) - uses <picture> so mobile only downloads 24KB */}
         <div className={`absolute inset-0 ${showSecondarySlide ? "hero-img-0" : "z-10 opacity-100"}`}>
-          {/* Mobile optimized image (< 640px) */}
-          <div className="block sm:hidden absolute inset-0">
-            <Image
-              src="/images/hero-mobile-1.webp"
-              alt="Toronto Nano Signs — High-quality banners, outdoor signs, roll-ups and displays"
-              fill
-              sizes="100vw"
-              quality={75}
-              className="object-cover object-center"
-              priority
-              loading="eager"
+          <picture>
+            <source
+              media="(max-width: 640px)"
+              srcSet="/images/hero-mobile-1.webp"
+              type="image/webp"
             />
-          </div>
-
-          {/* Tablet & Desktop image (>= 640px) */}
-          <div className="hidden sm:block absolute inset-0">
-            <Image
+            <img
               src="/images/hero-image-toronto-printing-ca.webp"
               alt="Toronto Nano Signs — High-quality banners, outdoor signs, roll-ups and displays"
-              fill
-              sizes="(max-width: 1200px) 100vw, 2164px"
-              quality={75}
-              className="object-cover object-center"
-              priority
+              className="w-full h-full object-cover object-center"
               loading="eager"
+              decoding="async"
+              // @ts-expect-error - fetchpriority is standard in modern browsers
+              fetchpriority="high"
             />
-          </div>
+          </picture>
         </div>
 
-        {/* Secondary Slide - Deferred to protect initial LCP / mobile bandwidth */}
+        {/* Secondary Slide - Deferred to prevent mobile bandwidth contention */}
         {showSecondarySlide && (
           <div className="absolute inset-0 hero-img-1">
-            <div className="block sm:hidden absolute inset-0">
-              <Image
-                src="/images/hero-mobile-2.webp"
-                alt="Toronto Nano Signs — Top-tier bespoke printing and display solutions"
-                fill
-                sizes="100vw"
-                quality={75}
-                className="object-cover object-center"
-                loading="lazy"
+            <picture>
+              <source
+                media="(max-width: 640px)"
+                srcSet="/images/hero-mobile-2.webp"
+                type="image/webp"
               />
-            </div>
-            <div className="hidden sm:block absolute inset-0">
-              <Image
+              <img
                 src="/images/hero-image 2-toronto-printing-ca.webp"
                 alt="Toronto Nano Signs — Top-tier bespoke printing and display solutions"
-                fill
-                sizes="(max-width: 1200px) 100vw, 2164px"
-                quality={75}
-                className="object-cover object-center"
+                className="w-full h-full object-cover object-center"
                 loading="lazy"
+                decoding="async"
               />
-            </div>
+            </picture>
           </div>
         )}
 

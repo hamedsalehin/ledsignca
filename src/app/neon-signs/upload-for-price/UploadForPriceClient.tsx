@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState, useRef } from "react";
 import Script from "next/script";
-import { Sparkles, ShieldCheck, Clock, ArrowRight } from "lucide-react";
+import { Sparkles, ShieldCheck, Clock, ArrowRight, Upload } from "lucide-react";
 
 export function UploadForPriceClient() {
   const [isIframeLoaded, setIsIframeLoaded] = useState(false);
@@ -10,10 +10,25 @@ export function UploadForPriceClient() {
   const containerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    // Delay iframe load slightly so initial page paint (FCP/LCP) completes cleanly under 1.2s
-    const timer = setTimeout(() => {
+    // Mount iframe on first user interaction or fallback timer (2.2s) to protect LCP
+    const triggerIframe = () => {
       setShouldLoadIframe(true);
-    }, 800);
+      removeListeners();
+    };
+
+    const removeListeners = () => {
+      window.removeEventListener("scroll", triggerIframe);
+      window.removeEventListener("touchstart", triggerIframe);
+      window.removeEventListener("mousemove", triggerIframe);
+      window.removeEventListener("pointerdown", triggerIframe);
+    };
+
+    window.addEventListener("scroll", triggerIframe, { passive: true, once: true });
+    window.addEventListener("touchstart", triggerIframe, { passive: true, once: true });
+    window.addEventListener("mousemove", triggerIframe, { passive: true, once: true });
+    window.addEventListener("pointerdown", triggerIframe, { passive: true, once: true });
+
+    const timer = setTimeout(triggerIframe, 2200);
 
     const handleMessage = (event: MessageEvent) => {
       if (!event.origin.includes("neonfl.com")) return;
@@ -50,6 +65,7 @@ export function UploadForPriceClient() {
     window.addEventListener("message", handleMessage);
     return () => {
       clearTimeout(timer);
+      removeListeners();
       window.removeEventListener("message", handleMessage);
     };
   }, []);
@@ -98,12 +114,21 @@ export function UploadForPriceClient() {
         className="w-full flex-grow relative bg-slate-50"
         style={{ minHeight: "850px" }}
       >
-        {/* Loading skeleton shimmer */}
+        {/* Loading skeleton shimmer with manual open action */}
         {!isIframeLoaded && (
           <div className="absolute inset-0 flex flex-col items-center justify-center p-8 z-0">
             <div className="w-10 h-10 border-3 border-yellow-500 border-t-transparent rounded-full animate-spin mb-3" />
             <p className="text-sm font-bold text-gray-900">Loading Custom Neon Quote Tool...</p>
-            <p className="text-xs text-gray-500 mt-1">Preparing 3D renderer and upload module</p>
+            <p className="text-xs text-gray-500 mt-1 mb-4">Preparing 3D renderer and upload module</p>
+            {!shouldLoadIframe && (
+              <button
+                type="button"
+                onClick={() => setShouldLoadIframe(true)}
+                className="px-5 py-2.5 bg-yellow-400 hover:bg-yellow-500 text-slate-950 font-bold text-xs rounded-full shadow-md transition-transform active:scale-95 flex items-center gap-2"
+              >
+                <Upload className="w-3.5 h-3.5" /> Start &amp; Upload Artwork Now
+              </button>
+            )}
           </div>
         )}
 
