@@ -3,11 +3,11 @@ import Link from "next/link";
 
 const heroImages = [
   {
-    src: "/images/hero-image-toronto-printing-ca.jpeg",
+    src: "/images/hero-image-toronto-printing-ca.webp",
     alt: "Toronto Nano Signs — High-quality banners, outdoor signs, roll-ups and displays",
   },
   {
-    src: "/images/hero-image 2-toronto-printing-ca.jpg",
+    src: "/images/hero-image 2-toronto-printing-ca.webp",
     alt: "Toronto Nano Signs — Top-tier bespoke printing and display solutions",
   },
 ];

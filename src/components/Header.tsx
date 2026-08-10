@@ -129,12 +129,12 @@ export function Header() {
             {/* Logo */}
             <Link href="/" className="flex-shrink-0">
               <Image
-                src="/images/nano logo complete-toronto-printing-ca.png"
+                src="/images/nano logo complete-toronto-printing-ca.webp"
                 alt="Nano Signs Logo"
                 width={180}
                 height={70}
                 className="h-10 md:h-14 w-auto object-contain"
-                quality={60}
+                quality={85}
                 priority
               />
             </Link>

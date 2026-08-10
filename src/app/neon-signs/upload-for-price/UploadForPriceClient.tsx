@@ -5,8 +5,14 @@ import Script from "next/script";
 
 export function UploadForPriceClient() {
   const [isIframeLoaded, setIsIframeLoaded] = useState(false);
+  const [shouldLoadIframe, setShouldLoadIframe] = useState(false);
 
   useEffect(() => {
+    // Mount iframe right after critical render so FCP and LCP complete first
+    const timer = setTimeout(() => {
+      setShouldLoadIframe(true);
+    }, 100);
+
     const handleMessage = (event: MessageEvent) => {
       // Validate that the message is coming from neonfl.com
       if (!event.origin.includes("neonfl.com")) return;
@@ -45,6 +51,7 @@ export function UploadForPriceClient() {
 
     window.addEventListener("message", handleMessage);
     return () => {
+      clearTimeout(timer);
       window.removeEventListener("message", handleMessage);
     };
   }, []);
@@ -78,14 +85,16 @@ export function UploadForPriceClient() {
       )}
 
       {/* Iframe to quote request tool */}
-      <iframe
-        src="https://neonfl.com/quote.html"
-        title="Upload for Price Custom Neon Signs"
-        className="w-full h-full border-0 absolute top-0 left-0 right-0 bottom-0 z-10 transition-opacity duration-300"
-        allow="fullscreen"
-        loading="lazy"
-        onLoad={() => setIsIframeLoaded(true)}
-      />
+      {shouldLoadIframe && (
+        <iframe
+          src="https://neonfl.com/quote.html"
+          title="Upload for Price Custom Neon Signs"
+          className="w-full h-full border-0 absolute top-0 left-0 right-0 bottom-0 z-10 transition-opacity duration-300"
+          allow="fullscreen"
+          loading="lazy"
+          onLoad={() => setIsIframeLoaded(true)}
+        />
+      )}
     </div>
   );
 }
