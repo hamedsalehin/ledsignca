@@ -10,7 +10,8 @@ export function ExpertsSection() {
           alt="Local print shop and custom signage facility"
           fill
           sizes="100vw"
-          quality={85}
+          quality={75}
+          loading="lazy"
           className="object-cover"
         />
         {/* Logo-inspired pink/cyan tinted overlay */}

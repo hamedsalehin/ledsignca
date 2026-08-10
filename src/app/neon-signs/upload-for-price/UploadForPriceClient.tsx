@@ -1,30 +1,28 @@
 "use client";
 
-import React, { useEffect } from "react";
-import Link from "next/link";
+import React, { useEffect, useState } from "react";
 import Script from "next/script";
-import { Header } from "@/components/Header";
-import { Footer } from "@/components/Footer";
 
 export function UploadForPriceClient() {
+  const [isIframeLoaded, setIsIframeLoaded] = useState(false);
+
   useEffect(() => {
     const handleMessage = (event: MessageEvent) => {
       // Validate that the message is coming from neonfl.com
       if (!event.origin.includes("neonfl.com")) return;
 
       const data = event.data;
-      
+
       // Check for common success message indicators from the iframe
-      const isSuccess = 
+      const isSuccess =
         data === "quote_success" ||
         data?.type === "quote_success" ||
         data?.event === "quote_success" ||
         data?.status === "success" ||
-        (typeof data === "string" && (
-          data.includes("quote_success") || 
-          data.includes("success") || 
-          data.startsWith("Q-") // Quote reference number format e.g., Q-508221
-        ));
+        (typeof data === "string" &&
+          (data.includes("quote_success") ||
+            data.includes("success") ||
+            data.startsWith("Q-"))); // Quote reference number format e.g., Q-508221
 
       if (isSuccess) {
         console.log("Quote submission success event detected from iframe. Tracking conversion...");
@@ -35,7 +33,7 @@ export function UploadForPriceClient() {
             value: 1.0,
             currency: "USD",
           });
-          
+
           // Track general lead event
           (window as any).gtag("event", "generate_lead", {
             event_category: "Quote",
@@ -52,15 +50,15 @@ export function UploadForPriceClient() {
   }, []);
 
   return (
-    <div className="min-h-screen flex flex-col">
-      {/* Load Google Tag Manager / Global Site Tag for G-C0T0585G3W */}
+    <div className="w-full flex-grow relative" style={{ minHeight: "800px" }}>
+      {/* Load Google Tag Manager / Global Site Tag for G-C0T0585G3W with lazyOnload */}
       <Script
-        strategy="afterInteractive"
+        strategy="lazyOnload"
         src="https://www.googletagmanager.com/gtag/js?id=G-C0T0585G3W"
       />
       <Script
         id="gtag-init-upload"
-        strategy="afterInteractive"
+        strategy="lazyOnload"
         dangerouslySetInnerHTML={{
           __html: `
             window.dataLayer = window.dataLayer || [];
@@ -71,39 +69,23 @@ export function UploadForPriceClient() {
         }}
       />
 
-      <Header />
-      <main className="flex-grow flex flex-col">
-        {/* Breadcrumb / Title */}
-        <div className="bg-white border-b py-4">
-          <div className="max-w-7xl mx-auto px-4 lg:px-8 flex items-center gap-2 text-sm text-gray-500 font-sans">
-            <Link href="/" className="hover:text-yellow-600 transition-colors">
-              Home
-            </Link>
-            <span>/</span>
-            <Link href="/neon-signs" className="hover:text-yellow-600 transition-colors">
-              Neon Signs
-            </Link>
-            <span>/</span>
-            <span className="font-semibold text-gray-900">Upload for Price</span>
-          </div>
+      {/* Lightweight skeleton shimmer while iframe initializes */}
+      {!isIframeLoaded && (
+        <div className="absolute inset-0 flex flex-col items-center justify-center bg-slate-50 text-slate-400 p-8 z-0">
+          <div className="w-10 h-10 border-3 border-yellow-500 border-t-transparent rounded-full animate-spin mb-3" />
+          <p className="text-sm font-medium text-slate-600">Loading Quote Request Tool...</p>
         </div>
+      )}
 
-        <div className="max-w-7xl mx-auto px-4 lg:px-8 pt-6 pb-2">
-          <h1 className="text-2xl font-bold font-poppins text-gray-900">Upload Design for Custom Neon Sign Quote</h1>
-          <p className="text-gray-600 text-sm mt-1">Upload your logo, artwork, or sketch below to receive an instant price quote and 3D preview.</p>
-        </div>
-
-        {/* Iframe to original quote request tool */}
-        <div className="w-full flex-grow relative" style={{ minHeight: "800px" }}>
-          <iframe
-            src="https://neonfl.com/quote.html"
-            title="Upload for Price Custom Neon Signs"
-            className="w-full h-full border-0 absolute top-0 left-0 right-0 bottom-0"
-            allow="fullscreen"
-          />
-        </div>
-      </main>
-      <Footer />
+      {/* Iframe to quote request tool */}
+      <iframe
+        src="https://neonfl.com/quote.html"
+        title="Upload for Price Custom Neon Signs"
+        className="w-full h-full border-0 absolute top-0 left-0 right-0 bottom-0 z-10 transition-opacity duration-300"
+        allow="fullscreen"
+        loading="lazy"
+        onLoad={() => setIsIframeLoaded(true)}
+      />
     </div>
   );
 }

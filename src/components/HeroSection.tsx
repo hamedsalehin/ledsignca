@@ -38,10 +38,11 @@ export function HeroSection() {
               src={img.src}
               alt={img.alt}
               fill
-              sizes="100vw"
+              sizes="(max-width: 640px) 100vw, (max-width: 1200px) 100vw, 2164px"
               quality={75}
               className="object-cover object-center"
               priority={index === 0}
+              loading={index === 0 ? "eager" : "lazy"}
             />
           </div>
         ))}

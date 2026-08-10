@@ -96,7 +96,8 @@ export function ProductsGrid() {
                     alt={product.name}
                     fill
                     sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 250px"
-                    quality={85}
+                    quality={75}
+                    loading="lazy"
                     className="object-contain p-6 group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>

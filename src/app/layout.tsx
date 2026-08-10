@@ -6,16 +6,18 @@ import Script from "next/script";
 
 const openSans = Open_Sans({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
+  weight: ["400", "600", "700"],
   variable: "--font-open-sans",
   display: "swap",
+  preload: true,
 });
 
 const poppins = Poppins({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700", "800"],
+  weight: ["600", "700", "800"],
   variable: "--font-poppins",
   display: "swap",
+  preload: true,
 });
 
 export const viewport: Viewport = {
@@ -81,6 +83,10 @@ export default function RootLayout({
   return (
     <html lang="en-CA" className={`${openSans.variable} ${poppins.variable}`}>
       <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+        <link rel="dns-prefetch" href="https://neonfl.com" />
         {/* Google tag (gtag.js) */}
         <Script strategy="lazyOnload" src="https://www.googletagmanager.com/gtag/js?id=G-YESMFLCB2D" />
         <Script id="google-analytics" strategy="lazyOnload" dangerouslySetInnerHTML={{

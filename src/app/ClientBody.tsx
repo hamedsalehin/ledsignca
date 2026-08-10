@@ -1,13 +1,29 @@
 "use client";
 
+import dynamic from "next/dynamic";
 import { AuthProvider } from "@/components/AuthContext";
 import { CartProvider } from "@/components/CartContext";
-import { AuthModal } from "@/components/AuthModal";
-import { CartSidebar } from "@/components/CartSidebar";
-import { PromotionalModal } from "@/components/PromotionalModal";
-import { ChatWidget } from "@/components/ChatWidget";
-import dynamic from 'next/dynamic';
-const Chatbot = dynamic(() => import('@/components/Chatbot').then(mod => mod.Chatbot), { ssr: false });
+
+const AuthModal = dynamic(
+  () => import("@/components/AuthModal").then((mod) => mod.AuthModal),
+  { ssr: false }
+);
+const CartSidebar = dynamic(
+  () => import("@/components/CartSidebar").then((mod) => mod.CartSidebar),
+  { ssr: false }
+);
+const PromotionalModal = dynamic(
+  () => import("@/components/PromotionalModal").then((mod) => mod.PromotionalModal),
+  { ssr: false }
+);
+const ChatWidget = dynamic(
+  () => import("@/components/ChatWidget").then((mod) => mod.ChatWidget),
+  { ssr: false }
+);
+const Chatbot = dynamic(
+  () => import("@/components/Chatbot").then((mod) => mod.Chatbot),
+  { ssr: false }
+);
 
 export function ClientBody({ children }: { children: React.ReactNode }) {
   return (
