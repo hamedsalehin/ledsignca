@@ -166,6 +166,8 @@ export function CategoryPageClient({
                   alt={`${title} Banner`}
                   width={1200}
                   height={480}
+                  priority
+                  loading="eager"
                 />
               </picture>
 

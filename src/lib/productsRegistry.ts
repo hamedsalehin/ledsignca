@@ -6564,9 +6564,9 @@ Why Choose Our Expert-grade Rollup Banners?
     breadcrumbLabel: "LED Displays",
     description: "Discover Nano Signs' high-impact, programmable commercial LED display signs in Toronto. Perfect for retail storefronts, events, window displays, and outdoor advertising. Energy-efficient, ultra-bright, and customizable.",
     heroSubtitle: "High-Brightness Commercial Screens & Programmable Billboards",
-    heroImage: "/images/products/led-display-signs/hero4.jpeg",
-    tabletHeroImage: "/images/products/led-display-signs/hero4.jpeg",
-    mobileHeroImage: "/images/products/led-display-signs/hero4.jpeg",
+    heroImage: "/images/products/led-display-signs/hero4.webp",
+    tabletHeroImage: "/images/products/led-display-signs/hero4.webp",
+    mobileHeroImage: "/images/products/led-display-signs/hero4-mobile.webp",
     categoryDescriptionText: "Elevate your brand presence with our premium, high-brightness commercial LED display signs. From massive outdoor fixed billboards and dynamic vehicle displays to sleek indoor screens and flexible retail windows, Nano Signs delivers cutting-edge, energy-efficient solutions built for the Canadian climate. Our Toronto-based experts provide comprehensive support from design and manufacturing to installation, ensuring your digital signage drives unmatched foot traffic and visibility.",
     products: ledProducts
   },
