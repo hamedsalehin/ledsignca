@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
+import { FooterMap } from "./FooterMap";
 import {
-
   Facebook,
   Instagram,
   Linkedin,
@@ -299,19 +299,8 @@ export function Footer({ light = false }: { light?: boolean } = {}) {
 
 
 
-        {/* Google Maps Location Embed */}
-        <div className={`mt-12 rounded-2xl overflow-hidden shadow-lg h-[250px] w-full border ${light ? "border-slate-200" : "border-gray-800"}`}>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.4!2d-79.2765!3d43.7830!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4d05d5e3a4b4b%3A0x1a2b3c4d5e6f7a8b!2s2190%20Warden%20Ave%2C%20Scarborough%2C%20ON%20M1T%201V6!5e0!3m2!1sen!2sca!4v1781380571760!5m2!1sen!2sca"
-            width="100%"
-            height="100%"
-            style={{ border: 0 }}
-            allowFullScreen={true}
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-            title="Nano Signs Toronto Location"
-          ></iframe>
-        </div>
+        {/* Google Maps Location Embed — Lazy loaded on viewport intersection */}
+        <FooterMap light={light} />
       </div>
 
       {/* Bottom bar */}
