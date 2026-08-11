@@ -33,14 +33,7 @@ export default function UploadForPricePage() {
           </div>
         </div>
 
-        <div className="max-w-7xl mx-auto px-4 lg:px-8 pt-6 pb-2">
-          <h1 className="text-2xl font-bold font-poppins text-gray-900">
-            Upload Design for Custom Neon Sign Quote
-          </h1>
-          <p className="text-gray-600 text-sm mt-1">
-            Upload your logo, artwork, or sketch below to receive an instant price quote and 3D preview.
-          </p>
-        </div>
+        <h1 className="sr-only">Upload Design for Custom Neon Sign Quote</h1>
 
         {/* Client iframe + Conversion Tracker */}
         <UploadForPriceClient />
