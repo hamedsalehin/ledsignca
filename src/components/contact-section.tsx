@@ -38,10 +38,15 @@ export function ContactSection() {
         }),
       })
 
-      const data = await response.json()
+      let data: any = {}
+      try {
+        data = await response.json()
+      } catch {
+        data = {}
+      }
 
       if (!response.ok) {
-        setError(data.error || "Failed to submit quote request")
+        setError(data.error || "Failed to submit quote request. Please call (416) 838-8994.")
         return
       }
 
@@ -49,7 +54,7 @@ export function ContactSection() {
       setFormData({ name: "", company: "", email: "", phone: "", productType: "", message: "" })
       setTimeout(() => setSubmitted(false), 4000)
     } catch (err) {
-      setError("Network error. Please try again.")
+      setError("Network error. Please try again or call us at (416) 838-8994.")
     } finally {
       setLoading(false)
     }

@@ -64,10 +64,7 @@ export function UploadForPriceClient() {
       />
 
       {/* Iframe Container */}
-      <div
-        className="w-full flex-grow relative bg-slate-50"
-        style={{ minHeight: "850px" }}
-      >
+      <div className="w-full flex-grow relative bg-slate-50 min-h-[3200px] md:min-h-[2200px]">
         <iframe
           src="https://neonfl.com/quote.html"
           title="Upload for Price Custom Neon Signs"

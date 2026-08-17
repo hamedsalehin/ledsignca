@@ -39,7 +39,7 @@ export function QuoteForm() {
   const [submitting, setSubmitting] = useState(false);
   const [submitError, setSubmitError] = useState<string | null>(null);
 
-  // Handle local file selection and Supabase storage upload
+  // Handle local file selection and upload
   const handleFileChange = async (e: React.ChangeEvent<HTMLInputElement>) => {
     const selectedFile = e.target.files?.[0];
     if (!selectedFile) return;
@@ -54,31 +54,27 @@ export function QuoteForm() {
     setFileUploading(true);
 
     try {
-      const fileExt = selectedFile.name.split(".").pop();
-      const fileName = `${Date.now()}_${Math.random().toString(36).substring(2, 9)}.${fileExt}`;
-      const filePath = `quotes/${fileName}`;
+      const formData = new FormData();
+      formData.append("file", selectedFile);
 
-      const { error: uploadError } = await supabase.storage
-        .from("quote-attachments")
-        .upload(filePath, selectedFile);
+      const res = await fetch("/api/upload-quote-file", {
+        method: "POST",
+        body: formData,
+      });
 
-      if (uploadError) {
-        throw uploadError;
+      const data = await res.json();
+      if (!res.ok || !data.url) {
+        throw new Error(data.error || "Failed to upload file.");
       }
 
-      const {
-        data: { publicUrl },
-      } = supabase.storage.from("quote-attachments").getPublicUrl(filePath);
-
-      setFileUrl(publicUrl);
+      setFileUrl(data.url);
     } catch (err) {
-      console.error("Storage upload failed:", err);
+      console.error("File upload error:", err);
       setFileError(
         err instanceof Error
           ? err.message
-          : "Failed to upload file. Please try again."
+          : "Failed to upload file. You can still submit the form and email files directly to info@led-sign.ca."
       );
-      setFile(null);
     } finally {
       setFileUploading(false);
     }
@@ -87,7 +83,7 @@ export function QuoteForm() {
   // Handle submission and redirect to Google Ads Thank You page
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!fullName || !email || !phone || !description) {
+    if (!fullName.trim() || !email.trim() || !phone.trim() || !description.trim()) {
       setSubmitError("Please fill out all required fields.");
       return;
     }
@@ -115,7 +111,12 @@ export function QuoteForm() {
         }),
       });
 
-      const data = await res.json();
+      let data: any = {};
+      try {
+        data = await res.json();
+      } catch (jsonErr) {
+        console.warn("Non-JSON response received:", jsonErr);
+      }
 
       if (!res.ok) {
         throw new Error(data.error || "Failed to submit quote request.");
@@ -129,7 +130,7 @@ export function QuoteForm() {
       setSubmitError(
         err instanceof Error
           ? err.message
-          : "An unexpected error occurred. Please try again."
+          : "Unable to submit quote. Please call us directly at (416) 838-8994 or email info@led-sign.ca."
       );
       setSubmitting(false);
     }
