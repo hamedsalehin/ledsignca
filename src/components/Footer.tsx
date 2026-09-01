@@ -38,6 +38,7 @@ const footerLinks = {
       { name: "Banners", href: "/custom-banners" },
       { name: "Neon Signs", href: "/neon-signs" },
       { name: "Custom Flags", href: "/custom-flags" },
+      { name: "Sign Accessories", href: "/sign-accessories" },
     ],
   },
 };
@@ -143,7 +144,7 @@ export function Footer({ light = false }: { light?: boolean } = {}) {
                   className="w-4 h-4 mt-0.5 flex-shrink-0"
                   style={{ color: light ? "#f7f82d" : "#f7f82d" }}
                 />
-                <span>2190 Warden Ave, Toronto, ON M1T 1V6</span>
+                <span>Toronto, ON, Canada</span>
               </div>
             </div>
 

@@ -33,14 +33,14 @@ export function FooterMap({ light = false }: { light?: boolean }) {
     >
       {isVisible ? (
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.4!2d-79.2765!3d43.7830!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4d05d5e3a4b4b%3A0x1a2b3c4d5e6f7a8b!2s2190%20Warden%20Ave%2C%20Scarborough%2C%20ON%20M1T%201V6!5e0!3m2!1sen!2sca!4v1781380571760!5m2!1sen!2sca"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d184552.57289569687!2d-79.5181427!3d43.7181557!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4cb90d7c63ba5%3A0x323555502ab4c477!2sToronto%2C%20ON!5e0!3m2!1sen!2sca!4v1710000000000!5m2!1sen!2sca"
           width="100%"
           height="100%"
           style={{ border: 0 }}
           allowFullScreen={true}
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
-          title="Nano Signs Toronto Location"
+          title="Nano Signs Toronto Service Area"
         />
       ) : (
         <div className="text-xs text-slate-500 font-medium">

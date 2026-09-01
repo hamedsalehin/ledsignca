@@ -8,6 +8,9 @@ export const metadata = {
   title: "Blog & Signage Industry News | Nano Signs Toronto",
   description:
     "Read expert guides, signage trends, and tips on custom LED signs, storefront channel letters, neon lights, and commercial printing in Toronto.",
+  alternates: {
+    canonical: "https://led-sign.ca/blog",
+  },
 };
 
 export default function BlogIndex() {

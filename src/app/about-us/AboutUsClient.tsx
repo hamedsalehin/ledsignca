@@ -54,7 +54,7 @@ export function AboutUsClient() {
               Founded on the principle of providing top-tier print materials with industry-leading turnaround times, Nano Signs proudly partners with contractors, political campaigns, retailers, and real estate professionals across Ontario.
             </p>
             <p className="text-sm md:text-base text-slate-650 leading-relaxed font-medium">
-              We don't outsource. All production happens locally at our Toronto facility on Warden Ave. Our dedicated technicians monitor every single banner, flag, and coroplast board that passes through our advanced UV flatbed printers, ensuring your branding stays vibrant and withstands the tough Canadian weather.
+              We don't outsource. All production happens locally at our Toronto facility. Our dedicated technicians monitor every single banner, flag, and coroplast board that passes through our advanced UV flatbed printers, ensuring your branding stays vibrant and withstands the tough Canadian weather.
             </p>
             <div className="pt-2">
               <Link
@@ -155,7 +155,7 @@ export function AboutUsClient() {
               Visit Our Toronto Print Shop
             </h2>
             <p className="text-sm text-slate-500 font-medium mt-1">
-              We invite you to drop by our manufacturing hub and showroom located on Warden Ave. Inspect material samples in person and see our wide-format printers running your orders live.
+              We invite you to reach out or connect with our Toronto printing specialists. Inspect material samples and see our wide-format printers running your orders live.
             </p>
           </div>
 

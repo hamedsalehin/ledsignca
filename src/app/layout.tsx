@@ -46,9 +46,6 @@ export const metadata: Metadata = {
     icon: "/images/nano logo O-toronto-printing-ca.png",
     apple: "/images/nano logo O-toronto-printing-ca.png",
   },
-  alternates: {
-    canonical: "https://led-sign.ca",
-  },
   openGraph: {
     title: "Nano Signs Toronto | Custom Signs, LED Signs & Banners",
     description: "Premium custom signage, Neon LED signs, retractable banners, and commercial print in the Greater Toronto Area.",
@@ -112,10 +109,8 @@ export default function RootLayout({
               "priceRange": "$$",
               "address": {
                 "@type": "PostalAddress",
-                "streetAddress": "2190 Warden Ave",
                 "addressLocality": "Toronto",
                 "addressRegion": "ON",
-                "postalCode": "M1T 1V6",
                 "addressCountry": "CA"
               },
               "areaServed": [

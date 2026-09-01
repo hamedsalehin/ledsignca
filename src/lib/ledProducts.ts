@@ -108,8 +108,8 @@ export const ledProducts = [
           "a": "Yes! Our full-color RGB programmable LED displays support multi-line scrolling text, custom logos, moving animations, countdown timers, temperature, and date/time displays."
         },
         {
-          "q": "Where is Nano Signs located for local pickup and service in the Toronto area?",
-          "a": "Nano Signs is located at 2190 Warden Ave, Toronto, ON M1T 1V6. We offer local pickup, GTA delivery, and dedicated customer support. Call +1 416-838-8994."
+          "q": "Where is Nano Signs located for service and delivery in the Toronto area?",
+          "a": "Nano Signs serves the Greater Toronto Area with GTA delivery, local order processing, and dedicated customer support. Call +1 416-838-8994."
         }
       ],
       "reviews": [

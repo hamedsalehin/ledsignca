@@ -1,6 +1,16 @@
+import { Metadata } from "next";
 import { Header } from "@/components/Header";
 import { HeroSection } from "@/components/HeroSection";
 import dynamic from 'next/dynamic';
+
+export const metadata: Metadata = {
+  title: "Custom Signs, LED Signs & Banners Toronto | Neon LED Sign",
+  description:
+    "Design and order custom signs, Neon LED signs, retractable banners, business cards, and marketing materials online. Fast turnaround in the Toronto Area.",
+  alternates: {
+    canonical: "https://led-sign.ca",
+  },
+};
 
 const CategoryCarousel = dynamic(() => import('@/components/CategoryCarousel').then(mod => mod.CategoryCarousel));
 const CustomerFavorites = dynamic(() => import('@/components/CustomerFavorites').then(mod => mod.CustomerFavorites));

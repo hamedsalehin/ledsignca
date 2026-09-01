@@ -22,7 +22,7 @@ const TRENDING_TOPICS = [
 <h3>3. High-Impact Retractable Banners & Flags</h3>
 <p>For trade shows and outdoor promotions, portable teardrop flags and heavy-duty vinyl banners offer versatile marketing options that can be set up in seconds.</p>
 
-<p>Need custom signage for your Toronto business? Contact <strong>Nano Signs</strong> at <strong>416-838-8994</strong> or visit us at 2190 Warden Ave, Toronto, ON.</p>
+<p>Need custom signage for your Toronto business? Contact <strong>Nano Signs</strong> at <strong>416-838-8994</strong> or get in touch online.</p>
 `
   },
   {

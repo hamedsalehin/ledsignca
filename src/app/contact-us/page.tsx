@@ -2,9 +2,9 @@ import { Metadata } from "next";
 import { ContactUsClient } from "./ContactUsClient";
 
 export const metadata: Metadata = {
-  title: "Contact Nano Signs Toronto | Call +1 416-838-8994 | Warden Ave Hub",
+  title: "Contact Nano Signs Toronto | Call +1 416-838-8994 | Custom Signs & Print",
   description:
-    "Contact Nano Signs in Toronto for custom LED signs, neon displays, banners, and printing quotes. Visit our showroom at 2190 Warden Ave or call +1 416-838-8994.",
+    "Contact Nano Signs in Toronto for custom LED signs, neon displays, banners, and printing quotes. Call +1 416-838-8994 or get in touch online.",
   alternates: {
     canonical: "https://led-sign.ca/contact-us",
   },

@@ -9,6 +9,9 @@ export const metadata = {
   title: "Custom Sign Projects & Portfolio Toronto | Nano Signs",
   description:
     "Browse our portfolio of custom signs, full-color LED displays, custom neon signs, storefront channel letters, pylon signs, and vehicle wraps in Toronto.",
+  alternates: {
+    canonical: "https://led-sign.ca/projects",
+  },
 };
 
 export default async function ProjectsGallery() {

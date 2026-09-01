@@ -16,7 +16,7 @@ contact with [Nano Signs(Nano Signs) :](https://led-sign.ca/)
 
 ###### Address
 
-2190 Warden Ave. Scarborough, ON M1T 1V6, Canada
+Toronto, ON, Canada
 
 ###### Email
 

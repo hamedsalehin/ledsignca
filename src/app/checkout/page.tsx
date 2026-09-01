@@ -410,7 +410,7 @@ export default function CheckoutPage() {
                         required
                         value={shippingAddress.postal}
                         onChange={(e) => setShippingAddress({ ...shippingAddress, postal: e.target.value })}
-                        placeholder="M1T 1V6"
+                        placeholder="M5V 2T6"
                         className="w-full px-4 py-3 border border-gray-200 rounded-xl text-sm focus:outline-none focus:border-[#f7f82d] transition-colors"
                       />
                     </div>

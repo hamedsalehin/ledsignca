@@ -72,7 +72,7 @@ const INITIAL_DRAFTS: DraftArticle[] = [
   <li><strong>Dynamic Motion:</strong> Moving text and animations attract 4x more attention than static text.</li>
 </ul>
 
-<p>Explore our LED sign options at <strong>Nano Signs Toronto</strong> on 2190 Warden Ave.</p>
+<p>Explore our LED sign options at <strong>Nano Signs Toronto</strong>.</p>
 `
   }
 ];

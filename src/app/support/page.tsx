@@ -6,6 +6,9 @@ import { getPostData } from "@/lib/blog";
 export const metadata = {
   title: "Support & Software Downloads | Nano Signs",
   description: "Download software and user manuals for Nano Signs electronic LED signs.",
+  alternates: {
+    canonical: "https://led-sign.ca/support",
+  },
 };
 
 const DOWNLOAD_LINKS = [

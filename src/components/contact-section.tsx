@@ -254,13 +254,13 @@ export function ContactSection() {
                 </div>
                 <div>
                   <h4 className="text-sm font-bold text-foreground mb-1 font-mono">
-                    Visit Us
+                    Service Area
                   </h4>
                   <p className="text-sm text-muted-foreground">
-                    2190 Warden Ave
+                    Greater Toronto Area
                   </p>
                   <p className="text-sm text-muted-foreground">
-                    Scarborough, ON M1T 1V6
+                    Toronto, ON, Canada
                   </p>
                 </div>
               </div>
