@@ -425,6 +425,9 @@ export function SignProductPage({ cfg: originalCfg }: { cfg: ProductPageConfig }
     setUserClickedThumbnail(false);
     const defaultMin = cfg.minQuantity || (cfg.quantityOptions ? cfg.quantityOptions[0] : 1);
     setQuantity(defaultMin);
+    if (cfg.sizes && cfg.sizes.length > 0) {
+      setSelectedSize(cfg.sizes[0]);
+    }
   }, [cfg]);
   const [selectValues, setSelectValues] = useState<
     Record<string, SelectOption>

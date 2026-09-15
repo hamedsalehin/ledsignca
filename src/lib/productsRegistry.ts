@@ -4802,10 +4802,10 @@ Why Choose Our Expert-grade Rollup Banners?
         description:
           "Pre-ruled journals and notebooks, ideal for client meetings and logs.",
         image: "/images/products/main-page/custom_notebooks-toronto-printing-ca.png",
-        price: "Starting at CAD 3.99 each",
+        price: "Starting at CAD 399.00 for 50 pcs",
         config: {
           title: "Notebooks & Journals",
-          minQuantity: 10,
+          minQuantity: 50,
           subtitle:
             "Lined paper journals with high-quality covers to organize meetings and ideas.",
           breadcrumb: "Promotional",
@@ -4818,8 +4818,14 @@ Why Choose Our Expert-grade Rollup Banners?
             {
               label: '5.5" x 8.5" Classic Journal',
               value: "5.5x8.5",
-              basePrice: 3.99,
+              basePrice: 7.98,
             },
+          ],
+          bulkDiscounts: [
+            { minQty: 50, discountPercent: 0 },
+            { minQty: 100, discountPercent: 10 },
+            { minQty: 250, discountPercent: 18 },
+            { minQty: 500, discountPercent: 25 },
           ],
           selects: [
             {
@@ -4833,8 +4839,19 @@ Why Choose Our Expert-grade Rollup Banners?
                 },
               ],
             },
+            {
+              label: "Turnaround",
+              options: [
+                {
+                  label: "Standard 7-10 business days",
+                  value: "standard",
+                  priceAdder: 0,
+                  priceMultiplier: 1.0,
+                },
+              ],
+            },
           ],
-          qtyDiscount: "Save on office packs starting at 10+ journals",
+          qtyDiscount: "Save on volume packs starting at 50+ journals",
           keyFeatures: [
             "80 ruled pages (acid-free paper)",
             "Elastic band closure strip",
