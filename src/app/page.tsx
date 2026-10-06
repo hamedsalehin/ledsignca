@@ -4,9 +4,9 @@ import { HeroSection } from "@/components/HeroSection";
 import dynamic from 'next/dynamic';
 
 export const metadata: Metadata = {
-  title: "Custom LED Signs, Digital Displays & Banners Toronto | Nano Signs",
+  title: "Custom Signs, LED Signs & Banners Toronto | Neon LED Sign",
   description:
-    "Design and order custom signs, LED display signs, neon signs, retractable banners, car magnets, and marketing materials online. Fast turnaround in the Toronto Area.",
+    "Design and order custom signs, Neon LED signs, retractable banners, business cards, and marketing materials online. Fast turnaround in the Toronto Area.",
   alternates: {
     canonical: "https://led-sign.ca",
   },
@@ -33,19 +33,6 @@ export default function Home() {
       <ValuePropositions />
       <CustomerHighlights />
       <FaqSection />
-      
-      {/* SEO Content Block to address Thin Content and Keyword Consistency */}
-      <section className="max-w-7xl mx-auto px-4 py-12 text-slate-600 prose prose-slate">
-        <h2 className="text-2xl font-bold mb-4 text-slate-800">Your Premier Source for Custom Signs and Displays in Toronto</h2>
-        <p className="mb-4">
-          Welcome to Nano Signs, Toronto's leading destination for high-quality <strong>custom signs</strong>, cutting-edge <strong>LED display</strong> boards, and versatile <strong>retractable banners</strong>. 
-          Whether you need vibrant <strong>neon signs</strong> to illuminate your storefront, impactful <strong>car magnets</strong> for on-the-go advertising, or sophisticated digital <strong>displays</strong> to engage your customers, we deliver exceptional results tailored to your brand's unique needs.
-        </p>
-        <p>
-          We specialize in comprehensive commercial print and marketing materials, ensuring your message stands out. From expertly crafted <strong>LED signs</strong> to durable outdoor banners, our Toronto-based team is dedicated to providing fast turnaround times without compromising on quality.
-        </p>
-      </section>
-
       <Footer />
     </main>
   );

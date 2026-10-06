@@ -79,12 +79,24 @@ const socialIcons = [
 export function Footer({ light = false }: { light?: boolean } = {}) {
   return (
     <footer
-      className={light ? "text-slate-600 bg-slate-50 border-t border-gray-200" : "text-white bg-[#0d0d1a]"}
+      className={light ? "text-slate-600 bg-slate-50 border-t border-gray-200" : "text-white"}
+      style={
+        light
+          ? undefined
+          : {
+            background:
+              "#0d0d1a",
+          }
+      }
     >
       {/* Top gradient accent line */}
       {!light && (
         <div
-          className="h-1 w-full bg-[#f7f82d]"
+          className="h-1 w-full"
+          style={{
+            background:
+              "#f7f82d",
+          }}
         />
       )}
 
@@ -112,28 +124,31 @@ export function Footer({ light = false }: { light?: boolean } = {}) {
                 className={`flex items-center gap-2 transition-colors ${light ? "text-slate-600 hover:text-yellow-600" : "text-gray-300 hover:text-yellow-600"}`}
               >
                 <Phone
-                  className="w-4 h-4 flex-shrink-0 text-[#f7f82d]"
+                  className="w-4 h-4 flex-shrink-0"
+                  style={{ color: "#f7f82d" }}
                 />
                 <span>+1 416-838-8994</span>
               </a>
-              <Link
-                href="/contact-us"
+              <a
+                href="mailto:info@led-sign.ca"
                 className={`flex items-center gap-2 transition-colors ${light ? "text-slate-600 hover:text-yellow-600" : "text-gray-300 hover:text-yellow-600"}`}
               >
                 <Mail
-                  className="w-4 h-4 flex-shrink-0 text-[#f7f82d]"
+                  className="w-4 h-4 flex-shrink-0"
+                  style={{ color: light ? "#f7f82d" : "#f7f82d" }}
                 />
-                <span>Contact Support</span>
-              </Link>
+                <span>info@led-sign.ca</span>
+              </a>
               <div className={`flex items-start gap-2 ${light ? "text-slate-600" : "text-gray-300"}`}>
                 <MapPin
-                  className="w-4 h-4 mt-0.5 flex-shrink-0 text-[#f7f82d]"
+                  className="w-4 h-4 mt-0.5 flex-shrink-0"
+                  style={{ color: light ? "#f7f82d" : "#f7f82d" }}
                 />
                 <span>Toronto, ON, Canada</span>
               </div>
             </div>
 
-            {/* Social icons  pure CSS hover via .social-icon-hover */}
+            {/* Social icons � pure CSS hover via .social-icon-hover */}
             <div className="flex gap-3">
               {socialIcons.map((social, i) => (
                 <a
@@ -158,12 +173,12 @@ export function Footer({ light = false }: { light?: boolean } = {}) {
             <ul className="space-y-2">
               {footerLinks.helpCenter.links.map((link) => (
                 <li key={link.name}>
-                  <Link
+                  <a
                     href={link.href}
                     className={`transition-colors text-sm ${light ? "text-slate-500 hover:text-yellow-600" : "text-gray-400 hover:text-yellow-600"}`}
                   >
                     {link.name}
-                  </Link>
+                  </a>
                 </li>
               ))}
             </ul>
@@ -177,12 +192,12 @@ export function Footer({ light = false }: { light?: boolean } = {}) {
             <ul className="space-y-2">
               {footerLinks.company.links.map((link) => (
                 <li key={link.name}>
-                  <Link
+                  <a
                     href={link.href}
                     className={`transition-colors text-sm ${light ? "text-slate-500 hover:text-yellow-600" : "text-gray-400 hover:text-yellow-600"}`}
                   >
                     {link.name}
-                  </Link>
+                  </a>
                 </li>
               ))}
             </ul>
@@ -196,12 +211,12 @@ export function Footer({ light = false }: { light?: boolean } = {}) {
             <ul className="space-y-2">
               {footerLinks.products.links.map((link) => (
                 <li key={link.name}>
-                  <Link
+                  <a
                     href={link.href}
                     className={`transition-colors text-sm ${light ? "text-slate-500 hover:text-yellow-600" : "text-gray-400 hover:text-yellow-600"}`}
                   >
                     {link.name}
-                  </Link>
+                  </a>
                 </li>
               ))}
             </ul>
@@ -291,23 +306,24 @@ export function Footer({ light = false }: { light?: boolean } = {}) {
 
       {/* Bottom bar */}
       <div
-        className={light ? "border-t border-slate-200" : "border-t border-[#ff2d78]/20"}
+        className={light ? "border-t border-slate-200" : ""}
+        style={light ? undefined : { borderTop: "1px solid rgba(255,45,120,0.2)" }}
       >
         <div className="max-w-7xl mx-auto px-4 py-4">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="flex flex-wrap justify-center gap-4">
               {bottomLinks.map((link) => (
-                <Link
+                <a
                   key={link.name}
                   href={link.href}
                   className={`transition-colors text-sm ${light ? "text-slate-400 hover:text-yellow-600" : "text-gray-500 hover:text-yellow-600"}`}
                 >
                   {link.name}
-                </Link>
+                </a>
               ))}
             </div>
             <p className={`text-sm ${light ? "text-slate-400" : "text-gray-600"}`}>
-              Copyright &copy; 2020-{new Date().getFullYear()} Nano Signs. All rights reserved. Last updated: {new Date().toLocaleDateString('en-US', { month: 'long', year: 'numeric' })}
+              Copyright &copy; 2020-2026 Nano Signs. All rights reserved.
             </p>
           </div>
         </div>

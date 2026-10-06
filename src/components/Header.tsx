@@ -103,14 +103,14 @@ export function Header() {
             <Grid className="w-4 h-4" />
             <span className="hidden sm:inline">Projects</span>
           </Link>
-          <Link
-            href="/contact-us"
+          <a
+            href="mailto:info@led-sign.ca"
             className="flex items-center gap-1.5 hover:text-yellow-600 transition-colors duration-200"
-            aria-label="Contact Support"
+            aria-label="Email support at info@led-sign.ca"
           >
             <MessageCircle className="w-4 h-4" />
-            <span className="hidden sm:inline">Contact Support</span>
-          </Link>
+            <span className="hidden sm:inline">info@led-sign.ca</span>
+          </a>
           <Link
             href="/contact-us"
             className="flex items-center gap-1.5 hover:text-yellow-600 transition-colors duration-200"
@@ -184,7 +184,12 @@ export function Header() {
                           "Account"}
                       </span>
                       <ChevronDown
-                        className={`w-4 h-4 transition-transform duration-200 ${userDropdownOpen ? 'rotate-180' : ''}`}
+                        className="w-4 h-4 transition-transform duration-200"
+                        style={{
+                          transform: userDropdownOpen
+                            ? "rotate(180deg)"
+                            : "none",
+                        }}
                       />
                     </button>
 
@@ -236,7 +241,10 @@ export function Header() {
                   <ShoppingCart className="w-5 h-5" />
                   {items.length > 0 && (
                     <span
-                      className="absolute -top-2 -right-2 text-gray-900 bg-[#f7f82d] text-[10px] w-4.5 h-4.5 rounded-full flex items-center justify-center font-extrabold animate-in zoom-in duration-300"
+                      className="absolute -top-2 -right-2 text-gray-900 text-[10px] w-4.5 h-4.5 rounded-full flex items-center justify-center font-extrabold animate-in zoom-in duration-300"
+                      style={{
+                        background: "#f7f82d",
+                      }}
                     >
                       {items.length}
                     </span>

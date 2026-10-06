@@ -4536,11 +4536,11 @@ Why Choose Our Expert-grade Rollup Banners?
               value: "medium_tee",
               basePrice: 18.99,
             },
-            { label: "Large Unisex Tee", value: "large_tee", basePrice: 14.99 },
+            { label: "Large Unisex Tee", value: "large_tee", basePrice: 18.99 },
             {
               label: "Extra Large Unisex Tee",
               value: "xl_tee",
-              basePrice: 16.99,
+              basePrice: 18.99,
             },
           ],
           selects: [

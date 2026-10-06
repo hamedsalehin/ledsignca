@@ -29,9 +29,9 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://led-sign.ca"),
-  title: "Custom LED Signs, Digital Displays & Banners Toronto | Nano Signs",
+  title: "Custom Signs, LED Signs & Banners Toronto | Neon LED Sign",
   description:
-    "Design and order custom signs, LED display signs, neon signs, retractable banners, car magnets, and marketing materials online. Fast turnaround in the Toronto Area.",
+    "Design and order custom signs, Neon LED signs, retractable banners, business cards, and marketing materials online. Fast turnaround in the Toronto Area.",
   keywords: [
     "led signs toronto",
     "custom signs toronto",
@@ -47,8 +47,8 @@ export const metadata: Metadata = {
     apple: "/images/nano logo O-toronto-printing-ca.png",
   },
   openGraph: {
-    title: "Nano Signs Toronto | Custom LED Signs, Displays & Banners",
-    description: "Premium custom signage, LED display signs, retractable banners, car magnets, and commercial print in the Greater Toronto Area.",
+    title: "Nano Signs Toronto | Custom Signs, LED Signs & Banners",
+    description: "Premium custom signage, Neon LED signs, retractable banners, and commercial print in the Greater Toronto Area.",
     siteName: "Nano Signs",
     url: "https://led-sign.ca",
     images: [
@@ -64,8 +64,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Nano Signs Toronto | Custom LED Signs, Displays & Banners",
-    description: "Premium custom signage, LED display signs, retractable banners, car magnets, and commercial print in the Greater Toronto Area.",
+    title: "Nano Signs Toronto | Custom Signs, LED Signs & Banners",
+    description: "Premium custom signage, Neon LED signs, retractable banners, and commercial print in the Greater Toronto Area.",
     images: ["/images/nano logo O-toronto-printing-ca.png"],
   },
 };
