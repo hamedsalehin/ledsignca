@@ -312,6 +312,6 @@ export function Footer({ light = false }: { light?: boolean } = {}) {
           </div>
         </div>
       </div>
-    </footer>ter>
+    </footer>
   );
 }
