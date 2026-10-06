@@ -1,0 +1,18 @@
+User-Agent: *
+Allow: /
+Disallow: /api/
+Disallow: /checkout
+Disallow: /account
+Disallow: /login
+Disallow: /PrintDesignExperience/
+Disallow: /wp-admin/
+Disallow: /wp-content/
+Disallow: /wp-includes/
+Disallow: /wp-json/
+Disallow: /wp-login.php
+Disallow: /xmlrpc.php
+Disallow: /?s=
+Disallow: /?p=
+Disallow: /?page_id=
+
+Sitemap: https://led-sign.ca/sitemap.xml
