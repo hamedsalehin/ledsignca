@@ -35,6 +35,10 @@ const footerLinks = {
     title: "Products",
     links: [
       { name: "Custom Signs", href: "/custom-signs" },
+      { name: "Acrylic Signs", href: "/custom-signs/acrylic-signs" },
+      { name: "Coroplast Signs", href: "/custom-signs/coroplast-signs" },
+      { name: "Foam Board Signs", href: "/custom-signs/foam-board-signs" },
+      { name: "Window Signs", href: "/custom-signs/window-signs" },
       { name: "Banners", href: "/custom-banners" },
       { name: "Neon Signs", href: "/neon-signs" },
       { name: "Custom Flags", href: "/custom-flags" },
@@ -294,6 +298,7 @@ export function Footer({ light = false }: { light?: boolean } = {}) {
             <Link href="/blog/bag-lawn-signs-yard-signs-by-nano-signs" className="text-gray-400 hover:text-[#f7f82d] transition-colors truncate">Bag Lawn Signs</Link>
             <Link href="/blog/metal-sign" className="text-gray-400 hover:text-[#f7f82d] transition-colors truncate">Metal Signage</Link>
             <Link href="/blog/business-card-custom-design-toronto-4168388994" className="text-gray-400 hover:text-[#f7f82d] transition-colors truncate">Business Card Design</Link>
+            <Link href="/blog/refundreturns" className="text-gray-400 hover:text-[#f7f82d] transition-colors truncate">Refunds Policy Guide</Link>
             <Link href="/blog" className="text-[#f7f82d] font-bold hover:underline">View All Articles &rarr;</Link>
           </div>
         </div>

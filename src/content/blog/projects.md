@@ -279,5 +279,3 @@ Mesh Banner Printing
 
 © 2022 Nano Signs. All Rights Reserved.
 
-[](#top)
-
