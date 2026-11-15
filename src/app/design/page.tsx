@@ -4952,6 +4952,29 @@ function DesignPageContent() {
             </div>
           ))}
         </div>
+        
+        {/* SEO Assistive Descriptive Content for Search Engines */}
+        <section className="sr-only" aria-label="About the Online Custom Sign and Print Design Tool">
+          <h1>Online Custom Sign and Print Design Tool Toronto</h1>
+          <p>
+            Welcome to the Nano Signs interactive online custom design tool. Create and customize business signs,
+            vinyl banners, retractable trade show displays, yard signs, magnetic car signs, and neon LED displays
+            with real-time visual previews and exact dimensional measurements.
+          </p>
+          <h2>How to Design Your Custom Signs Online</h2>
+          <p>
+            Choose from a rich library of vector cliparts, pre-configured layouts, custom fonts, brand colors, and high-resolution
+            image uploads. Once you complete your custom layout, add it directly to your shopping cart or submit it for immediate commercial printing in the Greater Toronto Area.
+          </p>
+          <h2>Supported Sign Formats and Printing Options</h2>
+          <ul>
+            <li>Custom Vinyl Banners with grommets and reinforced hems</li>
+            <li>Coroplast Lawn and Yard Signs with H-wire stakes</li>
+            <li>Durable Magnetic Vehicle Signs for commercial cars and vans</li>
+            <li>Aluminum and Acrylic Sign Panels for storefronts and office spaces</li>
+            <li>Commercial Decals, Window Graphics, and Custom Lettering</li>
+          </ul>
+        </section>
       </div>
     </div>
   );

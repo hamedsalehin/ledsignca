@@ -1,7 +1,7 @@
 ---
-title: "front store signs"
+title: "Front Store Signs & Outdoor Commercial Visibility"
 date: "2022-03-07"
-description: "front store signs from our archive."
+description: "Everything you need to know about commercial front store signage, regulatory considerations, durable materials, and exterior lighting for business storefronts."
 image: "/uploads/2022/03/Capture.png"
 type: "product"
 ---

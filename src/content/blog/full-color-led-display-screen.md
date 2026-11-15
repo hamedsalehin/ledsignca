@@ -1,7 +1,7 @@
 ---
-title: "Full Color LED Display Screen"
+title: "Full Color LED Display Screens & Digital Signage"
 date: "2021-12-05"
-description: "Full Color LED Display Screen from our archive."
+description: "A comprehensive guide to full color LED display screens, resolution and pixel pitch selection, indoor and outdoor digital billboard technologies."
 image: "/uploads/2018/06/Full-Color-LED-Display-Screen.jpg"
 type: "product"
 ---

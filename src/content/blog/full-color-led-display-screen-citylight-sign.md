@@ -1,7 +1,7 @@
 ---
-title: "Full Color Led Display screen"
+title: "Full Color LED Display Screens for Citylight Advertising"
 date: "2020-08-17"
-description: "Full Color Led Display screen from our archive."
+description: "Discover durable outdoor LED advertising display solutions, wide viewing angle 10mm screens, and high brightness displays engineered by Nano Signs."
 image: ""
 type: "post"
 ---

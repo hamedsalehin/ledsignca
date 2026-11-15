@@ -1,7 +1,7 @@
 ---
-title: "Front Store Signs"
+title: "Storefront Signs Guide & Materials"
 date: "2022-05-08"
-description: "Front Store Signs from our archive."
+description: "Explore storefront sign options including 3D letters, illuminated channel letters, and durable fascia boards to attract more retail foot traffic in Toronto."
 image: ""
 type: "post"
 ---
