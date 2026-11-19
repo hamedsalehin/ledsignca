@@ -148,6 +148,24 @@ export function AboutUsClient() {
           </div>
         </section>
 
+        {/* Serving North America — Cross-brand link to nano-signs.com */}
+        <section className="bg-gradient-to-br from-slate-900 to-slate-800 rounded-3xl p-8 text-white text-center">
+          <h2 className="font-poppins font-black text-2xl mb-3">Serving All of North America</h2>
+          <p className="text-sm text-slate-300 max-w-2xl mx-auto mb-6 leading-relaxed">
+            Nano Signs operates a full-service commercial print and sign fabrication shop in Fort Lauderdale, Florida —
+            serving US businesses with custom signs, vinyl banners, channel letters, neon signs, and LED displays.
+            For customers in the United States, visit our dedicated US division.
+          </p>
+          <a
+            href="https://nano-signs.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-6 py-3 bg-[#f7f82d] text-gray-900 font-poppins font-bold rounded-full text-sm hover:opacity-90 transition-opacity"
+          >
+            Visit Nano Signs USA →
+          </a>
+        </section>
+
         {/* Visit Our Toronto Location */}
         <section className="space-y-6">
           <div className="text-center max-w-2xl mx-auto">

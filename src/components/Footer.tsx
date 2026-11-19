@@ -45,6 +45,17 @@ const footerLinks = {
       { name: "Sign Accessories", href: "/sign-accessories" },
     ],
   },
+  nanoSignsUSA: {
+    title: "Nano Signs USA",
+    links: [
+      { name: "Commercial Print & Sign Shop", href: "https://nano-signs.com/", external: true },
+      { name: "Business Signs (Florida)", href: "https://nano-signs.com/custom-signs", external: true },
+      { name: "Roll Up Banners USA", href: "https://nano-signs.com/custom-banners/roll-up-banners", external: true },
+      { name: "Custom Neon Signs FL", href: "https://nano-signs.com/neon-signs", external: true },
+      { name: "LED Display Signs USA", href: "https://nano-signs.com/led-display-signs/programmable-led-sign", external: true },
+      { name: "Contact Nano Signs USA", href: "https://nano-signs.com/contact-us", external: true },
+    ],
+  },
 };
 
 const paymentMethods = [
@@ -105,7 +116,7 @@ export function Footer({ light = false }: { light?: boolean } = {}) {
       )}
 
       <div className="max-w-7xl mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8">
           {/* Brand and Contact */}
           <div className="lg:col-span-2">
             <div className="mb-4">
@@ -240,6 +251,27 @@ export function Footer({ light = false }: { light?: boolean } = {}) {
                 ))}
               </div>
             </div>
+          </div>
+
+          {/* Nano Signs USA — Cross-brand links to prevent keyword cannibalization */}
+          <div>
+            <h3 className={`font-poppins font-bold mb-4 ${light ? "text-slate-800" : "pink-cyan-text"}`}>
+              {footerLinks.nanoSignsUSA.title}
+            </h3>
+            <ul className="space-y-2">
+              {footerLinks.nanoSignsUSA.links.map((link) => (
+                <li key={link.name}>
+                  <a
+                    href={link.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={`transition-colors text-sm ${light ? "text-slate-500 hover:text-yellow-600" : "text-gray-400 hover:text-yellow-600"}`}
+                  >
+                    {link.name}
+                  </a>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>        {/* Popular Signage Guides & Blog Links (Internal Linking for SEO & Orphan Page Fix) */}
         <div className={`mt-10 pt-8 border-t ${light ? "border-slate-200" : "border-slate-800/80"}`}>
